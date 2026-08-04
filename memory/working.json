@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T17:06:00+08:00",
+  "updated_at": "2026-08-04T21:05:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -16,6 +16,10 @@
     "notes": "A股：上证5日线/趋势线择总仓；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20"
   },
   "open_questions": [],
+  "premarket_last": {
+    "date": "2026-08-04",
+    "highlights": "JOLTS+贸易数据日；NVDA财报8/26；VOO近52周高、QQQ踩$700、NVDA守MA50"
+  },
   "soul_updates": [
     {
       "updated_at": "2026-08-04T16:27:00+08:00",
