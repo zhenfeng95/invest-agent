@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(**)",
+      "Edit(**)",
+      "MultiEdit(**)",
+      "Bash(**)",
+      "WebFetch(*)",
+      "WebSearch(*)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -r /)",
+      "Bash(sudo *)",
+      "Bash(chmod 777 *)",
+      "Bash(shutdown *)",
+      "Bash(reboot *)",
+      "Bash(kill -9 *)",
+      "Bash(git push --force *)",
+      "Bash(git reset --hard *)",
+      "Bash(npm publish *)"
+    ]
+  },
+  "additionalDirectories": []
+}
