@@ -22,10 +22,16 @@
 
 ## 输出要求
 - 短：控制在一屏内，条目式，不要写成长文日报
-- 保存到：`output/daily/premarket-YYYY-MM-DD.md`（用当天北京日期）
+- **必须**写入仓库文件：`output/daily/premarket-YYYY-MM-DD.md`（用当天北京日期）
 - 若有值得记入记忆的信息，轻量更新 `memory/working.json`
 - 结尾一行：`⚠️ 仅供参考，不构成投资建议`
 - 查不到的数据标「未获取」，不要编造
+
+## 写回仓库（必须做，否则本地/远端 main 看不到文件）
+1. 写完文件后 **commit**（说明：`premarket brief YYYY-MM-DD`）
+2. **创建 Pull Request** 合并到 `main`（启用「Create pull request」工具）
+3. 在运行摘要里贴出：改动的文件路径 + PR 链接
+4. 不要只在对话里输出正文却不落盘、不提交
 
 ## 成本约束
 少工具调用；能一次搜索覆盖的不要拆多次。不要打开无关文件。

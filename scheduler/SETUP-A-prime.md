@@ -69,12 +69,34 @@ gh repo create invest-agent --private --source=. --remote=origin --push
 
 ## 第 4 步：先手动跑一次
 
-每个 Automation 里找 **Run now / 立即运行**，确认：
+每个 Automation 里找 **Run now / 立即运行**。
 
-- `output/daily/premarket-….md` 或 `output/signals/daily-….md` 有文件
+### 成功时你应该看到什么
+
+**不要**先在本机 `output/` 里找——云端跑完后，文件通常出现在：
+
+1. **Automation 运行详情页**：有无成功、有无「Opened pull request」链接  
+2. **GitHub → Pull requests**：例如 Cursor 开的 PR，点进去看 `output/daily/`、`output/signals/` 是否有新 md  
+3. **合并 PR 后**，本机执行 `git pull`，本地 `output/` 才会有文件  
+
+若 `main` 上的 `output/` 仍只有 `.gitkeep`，说明：**还没合并**，或 **Agent 只聊了没写文件/没开 PR**。
+
+### 若跑完仍是空的（排查）
+
+| 检查项 | 怎么做 |
+|--------|--------|
+| 运行是否成功 | Automations → 该任务 → Runs，是否 Failed |
+| 有没有开 PR | GitHub 仓库 Pull requests / Branches |
+| 提示词是否要求写回 | 使用仓库里最新的 `prompt-*.md`（含「创建 PR」一段） |
+| Automation 是否勾选开 PR | 工具里启用 Create pull request |
+| 仓库/分支是否选对 | 必须是 `zhenfeng95/invest-agent` 的 `main` |
+
+改完提示词后：**先 push 到 main**，再在 Automations 里把 Instructions 更新成最新内容，然后 **再点一次立即运行**。
+
+确认：
+
+- PR 里出现 `output/daily/premarket-….md` 或 `output/signals/daily-….md`
 - 内容没有明显编造；缺数据应写「未获取」
-
-然后 `git pull`（若 Agent 通过 PR/commit 回写）或在 Cloud Agent 结果里查看产出。
 
 ---
 

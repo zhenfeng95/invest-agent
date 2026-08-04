@@ -47,5 +47,11 @@
 4. 有变化时可更新 `memory/working.json` 的 market_regime / current_focus
 5. 结尾：`⚠️ 信号仅供参考，不构成投资建议`
 
+## 写回仓库（必须做，否则远端 main 的 output/ 会一直是空的）
+1. **必须**把上述 md 文件真正写入工作区（不要只聊天回复）
+2. commit（说明：`signals check YYYY-MM-DD`）
+3. **创建 Pull Request** 到 `main`
+4. 运行摘要里给出文件路径 + PR 链接
+
 ## 成本约束
 同一次运行内完成两边；合并搜索；查不到就标注并继续，不要死循环重试。
