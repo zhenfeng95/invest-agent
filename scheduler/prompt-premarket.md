@@ -8,7 +8,7 @@
 
 ## 必读（按序）
 1. `soul/agent-soul.md`
-2. `soul/my-soul.md`（关注标的、美股配置、风险偏好）
+2. `soul/my-soul.md`（关注标的、美股配置、风险偏好、通知偏好）
 3. `memory/working.json`
 4. `scheduler/rules.md` 中「盘前提醒」一节
 
@@ -27,11 +27,17 @@
 - 结尾一行：`⚠️ 仅供参考，不构成投资建议`
 - 查不到的数据标「未获取」，不要编造
 
-## 写回仓库（必须做，否则本地/远端 main 看不到文件）
+## 写回仓库（安静存档，不要开 PR）
 1. 写完文件后 **commit**（说明：`premarket brief YYYY-MM-DD`）
-2. **创建 Pull Request** 合并到 `main`（启用「Create pull request」工具）
-3. 在运行摘要里贴出：改动的文件路径 + PR 链接
-4. 不要只在对话里输出正文却不落盘、不提交
+2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
+3. 在运行摘要里写清改动的文件路径即可
+
+## 邮件通知（必须做）
+用已接入的 **Resend** MCP，把正文要点发邮件：
+- **To**：`zhenfengxiaoge@outlook.com`
+- **Subject**：`盘前提醒 YYYY-MM-DD`
+- **Body**：与 md 文件同级的短摘要（可直接用文件正文）；纯文本即可
+- 发信失败时：在运行摘要里写明错误，但仍保留仓库里的 md + commit
 
 ## 成本约束
 少工具调用；能一次搜索覆盖的不要拆多次。不要打开无关文件。

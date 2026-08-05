@@ -8,9 +8,13 @@
 | **① 盘前提醒** | `0 21 * * 1-5` | 工作日 21:00 |
 | **② 合并抄底信号** | `0 9 * * *` | 每天 09:00，一次跑完 S&P 500 + BTC |
 
+**通知**：Resend MCP 发邮件 → `zhenfengxiaoge@outlook.com`（不开 PR，不靠 GitHub 提醒）  
+**存档**：写入 `output/` 后 commit / push 到 `main`
+
 提示词见同目录：
 - `prompt-premarket.md`
 - `prompt-signals.md`
+- 上手：`SETUP-A-prime.md`（含 Resend 接入）
 
 月成本粗估约 **$15–30**（视模型而定）；务必在 Cursor Dashboard 设消费上限。
 
@@ -124,7 +128,7 @@
 ## 定时任务工作流
 
 ```
-Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/
+Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/ + commit/push → Resend 发邮件
 ```
 
 ## 注册清单

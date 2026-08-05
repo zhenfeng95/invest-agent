@@ -136,3 +136,10 @@
 ## 其他补充
 
 <!-- 任何你觉得Agent应该知道的事情：时区、职业、内容创作需求、常用平台等 -->
+
+### 通知偏好
+
+- **渠道**：邮件（Cursor Automations + Resend MCP），不再用 GitHub PR / push 提醒
+- **收件箱**：`zhenfengxiaoge@outlook.com`
+- **存档**：定时任务仍写 `output/` 并 commit/push；**不开 PR**
+- **上手**：`scheduler/SETUP-A-prime.md`

@@ -2,6 +2,9 @@
 
 你已选择 **A'**：只用 Cursor Automations，开 **2 个** 定时任务。
 
+**通知渠道**：邮件 → `zhenfengxiaoge@outlook.com`（不再靠 GitHub PR 提醒）。  
+**存档方式**：仍写入 `output/` 并 commit / push；**不开 PR**。
+
 ---
 
 ## 第 1 步：让项目能被云端读到
@@ -35,7 +38,33 @@ gh repo create invest-agent --private --source=. --remote=origin --push
 
 ---
 
-## 第 3 步：建 2 个 Automation
+## 第 3 步：接入 Resend（发邮件）
+
+Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https://resend.com/docs/mcp-server)。
+
+### 3.1 注册并拿 API Key
+
+1. 打开 [resend.com](https://resend.com)，建议用 **`zhenfengxiaoge@outlook.com` 注册**（未验证自有域名时，免费测试发信只能发到账号邮箱）
+2. [API Keys](https://resend.com/api-keys) → Create → 权限选 **Full Access**（或至少能发信）
+3. 复制 `re_…` 密钥（只显示一次）
+
+未绑域名时发件人一般是 `onboarding@resend.dev`，够用。以后若要自定义发件人，再在 Resend 验证域名。
+
+### 3.2 挂到 Automation（不是 IDE 本地 MCP）
+
+**Automations 不会复用 Cursor IDE 里的 MCP**，必须在每个 Automation 里单独加：
+
+1. 打开 [cursor.com/automations](https://cursor.com/automations) → 编辑对应任务
+2. Tools → **MCP server** → 添加 Resend  
+   - URL：`https://mcp.resend.com/mcp`  
+   - Header：`Authorization: Bearer re_你的密钥`
+3. 保存后用 **Run now** 测一次是否真能发到邮箱
+
+可选：本地对话也想测发信，可在 Cursor Settings → MCP 加同一套配置；与云端定时任务互不影响。
+
+---
+
+## 第 4 步：建 / 改 2 个 Automation
 
 入口任选其一：
 
@@ -43,14 +72,21 @@ gh repo create invest-agent --private --source=. --remote=origin --push
 - 或 Cursor **Agents Window** → Automations
 - 或在 Agents Window 里用 `/automate`
 
+### 共用设置（两个任务都要）
+
+| 项 | 填什么 |
+|----|--------|
+| 仓库 | `invest-agent` 的 `main` |
+| 模型 | Composer 或 Sonnet（省钱选 Composer） |
+| Tools | ✅ **MCP：Resend**；❌ **关闭 Create pull request**（不要开 PR） |
+| 通知 | 靠邮件，不要依赖 GitHub 邮件/PR 提醒 |
+
 ### Automation ① 盘前提醒
 
 | 项 | 填什么 |
 |----|--------|
 | 名称 | Invest Premarket Reminder |
 | 触发 | Schedule / Cron：`0 21 * * 1-5`（若界面按 UTC，需换算；目标是北京时间工作日 21:00） |
-| 仓库 | 选中你的 `invest-agent` 仓库 |
-| 模型 | Composer 或 Sonnet（省钱选 Composer） |
 | Instructions | 整段粘贴 `scheduler/prompt-premarket.md` 里「---」以下内容 |
 
 ### Automation ② 合并抄底信号
@@ -59,51 +95,53 @@ gh repo create invest-agent --private --source=. --remote=origin --push
 |----|--------|
 | 名称 | Invest SPX+BTC Signals |
 | 触发 | Cron：`0 9 * * *`（北京时间每天 09:00；注意时区换算） |
-| 仓库 | 同上 |
-| 模型 | 同上 |
 | Instructions | 整段粘贴 `scheduler/prompt-signals.md` 里「---」以下内容 |
 
 **时区提醒**：Cursor cron 若按 UTC，北京时间 21:00 = UTC `0 13 * * 1-5`；北京 09:00 = UTC `0 1 * * *`。以界面标注为准。
 
+若 Automation 已建过：只需 **更新 Instructions**、**关掉 Create PR**、**加上 Resend MCP**，不必新建。
+
 ---
 
-## 第 4 步：先手动跑一次
+## 第 5 步：先手动跑一次
 
 每个 Automation 里找 **Run now / 立即运行**。
 
 ### 成功时你应该看到什么
 
-**不要**先在本机 `output/` 里找——云端跑完后，文件通常出现在：
+1. **邮箱** `zhenfengxiaoge@outlook.com` 收到一封（主题含「盘前提醒」或「抄底信号」）
+2. **Automation 运行详情**：成功；摘要里有文件路径；**没有**「Opened pull request」
+3. **GitHub `main`**：`output/daily/` 或 `output/signals/` 出现新 md（若 Agent 已 push）  
+4. 本机：`git pull` 后本地 `output/` 同步
 
-1. **Automation 运行详情页**：有无成功、有无「Opened pull request」链接  
-2. **GitHub → Pull requests**：例如 Cursor 开的 PR，点进去看 `output/daily/`、`output/signals/` 是否有新 md  
-3. **合并 PR 后**，本机执行 `git pull`，本地 `output/` 才会有文件  
+若邮件没到：查垃圾箱 → 查 Resend Dashboard 投递记录 → 确认 Automation 里 MCP 已授权。
 
-若 `main` 上的 `output/` 仍只有 `.gitkeep`，说明：**还没合并**，或 **Agent 只聊了没写文件/没开 PR**。
+若 `main` 上仍无新文件、但邮件有了：说明 push 权限可能受限——**以邮件为准**；可在运行详情里下载产物，或放宽 Cloud Agent 对仓库的写权限后再试。
 
 ### 若跑完仍是空的（排查）
 
 | 检查项 | 怎么做 |
 |--------|--------|
 | 运行是否成功 | Automations → 该任务 → Runs，是否 Failed |
-| 有没有开 PR | GitHub 仓库 Pull requests / Branches |
-| 提示词是否要求写回 | 使用仓库里最新的 `prompt-*.md`（含「创建 PR」一段） |
-| Automation 是否勾选开 PR | 工具里启用 Create pull request |
-| 仓库/分支是否选对 | 必须是 `zhenfeng95/invest-agent` 的 `main` |
+| 有没有邮件 | Outlook 收件箱 / 垃圾箱；Resend 投递日志 |
+| Resend MCP | Automation Tools 里是否已接且鉴权成功 |
+| 是否误开 PR | 关掉 Create pull request；提示词已改为「不要开 PR」 |
+| 提示词是否最新 | push 最新 `prompt-*.md` 后，把 Instructions 再粘贴一遍 |
+| 仓库/分支是否选对 | 必须是你的 `invest-agent` 的 `main` |
 
 改完提示词后：**先 push 到 main**，再在 Automations 里把 Instructions 更新成最新内容，然后 **再点一次立即运行**。
 
 确认：
 
-- PR 里出现 `output/daily/premarket-….md` 或 `output/signals/daily-….md`
-- 内容没有明显编造；缺数据应写「未获取」
+- 邮件正文可读、数据未明显编造；缺数据应写「未获取」
+- 仓库里（或运行产物里）有对应 md
 
 ---
 
-## 第 5 步：观察一周成本
+## 第 6 步：观察一周成本
 
 - 看 [Usage](https://cursor.com/dashboard/usage)
-- 目标：两项合计大约 **$15–30/月**
+- 目标：两项合计大约 **$15–30/月**（Resend 免费额度对个人投研足够）
 - 偏贵 → 换更便宜模型、缩短提示词、减少搜索次数
 
 ---

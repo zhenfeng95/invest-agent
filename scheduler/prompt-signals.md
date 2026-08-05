@@ -47,11 +47,18 @@
 4. 有变化时可更新 `memory/working.json` 的 market_regime / current_focus
 5. 结尾：`⚠️ 信号仅供参考，不构成投资建议`
 
-## 写回仓库（必须做，否则远端 main 的 output/ 会一直是空的）
+## 写回仓库（安静存档，不要开 PR）
 1. **必须**把上述 md 文件真正写入工作区（不要只聊天回复）
 2. commit（说明：`signals check YYYY-MM-DD`）
-3. **创建 Pull Request** 到 `main`
-4. 运行摘要里给出文件路径 + PR 链接
+3. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
+4. 运行摘要里给出文件路径即可
+
+## 邮件通知（必须做）
+用已接入的 **Resend** MCP，把当日信号结论发邮件：
+- **To**：`zhenfengxiaoge@outlook.com`
+- **Subject**：`抄底信号 YYYY-MM-DD`（若任一侧触发「关注」或以上，Subject 前加 `🚨 `）
+- **Body**：以 `daily-YYYY-MM-DD.md` 正文为主；纯文本即可
+- 发信失败时：在运行摘要里写明错误，但仍保留仓库里的 md + commit
 
 ## 成本约束
 同一次运行内完成两边；合并搜索；查不到就标注并继续，不要死循环重试。

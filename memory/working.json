@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T17:06:00+08:00",
+  "updated_at": "2026-08-05T09:35:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -8,14 +8,22 @@
     "NVDA"
   ],
   "active_research": [],
-  "recent_decisions": [],
+  "recent_decisions": [
+    {
+      "at": "2026-08-05T09:35:00+08:00",
+      "decision": "定时任务通知改为邮件（Resend），存档仍 commit/push，不开 PR",
+      "detail": "收件箱 zhenfengxiaoge@outlook.com；方案 B"
+    }
+  ],
   "market_regime": {
     "equity": "主线科技/AI；消费医药金融不主动看空，跷跷板轮动",
     "crypto": null,
     "macro": "看好AI与大科技",
     "notes": "A股：上证5日线/趋势线择总仓；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20"
   },
-  "open_questions": [],
+  "open_questions": [
+    "用户需在 Automations 里接入 Resend MCP 并关掉 Create PR，再 Run now 验证邮件"
+  ],
   "soul_updates": [
     {
       "updated_at": "2026-08-04T16:27:00+08:00",
@@ -46,6 +54,11 @@
       "updated_at": "2026-08-04T17:06:00+08:00",
       "changes": "填写宏观世界观：看好AI/大科技；消费医药金融不主动看空；跷跷板轮动认知",
       "reason": "用户补充大方向判断"
+    },
+    {
+      "updated_at": "2026-08-05T09:35:00+08:00",
+      "changes": "其他补充：通知偏好改为邮件 zhenfengxiaoge@outlook.com；存档 commit/push、不开 PR",
+      "reason": "用户选择邮件通知方案 B，替代 GitHub 推送提醒"
     }
   ]
 }
