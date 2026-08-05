@@ -1,5 +1,7 @@
 # Automation 提示词：合并抄底信号（S&P 500 + BTC）
 
+> **⏸ 已停用（2026-08-05）**：A' 方案任务②已改为 A股盘前提醒，见 `prompt-ashare-premarket.md`。本文件仅保留备查，请勿再挂到 Automations。
+
 把下面整段粘贴到 Cursor Automation 的 Instructions。
 
 ---

@@ -144,4 +144,5 @@
 - **渠道**：邮件（Cursor Automations + Resend MCP），不再用 GitHub PR / push 提醒
 - **收件箱**：`zhenfengxiaoge@outlook.com`
 - **存档**：定时任务仍写 `output/` 并 commit/push；**不开 PR**
+- **定时任务（A'）**：① 美股盘前（工作日 21:00）② A股盘前（工作日 09:00：大盘+东财行业板块+A股持仓+要闻+意见）；抄底信号已停用
 - **上手**：`scheduler/SETUP-A-prime.md`

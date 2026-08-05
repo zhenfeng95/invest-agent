@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T16:35:00+08:00",
+  "updated_at": "2026-08-05T16:55:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -24,6 +24,16 @@
     }
   ],
   "recent_decisions": [
+    {
+      "at": "2026-08-05T16:55:00+08:00",
+      "decision": "A' 任务②：停用合并抄底信号，改为工作日09:00 A股盘前提醒",
+      "detail": "内容：大盘+东财行业板块+A股持仓+要闻+意见建议；提示词 prompt-ashare-premarket.md；需在 Automations 更新并暂停旧信号任务"
+    },
+    {
+      "at": "2026-08-05T16:45:00+08:00",
+      "decision": "生成 A股日报 2026-08-05；本会话无 Resend MCP，未能发邮件，已写入 output/daily/ashare-2026-08-05.md",
+      "detail": "上证3878 +1.47%站上MA5；持仓仅600219 100股@4.76 收4.80"
+    },
     {
       "at": "2026-08-05T16:35:00+08:00",
       "decision": "写入首批交易/持仓到 data/raw/trades/",
@@ -57,6 +67,8 @@
     "notes": "A股：上证5日线/趋势线择总仓；选股用户自理；买卖看5日线/趋势线四选一；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20"
   },
   "open_questions": [
+    "在 Cursor Automations：暂停/删除 Invest SPX+BTC Signals；新建或改写为 A股盘前，粘贴 prompt-ashare-premarket.md，并 push 最新 scheduler/ 与 data/raw/trades/",
+    "IDE 对话环境未挂 Resend MCP，临时日报无法直发邮件；需在 Cursor Settings→MCP 接入 Resend，或继续用 Automations 发信",
     "用户需在 Automations 里接入 Resend MCP 并关掉 Create PR，再 Run now 验证邮件"
   ],
   "soul_updates": [
@@ -104,6 +116,11 @@
       "updated_at": "2026-08-05T13:12:00+08:00",
       "changes": "删除 A股选股细则（方式1/2、参与前均线过滤）；标明选股用户自理；分析框架要点同步",
       "reason": "用户要求选股自己来，Agent 不再代筛池"
+    },
+    {
+      "updated_at": "2026-08-05T16:55:00+08:00",
+      "changes": "通知偏好：A' 改为美股盘前+A股盘前；抄底信号停用",
+      "reason": "用户要求替换合并抄底信号为A股盘前汇总邮件"
     }
   ]
 }

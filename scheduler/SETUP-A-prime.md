@@ -1,6 +1,12 @@
-# A' 方案上手：盘前提醒 + 合并抄底信号
+# A' 方案上手：美股盘前提醒 + A股盘前提醒
 
 你已选择 **A'**：只用 Cursor Automations，开 **2 个** 定时任务。
+
+**当前组合**：
+1. **美股盘前提醒**（工作日 21:00）
+2. **A股盘前提醒**（工作日 09:00）— 大盘 + 东财行业板块 + A股持仓 + 要闻 + 意见建议
+
+**已停用**：合并抄底信号（SPX + BTC）。若 Automations 里还有旧任务，请 **Pause / 删除**。
 
 **通知渠道**：邮件 → `zhenfengxiaoge@outlook.com`（不再靠 GitHub PR 提醒）。  
 **存档方式**：仍写入 `output/` 并 commit / push；**不开 PR**。
@@ -13,7 +19,7 @@ Cloud Agent 读的是 **GitHub/GitLab 上的仓库**，不是你电脑上未推�
 
 1. 把本文件夹建成 Git 仓库并推到 GitHub（若还没有）
 2. 在 Cursor 连接该仓库（Settings / Cloud Agents / GitHub）
-3. 之后改 `soul/`、`scheduler/` 要 **commit + push**，云端才会看到最新内容
+3. 之后改 `soul/`、`scheduler/`、`data/raw/trades/` 要 **commit + push**，云端才会看到最新持仓
 
 可在本项目终端执行（需你本机已登录 `gh`）：
 
@@ -81,7 +87,7 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 | Tools | ✅ **MCP：Resend**；❌ **关闭 Create pull request**（不要开 PR） |
 | 通知 | 靠邮件，不要依赖 GitHub 邮件/PR 提醒 |
 
-### Automation ① 盘前提醒
+### Automation ① 美股盘前提醒
 
 | 项 | 填什么 |
 |----|--------|
@@ -89,17 +95,21 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 | 触发 | Schedule / Cron：`0 21 * * 1-5`（若界面按 UTC，需换算；目标是北京时间工作日 21:00） |
 | Instructions | 整段粘贴 `scheduler/prompt-premarket.md` 里「---」以下内容 |
 
-### Automation ② 合并抄底信号
+### Automation ② A股盘前提醒（替换原「合并抄底信号」）
 
 | 项 | 填什么 |
 |----|--------|
-| 名称 | Invest SPX+BTC Signals |
-| 触发 | Cron：`0 9 * * *`（北京时间每天 09:00；注意时区换算） |
-| Instructions | 整段粘贴 `scheduler/prompt-signals.md` 里「---」以下内容 |
+| 名称 | Invest A-Share Premarket |
+| 触发 | Cron：`0 9 * * 1-5`（北京时间工作日 09:00；注意时区换算） |
+| Instructions | 整段粘贴 `scheduler/prompt-ashare-premarket.md` 里「---」以下内容 |
 
-**时区提醒**：Cursor cron 若按 UTC，北京时间 21:00 = UTC `0 13 * * 1-5`；北京 09:00 = UTC `0 1 * * *`。以界面标注为准。
+若以前建过 **Invest SPX+BTC Signals**：请 **Pause 或删除**，避免与 A股盘前抢同一时段、重复扣费。
 
-若 Automation 已建过：只需 **更新 Instructions**、**关掉 Create PR**、**加上 Resend MCP**，不必新建。
+**时区提醒**：Cursor cron 若按 UTC，北京时间 21:00 = UTC `0 13 * * 1-5`；北京 09:00 = UTC `0 1 * * 1-5`。以界面标注为准。
+
+若 Automation 已建过：只需 **更新名称/Instructions**、**关掉 Create PR**、**加上 Resend MCP**，不必强行新建。
+
+**想更早收到**：可把 A股任务改成 `0 8 * * 1-5`（北京 08:00），并同步改 `rules.md`。
 
 ---
 
@@ -109,9 +119,9 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 
 ### 成功时你应该看到什么
 
-1. **邮箱** `zhenfengxiaoge@outlook.com` 收到一封（主题含「盘前提醒」或「抄底信号」）
+1. **邮箱** `zhenfengxiaoge@outlook.com` 收到邮件（主题含「盘前提醒」或「A股盘前提醒」）
 2. **Automation 运行详情**：成功；摘要里有文件路径；**没有**「Opened pull request」
-3. **GitHub `main`**：`output/daily/` 或 `output/signals/` 出现新 md（若 Agent 已 push）  
+3. **GitHub `main`**：`output/daily/` 出现新 md（若 Agent 已 push）  
 4. 本机：`git pull` 后本地 `output/` 同步
 
 若邮件没到：查垃圾箱 → 查 Resend Dashboard 投递记录 → 确认 Automation 里 MCP 已授权。
@@ -128,13 +138,14 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 | 是否误开 PR | 关掉 Create pull request；提示词已改为「不要开 PR」 |
 | 提示词是否最新 | push 最新 `prompt-*.md` 后，把 Instructions 再粘贴一遍 |
 | 仓库/分支是否选对 | 必须是你的 `invest-agent` 的 `main` |
+| A股持仓是否为空 | 确认已 push `data/raw/trades/` |
 
 改完提示词后：**先 push 到 main**，再在 Automations 里把 Instructions 更新成最新内容，然后 **再点一次立即运行**。
 
 确认：
 
-- 邮件正文可读、数据未明显编造；缺数据应写「未获取」
-- 仓库里（或运行产物里）有对应 md
+- 邮件正文含大盘 / 板块 / 持仓 / 要闻 / **意见与建议**
+- 缺数据应写「未获取」，未明显编造
 
 ---
 
@@ -148,4 +159,4 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 
 ## 暂不要开
 
-财经日报、周报、月报、选题 —— 已在 `scheduler/rules.md` 标为 ⏸，等 A' 稳定再加。
+财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸，等 A' 稳定再加。

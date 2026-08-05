@@ -5,15 +5,18 @@
 
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
-| **① 盘前提醒** | `0 21 * * 1-5` | 工作日 21:00 |
-| **② 合并抄底信号** | `0 9 * * *` | 每天 09:00，一次跑完 S&P 500 + BTC |
+| **① 美股盘前提醒** | `0 21 * * 1-5` | 工作日 21:00 |
+| **② A股盘前提醒** | `0 9 * * 1-5` | 工作日 09:00（大盘+东财行业板块+A股持仓+要闻+意见） |
+
+**已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
 
 **通知**：Resend MCP 发邮件 → `zhenfengxiaoge@outlook.com`（不开 PR，不靠 GitHub 提醒）  
 **存档**：写入 `output/` 后 commit / push 到 `main`
 
 提示词见同目录：
-- `prompt-premarket.md`
-- `prompt-signals.md`
+- `prompt-premarket.md`（美股盘前）
+- `prompt-ashare-premarket.md`（A股盘前）
+- `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含 Resend 接入）
 
 月成本粗估约 **$15–30**（视模型而定）；务必在 Cursor Dashboard 设消费上限。
@@ -57,7 +60,7 @@
 - 1-2 句核心判断/提醒
 ```
 
-### 盘前提醒（每日 21:00 / 美东 9:00）— ✅ A' 启用
+### 美股盘前提醒（每日 21:00 / 美东 9:00）— ✅ A' 启用
 - cron: `0 21 * * 1-5`
 - 执行：检查以下事项并推送简短提醒
   - 今日是否有持仓标的财报发布
@@ -67,13 +70,25 @@
 - 输出：`output/daily/premarket-YYYY-MM-DD.md`（或直接推送短消息）
 - 提示词：`scheduler/prompt-premarket.md`
 
+### A股盘前提醒（工作日 09:00）— ✅ A' 启用
+- cron: `0 9 * * 1-5`
+- 提示词：`scheduler/prompt-ashare-premarket.md`
+- 执行：汇总并邮件推送
+  - **大盘解读**：上证/深成/创业；对照上证 5 日线与仓位纪律
+  - **板块解读**：东方财富**行业**板块领涨/领跌 TOP（标明东财口径，非通达信）
+  - **A股持仓分析**：读 `data/raw/trades/`；成本/浮盈/MA5/止损纪律
+  - **财经要闻**：3～5 条隔夜/今早要点
+  - **意见与建议**：收尾给出仓位倾向与持仓态度（不代选股）
+- 输出：`output/daily/ashare-premarket-YYYY-MM-DD.md`
+- 邮件主题：`A股盘前提醒 YYYY-MM-DD`
+
 ## 信号系统
 
-### 合并抄底信号（每日 09:00）— ✅ A' 启用（SPX + BTC 一次跑完）
-- cron: `0 9 * * *`
-- 提示词：`scheduler/prompt-signals.md`
-- 输出：
-  - `output/signals/spx-YYYY-MM-DD.md`（仅触发时，或每日简要记录）
+### 合并抄底信号（每日 09:00）— ⏸ 已停用（原 A' 任务②，改由 A股盘前提醒占用此时段）
+- cron: `0 9 * * *`（历史配置；Automation 请暂停）
+- 提示词：`scheduler/prompt-signals.md`（保留备查）
+- 输出（停用期间勿写）：
+  - `output/signals/spx-YYYY-MM-DD.md`
   - `output/signals/btc-YYYY-MM-DD.md`
   - 可选汇总：`output/signals/daily-YYYY-MM-DD.md`
 
@@ -135,8 +150,9 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 
 | 任务 | Cron (UTC+8) | 状态 | 输出目录 |
 |------|--------------|------|----------|
-| 盘前提醒 | `0 21 * * 1-5` | ✅ A' | output/daily/ |
-| 合并抄底信号 | `0 9 * * *` | ✅ A' | output/signals/ |
+| 美股盘前提醒 | `0 21 * * 1-5` | ✅ A' | output/daily/ |
+| A股盘前提醒 | `0 9 * * 1-5` | ✅ A' | output/daily/ |
+| 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
 | 周度回顾 | `0 10 * * 0` | ⏸ 暂缓 | output/research/weekly/ |
 | 月度复盘 | `0 10 1 * *` | ⏸ 暂缓 | output/research/monthly/ |
