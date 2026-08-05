@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T17:06:00+08:00",
+  "updated_at": "2026-08-05T09:02:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -11,7 +11,7 @@
   "recent_decisions": [],
   "market_regime": {
     "equity": "主线科技/AI；消费医药金融不主动看空，跷跷板轮动",
-    "crypto": null,
+    "crypto": "未触发抄底信号；RSI 36 / MVRV Z 0.37；交易所净流入为主",
     "macro": "看好AI与大科技",
     "notes": "A股：上证5日线/趋势线择总仓；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20"
   },
