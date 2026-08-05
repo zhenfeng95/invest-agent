@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T16:55:00+08:00",
+  "updated_at": "2026-08-05T17:50:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -25,9 +25,34 @@
   ],
   "recent_decisions": [
     {
+      "at": "2026-08-05T17:50:00+08:00",
+      "decision": "A股盘前置顶「0.市场状态判断」：六选一周期+100分评分→防守/轻仓试错/积极参与/进攻",
+      "detail": "8/5样例评分69→轻仓试错/反弹确认；Automations需重贴prompt"
+    },
+    {
+      "at": "2026-08-05T17:40:00+08:00",
+      "decision": "盘前要闻每条必须标注精确到分钟的发布时间：YYYY-MM-DD HH:MM 来源",
+      "detail": "查不到时分则写「时刻未核实」+置信度低，禁止只写来源；已改 prompt/template/rules"
+    },
+    {
+      "at": "2026-08-05T17:35:00+08:00",
+      "decision": "A股盘前强制「昨日资金面」：量能放缩+北向+主力行业流入/流出TOP3，禁止只用成交额总量",
+      "detail": "入口：东财 zjlx / bkzj / hsgt；已改 prompt/template/rules；Automations 需重贴提示词"
+    },
+    {
+      "at": "2026-08-05T17:30:00+08:00",
+      "decision": "A股盘前增加「持仓负面消息提醒」：每只A股持仓扫近7日负面新闻，无则明示未见",
+      "detail": "已写入 prompt/template/rules/my-soul；Automations 需重新粘贴提示词"
+    },
+    {
+      "at": "2026-08-05T17:15:00+08:00",
+      "decision": "A股盘前口径固定：大盘/板块/持仓=昨日复盘；要闻=当日09:00前；意见=今日应对",
+      "detail": "已改 prompt-ashare-premarket.md、templates/ashare-premarket.md、rules.md、my-soul 通知偏好；Automations 需重新粘贴提示词"
+    },
+    {
       "at": "2026-08-05T16:55:00+08:00",
       "decision": "A' 任务②：停用合并抄底信号，改为工作日09:00 A股盘前提醒",
-      "detail": "内容：大盘+东财行业板块+A股持仓+要闻+意见建议；提示词 prompt-ashare-premarket.md；需在 Automations 更新并暂停旧信号任务"
+      "detail": "内容：昨日复盘+盘前要闻+今日应对；提示词 prompt-ashare-premarket.md；需在 Automations 更新并暂停旧信号任务"
     },
     {
       "at": "2026-08-05T16:45:00+08:00",
@@ -64,7 +89,7 @@
     "equity": "主线科技/AI；消费医药金融不主动看空，跷跷板轮动",
     "crypto": null,
     "macro": "看好AI与大科技",
-    "notes": "A股：上证5日线/趋势线择总仓；选股用户自理；买卖看5日线/趋势线四选一；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20"
+    "notes": "A股：上证5日线/趋势线择总仓；选股用户自理；买卖看5日线/趋势线四选一；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20；盘前第0节市场状态评分（2026-08-05样例：69分/反弹确认/轻仓试错）"
   },
   "open_questions": [
     "在 Cursor Automations：暂停/删除 Invest SPX+BTC Signals；新建或改写为 A股盘前，粘贴 prompt-ashare-premarket.md，并 push 最新 scheduler/ 与 data/raw/trades/",
@@ -121,6 +146,31 @@
       "updated_at": "2026-08-05T16:55:00+08:00",
       "changes": "通知偏好：A' 改为美股盘前+A股盘前；抄底信号停用",
       "reason": "用户要求替换合并抄底信号为A股盘前汇总邮件"
+    },
+    {
+      "updated_at": "2026-08-05T17:15:00+08:00",
+      "changes": "A股盘前：明确昨日复盘（大盘/板块/持仓）+ 当日盘前要闻（09:00前）+ 今日应对",
+      "reason": "用户要求新交易日先看昨日行情，再结合盘前新闻做今日应对"
+    },
+    {
+      "updated_at": "2026-08-05T17:30:00+08:00",
+      "changes": "A股盘前增加持仓负面消息提醒（近7日；每标的必有结论）",
+      "reason": "用户要求在现有持仓基础上增加近期负面新闻提醒"
+    },
+    {
+      "updated_at": "2026-08-05T17:35:00+08:00",
+      "changes": "A股盘前新增昨日资金面：量能放缩、北向、主力行业流入/流出TOP3",
+      "reason": "用户要求拆分流动性结构，不只写两市成交额总量"
+    },
+    {
+      "updated_at": "2026-08-05T17:40:00+08:00",
+      "changes": "盘前要闻引用须带精确到分钟的发布时间（YYYY-MM-DD HH:MM 来源）",
+      "reason": "用户要求每条要闻标注具体发布时间含分钟"
+    },
+    {
+      "updated_at": "2026-08-05T17:50:00+08:00",
+      "changes": "A股盘前置顶市场状态判断：六选一周期+均线/量能/情绪/主线+100分策略映射",
+      "reason": "用户要求在昨日大盘复盘前增加市场状态判断框架"
     }
   ]
 }
