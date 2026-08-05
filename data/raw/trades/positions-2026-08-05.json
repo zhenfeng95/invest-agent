@@ -1,0 +1,52 @@
+{
+  "as_of": "2026-08-05",
+  "source": "user_report",
+  "currency_note": "美股持仓成本与市值单位为 USD；A股为 CNY",
+  "positions": [
+    {
+      "market": "US",
+      "ticker": "AAPL",
+      "name": "苹果",
+      "qty": 0.01,
+      "avg_cost": 304.0,
+      "currency": "USD",
+      "note": "2026-08-04 买入；成本即该笔成交价"
+    },
+    {
+      "market": "US",
+      "ticker": "VOO",
+      "name": "标普500 ETF",
+      "qty": 0.01,
+      "avg_cost": 700.0,
+      "currency": "USD",
+      "note": "2026-08-04 买入；成本即该笔成交价（若另有历史仓未告知，此处仅记本笔）"
+    },
+    {
+      "market": "US",
+      "ticker": "IBIT",
+      "name": "比特币现货 ETF",
+      "qty": 0.05,
+      "avg_cost": 35.6,
+      "currency": "USD",
+      "note": "用户报告持仓与成本；买入日未提供"
+    },
+    {
+      "market": "US",
+      "ticker": "SGOV",
+      "name": "短债现金管理 ETF",
+      "qty": 0.01,
+      "avg_cost": 100.0,
+      "currency": "USD",
+      "note": "用户报告持仓与成本；买入日未提供"
+    },
+    {
+      "market": "A",
+      "ticker": "600219",
+      "name": "南山铝业",
+      "qty": 100,
+      "avg_cost": 4.76,
+      "currency": "CNY",
+      "note": "2026-08-05 买入；5日均线附近低吸"
+    }
+  ]
+}
