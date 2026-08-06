@@ -9,6 +9,7 @@
   - 使用 interactive 卡片 + plain_text（不依赖 lark_md，避免星号原样显示）
   - 请求体约 20KB 上限；超长截断，脚注附 GitHub blob 完整 URL（默认 main）
   - 链接：REPO_WEB_BASE / GITHUB_REPO → git remote origin → 绝对路径兜底
+  - origin 若为 https://x-access-token:…@github.com/… 会剥掉凭证，只留公开 blob URL
   - 分支：默认 main（定时任务先 merge_to_main）；仅 REPO_BRANCH 可显式覆盖
 """
 
@@ -144,11 +145,16 @@ def _rel_in_repo(md_path: Path, root: Path | None) -> str:
     return s.lstrip("/")
 
 
+def _strip_url_userinfo(url: str) -> str:
+    """去掉 https://user:token@host/... 中的凭证，避免飞书脚注泄露 token。"""
+    return re.sub(r"^(https?://)[^/@]+@", r"\1", url.strip())
+
+
 def _https_repo_base(root: Path | None) -> str | None:
-    """返回 https://github.com/owner/repo（无尾斜杠）。"""
+    """返回 https://github.com/owner/repo（无尾斜杠、无凭证）。"""
     env_base = (os.environ.get("REPO_WEB_BASE") or "").strip().rstrip("/")
     if env_base.startswith("http://") or env_base.startswith("https://"):
-        return env_base
+        return _strip_url_userinfo(env_base).rstrip("/")
 
     env_repo = (os.environ.get("GITHUB_REPO") or "").strip()
     if re.fullmatch(r"[^/\s]+/[^/\s]+", env_repo):
@@ -168,9 +174,13 @@ def _https_repo_base(root: Path | None) -> str | None:
             return f"https://github.com/{path}"
         return f"https://{host}/{path}"
 
+    # Cloud Agent 常见：https://x-access-token:ghs_…@github.com/owner/repo.git
+    remote = _strip_url_userinfo(remote)
     m = re.match(r"https?://([^/]+)/(.+?)(?:\.git)?$", remote)
     if m:
         host, path = m.group(1), m.group(2).strip("/")
+        if "github" in host:
+            return f"https://github.com/{path}"
         return f"https://{host}/{path}"
 
     return None

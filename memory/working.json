@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T18:05:00+08:00",
+  "updated_at": "2026-08-06T18:22:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -24,6 +24,11 @@
     }
   ],
   "recent_decisions": [
+    {
+      "at": "2026-08-06T18:22:00+08:00",
+      "decision": "feishu_send 剥掉 origin 里 x-access-token，脚注只用公开 github blob URL",
+      "detail": "Cloud Agent remote 带凭证被拼进飞书；已修 _https_repo_base；需 push 后下次定时才生效"
+    },
     {
       "at": "2026-08-06T18:05:00+08:00",
       "decision": "收盘日报只读两份固定 notes；对话必要时仍可扫 notes 全目录",
