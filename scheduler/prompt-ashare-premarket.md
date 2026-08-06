@@ -246,14 +246,24 @@
 2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
 3. 运行摘要里写清文件路径
 
-## 邮件通知（必须做）
+## 飞书通知（必须做）
 
-用已接入的 **Resend** MCP 发信：
+**不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
-- **To**：`zhenfengxiaoge@outlook.com`
-- **Subject**：`A股盘前提醒 YYYY-MM-DD`
-- **Body**：与 md 同级的完整要点（可直接用文件正文）；纯文本即可
-- 发信失败：在运行摘要写明错误，仍保留 md + commit
+1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
+2. Shell/`curl` POST：
+
+```bash
+curl -sS -X POST "$FEISHU_WEBHOOK_URL" \
+  -H 'Content-Type: application/json' \
+  --data-binary @- <<'EOF'
+{"msg_type":"text","content":{"text":"A股盘前提醒 YYYY-MM-DD\n\n<要点：市场状态/仓位建议/持仓态度/今日应对>"}}
+EOF
+```
+
+3. 正文：推 **要点摘要**（市场状态档位、仓位建议、持仓态度、今日应对）；全文以仓库 md 为准，勿把整篇长报告塞进一条消息
+4. 成功：响应含 `"code":0`（或旧版 `"StatusCode":0`）
+5. 失败：运行摘要写明错误，仍保留 md + commit
 
 ## 成本约束
 

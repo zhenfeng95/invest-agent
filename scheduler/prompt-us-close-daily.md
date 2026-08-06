@@ -259,11 +259,11 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
 3. 运行摘要写清文件路径
 
-## 邮件通知（必须做）
+## 飞书通知（必须做）
 
-用已接入的 **Resend** MCP 发信：
+**不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
-- **To**：`zhenfengxiaoge@outlook.com`
-- **Subject**：`美股收盘日报 YYYY-MM-DD`
-- **Body**：建议发 **HTML 精简版**（一句话总结 + 大盘表 + 持仓要点 + 明日 5 信号 + 风险等级）；全文以仓库 md 为准。若 MCP 仅纯文本，则发同等结构纯文本摘要，并注明「全文见仓库」
-- 发信失败：运行摘要写明错误，仍保留 md + commit
+1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`
+2. `curl` POST `msg_type:text`，标题：`美股收盘日报 YYYY-MM-DD`
+3. 正文：一句话总结 + 大盘要点 + 持仓要点 + 明日信号 + 风险等级；注明「全文见仓库」；勿塞整篇
+4. 成功：`"code":0`；失败写运行摘要，仍保留 md + commit

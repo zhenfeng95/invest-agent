@@ -141,8 +141,8 @@
 
 ### 通知偏好
 
-- **渠道**：邮件（Cursor Automations + Resend MCP），不再用 GitHub PR / push 提醒
-- **收件箱**：`zhenfengxiaoge@outlook.com`
-- **存档**：定时任务仍写 `output/` 并 commit/push；**不开 PR**
+- **渠道**：仅飞书（自定义机器人 Webhook + `curl`）；不再用邮件 / Resend / GitHub PR 提醒
+- **Webhook**：只写在 Cursor Automations Instructions 文末「密钥」段（`FEISHU_WEBHOOK_URL`），**不要 commit 进仓库**
+- **存档**：定时任务仍写 `output/` 并 commit/push；**不开 PR**；飞书只推摘要，全文以仓库为准
 - **定时任务（A'）**：① 美股盘前提醒（工作日 21:00）② A股盘前（工作日 09:00：市场状态判断/评分 + 昨日大盘/资金面/板块/持仓复盘 + 持仓近7日负面消息提醒 + 当日盘前要闻 + 今日应对）；美股收盘日报与抄底信号已停用（收盘日报因成本暂缓）
-- **上手**：`scheduler/SETUP-A-prime.md`
+- **上手**：`scheduler/SETUP-A-prime.md`（含飞书接入）

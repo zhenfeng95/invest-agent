@@ -55,12 +55,14 @@
 3. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
 4. 运行摘要里给出文件路径即可
 
-## 邮件通知（必须做）
-用已接入的 **Resend** MCP，把当日信号结论发邮件：
-- **To**：`zhenfengxiaoge@outlook.com`
-- **Subject**：`抄底信号 YYYY-MM-DD`（若任一侧触发「关注」或以上，Subject 前加 `🚨 `）
-- **Body**：以 `daily-YYYY-MM-DD.md` 正文为主；纯文本即可
-- 发信失败时：在运行摘要里写明错误，但仍保留仓库里的 md + commit
+## 飞书通知（必须做）
+
+**不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
+
+1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`
+2. `curl` POST `msg_type:text`；标题：`抄底信号 YYYY-MM-DD`（任一侧「关注」或以上则标题前加 `🚨 `）
+3. 正文以当日信号结论为主；全文见仓库
+4. 成功：`"code":0`；失败写运行摘要，仍保留 md + commit
 
 ## 成本约束
 同一次运行内完成两边；合并搜索；查不到就标注并继续，不要死循环重试。

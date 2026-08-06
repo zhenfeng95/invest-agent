@@ -36,12 +36,24 @@
 2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
 3. 在运行摘要里写清改动的文件路径即可
 
-## 邮件通知（必须做）
-用已接入的 **Resend** MCP，把正文要点发邮件：
-- **To**：`zhenfengxiaoge@outlook.com`
-- **Subject**：`盘前提醒 YYYY-MM-DD`
-- **Body**：与 md 文件同级的短摘要（可直接用文件正文）；纯文本即可
-- 发信失败时：在运行摘要里写明错误，但仍保留仓库里的 md + commit
+## 飞书通知（必须做）
+
+**不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
+
+1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
+2. Shell/`curl` POST：
+
+```bash
+curl -sS -X POST "$FEISHU_WEBHOOK_URL" \
+  -H 'Content-Type: application/json' \
+  --data-binary @- <<'EOF'
+{"msg_type":"text","content":{"text":"盘前提醒 YYYY-MM-DD\n\n<短摘要要点>"}}
+EOF
+```
+
+3. 正文：与 md 同级的短摘要即可（全文以仓库为准）；单条不宜过长
+4. 成功：响应含 `"code":0`（或旧版 `"StatusCode":0`）
+5. 失败：运行摘要写明错误，仍保留 md + commit
 
 ## 成本约束
 少工具调用；能一次搜索覆盖的不要拆多次。不要打开无关文件。

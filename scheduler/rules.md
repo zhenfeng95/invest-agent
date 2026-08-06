@@ -10,15 +10,15 @@
 
 **已停用**：美股收盘日报（原工作日 08:00，成本偏高暂缓）；合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
 
-**通知**：Resend MCP 发邮件 → `zhenfengxiaoge@outlook.com`（不开 PR，不靠 GitHub 提醒）  
-**存档**：写入 `output/` 后 commit / push 到 `main`
+**通知**：仅飞书自定义机器人 Webhook（`curl`）；不开 PR；不发邮件  
+**存档**：写入 `output/` 后 commit / push 到 `main`；飞书只推摘要
 
 提示词见同目录：
 - `prompt-premarket.md`（美股盘前 · ✅ A'）
 - `prompt-ashare-premarket.md`（A股盘前 · ✅ A'）
 - `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 暂缓，仅存档）
 - `prompt-signals.md`（已停用，仅存档）
-- 上手：`SETUP-A-prime.md`（含 Resend 接入）
+- 上手：`SETUP-A-prime.md`（含飞书接入）
 
 月成本粗估约 **$15–30**（Composer；两项均为中短任务）；务必在 Cursor Dashboard 设消费上限。
 
@@ -66,7 +66,7 @@
 - 提示词：`scheduler/prompt-us-close-daily.md`（保留备查）
 - 执行：完整复盘昨夜美股（大盘/宏观/板块/宽度/技术/个股/财报/机构/轮动/持仓观察/明日计划/风险）
 - 输出（停用期间勿写）：`output/daily/us-close-YYYY-MM-DD.md`
-- 邮件主题：`美股收盘日报 YYYY-MM-DD`（建议 HTML 摘要；全文以仓库为准）
+- 飞书标题：`美股收盘日报 YYYY-MM-DD`（推摘要；全文以仓库为准）
 - 说明：篇幅长、搜索多，月成本明显高于盘前短提醒；稳定后再考虑启用；启用时勿与旧财经日报同开
 
 ### 美股盘前提醒（每日 21:00 / 美东 9:00）— ✅ A' 启用
@@ -78,14 +78,14 @@
   - 期权到期日提醒（如适用）
   - 关键技术位提醒（如某标的接近支撑/阻力位）
 - 输出：`output/daily/premarket-YYYY-MM-DD.md`
-- 邮件主题：`盘前提醒 YYYY-MM-DD`
+- 飞书标题：`盘前提醒 YYYY-MM-DD`
 
 ### A股盘前提醒（工作日 09:00）— ✅ A' 启用
 - cron: `0 9 * * 1-5`
 - 提示词：`scheduler/prompt-ashare-premarket.md`
 - 模板：`templates/ashare-premarket.md`
 - 时间口径：开篇 **市场状态判断（昨日收盘）**；大盘/板块/持仓 = **昨日收盘复盘**；资金面 = **昨日**（量能对比可含近5日）；持仓负面 = **近 7 日**；要闻 = **当日 09:00 前最新**；意见 = **今日应对**
-- 执行：汇总并邮件推送
+- 执行：汇总并飞书推送摘要
   - **市场状态判断（必须，置顶）**：六选一周期 + 均线/量能/情绪/主线依据 + 100分评分 → 防守/轻仓试错/积极参与/进攻
   - **昨日大盘复盘**：上证/深成/创业昨收；对照上证 5 日线与仓位纪律
   - **昨日资金面**（必做）：①量能放缩（较前日/近5日均）②北向净流入/出（可拆沪深）③主力行业净流入/流出 TOP3；来源东财/同花顺资金流向；禁止只用两市合计成交额敷衍
@@ -95,7 +95,7 @@
   - **当日盘前要闻**：3～5 条，优先今日 09:00 前；**每条必须** `YYYY-MM-DD HH:MM 来源`（精确到分钟；查不到时分则标「时刻未核实」+置信度低）
   - **今日应对**：与市场状态判断策略档一致；持仓态度（不代选股；有负面须点名）
 - 输出：`output/daily/ashare-premarket-YYYY-MM-DD.md`
-- 邮件主题：`A股盘前提醒 YYYY-MM-DD`
+- 飞书标题：`A股盘前提醒 YYYY-MM-DD`
 
 ## 信号系统
 
@@ -158,7 +158,7 @@
 ## 定时任务工作流
 
 ```
-Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/ + commit/push → Resend 发邮件
+Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/ + commit/push → 飞书 Webhook 推送摘要
 ```
 
 ## 注册清单

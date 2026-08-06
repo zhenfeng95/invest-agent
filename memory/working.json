@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T10:12:00+08:00",
+  "updated_at": "2026-08-06T13:40:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -13,8 +13,8 @@
     {
       "ticker": "600219",
       "name": "南山铝业",
-      "asked_at": "2026-08-05",
-      "note": "已买入100股@4.76；理由：5日均线附近低吸；对齐四选一中的回踩5日线类买点"
+      "asked_at": "2026-08-06",
+      "note": "持仓100@4.76；8/6盘中约4.69略贴/下穿MA5≈4.73（-0.8%），量缩；未确认有效跌破→盯收盘；不加仓；破MA5或趋势线按规则卖"
     },
     {
       "ticker": "002077",
@@ -24,6 +24,36 @@
     }
   ],
   "recent_decisions": [
+    {
+      "at": "2026-08-06T13:40:00+08:00",
+      "decision": "通知改为仅飞书 Webhook；停用邮件/Resend",
+      "detail": "已改 my-soul、rules、SETUP-A-prime、全部 prompt-*、.env.example；用户须在 Automations 重贴提示词+密钥、去掉 Resend、Run now 验证"
+    },
+    {
+      "at": "2026-08-06T13:36:00+08:00",
+      "decision": "通知渠道建议：飞书主推（盘前即时）、邮件备份（可检索）；网站不当通知",
+      "detail": "用户有自有域名+飞书+邮箱；域名利于Resend发件域，非主推因；待用户确认后再改配置"
+    },
+    {
+      "at": "2026-08-06T13:35:00+08:00",
+      "decision": "飞书接入：当前未实现，仅 .env.example 占位 FEISHU_WEBHOOK_URL；现通知仍为 Resend 邮件",
+      "detail": "用户询问如何接入；推荐群机器人 Webhook + Automation 提示词 curl；待用户确认双通道/只飞书后再改 prompt/my-soul"
+    },
+    {
+      "at": "2026-08-06T11:25:00+08:00",
+      "decision": "按可执行交易框架：当前仓位宜落在30%~50%，中枢约40%；未达稳定向上60-80%",
+      "detail": "上证在MA5/10上；8/5进攻后8/6消化；沪深300/成长偏弱；主线多极（贵金属/机器人军工等）延续性中等"
+    },
+    {
+      "at": "2026-08-06T11:20:00+08:00",
+      "decision": "600219持仓建议：暂持、盯收盘相对MA5；不加仓；有效跌破MA5/趋势线卖",
+      "detail": "成本4.76现约4.69亏~1.5%；大盘偏强但个股回踩；8/5控股股东追加质押为情绪噪音"
+    },
+    {
+      "at": "2026-08-06T11:10:00+08:00",
+      "decision": "沉淀笔记 data/raw/notes/可执行交易框架.md（自 xmind 梳理，原文件未改）",
+      "detail": "完整交易系统：大盘三态仓位、选股、买卖点、止损、八步曲、复盘、势能清单；与 my-soul/炒股赚米的核心有重叠，升格硬规则须用户确认"
+    },
     {
       "at": "2026-08-06T10:12:00+08:00",
       "decision": "A'回切：停用美股收盘日报；恢复美股盘前(21:00)+A股盘前(09:00)",
@@ -124,14 +154,21 @@
     "equity": "主线科技/AI；消费医药金融不主动看空，跷跷板轮动",
     "crypto": null,
     "macro": "看好AI与大科技",
-    "notes": "A股：上证5日线/趋势线择总仓；选股用户自理；买卖看5日线/趋势线四选一；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20；盘前第0节市场状态评分（2026-08-05样例：69分/反弹确认/轻仓试错）"
+    "notes": "2026-08-06盘中按可执行框架：上证站上MA5/MA10，属震荡偏多→进攻过渡；建议总仓约30-50%（中枢~40%），未给满60-80%"
   },
   "open_questions": [
+    "在 Automations：重贴最新 prompt + FEISHU_WEBHOOK_URL 密钥段；去掉 Resend；Shell 开；Run now 验飞书",
+    "飞书机器人若开启签名校验，需回来说一声以改 curl 带 sign",
+    "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？",
     "在 Cursor Automations：Pause/删除美股收盘日报（Invest US Close Daily）；Enable 美股盘前 Invest Premarket Reminder，粘贴最新 prompt-premarket.md，cron 北京 21:00（UTC 则 0 13 * * 1-5）",
-    "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/",
-    "IDE 对话环境未挂 Resend MCP，临时日报无法直发邮件；需在 Cursor Settings→MCP 接入 Resend，或继续用 Automations 发信"
+    "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/"
   ],
   "soul_updates": [
+    {
+      "updated_at": "2026-08-06T13:40:00+08:00",
+      "changes": "通知偏好：仅飞书自定义机器人 Webhook；去掉收件箱/Resend；Webhook 只贴 Automations 密钥段",
+      "reason": "用户确认只飞书"
+    },
     {
       "updated_at": "2026-08-04T16:27:00+08:00",
       "changes": "填写核心关注标的：VOO / QQQ / IBIT / SGOV / NVDA",
