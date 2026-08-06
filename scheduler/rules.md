@@ -1,26 +1,28 @@
 # 当前启用方案：A'（Cursor Automations）
 
-> 低成本起步：只跑 **2 个** Automation。其余任务写在下方全文规则中，暂不启用。
+> 当前只跑 **1 个** Automation：**A股收盘日报**。其余任务暂不启用。
 > 执行器：**Cursor Automations（Cloud Agent）**，不再依赖 Claude Code scheduler。
 
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
-| **① 美股盘前提醒** | `0 21 * * 1-5` | 工作日 21:00（财报/数据/技术位短提醒） |
-| **② A股盘前提醒** | `0 9 * * 1-5` | 工作日 09:00（市场状态评分 + 昨日复盘/资金面 + 持仓负面 + 盘前要闻 + 今日应对） |
+| **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
 
-**已停用**：美股收盘日报（原工作日 08:00，成本偏高暂缓）；合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
+**已暂停**：美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 Pause。  
+**已停用**：美股收盘日报；合并抄底信号（SPX + BTC）— 规则仍保留在下方。
 
 **通知**：仅飞书自定义机器人 Webhook（`curl`）；不开 PR；不发邮件  
-**存档**：写入 `output/` 后 commit / push 到 `main`；飞书用 `scheduler/feishu_send.py`（表格→条目 + 卡片）
+**存档**：写入 `output/` → commit → `scheduler/merge_to_main.sh` 并进 **main** 并删 `cursor/*` → 飞书（截断脚注为 main 上 GitHub 全文链接）  
+**飞书脚本**：`scheduler/feishu_send.py`（表格→条目 + 卡片）
 
 提示词见同目录：
-- `prompt-premarket.md`（美股盘前 · ✅ A'）
-- `prompt-ashare-premarket.md`（A股盘前 · ✅ A'）
-- `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 暂缓，仅存档）
+- `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
+- `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
+- `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
+- `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 暂缓）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含飞书接入）
 
-月成本粗估约 **$15–30**（Composer；两项均为中短任务）；务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$25–50+**（Composer；收盘日报单次搜索/篇幅大）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -69,20 +71,32 @@
 - 飞书标题：`美股收盘日报 YYYY-MM-DD`（推摘要；全文以仓库为准）
 - 说明：篇幅长、搜索多，月成本明显高于盘前短提醒；稳定后再考虑启用；启用时勿与旧财经日报同开
 
-### 美股盘前提醒（每日 21:00 / 美东 9:00）— ✅ A' 启用
-- cron: `0 21 * * 1-5`
-- 提示词：`scheduler/prompt-premarket.md`
+### A股收盘日报（工作日 17:00）— ✅ A' 启用
+- cron: `0 17 * * 1-5`（北京时间；错开 15:00–16:00 刚收盘高峰）
+- 提示词：`scheduler/prompt-ashare-close-daily.md`（由美股收盘日报改造）
+- 时间口径：**当日收盘**全复盘（非盘前的「昨日」口径）
+- 执行：市场状态评分 + 大盘/盘中/资金面/板块/题材/宽度/技术 + 涨停情绪 + 政策外盘 + 持仓/负面 + 盘后要闻 + 明日应对/风险/结论；仓位建议可参考 `data/raw/notes/`，**冲突以 my-soul 为准**
+- **板块口径（全文）**：行业涨跌/资金/轮动/观察/结论点名 → 东财行业；题材 → 东财概念（须标明）；禁止申万/数据宝/界面顶替
+- **板块（第5节）**：领涨/领跌各仅 TOP5；抓不到写未获取
+- **轮动（第12节）**：只基于 §4 东财资金 TOP3 + §5 东财涨跌 TOP5
+- 输出：`output/daily/ashare-close-YYYY-MM-DD.md`
+- 飞书标题：`A股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
+- 说明：篇幅与搜索量高；成本明显高于原盘前任务
+
+### 美股盘前提醒（每日 21:00 / 美东 9:00）— ⏸ 已暂停
+- cron: `0 21 * * 1-5`（历史；Automation 请 Pause）
+- 提示词：`scheduler/prompt-premarket.md`（保留备查）
 - 执行：检查以下事项并推送简短提醒
   - 今日是否有持仓标的财报发布
   - 是否有重要经济数据公布
   - 期权到期日提醒（如适用）
   - 关键技术位提醒（如某标的接近支撑/阻力位）
-- 输出：`output/daily/premarket-YYYY-MM-DD.md`
+- 输出（暂停期间勿写）：`output/daily/premarket-YYYY-MM-DD.md`
 - 飞书标题：`盘前提醒 YYYY-MM-DD`
 
-### A股盘前提醒（工作日 09:00）— ✅ A' 启用
-- cron: `0 9 * * 1-5`
-- 提示词：`scheduler/prompt-ashare-premarket.md`
+### A股盘前提醒（工作日 09:00）— ⏸ 已暂停
+- cron: `0 9 * * 1-5`（历史；Automation 请 Pause）
+- 提示词：`scheduler/prompt-ashare-premarket.md`（保留备查）
 - 模板：`templates/ashare-premarket.md`
 - 时间口径：开篇 **市场状态判断（昨日收盘）**；大盘/板块/持仓 = **昨日收盘复盘**；资金面 = **昨日**（量能对比可含近5日）；持仓负面 = **近 7 日**；要闻 = **当日 09:00 前最新**；意见 = **今日应对**
 - 执行：汇总并飞书推送摘要
@@ -94,7 +108,7 @@
   - **持仓负面消息提醒**：每只 A 股持仓扫近 7 日减持/立案/处罚/预亏等；无则明示「未见明显负面」
   - **当日盘前要闻**：3～5 条，优先今日 09:00 前；**每条必须** `YYYY-MM-DD HH:MM 来源`（精确到分钟；查不到时分则标「时刻未核实」+置信度低）
   - **今日应对**：与市场状态判断策略档一致；持仓态度（不代选股；有负面须点名）
-- 输出：`output/daily/ashare-premarket-YYYY-MM-DD.md`
+- 输出（暂停期间勿写）：`output/daily/ashare-premarket-YYYY-MM-DD.md`
 - 飞书标题：`A股盘前提醒 YYYY-MM-DD`
 
 ## 信号系统
@@ -158,15 +172,16 @@
 ## 定时任务工作流
 
 ```
-Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/ + commit/push → 飞书 Webhook 推送摘要
+Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预设任务）→ Phase 4（更新记忆）→ 写入 output/ + commit → merge_to_main → 飞书 Webhook
 ```
 
 ## 注册清单
 
 | 任务 | Cron (UTC+8) | 状态 | 输出目录 |
 |------|--------------|------|----------|
-| 美股盘前提醒 | `0 21 * * 1-5` | ✅ A' | output/daily/ |
-| A股盘前提醒 | `0 9 * * 1-5` | ✅ A' | output/daily/ |
+| A股收盘日报 | `0 17 * * 1-5` | ✅ A' | output/daily/ |
+| 美股盘前提醒 | `0 21 * * 1-5` | ⏸ 已暂停 | output/daily/ |
+| A股盘前提醒 | `0 9 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | 美股收盘日报 | `0 8 * * 1-5` | ⏸ 暂缓 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |

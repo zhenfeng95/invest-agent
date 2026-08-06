@@ -1,5 +1,9 @@
 # Automation 提示词：A股盘前提醒
 
+> **状态**：⏸ 已暂停（原 A' 任务②）  
+> **历史 cron（北京时间）**：`0 9 * * 1-5`  
+> 当前 A' 仅启用 A股收盘日报（17:00）；本提示词保留备查。
+
 把下面整段粘贴到 Cursor Automation 的 Instructions。
 
 ---
@@ -240,11 +244,18 @@
 ⚠️ 仅供参考，不构成投资建议
 ```
 
-## 写回仓库（安静存档，不要开 PR）
+## 写回仓库（合并进 main，不要开 PR）
+
+Cloud Agent 常在 `cursor/xxxx` 上工作；阿里云只 pull **main**，必须并进 main。
 
 1. 写完后 **commit**（说明：`ashare premarket YYYY-MM-DD`）
-2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
-3. 运行摘要里写清文件路径
+2. **不要** Create Pull Request
+3. 执行：
+```bash
+bash scheduler/merge_to_main.sh
+```
+4. 确认已在 **main** 且远端有该 md 后，再发飞书
+5. 运行摘要写清文件路径；合并失败须写明错误
 
 ## 飞书通知（必须做）
 
@@ -257,9 +268,10 @@ python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/ashare-prema
 ```
 若 URL 未在环境变量中，把第一个参数换成文末密钥里的完整 Webhook 字符串。
 3. **必须推送完整正文**（脚本读整个 md；超长才截断）。禁止只发几行极简版。
-4. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
-5. 失败：运行摘要写明错误，仍保留 md + commit
-6. 不要手写 `curl` 贴原始 md（表格会很难看）
+4. 超长截断时脚注为 **main** 上的 GitHub 完整 blob URL（先 `merge_to_main.sh`；不会出现 `cursor/xxxx`）
+5. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
+6. 失败：运行摘要写明错误，仍保留 md + commit
+7. 不要手写 `curl` 贴原始 md（表格会很难看）
 
 ## 成本约束
 

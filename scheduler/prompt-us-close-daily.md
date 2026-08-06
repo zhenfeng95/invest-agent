@@ -253,11 +253,12 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 - 有值得记录的信息可轻量更新 `memory/working.json`
 - 成本约束：全文很长，允许较多搜索，但优先一次覆盖多标的；不要打开无关文件；不要跑 A 股盘前任务
 
-## 写回仓库（安静存档，不要开 PR）
+## 写回仓库（合并进 main，不要开 PR）
 
 1. 写完后 **commit**（说明：`us close daily YYYY-MM-DD`）
-2. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
-3. 运行摘要写清文件路径
+2. **不要** Create Pull Request
+3. 执行 `bash scheduler/merge_to_main.sh`（并进 main 并删 `cursor/*`）
+4. 运行摘要写清文件路径
 
 ## 飞书通知（必须做）
 
@@ -265,5 +266,5 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`
 2. `curl` POST `msg_type:text`，标题：`美股收盘日报 YYYY-MM-DD`
-3. 正文：一句话总结 + 大盘要点 + 持仓要点 + 明日信号 + 风险等级；注明「全文见仓库」；勿塞整篇
+3. 正文：一句话总结 + 大盘要点 + 持仓要点 + 明日信号 + 风险等级；注明「全文见仓库 main」；勿塞整篇
 4. 成功：`"code":0`；失败写运行摘要，仍保留 md + commit

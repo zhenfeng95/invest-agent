@@ -49,10 +49,10 @@
 4. 有变化时可更新 `memory/working.json` 的 market_regime / current_focus
 5. 结尾：`⚠️ 信号仅供参考，不构成投资建议`
 
-## 写回仓库（安静存档，不要开 PR）
+## 写回仓库（合并进 main，不要开 PR）
 1. **必须**把上述 md 文件真正写入工作区（不要只聊天回复）
 2. commit（说明：`signals check YYYY-MM-DD`）
-3. **直接 push 到当前分支（通常是 main）**；**不要** Create Pull Request
+3. **不要** Create Pull Request；执行 `bash scheduler/merge_to_main.sh`
 4. 运行摘要里给出文件路径即可
 
 ## 飞书通知（必须做）
@@ -61,7 +61,7 @@
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`
 2. `curl` POST `msg_type:text`；标题：`抄底信号 YYYY-MM-DD`（任一侧「关注」或以上则标题前加 `🚨 `）
-3. 正文以当日信号结论为主；全文见仓库
+3. 正文以当日信号结论为主；全文见仓库 main
 4. 成功：`"code":0`；失败写运行摘要，仍保留 md + commit
 
 ## 成本约束

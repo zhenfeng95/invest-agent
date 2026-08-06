@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T14:50:00+08:00",
+  "updated_at": "2026-08-06T18:05:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -14,7 +14,7 @@
       "ticker": "600219",
       "name": "南山铝业",
       "asked_at": "2026-08-06",
-      "note": "持仓100@4.76；8/6盘中约4.69略贴/下穿MA5≈4.73（-0.8%），量缩；未确认有效跌破→盯收盘；不加仓；破MA5或趋势线按规则卖"
+      "note": "14:53约4.72/-1.7%；贴MA5(~4.71-4.73)；低见4.63；未确认收盘有效跌破→盯收盘；质押噪音；成本4.76亏~0.8%"
     },
     {
       "ticker": "002077",
@@ -25,139 +25,79 @@
   ],
   "recent_decisions": [
     {
-      "at": "2026-08-06T14:50:00+08:00",
-      "decision": "新增 scheduler/feishu_send.py：表格转条目+interactive卡片，改善飞书可读性",
-      "detail": "prompt 改为调用该脚本；用户需 push 并重贴 Automations Instructions"
+      "at": "2026-08-06T18:05:00+08:00",
+      "decision": "收盘日报只读两份固定 notes；对话必要时仍可扫 notes 全目录",
+      "detail": "可执行交易框架.md + 炒股赚米的核心.md；已写入 my-soul 笔记用法"
     },
     {
-      "at": "2026-08-06T14:40:00+08:00",
-      "decision": "飞书改为推送与 md 等价完整正文（原先提示词要求只推摘要导致内容过少）",
-      "detail": "已改 ashare/premarket prompt、my-soul、SETUP、rules；用户须重贴 Automations Instructions 并 push"
+      "at": "2026-08-06T18:00:00+08:00",
+      "decision": "A股收盘日报必读加入 data/raw/notes/；仓位参考笔记框架，冲突以 my-soul 为准",
+      "detail": "可执行交易框架/炒股赚米的核心；未升格细则不当硬规则"
     },
     {
-      "at": "2026-08-06T13:40:00+08:00",
-      "decision": "通知改为仅飞书 Webhook；停用邮件/Resend",
-      "detail": "已改 my-soul、rules、SETUP-A-prime、全部 prompt-*、.env.example；用户须在 Automations 重贴提示词+密钥、去掉 Resend、Run now 验证"
+      "at": "2026-08-06T17:50:00+08:00",
+      "decision": "A' 切换：仅启用A股收盘日报(17:00)；暂停美股盘前+A股盘前",
+      "detail": "rules/SETUP/my-soul/prompts状态已改；用户须在Automations Pause旧任务、新建/启用close-daily并重贴prompt"
     },
     {
-      "at": "2026-08-06T13:36:00+08:00",
-      "decision": "通知渠道建议：飞书主推（盘前即时）、邮件备份（可检索）；网站不当通知",
-      "detail": "用户有自有域名+飞书+邮箱；域名利于Resend发件域，非主推因；待用户确认后再改配置"
+      "at": "2026-08-06T17:40:00+08:00",
+      "decision": "撤回自建域名/REPORT_WEB_BASE/report-web；飞书仅 main 上 GitHub 链接",
+      "detail": "保留 merge_to_main→飞书；feishu_send 默认 blob 分支=main"
     },
     {
-      "at": "2026-08-06T13:35:00+08:00",
-      "decision": "飞书接入：当前未实现，仅 .env.example 占位 FEISHU_WEBHOOK_URL；现通知仍为 Resend 邮件",
-      "detail": "用户询问如何接入；推荐群机器人 Webhook + Automation 提示词 curl；待用户确认双通道/只飞书后再改 prompt/my-soul"
+      "at": "2026-08-06T17:35:00+08:00",
+      "decision": "定时任务写完后 merge_to_main.sh：并进 main 并删 cursor/*，再发飞书",
+      "detail": "阿里云只 pull main；需 Cloud Agent 有 main 写权限；prompts/SETUP/my-soul 已改"
     },
     {
-      "at": "2026-08-06T11:25:00+08:00",
-      "decision": "按可执行交易框架：当前仓位宜落在30%~50%，中枢约40%；未达稳定向上60-80%",
-      "detail": "上证在MA5/10上；8/5进攻后8/6消化；沪深300/成长偏弱；主线多极（贵金属/机器人军工等）延续性中等"
+      "at": "2026-08-06T17:05:00+08:00",
+      "decision": "飞书截断双链：GitHub blob + REPORT_WEB_BASE 可读页；新增 services/report-web（GitHub webhook→渲染）",
+      "detail": "URL约定 /r/{stem}；用户阿里云部署后 Automations 密钥加 REPORT_WEB_BASE"
     },
     {
-      "at": "2026-08-06T11:20:00+08:00",
-      "decision": "600219持仓建议：暂持、盯收盘相对MA5；不加仓；有效跌破MA5/趋势线卖",
-      "detail": "成本4.76现约4.69亏~1.5%；大盘偏强但个股回踩；8/5控股股东追加质押为情绪噪音"
+      "at": "2026-08-06T17:00:00+08:00",
+      "decision": "feishu_send 用当前分支（含 cursor/xxx）拼 blob URL，并对 / 做百分号编码",
+      "detail": "先 push 再发飞书；可 REPO_BRANCH 覆盖"
     },
     {
-      "at": "2026-08-06T11:10:00+08:00",
-      "decision": "沉淀笔记 data/raw/notes/可执行交易框架.md（自 xmind 梳理，原文件未改）",
-      "detail": "完整交易系统：大盘三态仓位、选股、买卖点、止损、八步曲、复盘、势能清单；与 my-soul/炒股赚米的核心有重叠，升格硬规则须用户确认"
+      "at": "2026-08-06T16:55:00+08:00",
+      "decision": "feishu_send 截断脚注改为 GitHub 完整 blob URL；先 push 再发飞书",
+      "detail": "自动读 git remote；可选 REPO_WEB_BASE；prompt 已同步"
     },
     {
-      "at": "2026-08-06T10:12:00+08:00",
-      "decision": "A'回切：停用美股收盘日报；恢复美股盘前(21:00)+A股盘前(09:00)",
-      "detail": "已改 rules/SETUP/my-soul/prompt 状态；用户须在 Automations Pause 收盘日报、Enable/改回 prompt-premarket"
+      "at": "2026-08-06T16:55:00+08:00",
+      "decision": "A股收盘日报全文板块口径统一东财：行业=东财行业，题材=东财概念",
+      "detail": "总则+§0/1/3/6/11/12/15/17；Automations 须重贴 prompt-ashare-close-daily.md"
     },
     {
-      "at": "2026-08-06T10:08:00+08:00",
-      "decision": "已将 cursor/* 上最新日报/信号并入 main 并删除全部 9 个过期 cursor 远程分支",
-      "detail": "commit 8ff013e；main 现含 ashare-premarket 08-05/06、premarket 08-04/05、signals daily 08-04/05；本地其它 WIP 未提交"
+      "at": "2026-08-06T16:50:00+08:00",
+      "decision": "A股收盘§12轮动与§4/§5东财口径一致锁死；§4主力行业亦禁申万顶替",
+      "detail": "prompt + rules 已改；Automations 需重贴"
     },
     {
-      "at": "2026-08-06T10:05:00+08:00",
-      "decision": "澄清：Automations 日报写在 cursor/* 分支，不是 main；这是 Cloud Agent 隔离分支机制",
-      "detail": "关 Create PR 只停开PR，不停建分支；看日报优先邮件；main 需手动 merge 或开PR后合并；可清理旧 cursor/*"
+      "at": "2026-08-06T16:45:00+08:00",
+      "decision": "A股收盘日报§5锁死东财行业：领涨/领跌各TOP5；禁申万/数据宝/界面顶替",
+      "detail": "已改 prompt-ashare-close-daily.md + rules；Automations 需重贴提示词"
     },
     {
-      "at": "2026-08-06T09:55:00+08:00",
-      "decision": "A'切换：停用美股盘前(21:00)；启用美股收盘日报(08:00)；A股盘前09:00不变",
-      "detail": "已改 rules/SETUP/my-soul/prompt状态；用户须在Automations Pause旧盘前、新建或改写为prompt-us-close-daily并push"
+      "at": "2026-08-06T15:45:00+08:00",
+      "decision": "A股收盘日报实测：composer-2.5-fast 单次约168.8万token（Included）",
+      "detail": "按Fast单价粗算单次约$6-8；月×20约$120-160等价消耗；明显高于盘前；建议暂不启用或改精简版/非Fast"
     },
     {
-      "at": "2026-08-06T09:50:00+08:00",
-      "decision": "新增 scheduler/prompt-us-close-daily.md（美股收盘日报，建议工作日08:00）",
-      "detail": "现已纳入A'启用"
+      "at": "2026-08-06T15:20:00+08:00",
+      "decision": "成本评估：仅A股收盘日报约$25-50/月；现A两任务约$15-30；单开收盘约贵50%-100%",
+      "detail": "相对工作量推算非账单；建议Run now一次看Usage再定"
     },
     {
-      "at": "2026-08-06T09:30:00+08:00",
-      "decision": "美股8/5卖出 AAPL@$308、VOO@$708；现美股仅持 IBIT+SGOV（A股600219仍持）",
-      "detail": "已写入 trades CSV / positions-2026-08-05|06 / summary；粗算合计+$0.12（未计佣金）"
+      "at": "2026-08-06T15:05:00+08:00",
+      "decision": "新增 scheduler/prompt-ashare-close-daily.md（A股收盘日报，由美股收盘日报改造）",
+      "detail": "当日收盘全复盘+市场状态评分+资金面/板块/情绪/持仓纪律；默认暂未启用；rules/SETUP已挂备查"
     },
     {
-      "at": "2026-08-06T09:25:00+08:00",
-      "decision": "沉淀笔记 data/raw/notes/炒股赚米的核心.md：九条总纲+5日线买点体系+盈亏心态",
-      "detail": "口述整理；4W/盘整概率等未写入 my-soul，待用户确认后再升格为硬规则"
-    },
-    {
-      "at": "2026-08-05T17:50:00+08:00",
-      "decision": "A股盘前置顶「0.市场状态判断」：六选一周期+100分评分→防守/轻仓试错/积极参与/进攻",
-      "detail": "8/5样例评分69→轻仓试错/反弹确认；Automations需重贴prompt"
-    },
-    {
-      "at": "2026-08-05T17:40:00+08:00",
-      "decision": "盘前要闻每条必须标注精确到分钟的发布时间：YYYY-MM-DD HH:MM 来源",
-      "detail": "查不到时分则写「时刻未核实」+置信度低，禁止只写来源；已改 prompt/template/rules"
-    },
-    {
-      "at": "2026-08-05T17:35:00+08:00",
-      "decision": "A股盘前强制「昨日资金面」：量能放缩+北向+主力行业流入/流出TOP3，禁止只用成交额总量",
-      "detail": "入口：东财 zjlx / bkzj / hsgt；已改 prompt/template/rules；Automations 需重贴提示词"
-    },
-    {
-      "at": "2026-08-05T17:30:00+08:00",
-      "decision": "A股盘前增加「持仓负面消息提醒」：每只A股持仓扫近7日负面新闻，无则明示未见",
-      "detail": "已写入 prompt/template/rules/my-soul；Automations 需重新粘贴提示词"
-    },
-    {
-      "at": "2026-08-05T17:15:00+08:00",
-      "decision": "A股盘前口径固定：大盘/板块/持仓=昨日复盘；要闻=当日09:00前；意见=今日应对",
-      "detail": "已改 prompt-ashare-premarket.md、templates/ashare-premarket.md、rules.md、my-soul 通知偏好；Automations 需重新粘贴提示词"
-    },
-    {
-      "at": "2026-08-05T16:55:00+08:00",
-      "decision": "A' 任务②：停用合并抄底信号，改为工作日09:00 A股盘前提醒",
-      "detail": "内容：昨日复盘+盘前要闻+今日应对；提示词 prompt-ashare-premarket.md；需在 Automations 更新并暂停旧信号任务"
-    },
-    {
-      "at": "2026-08-05T16:45:00+08:00",
-      "decision": "生成 A股日报 2026-08-05；本会话无 Resend MCP，未能发邮件，已写入 output/daily/ashare-2026-08-05.md",
-      "detail": "上证3878 +1.47%站上MA5；持仓仅600219 100股@4.76 收4.80"
-    },
-    {
-      "at": "2026-08-05T16:35:00+08:00",
-      "decision": "写入首批交易/持仓到 data/raw/trades/",
-      "detail": "8/4买 AAPL 0.01@$304、VOO 0.01@$700；持仓 IBIT 0.05@$35.60、SGOV 0.01@$100；8/5买 600219 100股@¥4.76"
-    },
-    {
-      "at": "2026-08-05T13:20:00+08:00",
-      "decision": "002077按5日线/趋势线反弹框架：今日不宜追入，等缩量回踩",
-      "detail": "用户明确只做反弹、暂忽略上方长均线压制；事实：现价约12.49，MA5≈11.75，8/4已放量突破MA5"
-    },
-    {
-      "at": "2026-08-05T13:12:00+08:00",
-      "decision": "从 my-soul 移除 A股选股细则（方式1/2 + 均线过滤）；选股由用户自理，Agent 只保留买卖执行（四选一/止损）",
-      "detail": "分析框架要点同步改为「选股用户自理」；方式2扫描不再作为默认流程"
-    },
-    {
-      "at": "2026-08-05T11:35:00+08:00",
-      "decision": "已写入 my-soul：A股选股主流程方式2+均线过滤；方式1为精选池；买卖仍四选一",
-      "detail": "MTD>5%/额>3亿/换手>2%；5/10/20多头；长均线3–5%压制不参与（已于 13:12 撤销）"
-    },
-    {
-      "at": "2026-08-05T09:35:00+08:00",
-      "decision": "定时任务通知改为邮件（Resend），存档仍 commit/push，不开 PR",
-      "detail": "收件箱 zhenfengxiaoge@outlook.com；方案 B"
+      "at": "2026-08-06T14:55:00+08:00",
+      "decision": "600219：暂不因盘中贴线卖；盯收盘是否有效跌破MA5/趋势线",
+      "detail": "新浪14:53价4.72昨收4.80；MA5约4.71-4.73；低4.63量与昨近似"
     }
   ],
   "market_regime": {
@@ -167,12 +107,45 @@
     "notes": "2026-08-06盘中按可执行框架：上证站上MA5/MA10，属震荡偏多→进攻过渡；建议总仓约30-50%（中枢~40%），未给满60-80%"
   },
   "open_questions": [
-    "push feishu_send.py + 最新 prompt；Automations 重贴 Instructions 后 Run now 看卡片效果",
+    "Automations：Pause美股盘前与A股盘前；挂prompt-ashare-close-daily+密钥；cron 17:00；push后Run now",
+    "push 本批后 Automations 重贴 prompts；Run now 验证 merge_to_main + 飞书脚注为 main blob",
+    "确认 Cloud Agent 能 push main；push 本批后 Automations 重贴 prompts 并 Run now 验证 merge_to_main",
+    "push 最新 feishu_send.py + prompts；Automations 重贴后截断脚注应出现完整 github.com 链接",
+    "A股收盘§5已锁东财TOP5；若再启用须重贴 prompt 并 Run now 抽查来源行",
     "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？",
-    "在 Cursor Automations：Pause/删除美股收盘日报（Invest US Close Daily）；Enable 美股盘前 Invest Premarket Reminder，粘贴最新 prompt-premarket.md，cron 北京 21:00（UTC 则 0 13 * * 1-5）",
     "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/"
   ],
   "soul_updates": [
+    {
+      "updated_at": "2026-08-06T18:05:00+08:00",
+      "changes": "其他补充·笔记用法：定时收盘日报只读两份固定 md；日常对话必要时扫 notes/",
+      "reason": "用户担心 notes 日后增多拖累定时任务"
+    },
+    {
+      "updated_at": "2026-08-06T18:00:00+08:00",
+      "changes": "无 my-soul 硬规则变更；仅收盘日报 prompt 增加 notes 参考优先级",
+      "reason": "用户要求收盘仓位分析纳入笔记框架"
+    },
+    {
+      "updated_at": "2026-08-06T17:50:00+08:00",
+      "changes": "通知偏好：A' 仅A股收盘日报工作日17:00；美股盘前与A股盘前暂停",
+      "reason": "用户要求只保留收盘日报"
+    },
+    {
+      "updated_at": "2026-08-06T17:40:00+08:00",
+      "changes": "去掉可读页/自建域名；飞书截断仅 GitHub main 全文链接；存档仍 merge_to_main",
+      "reason": "用户暂不用自有网站域名"
+    },
+    {
+      "updated_at": "2026-08-06T17:35:00+08:00",
+      "changes": "存档：commit 后必须 merge_to_main（并 main、删 cursor 分支）再发飞书；阿里云只拉 main",
+      "reason": "用户阿里云 pull main，需自动化合并临时分支"
+    },
+    {
+      "updated_at": "2026-08-06T17:05:00+08:00",
+      "changes": "通知偏好：可选 REPORT_WEB_BASE 可读页（阿里云 webhook 渲染），与飞书截断 GitHub 脚注并列",
+      "reason": "用户要用自有域名渲染超长A股收盘日报"
+    },
     {
       "updated_at": "2026-08-06T14:40:00+08:00",
       "changes": "通知：飞书改为完整正文（超长截断），不再只推摘要",
