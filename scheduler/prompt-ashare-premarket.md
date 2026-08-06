@@ -251,19 +251,29 @@
 **不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
-2. Shell/`curl` POST：
+2. **必须推送与仓库 md 等价的完整正文**（不是三四行摘要）。用户要在飞书里直接看完盘前内容。
+3. 推荐用 Python 读已写好的 md 再 POST（避免手工删减、也避免 JSON 转义出错）：
 
 ```bash
-curl -sS -X POST "$FEISHU_WEBHOOK_URL" \
-  -H 'Content-Type: application/json' \
-  --data-binary @- <<'EOF'
-{"msg_type":"text","content":{"text":"A股盘前提醒 YYYY-MM-DD\n\n<要点：市场状态/仓位建议/持仓态度/今日应对>"}}
-EOF
+python3 - <<'PY'
+import json, os, urllib.request
+path = "output/daily/ashare-premarket-YYYY-MM-DD.md"  # 换成当天真实路径
+url = os.environ.get("FEISHU_WEBHOOK_URL") or "PASTE_FROM_INSTRUCTIONS"
+text = open(path, encoding="utf-8").read().strip()
+# 自定义机器人请求体上限约 20KB；超长则保留标题+尽量多正文并注明截断
+max_chars = 5500
+if len(text) > max_chars:
+    text = text[:max_chars] + "\n\n…（已截断，全文见仓库同名 md）"
+body = json.dumps({"msg_type": "text", "content": {"text": text}}, ensure_ascii=False).encode("utf-8")
+req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+print(urllib.request.urlopen(req).read().decode())
+PY
 ```
 
-3. 正文：推 **要点摘要**（市场状态档位、仓位建议、持仓态度、今日应对）；全文以仓库 md 为准，勿把整篇长报告塞进一条消息
+若 Instructions 里的 URL 未注入环境变量，把上面 `url = ...` 改成直接使用文末密钥中的完整 Webhook 字符串。
 4. 成功：响应含 `"code":0`（或旧版 `"StatusCode":0`）
 5. 失败：运行摘要写明错误，仍保留 md + commit
+6. **禁止**只发「市场状态一句话 + 今日应对一句话」这种极简版；至少覆盖 md 里各一级章节的完整要点
 
 ## 成本约束
 

@@ -41,19 +41,28 @@
 **不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
-2. Shell/`curl` POST：
+2. **推送与仓库 md 等价的完整正文**（盘前本身就短，不要再二次压缩成几行）
+3. 推荐用 Python 读已写好的 md 再 POST：
 
 ```bash
-curl -sS -X POST "$FEISHU_WEBHOOK_URL" \
-  -H 'Content-Type: application/json' \
-  --data-binary @- <<'EOF'
-{"msg_type":"text","content":{"text":"盘前提醒 YYYY-MM-DD\n\n<短摘要要点>"}}
-EOF
+python3 - <<'PY'
+import json, os, urllib.request
+path = "output/daily/premarket-YYYY-MM-DD.md"  # 换成当天真实路径
+url = os.environ.get("FEISHU_WEBHOOK_URL") or "PASTE_FROM_INSTRUCTIONS"
+text = open(path, encoding="utf-8").read().strip()
+max_chars = 5500
+if len(text) > max_chars:
+    text = text[:max_chars] + "\n\n…（已截断，全文见仓库同名 md）"
+body = json.dumps({"msg_type": "text", "content": {"text": text}}, ensure_ascii=False).encode("utf-8")
+req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+print(urllib.request.urlopen(req).read().decode())
+PY
 ```
 
-3. 正文：与 md 同级的短摘要即可（全文以仓库为准）；单条不宜过长
+若 URL 未在环境变量中，把 `url = ...` 改成文末密钥里的完整 Webhook 字符串。
 4. 成功：响应含 `"code":0`（或旧版 `"StatusCode":0`）
 5. 失败：运行摘要写明错误，仍保留 md + commit
+6. **禁止**只发标题或一行极简消息（除非 md 本身就只有这些）
 
 ## 成本约束
 少工具调用；能一次搜索覆盖的不要拆多次。不要打开无关文件。
