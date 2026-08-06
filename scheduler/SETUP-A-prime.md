@@ -3,10 +3,10 @@
 你已选择 **A'**：只用 Cursor Automations，开 **2 个** 定时任务。
 
 **当前组合**：
-1. **美股盘前提醒**（工作日 21:00）
+1. **美股盘前提醒**（工作日 21:00）— 财报/经济数据/期权/技术位短提醒（见 `prompt-premarket.md`）
 2. **A股盘前提醒**（工作日 09:00）— 市场状态判断/评分 + 昨日大盘/资金面/板块/持仓复盘 + 持仓近7日负面消息 + 当日盘前要闻 + 今日应对
 
-**已停用**：合并抄底信号（SPX + BTC）。若 Automations 里还有旧任务，请 **Pause / 删除**。
+**已停用 / 暂缓**：美股收盘日报（成本偏高，见 `prompt-us-close-daily.md`）；合并抄底信号（SPX + BTC）。若 Automations 里还有「美股收盘日报」任务，请 **Pause / 删除**。
 
 **通知渠道**：邮件 → `zhenfengxiaoge@outlook.com`（不再靠 GitHub PR 提醒）。  
 **存档方式**：仍写入 `output/` 并 commit / push；**不开 PR**。
@@ -95,7 +95,9 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 | 触发 | Schedule / Cron：`0 21 * * 1-5`（若界面按 UTC，需换算；目标是北京时间工作日 21:00） |
 | Instructions | 整段粘贴 `scheduler/prompt-premarket.md` 里「---」以下内容 |
 
-### Automation ② A股盘前提醒（替换原「合并抄底信号」）
+若以前建过 **Invest US Close Daily**（美股收盘 08:00）：请 **Pause 或删除**，避免重复扣费。若盘前任务已 Pause，重新 **Enable** 并确认 Instructions 为最新 `prompt-premarket.md`。
+
+### Automation ② A股盘前提醒
 
 | 项 | 填什么 |
 |----|--------|
@@ -105,11 +107,9 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 
 若以前建过 **Invest SPX+BTC Signals**：请 **Pause 或删除**，避免与 A股盘前抢同一时段、重复扣费。
 
-**时区提醒**：Cursor cron 若按 UTC，北京时间 21:00 = UTC `0 13 * * 1-5`；北京 09:00 = UTC `0 1 * * 1-5`。以界面标注为准。
+**时区提醒**：Cursor cron 若按 UTC：北京 21:00 = UTC `0 13 * * 1-5`；北京 09:00 = UTC `0 1 * * 1-5`。以界面标注为准。
 
-若 Automation 已建过：只需 **更新名称/Instructions**、**关掉 Create PR**、**加上 Resend MCP**，不必强行新建。
-
-**想更早收到**：可把 A股任务改成 `0 8 * * 1-5`（北京 08:00），并同步改 `rules.md`。
+若 Automation 已建过：只需 **更新名称/Instructions/Cron**、**关掉 Create PR**、**加上 Resend MCP**，不必强行新建。
 
 ---
 
@@ -144,19 +144,20 @@ Cursor Automations **没有原生邮件工具**，用官方 [Resend MCP](https:/
 
 确认：
 
-- 邮件正文含大盘 / 板块 / 持仓 / 要闻 / **意见与建议**
-- 缺数据应写「未获取」，未明显编造
+- 美股盘前：仓库有 `premarket-YYYY-MM-DD.md`；邮件为短摘要
+- A股盘前：邮件/正文含市场状态 / 大盘 / 资金面 / 板块 / 持仓 / 要闻 / **今日应对**
+- 缺数据应写「未获取」/「暂无可靠数据」，未明显编造
 
 ---
 
 ## 第 6 步：观察一周成本
 
 - 看 [Usage](https://cursor.com/dashboard/usage)
-- 目标：两项合计大约 **$15–30/月**（Resend 免费额度对个人投研足够）
+- 目标：两项合计大约 **$15–30/月**（Composer；美股盘前为短任务）；Resend 免费额度通常够用
 - 偏贵 → 换更便宜模型、缩短提示词、减少搜索次数
 
 ---
 
 ## 暂不要开
 
-财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸，等 A' 稳定再加。
+美股收盘日报、财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸，等成本可接受或 A' 稳定再加。

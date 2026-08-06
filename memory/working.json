@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T09:30:00+08:00",
+  "updated_at": "2026-08-06T10:12:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -24,6 +24,31 @@
     }
   ],
   "recent_decisions": [
+    {
+      "at": "2026-08-06T10:12:00+08:00",
+      "decision": "A'回切：停用美股收盘日报；恢复美股盘前(21:00)+A股盘前(09:00)",
+      "detail": "已改 rules/SETUP/my-soul/prompt 状态；用户须在 Automations Pause 收盘日报、Enable/改回 prompt-premarket"
+    },
+    {
+      "at": "2026-08-06T10:08:00+08:00",
+      "decision": "已将 cursor/* 上最新日报/信号并入 main 并删除全部 9 个过期 cursor 远程分支",
+      "detail": "commit 8ff013e；main 现含 ashare-premarket 08-05/06、premarket 08-04/05、signals daily 08-04/05；本地其它 WIP 未提交"
+    },
+    {
+      "at": "2026-08-06T10:05:00+08:00",
+      "decision": "澄清：Automations 日报写在 cursor/* 分支，不是 main；这是 Cloud Agent 隔离分支机制",
+      "detail": "关 Create PR 只停开PR，不停建分支；看日报优先邮件；main 需手动 merge 或开PR后合并；可清理旧 cursor/*"
+    },
+    {
+      "at": "2026-08-06T09:55:00+08:00",
+      "decision": "A'切换：停用美股盘前(21:00)；启用美股收盘日报(08:00)；A股盘前09:00不变",
+      "detail": "已改 rules/SETUP/my-soul/prompt状态；用户须在Automations Pause旧盘前、新建或改写为prompt-us-close-daily并push"
+    },
+    {
+      "at": "2026-08-06T09:50:00+08:00",
+      "decision": "新增 scheduler/prompt-us-close-daily.md（美股收盘日报，建议工作日08:00）",
+      "detail": "现已纳入A'启用"
+    },
     {
       "at": "2026-08-06T09:30:00+08:00",
       "decision": "美股8/5卖出 AAPL@$308、VOO@$708；现美股仅持 IBIT+SGOV（A股600219仍持）",
@@ -102,9 +127,9 @@
     "notes": "A股：上证5日线/趋势线择总仓；选股用户自理；买卖看5日线/趋势线四选一；美股目标配比 VOO40/QQQ20/IBIT10/SGOV10/机动20；盘前第0节市场状态评分（2026-08-05样例：69分/反弹确认/轻仓试错）"
   },
   "open_questions": [
-    "在 Cursor Automations：暂停/删除 Invest SPX+BTC Signals；新建或改写为 A股盘前，粘贴 prompt-ashare-premarket.md，并 push 最新 scheduler/ 与 data/raw/trades/",
-    "IDE 对话环境未挂 Resend MCP，临时日报无法直发邮件；需在 Cursor Settings→MCP 接入 Resend，或继续用 Automations 发信",
-    "用户需在 Automations 里接入 Resend MCP 并关掉 Create PR，再 Run now 验证邮件"
+    "在 Cursor Automations：Pause/删除美股收盘日报（Invest US Close Daily）；Enable 美股盘前 Invest Premarket Reminder，粘贴最新 prompt-premarket.md，cron 北京 21:00（UTC 则 0 13 * * 1-5）",
+    "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/",
+    "IDE 对话环境未挂 Resend MCP，临时日报无法直发邮件；需在 Cursor Settings→MCP 接入 Resend，或继续用 Automations 发信"
   ],
   "soul_updates": [
     {
@@ -181,6 +206,16 @@
       "updated_at": "2026-08-05T17:50:00+08:00",
       "changes": "A股盘前置顶市场状态判断：六选一周期+均线/量能/情绪/主线+100分策略映射",
       "reason": "用户要求在昨日大盘复盘前增加市场状态判断框架"
+    },
+    {
+      "updated_at": "2026-08-06T09:55:00+08:00",
+      "changes": "通知偏好：A' 改为美股收盘日报(08:00)+A股盘前(09:00)；美股盘前提醒停用",
+      "reason": "用户要求停盘前、开收盘日报"
+    },
+    {
+      "updated_at": "2026-08-06T10:12:00+08:00",
+      "changes": "通知偏好：A' 改回美股盘前(21:00)+A股盘前(09:00)；美股收盘日报因成本暂缓",
+      "reason": "用户要求暂不启动收盘日报，恢复盘前任务"
     }
   ]
 }

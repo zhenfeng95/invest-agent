@@ -5,21 +5,22 @@
 
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
-| **① 美股盘前提醒** | `0 21 * * 1-5` | 工作日 21:00 |
+| **① 美股盘前提醒** | `0 21 * * 1-5` | 工作日 21:00（财报/数据/技术位短提醒） |
 | **② A股盘前提醒** | `0 9 * * 1-5` | 工作日 09:00（市场状态评分 + 昨日复盘/资金面 + 持仓负面 + 盘前要闻 + 今日应对） |
 
-**已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
+**已停用**：美股收盘日报（原工作日 08:00，成本偏高暂缓）；合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
 
 **通知**：Resend MCP 发邮件 → `zhenfengxiaoge@outlook.com`（不开 PR，不靠 GitHub 提醒）  
 **存档**：写入 `output/` 后 commit / push 到 `main`
 
 提示词见同目录：
-- `prompt-premarket.md`（美股盘前）
-- `prompt-ashare-premarket.md`（A股盘前）
+- `prompt-premarket.md`（美股盘前 · ✅ A'）
+- `prompt-ashare-premarket.md`（A股盘前 · ✅ A'）
+- `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 暂缓，仅存档）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含 Resend 接入）
 
-月成本粗估约 **$15–30**（视模型而定）；务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$15–30**（Composer；两项均为中短任务）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -60,15 +61,24 @@
 - 1-2 句核心判断/提醒
 ```
 
+### 美股收盘日报（工作日 08:00）— ⏸ 暂缓（成本偏高，A' 暂不启用）
+- cron: `0 8 * * 1-5`（历史建议；Automation 请 Pause / 勿新建）
+- 提示词：`scheduler/prompt-us-close-daily.md`（保留备查）
+- 执行：完整复盘昨夜美股（大盘/宏观/板块/宽度/技术/个股/财报/机构/轮动/持仓观察/明日计划/风险）
+- 输出（停用期间勿写）：`output/daily/us-close-YYYY-MM-DD.md`
+- 邮件主题：`美股收盘日报 YYYY-MM-DD`（建议 HTML 摘要；全文以仓库为准）
+- 说明：篇幅长、搜索多，月成本明显高于盘前短提醒；稳定后再考虑启用；启用时勿与旧财经日报同开
+
 ### 美股盘前提醒（每日 21:00 / 美东 9:00）— ✅ A' 启用
 - cron: `0 21 * * 1-5`
+- 提示词：`scheduler/prompt-premarket.md`
 - 执行：检查以下事项并推送简短提醒
   - 今日是否有持仓标的财报发布
   - 是否有重要经济数据公布
   - 期权到期日提醒（如适用）
   - 关键技术位提醒（如某标的接近支撑/阻力位）
-- 输出：`output/daily/premarket-YYYY-MM-DD.md`（或直接推送短消息）
-- 提示词：`scheduler/prompt-premarket.md`
+- 输出：`output/daily/premarket-YYYY-MM-DD.md`
+- 邮件主题：`盘前提醒 YYYY-MM-DD`
 
 ### A股盘前提醒（工作日 09:00）— ✅ A' 启用
 - cron: `0 9 * * 1-5`
@@ -157,6 +167,7 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 |------|--------------|------|----------|
 | 美股盘前提醒 | `0 21 * * 1-5` | ✅ A' | output/daily/ |
 | A股盘前提醒 | `0 9 * * 1-5` | ✅ A' | output/daily/ |
+| 美股收盘日报 | `0 8 * * 1-5` | ⏸ 暂缓 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
 | 周度回顾 | `0 10 * * 0` | ⏸ 暂缓 | output/research/weekly/ |
