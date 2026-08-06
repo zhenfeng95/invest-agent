@@ -2,3 +2,5 @@ date,market,ticker,name,side,qty,price,currency,fee,note
 2026-08-04,US,AAPL,苹果,buy,0.01,304.00,USD,,美股买入
 2026-08-04,US,VOO,标普500 ETF,buy,0.01,700.00,USD,,美股买入
 2026-08-05,A,600219,南山铝业,buy,100,4.76,CNY,,5日均线附近低吸
+2026-08-05,US,AAPL,苹果,sell,0.01,308.00,USD,,美股卖出；平8/4仓
+2026-08-05,US,VOO,标普500 ETF,sell,0.01,708.00,USD,,美股卖出；平8/4仓

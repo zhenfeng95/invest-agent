@@ -2,25 +2,8 @@
   "as_of": "2026-08-05",
   "source": "user_report",
   "currency_note": "美股持仓成本与市值单位为 USD；A股为 CNY",
+  "notes": "日末口径：同日已卖出 AAPL/VOO；美股剩 IBIT、SGOV。日内曾持有 AAPL/VOO 见 trades CSV。权威后续快照见 positions-2026-08-06.json。",
   "positions": [
-    {
-      "market": "US",
-      "ticker": "AAPL",
-      "name": "苹果",
-      "qty": 0.01,
-      "avg_cost": 304.0,
-      "currency": "USD",
-      "note": "2026-08-04 买入；成本即该笔成交价"
-    },
-    {
-      "market": "US",
-      "ticker": "VOO",
-      "name": "标普500 ETF",
-      "qty": 0.01,
-      "avg_cost": 700.0,
-      "currency": "USD",
-      "note": "2026-08-04 买入；成本即该笔成交价（若另有历史仓未告知，此处仅记本笔）"
-    },
     {
       "market": "US",
       "ticker": "IBIT",
@@ -47,6 +30,30 @@
       "avg_cost": 4.76,
       "currency": "CNY",
       "note": "2026-08-05 买入；5日均线附近低吸"
+    }
+  ],
+  "closed_same_day": [
+    {
+      "market": "US",
+      "ticker": "AAPL",
+      "name": "苹果",
+      "qty": 0.01,
+      "buy": { "date": "2026-08-04", "price": 304.0 },
+      "sell": { "date": "2026-08-05", "price": 308.0 },
+      "pnl_usd": 0.04,
+      "pnl_pct": 1.32,
+      "note": "0.01×(308−304)"
+    },
+    {
+      "market": "US",
+      "ticker": "VOO",
+      "name": "标普500 ETF",
+      "qty": 0.01,
+      "buy": { "date": "2026-08-04", "price": 700.0 },
+      "sell": { "date": "2026-08-05", "price": 708.0 },
+      "pnl_usd": 0.08,
+      "pnl_pct": 1.14,
+      "note": "0.01×(708−700)"
     }
   ]
 }
