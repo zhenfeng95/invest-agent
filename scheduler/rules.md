@@ -11,7 +11,7 @@
 **已停用**：美股收盘日报（原工作日 08:00，成本偏高暂缓）；合并抄底信号（SPX + BTC）— 规则仍保留在下方，Automation 请暂停/删除。
 
 **通知**：仅飞书自定义机器人 Webhook（`curl`）；不开 PR；不发邮件  
-**存档**：写入 `output/` 后 commit / push 到 `main`；飞书推送完整正文（超长截断）
+**存档**：写入 `output/` 后 commit / push 到 `main`；飞书用 `scheduler/feishu_send.py`（表格→条目 + 卡片）
 
 提示词见同目录：
 - `prompt-premarket.md`（美股盘前 · ✅ A'）

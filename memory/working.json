@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06T14:40:00+08:00",
+  "updated_at": "2026-08-06T14:50:00+08:00",
   "current_focus": [
     "VOO",
     "QQQ",
@@ -24,6 +24,11 @@
     }
   ],
   "recent_decisions": [
+    {
+      "at": "2026-08-06T14:50:00+08:00",
+      "decision": "新增 scheduler/feishu_send.py：表格转条目+interactive卡片，改善飞书可读性",
+      "detail": "prompt 改为调用该脚本；用户需 push 并重贴 Automations Instructions"
+    },
     {
       "at": "2026-08-06T14:40:00+08:00",
       "decision": "飞书改为推送与 md 等价完整正文（原先提示词要求只推摘要导致内容过少）",
@@ -162,7 +167,7 @@
     "notes": "2026-08-06盘中按可执行框架：上证站上MA5/MA10，属震荡偏多→进攻过渡；建议总仓约30-50%（中枢~40%），未给满60-80%"
   },
   "open_questions": [
-    "push 最新 prompt 后，Automations 重贴 Instructions（含 Webhook）再 Run now，确认飞书正文完整",
+    "push feishu_send.py + 最新 prompt；Automations 重贴 Instructions 后 Run now 看卡片效果",
     "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？",
     "在 Cursor Automations：Pause/删除美股收盘日报（Invest US Close Daily）；Enable 美股盘前 Invest Premarket Reminder，粘贴最新 prompt-premarket.md，cron 北京 21:00（UTC 则 0 13 * * 1-5）",
     "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/"

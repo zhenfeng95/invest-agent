@@ -9,7 +9,7 @@
 **已停用 / 暂缓**：美股收盘日报（成本偏高，见 `prompt-us-close-daily.md`）；合并抄底信号（SPX + BTC）。若 Automations 里还有「美股收盘日报」任务，请 **Pause / 删除**。
 
 **通知渠道**：**仅飞书**（自定义机器人 Webhook）。不再发邮件 / 不再用 Resend。  
-**存档方式**：仍写入 `output/` 并 commit / push；**不开 PR**。飞书推送与 md **等价完整正文**（请求体约 20KB 上限，超长才截断）。
+**存档方式**：仍写入 `output/` 并 commit / push；**不开 PR**。飞书用 `scheduler/feishu_send.py` 推送（表格转条目 + 卡片；超长截断）。
 
 ---
 
