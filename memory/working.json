@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-06T17:05:00+08:00",
+    "updated_at": "2026-08-06T21:05:00+08:00",
     "current_focus": ["VOO", "QQQ", "IBIT", "SGOV", "NVDA", "AAPL", "600219"],
     "active_research": [
         {
@@ -16,6 +16,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-06T21:05:00+08:00",
+            "decision": "美股盘前提醒 2026-08-06 已生成并邮件推送",
+            "detail": "output/daily/premarket-2026-08-06.md；今日数据：初请+生产率；NVDA财报8/26；VOO近714阻力"
+        },
         {
             "at": "2026-08-06T17:05:00+08:00",
             "decision": "A股收盘日报 2026-08-06 已生成并推送",
