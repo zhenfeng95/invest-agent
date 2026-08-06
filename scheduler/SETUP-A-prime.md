@@ -91,8 +91,8 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 仓库 | `invest-agent` 的 `main` |
 | 模型 | Composer 或 Sonnet（省钱选 Composer） |
-| Tools | ✅ **Shell**（用于 `curl` 推飞书）；❌ **关闭 Create pull request**；❌ 不需要 Resend |
-| 通知 | 靠飞书，不要依赖 GitHub / 邮件提醒 |
+| Tools | ❌ **不要开** Send to Slack / Teams / Open Pull Request；可选 Memories；飞书靠提示词里的 `curl`（Cloud Agent **自带终端**，Tools 列表里没有单独的 Shell 项） |
+| 通知 | 靠飞书 Webhook，不要依赖 Slack / 邮件 / GitHub |
 
 ### Automation ① 美股盘前提醒
 
@@ -142,7 +142,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 | 运行是否成功 | Automations → 该任务 → Runs，是否 Failed |
 | 有没有飞书消息 | 目标群是否收到机器人消息 |
 | Webhook | Instructions 文末是否有正确的 `FEISHU_WEBHOOK_URL` |
-| Shell | Tools 是否允许执行 `curl` |
+| Shell | **不用找**：Cloud Agent 自带终端；Tools 菜单里没有 Shell 选项 |
 | 是否误开 PR | 关掉 Create pull request |
 | 提示词是否最新 | push 最新 `prompt-*.md` 后，把 Instructions 再粘贴一遍（含密钥） |
 | 仓库/分支是否选对 | 必须是你的 `invest-agent` 的 `main` |
