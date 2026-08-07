@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-08T17:00:00+08:00",
+    "updated_at": "2026-08-07T21:05:00+08:00",
     "current_focus": ["VOO", "QQQ", "IBIT", "SGOV", "NVDA", "600219"],
     "active_research": [
         {
@@ -16,6 +16,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-07T21:05:00+08:00",
+            "decision": "美股盘前提醒 2026-08-07 已生成",
+            "detail": "output/daily/premarket-2026-08-07.md；7月非农-23K/失业率4.1%；QQQ贴50MA"
+        },
         {
             "at": "2026-08-07T17:00:00+08:00",
             "decision": "A股收盘日报 2026-08-07 已生成",
@@ -106,14 +111,8 @@
         "equity": "主线科技/AI；消费医药金融不主动看空，跷跷板轮动",
         "crypto": null,
         "macro": "看好AI与大科技",
-        "notes": "2026-08-07收盘：上证3940/+1.02%站上MA5、放量2.66万亿；东财医疗服务/元件/生物制品领涨，软件开发/IT服务Ⅱ流出；CRO+PCB双主线；评分80→积极参与，总仓约40-50%；北向8/7未获取"
+        "notes": "2026-08-07：7月非农-23K/失业率4.1%（弱于预期）；VOO~706/QQQ贴50MA~715/NVDA~219；下一宏观CPI 8/12"
     },
-    "recent_decisions": [
-        {
-            "at": "2026-08-07T17:00:00+08:00",
-            "decision": "A股收盘日报 2026-08-07 已生成",
-            "detail": "output/daily/ashare-close-2026-08-07.md；上证3940/+1.02%；双主线医疗服务+元件/CRO+PCB"
-        },
     "open_questions": [
         "Automations：Pause美股盘前与A股盘前；挂prompt-ashare-close-daily+密钥；cron 17:00；push后Run now",
         "push 本批后 Automations 重贴 prompts；Run now 验证 merge_to_main + 飞书脚注为 main blob",
