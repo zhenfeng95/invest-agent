@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-08-07",
+  "source": "user_report",
+  "currency_note": "美股持仓成本与市值单位为 USD；A股为 CNY",
+  "notes": "2026-08-07 已卖出 600219 南山铝业 @¥4.84（平 8/5 买入 100 股）；A 股现无持仓。美股仍为 IBIT、SGOV。权威快照以本文件为准。",
+  "positions": [
+    {
+      "market": "US",
+      "ticker": "IBIT",
+      "name": "比特币现货 ETF",
+      "qty": 0.05,
+      "avg_cost": 35.6,
+      "currency": "USD",
+      "note": "用户报告持仓与成本；买入日未提供"
+    },
+    {
+      "market": "US",
+      "ticker": "SGOV",
+      "name": "短债现金管理 ETF",
+      "qty": 0.01,
+      "avg_cost": 100.0,
+      "currency": "USD",
+      "note": "用户报告持仓与成本；买入日未提供"
+    }
+  ],
+  "closed": [
+    {
+      "market": "A",
+      "ticker": "600219",
+      "name": "南山铝业",
+      "qty": 100,
+      "buy": { "date": "2026-08-05", "price": 4.76 },
+      "sell": { "date": "2026-08-07", "price": 4.84 },
+      "pnl_cny": 8.0,
+      "pnl_pct": 1.68,
+      "note": "100×(4.84−4.76)；未计佣金/印花税"
+    }
+  ]
+}
