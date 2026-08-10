@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-10T13:53:00+08:00",
+    "updated_at": "2026-08-10T14:03:00+08:00",
     "current_focus": ["VOO", "QQQ", "IBIT", "SGOV", "NVDA", "AAPL", "000737"],
     "active_research": [
         {
@@ -22,6 +22,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-10T14:03:00+08:00",
+            "decision": "评估美股网格：VOO每跌$6买0.01、QQQ每跌$10买0.01 → 可行",
+            "detail": "相对价约0.84%/1.4%；QQQ档更宽合理；待确认是否写入my-soul替换原约$5示例；需定锚价与档深"
+        },
         {
             "at": "2026-08-10T13:53:00+08:00",
             "decision": "合并 working.json 冲突：保留双方改动",
