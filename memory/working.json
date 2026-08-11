@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-11T14:31:00+08:00",
+    "updated_at": "2026-08-11T18:05:00+08:00",
     "current_focus": ["VOO", "QQQ", "IBIT", "SGOV", "NVDA", "AAPL", "000737", "600108", "601118"],
     "active_research": [
         {
@@ -40,6 +40,51 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-11T18:05:00+08:00",
+            "decision": "二筛改挂日报§15.6；screener只落一层",
+            "detail": "§15.6「明日值得关注的个股」；默认不写*-buysetup；§9.4仅指向公式csv；已删8/11 buysetup文件"
+        },
+        {
+            "at": "2026-08-11T17:55:00+08:00",
+            "decision": "第一层改由 Agent/脚本全自动；用户不再交 pool-latest",
+            "detail": "收盘日报默认跑 mtd_screener 公式+二筛；撤销用户一层优先；--refine-only 仅调试；pool-latest 已清空"
+        },
+        {
+            "at": "2026-08-11T17:50:00+08:00",
+            "decision": "一层池交接：data/raw/screener/pool-latest.csv + --refine-only",
+            "detail": "【已撤销】曾约定用户自筛第一层；现改回全自动"
+        },
+        {
+            "at": "2026-08-11T17:45:00+08:00",
+            "decision": "A股日报板块/资金：同花顺升为与东财并列主源",
+            "detail": "close+premarket prompts/rules/my-soul已改；双源分表标口径；冲突留两侧+共振/分歧；仍禁申万顶替；选股脚本主线仍用东财成分；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-11T17:40:00+08:00",
+            "decision": "mtd_screener 二筛：东财行业TOP8成分 ∩ 四选一买点",
+            "detail": "产出 *-buysetup.csv；量能不含当日；趋势线自动近似；8/11试跑公式72→主线10→精选2（上能电气/正泰电源·逆变器·放量破MA5）；收盘日报§9.4改挂精选"
+        },
+        {
+            "at": "2026-08-11T17:20:00+08:00",
+            "decision": "A股收盘日报挂接 mtd_screener：§9.4 公式池备查",
+            "detail": "prompt/rules/SETUP/my-soul已改；先跑脚本再写日报；TOP15非荐股；用户须重贴 Automations Instructions"
+        },
+        {
+            "at": "2026-08-11T17:15:00+08:00",
+            "decision": "mtd_screener 增条件：换手>2%、收盘<30元；日线改腾讯兜底",
+            "detail": "默认参数已写入；8/11重跑命中72只→output/screener/；东财his不稳时用腾讯K线+现货换手"
+        },
+        {
+            "at": "2026-08-11T17:00:00+08:00",
+            "decision": "mtd_screener 增条件：换手>2%、收盘<30元",
+            "detail": "默认 --min-turnover 2 --max-price 30；现货预筛+日线复核；参数可调"
+        },
+        {
+            "at": "2026-08-11T16:35:00+08:00",
+            "decision": "落地通达信月初至今选股脚本 tools/mtd_screener.py",
+            "detail": "条件：5<MTD%<15 + V>MA(V,5)×1.2(含当日) + 额>3亿；东财直连；8/11试跑命中约100只→output/screener/；选股仍用户自理"
+        },
         {
             "at": "2026-08-11T14:31:00+08:00",
             "decision": "A股量能定量写入 my-soul：放量 V>MA(V,5)×1.2；缩量 V<MA(V,5)×0.8",
@@ -193,12 +238,38 @@
         "notes": "8/11：A股已建仓000737 100@14.60；美股加VOO 0.01@710。8/10收盘：成交2.54万亿缩量1447亿；评分71→积极参与但建议仓40-50%；北向未获取。8/7：上证3940/+1.02%放量2.66万亿；医疗服务+元件双主线；评分80"
     },
     "open_questions": [
-        "push 本批 scheduler/ + soul/ 后，Automations 新建 Invest US Close Daily：贴 prompt-us-close-daily「---」以下 + FEISHU_WEBHOOK_URL；cron 北京 0 8 * * 1-5；Run now 验证",
-        "双收盘月成本约$50-100+；Dashboard 上限建议先调到 $60–100，跑一次看 Usage",
-        "确认 Cloud Agent 能 push main；美股日报 Run now 后检查 merge_to_main + 飞书 main blob",
-        "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？"
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（同花顺并列 + §15.6二筛 + screener仅一层）+ FEISHU_WEBHOOK_URL；Run now 验证",
+        "push 后确认美股收盘日报 Automations Instructions 仍为最新；cron 北京 0 8 * * 1-5",
+        "双收盘月成本约$50-100+（双源抓取会略增搜索量）；Dashboard 上限建议先 $60–100",
+        "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
+        "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-11T18:05:00+08:00",
+            "changes": "二筛个股改写入收盘日报§15.6「明日值得关注的个股」；output/screener仅保留公式一层；不写buysetup文件",
+            "reason": "用户要求二筛进15.6、screener只存第一层"
+        },
+        {
+            "updated_at": "2026-08-11T17:55:00+08:00",
+            "changes": "A股公式候选池：第一层改由 Agent/mtd_screener 全自动；用户不再交 pool-latest；仍不写荐股、不代下单",
+            "reason": "用户明确第一层交由 Agent，不再参与也不提供一层数据文件"
+        },
+        {
+            "updated_at": "2026-08-11T17:45:00+08:00",
+            "changes": "A股日报数据口径：东财∥同花顺并列主源（行业/资金/概念）；冲突双表+对照；选股脚本主线仍东财",
+            "reason": "用户要求将同花顺升为并列主源"
+        },
+        {
+            "updated_at": "2026-08-11T17:40:00+08:00",
+            "changes": "A股公式候选池升级为两阶段：公式池 + 东财主线TOP8∩四选一精选（buysetup）；收盘日报挂精选",
+            "reason": "用户要求公式结果再按四选一+东财主线保留"
+        },
+        {
+            "updated_at": "2026-08-11T17:20:00+08:00",
+            "changes": "A股买入习惯：澄清可选挂接月初至今公式候选池（收盘日报§9.4备查）；仍不代选股、不写荐股",
+            "reason": "用户要求选股公式与A股收盘日报结合"
+        },
         {
             "updated_at": "2026-08-11T14:31:00+08:00",
             "changes": "A股买入习惯：四选一量能定量——放量 V>MA(V,5)×1.2；缩量 V<MA(V,5)×0.8；中间带不判定；复盘须列 V/均量/比值",
