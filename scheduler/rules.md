@@ -1,28 +1,29 @@
 # 当前启用方案：A'（Cursor Automations）
 
-> 当前只跑 **1 个** Automation：**A股收盘日报**。其余任务暂不启用。
+> 当前跑 **2 个** Automation：**A股收盘日报** + **美股收盘日报**。其余任务暂不启用。
 > 执行器：**Cursor Automations（Cloud Agent）**，不再依赖 Claude Code scheduler。
 
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
 | **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
+| **② 美股收盘日报** | `0 8 * * 1-5` | 工作日 08:00（复盘昨夜美股收盘；北京早间） |
 
 **已暂停**：美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 Pause。  
-**已停用**：美股收盘日报；合并抄底信号（SPX + BTC）— 规则仍保留在下方。
+**已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
 
-**通知**：仅飞书自定义机器人 Webhook（`curl`）；不开 PR；不发邮件  
+**通知**：仅飞书自定义机器人 Webhook；不开 PR；不发邮件  
 **存档**：写入 `output/` → commit → `scheduler/merge_to_main.sh` 并进 **main** 并删 `cursor/*` → 飞书（截断脚注为 main 上 GitHub 全文链接）  
 **飞书脚本**：`scheduler/feishu_send.py`（表格→条目 + 卡片）
 
 提示词见同目录：
 - `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
+- `prompt-us-close-daily.md`（美股收盘日报 · ✅ A'）
 - `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
 - `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
-- `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 暂缓）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含飞书接入）
 
-月成本粗估约 **$25–50+**（Composer；收盘日报单次搜索/篇幅大）；务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$50–100+**（两份收盘日报；Composer；单次搜索/篇幅大）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -63,13 +64,13 @@
 - 1-2 句核心判断/提醒
 ```
 
-### 美股收盘日报（工作日 08:00）— ⏸ 暂缓（成本偏高，A' 暂不启用）
-- cron: `0 8 * * 1-5`（历史建议；Automation 请 Pause / 勿新建）
-- 提示词：`scheduler/prompt-us-close-daily.md`（保留备查）
+### 美股收盘日报（工作日 08:00）— ✅ A' 启用
+- cron: `0 8 * * 1-5`（北京时间；复盘昨夜美股交易日）
+- 提示词：`scheduler/prompt-us-close-daily.md`
 - 执行：完整复盘昨夜美股（大盘/宏观/板块/宽度/技术/个股/财报/机构/轮动/持仓观察/明日计划/风险）
-- 输出（停用期间勿写）：`output/daily/us-close-YYYY-MM-DD.md`
-- 飞书标题：`美股收盘日报 YYYY-MM-DD`（推摘要；全文以仓库为准）
-- 说明：篇幅长、搜索多，月成本明显高于盘前短提醒；稳定后再考虑启用；启用时勿与旧财经日报同开
+- 输出：`output/daily/us-close-YYYY-MM-DD.md`
+- 飞书标题：`美股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
+- 说明：篇幅长、搜索多，月成本明显高于盘前短提醒；勿与旧财经日报同开
 
 ### A股收盘日报（工作日 17:00）— ✅ A' 启用
 - cron: `0 17 * * 1-5`（北京时间；错开 15:00–16:00 刚收盘高峰）
@@ -180,9 +181,9 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 | 任务 | Cron (UTC+8) | 状态 | 输出目录 |
 |------|--------------|------|----------|
 | A股收盘日报 | `0 17 * * 1-5` | ✅ A' | output/daily/ |
+| 美股收盘日报 | `0 8 * * 1-5` | ✅ A' | output/daily/ |
 | 美股盘前提醒 | `0 21 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | A股盘前提醒 | `0 9 * * 1-5` | ⏸ 已暂停 | output/daily/ |
-| 美股收盘日报 | `0 8 * * 1-5` | ⏸ 暂缓 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
 | 周度回顾 | `0 10 * * 0` | ⏸ 暂缓 | output/research/weekly/ |

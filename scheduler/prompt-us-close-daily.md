@@ -2,9 +2,9 @@
 
 把下面整段粘贴到 Cursor Automation 的 Instructions。
 
-> **⏸ 暂缓（2026-08-06）**：因成本偏高，A' 暂不启用本任务；当前任务①改回美股盘前，见 `prompt-premarket.md`。  
-> 建议 cron（备查）：北京 `0 8 * * 1-5` / UTC `0 0 * * 1-5`  
-> 本文件仅保留备查，请勿再挂到 Automations，除非明确接受更高月成本。
+> **✅ A' 启用（2026-08-11）**：与 A股收盘日报并行。  
+> **cron（北京时间）**：`0 8 * * 1-5`（工作日 08:00；复盘昨夜美股）  
+> UTC 对照：`0 0 * * 1-5`（若界面按 UTC）。把「---」以下粘贴到 Automation Instructions，文末加 `FEISHU_WEBHOOK_URL`。
 
 ---
 
@@ -255,16 +255,29 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 ## 写回仓库（合并进 main，不要开 PR）
 
+Cloud Agent 常在 `cursor/xxxx` 临时分支上工作；阿里云只 `git pull` **main**，因此必须并进 main。
+
 1. 写完后 **commit**（说明：`us close daily YYYY-MM-DD`）
 2. **不要** Create Pull Request
-3. 执行 `bash scheduler/merge_to_main.sh`（并进 main 并删 `cursor/*`）
-4. 运行摘要写清文件路径
+3. 执行合并脚本（push 当前分支 → merge 进 main → push main → 删临时分支）：
+```bash
+bash scheduler/merge_to_main.sh
+```
+4. 确认当前在 **main** 且远端 main 已有该 md 后，再发飞书（GitHub 脚注与阿里云拉的是同一份）
+5. 运行摘要写清文件路径；若合并失败，摘要写明错误，仍保留 commit（可稍后手动并 main）
 
 ## 飞书通知（必须做）
 
 **不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
-1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`
-2. `curl` POST `msg_type:text`，标题：`美股收盘日报 YYYY-MM-DD`
-3. 正文：一句话总结 + 大盘要点 + 持仓要点 + 明日信号 + 风险等级；注明「全文见仓库 main」；勿塞整篇
-4. 成功：`"code":0`；失败写运行摘要，仍保留 md + commit
+1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
+2. **仓库 md 可继续用表格**；飞书不渲染 Markdown 表格，推送必须走专用脚本：
+```bash
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/us-close-YYYY-MM-DD.md "美股收盘日报 YYYY-MM-DD"
+```
+若 URL 未在环境变量中，把第一个参数换成文末密钥里的完整 Webhook 字符串。
+3. **必须推送完整正文**（脚本读整个 md；超长才截断）。禁止只发几行极简版。
+4. 超长截断时脚注为 **main** 上的 GitHub 完整 blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）
+5. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
+6. 失败：运行摘要写明错误，仍保留 md + commit
+7. 不要手写 `curl` 贴原始 md（表格会很难看）

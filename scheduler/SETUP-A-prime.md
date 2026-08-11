@@ -1,20 +1,21 @@
-# A' 方案上手：仅 A股收盘日报
+# A' 方案上手：A股 + 美股收盘日报
 
-你已选择 **A'**：只用 Cursor Automations，当前只开 **1 个** 定时任务。
+你已选择 **A'**：只用 Cursor Automations，当前开 **2 个** 定时任务。
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— 当日收盘全复盘 + 明日应对（见 `prompt-ashare-close-daily.md`）
+2. **美股收盘日报**（工作日 **08:00**）— 复盘昨夜美股收盘（见 `prompt-us-close-daily.md`）
 
 **已暂停 / 停用**：
 - 美股盘前提醒（原 21:00）→ Automation 请 **Pause**
 - A股盘前提醒（原 09:00）→ Automation 请 **Pause**
-- 美股收盘日报、合并抄底信号 → 继续 Pause / 删除
+- 合并抄底信号 → 继续 Pause / 删除
 
 **通知渠道**：**仅飞书**（自定义机器人 Webhook）。不再发邮件 / 不再用 Resend。  
 **存档方式**：写入 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main** 并删 `cursor/*`）→ 再发飞书；**不开 PR**。  
 **飞书**：`scheduler/feishu_send.py`（表格转条目 + 卡片；超长截断；脚注为 main 上 GitHub 全文链接）。
 
-> 成本提示：收盘日报篇幅与搜索量明显高于盘前；月消耗可能约 **$25–50+**（视模型与 Run 次数），务必设 Dashboard 上限。
+> 成本提示：两份收盘日报篇幅与搜索量都高；月消耗可能约 **$50–100+**（视模型与 Run 次数），务必设 Dashboard 上限。
 
 ---
 
@@ -33,7 +34,7 @@ Cloud Agent 读的是 **GitHub/GitLab 上的仓库**，不是你电脑上未推�
 
 1. 打开 [cursor.com/dashboard](https://cursor.com/dashboard)
 2. 确认至少是 **Pro**
-3. 开启 **On-demand usage**，设月消费上限（收盘日报建议先 **$30–50**，再按 Usage 调）
+3. 开启 **On-demand usage**，设月消费上限（双收盘建议先 **$60–100**，再按 Usage 调）
 4. 上限附近留一点余量，否则 Cloud Agent 可能起不来
 
 ---
@@ -66,7 +67,7 @@ Cloud Agent 读的是 **GitHub/GitLab 上的仓库**，不是你电脑上未推�
 
 ### 3.2 把 URL 贴进 Automation（不是 IDE 本地 MCP）
 
-Automation 的 Instructions = **仓库提示词全文** + 文末密钥段：
+每个 Automation 的 Instructions = **对应仓库提示词全文** + 文末密钥段：
 
 ```text
 ## 密钥（勿提交仓库；仅存在本 Automation）
@@ -81,7 +82,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ---
 
-## 第 4 步：建 / 改 Automation（只留 1 个）
+## 第 4 步：建 / 改 Automation（共 2 个）
 
 入口任选其一：
 
@@ -95,7 +96,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |--------|------|
 | Invest Premarket Reminder（美股盘前 21:00） | **Pause** |
 | Invest A-Share Premarket（A股盘前 09:00） | **Pause** |
-| 美股收盘 / 抄底信号等 | 继续 Pause / 删除 |
+| 抄底信号等 | 继续 Pause / 删除 |
 
 ### 共用设置
 
@@ -106,7 +107,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 | Tools | ❌ **不要开** Send to Slack / Teams / Open Pull Request；可选 Memories；飞书靠提示词脚本（Cloud Agent **自带终端**） |
 | 通知 | 靠飞书 Webhook |
 
-### Automation：A股收盘日报
+### Automation ①：A股收盘日报
 
 | 项 | 填什么 |
 |----|--------|
@@ -116,19 +117,29 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 
-若 Automation 已建过：只需 **更新 Instructions（含飞书密钥）**、**关掉 Create PR**、**去掉 Resend**，不必强行新建。
+### Automation ②：美股收盘日报（本次新开）
+
+| 项 | 填什么 |
+|----|--------|
+| 名称 | Invest US Close Daily |
+| 触发 | Cron：`0 8 * * 1-5`（北京时间工作日 **08:00**；复盘昨夜美股） |
+| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+
+**时区提醒**：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。以界面标注为准。
+
+若 Automation 已建过：只需 **Enable / 更新 Instructions（含飞书密钥）**、**关掉 Create PR**、**去掉 Resend**，不必强行新建。
 
 ---
 
 ## 第 5 步：先手动跑一次
 
-Automation 里找 **Run now / 立即运行**。
+每个新/改过的 Automation 都点 **Run now / 立即运行**（至少先跑美股收盘日报验证本次启用）。
 
 ### 成功时你应该看到什么
 
-1. **飞书群**收到机器人消息（标题含「A股收盘日报」）
+1. **飞书群**收到机器人消息（标题含「美股收盘日报」或「A股收盘日报」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：`output/daily/ashare-close-YYYY-MM-DD.md` 出现（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/us-close-YYYY-MM-DD.md` 或 `ashare-close-YYYY-MM-DD.md` 出现（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。
@@ -145,14 +156,14 @@ Automation 里找 **Run now / 立即运行**。
 | 是否误开 PR | 关掉 Create pull request |
 | main 是否有文件 | GitHub 打开 `main` 的 `output/daily/` |
 | 提示词是否最新 | push 后把 Instructions 再粘贴一遍（含密钥） |
-| A股持仓是否为空 | 确认已 push `data/raw/trades/` |
+| 持仓是否为空 | 确认已 push `data/raw/trades/` |
 
 改完提示词后：**先 push 到 main**，再更新 Automations Instructions，然后 **Run now**。
 
 确认：
 
-- 仓库有 `ashare-close-YYYY-MM-DD.md`
-- 飞书含市场状态 / 资金面 / 东财板块 / 持仓 / **明日应对** 等（超长会截断，脚注为 main 上 GitHub 链接）
+- 仓库有对应 `*-close-YYYY-MM-DD.md`
+- 飞书含大盘 / 板块 / 持仓 / 明日计划等（超长会截断，脚注为 main 上 GitHub 链接）
 - 缺数据应写「未获取」/「暂无可靠数据」
 
 ---
@@ -160,11 +171,11 @@ Automation 里找 **Run now / 立即运行**。
 ## 第 6 步：观察成本
 
 - 看 [Usage](https://cursor.com/dashboard/usage)
-- 收盘日报单次明显高于盘前；偏贵 → 换更便宜模型、或后续再开「精简版」提示词
+- 双收盘单次都明显高于盘前；偏贵 → 换更便宜模型、或后续再开「精简版」提示词
 - 需要早盘决策时，再 **Enable** 回 A股盘前（09:00）
 
 ---
 
 ## 暂不要开
 
-美股盘前、A股盘前、美股收盘日报、财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸。
+美股盘前、A股盘前、财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸。

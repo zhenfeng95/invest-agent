@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-10T21:10:00+08:00",
+    "updated_at": "2026-08-11T09:25:00+08:00",
     "current_focus": ["VOO", "QQQ", "IBIT", "SGOV", "NVDA", "AAPL", "600108", "000737", "601118"],
     "active_research": [
         {
@@ -34,6 +34,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-11T09:25:00+08:00",
+            "decision": "启用美股收盘日报：A' 现为 A股17:00 + 美股08:00",
+            "detail": "rules/SETUP/my-soul/prompt-us-close 已改启用；飞书改走 feishu_send.py；用户须 push 后在 Automations 新建 Invest US Close Daily（cron 0 8 * * 1-5）并贴密钥"
+        },
         {
             "at": "2026-08-10T14:03:00+08:00",
             "decision": "评估美股网格：VOO每跌$6买0.01、QQQ每跌$10买0.01 → 可行",
@@ -167,15 +172,17 @@
         "notes": "8/10收盘：成交2.54万亿缩量1447亿；评分71→积极参与但建议仓40-50%；北向未获取；A股空仓。8/7：上证3940/+1.02%放量2.66万亿；医疗服务+元件双主线；评分80"
     },
     "open_questions": [
-        "Automations：Pause美股盘前与A股盘前；挂prompt-ashare-close-daily+密钥；cron 17:00；push后Run now",
-        "push 本批后 Automations 重贴 prompts；Run now 验证 merge_to_main + 飞书脚注为 main blob",
-        "确认 Cloud Agent 能 push main；push 本批后 Automations 重贴 prompts 并 Run now 验证 merge_to_main",
-        "push 最新 feishu_send.py + prompts；Automations 重贴后截断脚注应出现完整 github.com 链接",
-        "A股收盘§5已锁东财TOP5；若再启用须重贴 prompt 并 Run now 抽查来源行",
-        "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？",
-        "确认 A股盘前仍挂 prompt-ashare-premarket.md；push 最新 scheduler/ 与 soul/"
+        "push 本批 scheduler/ + soul/ 后，Automations 新建 Invest US Close Daily：贴 prompt-us-close-daily「---」以下 + FEISHU_WEBHOOK_URL；cron 北京 0 8 * * 1-5；Run now 验证",
+        "双收盘月成本约$50-100+；Dashboard 上限建议先调到 $60–100，跑一次看 Usage",
+        "确认 Cloud Agent 能 push main；美股日报 Run now 后检查 merge_to_main + 飞书 main blob",
+        "是否将「可执行交易框架」中与 my-soul 不一致的部分（如总回撤3-5-7%、短线5日/波段10日分拆、343建仓）升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-11T09:25:00+08:00",
+            "changes": "通知偏好：A' 启用 A股收盘日报(17:00)+美股收盘日报(08:00)；盘前仍暂停；抄底仍停用",
+            "reason": "用户要求开启美股收盘日报"
+        },
         {
             "updated_at": "2026-08-06T18:05:00+08:00",
             "changes": "其他补充·笔记用法：定时收盘日报只读两份固定 md；日常对话必要时扫 notes/",
