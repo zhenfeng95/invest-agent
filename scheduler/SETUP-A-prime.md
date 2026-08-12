@@ -3,7 +3,7 @@
 你已选择 **A'**：只用 Cursor Automations，当前开 **2 个** 定时任务。
 
 **当前组合**：
-1. **A股收盘日报**（工作日 **17:00**）— 当日收盘全复盘 + 月初至今公式选股池备查 + 明日应对（见 `prompt-ashare-close-daily.md`）
+1. **A股收盘日报**（工作日 **17:00**）— 当日收盘全复盘 + 用户一层池四选一全量分析（§15.6）+ 明日应对（见 `prompt-ashare-close-daily.md`）
 2. **美股收盘日报**（工作日 **08:00**）— 复盘昨夜美股收盘（见 `prompt-us-close-daily.md`）
 
 **已暂停 / 停用**：
@@ -113,7 +113,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest A-Share Close Daily |
 | 触发 | Cron：`0 17 * * 1-5`（北京时间工作日 **17:00**；错开刚收盘高峰） |
-| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴：§15.6 二筛个股 + 东财∥同花顺并列主源；screener 仅一层**） |
+| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴：§15.6=用户池全量命中/未命中 + 东财∥同花顺并列主源**） |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 
@@ -139,7 +139,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 1. **飞书群**收到机器人消息（标题含「美股收盘日报」或「A股收盘日报」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/us-close-YYYY-MM-DD.md` 或 `ashare-close-YYYY-MM-DD.md` 出现；A股任务另有 `output/screener/mtd-screener-YYYY-MM-DD.csv`（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/us-close-YYYY-MM-DD.md` 或 `ashare-close-YYYY-MM-DD.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。

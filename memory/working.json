@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-12T08:40:00+08:00",
+    "updated_at": "2026-08-12T13:53:19+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -7,16 +7,28 @@
         "SGOV",
         "NVDA",
         "AAPL",
-        "000737",
+        "600237",
         "600108",
         "601118"
     ],
     "active_research": [
         {
+            "ticker": "600237",
+            "name": "铜峰电子",
+            "asked_at": "2026-08-12",
+            "note": "11:19盘中~8.75贴MA5(≈8.75)；MTD~8.8%；8/7曾加速至9.18后回落。盘中量VR失真；8/11全日VR≈0.75缩量贴MA5边缘。结论：暂不买，等收盘确认缩量回踩+元件/MLCC主线"
+        },
+        {
             "ticker": "000737",
             "name": "北方铜业",
-            "asked_at": "2026-08-11",
-            "note": "已建仓：8/11买100@¥14.60；收盘破MA5收14.01、浮亏~4%（收盘日报评分50→轻仓试错）。量能：8/10 V/MA(V,5)≈1.10中间带≠缩量"
+            "asked_at": "2026-08-12",
+            "note": "已平仓：8/11买100@¥14.60 → 8/12卖100@¥14.10；粗算-¥50(-3.42%)；破MA5后止损离场"
+        },
+        {
+            "ticker": "QQQ",
+            "name": "纳斯达克100 ETF",
+            "asked_at": "2026-08-12",
+            "note": "已建仓：8/11买0.01@$720；碎股网格/科技成长底仓；暂无固定止损"
         },
         {
             "ticker": "VOO",
@@ -50,6 +62,21 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-12T13:53:19+08:00",
+            "decision": "录入 000737 北方铜业卖出：2026-08-12 @14.10×100",
+            "detail": "trades CSV + positions-2026-08-12.json；A股现空仓；粗算盈亏-¥50(-3.42%)未计费"
+        },
+        {
+            "at": "2026-08-12T13:43:39+08:00",
+            "decision": "选股第一层改回用户自理；Agent 只做全量四选一",
+            "detail": "交 pool-latest.csv → 命中/未命中两表进日报§15.6；不再默认跑公式一层/主线TOP；mtd_screener 默认读用户池"
+        },
+        {
+            "at": "2026-08-12T09:45:00+08:00",
+            "decision": "录入 QQQ 买入：2026-08-11 @720×0.01",
+            "detail": "trades CSV + positions-2026-08-11.json；美股现持 IBIT/SGOV/VOO/QQQ"
+        },
         {
             "at": "2026-08-12T08:40:00+08:00",
             "decision": "美股收盘日报 2026-08-12 已生成",
@@ -263,13 +290,18 @@
         "notes": "8/12美股日报已生成；VOO $708.42略低于成本$710；SMCI/CRWV盘后大涨；CPI当日最大变量"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（同花顺并列 + §15.6二筛 + screener仅一层）+ FEISHU_WEBHOOK_URL；Run now 验证",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL",
         "push 后确认美股收盘日报 Automations Instructions 仍为最新；cron 北京 0 8 * * 1-5",
         "双收盘月成本约$50-100+（双源抓取会略增搜索量）；Dashboard 上限建议先 $60–100",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-12T13:43:39+08:00",
+            "changes": "A股一层池改回用户自理；Agent 对用户文件全量四选一（命中/未命中）写入§15.6；不再代跑公式选股",
+            "reason": "用户明确第一层交给自己，Agent 只做买点全量分析"
+        },
         {
             "updated_at": "2026-08-11T18:05:00+08:00",
             "changes": "二筛个股改写入收盘日报§15.6「明日值得关注的个股」；output/screener仅保留公式一层；不写buysetup文件",

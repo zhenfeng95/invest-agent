@@ -50,13 +50,17 @@ def _line_value(i1: int, y1: float, i2: int, y2: float, i: int) -> float:
     return y1 + (y2 - y1) * (i - i1) / (i2 - i1)
 
 
-def detect_buy_setups(
+def analyze_buy_setup(
     hist: pd.DataFrame,
     *,
     touch_pct: float = 2.0,
     breakout_max_ext_pct: float = 3.0,
 ) -> dict[str, Any] | None:
-    """检测当日是否命中四选一；未命中返回 None。"""
+    """全量分析当日四选一；无论命中与否都返回指标（数据不足则 None）。
+
+    返回字段含 hit / signal / miss_reason / v / ma_v5_ex / vr_ex / ma5 /
+    ext_ma5_pct / vol_side / close。
+    """
     if hist is None or len(hist) < 20:
         return None
     hist = hist.sort_values("date").reset_index(drop=True)
@@ -66,8 +70,6 @@ def detect_buy_setups(
     v, ma_v5, vr = vm
     is_fang = vr > 1.2
     is_suo = vr < 0.8
-    if not is_fang and not is_suo:
-        return None
 
     close = hist["close"].astype(float)
     if "high" in hist.columns:
@@ -89,53 +91,85 @@ def detect_buy_setups(
     m1 = float(ma5.iloc[-2])
     ext = (c0 / m0 - 1.0) * 100.0
 
+    if is_fang:
+        vol_side = "放量"
+    elif is_suo:
+        vol_side = "缩量"
+    else:
+        vol_side = "中间带"
+
     signals: list[str] = []
+    miss_reason = ""
 
-    # 1) 放量突破 MA5（限制延伸，降低追加速）
-    if is_fang and c1 <= m1 and c0 > m0 and ext <= breakout_max_ext_pct:
-        signals.append("放量突破MA5")
+    if not is_fang and not is_suo:
+        miss_reason = "量能中间带"
+    else:
+        # 1) 放量突破 MA5（限制延伸，降低追加速）
+        if is_fang and c1 <= m1 and c0 > m0 and ext <= breakout_max_ext_pct:
+            signals.append("放量突破MA5")
 
-    # 3) 缩量回踩 MA5
-    ma5_up = float(ma5.iloc[-1]) >= float(ma5.iloc[-5])
-    near = abs(c0 / m0 - 1.0) * 100.0 <= touch_pct or float(low.iloc[-1]) <= m0 * (
-        1 + touch_pct / 100.0
-    )
-    if is_suo and ma5_up and near and c0 >= m0 * 0.985:
-        signals.append("缩量回踩MA5")
+        # 3) 缩量回踩 MA5
+        ma5_up = float(ma5.iloc[-1]) >= float(ma5.iloc[-5])
+        near = abs(c0 / m0 - 1.0) * 100.0 <= touch_pct or float(low.iloc[-1]) <= m0 * (
+            1 + touch_pct / 100.0
+        )
+        if is_suo and ma5_up and near and c0 >= m0 * 0.985:
+            signals.append("缩量回踩MA5")
 
-    highs_i, lows_i = _local_extrema(high, order=2)
+        highs_i, lows_i = _local_extrema(high, order=2)
 
-    # 2) 放量突破下降趋势线
-    if is_fang and len(highs_i) >= 2:
-        i2, i1 = highs_i[-1], highs_i[-2]
-        y2, y1 = float(high.iloc[i2]), float(high.iloc[i1])
-        if y2 < y1 and i2 > i1:
-            line0 = _line_value(i1, y1, i2, y2, len(hist) - 1)
-            line1 = _line_value(i1, y1, i2, y2, len(hist) - 2)
-            if c1 <= line1 and c0 > line0 and ext <= breakout_max_ext_pct + 2:
-                signals.append("放量突破下降趋势线")
+        # 2) 放量突破下降趋势线
+        if is_fang and len(highs_i) >= 2:
+            i2, i1 = highs_i[-1], highs_i[-2]
+            y2, y1 = float(high.iloc[i2]), float(high.iloc[i1])
+            if y2 < y1 and i2 > i1:
+                line0 = _line_value(i1, y1, i2, y2, len(hist) - 1)
+                line1 = _line_value(i1, y1, i2, y2, len(hist) - 2)
+                if c1 <= line1 and c0 > line0 and ext <= breakout_max_ext_pct + 2:
+                    signals.append("放量突破下降趋势线")
 
-    # 4) 缩量回踩上升趋势线
-    if is_suo and len(lows_i) >= 2:
-        i2, i1 = lows_i[-1], lows_i[-2]
-        y2, y1 = float(low.iloc[i2]), float(low.iloc[i1])
-        if y2 > y1 and i2 > i1:
-            line0 = _line_value(i1, y1, i2, y2, len(hist) - 1)
-            dist = abs(c0 / line0 - 1.0) * 100.0 if line0 > 0 else 999.0
-            touched = float(low.iloc[-1]) <= line0 * (1 + touch_pct / 100.0)
-            if c0 >= line0 * 0.985 and (dist <= touch_pct or touched):
-                signals.append("缩量回踩趋势线")
+        # 4) 缩量回踩上升趋势线
+        if is_suo and len(lows_i) >= 2:
+            i2, i1 = lows_i[-1], lows_i[-2]
+            y2, y1 = float(low.iloc[i2]), float(low.iloc[i1])
+            if y2 > y1 and i2 > i1:
+                line0 = _line_value(i1, y1, i2, y2, len(hist) - 1)
+                dist = abs(c0 / line0 - 1.0) * 100.0 if line0 > 0 else 999.0
+                touched = float(low.iloc[-1]) <= line0 * (1 + touch_pct / 100.0)
+                if c0 >= line0 * 0.985 and (dist <= touch_pct or touched):
+                    signals.append("缩量回踩趋势线")
 
-    if not signals:
-        return None
+        if not signals:
+            miss_reason = f"{vol_side}但形态未达四选一"
 
+    hit = bool(signals)
     return {
+        "hit": hit,
         "signals": signals,
-        "signal": "+".join(signals),
+        "signal": "+".join(signals) if signals else "—",
+        "miss_reason": "" if hit else miss_reason,
         "v": int(v),
         "ma_v5_ex": int(round(ma_v5)),
         "vr_ex": round(vr, 3),
         "ma5": round(m0, 4),
         "ext_ma5_pct": round(ext, 2),
-        "vol_side": "放量" if is_fang else "缩量",
+        "vol_side": vol_side,
+        "close": round(c0, 4),
     }
+
+
+def detect_buy_setups(
+    hist: pd.DataFrame,
+    *,
+    touch_pct: float = 2.0,
+    breakout_max_ext_pct: float = 3.0,
+) -> dict[str, Any] | None:
+    """检测当日是否命中四选一；未命中返回 None。"""
+    row = analyze_buy_setup(
+        hist,
+        touch_pct=touch_pct,
+        breakout_max_ext_pct=breakout_max_ext_pct,
+    )
+    if row is None or not row.get("hit"):
+        return None
+    return {k: v for k, v in row.items() if k not in ("hit", "miss_reason")}

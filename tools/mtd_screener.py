@@ -1,28 +1,25 @@
 #!/usr/bin/env python3
-"""月初至今涨幅选股（通达信公式口径）
+"""选股辅助：用户一层池全量四选一分析（收盘日报默认）+ 可选公式一层
 
-对应公式:
+收盘日报默认（用户自理第一层）:
+  .venv/bin/python tools/mtd_screener.py
+  # 或指定文件：
+  .venv/bin/python tools/mtd_screener.py --from-pool data/raw/screener/pool-latest.csv
+
+  读用户池 → 全量四选一 → stdout 打印「命中 / 未命中」两表 → 写入日报 §15.6
+  不跑公式一层、不过东财主线 TOP 过滤。
+
+可选：跑通达信月初至今公式池（调试/备查，非日报默认）:
   N:=BARSLAST(MONTH<>REF(MONTH,1))+1;
   MTD:=(C/REF(C,N)-1)*100;
   VOL5:=MA(V,5);
   XG:MTD>5 AND MTD<15 AND V>VOL5*1.2 AND AMOUNT>300000000
       AND TURN>2 AND C<30;
+  .venv/bin/python tools/mtd_screener.py --formula
+  # VOL5 含当日（通达信）；买点量能按 my-soul「不含当日」
 
-说明:
-  - VOL5 = MA(V,5) 含当日（通达信默认），与 my-soul 复盘「不含当日」不同
-  - TURN=换手率(%)；C=收盘价
-  - 默认全自动：公式一层落盘 + 主线∩四选一二筛打印（供日报 §15.6）；不写 buysetup 文件
-
-用法:
-  .venv/bin/python tools/mtd_screener.py
-  .venv/bin/python tools/mtd_screener.py --mainline-top 8
-  .venv/bin/python tools/mtd_screener.py --no-refine
-  # 调试：把二筛也写成文件（日常/收盘日报默认不用）
-  # .venv/bin/python tools/mtd_screener.py --write-buysetup
-
-输出:
-  output/screener/mtd-screener-YYYY-MM-DD.csv  # 仅公式一层池
-  stdout：二筛表（写入日报 §15.6「明日值得关注的个股」）
+输出（日报默认）:
+  stdout：=== BUYSETUP_FOR_§15.6 === 命中表 + 未命中表 === END BUYSETUP ===
 """
 
 from __future__ import annotations
@@ -67,7 +64,9 @@ _disable_proxies()
 
 
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="月初至今涨幅选股（通达信 XG 口径）")
+    p = argparse.ArgumentParser(
+        description="用户一层池全量四选一（默认）/ 可选通达信公式一层（--formula）"
+    )
     p.add_argument("--min-mtd", type=float, default=5.0, help="MTD 下限（不含），默认 5")
     p.add_argument("--max-mtd", type=float, default=15.0, help="MTD 上限（不含），默认 15")
     p.add_argument("--vol-mult", type=float, default=1.2, help="放量倍数，默认 1.2")
@@ -125,22 +124,27 @@ def _parse_args() -> argparse.Namespace:
         help="评估日 YYYY-MM-DD；默认用日线最新交易日",
     )
     p.add_argument(
+        "--formula",
+        action="store_true",
+        help="跑通达信月初至今公式一层（非收盘日报默认；调试/备查）",
+    )
+    p.add_argument(
         "--refine",
         action="store_true",
-        default=True,
-        help="二筛：东财主线∩四选一（默认开）",
+        default=False,
+        help="公式模式附加：东财主线∩四选一（仅 --formula 时有用）",
     )
     p.add_argument(
         "--no-refine",
         action="store_false",
         dest="refine",
-        help="关闭二筛，只输出公式池",
+        help="公式模式关闭主线二筛",
     )
     p.add_argument(
         "--mainline-top",
         type=int,
         default=8,
-        help="东财行业涨幅 TOP N 视为主线，默认 8",
+        help="东财行业涨幅 TOP N（仅 --formula --refine），默认 8",
     )
     p.add_argument(
         "--touch-pct",
@@ -158,17 +162,12 @@ def _parse_args() -> argparse.Namespace:
         "--from-pool",
         type=Path,
         default=None,
-        help="调试：外部池文件（csv/txt）；跳过公式，只做二筛（日常不用）",
-    )
-    p.add_argument(
-        "--refine-only",
-        action="store_true",
-        help="调试：只跑二筛（须 --from-pool 或读 pool-latest；收盘日报默认不用）",
+        help="用户一层池文件（csv/txt）；默认 data/raw/screener/pool-latest.csv",
     )
     p.add_argument(
         "--write-buysetup",
         action="store_true",
-        help="调试：额外把二筛写入 *-buysetup.csv/.md（默认只打印，供日报§15.6）",
+        help="调试：额外把分析结果写入 *-buysetup.csv/.md（默认只打印）",
     )
     return p.parse_args()
 
@@ -849,42 +848,178 @@ def refine_hits(
     return refined, boards, board_desc
 
 
+def analyze_user_pool(
+    hits: list[dict[str, Any]],
+    *,
+    start: str,
+    end: str,
+    asof_ts: pd.Timestamp | None,
+    workers: int,
+    touch_pct: float,
+    breakout_max_ext: float,
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    """用户池全量四选一；返回 (全部, 命中, 未命中)。不过主线过滤。"""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from buy_setup_filter import analyze_buy_setup  # type: ignore
+
+    print(f"2/2 全量四选一分析（{len(hits)} 只）…", flush=True)
+    all_rows: list[dict[str, Any]] = []
+    done = 0
+    t0 = time.time()
+
+    def job(h: dict[str, Any]) -> dict[str, Any]:
+        hist = fetch_hist(h["code"], start, end)
+        out = dict(h)
+        if hist is None or hist.empty:
+            out.update(
+                {
+                    "hit": False,
+                    "signal": "—",
+                    "miss_reason": "日线未获取",
+                    "v": "",
+                    "ma_v5_ex": "",
+                    "vr_ex": "",
+                    "ma5": "",
+                    "ext_ma5_pct": "",
+                    "vol_side": "",
+                }
+            )
+            return out
+        if asof_ts is not None:
+            hist = hist[hist["date"] <= asof_ts]
+        setup = analyze_buy_setup(
+            hist,
+            touch_pct=touch_pct,
+            breakout_max_ext_pct=breakout_max_ext,
+        )
+        if setup is None:
+            out.update(
+                {
+                    "hit": False,
+                    "signal": "—",
+                    "miss_reason": "数据不足",
+                    "v": "",
+                    "ma_v5_ex": "",
+                    "vr_ex": "",
+                    "ma5": "",
+                    "ext_ma5_pct": "",
+                    "vol_side": "",
+                }
+            )
+            return out
+        out["hit"] = bool(setup["hit"])
+        out["signal"] = setup["signal"]
+        out["miss_reason"] = setup.get("miss_reason", "")
+        out["vr_ex"] = setup["vr_ex"]
+        out["ma5"] = setup["ma5"]
+        out["ext_ma5_pct"] = setup["ext_ma5_pct"]
+        out["vol_side"] = setup["vol_side"]
+        out["v"] = setup["v"]
+        out["ma_v5_ex"] = setup["ma_v5_ex"]
+        if "close" in setup and setup["close"]:
+            out["close"] = setup["close"]
+        return out
+
+    with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
+        futs = {ex.submit(job, h): h["code"] for h in hits}
+        for fut in as_completed(futs):
+            done += 1
+            if done % 20 == 0 or done == len(futs):
+                print(
+                    f"   …分析 {done}/{len(futs)} ({time.time() - t0:.0f}s)",
+                    flush=True,
+                )
+            try:
+                all_rows.append(fut.result())
+            except Exception:
+                code = futs[fut]
+                all_rows.append(
+                    {
+                        "code": code,
+                        "name": "",
+                        "hit": False,
+                        "signal": "—",
+                        "miss_reason": "分析异常",
+                        "close": "",
+                        "turnover": "",
+                        "v": "",
+                        "ma_v5_ex": "",
+                        "vr_ex": "",
+                        "ma5": "",
+                        "ext_ma5_pct": "",
+                        "vol_side": "",
+                    }
+                )
+
+    all_rows.sort(key=lambda x: (not x.get("hit", False), str(x.get("code", ""))))
+    hit_rows = [r for r in all_rows if r.get("hit")]
+    miss_rows = [r for r in all_rows if not r.get("hit")]
+    return all_rows, hit_rows, miss_rows
+
+
+def _row_md_line(h: dict[str, Any], *, miss: bool = False) -> str:
+    buy = h.get("signal", "—") if not miss else (
+        h.get("miss_reason") or h.get("signal") or "未命中"
+    )
+    return (
+        f"| {h.get('code','')} | {h.get('name','')} | {buy} | "
+        f"{h.get('close','')} | {h.get('ma5','')} | {h.get('ext_ma5_pct','')} | "
+        f"{h.get('v','')} | {h.get('ma_v5_ex','')} | {h.get('vr_ex','')} | "
+        f"{h.get('turnover','')} |"
+    )
+
+
 def format_buysetup_md(
     *,
     stamp: str,
     asof_label: str,
-    hits: list[dict[str, Any]],
-    refined: list[dict[str, Any]],
-    board_desc: str,
+    hit_rows: list[dict[str, Any]],
+    miss_rows: list[dict[str, Any]],
     pool_label: str,
-    mainline_top: int,
     touch_pct: float,
     breakout_max_ext: float,
 ) -> str:
-    """二筛结果 Markdown（默认只打印，不落盘 output/screener）。"""
+    """用户池全量分析结果 Markdown（供日报 §15.6）。"""
+    n = len(hit_rows) + len(miss_rows)
+    header = (
+        "| 代码 | 简称 | 买点 | 收盘 | MA5 | ext | V | MA(V,5) | VR | 换手% |"
+    )
+    sep = "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"
     lines = [
-        f"# 二筛（主线∩四选一）{stamp} — 供日报 §15.6",
+        f"# 用户池四选一全量分析 {stamp} — 供日报 §15.6",
         "",
         f"- 评估日: {asof_label}",
-        f"- 第一层来源: {pool_label}",
-        f"- 主线: 东财行业涨幅 TOP{mainline_top} — {board_desc or '未获取'}",
+        f"- 第一层来源: {pool_label}（用户自理；Agent 不代选）",
         f"- 买点: 四选一；量能按 my-soul（MA(V,5)不含当日）；"
         f"回踩≤{touch_pct}%；突破延伸≤{breakout_max_ext}%",
         f"- 趋势线为自动近似（波峰/波谷连线），人工画线可能不一致",
-        f"- 一层池 {len(hits)} → 二筛 {len(refined)}",
-        f"- 非荐股；写入日报 §15.6「明日值得关注的个股」；默认不写 screener 文件",
+        f"- 池内 {n} → 命中 {len(hit_rows)} / 未命中 {len(miss_rows)}",
+        f"- 非荐股；写入日报 §15.6「明日值得关注的个股」",
         "",
-        "| 代码 | 名称 | 行业 | 买点 | 收盘 | MTD% | 换手% | VR(ex) | 额(亿) |",
-        "| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: |",
+        "## 命中四选一",
+        "",
+        header,
+        sep,
     ]
-    for h in refined:
-        lines.append(
-            f"| {h['code']} | {h['name']} | {h.get('industry','')} | "
-            f"{h.get('signal','')} | {h['close']} | {h.get('mtd_pct',0)} | "
-            f"{h.get('turnover',0)} | {h.get('vr_ex','')} | {h.get('amount_yi',0)} |"
-        )
-    if not refined:
-        lines.append("| — | 无命中 | — | — | — | — | — | — | — |")
+    if hit_rows:
+        for h in hit_rows:
+            lines.append(_row_md_line(h, miss=False))
+    else:
+        lines.append("| — | 无命中 | — | — | — | — | — | — | — | — |")
+    lines.extend(
+        [
+            "",
+            "## 未命中",
+            "",
+            header,
+            sep,
+        ]
+    )
+    if miss_rows:
+        for h in miss_rows:
+            lines.append(_row_md_line(h, miss=True))
+    else:
+        lines.append("| — | 全部命中 | — | — | — | — | — | — | — | — |")
     lines.append("")
     return "\n".join(lines)
 
@@ -894,31 +1029,31 @@ def emit_buysetup(
     args: argparse.Namespace,
     stamp: str,
     asof_label: str,
-    hits: list[dict[str, Any]],
-    refined: list[dict[str, Any]],
-    board_desc: str,
+    hit_rows: list[dict[str, Any]],
+    miss_rows: list[dict[str, Any]],
     pool_label: str,
 ) -> None:
-    """打印二筛供日报 §15.6；仅 --write-buysetup 时才写文件。"""
+    """打印全量分析供日报 §15.6；仅 --write-buysetup 时才写文件。"""
     md = format_buysetup_md(
         stamp=stamp,
         asof_label=asof_label,
-        hits=hits,
-        refined=refined,
-        board_desc=board_desc,
+        hit_rows=hit_rows,
+        miss_rows=miss_rows,
         pool_label=pool_label,
-        mainline_top=args.mainline_top,
         touch_pct=args.touch_pct,
         breakout_max_ext=args.breakout_max_ext,
     )
-    print("=== BUYSETUP_FOR_§15.6（勿默认落盘 screener）===", flush=True)
+    print("=== BUYSETUP_FOR_§15.6（用户池全量 · 勿默认落盘）===", flush=True)
     print(md, flush=True)
     print("=== END BUYSETUP ===", flush=True)
-    print(f"二筛 {len(refined)} 只（一层 {len(hits)}）→ 写入日报 §15.6", flush=True)
-    for h in refined[:20]:
+    print(
+        f"命中 {len(hit_rows)} / 未命中 {len(miss_rows)} → 写入日报 §15.6",
+        flush=True,
+    )
+    for h in hit_rows[:20]:
         print(
-            f"   {h['code']} {h['name']} [{h.get('industry','')}] "
-            f"{h.get('signal')} 价={h.get('close')} VR_ex={h.get('vr_ex')}",
+            f"   ✓ {h.get('code')} {h.get('name')} {h.get('signal')} "
+            f"价={h.get('close')} MA5={h.get('ma5')} VR={h.get('vr_ex')}",
             flush=True,
         )
 
@@ -928,33 +1063,30 @@ def emit_buysetup(
     fields = [
         "code",
         "name",
-        "asof",
-        "close",
-        "prev_month_end_close",
-        "mtd_pct",
-        "turnover",
-        "volume",
-        "vol5",
-        "vol_ratio",
-        "amount",
-        "amount_yi",
-        "industry",
+        "hit",
         "signal",
-        "vol_side",
-        "vr_ex",
+        "miss_reason",
+        "close",
         "ma5",
         "ext_ma5_pct",
         "v",
         "ma_v5_ex",
+        "vr_ex",
+        "turnover",
+        "vol_side",
+        "amount",
+        "amount_yi",
+        "mtd_pct",
     ]
-    out2_csv = args.out / f"mtd-screener-{stamp}-buysetup.csv"
-    out2_md = args.out / f"mtd-screener-{stamp}-buysetup.md"
+    all_rows = hit_rows + miss_rows
+    out2_csv = args.out / f"user-pool-analyze-{stamp}.csv"
+    out2_md = args.out / f"user-pool-analyze-{stamp}.md"
     with out2_csv.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
-        w.writerows(refined)
+        w.writerows(all_rows)
     out2_md.write_text(md, encoding="utf-8")
-    print(f"（调试）已写 buysetup → {out2_csv}", flush=True)
+    print(f"（调试）已写分析 → {out2_csv}", flush=True)
     print(f"（调试）摘要 → {out2_md}", flush=True)
 
 
@@ -967,24 +1099,31 @@ def main() -> int:
     start = (today.replace(day=1) - timedelta(days=40)).strftime("%Y%m%d")
     end = (today + timedelta(days=1)).strftime("%Y%m%d")
 
-    # —— 用户第一层池 → 只做二筛 ——
-    if args.refine_only or args.from_pool is not None:
+    # —— 默认：用户一层池 → 全量四选一（命中 / 未命中）——
+    if not args.formula:
         pool_path = args.from_pool or DEFAULT_USER_POOL
         print(f"1/2 读取用户一层池: {pool_path}", flush=True)
+        if not pool_path.exists():
+            print(f"一层池文件不存在: {pool_path}", flush=True)
+            print("=== BUYSETUP_FOR_§15.6 ===", flush=True)
+            print("用户未提供一层池（文件不存在）", flush=True)
+            print("=== END BUYSETUP ===", flush=True)
+            return 0
         pool = load_user_pool(pool_path)
         if not pool:
-            print("一层池为空，退出。", flush=True)
+            print("一层池为空。", flush=True)
+            print("=== BUYSETUP_FOR_§15.6 ===", flush=True)
+            print("用户未提供一层池（文件为空）", flush=True)
+            print("=== END BUYSETUP ===", flush=True)
             return 0
         print(f"   {len(pool)} 只", flush=True)
-        print("2/2 现货补全 + 主线∩四选一…", flush=True)
         hits = enrich_pool_from_spot(pool)
-        refined, _boards, board_desc = refine_hits(
+        _all, hit_rows, miss_rows = analyze_user_pool(
             hits,
             start=start,
             end=end,
             asof_ts=asof_ts,
             workers=args.workers,
-            mainline_top=args.mainline_top,
             touch_pct=args.touch_pct,
             breakout_max_ext=args.breakout_max_ext,
         )
@@ -993,13 +1132,13 @@ def main() -> int:
             args=args,
             stamp=stamp,
             asof_label=asof_label,
-            hits=hits,
-            refined=refined,
-            board_desc=board_desc,
+            hit_rows=hit_rows,
+            miss_rows=miss_rows,
             pool_label=str(pool_path),
         )
         return 0
 
+    # —— 可选：通达信公式一层（--formula）——
     print("1/4 拉取 A 股现货…", flush=True)
     spot = fetch_spot()
     n0 = len(spot)
@@ -1145,18 +1284,18 @@ def main() -> int:
             touch_pct=args.touch_pct,
             breakout_max_ext=args.breakout_max_ext,
         )
+        # 公式+主线模式：命中=refined，未命中不展开（仅调试）
         emit_buysetup(
             args=args,
             stamp=stamp,
             asof_label=asof_label,
-            hits=hits,
-            refined=refined,
-            board_desc=board_desc,
-            pool_label="脚本公式池",
+            hit_rows=refined,
+            miss_rows=[],
+            pool_label=f"脚本公式池∩东财TOP{args.mainline_top}（{board_desc}）",
         )
         print("4/4 完成", flush=True)
     else:
-        print("3/3 完成（未开二筛）", flush=True)
+        print("3/3 完成（未开主线二筛）", flush=True)
         if hits:
             for h in hits[:10]:
                 print(
