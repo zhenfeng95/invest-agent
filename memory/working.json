@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-11T18:10:00+08:00",
+    "updated_at": "2026-08-12T08:40:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -50,6 +50,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-12T08:40:00+08:00",
+            "decision": "美股收盘日报 2026-08-12 已生成",
+            "detail": "output/daily/us-close-2026-08-12.md；复盘8/11：SPX7728/-0.32%；GOOGL-3.84% Capex；RSP/IWM跑赢；SMCI/CRWV盘后大涨；CPI 8/12"
+        },
         {
             "at": "2026-08-11T18:15:00+08:00",
             "decision": "A股收盘日报 2026-08-11 更新并推送",
@@ -252,10 +257,10 @@
         }
     ],
     "market_regime": {
-        "equity": "A股8/11：上证3934/-0.82%止五连阳；3777跌/1615涨；成交2.32万亿缩量；东财行业贵金属/铜领跌，MLCC/医药强；000737破MA5收14.01。8/10美股SPX7753/-0.06%；等CPI8/12",
-        "crypto": "BTC ~$64K 8/10 回调；IBIT $36.23/-1.55%；等CPI",
-        "macro": "看好AI与大科技；8/10 硬件→软件/能源轮动；油价Brent $87.72推通胀担忧",
-        "notes": "8/11收盘日报：评分50→轻仓试错、建议仓25-35%；000737浮亏~4%。本地已改选股：一层全自动+二筛进§15.6。美股加VOO 0.01@710。等CPI 8/12"
+        "equity": "A股8/11：上证3934/-0.82%；000737破MA5。8/11美股SPX7728/-0.32%三连阴；GOOGL-3.84% Capex焦虑；RSP/IWM跑赢；SMH+0.62%；等CPI 8/12 08:30ET",
+        "crypto": "IBIT $35.94/-0.80%；BTC ~$63.5K CPI前观望",
+        "macro": "10Y 4.684%；WTI $83.48；Hyperscaler Capex $452B+；能源/电力链强",
+        "notes": "8/12美股日报已生成；VOO $708.42略低于成本$710；SMCI/CRWV盘后大涨；CPI当日最大变量"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（同花顺并列 + §15.6二筛 + screener仅一层）+ FEISHU_WEBHOOK_URL；Run now 验证",
