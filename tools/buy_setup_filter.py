@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """四选一买点检测（my-soul 量能口径；趋势线为自动近似）。
 
-1. 放量突破 MA5
+1. 放量突破 MA5（含首次突破 + 趋势内放量阳线）
 2. 放量突破下降趋势线（近端两段下降波峰连线）
 3. 缩量回踩 MA5
 4. 缩量回踩上升趋势线（近端两段上升波谷连线）
@@ -104,12 +104,24 @@ def analyze_buy_setup(
     if not is_fang and not is_suo:
         miss_reason = "量能中间带"
     else:
-        # 1) 放量突破 MA5（限制延伸，降低追加速）
-        if is_fang and c1 <= m1 and c0 > m0 and ext <= breakout_max_ext_pct:
+        ma5_up = float(ma5.iloc[-1]) >= float(ma5.iloc[-5])
+
+        # 1) 放量突破 MA5（首次突破 + 趋势内放量阳线，统一归类）
+        first_ma5_breakout = (
+            is_fang and c1 <= m1 and c0 > m0 and ext <= breakout_max_ext_pct
+        )
+        trend_ma5_breakout = (
+            is_fang
+            and ma5_up
+            and c1 > m1
+            and c0 > m0
+            and c0 > c1
+            and ext <= breakout_max_ext_pct
+        )
+        if first_ma5_breakout or trend_ma5_breakout:
             signals.append("放量突破MA5")
 
         # 3) 缩量回踩 MA5
-        ma5_up = float(ma5.iloc[-1]) >= float(ma5.iloc[-5])
         near = abs(c0 / m0 - 1.0) * 100.0 <= touch_pct or float(low.iloc[-1]) <= m0 * (
             1 + touch_pct / 100.0
         )
