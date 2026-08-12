@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-12T17:18:09+08:00",
+    "updated_at": "2026-08-12T17:30:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -62,6 +62,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-12T17:30:00+08:00",
+            "decision": "A股收盘日报 2026-08-12 定时任务完成+飞书推送",
+            "detail": "output/daily/ashare-close-2026-08-12.md 已在 main；§15.6复验命中3/10；飞书code=0（正文截断+GitHub全文链接）"
+        },
         {
             "at": "2026-08-12T17:18:09+08:00",
             "decision": "A股收盘日报 2026-08-12 补跑完成",
@@ -302,7 +307,7 @@
         "equity": "A股8/12：上证3946/+0.32%站回MA5；评分66轻仓试错；通信/CPO+地产强、油气弱；持仓600237铜峰@8.81贴MA5；已平000737",
         "crypto": "IBIT $35.94/-0.80%；BTC ~$63.5K CPI前观望",
         "macro": "10Y 4.684%；WTI $83.48；Hyperscaler Capex $452B+；能源/电力链强",
-        "notes": "8/12 A股收盘日报补跑完成；美CPI 20:30ET为隔夜变量；Automation当日17:00未触发"
+        "notes": "8/12 A股收盘日报已推送飞书；美CPI 20:30ET为隔夜变量"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL",
