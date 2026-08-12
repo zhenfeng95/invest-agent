@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-12T15:01:37+08:00",
+    "updated_at": "2026-08-12T17:18:09+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -62,6 +62,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-12T17:18:09+08:00",
+            "decision": "A股收盘日报 2026-08-12 补跑完成",
+            "detail": "output/daily/ashare-close-2026-08-12.md；上证3946/+0.32%；评分66→轻仓试错；§15.6命中铜峰/电科芯片/润达医疗；持仓铜峰盯MA5"
+        },
+        {
+            "at": "2026-08-12T17:12:16+08:00",
+            "decision": "核查：今日A股收盘日报定时任务未跑",
+            "detail": "17:12 BJT仍无 ashare-close-2026-08-12.md；Automations今日无A股收盘run；Ashare Close Daily仍enabled；上次为8/11 17:01"
+        },
         {
             "at": "2026-08-12T15:01:37+08:00",
             "decision": "录入 600237 铜峰电子买入：2026-08-12 @8.81×100",
@@ -289,10 +299,10 @@
         }
     ],
     "market_regime": {
-        "equity": "A股8/11：上证3934/-0.82%；000737破MA5。8/11美股SPX7728/-0.32%三连阴；GOOGL-3.84% Capex焦虑；RSP/IWM跑赢；SMH+0.62%；等CPI 8/12 08:30ET",
+        "equity": "A股8/12：上证3946/+0.32%站回MA5；评分66轻仓试错；通信/CPO+地产强、油气弱；持仓600237铜峰@8.81贴MA5；已平000737",
         "crypto": "IBIT $35.94/-0.80%；BTC ~$63.5K CPI前观望",
         "macro": "10Y 4.684%；WTI $83.48；Hyperscaler Capex $452B+；能源/电力链强",
-        "notes": "8/12美股日报已生成；VOO $708.42略低于成本$710；SMCI/CRWV盘后大涨；CPI当日最大变量"
+        "notes": "8/12 A股收盘日报补跑完成；美CPI 20:30ET为隔夜变量；Automation当日17:00未触发"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL",
