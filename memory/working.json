@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-13T14:48:07+08:00",
+    "updated_at": "2026-08-13T14:50:39+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -139,6 +139,11 @@
             "detail": "prompt-ashare-close-daily.md 已精简；完整版留 origin；rules/SETUP 已同步；须重贴 Automations"
         },
         {
+            "at": "2026-08-13T09:20:00+08:00",
+            "decision": "美股收盘日报 2026-08-13 定时任务完成",
+            "detail": "output/daily/us-close-2026-08-13.md；复盘8/12：SPX7748/+0.26%；CPI符合；SMCI/CRWV/LITE/NVDA强；Mag7平台弱；VIX14.55"
+        },
+        {
             "at": "2026-08-12T22:30:00+08:00",
             "decision": "录入美股三笔：QQQ卖$725/买$724各0.01；IBIT买0.03@$36.18",
             "detail": "trades CSV + positions-2026-08-12.json；QQQ成本调至$724；IBIT 0.05→0.08加权$35.82；QQQ卖单粗算+$0.05未计费"
@@ -259,11 +264,6 @@
             "detail": "rules/SETUP/my-soul/prompt-us-close 已改启用；飞书改走 feishu_send.py；用户须 push 后在 Automations 新建 Invest US Close Daily（cron 0 8 * * 1-5）并贴密钥"
         },
         {
-            "at": "2026-08-10T14:03:00+08:00",
-            "decision": "评估美股网格：VOO每跌$6买0.01、QQQ每跌$10买0.01 → 可行",
-            "detail": "相对价约0.84%/1.4%；QQQ档更宽合理；待确认是否写入my-soul替换原约$5示例；需定锚价与档深"
-        },
-        {
             "at": "2026-08-10T21:25:00+08:00",
             "decision": "修正亚盛集团评估：四选一≠可买，叠加主线+MA60后否决",
             "detail": "种植业非8/10主线(贵金属/医疗服务等)；收盘贴压MA60未突破。12只全量滤网后无干净买点，铜链等回踩观察"
@@ -272,6 +272,11 @@
             "at": "2026-08-10T17:05:00+08:00",
             "decision": "A股收盘日报 2026-08-10 已生成",
             "detail": "output/daily/ashare-close-2026-08-10.md；上证3967/+0.67%；跷跷板：医药消费黄金 vs 通信元件；评分71→积极参与，建议仓40-50%；北向未获取"
+        },
+        {
+            "at": "2026-08-10T14:03:00+08:00",
+            "decision": "评估美股网格：VOO每跌$6买0.01、QQQ每跌$10买0.01 → 可行",
+            "detail": "相对价约0.84%/1.4%；QQQ档更宽合理；待确认是否写入my-soul替换原约$5示例；需定锚价与档深"
         },
         {
             "at": "2026-08-10T13:53:00+08:00",
@@ -304,11 +309,6 @@
             "detail": "output/daily/ashare-close-2026-08-07.md；上证3940/+1.02%；双主线医疗服务+元件/CRO+PCB"
         },
         {
-            "at": "2026-08-06T17:05:00+08:00",
-            "decision": "A股收盘日报 2026-08-06 已生成并推送",
-            "detail": "output/daily/ashare-close-2026-08-06.md；上证3900/+0.57%；双主线煤炭+硬件"
-        },
-        {
             "at": "2026-08-06T18:05:00+08:00",
             "decision": "收盘日报只读两份固定 notes；对话必要时仍可扫 notes 全目录",
             "detail": "可执行交易框架.md + 炒股赚米的核心.md；已写入 my-soul 笔记用法"
@@ -332,6 +332,11 @@
             "at": "2026-08-06T17:35:00+08:00",
             "decision": "定时任务写完后 merge_to_main.sh：并进 main 并删 cursor/*，再发飞书",
             "detail": "阿里云只 pull main；需 Cloud Agent 有 main 写权限；prompts/SETUP/my-soul 已改"
+        },
+        {
+            "at": "2026-08-06T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-06 已生成并推送",
+            "detail": "output/daily/ashare-close-2026-08-06.md；上证3900/+0.57%；双主线煤炭+硬件"
         },
         {
             "at": "2026-08-06T17:05:00+08:00",
@@ -386,16 +391,18 @@
     ],
     "market_regime": {
         "equity": "A股8/13：已平600237铜峰@8.95（+1.59%）；新开002455百川@7.30×100",
-        "crypto": "IBIT $36.18加仓后0.08@$35.82；BTC ~$63.5K CPI前观望",
-        "macro": "10Y 4.684%；WTI $83.48；Hyperscaler Capex $452B+；能源/电力链强",
-        "notes": "8/12 A股收盘日报已推送飞书；美CPI 20:30ET为隔夜变量；持仓快照 positions-2026-08-13.json"
+        "us_equity": "美8/12：SPX7748/+0.26%终结三连阴；CPI符合预期；AI基建(SMCI/CRWV/LITE/NVDA)强、Mag7平台弱；VIX14.55；距纪录0.6%",
+        "crypto": "IBIT 0.08@$35.82；8/12收$35.89微盈；BTC ~$63.5K CPI后中性",
+        "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
+        "notes": "8/13美股收盘日报已生成；A股持仓快照 positions-2026-08-13.json（铜峰已平/百川新建）；持仓VOO@710/QQQ@724/IBIT/SGOV"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴精简版（§0–§10；轮动§5.3；用户池§9）+ FEISHU_WEBHOOK_URL",
         "push 后确认美股收盘日报 Automations Instructions 仍为最新；cron 北京 0 8 * * 1-5",
         "双收盘月成本约$50-100+（双源抓取会略增搜索量）；Dashboard 上限建议先 $60–100",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
-        "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
+        "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
     "soul_updates": [
         {
