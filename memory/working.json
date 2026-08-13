@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-12T22:30:00+08:00",
+    "updated_at": "2026-08-13T09:20:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -62,6 +62,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-13T09:20:00+08:00",
+            "decision": "美股收盘日报 2026-08-13 定时任务完成",
+            "detail": "output/daily/us-close-2026-08-13.md；复盘8/12：SPX7748/+0.26%；CPI符合；SMCI/CRWV/LITE/NVDA强；Mag7平台弱；VIX14.55"
+        },
         {
             "at": "2026-08-12T22:30:00+08:00",
             "decision": "录入美股三笔：QQQ卖$725/买$724各0.01；IBIT买0.03@$36.18",
@@ -310,9 +315,10 @@
     ],
     "market_regime": {
         "equity": "A股8/12：上证3946/+0.32%站回MA5；评分66轻仓试错；通信/CPO+地产强、油气弱；持仓600237铜峰@8.81贴MA5；已平000737",
-        "crypto": "IBIT $36.18加仓后0.08@$35.82；BTC ~$63.5K CPI前观望",
-        "macro": "10Y 4.684%；WTI $83.48；Hyperscaler Capex $452B+；能源/电力链强",
-        "notes": "8/12 A股收盘日报已推送飞书；美CPI 20:30ET为隔夜变量"
+        "us_equity": "美8/12：SPX7748/+0.26%终结三连阴；CPI符合预期；AI基建(SMCI/CRWV/LITE/NVDA)强、Mag7平台弱；VIX14.55；距纪录0.6%",
+        "crypto": "IBIT 0.08@$35.82；8/12收$35.89微盈；BTC ~$63.5K CPI后中性",
+        "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
+        "notes": "8/13 美股收盘日报已生成；持仓VOO@710/QQQ@724/IBIT/SGOV"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL",
