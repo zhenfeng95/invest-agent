@@ -3,7 +3,7 @@
 你已选择 **A'**：只用 Cursor Automations，当前开 **2 个** 定时任务。
 
 **当前组合**：
-1. **A股收盘日报**（工作日 **17:00**）— 当日收盘全复盘 + 用户一层池四选一全量分析（§15.6）+ 明日应对（见 `prompt-ashare-close-daily.md`）
+1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§10（见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
 2. **美股收盘日报**（工作日 **08:00**）— 复盘昨夜美股收盘（见 `prompt-us-close-daily.md`）
 
 **已暂停 / 停用**：
@@ -113,7 +113,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest A-Share Close Daily |
 | 触发 | Cron：`0 17 * * 1-5`（北京时间工作日 **17:00**；错开刚收盘高峰） |
-| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴：§15.6=用户池全量命中/未命中 + 东财∥同花顺并列主源**） |
+| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴：连续 §0–§10；轮动在 §5.3**） |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 
@@ -171,7 +171,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 ## 第 6 步：观察成本
 
 - 看 [Usage](https://cursor.com/dashboard/usage)
-- 双收盘单次都明显高于盘前；偏贵 → 换更便宜模型、或后续再开「精简版」提示词
+- 双收盘单次都明显高于盘前；A股已切**精简版**提示词；仍偏贵 → 换更便宜模型
 - 需要早盘决策时，再 **Enable** 回 A股盘前（09:00）
 
 ---
