@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-13T14:50:39+08:00",
+    "updated_at": "2026-08-13T14:57:15+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-13T14:57:15+08:00",
+            "decision": "暂停美股收盘日报定时任务",
+            "detail": "A'仅保留A股收盘17:00；Cursor Automation「Invest US Close Daily」请Pause；rules/SETUP/my-soul/prompt已改"
+        },
         {
             "at": "2026-08-13T14:48:07+08:00",
             "decision": "录入 600237 卖出 @8.95×100；002455 百川股份买入 @7.30×100",
@@ -398,13 +403,18 @@
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴精简版（§0–§10；轮动§5.3；用户池§9）+ FEISHU_WEBHOOK_URL",
-        "push 后确认美股收盘日报 Automations Instructions 仍为最新；cron 北京 0 8 * * 1-5",
-        "双收盘月成本约$50-100+（双源抓取会略增搜索量）；Dashboard 上限建议先 $60–100",
+        "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
+        "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-13T14:57:15+08:00",
+            "changes": "定时任务：暂停美股收盘日报；A'仅A股收盘精简版17:00",
+            "reason": "用户要求先暂停美股收盘日报"
+        },
         {
             "file": "soul/my-soul.md",
             "changes": "用户池写入日报节号§10→§9；定时任务正文§0–§11→§0–§10",

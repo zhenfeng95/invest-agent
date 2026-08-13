@@ -2,9 +2,10 @@
 
 把下面整段粘贴到 Cursor Automation 的 Instructions。
 
-> **✅ A' 启用（2026-08-11）**：与 A股收盘日报并行。  
-> **cron（北京时间）**：`0 8 * * 1-5`（工作日 08:00；复盘昨夜美股）  
-> UTC 对照：`0 0 * * 1-5`（若界面按 UTC）。把「---」以下粘贴到 Automation Instructions，文末加 `FEISHU_WEBHOOK_URL`。
+> **状态**：⏸ 已暂停（原 A' 任务②）  
+> **cron（北京时间，历史）**：`0 8 * * 1-5`（工作日 08:00；复盘昨夜美股）  
+> UTC 对照：`0 0 * * 1-5`（若界面按 UTC）。  
+> 当前 A' 仅启用 **A股收盘日报**（17:00）；本提示词保留备查。恢复时：Automation **Enable** + 重贴 Instructions + `FEISHU_WEBHOOK_URL`。
 
 ---
 

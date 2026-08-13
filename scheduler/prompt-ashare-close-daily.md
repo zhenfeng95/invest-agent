@@ -7,7 +7,7 @@
 > 若界面按 UTC：北京 17:00 = UTC `0 9 * * 1-5`
 > **正文只写连续章节**：0 → 10（见下表）
 > 完整版备查：`scheduler/prompt-ashare-close-daily-origin.md`（勿当日常 Automations 主提示词）
-> 美股盘前 / A股盘前已暂停。
+> 美股收盘 / 美股盘前 / A股盘前已暂停。
 
 ---
 

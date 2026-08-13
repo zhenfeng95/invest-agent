@@ -1,12 +1,12 @@
-# A' 方案上手：A股 + 美股收盘日报
+# A' 方案上手：仅 A股收盘日报
 
-你已选择 **A'**：只用 Cursor Automations，当前开 **2 个** 定时任务。
+你已选择 **A'**：只用 Cursor Automations，当前开 **1 个** 定时任务。
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§10（见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
-2. **美股收盘日报**（工作日 **08:00**）— 复盘昨夜美股收盘（见 `prompt-us-close-daily.md`）
 
 **已暂停 / 停用**：
+- **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
 - 美股盘前提醒（原 21:00）→ Automation 请 **Pause**
 - A股盘前提醒（原 09:00）→ Automation 请 **Pause**
 - 合并抄底信号 → 继续 Pause / 删除
@@ -15,7 +15,7 @@
 **存档方式**：写入 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main** 并删 `cursor/*`）→ 再发飞书；**不开 PR**。  
 **飞书**：`scheduler/feishu_send.py`（表格转条目 + 卡片；超长截断；脚注为 main 上 GitHub 全文链接）。
 
-> 成本提示：两份收盘日报篇幅与搜索量都高；月消耗可能约 **$50–100+**（视模型与 Run 次数），务必设 Dashboard 上限。
+> 成本提示：仅 A股收盘精简版时月消耗粗估约 **$25–50**（视模型与 Run 次数）；务必设 Dashboard 上限。
 
 ---
 
@@ -117,29 +117,30 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 
-### Automation ②：美股收盘日报（本次新开）
+### Automation ②：美股收盘日报 — ⏸ 已暂停
 
 | 项 | 填什么 |
 |----|--------|
 | 名称 | Invest US Close Daily |
-| 触发 | Cron：`0 8 * * 1-5`（北京时间工作日 **08:00**；复盘昨夜美股） |
-| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+| 触发 | Cron：`0 8 * * 1-5`（历史；工作日 **08:00**） |
+| 操作 | 在 Cursor Automations 对该任务点 **Pause**；提示词 `prompt-us-close-daily.md` 保留备查 |
+| Instructions | 恢复启用时再粘贴「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
 
-**时区提醒**：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。以界面标注为准。
+**时区提醒**（恢复时）：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。
 
-若 Automation 已建过：只需 **Enable / 更新 Instructions（含飞书密钥）**、**关掉 Create PR**、**去掉 Resend**，不必强行新建。
+若 Automation 已建过：当前只需 **Pause**；不必删除。
 
 ---
 
 ## 第 5 步：先手动跑一次
 
-每个新/改过的 Automation 都点 **Run now / 立即运行**（至少先跑美股收盘日报验证本次启用）。
+改完 A股收盘提示词后点 **Run now / 立即运行**（验证 A股收盘日报即可；美股收盘已暂停勿跑）。
 
 ### 成功时你应该看到什么
 
-1. **飞书群**收到机器人消息（标题含「美股收盘日报」或「A股收盘日报」）
+1. **飞书群**收到机器人消息（标题含「A股收盘日报」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/us-close-YYYY-MM-DD.md` 或 `ashare-close-YYYY-MM-DD.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。
