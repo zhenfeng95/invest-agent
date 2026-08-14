@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-13T17:05:00+08:00",
+    "updated_at": "2026-08-14T09:33:55+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -33,14 +33,14 @@
         {
             "ticker": "QQQ",
             "name": "纳斯达克100 ETF",
-            "asked_at": "2026-08-12",
-            "note": "持仓0.01@$724（8/12卖$725买回$724碎股网格）；8/11原建仓$720；暂无固定止损"
+            "asked_at": "2026-08-13",
+            "note": "已平仓：相对8/12成本$724 → 8/13卖0.01@$729；粗算+$0.05(+0.69%)；暂未买回"
         },
         {
             "ticker": "VOO",
             "name": "标普500 ETF",
-            "asked_at": "2026-08-10",
-            "note": "已建仓：8/10买0.01@$710；碎股网格/底仓；暂无固定止损"
+            "asked_at": "2026-08-13",
+            "note": "持仓0.01@$713（8/13卖$714买回$713碎股网格）；8/10原@$710；暂无固定止损"
         },
         {
             "ticker": "600108",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-14T09:33:55+08:00",
+            "decision": "录入美股三笔：VOO卖$714/买$713各0.01；QQQ卖$729×0.01",
+            "detail": "trades CSV + positions-2026-08-13.json；VOO成本调至$713；QQQ已平粗算+$0.05未计费；现持IBIT/SGOV/VOO+百川"
+        },
         {
             "at": "2026-08-13T17:05:00+08:00",
             "decision": "A股收盘日报 2026-08-13 定时任务完成",
@@ -404,7 +409,7 @@
         "us_equity": "美8/12：SPX7748/+0.26%终结三连阴；CPI符合预期；AI基建(SMCI/CRWV/LITE/NVDA)强、Mag7平台弱；VIX14.55；距纪录0.6%",
         "crypto": "IBIT 0.08@$35.82；8/12收$35.89微盈；BTC ~$63.5K CPI后中性",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "8/13美股收盘日报已生成；A股持仓快照 positions-2026-08-13.json（铜峰已平/百川新建）；持仓VOO@710/QQQ@724/IBIT/SGOV"
+        "notes": "持仓快照 positions-2026-08-13.json：VOO@713；QQQ已平@$729；A股百川@7.30；IBIT/SGOV"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴精简版（§0–§10；轮动§5.3；用户池§9）+ FEISHU_WEBHOOK_URL",
