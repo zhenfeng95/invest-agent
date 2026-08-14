@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-14T13:33:44+08:00",
+    "updated_at": "2026-08-14T16:52:04+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-14T16:52:04+08:00",
+            "decision": "§7势能改为必评4项+其余选填",
+            "detail": "必评：趋势/资金·主力合并/板块/空间；筹码无数据禁止猜；须重贴Automations"
+        },
+        {
+            "at": "2026-08-14T16:48:54+08:00",
+            "decision": "A股收盘§7持仓增加框架势能十势对照表",
+            "detail": "每只强/中/弱/未获取；不覆盖my-soul止损；须重贴Automations"
+        },
         {
             "at": "2026-08-14T13:33:44+08:00",
             "decision": "公众号改为默认只出素材卡，正文用户自填",
@@ -447,7 +457,7 @@
         "notes": "持仓快照 positions-2026-08-13.json：VOO@713；QQQ已平@$729；A股百川@7.30；IBIT/SGOV"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴精简版（§0–§10；轮动§5.3；用户池§9）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴（§7势能必评4项）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
@@ -455,6 +465,16 @@
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-14T16:52:04+08:00",
+            "changes": "§7势能对照改为必评4项（趋势/资金·主力/板块/空间）+选填",
+            "reason": "用户确认收窄为更可核验的子集"
+        },
+        {
+            "updated_at": "2026-08-14T16:48:54+08:00",
+            "changes": "笔记十势用于收盘日报§7持仓对照；不可覆盖MA5/趋势线止损",
+            "reason": "用户要求持仓分析加上势能检查清单"
+        },
         {
             "updated_at": "2026-08-14T13:33:44+08:00",
             "changes": "势能复盘默认协作：Agent只出数字+成交素材卡，禁止默认代写全文",
