@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-14T18:19:22+08:00",
+    "updated_at": "2026-08-15T00:24:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -33,8 +33,8 @@
         {
             "ticker": "QQQ",
             "name": "纳斯达克100 ETF",
-            "asked_at": "2026-08-13",
-            "note": "已平仓：相对8/12成本$724 → 8/13卖0.01@$729；粗算+$0.05(+0.69%)；暂未买回"
+            "asked_at": "2026-08-15",
+            "note": "持仓0.01@$730（8/14碎股网格买回）；8/13曾卖$729粗算+$0.05"
         },
         {
             "ticker": "VOO",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-15T00:24:00+08:00",
+            "decision": "录入美股两笔：IBIT买0.03@$35.45；QQQ买0.01@$730",
+            "detail": "trades CSV + positions-2026-08-14.json；IBIT 0.11@$36.36；QQQ买回@$730；现持IBIT/SGOV/VOO/QQQ+百川"
+        },
         {
             "at": "2026-08-14T18:19:22+08:00",
             "decision": "§7加总纲对照1句；§8持仓态度加半句空间/盈亏比",
@@ -466,10 +471,10 @@
     ],
     "market_regime": {
         "equity": "A股8/14收：上证3927.18/+0.01%仍破MA5；评分63→轻仓试错；CPO/通信强、电力弱；持002455百川@7.30收7.20线下MA5",
-        "us_equity": "美8/12：SPX7748/+0.26%终结三连阴；CPI符合预期；AI基建(SMCI/CRWV/LITE/NVDA)强、Mag7平台弱；VIX14.55；距纪录0.6%",
-        "crypto": "IBIT 0.08@$35.82；8/12收$35.89微盈；BTC ~$63.5K CPI后中性",
+        "us_equity": "美8/14：用户网格加仓 IBIT@$35.45、QQQ买回@$730；现持 VOO@713/QQQ@730/IBIT 0.11@$36.36",
+        "crypto": "IBIT 0.11@$36.36；8/14加仓0.03@$35.45",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-13.json：VOO@713；QQQ已平@$729；A股百川@7.30；IBIT/SGOV"
+        "notes": "持仓快照 positions-2026-08-14.json：VOO@713；QQQ@730；IBIT 0.11@$36.36；A股百川@7.30"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴（§7总纲对照+§8空间/盈亏比）+ FEISHU_WEBHOOK_URL",
