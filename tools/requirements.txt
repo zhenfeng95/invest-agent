@@ -1,3 +1,4 @@
 pandas>=2.0.0
 requests>=2.28.0
 curl_cffi>=0.13.0
+py_mini_racer>=0.6.0
