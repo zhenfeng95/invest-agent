@@ -174,5 +174,5 @@
 - **Webhook**：只写在 Cursor Automations Instructions 文末「密钥」段（`FEISHU_WEBHOOK_URL`），**不要 commit 进仓库**
 - **存档**：定时任务写 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main**、删 `cursor/*`）→ 再发飞书；**不开 PR**；飞书用 `scheduler/feishu_send.py`
 - **定时任务（A'）**：**仅 A股收盘日报精简版**（工作日 **17:00**，正文连续 **§0–§10**（§5.3=轮动；§7 含持仓负面；§9=用户池）；完整版见 `prompt-ashare-close-daily-origin.md`）；**美股收盘日报**（原 08:00）、美股盘前（21:00）、A股盘前（09:00）均已暂停；抄底信号仍停用
-- **笔记用法**：收盘日报定时任务**只读** `data/raw/notes/可执行交易框架.md` 与 `炒股赚米的核心.md`（不扫同目录新增文件）；框架势能清单在日报 **§7** 为 **必评 4 项**（趋势 / 资金·主力 / 板块 / 空间）+ **周期势多周期涨幅表**（3/5/10/20/60日+年初至今，东财/`tools/stock_period_chg.py`）+ 其余选填（补充框架，**不可覆盖**本文 MA5/趋势线止损等硬规则）；日常对话中若涉及交易框架/仓位环境，Agent 仍应在有必要时扫 `data/raw/notes/` 下相关文件
+- **笔记用法**：收盘日报定时任务**只读** `data/raw/notes/可执行交易框架.md` 与 `炒股赚米的核心.md`（不扫同目录新增文件）；框架势能清单在日报 **§7** 为 **必评 4 项**（趋势 / 资金·主力 / 板块 / 空间）+ **空间势下周期势一句**（3/5/10/20/60日+年初至今斜杠串总结，东财/`tools/stock_period_chg.py`）+ 其余选填（**不可覆盖**本文 MA5/趋势线止损等硬规则）；日常对话中若涉及交易框架/仓位环境，Agent 仍应在有必要时扫 `data/raw/notes/` 下相关文件
 - **上手**：`scheduler/SETUP-A-prime.md`（含飞书接入）；合并脚本见 `scheduler/merge_to_main.sh`
