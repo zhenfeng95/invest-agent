@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-15T00:31:00+08:00",
+    "updated_at": "2026-08-16T18:13:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-16T18:13:00+08:00",
+            "decision": "A股收盘§7持仓升格周期势多周期涨幅表",
+            "detail": "3/5/10/20/60日+年初至今；tools/stock_period_chg.py；prompt/rules/my-soul已改；须重贴Automations"
+        },
         {
             "at": "2026-08-15T00:31:00+08:00",
             "decision": "修正 IBIT 加权成本：按券商三笔成交价重算为$35.73",
@@ -482,7 +487,7 @@
         "notes": "持仓快照 positions-2026-08-14.json：VOO@713；QQQ@730；IBIT 0.11@$35.73；A股百川@7.30"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴（§7总纲对照+§8空间/盈亏比）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴（§7周期势多周期表+stock_period_chg）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
@@ -490,6 +495,11 @@
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-16T18:13:00+08:00",
+            "changes": "§7持仓周期势：必写3/5/10/20/60日+年初至今涨幅表",
+            "reason": "用户要求收盘日报势能对照罗列多周期涨幅"
+        },
         {
             "updated_at": "2026-08-14T16:52:04+08:00",
             "changes": "§7势能对照改为必评4项（趋势/资金·主力/板块/空间）+选填",
