@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-16T18:22:00+08:00",
+    "updated_at": "2026-08-16T18:26:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-16T18:26:00+08:00",
+            "decision": "§7空间势增加MA60/120/250价与较近≤3%标空间不足",
+            "detail": "tools/stock_ma_levels.py；prompt/rules/my-soul已改；须重贴Automations"
+        },
         {
             "at": "2026-08-16T18:22:00+08:00",
             "decision": "§7周期势并入势能单表：空间势下一行",
@@ -497,7 +502,7 @@
         "notes": "持仓快照 positions-2026-08-14.json：VOO@713；QQQ@730；IBIT 0.11@$35.73；A股百川@7.30"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴（§7势能单表5行含周期势）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴（§7空间势MA60/120/250）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
