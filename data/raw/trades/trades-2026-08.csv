@@ -21,3 +21,4 @@ date,market,ticker,name,side,qty,price,currency,fee,note
 2026-08-13,US,QQQ,纳斯达克100 ETF,sell,0.01,729.00,USD,,美股卖出；碎股网格；暂未买回
 2026-08-14,US,IBIT,比特币现货 ETF,buy,0.03,35.33,USD,,美股买入；碎股网格回落加仓
 2026-08-14,US,QQQ,纳斯达克100 ETF,buy,0.01,730.00,USD,,美股买入；碎股网格回落买回
+2026-08-17,A,002643,万润股份,buy,100,14.30,CNY,,A股买入
