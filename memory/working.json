@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-16T18:45:00+08:00",
+    "updated_at": "2026-08-17T11:24:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -9,7 +9,13 @@
         "AAPL",
         "600108",
         "601118",
-        "002455"
+        "002455",
+        "000973",
+        "603220",
+        "002643",
+        "000551",
+        "000788",
+        "000919"
     ],
     "active_research": [
         {
@@ -68,6 +74,21 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-17T11:24:00+08:00",
+            "decision": "一层观察池追加6只：佛塑科技/中贝通信/万润股份/创元科技/北大医药/金陵药业",
+            "detail": "写入 data/raw/screener/pool-latest.csv；原13只保留；收盘日报§9将全量四选一"
+        },
+        {
+            "at": "2026-08-17T10:40:00+08:00",
+            "decision": "交易框架.md 嵌入导图全部示意图",
+            "detail": "59处引用/57张png → data/raw/notes/交易框架-assets/；未升格my-soul"
+        },
+        {
+            "at": "2026-08-17T10:35:00+08:00",
+            "decision": "沉淀 交易框架.xmind → data/raw/notes/交易框架.md",
+            "detail": "股票交易系统全文提纲（19节）；未升格进my-soul；定时日报仍只读可执行交易框架.md"
+        },
         {
             "at": "2026-08-16T18:45:00+08:00",
             "decision": "§7筹码势：仅CYQ汇总指标一行，接入stock_cyq_summary.py",
@@ -511,6 +532,7 @@
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
+        "是否将新沉淀的「交易框架.md」纳入收盘日报必读，或继续只读「可执行交易框架.md」？",
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
