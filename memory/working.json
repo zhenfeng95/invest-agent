@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-18T10:33:00+08:00",
+    "updated_at": "2026-08-18T15:42:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -27,6 +27,12 @@
         "002079"
     ],
     "active_research": [
+        {
+            "ticker": "AAPL",
+            "name": "苹果",
+            "asked_at": "2026-08-18",
+            "note": "补录：8/10买0.01@$306（数量按此前碎股口径，用户未口述股数）；美股暂无固定止损"
+        },
         {
             "ticker": "000100",
             "name": "TCL科技",
@@ -101,6 +107,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-18T15:42:00+08:00",
+            "decision": "补录 AAPL 买入：2026-08-10 @306×0.01",
+            "detail": "trades CSV + 回写 8/11–8/18 positions；数量用户未口述，按8/4–8/5 AAPL碎股口径记0.01；现持AAPL/IBIT/SGOV/VOO/QQQ+TCL科技"
+        },
         {
             "at": "2026-08-18T10:33:00+08:00",
             "decision": "录入A股三笔：百川卖@7.36×100；万润卖@14.42×100；TCL科技买@5.25×100",
@@ -584,10 +595,10 @@
     ],
     "market_regime": {
         "equity": "A股8/18盘中口述：平百川@7.36/万润@14.42；建仓000100 TCL科技100@¥5.25",
-        "us_equity": "美8/17：IBIT卖0.03@$36.05，余0.08@$35.73；QQQ@730；VOO@713；SGOV@100",
+        "us_equity": "美8/17：IBIT 0.08@$35.73；AAPL 0.01@$306（8/10补录）；QQQ@730；VOO@713；SGOV@100",
         "crypto": "IBIT 0.08@$35.73（券商平均成本）；8/17减仓0.03@$36.05",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-18.json；A股现持TCL科技；一层池25只"
+        "notes": "持仓快照 positions-2026-08-18.json；A股现持TCL科技；美股含AAPL 0.01@$306；一层池25只"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴（§1操作提示：稳则主线+激进买点+小波段 / 震荡则弃大盘+题材高抛低吸）+ FEISHU_WEBHOOK_URL",

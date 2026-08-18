@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-005",
+      "date": "2026-08-10",
+      "type": "decision",
+      "summary": "补录买入 AAPL 0.01 股 @$306",
+      "detail": "用户口述价格；数量未提供，按此前 AAPL/美股碎股口径记 0.01。成本 $3.06（未计佣金）。8/4–8/5 那笔 AAPL 已平仓，此为新开仓。",
+      "tickers": ["AAPL"],
+      "outcome": null
+    },
+    {
       "id": "ep-004",
       "date": "2026-08-18",
       "type": "decision",
