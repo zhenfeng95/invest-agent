@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-006",
+      "date": "2026-08-18",
+      "type": "decision",
+      "summary": "一层观察池删5只，现20只",
+      "detail": "删大西洋600558、贝因美002570、北大医药000788、黑猫股份002068、通威股份600438。文件 data/raw/screener/pool-latest.csv。",
+      "tickers": ["600558", "002570", "000788", "002068", "600438"],
+      "outcome": null
+    },
+    {
       "id": "ep-005",
       "date": "2026-08-10",
       "type": "decision",
