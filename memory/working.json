@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-20T10:16:00+08:00",
+    "updated_at": "2026-08-20T10:32:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -119,6 +119,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-20T10:32:00+08:00",
+            "decision": "沉淀行情→账户重心：好→GY+YH进攻；不好→HT+YH防守短线；日报§1加账户重心一句",
+            "detail": "my-soul+prompt-ashare-close-daily+rules已改；Automations须重贴prompt"
+        },
         {
             "at": "2026-08-20T10:16:00+08:00",
             "decision": "华泰账户代号 ETF→HT；CSV/positions/my-soul 已同步",
@@ -658,7 +663,7 @@
         "notes": "持仓快照 positions-2026-08-20.json；A股 GY:TCL + HT:159338；美股IBIT/SGOV/VOO/QQQ；一层池20只"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴（§1操作提示：稳则主线+激进买点+小波段 / 震荡则弃大盘+题材高抛低吸）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴（§1：操作提示+账户重心 GY+YH/HT+YH）+ FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴（§7六行势能含筹码势汇总）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "仅A股收盘精简版后月成本粗估约$25–50；Dashboard上限可下调",
@@ -668,6 +673,11 @@
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（用户池§15.6命中/未命中 + 东财∥同花顺）+ FEISHU_WEBHOOK_URL"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-20T10:32:00+08:00",
+            "changes": "新增「行情→账户重心」：行情好主做进攻精力在国元+银河；行情不好主做防守短线精力在华泰+银河；§1必写账户重心一句；收盘日报prompt/rules同步",
+            "reason": "用户补充三账户随行情分配心思精力，并要求日报给账户重心提示"
+        },
         {
             "updated_at": "2026-08-20T09:55:00+08:00",
             "changes": "A股三账户代号统一为券商缩写：GY国元 / YH银河 / HT华泰（指数仓159338）；account 列不再用 ETF",

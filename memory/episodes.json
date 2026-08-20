@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-011",
+      "date": "2026-08-20",
+      "type": "decision",
+      "summary": "行情→账户重心：好则GY+YH进攻，不好则HT+YH防守短线",
+      "detail": "写入 my-soul；A股收盘日报§1在操作提示后必写账户重心一句。银河两端常驻。须重贴 Automations prompt。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-010",
       "date": "2026-08-20",
       "type": "decision",
