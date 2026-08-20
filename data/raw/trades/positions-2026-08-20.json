@@ -2,7 +2,7 @@
   "as_of": "2026-08-20",
   "source": "user_report",
   "currency_note": "美股持仓成本与市值单位为 USD；A股为 CNY",
-  "notes": "2026-08-20 华泰ETF仓补录：159338 国泰中证A500ETF 500@¥1.214（买入日未提供）。其余持仓沿用 08-19 快照：美股 IBIT/SGOV/VOO/QQQ；国元 TCL科技。权威快照以本文件为准。",
+  "notes": "2026-08-20 华泰HT仓补录：159338 国泰中证A500ETF 500@¥1.214（买入日未提供）。其余持仓沿用 08-19 快照：美股 IBIT/SGOV/VOO/QQQ；国元 TCL科技。权威快照以本文件为准。",
   "positions": [
     {
       "market": "US",
@@ -61,7 +61,7 @@
       "qty": 500,
       "avg_cost": 1.214,
       "currency": "CNY",
-      "account": "ETF",
+      "account": "HT",
       "note": "华泰证券；用户报告持仓与成本；买入日未提供；成本合计¥607"
     }
   ],

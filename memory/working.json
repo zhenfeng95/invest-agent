@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-20T10:05:00+08:00",
+    "updated_at": "2026-08-20T10:16:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -31,7 +31,7 @@
             "ticker": "159338",
             "name": "国泰中证A500ETF",
             "asked_at": "2026-08-20",
-            "note": "华泰ETF仓：持仓500@¥1.214（补录；买入日未提供）；成本合计¥607；未计费"
+            "note": "华泰HT仓：持仓500@¥1.214（补录；买入日未提供）；成本合计¥607；未计费"
         },
         {
             "ticker": "AAPL",
@@ -120,14 +120,19 @@
     ],
     "recent_decisions": [
         {
+            "at": "2026-08-20T10:16:00+08:00",
+            "decision": "华泰账户代号 ETF→HT；CSV/positions/my-soul 已同步",
+            "detail": "三账户统一券商缩写 GY/YH/HT；159338 行 account=HT"
+        },
+        {
             "at": "2026-08-20T10:05:00+08:00",
-            "decision": "补录华泰159338：500股@¥1.214（账户ETF）",
-            "detail": "trades CSV + positions-2026-08-20.json；买入日未提供；成本合计¥607未计费；A股现持GY:TCL + ETF:159338"
+            "decision": "补录华泰159338：500股@¥1.214（账户HT）",
+            "detail": "trades CSV + positions-2026-08-20.json；买入日未提供；成本合计¥607未计费；A股现持GY:TCL + HT:159338"
         },
         {
             "at": "2026-08-20T09:55:00+08:00",
-            "decision": "A股三账户写入my-soul：GY国元谨慎四选一 / YH银河激进尾盘 / ETF华泰指数仓159338",
-            "detail": "风险偏好注明仅约束GY；交易记录采用单CSV+account列（GY/YH/ETF/US）；历史A股回填GY；positions补account；YH止损细则待补；ETF券商补记华泰"
+            "decision": "A股三账户写入my-soul：GY国元谨慎四选一 / YH银河激进尾盘 / HT华泰指数仓159338",
+            "detail": "风险偏好注明仅约束GY；交易记录采用单CSV+account列（GY/YH/HT/US）；历史A股回填GY；positions补account；YH止损细则待补；华泰代号定为HT（原误写ETF已更正）"
         },
         {
             "at": "2026-08-20T09:40:00+08:00",
@@ -646,11 +651,11 @@
         }
     ],
     "market_regime": {
-        "equity": "A股：GY持000100 TCL科技100@¥5.25；华泰ETF持159338 500@¥1.214；8/19上证3894/-2.40%破MA5/MA60",
+        "equity": "A股：GY持000100 TCL科技100@¥5.25；华泰HT持159338 500@¥1.214；8/19上证3894/-2.40%破MA5/MA60",
         "us_equity": "美8/19：IBIT 0.02@$35.73；QQQ 0.03@$721.67；VOO 0.02@$710；SGOV@100；TSLA当日开平",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-20.json；A股 GY:TCL + ETF:159338；美股IBIT/SGOV/VOO/QQQ；一层池20只"
+        "notes": "持仓快照 positions-2026-08-20.json；A股 GY:TCL + HT:159338；美股IBIT/SGOV/VOO/QQQ；一层池20只"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴（§1操作提示：稳则主线+激进买点+小波段 / 震荡则弃大盘+题材高抛低吸）+ FEISHU_WEBHOOK_URL",
@@ -665,8 +670,8 @@
     "soul_updates": [
         {
             "updated_at": "2026-08-20T09:55:00+08:00",
-            "changes": "A股买入卖出习惯拆三账户：GY国元谨慎四选一；YH银河激进尾盘；ETF华泰指数仓（当前159338）；风险偏好标明仅约束GY；核心关注加159338；约定交易记录用account列；补记ETF券商=华泰",
-            "reason": "用户确认三账户分风格操作，并补正第三账户为华泰证券"
+            "changes": "A股三账户代号统一为券商缩写：GY国元 / YH银河 / HT华泰（指数仓159338）；account 列不再用 ETF",
+            "reason": "用户要求华泰账户写成 HT，便于按券商持仓统计"
         },
         {
             "updated_at": "2026-08-17T13:45:00+08:00",
