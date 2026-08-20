@@ -35,3 +35,4 @@ date,market,ticker,name,side,qty,price,currency,fee,account,note
 2026-08-19,US,TSLA,特斯拉,buy,0.01,339.00,USD,,US,美股买入
 2026-08-19,US,TSLA,特斯拉,sell,0.01,346.00,USD,,US,美股卖出；平当日仓
 2026-08-19,US,IBIT,比特币现货 ETF,sell,0.03,38.80,USD,,US,美股卖出；碎股减仓
+2026-08-20,A,159338,国泰中证A500ETF,buy,500,1.214,CNY,,ETF,华泰指数仓补录；用户报告持仓500@¥1.214；买入日未提供
