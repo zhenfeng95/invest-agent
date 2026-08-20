@@ -1,6 +1,30 @@
 {
   "episodes": [
     {
+      "id": "ep-009",
+      "date": "2026-08-20",
+      "type": "decision",
+      "summary": "A股三账户风格沉淀：国元四选一 / 银河尾盘 / 华泰A500指数仓",
+      "detail": "写入 my-soul。记账约定：单表 trades CSV 加 account=GY|YH|ETF（美股US）；历史A股视为GY。ETF账户券商=华泰证券。YH止损细则与ETF加减仓档位待用户补全。",
+      "tickers": [
+        "159338"
+      ],
+      "outcome": null
+    },
+    {
+      "id": "ep-008",
+      "date": "2026-08-19",
+      "type": "decision",
+      "summary": "美股四笔：QQQ买0.01@$715；TSLA买0.01@$339后同日卖@$346；IBIT卖0.03@$38.80",
+      "detail": "用户口述补录。QQQ加仓后0.03@加权$721.67；TSLA当日开平粗算+$0.07(+2.06%)；IBIT相对加权$35.73粗算+$0.09(+8.59%)，余0.02。均未计佣金。美股现持 IBIT/SGOV/VOO/QQQ。",
+      "tickers": [
+        "QQQ",
+        "TSLA",
+        "IBIT"
+      ],
+      "outcome": null
+    },
+    {
       "id": "ep-007",
       "date": "2026-08-18",
       "type": "decision",
