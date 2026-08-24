@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-019",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "A股收盘日报 2026-08-21 定时任务完成",
+      "detail": "output/daily/ashare-close-2026-08-21.md；上证3905/+0.04%仍破MA5；评分52轻仓试错；贵金属+算力硬件主线；YH持603912 HT持159338；§9命中2/14。",
+      "tickers": ["603912", "159338"],
+      "outcome": null
+    },
+    {
       "id": "ep-018",
       "date": "2026-08-21",
       "type": "decision",

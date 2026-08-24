@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-21T18:25:00+08:00",
+    "updated_at": "2026-08-24T09:45:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -126,6 +126,11 @@
     ],
     "recent_decisions": [
         {
+            "at": "2026-08-24T09:45:00+08:00",
+            "decision": "合并 working.json 冲突：保留双方改动",
+            "detail": "保留8/21美股收盘精简§0–§6决策链；并入8/21 A股收盘定时任务（上证3905/+0.04%评分52）"
+        },
+        {
             "at": "2026-08-21T18:25:00+08:00",
             "decision": "美股收盘精简版再删主题与风格；正文改为§0–§6",
             "detail": "轮动只用§1+§3十一板块；prompt/rules/SETUP/my-soul已改；任务仍暂停，恢复时须重贴 Automations"
@@ -149,6 +154,11 @@
             "at": "2026-08-21T18:11:00+08:00",
             "decision": "美股收盘日报切精简版：去掉§2盘中、§8个股异动、§12关注股观察",
             "detail": "prompt-us-close-daily.md 正文连续§0–§12；完整版留 origin；rules/SETUP/my-soul已同步；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-21 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-21.md；上证3905/+0.04%仍破MA5；评分52轻仓试错；贵金属+算力硬件主线、医药兑现；YH持603912 HT持159338；§9命中2/14"
         },
         {
             "at": "2026-08-21T15:17:00+08:00",
@@ -706,7 +716,7 @@
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$721.67；VOO 0.03@$708；SGOV@100",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-21.json；A股 GY空个股 + YH:603912 + HT:159338；美股IBIT/SGOV/VOO/QQQ；一层池14只（8/21删6）"
+        "notes": "持仓快照 positions-2026-08-21.json；A股 GY空个股 + YH:603912 + HT:159338；美股IBIT/SGOV/VOO/QQQ；一层池14只；8/21上证3905/+0.04%仍破MA5；评分52轻仓试错；贵金属+算力主线"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴（§1：操作提示+账户重心 GY+YH/HT+YH）+ FEISHU_WEBHOOK_URL",
