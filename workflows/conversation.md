@@ -74,6 +74,8 @@
 - `data/raw/` 是否有新文件 → 提炼后更新 `soul/` + `memory/`
 - 所有对 `my-soul.md` 的变更写入 `working.json` 的 `soul_updates`：
   - `updated_at` / `changes` / `reason`
+  - 最多保留 10 条；超额移入 `memory/soul_updates.archive.json`（Phase 1 不读）
+- `recent_decisions` 最多 20 条、只留仍影响操作的结论；超额移入 `memory/recent_decisions.archive.json`。细则见 `memory/README.md`。
 
 **重大变更需确认**：核心投资信念或风险偏好的根本性转变，先问用户再改。
 

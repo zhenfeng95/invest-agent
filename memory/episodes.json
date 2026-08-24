@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-020",
+      "date": "2026-08-24",
+      "type": "review",
+      "summary": "瘦身 working.json：工作记忆与归档拆分",
+      "detail": "已平仓/过期观察移出 current_focus 与 active_research；soul_updates 62→10、recent_decisions 117→15。完整日志在 soul_updates.archive.json 与 recent_decisions.archive.json。留存规则写入 memory/README.md。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-019",
       "date": "2026-08-21",
       "type": "decision",

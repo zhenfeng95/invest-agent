@@ -1,0 +1,592 @@
+{
+    "archived_at": "2026-08-24T09:55:00+08:00",
+    "source": "memory/working.json slim",
+    "note": "Phase 1 不读本文件。日报完成类以 output/daily/ 为准。",
+    "recent_decisions": [
+        {
+            "at": "2026-08-24T09:45:00+08:00",
+            "decision": "合并 working.json 冲突：保留双方改动",
+            "detail": "保留8/21美股收盘精简§0–§6决策链；并入8/21 A股收盘定时任务（上证3905/+0.04%评分52）"
+        },
+        {
+            "at": "2026-08-21T18:25:00+08:00",
+            "decision": "美股收盘精简版再删主题与风格；正文改为§0–§6",
+            "detail": "轮动只用§1+§3十一板块；prompt/rules/SETUP/my-soul已改；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T18:18:00+08:00",
+            "decision": "美股收盘精简版再删财报日历；正文改为§0–§7",
+            "detail": "prompt/rules/SETUP/my-soul已改；完整版仍 origin；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T18:17:00+08:00",
+            "decision": "美股收盘精简版再删机构资金流、明日计划；正文改为§0–§8",
+            "detail": "prompt/rules/SETUP/my-soul已改；完整版仍 origin；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T18:15:00+08:00",
+            "decision": "美股收盘精简版再删宽度§5、技术面§6；正文改为§0–§10",
+            "detail": "prompt/rules/SETUP/my-soul已改；完整版仍 origin；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T18:11:00+08:00",
+            "decision": "美股收盘日报切精简版：去掉§2盘中、§8个股异动、§12关注股观察",
+            "detail": "prompt-us-close-daily.md 正文连续§0–§12；完整版留 origin；rules/SETUP/my-soul已同步；任务仍暂停，恢复时须重贴 Automations"
+        },
+        {
+            "at": "2026-08-21T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-21 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-21.md；上证3905/+0.04%仍破MA5；评分52轻仓试错；贵金属+算力硬件主线、医药兑现；YH持603912 HT持159338；§9命中2/14"
+        },
+        {
+            "at": "2026-08-21T15:17:00+08:00",
+            "decision": "一层观察池：删6只，现14只",
+            "detail": "删湘潭电化002125、康达新材002669、泰嘉股份002843、白云电器603861、远望谷002161、中国长城000066；写入 data/raw/screener/pool-latest.csv"
+        },
+        {
+            "at": "2026-08-21T15:12:00+08:00",
+            "decision": "录入三笔：GY卖TCL@4.97×100；YH买佳力图@8.48×100；US买VOO@$704×0.01",
+            "detail": "trades CSV + positions-2026-08-21.json；TCL粗算-¥28(-5.33%)；GY空仓个股；YH持603912；HT仍159338；VOO 0.03@$708；未计费"
+        },
+        {
+            "at": "2026-08-20T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-20 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-20.md；上证3903/+0.24%仍破MA5；评分62轻仓试错；医药生物主线；TCL破MA5-4.2%；§9命中3/20"
+        },
+        {
+            "at": "2026-08-20T10:32:00+08:00",
+            "decision": "沉淀行情→账户重心：好→GY+YH进攻；不好→HT+YH防守短线；日报§1加账户重心一句",
+            "detail": "my-soul+prompt-ashare-close-daily+rules已改；Automations须重贴prompt"
+        },
+        {
+            "at": "2026-08-20T10:16:00+08:00",
+            "decision": "华泰账户代号 ETF→HT；CSV/positions/my-soul 已同步",
+            "detail": "三账户统一券商缩写 GY/YH/HT；159338 行 account=HT"
+        },
+        {
+            "at": "2026-08-20T10:05:00+08:00",
+            "decision": "补录华泰159338：500股@¥1.214（账户HT）",
+            "detail": "trades CSV + positions-2026-08-20.json；买入日未提供；成本合计¥607未计费；A股现持GY:TCL + HT:159338"
+        },
+        {
+            "at": "2026-08-20T09:55:00+08:00",
+            "decision": "A股三账户写入my-soul：GY国元谨慎四选一 / YH银河激进尾盘 / HT华泰指数仓159338",
+            "detail": "风险偏好注明仅约束GY；交易记录采用单CSV+account列（GY/YH/HT/US）；历史A股回填GY；positions补account；YH止损细则待补；华泰代号定为HT（原误写ETF已更正）"
+        },
+        {
+            "at": "2026-08-20T09:40:00+08:00",
+            "decision": "补录美股四笔：QQQ买@$715×0.01；TSLA买@$339×0.01后同日卖@$346×0.01；IBIT卖@$38.80×0.03",
+            "detail": "trades CSV + positions-2026-08-19.json；QQQ 0.03@$721.67；TSLA当日开平粗算+$0.07(+2.06%)；IBIT余0.02@$35.73粗算+$0.09(+8.59%)；未计费；现持IBIT/SGOV/VOO/QQQ+TCL科技"
+        },
+        {
+            "at": "2026-08-19T18:24:00+08:00",
+            "decision": "补录美股四笔：QQQ买@$720×0.01；VOO买@$707×0.01；IBIT卖@$36.72×0.03；AAPL卖@$309×0.01",
+            "detail": "trades CSV + 回写 positions-2026-08-18.json；QQQ 0.02@$725；VOO 0.02@$710；IBIT余0.05@$35.73粗算+$0.03(+2.77%)；AAPL平仓粗算+$0.03(+0.98%)；未计费；现持IBIT/SGOV/VOO/QQQ+TCL科技"
+        },
+        {
+            "at": "2026-08-19T18:18:00+08:00",
+            "decision": "合并 working.json 冲突：保留双方改动",
+            "detail": "并入8/18与8/19收盘日报决策与8/19市况；保留8/18对话侧一层池删至20只与AAPL补录；修复对方侧AAPL条目缺at的坏JSON"
+        },
+        {
+            "at": "2026-08-19T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-19 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-19.md；上证3894/-2.40%破MA5/MA60；评分30防守；科技普跌煤银防御；TCL破MA5浮亏~-3.8%；§9命中3/25"
+        },
+        {
+            "at": "2026-08-18T17:34:00+08:00",
+            "decision": "一层观察池：删5只，现20只",
+            "detail": "删大西洋/贝因美/北大医药/黑猫股份/通威股份；写入 data/raw/screener/pool-latest.csv"
+        },
+        {
+            "at": "2026-08-18T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-18 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-18.md；上证3990/+0.19%线上MA5/MA60；评分67轻仓试错；农业高切低；持TCL科技；§9命中14/25"
+        },
+        {
+            "at": "2026-08-18T15:42:00+08:00",
+            "decision": "补录 AAPL 买入：2026-08-10 @306×0.01",
+            "detail": "trades CSV + 回写 8/11–8/18 positions；数量用户未口述，按8/4–8/5 AAPL碎股口径记0.01；现持AAPL/IBIT/SGOV/VOO/QQQ+TCL科技"
+        },
+        {
+            "at": "2026-08-18T10:33:00+08:00",
+            "decision": "录入A股三笔：百川卖@7.36×100；万润卖@14.42×100；TCL科技买@5.25×100",
+            "detail": "trades CSV + positions-2026-08-18.json；百川粗算+¥6(+0.82%)；万润粗算+¥12(+0.84%)；A股现持TCL科技100@¥5.25；未计费"
+        },
+        {
+            "at": "2026-08-18T10:33:00+08:00",
+            "decision": "补录 IBIT 卖出：2026-08-17 @36.05×0.03",
+            "detail": "trades CSV + 回写 positions-2026-08-17.json；相对加权成本$35.73粗算+$0.01(+0.90%)；余0.08@$35.73；未计费"
+        },
+        {
+            "at": "2026-08-18T10:24:00+08:00",
+            "decision": "一层观察池：删4只、加10只，现25只",
+            "detail": "删江南化工/北玻股份/创元科技/金陵药业；加湘潭电化/康达新材/大西洋/泰嘉股份/郴电国际(用户写彬电国际)/白云电器/远望谷/京东方A/中国长城/苏州固锝；写入 data/raw/screener/pool-latest.csv"
+        },
+        {
+            "at": "2026-08-17T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-17 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-17.md；上证3982/+1.41%线上MA5；评分89进攻；半导体主线；百川7.47/万润14.63均线上MA5；§9命中12/19"
+        },
+        {
+            "at": "2026-08-17T14:05:00+08:00",
+            "decision": "录入 002643 万润股份买入：2026-08-17 @14.30×100",
+            "detail": "trades CSV + positions-2026-08-17.json；A股现持百川+万润；成本¥1,430未计费"
+        },
+        {
+            "at": "2026-08-17T13:45:00+08:00",
+            "decision": "§1操作提示补全：稳则激进买点+小波段；震荡则弃大盘+强势题材+高抛低吸",
+            "detail": "prompt/rules/my-soul已改；激进≠追加速日；高抛低吸不覆盖只建仓一次；须重贴Automations"
+        },
+        {
+            "at": "2026-08-17T13:40:00+08:00",
+            "decision": "§1评分后必写操作提示：稳做行业主线 / 震荡做概念题材",
+            "detail": "prompt/rules/my-soul已改；下跌则不适合做主线；须重贴Automations"
+        },
+        {
+            "at": "2026-08-17T11:24:00+08:00",
+            "decision": "一层观察池追加6只：佛塑科技/中贝通信/万润股份/创元科技/北大医药/金陵药业",
+            "detail": "写入 data/raw/screener/pool-latest.csv；原13只保留；收盘日报§9将全量四选一"
+        },
+        {
+            "at": "2026-08-17T10:40:00+08:00",
+            "decision": "交易框架.md 嵌入导图全部示意图",
+            "detail": "59处引用/57张png → data/raw/notes/交易框架-assets/；未升格my-soul"
+        },
+        {
+            "at": "2026-08-17T10:35:00+08:00",
+            "decision": "沉淀 交易框架.xmind → data/raw/notes/交易框架.md",
+            "detail": "股票交易系统全文提纲（19节）；未升格进my-soul；定时日报仍只读可执行交易框架.md"
+        },
+        {
+            "at": "2026-08-16T18:45:00+08:00",
+            "decision": "§7筹码势：仅CYQ汇总指标一行，接入stock_cyq_summary.py",
+            "detail": "获利/均价/70%/90%区间+集中度；禁止直方图；prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-16T18:26:00+08:00",
+            "decision": "§7空间势增加MA60/120/250价与较近≤3%标空间不足",
+            "detail": "tools/stock_ma_levels.py；prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-16T18:22:00+08:00",
+            "decision": "§7周期势并入势能单表：空间势下一行",
+            "detail": "禁止第二张表/表外段落；prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-16T18:19:00+08:00",
+            "decision": "§7周期势改为空间势下一句总结，取消分列表格",
+            "detail": "prompt/rules/my-soul已改；stock_period_chg仍可用；须重贴Automations"
+        },
+        {
+            "at": "2026-08-16T18:13:00+08:00",
+            "decision": "A股收盘§7持仓升格周期势多周期涨幅表",
+            "detail": "3/5/10/20/60日+年初至今；tools/stock_period_chg.py；prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-15T00:31:00+08:00",
+            "decision": "修正 IBIT 加权成本：按券商三笔成交价重算为$35.73",
+            "detail": "8/3 0.05@35.60 + 8/12 0.03@36.33 + 8/14 0.03@35.33；此前误用36.18/35.45得$36.36；补录8/3成交"
+        },
+        {
+            "at": "2026-08-15T00:24:00+08:00",
+            "decision": "录入美股两笔：IBIT买0.03@$35.45；QQQ买0.01@$730",
+            "detail": "trades CSV + positions-2026-08-14.json；IBIT 0.11@$36.36；QQQ买回@$730；现持IBIT/SGOV/VOO/QQQ+百川"
+        },
+        {
+            "at": "2026-08-14T18:19:22+08:00",
+            "decision": "§7加总纲对照1句；§8持仓态度加半句空间/盈亏比",
+            "detail": "prompt/rules已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-14T18:16:29+08:00",
+            "decision": "可执行交易框架文首写入交易系统总纲八句",
+            "detail": "市场仓位/板块方向/趋势持有/位置买点/量能强弱/空间盈亏比/风控生存/复盘进化"
+        },
+        {
+            "at": "2026-08-14T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-14 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-14.md；上证3927/+0.01%仍破MA5；评分63；§9命中8/13；百川7.20线下MA5"
+        },
+        {
+            "at": "2026-08-14T16:52:04+08:00",
+            "decision": "§7势能改为必评4项+其余选填",
+            "detail": "必评：趋势/资金·主力合并/板块/空间；筹码无数据禁止猜；须重贴Automations"
+        },
+        {
+            "at": "2026-08-14T16:48:54+08:00",
+            "decision": "A股收盘§7持仓增加框架势能十势对照表",
+            "detail": "每只强/中/弱/未获取；不覆盖my-soul止损；须重贴Automations"
+        },
+        {
+            "at": "2026-08-14T13:33:44+08:00",
+            "decision": "公众号改为默认只出素材卡，正文用户自填",
+            "detail": "8/13素材卡 wechat-card-2026-08-13.md；已删代写正文稿；my-soul硬规则已改"
+        },
+        {
+            "at": "2026-08-14T11:37:39+08:00",
+            "decision": "锁定势能复盘用户亲笔文风为仿写锚点",
+            "detail": "样例存 output/content/_voice-sample-user.md；8/13按长句口语日记体重写"
+        },
+        {
+            "at": "2026-08-14T11:24:54+08:00",
+            "decision": "公众号去AI味：写入硬规则并重写8/13稿",
+            "detail": "少表格/少加粗/少总结腔；多口语短句；正文不塞文件路径"
+        },
+        {
+            "at": "2026-08-14T11:22:25+08:00",
+            "decision": "公众号文首固定声明：一句话结论前必放实盘复盘免责句",
+            "detail": "原文一字不改；已写入my-soul并补进8/13稿"
+        },
+        {
+            "at": "2026-08-14T11:17:24+08:00",
+            "decision": "公众号IP定为「势能复盘」",
+            "detail": "my-soul已写定位/人设/禁用项；8/13稿已加品牌署名"
+        },
+        {
+            "at": "2026-08-14T11:12:52+08:00",
+            "decision": "产出8/13交易复盘公众号稿",
+            "detail": "output/content/wechat-review-2026-08-13.md；铜峰换百川+美股网格；偏纪律复盘"
+        },
+        {
+            "at": "2026-08-14T11:11:34+08:00",
+            "decision": "公众号内容偏好定为偏交易复盘",
+            "detail": "已写入 my-soul：结论→大盘主线→买卖纪律→对错复盘→明日观察点；不写荐股清单"
+        },
+        {
+            "at": "2026-08-14T09:33:55+08:00",
+            "decision": "录入美股三笔：VOO卖$714/买$713各0.01；QQQ卖$729×0.01",
+            "detail": "trades CSV + positions-2026-08-13.json；VOO成本调至$713；QQQ已平粗算+$0.05未计费；现持IBIT/SGOV/VOO+百川"
+        },
+        {
+            "at": "2026-08-13T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-13 定时任务完成",
+            "detail": "output/daily/ashare-close-2026-08-13.md；上证3926/-0.50%破MA5；评分48；§9命中4/14；百川线下MA5"
+        },
+        {
+            "at": "2026-08-13T14:57:15+08:00",
+            "decision": "暂停美股收盘日报定时任务",
+            "detail": "A'仅保留A股收盘17:00；Cursor Automation「Invest US Close Daily」请Pause；rules/SETUP/my-soul/prompt已改"
+        },
+        {
+            "at": "2026-08-13T14:48:07+08:00",
+            "decision": "录入 600237 卖出 @8.95×100；002455 百川股份买入 @7.30×100",
+            "detail": "trades CSV + positions-2026-08-13.json；A股现持百川股份；铜峰粗算+¥14(+1.59%)"
+        },
+        {
+            "at": "2026-08-13T14:44:44+08:00",
+            "decision": "§4北向改为有可靠数据则附一行，无则跳过不编造",
+            "detail": "不再一律不做北向；勿写未获取凑节、勿单独为北向多开搜索"
+        },
+        {
+            "at": "2026-08-13T14:41:02+08:00",
+            "decision": "§8明日应对保留「建议总仓：XX%（依据：评分+my-soul线上/线下）」句式",
+            "detail": "第1条必须显式写出；可区间；可附notes仓位带"
+        },
+        {
+            "at": "2026-08-13T14:36:47+08:00",
+            "decision": "收盘精简版：§8轮动并入§5.3；正文改为§0–§10",
+            "detail": "原9/10/11→8/9/10；用户池§9；screener标记BUYSETUP_FOR_§9；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:30:17+08:00",
+            "decision": "删掉收盘日报§4.1量能，并入§1成交量",
+            "detail": "§4仅保留东财主力行业资金+同花顺备注；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:22:15+08:00",
+            "decision": "持仓负面并入§7；精简版改为连续§0–§11",
+            "detail": "原§9负面→§7列；原10/11/12→9/10/11；用户池§10；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:18:12+08:00",
+            "decision": "A股收盘精简版章节重排为连续§0–§12",
+            "detail": "原9.3→7、12→8、13→9、15→10、15.6→11、17→12；screener标记改§11；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:15:27+08:00",
+            "decision": "A股收盘日报去掉§4北向资金",
+            "detail": "§4现为4.1量能+4.2东财主力（同花顺备注）；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:07:08+08:00",
+            "decision": "A股收盘§4.3资金改为东财主表+同花顺差异备注",
+            "detail": "禁止双表；prompt/rules已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-13T14:04:23+08:00",
+            "decision": "A股收盘§15.1–15.5合并为明日应对五要点",
+            "detail": "仓位/指数/持仓/板块/信号一次性5条；§15.6用户池表保留；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-13T13:58:30+08:00",
+            "decision": "A股收盘§5改为共振/分歧总表，不再贴双源完整TOP5",
+            "detail": "prompt + rules 已改；仍双侧抓取作原料；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-13T13:54:09+08:00",
+            "decision": "A股收盘精简版加回 §13 持仓负面消息提醒",
+            "detail": "现保留 0/1/2/3/4/5/6/9.3/12/13/15/15.6/17；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-13T13:50:39+08:00",
+            "decision": "A股收盘精简版章节调整：去§8，加§3/§6/§12",
+            "detail": "现保留 0/1/2/3/4/5/6/9.3/12/15/15.6/17；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-13T13:36:07+08:00",
+            "decision": "A股收盘日报切精简版：只保留 0/1/2/4/5/8/9.3/15/15.6/17",
+            "detail": "prompt-ashare-close-daily.md 已精简；完整版留 origin；rules/SETUP 已同步；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-13T09:20:00+08:00",
+            "decision": "美股收盘日报 2026-08-13 定时任务完成",
+            "detail": "output/daily/us-close-2026-08-13.md；复盘8/12：SPX7748/+0.26%；CPI符合；SMCI/CRWV/LITE/NVDA强；Mag7平台弱；VIX14.55"
+        },
+        {
+            "at": "2026-08-12T22:30:00+08:00",
+            "decision": "录入美股三笔：QQQ卖$725/买$724各0.01；IBIT买0.03@$36.18",
+            "detail": "trades CSV + positions-2026-08-12.json；QQQ成本调至$724；IBIT 0.05→0.08加权$35.82；QQQ卖单粗算+$0.05未计费"
+        },
+        {
+            "at": "2026-08-12T17:30:00+08:00",
+            "decision": "A股收盘日报 2026-08-12 定时任务完成+飞书推送",
+            "detail": "output/daily/ashare-close-2026-08-12.md 已在 main；§15.6复验命中3/10；飞书code=0（正文截断+GitHub全文链接）"
+        },
+        {
+            "at": "2026-08-12T17:18:09+08:00",
+            "decision": "A股收盘日报 2026-08-12 补跑完成",
+            "detail": "output/daily/ashare-close-2026-08-12.md；上证3946/+0.32%；评分66→轻仓试错；§15.6命中铜峰/电科芯片/润达医疗；持仓铜峰盯MA5"
+        },
+        {
+            "at": "2026-08-12T17:12:16+08:00",
+            "decision": "核查：今日A股收盘日报定时任务未跑",
+            "detail": "17:12 BJT仍无 ashare-close-2026-08-12.md；Automations今日无A股收盘run；Ashare Close Daily仍enabled；上次为8/11 17:01"
+        },
+        {
+            "at": "2026-08-12T15:01:37+08:00",
+            "decision": "录入 600237 铜峰电子买入：2026-08-12 @8.81×100",
+            "detail": "trades CSV + positions-2026-08-12.json；A股现持铜峰电子；美股仍持 IBIT/SGOV/VOO/QQQ"
+        },
+        {
+            "at": "2026-08-12T13:53:19+08:00",
+            "decision": "录入 000737 北方铜业卖出：2026-08-12 @14.10×100",
+            "detail": "trades CSV + positions-2026-08-12.json；A股现空仓；粗算盈亏-¥50(-3.42%)未计费"
+        },
+        {
+            "at": "2026-08-12T13:43:39+08:00",
+            "decision": "选股第一层改回用户自理；Agent 只做全量四选一",
+            "detail": "交 pool-latest.csv → 命中/未命中两表进日报§15.6；不再默认跑公式一层/主线TOP；mtd_screener 默认读用户池"
+        },
+        {
+            "at": "2026-08-12T09:45:00+08:00",
+            "decision": "录入 QQQ 买入：2026-08-11 @720×0.01",
+            "detail": "trades CSV + positions-2026-08-11.json；美股现持 IBIT/SGOV/VOO/QQQ"
+        },
+        {
+            "at": "2026-08-12T08:40:00+08:00",
+            "decision": "美股收盘日报 2026-08-12 已生成",
+            "detail": "output/daily/us-close-2026-08-12.md；复盘8/11：SPX7728/-0.32%；GOOGL-3.84% Capex；RSP/IWM跑赢；SMCI/CRWV盘后大涨；CPI 8/12"
+        },
+        {
+            "at": "2026-08-11T18:15:00+08:00",
+            "decision": "A股收盘日报 2026-08-11 更新并推送",
+            "detail": "补全东财∥同花顺双源§4/§5/§12 + §15.6二筛(上能电气/正泰电源)；评分50→轻仓试错；000737破MA5；已merge main+飞书"
+        },
+        {
+            "at": "2026-08-11T18:05:00+08:00",
+            "decision": "二筛改挂日报§15.6；screener只落一层",
+            "detail": "§15.6「明日值得关注的个股」；默认不写*-buysetup；§9.4仅指向公式csv；已删8/11 buysetup文件"
+        },
+        {
+            "at": "2026-08-11T17:55:00+08:00",
+            "decision": "第一层改由 Agent/脚本全自动；用户不再交 pool-latest",
+            "detail": "收盘日报默认跑 mtd_screener 公式+二筛；撤销用户一层优先；--refine-only 仅调试；pool-latest 已清空"
+        },
+        {
+            "at": "2026-08-11T17:50:00+08:00",
+            "decision": "一层池交接：data/raw/screener/pool-latest.csv + --refine-only",
+            "detail": "【已撤销】曾约定用户自筛第一层；现改回全自动"
+        },
+        {
+            "at": "2026-08-11T17:45:00+08:00",
+            "decision": "A股日报板块/资金：同花顺升为与东财并列主源",
+            "detail": "close+premarket prompts/rules/my-soul已改；双源分表标口径；冲突留两侧+共振/分歧；仍禁申万顶替；选股脚本主线仍用东财成分；须重贴 Automations"
+        },
+        {
+            "at": "2026-08-11T17:40:00+08:00",
+            "decision": "mtd_screener 二筛：东财行业TOP8成分 ∩ 四选一买点",
+            "detail": "产出 *-buysetup.csv；量能不含当日；趋势线自动近似；8/11试跑公式72→主线10→精选2（上能电气/正泰电源·逆变器·放量破MA5）；收盘日报§9.4改挂精选"
+        },
+        {
+            "at": "2026-08-11T17:20:00+08:00",
+            "decision": "A股收盘日报挂接 mtd_screener：§9.4 公式池备查",
+            "detail": "prompt/rules/SETUP/my-soul已改；先跑脚本再写日报；TOP15非荐股；用户须重贴 Automations Instructions"
+        },
+        {
+            "at": "2026-08-11T17:15:00+08:00",
+            "decision": "mtd_screener 增条件：换手>2%、收盘<30元；日线改腾讯兜底",
+            "detail": "默认参数已写入；8/11重跑命中72只→output/screener/；东财his不稳时用腾讯K线+现货换手"
+        },
+        {
+            "at": "2026-08-11T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-11 已生成",
+            "detail": "output/daily/ashare-close-2026-08-11.md；上证3934/-0.82%；评分50→轻仓试错；000737破MA5浮亏~4%；建议仓25-35%"
+        },
+        {
+            "at": "2026-08-11T17:00:00+08:00",
+            "decision": "mtd_screener 增条件：换手>2%、收盘<30元",
+            "detail": "默认 --min-turnover 2 --max-price 30；现货预筛+日线复核；参数可调"
+        },
+        {
+            "at": "2026-08-11T16:35:00+08:00",
+            "decision": "落地通达信月初至今选股脚本 tools/mtd_screener.py",
+            "detail": "条件：5<MTD%<15 + V>MA(V,5)×1.2(含当日) + 额>3亿；东财直连；8/11试跑命中约100只→output/screener/；选股仍用户自理"
+        },
+        {
+            "at": "2026-08-11T14:31:00+08:00",
+            "decision": "A股量能定量写入 my-soul：放量 V>MA(V,5)×1.2；缩量 V<MA(V,5)×0.8",
+            "detail": "MA(V,5)=前5日均量不含当日；中间带不算放/缩；四选一复盘须输出 V、均量、比值"
+        },
+        {
+            "at": "2026-08-11T09:42:00+08:00",
+            "decision": "录入两笔买入：VOO 8/10 @710×0.01；000737 8/11 @14.60×100",
+            "detail": "trades CSV + positions-2026-08-11.json；现持 IBIT/SGOV/VOO + 北方铜业；铜业信号=MA5附近低吸"
+        },
+        {
+            "at": "2026-08-11T09:30:00+08:00",
+            "decision": "美股收盘日报 2026-08-11 已生成",
+            "detail": "output/daily/us-close-2026-08-11.md；复盘8/10：SPX 7753/-0.06%纪录后微跌；XLE+4.66% SMH-2.28% IGV+2.26%；10Y 4.70%；CPI 8/12 前瞻"
+        },
+        {
+            "at": "2026-08-11T09:25:00+08:00",
+            "decision": "启用美股收盘日报：A' 现为 A股17:00 + 美股08:00",
+            "detail": "rules/SETUP/my-soul/prompt-us-close 已改启用；飞书改走 feishu_send.py；用户须 push 后在 Automations 新建 Invest US Close Daily（cron 0 8 * * 1-5）并贴密钥"
+        },
+        {
+            "at": "2026-08-10T21:25:00+08:00",
+            "decision": "修正亚盛集团评估：四选一≠可买，叠加主线+MA60后否决",
+            "detail": "种植业非8/10主线(贵金属/医疗服务等)；收盘贴压MA60未突破。12只全量滤网后无干净买点，铜链等回踩观察"
+        },
+        {
+            "at": "2026-08-10T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-10 已生成",
+            "detail": "output/daily/ashare-close-2026-08-10.md；上证3967/+0.67%；跷跷板：医药消费黄金 vs 通信元件；评分71→积极参与，建议仓40-50%；北向未获取"
+        },
+        {
+            "at": "2026-08-10T14:03:00+08:00",
+            "decision": "评估美股网格：VOO每跌$6买0.01、QQQ每跌$10买0.01 → 可行",
+            "detail": "相对价约0.84%/1.4%；QQQ档更宽合理；待确认是否写入my-soul替换原约$5示例；需定锚价与档深"
+        },
+        {
+            "at": "2026-08-10T13:53:00+08:00",
+            "decision": "合并 working.json 冲突：保留双方改动",
+            "detail": "并入8/7收盘日报决策与市况快照；保留8/10对话侧决策/000737/平仓结论；去掉重复recent_decisions键"
+        },
+        {
+            "at": "2026-08-10T10:55:00+08:00",
+            "decision": "同步可执行交易框架.md ← 更新后的 .xmind",
+            "detail": "选股精简为3条；止损加第三步；新增§十分析篇(2025-09-24案例)；未升格进my-soul"
+        },
+        {
+            "at": "2026-08-10T10:50:00+08:00",
+            "decision": "解释收盘日报「未获取」：北向官方日频净流入已停更+抓取限制",
+            "detail": "2024-08-19起交易所不再日更北向净买入；prompt禁编造；东财页常登录墙；次优为成交额/媒体估算"
+        },
+        {
+            "at": "2026-08-10T09:45:00+08:00",
+            "decision": "000737 北方铜业：按四选一暂不买入",
+            "detail": "已走出加速段；等缩量回踩MA5(~14.1)或趋势线"
+        },
+        {
+            "at": "2026-08-10T09:42:00+08:00",
+            "decision": "录入 600219 南山铝业卖出：2026-08-07 @¥4.84×100",
+            "detail": "trades CSV + positions-2026-08-07.json；A股现空仓；粗算盈亏+¥8(+1.68%)未计费"
+        },
+        {
+            "at": "2026-08-07T17:00:00+08:00",
+            "decision": "A股收盘日报 2026-08-07 已生成",
+            "detail": "output/daily/ashare-close-2026-08-07.md；上证3940/+1.02%；双主线医疗服务+元件/CRO+PCB"
+        },
+        {
+            "at": "2026-08-06T18:05:00+08:00",
+            "decision": "收盘日报只读两份固定 notes；对话必要时仍可扫 notes 全目录",
+            "detail": "可执行交易框架.md + 炒股赚米的核心.md；已写入 my-soul 笔记用法"
+        },
+        {
+            "at": "2026-08-06T18:00:00+08:00",
+            "decision": "A股收盘日报必读加入 data/raw/notes/；仓位参考笔记框架，冲突以 my-soul 为准",
+            "detail": "可执行交易框架/炒股赚米的核心；未升格细则不当硬规则"
+        },
+        {
+            "at": "2026-08-06T17:50:00+08:00",
+            "decision": "A' 切换：仅启用A股收盘日报(17:00)；暂停美股盘前+A股盘前",
+            "detail": "rules/SETUP/my-soul/prompts状态已改；用户须在Automations Pause旧任务、新建/启用close-daily并重贴prompt"
+        },
+        {
+            "at": "2026-08-06T17:40:00+08:00",
+            "decision": "撤回自建域名/REPORT_WEB_BASE/report-web；飞书仅 main 上 GitHub 链接",
+            "detail": "保留 merge_to_main→飞书；feishu_send 默认 blob 分支=main"
+        },
+        {
+            "at": "2026-08-06T17:35:00+08:00",
+            "decision": "定时任务写完后 merge_to_main.sh：并进 main 并删 cursor/*，再发飞书",
+            "detail": "阿里云只 pull main；需 Cloud Agent 有 main 写权限；prompts/SETUP/my-soul 已改"
+        },
+        {
+            "at": "2026-08-06T17:05:00+08:00",
+            "decision": "A股收盘日报 2026-08-06 已生成并推送",
+            "detail": "output/daily/ashare-close-2026-08-06.md；上证3900/+0.57%；双主线煤炭+硬件"
+        },
+        {
+            "at": "2026-08-06T17:05:00+08:00",
+            "decision": "飞书截断双链：GitHub blob + REPORT_WEB_BASE 可读页；新增 services/report-web（GitHub webhook→渲染）",
+            "detail": "URL约定 /r/{stem}；用户阿里云部署后 Automations 密钥加 REPORT_WEB_BASE"
+        },
+        {
+            "at": "2026-08-06T17:00:00+08:00",
+            "decision": "feishu_send 用当前分支（含 cursor/xxx）拼 blob URL，并对 / 做百分号编码",
+            "detail": "先 push 再发飞书；可 REPO_BRANCH 覆盖"
+        },
+        {
+            "at": "2026-08-06T16:55:00+08:00",
+            "decision": "feishu_send 截断脚注改为 GitHub 完整 blob URL；先 push 再发飞书",
+            "detail": "自动读 git remote；可选 REPO_WEB_BASE；prompt 已同步"
+        },
+        {
+            "at": "2026-08-06T16:55:00+08:00",
+            "decision": "A股收盘日报全文板块口径统一东财：行业=东财行业，题材=东财概念",
+            "detail": "总则+§0/1/3/6/11/12/15/17；Automations 须重贴 prompt-ashare-close-daily.md"
+        },
+        {
+            "at": "2026-08-06T16:50:00+08:00",
+            "decision": "A股收盘§12轮动与§4/§5东财口径一致锁死；§4主力行业亦禁申万顶替",
+            "detail": "prompt + rules 已改；Automations 需重贴"
+        },
+        {
+            "at": "2026-08-06T16:45:00+08:00",
+            "decision": "A股收盘日报§5锁死东财行业：领涨/领跌各TOP5；禁申万/数据宝/界面顶替",
+            "detail": "已改 prompt-ashare-close-daily.md + rules；Automations 需重贴提示词"
+        },
+        {
+            "at": "2026-08-06T15:45:00+08:00",
+            "decision": "A股收盘日报实测：composer-2.5-fast 单次约168.8万token（Included）",
+            "detail": "按Fast单价粗算单次约$6-8；月×20约$120-160等价消耗；明显高于盘前；建议暂不启用或改精简版/非Fast"
+        },
+        {
+            "at": "2026-08-06T15:20:00+08:00",
+            "decision": "成本评估：仅A股收盘日报约$25-50/月；现A两任务约$15-30；单开收盘约贵50%-100%",
+            "detail": "相对工作量推算非账单；建议Run now一次看Usage再定"
+        },
+        {
+            "at": "2026-08-06T15:05:00+08:00",
+            "decision": "新增 scheduler/prompt-ashare-close-daily.md（A股收盘日报，由美股收盘日报改造）",
+            "detail": "当日收盘全复盘+市场状态评分+资金面/板块/情绪/持仓纪律；默认暂未启用；rules/SETUP已挂备查"
+        },
+        {
+            "at": "2026-08-06T14:55:00+08:00",
+            "decision": "600219：暂不因盘中贴线卖；盯收盘是否有效跌破MA5/趋势线",
+            "detail": "新浪14:53价4.72昨收4.80；MA5约4.71-4.73；低4.63量与昨近似"
+        }
+    ]
+}
