@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-24T09:55:00+08:00",
+    "updated_at": "2026-08-24T17:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -142,7 +142,7 @@
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$721.67；VOO 0.03@$708；SGOV 0.01@$100",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-21.json；一层池14只；8/21上证3905/+0.04%仍破MA5；评分52轻仓试错；贵金属+算力主线"
+        "notes": "持仓快照 positions-2026-08-21.json；一层池14只；8/24上证3882/-0.59%破MA5/MA20；评分39防守；防御(贵金属+煤炭)强、算力链重挫"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt + FEISHU_WEBHOOK_URL",
