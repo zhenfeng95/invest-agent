@@ -1,6 +1,51 @@
 {
   "episodes": [
     {
+      "id": "ep-018",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "美股收盘精简版再删主题与风格",
+      "detail": "去掉主题与风格表现；正文改为连续§0–§6。轮动仅用指数+十一板块。任务仍暂停。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-017",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "美股收盘精简版再删财报日历",
+      "detail": "去掉财报日历与财报解读；正文改为连续§0–§7。完整版仍 origin。任务仍暂停。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-016",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "美股收盘精简版再删机构资金与明日计划",
+      "detail": "去掉机构观点与资金流、明日交易计划/观察清单；正文改为连续§0–§8。完整版仍 origin。任务仍暂停。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-015",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "美股收盘精简版再删宽度与技术面",
+      "detail": "去掉市场宽度与参与度、技术面分析；正文改为连续§0–§10。完整版仍 origin。任务仍暂停。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-014",
+      "date": "2026-08-21",
+      "type": "decision",
+      "summary": "美股收盘日报切精简版§0–§12",
+      "detail": "去掉盘中走势、重点个股新闻与异动、重点关注股观察；完整版留 prompt-us-close-daily-origin.md。定时任务仍暂停。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-013",
       "date": "2026-08-21",
       "type": "decision",

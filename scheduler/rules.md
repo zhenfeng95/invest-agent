@@ -16,7 +16,7 @@
 
 提示词见同目录：
 - `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
-- `prompt-us-close-daily.md`（美股收盘日报 · ⏸ 已暂停）
+- `prompt-us-close-daily.md`（美股收盘日报精简版 · ⏸ 已暂停；完整版 `prompt-us-close-daily-origin.md`）
 - `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
 - `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
 - `prompt-signals.md`（已停用，仅存档）
@@ -65,8 +65,8 @@
 
 ### 美股收盘日报（工作日 08:00）— ⏸ 已暂停
 - cron: `0 8 * * 1-5`（历史；Automation 请 **Pause**）
-- 提示词：`scheduler/prompt-us-close-daily.md`（保留备查）
-- 执行：完整复盘昨夜美股（大盘/宏观/板块/宽度/技术/个股/财报/机构/轮动/持仓观察/明日计划/风险）
+- 提示词：`scheduler/prompt-us-close-daily.md`（**精简版**；完整版备查 `prompt-us-close-daily-origin.md`）
+- **正文连续 §0–§6**：0总结 / 1大盘 / 2宏观 / 3板块 / 4轮动 / 5风险 / 6结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、财报日历、机构资金流、明日计划专章
 - 输出（暂停期间勿写）：`output/daily/us-close-YYYY-MM-DD.md`
 - 飞书标题：`美股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
 - 说明：篇幅长、搜索多；暂停以控成本；恢复时重开 Automation 即可

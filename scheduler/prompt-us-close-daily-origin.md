@@ -1,6 +1,8 @@
-# Automation 提示词：美股收盘日报
+# Automation 提示词：美股收盘日报（完整版 · 备查）
 
-把下面整段粘贴到 Cursor Automation 的 Instructions。
+定时任务默认用精简版 `prompt-us-close-daily.md`（§0–§6）。本文件保留盘中走势、市场宽度、技术面、主题风格、个股异动、关注股观察、财报日历、机构资金流、明日计划。
+
+把下面整段粘贴到 Cursor Automation 的 Instructions（仅当需要完整版时）。
 
 > **状态**：⏸ 已暂停（原 A' 任务②）
 > **cron（北京时间，历史）**：`0 8 * * 1-5`（工作日 08:00；复盘昨夜美股）

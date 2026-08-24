@@ -123,7 +123,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest US Close Daily |
 | 触发 | Cron：`0 8 * * 1-5`（历史；工作日 **08:00**） |
-| 操作 | 在 Cursor Automations 对该任务点 **Pause**；提示词 `prompt-us-close-daily.md` 保留备查 |
+| 操作 | 在 Cursor Automations 对该任务点 **Pause**；精简版 `prompt-us-close-daily.md`（§0–§6）；完整版 `prompt-us-close-daily-origin.md` |
 | Instructions | 恢复启用时再粘贴「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
 
 **时区提醒**（恢复时）：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。
