@@ -1,6 +1,30 @@
 {
   "episodes": [
     {
+      "id": "ep-023",
+      "date": "2026-08-25",
+      "type": "decision",
+      "summary": "YH买入 000856 冀东装备 100股 @¥8.60",
+      "detail": "银河证券尾盘/激进仓。成本¥860（未计佣金）。A股现持：YH冀东装备 + HT 159338。",
+      "tickers": [
+        "000856"
+      ],
+      "outcome": null
+    },
+    {
+      "id": "ep-022",
+      "date": "2026-08-25",
+      "type": "decision",
+      "summary": "补录：8/24买QQQ@$705与AAPL@$311各0.01；8/25 YH平佳力图@¥8.65",
+      "detail": "美股：QQQ加仓0.01@$705后持仓0.04@加权$717.5；AAPL新开0.01@$311。银河：603912卖100@¥8.65（成本8.48，粗算+¥17.0/+2.0%），YH个股空仓。均未计佣金。写入 trades CSV 与 positions-2026-08-25.json。",
+      "tickers": [
+        "QQQ",
+        "AAPL",
+        "603912"
+      ],
+      "outcome": null
+    },
+    {
       "id": "ep-021",
       "date": "2026-08-24",
       "type": "decision",
