@@ -1,0 +1,32 @@
+{
+    "mcpServers": {
+        "fuyao-a-share": {
+            "type": "http",
+            "url": "https://fuyao.aicubes.cn/mcp/a-share",
+            "headers": {
+                "X-api-key": "sk-fuyao-4RRg5qgvUIp5eSvPVUC-_AsJtavW_boj"
+            }
+        },
+        "fuyao-a-share-index": {
+            "type": "http",
+            "url": "https://fuyao.aicubes.cn/mcp/a-share-index",
+            "headers": {
+                "X-api-key": "sk-fuyao-4RRg5qgvUIp5eSvPVUC-_AsJtavW_boj"
+            }
+        },
+        "fuyao-fund": {
+            "type": "http",
+            "url": "https://fuyao.aicubes.cn/mcp/fund",
+            "headers": {
+                "X-api-key": "sk-fuyao-4RRg5qgvUIp5eSvPVUC-_AsJtavW_boj"
+            }
+        },
+        "fuyao-meta": {
+            "type": "http",
+            "url": "https://fuyao.aicubes.cn/mcp/meta",
+            "headers": {
+                "X-api-key": "sk-fuyao-4RRg5qgvUIp5eSvPVUC-_AsJtavW_boj"
+            }
+        }
+    }
+}
