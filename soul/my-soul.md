@@ -229,5 +229,6 @@ A 股现拆 **三个券商账户、三套操作风格**。Agent 给建议 / 复�
 - **Webhook**：只写在 Cursor Automations Instructions 文末「密钥」段（`FEISHU_WEBHOOK_URL`），**不要 commit 进仓库**
 - **存档**：定时任务写 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main**、删 `cursor/*`）→ 再发飞书；**不开 PR**；飞书用 `scheduler/feishu_send.py`
 - **定时任务（A'）**：**仅 A股收盘日报精简版**（工作日 **17:00**，正文连续 **§0–§10**（§1 评分后必写操作提示 + **账户重心**一句：行情好→国元+银河进攻 / 行情不好→华泰+银河防守短线；§5.3=轮动；§7 含持仓负面；§9=用户池）；完整版见 `prompt-ashare-close-daily-origin.md`）；**美股收盘日报**（原 08:00，提示词已切精简版 **§0–§6**，去掉盘中/宽度/技术面/主题风格/个股异动/关注股观察/财报日历/机构资金流/明日计划；完整版 `prompt-us-close-daily-origin.md`）、美股盘前（21:00）、A股盘前（09:00）均已暂停；抄底信号仍停用
+- **A股收盘数据源**：**扶摇 MCP 优先**（指数/涨跌停/THS 行业·概念/个股·ETF 行情与日线）；**不可用则立刻回退**同花顺网页 + 东财 + 本地 `tools/`（筹码 CYQ、§4 东财资金、§5 东财行业、个股负面等本就走备用）。禁止因 MCP 挂掉而停写日报；正文标明实际来源
 - **笔记用法**：收盘日报定时任务**只读** `data/raw/notes/可执行交易框架.md` 与 `炒股赚米的核心.md`（不扫同目录新增文件）；框架势能清单在日报 **§7** 为 **必评势能单表 6 行**（…**筹码势**一行汇总，`tools/stock_cyq_summary.py`）+ 其余选填（**不可覆盖**本文 MA5/趋势线止损等硬规则）；日常对话中若涉及交易框架/仓位环境，Agent 仍应在有必要时扫 `data/raw/notes/` 下相关文件
-- **上手**：`scheduler/SETUP-A-prime.md`（含飞书接入）；合并脚本见 `scheduler/merge_to_main.sh`
+- **上手**：`scheduler/SETUP-A-prime.md`（含飞书接入）；合并脚本见 `scheduler/merge_to_main.sh`；改收盘 prompt 后须 **重贴** Automations Instructions

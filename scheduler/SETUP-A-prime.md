@@ -113,7 +113,9 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest A-Share Close Daily |
 | 触发 | Cron：`0 17 * * 1-5`（北京时间工作日 **17:00**；错开刚收盘高峰） |
-| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴：§1 含操作提示+账户重心**） |
+| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：含扶摇 MCP 优先 + 同花顺/东财回退；§1 操作提示+账户重心） |
+
+**数据源**：能挂 MCP 时先打扶摇；云端无 MCP / 扶摇失败则按 prompt 内 P1/P2（同花顺网页、东财、本地 tools）写完，勿空等。
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 

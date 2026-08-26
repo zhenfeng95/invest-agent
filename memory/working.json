@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-25T17:05:00+08:00",
+    "updated_at": "2026-08-26T09:35:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -69,6 +69,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-26T09:35:00+08:00",
+            "decision": "A股收盘日报数据源：扶摇MCP优先，失败立刻回退同花顺/东财/tools",
+            "detail": "已改 prompt-ashare-close-daily.md、rules.md、my-soul 通知偏好；§4东财资金/东财行业/筹码/负面仍走备用；须重贴 Automations"
+        },
         {
             "at": "2026-08-25T15:40:00+08:00",
             "decision": "录入 YH 买入 000856 冀东装备：2026-08-25 @¥8.60×100",
@@ -168,7 +173,7 @@
         "notes": "持仓快照 positions-2026-08-25.json；8/25 YH平佳力图后换入冀东装备"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt + FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（含扶摇P0+回退）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -176,6 +181,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-26T09:35:00+08:00",
+            "changes": "通知偏好新增「A股收盘数据源」：扶摇MCP优先；不可用立刻回退同花顺网页+东财+本地tools；禁止因MCP挂掉停写日报",
+            "reason": "用户要求落地扶摇接入并保留网页/其他渠道作备用"
+        },
         {
             "updated_at": "2026-08-21T18:25:00+08:00",
             "changes": "通知偏好：美股收盘精简版现行正文§0–§6；完整版 prompt-us-close-daily-origin.md；任务仍暂停",
@@ -220,11 +230,6 @@
             "updated_at": "2026-08-13T14:36:47+08:00",
             "changes": "用户池写入日报节号§10→§9；定时任务正文§0–§11→§0–§10",
             "reason": "轮动并入§5.3后顺延编号"
-        },
-        {
-            "updated_at": "2026-08-11T14:31:00+08:00",
-            "changes": "A股买入习惯：四选一量能定量——放量 V>MA(V,5)×1.2；缩量 V<MA(V,5)×0.8；中间带不判定；复盘须列 V/均量/比值",
-            "reason": "用户要求将放量/缩量写成可校验标准"
         }
     ]
 }
