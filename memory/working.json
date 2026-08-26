@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-26T17:05:00+08:00",
+    "updated_at": "2026-08-26T18:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-26T18:05:00+08:00",
+            "decision": "筹码势日K：东财curl_cffi失败则腾讯newfqkline（换手对齐）",
+            "detail": "stock_cyq_summary.py 加备用拉K；CYQ仍本地算；prompt/rules已写；须重贴Automations"
+        },
+        {
+            "at": "2026-08-26T17:55:00+08:00",
+            "decision": "§1涨跌家数改走 tools/market_breadth.py（东财getTopicZDFenBu）",
+            "detail": "禁止clist全市场分页；成交额仍优先扶摇指数turnover；须重贴 Automations prompt"
+        },
         {
             "at": "2026-08-26T15:17:00+08:00",
             "decision": "补录三笔：QQQ卖@$713×0.01（8/25）；YH卖000856@¥8.72、买600152@¥8.27（8/26）",

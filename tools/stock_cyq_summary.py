@@ -2,7 +2,8 @@
 """东财 CYQ 筹码分布 **汇总指标**（§7 筹码势用）。
 
 算法：移植东财前端 CYQCalculator（与 AKShare stock_cyq_em 同源）。
-原料：东财日 K（含换手率）；**非**直连接口返回分布图。
+原料：日 K（须含换手率 hsl）；**非**直连接口返回分布图。
+拉 K 优先级：东财 his（curl_cffi）→ 腾讯 newfqkline（含换手率）→ 仍失败才报错。
 输出：获利比例、平均成本、70%/90% 成本区间与集中度（最新交易日）。
 """
 
@@ -141,35 +142,93 @@ _HIST_HOSTS = (
     "https://94.push2his.eastmoney.com/api/qt/stock/kline/get",
     "https://97.push2his.eastmoney.com/api/qt/stock/kline/get",
     "https://push2his.eastmoney.com/api/qt/stock/kline/get",
+    "https://push2delay.eastmoney.com/api/qt/stock/kline/get",
 )
-_HEADERS = {"Referer": "https://quote.eastmoney.com/"}
+_TX_URLS = (
+    "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get",
+    "https://web.ifzq.gtimg.cn/appstock/app/newfqkline/get",
+)
+_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "Referer": "https://quote.eastmoney.com/",
+}
+_TX_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+    "Referer": "https://finance.qq.com/",
+}
 _ADJUST = {"qfq": "1", "hfq": "2", "": "0"}
+_TX_ADJUST = {"qfq": "qfq", "hfq": "hfq", "": ""}
 
 
 def _secid(code: str) -> str:
     c = code.strip().zfill(6)
-    m = "1" if c.startswith("6") else "0"
+    m = "1" if c.startswith(("5", "6", "9")) else "0"
     return f"{m}.{c}"
 
 
-def _http_get(url: str, params: dict) -> requests.Response:
-    """东财 his 偶发断连；优先 curl_cffi impersonate。"""
+def _tx_symbol(code: str) -> str:
+    c = code.strip().zfill(6)
+    if c.startswith(("5", "6", "9")):
+        return f"sh{c}"
+    return f"sz{c}"
+
+
+def _http_get(url: str, params: dict, *, referer: str | None = None) -> Any:
+    """优先 curl_cffi 伪装 Chrome；失败回落 requests（强制直连）。"""
+    headers = dict(_HEADERS if referer is None else _TX_HEADERS)
+    if referer:
+        headers["Referer"] = referer
     try:
         from curl_cffi import requests as creq
 
         s = creq.Session(impersonate="chrome120")
-        return s.get(url, params=params, headers=_HEADERS, timeout=30)
+        return s.get(
+            url,
+            params=params,
+            headers=headers,
+            timeout=30,
+            proxies={"http": None, "https": None},
+        )
     except Exception:
         return requests.get(
             url,
             params=params,
-            headers=_HEADERS,
+            headers=headers,
             timeout=30,
             proxies={"http": None, "https": None},
         )
 
 
-def fetch_kline(code: str, adjust: str = "qfq", days: int = 210) -> list[dict[str, Any]]:
+def _parse_em_klines(klines: list[str], days: int) -> list[dict[str, Any]]:
+    records: list[dict[str, Any]] = []
+    for line in klines[-days:]:
+        parts = line.split(",")
+        if len(parts) < 11:
+            continue
+        try:
+            records.append(
+                {
+                    "date": parts[0],
+                    "open": float(parts[1]),
+                    "close": float(parts[2]),
+                    "high": float(parts[3]),
+                    "low": float(parts[4]),
+                    "volume": float(parts[5]),
+                    "volume_money": float(parts[6]),
+                    "zf": float(parts[7]),
+                    "zdf": float(parts[8]),
+                    "zde": float(parts[9]),
+                    "hsl": float(parts[10]),
+                }
+            )
+        except (TypeError, ValueError):
+            continue
+    return records
+
+
+def fetch_kline_eastmoney(
+    code: str, adjust: str = "qfq", days: int = 210
+) -> list[dict[str, Any]]:
     secid = _secid(code)
     fqt = _ADJUST.get(adjust, "1")
     end = datetime.now().strftime("%Y%m%d")
@@ -196,54 +255,103 @@ def fetch_kline(code: str, adjust: str = "qfq", days: int = 210) -> list[dict[st
             "end": end,
         },
     ]
-    klines: list[str] = []
     last_err: Exception | None = None
     for params in param_sets:
         for host in _HIST_HOSTS:
-            for attempt in range(2):
+            for _ in range(2):
                 try:
                     r = _http_get(host, params)
                     r.raise_for_status()
                     klines = (r.json().get("data") or {}).get("klines") or []
-                    if klines:
-                        break
+                    records = _parse_em_klines(klines, days)
+                    if len(records) >= 30:
+                        return records
+                    if records:
+                        last_err = RuntimeError(f"东财K线过短({len(records)})")
                 except Exception as e:
                     last_err = e
-            if klines:
-                break
-        if klines:
-            break
-    if not klines:
-        raise RuntimeError(f"日K拉取失败: {last_err}")
+    raise RuntimeError(f"东财日K失败: {last_err}")
 
-    records: list[dict[str, Any]] = []
-    for line in klines[-days:]:
-        parts = line.split(",")
-        if len(parts) < 11:
-            continue
-        records.append(
-            {
-                "date": parts[0],
-                "open": float(parts[1]),
-                "close": float(parts[2]),
-                "high": float(parts[3]),
-                "low": float(parts[4]),
-                "volume": float(parts[5]),
-                "volume_money": float(parts[6]),
-                "zf": float(parts[7]),
-                "zdf": float(parts[8]),
-                "zde": float(parts[9]),
-                "hsl": float(parts[10]),
-            }
-        )
-    return records
+
+def fetch_kline_tencent(
+    code: str, adjust: str = "qfq", days: int = 210
+) -> list[dict[str, Any]]:
+    """腾讯 newfqkline：row[7]=换手率%、row[8]=成交额(万元)。与东财 hsl 实测对齐。"""
+    sym = _tx_symbol(code)
+    adj = _TX_ADJUST.get(adjust, "qfq")
+    # 多要一些 bar，末尾截 days
+    limit = max(days + 20, 240)
+    param = f"{sym},day,,,{limit},{adj}"
+    last_err: Exception | None = None
+    for url in _TX_URLS:
+        try:
+            r = _http_get(
+                url,
+                {"param": param},
+                referer="https://finance.qq.com/",
+            )
+            r.raise_for_status()
+            block = (r.json().get("data") or {}).get(sym) or {}
+            raw = block.get("qfqday") or block.get("hfqday") or block.get("day") or []
+            records: list[dict[str, Any]] = []
+            for row in raw:
+                if not isinstance(row, (list, tuple)) or len(row) < 8:
+                    continue
+                # 缺换手率则跳过该根（CYQ 必需）
+                try:
+                    hsl = float(row[7])
+                except (TypeError, ValueError):
+                    continue
+                try:
+                    amount = None
+                    if len(row) > 8 and row[8] not in ("", None, {}):
+                        amount = float(row[8]) * 10000.0
+                    records.append(
+                        {
+                            "date": str(row[0]),
+                            "open": float(row[1]),
+                            "close": float(row[2]),
+                            "high": float(row[3]),
+                            "low": float(row[4]),
+                            "volume": float(row[5]),
+                            "volume_money": float(amount) if amount is not None else 0.0,
+                            "zf": 0.0,
+                            "zdf": 0.0,
+                            "zde": 0.0,
+                            "hsl": hsl,
+                        }
+                    )
+                except (TypeError, ValueError):
+                    continue
+            if len(records) >= 30:
+                return records[-days:]
+            last_err = RuntimeError(f"腾讯K线过短或无换手({len(records)})")
+        except Exception as e:
+            last_err = e
+    raise RuntimeError(f"腾讯日K失败: {last_err}")
+
+
+def fetch_kline(
+    code: str, adjust: str = "qfq", days: int = 210
+) -> tuple[list[dict[str, Any]], str]:
+    """返回 (records, source_tag)。"""
+    errors: list[str] = []
+    try:
+        return fetch_kline_eastmoney(code, adjust=adjust, days=days), "eastmoney_kline"
+    except Exception as e:
+        errors.append(str(e))
+    try:
+        return fetch_kline_tencent(code, adjust=adjust, days=days), "tencent_kline"
+    except Exception as e:
+        errors.append(str(e))
+    raise RuntimeError("；".join(errors) if errors else "日K拉取失败")
 
 
 def cyq_summary(code: str, adjust: str = "qfq") -> dict[str, Any]:
     if py_mini_racer is None:
         return {"code": code, "error": "缺少 py_mini_racer，请 pip install py_mini_racer"}
     try:
-        records = fetch_kline(code, adjust=adjust)
+        records, k_source = fetch_kline(code, adjust=adjust)
     except Exception as e:
         return {"code": code.zfill(6), "error": f"日K拉取失败: {e}"}
     if len(records) < 30:
@@ -272,8 +380,9 @@ def cyq_summary(code: str, adjust: str = "qfq") -> dict[str, Any]:
         "cost_90_high": float(p90["priceRange"][1]),
         "conc_90": round(float(p90["concentration"]), 4),
         "adjust": adjust or "qfq",
-        "source": "eastmoney_cyq_calc",
-        "note": "东财CYQ推演汇总；与App可能有复权/窗口细微差异",
+        "kline_source": k_source,
+        "source": f"{k_source}+cyq_calc",
+        "note": "东财CYQ推演汇总；K线东财失败则腾讯newfqkline（换手对齐）；与App可能有复权/窗口细微差异",
     }
 
 
@@ -292,8 +401,49 @@ def main() -> None:
     p.add_argument("codes", nargs="+", help="A股代码")
     p.add_argument("--adjust", default="qfq", choices=["qfq", "hfq", ""], help="复权")
     p.add_argument("--json", action="store_true")
+    p.add_argument(
+        "--force-tencent",
+        action="store_true",
+        help="跳过东财，仅用腾讯日K（调试备用链路）",
+    )
     args = p.parse_args()
-    rows = [cyq_summary(c, adjust=args.adjust) for c in args.codes]
+
+    def one(code: str) -> dict[str, Any]:
+        if not args.force_tencent:
+            return cyq_summary(code, adjust=args.adjust)
+        if py_mini_racer is None:
+            return {"code": code, "error": "缺少 py_mini_racer"}
+        try:
+            records = fetch_kline_tencent(code, adjust=args.adjust)
+        except Exception as e:
+            return {"code": code.zfill(6), "error": f"日K拉取失败: {e}"}
+        # 复用 cyq_summary 主路径：临时注入
+        js = py_mini_racer.MiniRacer()
+        js.eval(_CYQ_JS)
+        idx = len(records) - 1
+        m = js.call("CYQCalculator", idx, records)
+        row = records[idx]
+        p70 = m["percentChips"]["70"]
+        p90 = m["percentChips"]["90"]
+        return {
+            "code": code.zfill(6),
+            "date": row["date"],
+            "close": row["close"],
+            "profit_ratio_pct": round(float(m["benefitPart"]) * 100, 2),
+            "avg_cost": float(m["avgCost"]),
+            "cost_70_low": float(p70["priceRange"][0]),
+            "cost_70_high": float(p70["priceRange"][1]),
+            "conc_70": round(float(p70["concentration"]), 4),
+            "cost_90_low": float(p90["priceRange"][0]),
+            "cost_90_high": float(p90["priceRange"][1]),
+            "conc_90": round(float(p90["concentration"]), 4),
+            "adjust": args.adjust or "qfq",
+            "kline_source": "tencent_kline",
+            "source": "tencent_kline+cyq_calc",
+            "note": "强制腾讯日K + 东财CYQ推演",
+        }
+
+    rows = [one(c) for c in args.codes]
     if args.json:
         print(json.dumps(rows, ensure_ascii=False, indent=2))
         return
@@ -302,7 +452,11 @@ def main() -> None:
         if row.get("error"):
             print(f"{code}: {row['error']}")
         else:
-            print(f"{code} {row['date']} 收{row['close']:.2f} | {fmt_summary(row)}")
+            src = row.get("kline_source", "")
+            print(
+                f"{code} {row['date']} 收{row['close']:.2f} | {fmt_summary(row)}"
+                + (f" | K={src}" if src else "")
+            )
 
 
 if __name__ == "__main__":
