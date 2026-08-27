@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-26T18:05:00+08:00",
+    "updated_at": "2026-08-26T18:25:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-26T18:25:00+08:00",
+            "decision": "A股收盘§4–§6并入「资金与板块共振」；正文改为§0–§8",
+            "detail": "4.1行业线=资金×涨跌；4.2概念线=资金×涨跌（新增概念资金）；4.3交叉轮动去重；持仓§5/明日§6/池§7/结论§8；mtd_screener→BUYSETUP_FOR_§7；须重贴Automations"
+        },
         {
             "at": "2026-08-26T18:05:00+08:00",
             "decision": "筹码势日K：东财curl_cffi失败则腾讯newfqkline（换手对齐）",
@@ -187,7 +192,7 @@
         "notes": "持仓快照 positions-2026-08-26.json；8/25 QQQ减0.01@$713；8/26 YH平冀东装备换入维科技术"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（含扶摇P0+回退）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -195,6 +200,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-26T18:25:00+08:00",
+            "changes": "通知偏好：A股收盘正文§0–§10→§0–§8；旧资金/板块/概念并入§4「资金与板块共振」（行业+概念各含资金×涨跌）；用户池节号§9→§7；势能节号§7→§5",
+            "reason": "用户要求合并§4/§5/§6去重，同时保留行业与概念两条资金去处视角"
+        },
         {
             "updated_at": "2026-08-26T09:35:00+08:00",
             "changes": "通知偏好新增「A股收盘数据源」：扶摇MCP优先；不可用立刻回退同花顺网页+东财+本地tools；禁止因MCP挂掉停写日报",

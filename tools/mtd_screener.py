@@ -6,7 +6,7 @@
   # 或指定文件：
   .venv/bin/python tools/mtd_screener.py --from-pool data/raw/screener/pool-latest.csv
 
-  读用户池 → 全量四选一 → stdout 打印「命中 / 未命中」两表 → 写入日报 §9
+  读用户池 → 全量四选一 → stdout 打印「命中 / 未命中」两表 → 写入日报 §7
   不跑公式一层、不过东财主线 TOP 过滤。
 
 可选：跑通达信月初至今公式池（调试/备查，非日报默认）:
@@ -19,7 +19,8 @@
   # VOL5 含当日（通达信）；买点量能按 my-soul「不含当日」
 
 输出（日报默认）:
-  stdout：=== BUYSETUP_FOR_§9 === 命中表 + 未命中表 === END BUYSETUP ===
+  stdout：=== BUYSETUP_FOR_§7 === 命中表 + 未命中表 === END BUYSETUP ===
+  （兼容旧标记 BUYSETUP_FOR_§9）
 """
 
 from __future__ import annotations
@@ -979,14 +980,14 @@ def format_buysetup_md(
     touch_pct: float,
     breakout_max_ext: float,
 ) -> str:
-    """用户池全量分析结果 Markdown（供日报 §9）。"""
+    """用户池全量分析结果 Markdown（供日报 §7）。"""
     n = len(hit_rows) + len(miss_rows)
     header = (
         "| 代码 | 简称 | 买点 | 收盘 | MA5 | ext | V | MA(V,5) | VR | 换手% |"
     )
     sep = "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"
     lines = [
-        f"# 用户池四选一全量分析 {stamp} — 供日报 §9",
+        f"# 用户池四选一全量分析 {stamp} — 供日报 §7",
         "",
         f"- 评估日: {asof_label}",
         f"- 第一层来源: {pool_label}（用户自理；Agent 不代选）",
@@ -994,7 +995,7 @@ def format_buysetup_md(
         f"回踩≤{touch_pct}%；突破延伸≤{breakout_max_ext}%",
         f"- 趋势线为自动近似（波峰/波谷连线），人工画线可能不一致",
         f"- 池内 {n} → 命中 {len(hit_rows)} / 未命中 {len(miss_rows)}",
-        f"- 非荐股；写入日报 §9「明日值得关注的个股」",
+        f"- 非荐股；写入日报 §7「明日值得关注的个股」",
         "",
         "## 命中四选一",
         "",
@@ -1033,7 +1034,7 @@ def emit_buysetup(
     miss_rows: list[dict[str, Any]],
     pool_label: str,
 ) -> None:
-    """打印全量分析供日报 §9；仅 --write-buysetup 时才写文件。"""
+    """打印全量分析供日报 §7；仅 --write-buysetup 时才写文件。"""
     md = format_buysetup_md(
         stamp=stamp,
         asof_label=asof_label,
@@ -1043,11 +1044,11 @@ def emit_buysetup(
         touch_pct=args.touch_pct,
         breakout_max_ext=args.breakout_max_ext,
     )
-    print("=== BUYSETUP_FOR_§9（用户池全量 · 勿默认落盘）===", flush=True)
+    print("=== BUYSETUP_FOR_§7（用户池全量 · 勿默认落盘）===", flush=True)
     print(md, flush=True)
     print("=== END BUYSETUP ===", flush=True)
     print(
-        f"命中 {len(hit_rows)} / 未命中 {len(miss_rows)} → 写入日报 §9",
+        f"命中 {len(hit_rows)} / 未命中 {len(miss_rows)} → 写入日报 §7",
         flush=True,
     )
     for h in hit_rows[:20]:
@@ -1105,14 +1106,14 @@ def main() -> int:
         print(f"1/2 读取用户一层池: {pool_path}", flush=True)
         if not pool_path.exists():
             print(f"一层池文件不存在: {pool_path}", flush=True)
-            print("=== BUYSETUP_FOR_§9 ===", flush=True)
+            print("=== BUYSETUP_FOR_§7 ===", flush=True)
             print("用户未提供一层池（文件不存在）", flush=True)
             print("=== END BUYSETUP ===", flush=True)
             return 0
         pool = load_user_pool(pool_path)
         if not pool:
             print("一层池为空。", flush=True)
-            print("=== BUYSETUP_FOR_§9 ===", flush=True)
+            print("=== BUYSETUP_FOR_§7 ===", flush=True)
             print("用户未提供一层池（文件为空）", flush=True)
             print("=== END BUYSETUP ===", flush=True)
             return 0

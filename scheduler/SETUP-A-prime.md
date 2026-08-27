@@ -3,7 +3,7 @@
 你已选择 **A'**：只用 Cursor Automations，当前开 **1 个** 定时任务。
 
 **当前组合**：
-1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§10（见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
+1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
