@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-27T17:39:46+08:00",
+    "updated_at": "2026-08-27T17:55:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,21 +68,6 @@
         }
     ],
     "recent_decisions": [
-        {
-            "at": "2026-08-27T17:39:46+08:00",
-            "decision": "收盘prompt：均线回腾讯主源+昨量读昨报+年份对账",
-            "detail": "①§1/§5均线主源腾讯与stock_ma_levels/period_chg；扶摇historical禁主源。②昨量只读昨报量能句。③搜索/historical必须带年并与昨报对账。已改prompt/rules/my-soul；8/27日报已勘误（评分83，价涨放量+17.5%，MA60-0.08%）。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T17:21:49+08:00",
-            "decision": "8/27量能串年根因：历史对比链路，非当日snapshot",
-            "detail": "今日21259来自扶摇snapshot正确；昨日29708/近5日28165/MA3563栈来自2025串年（WebSearch或historical日期）。8/26及此前均线走腾讯、昨量续写前日报。须硬规则：昨量优先读output昨报；historical/搜索必须带2026年校验。"
-        },
-        {
-            "at": "2026-08-27T17:18:40+08:00",
-            "decision": "8/27日报「昨日29708亿」口径错误：误用2025-08-28媒体数",
-            "detail": "正确昨日=8/26扶摇沪+深≈1.81万亿；今日21259亿应为较昨日放量约17%，非缩量28%。近5日均量28165亦疑串年。"
-        },
         {
             "at": "2026-08-27T15:25:00+08:00",
             "decision": "§1加入成交额前100涨跌与东财行业分布",
@@ -167,17 +152,32 @@
             "at": "2026-08-25T11:35:00+08:00",
             "decision": "补录三笔：QQQ买@$705×0.01、AAPL买@$311×0.01（8/24）；YH卖603912@¥8.65×100（8/25）",
             "detail": "trades CSV + positions-2026-08-25.json；QQQ→0.04@$717.5；新开AAPL；佳力图粗算+¥17.0(+2.0%)；YH空个股；未计费"
+        },
+        {
+            "at": "2026-08-24T16:50:00+08:00",
+            "decision": "补录三笔：QQQ 8/21买@$709×0.01后卖@$712×0.01；159338 8/24买@¥1.202×100（HT）",
+            "detail": "trades CSV + positions-2026-08-24.json；QQQ净仓仍0.03@$721.67；159338→600@¥1.212；未计费"
+        },
+        {
+            "at": "2026-08-24T09:55:00+08:00",
+            "decision": "瘦身 working.json：工作记忆只留当前态",
+            "detail": "已平仓与过期观察移出；recent_decisions/soul_updates 超额归档至 memory/*.archive.json；规则见 memory/README.md"
+        },
+        {
+            "at": "2026-08-21T18:25:00+08:00",
+            "decision": "美股收盘精简版现行正文§0–§6；完整版 origin；任务暂停",
+            "detail": "轮动只用§1+§3十一板块；恢复「Invest US Close Daily」时须重贴 Automations"
         }
     ],
     "market_regime": {
-        "equity": "A股：GY个股空仓；YH持002455百川股份100@¥7.77（8/27收7.78）；HT持159338 600@¥1.212（8/27收1.228）；主线=半导+通信+元件",
+        "equity": "A股：GY个股空仓；YH持002455百川股份100@¥7.77（8/27收7.78，距MA5+3.4%）；HT持159338 600@¥1.212（8/27收1.228）；主线=半导+通信+元件；上证3956站上MA5/10/20贴MA60",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$717.5；VOO 0.03@$708；SGOV 0.01@$100；AAPL 0.01@$311",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
         "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科技术@¥8.30换入百川股份@¥7.77"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（含防串年/均线腾讯主源/昨量昨报锚点）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·§1状态评分+前100活跃成交+§2表后三段+§3盘中三段+§4资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -185,11 +185,6 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
-        {
-            "updated_at": "2026-08-27T17:39:46+08:00",
-            "changes": "A股收盘数据源：均线/空间周期势主源改回腾讯与本地脚本；昨量强制昨报锚点；historical/搜索须年份+昨报对账",
-            "reason": "8/27串年事故：扶摇historical与无年份搜索导致量能/均线通篇偏"
-        },
         {
             "updated_at": "2026-08-27T15:25:00+08:00",
             "changes": "通知偏好：A股收盘§1增加成交额前100涨跌家数与东财行业分布（tools/top100_amount.py）；不拉行业主力净额、不映射同花顺",
@@ -234,6 +229,11 @@
             "updated_at": "2026-08-17T13:45:00+08:00",
             "changes": "环境→做什么补全：稳+进攻信号+主线→买点可激进、个股小波段；震荡→放弃大盘、强势题材、高抛低吸",
             "reason": "用户要求§1操作提示加上激进买点/小波段与弃大盘/高抛低吸"
+        },
+        {
+            "updated_at": "2026-08-17T13:40:00+08:00",
+            "changes": "A股环境→做什么：稳走趋势做行业主线，震荡没方向做概念题材；收盘§1必写操作提示一句",
+            "reason": "用户要求市场状态判断后提醒当前适合做什么"
         }
     ]
 }
