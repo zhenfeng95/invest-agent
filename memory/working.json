@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-26T18:25:00+08:00",
+    "updated_at": "2026-08-27T11:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-27T11:05:00+08:00",
+            "decision": "A股收盘§2表后改固定三段：指数结构/上证技术位置/市场宽度",
+            "detail": "禁止一段箭头总结；结构=风格链+定性；技术位置必须写出MA5/10/20/60价与距收盘%；宽度=涨停跌停+涨跌家数+赚钱效应。8/26日报已按此改写。须重贴Automations"
+        },
+        {
+            "at": "2026-08-27T10:50:00+08:00",
+            "decision": "A股收盘§3改固定三段：盘面演变/核心驱动/盘中结论",
+            "detail": "禁止箭头时间线与①②③④长段；演变=早/午/午后/尾盘各1句；驱动=3～4条标签+数据；结论=谁推动/结构还是普涨。8/26日报已按此改写。须重贴Automations"
+        },
         {
             "at": "2026-08-26T18:25:00+08:00",
             "decision": "A股收盘§4–§6并入「资金与板块共振」；正文改为§0–§8",
@@ -192,7 +202,7 @@
         "notes": "持仓快照 positions-2026-08-26.json；8/25 QQQ减0.01@$713；8/26 YH平冀东装备换入维科技术"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·§2表后三段+§3盘中三段+§4资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
