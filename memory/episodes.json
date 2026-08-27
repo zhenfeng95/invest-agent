@@ -1,6 +1,18 @@
 {
   "episodes": [
     {
+      "id": "ep-026",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "YH平维科技术换入百川股份",
+      "detail": "银河：600152卖100@¥8.30（成本8.27，粗算+¥3/+0.36%）；002455买100@¥7.77。均未计佣金。写入 trades CSV 与 positions-2026-08-27.json。YH现持百川；HT仍持159338。",
+      "tickers": [
+        "600152",
+        "002455"
+      ],
+      "outcome": null
+    },
+    {
       "id": "ep-025",
       "date": "2026-08-26",
       "type": "decision",

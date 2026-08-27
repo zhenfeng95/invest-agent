@@ -983,7 +983,7 @@ def format_buysetup_md(
     """用户池全量分析结果 Markdown（供日报 §7）。"""
     n = len(hit_rows) + len(miss_rows)
     header = (
-        "| 代码 | 简称 | 买点 | 收盘 | MA5 | ext | V | MA(V,5) | VR | 换手% |"
+        "| 代码 | 简称 | 买点 | 收盘 | MA5 | 距MA5 | V | MA(V,5) | V / MA(V,5) | 换手% |"
     )
     sep = "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"
     lines = [
