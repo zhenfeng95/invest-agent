@@ -1,6 +1,24 @@
 {
   "episodes": [
     {
+      "id": "ep-029",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "堵住收盘日报串年：均线腾讯+昨量昨报+对账",
+      "detail": "prompt/rules/my-soul 三处同步；8/27日报勘误为腾讯MA与昨报18087亿对比（放量+17.5%），MA60仍-0.08%。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-028",
+      "date": "2026-08-27",
+      "type": "review",
+      "summary": "追查日报昨日成交29708亿来源",
+      "detail": "非扶摇8/26口径。29708亿对应公开媒体2025-08-28两市成交；8/26本库日报与东财/网易均为≈1.81万亿（沪8572+深9515）。今日21259（扶摇沪深turnover）对比应放量而非缩量28%。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-027",
       "date": "2026-08-27",
       "type": "decision",
