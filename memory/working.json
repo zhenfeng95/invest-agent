@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-27T17:55:00+08:00",
+    "updated_at": "2026-08-27T18:17:18+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,21 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-27T18:17:18+08:00",
+            "decision": "省token：limit_pool_summary+board_top；禁THS catalog/全池JSON",
+            "detail": "新增 tools/limit_pool_summary.py、board_top.py；prompt Token预算表；扶摇仅指数+持仓snapshot；THS≤6次对照。须重贴Automations"
+        },
+        {
+            "at": "2026-08-27T18:12:01+08:00",
+            "decision": "防串年长文收成三条硬规则",
+            "detail": "去掉昨报对账/跳变阈值等唠叨；保留：historical不作均线昨量主源、量能认market_turnover、搜索带年。prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-27T18:09:00+08:00",
+            "decision": "量能主源改 market_turnover.py，不再读昨报",
+            "detail": "新增 tools/market_turnover.py（腾讯沪+深）；较前一日/近5日均只跑脚本一行；prompt/rules/my-soul已改；须重贴Automations"
+        },
         {
             "at": "2026-08-27T15:25:00+08:00",
             "decision": "§1加入成交额前100涨跌与东财行业分布",
@@ -152,21 +167,6 @@
             "at": "2026-08-25T11:35:00+08:00",
             "decision": "补录三笔：QQQ买@$705×0.01、AAPL买@$311×0.01（8/24）；YH卖603912@¥8.65×100（8/25）",
             "detail": "trades CSV + positions-2026-08-25.json；QQQ→0.04@$717.5；新开AAPL；佳力图粗算+¥17.0(+2.0%)；YH空个股；未计费"
-        },
-        {
-            "at": "2026-08-24T16:50:00+08:00",
-            "decision": "补录三笔：QQQ 8/21买@$709×0.01后卖@$712×0.01；159338 8/24买@¥1.202×100（HT）",
-            "detail": "trades CSV + positions-2026-08-24.json；QQQ净仓仍0.03@$721.67；159338→600@¥1.212；未计费"
-        },
-        {
-            "at": "2026-08-24T09:55:00+08:00",
-            "decision": "瘦身 working.json：工作记忆只留当前态",
-            "detail": "已平仓与过期观察移出；recent_decisions/soul_updates 超额归档至 memory/*.archive.json；规则见 memory/README.md"
-        },
-        {
-            "at": "2026-08-21T18:25:00+08:00",
-            "decision": "美股收盘精简版现行正文§0–§6；完整版 origin；任务暂停",
-            "detail": "轮动只用§1+§3十一板块；恢复「Invest US Close Daily」时须重贴 Automations"
         }
     ],
     "market_regime": {
@@ -177,7 +177,7 @@
         "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科技术@¥8.30换入百川股份@¥7.77"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·§1状态评分+前100活跃成交+§2表后三段+§3盘中三段+§4资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（含 market_turnover/limit_pool_summary/board_top/Token预算）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -185,6 +185,21 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-27T18:17:18+08:00",
+            "changes": "A股收盘Token预算：涨跌停/板块涨跌走本地摘要脚本；禁catalog与全池JSON",
+            "reason": "267万token run；扶摇大JSON常驻是主因之一"
+        },
+        {
+            "updated_at": "2026-08-27T18:12:01+08:00",
+            "changes": "A股收盘数据硬规则精简为三条（historical禁主源/量能脚本/搜索带年）",
+            "reason": "量能与均线已脱扶摇historical，省token"
+        },
+        {
+            "updated_at": "2026-08-27T18:09:00+08:00",
+            "changes": "A股收盘量能：较前一日/近5日均改 tools/market_turnover.py；禁止为量能读昨报",
+            "reason": "省token；避免通读多份日报；脚本内年份校验防串年"
+        },
         {
             "updated_at": "2026-08-27T15:25:00+08:00",
             "changes": "通知偏好：A股收盘§1增加成交额前100涨跌家数与东财行业分布（tools/top100_amount.py）；不拉行业主力净额、不映射同花顺",

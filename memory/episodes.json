@@ -1,6 +1,33 @@
 {
   "episodes": [
     {
+      "id": "ep-032",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "Token预算：摘要脚本替代涨跌停/THS全量",
+      "detail": "limit_pool_summary+board_top；禁catalog/全池JSON。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-031",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "防串年规则精简为三条",
+      "detail": "删昨报对账长段；留historical禁主源+market_turnover+搜索带年。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-030",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "量能改 market_turnover.py，不读昨报",
+      "detail": "腾讯沪+深日K一行输出今日/昨/近5日均；脚本内校验年份。prompt/rules/my-soul已改。实测8/27=21259、昨18087、+17.5%。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-029",
       "date": "2026-08-27",
       "type": "decision",
