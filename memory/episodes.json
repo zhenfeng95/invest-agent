@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-027",
+      "date": "2026-08-27",
+      "type": "decision",
+      "summary": "日报§1加入成交额前100涨跌与行业分布",
+      "detail": "东财clist一页（tools/top100_amount.py）：涨跌家数 + 涨的行业（只数≥2）+ 跌的行业全列。不拉行业主力净额、不映射同花顺。写入精简版 prompt / rules / my-soul。须重贴 Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-026",
       "date": "2026-08-27",
       "type": "decision",

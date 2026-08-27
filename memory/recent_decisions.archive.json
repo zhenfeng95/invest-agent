@@ -4,6 +4,12 @@
     "note": "Phase 1 不读本文件。日报完成类以 output/daily/ 为准。",
     "recent_decisions": [
         {
+            "at": "2026-08-21T15:12:00+08:00",
+            "decision": "仓位快照：GY空个股；YH持603912；HT持159338；US持IBIT/SGOV/VOO/QQQ",
+            "detail": "权威 positions-2026-08-21.json。当日：GY卖TCL@4.97×100；YH买佳力图@8.48×100；VOO加仓@$704×0.01",
+            "archived_at": "2026-08-27T15:25:00+08:00"
+        },
+        {
             "at": "2026-08-20T10:32:00+08:00",
             "decision": "行情→账户重心：好→GY+YH进攻；不好→HT+YH防守短线",
             "detail": "日报§1在操作提示后加账户重心一句；须重贴 Automations"

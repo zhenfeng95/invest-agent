@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-27T14:27:00+08:00",
+    "updated_at": "2026-08-27T15:25:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -68,6 +68,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-27T15:25:00+08:00",
+            "decision": "§1加入成交额前100涨跌与东财行业分布",
+            "detail": "tools/top100_amount.py（东财clist一页）；涨只数≥2列表、跌列全；禁止行业主力净额。须重贴Automations"
+        },
         {
             "at": "2026-08-27T14:27:00+08:00",
             "decision": "补录YH：卖600152@¥8.30×100；买002455@¥7.77×100（8/27）",
@@ -162,11 +167,6 @@
             "at": "2026-08-21T18:25:00+08:00",
             "decision": "美股收盘精简版现行正文§0–§6；完整版 origin；任务暂停",
             "detail": "轮动只用§1+§3十一板块；恢复「Invest US Close Daily」时须重贴 Automations"
-        },
-        {
-            "at": "2026-08-21T15:12:00+08:00",
-            "decision": "仓位快照：GY空个股；YH持603912；HT持159338；US持IBIT/SGOV/VOO/QQQ",
-            "detail": "权威 positions-2026-08-21.json。当日：GY卖TCL@4.97×100；YH买佳力图@8.48×100；VOO加仓@$704×0.01"
         }
     ],
     "market_regime": {
@@ -177,7 +177,7 @@
         "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科技术@¥8.30换入百川股份@¥7.77"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·§1状态评分+§2表后三段+§3盘中三段+§4资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（§0–§8·§1状态评分+前100活跃成交+§2表后三段+§3盘中三段+§4资金与板块共振）+ FEISHU_WEBHOOK_URL；确认云端是否挂载扶摇MCP，无则按P1执行",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -185,6 +185,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-27T15:25:00+08:00",
+            "changes": "通知偏好：A股收盘§1增加成交额前100涨跌家数与东财行业分布（tools/top100_amount.py）；不拉行业主力净额、不映射同花顺",
+            "reason": "用户确认只要前100涨跌分布，并要求写入精简版日报"
+        },
         {
             "updated_at": "2026-08-27T14:10:00+08:00",
             "changes": "§5势能：资金势（原资金·主力势）；判定列带🔴🟡🟢⚪；表后势能总评两行禁止几强几弱计数；ETF/场内基金不做势能",
@@ -229,11 +234,6 @@
             "updated_at": "2026-08-17T13:40:00+08:00",
             "changes": "A股环境→做什么：稳走趋势做行业主线，震荡没方向做概念题材；收盘§1必写操作提示一句",
             "reason": "用户要求市场状态判断后提醒当前适合做什么"
-        },
-        {
-            "updated_at": "2026-08-16T18:45:00+08:00",
-            "changes": "§7筹码势：仅汇总指标（获利/均价/70%/90%集），tools/stock_cyq_summary.py",
-            "reason": "用户确认只要筹码汇总、不要分布图"
         }
     ]
 }
