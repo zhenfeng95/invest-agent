@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-27T18:17:18+08:00",
+    "updated_at": "2026-08-28T10:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -8,6 +8,7 @@
         "NVDA",
         "AAPL",
         "159338",
+        "002077",
         "000856",
         "603912",
         "002455",
@@ -24,6 +25,12 @@
         "000524"
     ],
     "active_research": [
+        {
+            "ticker": "002077",
+            "name": "大港股份",
+            "asked_at": "2026-08-27",
+            "note": "已建仓（YH）：8/27买100@¥12.47；银河激进仓；成本¥1247；未计费；止损细则待补"
+        },
         {
             "ticker": "002455",
             "name": "百川股份",
@@ -68,6 +75,26 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-08-28T10:05:00+08:00",
+            "decision": "补录YH：买002077大港股份@¥12.47×100（8/27）",
+            "detail": "trades CSV + positions-2026-08-27.json；成本¥1247未计费；YH现持百川股份100@¥7.77 + 大港股份100@¥12.47"
+        },
+        {
+            "at": "2026-08-28T10:00:00+08:00",
+            "decision": "§1赚钱效应加全市场涨跌中位数 vs 上证",
+            "detail": "market_breadth.py由分布桶算中位数并拉上证f170；中位数>上证=个股强。prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-28T09:55:00+08:00",
+            "decision": "前100只要涨:跌家数，并入§1赚钱效应",
+            "detail": "取消活跃成交行业分布专节；top100_amount默认一行涨:跌:平；行业表仅--with-industries调试。prompt/rules/my-soul已改；须重贴Automations"
+        },
+        {
+            "at": "2026-08-28T09:35:00+08:00",
+            "decision": "A股收盘 prompt 原地瘦身：665→455行",
+            "detail": "三表合一数据总表；删建议正文骨架/迁移废话；§6§5长示例归档 origin 附录A；硬规则§0–§8不变。须重贴Automations"
+        },
         {
             "at": "2026-08-27T18:17:18+08:00",
             "decision": "省token：limit_pool_summary+board_top；禁THS catalog/全池JSON",
@@ -147,37 +174,17 @@
             "at": "2026-08-26T15:17:00+08:00",
             "decision": "补录三笔：QQQ卖@$713×0.01（8/25）；YH卖000856@¥8.72、买600152@¥8.27（8/26）",
             "detail": "trades CSV + positions-2026-08-26.json；QQQ→0.03@$717.5粗算-$0.05；冀东装备粗算+¥12(+1.40%)；YH现持维科技术100@¥8.27；未计费"
-        },
-        {
-            "at": "2026-08-26T10:55:00+08:00",
-            "decision": "一层观察池现14只（pool-latest.csv）",
-            "detail": "留603912/002455/000973；加600203福日电子、002548金新农、000856冀东装备、603779威龙股份、600152维科技术、603339四方科技、603158腾龙股份、002328新朋股份、000530冰山冷热、601616广电电气、000524岭南控股；删宗申动力/TCL中环/TCL科技/铜峰电子/电科芯片/万里扬/中贝通信/万润股份/郴电国际/京东方A/苏州固锝"
-        },
-        {
-            "at": "2026-08-26T09:35:00+08:00",
-            "decision": "A股收盘日报数据源：扶摇MCP优先，失败立刻回退同花顺/东财/tools",
-            "detail": "已改 prompt-ashare-close-daily.md、rules.md、my-soul 通知偏好；§4东财资金/东财行业/筹码/负面仍走备用；须重贴 Automations"
-        },
-        {
-            "at": "2026-08-25T15:40:00+08:00",
-            "decision": "录入 YH 买入 000856 冀东装备：2026-08-25 @¥8.60×100",
-            "detail": "trades CSV + positions-2026-08-25.json；YH现持冀东装备；成本¥860未计费"
-        },
-        {
-            "at": "2026-08-25T11:35:00+08:00",
-            "decision": "补录三笔：QQQ买@$705×0.01、AAPL买@$311×0.01（8/24）；YH卖603912@¥8.65×100（8/25）",
-            "detail": "trades CSV + positions-2026-08-25.json；QQQ→0.04@$717.5；新开AAPL；佳力图粗算+¥17.0(+2.0%)；YH空个股；未计费"
         }
     ],
     "market_regime": {
-        "equity": "A股：GY个股空仓；YH持002455百川股份100@¥7.77（8/27收7.78，距MA5+3.4%）；HT持159338 600@¥1.212（8/27收1.228）；主线=半导+通信+元件；上证3956站上MA5/10/20贴MA60",
+        "equity": "A股：GY个股空仓；YH持002455百川100@¥7.77 + 002077大港100@¥12.47；HT持159338 600@¥1.212；主线=半导+通信+元件；上证3956站上MA5/10/20贴MA60",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$717.5；VOO 0.03@$708；SGOV 0.01@$100；AAPL 0.01@$311",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科技术@¥8.30换入百川股份@¥7.77"
+        "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科@¥8.30，买百川@¥7.77 + 大港@¥12.47"
     },
     "open_questions": [
-        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（含 market_turnover/limit_pool_summary/board_top/Token预算）+ FEISHU_WEBHOOK_URL",
+        "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
@@ -185,6 +192,16 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-08-28T10:00:00+08:00",
+            "changes": "通知偏好：§1赚钱效应增加全市场涨跌中位数 vs 上证（market_breadth.py）",
+            "reason": "用户要用中位数对照上证判断当日市场情绪/个股强弱"
+        },
+        {
+            "updated_at": "2026-08-28T09:55:00+08:00",
+            "changes": "通知偏好：§1前100改为只要涨:跌家数写入赚钱效应；禁止活跃成交/行业分布专节",
+            "reason": "用户确认只要核心活跃资金涨跌比，不需要前100行业明细"
+        },
         {
             "updated_at": "2026-08-27T18:17:18+08:00",
             "changes": "A股收盘Token预算：涨跌停/板块涨跌走本地摘要脚本；禁catalog与全池JSON",

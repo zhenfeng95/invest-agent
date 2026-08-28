@@ -1,6 +1,45 @@
 {
   "episodes": [
     {
+      "id": "ep-036",
+      "date": "2026-08-28",
+      "type": "decision",
+      "summary": "YH买入 002077 大港股份 100股 @¥12.47",
+      "detail": "银河证券激进仓。成本¥1247（未计佣金）。写入 trades CSV 与 positions-2026-08-27.json。YH现持百川股份100@¥7.77 + 大港股份100@¥12.47；HT仍持159338。",
+      "tickers": [
+        "002077",
+        "002455"
+      ],
+      "outcome": null
+    },
+    {
+      "id": "ep-035",
+      "date": "2026-08-28",
+      "type": "decision",
+      "summary": "赚钱效应加涨跌中位数 vs 上证",
+      "detail": "market_breadth由东财分布桶算中位数+上证f170；中位数>上证=个股强。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-034",
+      "date": "2026-08-28",
+      "type": "decision",
+      "summary": "前100只要涨:跌，并入赚钱效应",
+      "detail": "取消§1活跃成交行业分布专节；赚钱效应含全市场宽度+前100涨:跌+涨跌停；top100_amount默认一行。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-033",
+      "date": "2026-08-28",
+      "type": "decision",
+      "summary": "A股收盘 prompt 原地瘦身",
+      "detail": "665→455行；三表合一；删骨架duplicate与迁移语；长示例→origin附录A；§0–§8硬规则不变。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-032",
       "date": "2026-08-27",
       "type": "decision",

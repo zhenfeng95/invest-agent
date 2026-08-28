@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""沪深 A 成交额前 100：涨跌家数 + 东财行业分布（§1 活跃成交）。
+"""沪深 A 成交额前 100：默认只输出涨跌家数（§1 赚钱效应）。
+
+行业分布仅在 --with-industries / --json 时给出；日报正文不要贴行业表。
 
 只拉 clist 一页（pn=1, pz=100, fid=f6 成交额降序）。
 禁止：全市场分页、行业主力净额、同花顺映射。
@@ -176,13 +178,18 @@ def aggregate(stocks: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-def format_text(rep: dict[str, Any]) -> str:
-    lines = [
+def format_counts(rep: dict[str, Any]) -> str:
+    """日报默认：只一行涨跌家数。"""
+    return (
         f"前100 {rep['up']}涨:{rep['down']}跌"
         f"（平{rep['flat']}；成交{rep['amount_yi']}亿；"
         f"n={rep['n']}；来源东财clist一页）"
-    ]
-    lines.append("涨的行业（只数≥2）：")
+    )
+
+
+def format_industries(rep: dict[str, Any]) -> str:
+    """调试用：行业分布表（不进日报正文）。"""
+    lines = [format_counts(rep), "涨的行业（只数≥2）："]
     lines.append("| 行业 | 只数 | 成交(亿) | 代表 |")
     lines.append("| ---- | ----: | -------: | ---- |")
     for r in rep["up_industries_ge2"]:
@@ -205,8 +212,15 @@ def format_text(rep: dict[str, Any]) -> str:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="沪深A成交额前100涨跌与东财行业分布（§1）")
-    ap.add_argument("--json", action="store_true", help="输出 JSON")
+    ap = argparse.ArgumentParser(
+        description="沪深A成交额前100涨跌家数（§1 赚钱效应；行业分布仅调试）"
+    )
+    ap.add_argument("--json", action="store_true", help="输出完整 JSON（含行业）")
+    ap.add_argument(
+        "--with-industries",
+        action="store_true",
+        help="文本输出附带行业分布表（调试；日报勿用）",
+    )
     args = ap.parse_args()
     try:
         universe, stocks = fetch_top100()
@@ -220,8 +234,10 @@ def main() -> int:
     rep["universe_total"] = universe
     if args.json:
         print(json.dumps(rep, ensure_ascii=False, indent=2))
+    elif args.with_industries:
+        print(format_industries(rep))
     else:
-        print(format_text(rep))
+        print(format_counts(rep))
     return 0 if rep.get("ok") else 1
 
 
