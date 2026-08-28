@@ -2,7 +2,7 @@
 
 | 目录 | 放什么 |
 |------|--------|
-| `raw/screener/` | 用户第一层选股池（`pool-latest.csv`）；Agent 全量四选一后写入日报 §9 |
+| `raw/screener/` | 用户第一层选股池（`pool-latest.csv`）；Agent 全量五选一后写入日报 §7 |
 | `raw/tweets/` | 历史推文、社媒内容 |
 | `raw/trades/` | 交易记录（CSV / JSON） |
 | `raw/notes/` | 个人笔记、研究心得 |

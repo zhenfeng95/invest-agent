@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-037",
+      "date": "2026-08-28",
+      "type": "decision",
+      "summary": "GY买点升格五选一：沿MA5趋势低吸",
+      "detail": "新增第5类：收盘≥MA5；今日MA5>昨日MA5；近3日（含当日）至少2天贴MA5（|ext|≤3%）；当日0%≤ext≤3%；不要求放量/缩量。与缩量回踩MA5同时命中时只报缩量回踩。写入 my-soul、buy_setup_filter、收盘prompt/rules。须重贴Automations。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-036",
       "date": "2026-08-28",
       "type": "decision",

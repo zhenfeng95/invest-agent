@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""选股辅助：用户一层池全量四选一分析（收盘日报默认）+ 可选公式一层
+"""选股辅助：用户一层池全量五选一分析（收盘日报默认）+ 可选公式一层
 
 收盘日报默认（用户自理第一层）:
   .venv/bin/python tools/mtd_screener.py
   # 或指定文件：
   .venv/bin/python tools/mtd_screener.py --from-pool data/raw/screener/pool-latest.csv
 
-  读用户池 → 全量四选一 → stdout 打印「命中 / 未命中」两表 → 写入日报 §7
+  读用户池 → 全量五选一 → stdout 打印「命中 / 未命中」两表 → 写入日报 §7
   不跑公式一层、不过东财主线 TOP 过滤。
 
 可选：跑通达信月初至今公式池（调试/备查，非日报默认）:
@@ -66,7 +66,7 @@ _disable_proxies()
 
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="用户一层池全量四选一（默认）/ 可选通达信公式一层（--formula）"
+        description="用户一层池全量五选一（默认）/ 可选通达信公式一层（--formula）"
     )
     p.add_argument("--min-mtd", type=float, default=5.0, help="MTD 下限（不含），默认 5")
     p.add_argument("--max-mtd", type=float, default=15.0, help="MTD 上限（不含），默认 15")
@@ -133,7 +133,7 @@ def _parse_args() -> argparse.Namespace:
         "--refine",
         action="store_true",
         default=False,
-        help="公式模式附加：东财主线∩四选一（仅 --formula 时有用）",
+        help="公式模式附加：东财主线∩五选一（仅 --formula 时有用）",
     )
     p.add_argument(
         "--no-refine",
@@ -783,7 +783,7 @@ def refine_hits(
     from buy_setup_filter import detect_buy_setups  # type: ignore
 
     print(
-        f"3/4 东财主线 TOP{mainline_top} + 四选一买点二筛…",
+        f"3/4 东财主线 TOP{mainline_top} + 五选一买点二筛…",
         flush=True,
     )
     try:
@@ -859,11 +859,11 @@ def analyze_user_pool(
     touch_pct: float,
     breakout_max_ext: float,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
-    """用户池全量四选一；返回 (全部, 命中, 未命中)。不过主线过滤。"""
+    """用户池全量五选一；返回 (全部, 命中, 未命中)。不过主线过滤。"""
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from buy_setup_filter import analyze_buy_setup  # type: ignore
 
-    print(f"2/2 全量四选一分析（{len(hits)} 只）…", flush=True)
+    print(f"2/2 全量五选一分析（{len(hits)} 只）…", flush=True)
     all_rows: list[dict[str, Any]] = []
     done = 0
     t0 = time.time()
@@ -987,17 +987,18 @@ def format_buysetup_md(
     )
     sep = "| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |"
     lines = [
-        f"# 用户池四选一全量分析 {stamp} — 供日报 §7",
+        f"# 用户池五选一全量分析 {stamp} — 供日报 §7",
         "",
         f"- 评估日: {asof_label}",
         f"- 第一层来源: {pool_label}（用户自理；Agent 不代选）",
-        f"- 买点: 四选一；量能按 my-soul（MA(V,5)不含当日）；"
+        f"- 买点: 五选一（沿MA5趋势低吸不要求量能；与缩量回踩MA5同时命中优先报回踩）；"
+        f"量能按 my-soul（MA(V,5)不含当日）；"
         f"回踩≤{touch_pct}%；突破延伸≤{breakout_max_ext}%",
         f"- 趋势线为自动近似（波峰/波谷连线），人工画线可能不一致",
         f"- 池内 {n} → 命中 {len(hit_rows)} / 未命中 {len(miss_rows)}",
         f"- 非荐股；写入日报 §7「明日值得关注的个股」",
         "",
-        "## 命中四选一",
+        "## 命中五选一",
         "",
         header,
         sep,
@@ -1100,7 +1101,7 @@ def main() -> int:
     start = (today.replace(day=1) - timedelta(days=40)).strftime("%Y%m%d")
     end = (today + timedelta(days=1)).strftime("%Y%m%d")
 
-    # —— 默认：用户一层池 → 全量四选一（命中 / 未命中）——
+    # —— 默认：用户一层池 → 全量五选一（命中 / 未命中）——
     if not args.formula:
         pool_path = args.from_pool or DEFAULT_USER_POOL
         print(f"1/2 读取用户一层池: {pool_path}", flush=True)
