@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-08-28T17:16:00+08:00",
+    "updated_at": "2026-08-28T17:15:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -75,11 +75,6 @@
         }
     ],
     "recent_decisions": [
-        {
-            "at": "2026-08-28T17:16:00+08:00",
-            "decision": "核查：今日A股收盘日报定时未触发",
-            "detail": "17:16仍无 ashare-close-2026-08-28.md；远端无新 cursor/*；最近成功为8/27约17:08起跑。仓库cron配置无误；属 Cursor Automations 侧未开跑（类8/12）"
-        },
         {
             "at": "2026-08-28T10:45:00+08:00",
             "decision": "GY买点升格五选一：沿MA5趋势低吸",
@@ -182,14 +177,13 @@
         }
     ],
     "market_regime": {
-        "equity": "A股：GY个股空仓；YH持002455百川100@¥7.77 + 002077大港100@¥12.47；HT持159338 600@¥1.212；主线=半导+通信+元件；上证3956站上MA5/10/20贴MA60",
+        "equity": "A股：GY个股空仓；YH持002455百川100@¥7.77 + 002077大港100@¥12.47；HT持159338 600@¥1.212；8/28轮动至农化/软件，科技链退潮；上证3952仍站上MA5/10/20贴MA60下；评分63轻仓试错",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$717.5；VOO 0.03@$708；SGOV 0.01@$100；AAPL 0.01@$311",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
         "notes": "持仓快照 positions-2026-08-27.json；8/27 YH平维科@¥8.30，买百川@¥7.77 + 大港@¥12.47"
     },
     "open_questions": [
-        "2026-08-28 17:00 Automations 未触发：查 Runs 是否有条目 / 是否 Pause / Usage 是否触顶；必要时 Run now 补跑",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
