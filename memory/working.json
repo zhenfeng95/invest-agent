@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-01T16:45:00+08:00",
+    "updated_at": "2026-09-01T17:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -204,7 +204,7 @@
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$716.33；VOO 0.03@$708；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.01@$343",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-09-01.json；8/31 YH换仓佳力图+QQQ加仓；9/1 GY建鲁北/卓翼"
+        "notes": "持仓快照 positions-2026-09-01.json；9/1收盘：上证3979.89(-0.16%)仍线上；农化/种业强、电子链大幅流出；评分66轻仓试错；GY持鲁北+卓翼，YH佳力图，HT 159338"
     },
     "open_questions": [
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
