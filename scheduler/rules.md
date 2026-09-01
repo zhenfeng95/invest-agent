@@ -162,9 +162,12 @@
 - cron: `0 10 * * 0`
 - 执行：生成持仓组合周度回顾（收益、归因、下周展望），保存到 `output/research/weekly/YYYY-Www.md`
 
-### 月度复盘（每月 1 日 10:00）
-- cron: `0 10 1 * *`
-- 执行：生成月度投资复盘 + 配置再平衡建议，保存到 `output/research/monthly/YYYY-MM.md`
+### 月度交易复盘（手动对话触发 · 暂不挂 Automations）
+- **策略模板**：`templates/monthly-trade-review.md`（范本：`output/reviews/monthly-2026-08.md`）
+- **触发**：用户在对话框粘贴模板内「复制即用」指令（例：生成上月 A+美股复盘并写入 `output/reviews/`）
+- **输出**：`output/reviews/monthly-YYYY-MM.md`
+- **自动化**：⏸ 暂不启用。若日后挂 Automations，建议 cron `0 10 1 * *`（每月 1 日 10:00 复盘上月），须单独建任务 + 升格 prompt，不默认开通
+- （旧规划路径 `output/research/monthly/` 已弃用，以免与实盘复盘口径混淆）
 
 ### 内容选题建议（每周三 10:00）
 - cron: `0 10 * * 3`
@@ -187,5 +190,5 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
 | 周度回顾 | `0 10 * * 0` | ⏸ 暂缓 | output/research/weekly/ |
-| 月度复盘 | `0 10 1 * *` | ⏸ 暂缓 | output/research/monthly/ |
+| 月度交易复盘 | 对话手动 / 可选 `0 10 1 * *` | ⏸ 仅手动（见 templates/monthly-trade-review.md） | output/reviews/ |
 | 内容选题 | `0 10 * * 3` | ⏸ 暂缓 | output/content/ |

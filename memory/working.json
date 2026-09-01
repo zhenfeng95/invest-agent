@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-01T17:05:00+08:00",
+    "updated_at": "2026-09-01T18:15:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -88,6 +88,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-01T18:15:00+08:00",
+            "decision": "月度交易复盘策略落盘：仅手动触发",
+            "detail": "templates/monthly-trade-review.md；输出 output/reviews/monthly-YYYY-MM.md；rules.md 标注不挂 Automations；9月结束后用模板内复制指令即可"
+        },
+        {
+            "at": "2026-09-01T18:00:00+08:00",
+            "decision": "完成2026-08整月A/美股交易复盘",
+            "detail": "已实现：A −¥14（GY−38/YH+24）；US +$0.34 FIFO。含浮盈估A≈−¥6、US≈+$0.38。主问题：GY无信号开仓+TCL破MA5迟止损；YH贴3%加速边缘。Canvas: aug-2026-trade-review；存档 output/reviews/monthly-2026-08.md"
+        },
         {
             "at": "2026-09-01T16:45:00+08:00",
             "decision": "补录：8/31 YH佳力图+US QQQ；9/1 GY鲁北+卓翼",

@@ -1,6 +1,24 @@
 {
   "episodes": [
     {
+      "id": "ep-040",
+      "date": "2026-09-01",
+      "type": "review",
+      "summary": "8月整月交易复盘：A已实现−¥14，美股+$0.34；纪律漏洞清单",
+      "detail": "GY两笔大亏（北方−50、TCL−28）吞利润；YH短线净+24。违规：万润/TCL无五选一当日命中仍买；TCL破MA5扛至−5.33%；YH冀东/百川距MA5~3%；TSLA日内、IBIT网格过早减。保留：铜峰信号命中、北方次日止损、YH胜率、VOO网格。",
+      "tickers": [
+        "000737",
+        "000100",
+        "002643",
+        "600237",
+        "603912",
+        "IBIT",
+        "QQQ",
+        "VOO"
+      ],
+      "outcome": "A realized -14 CNY; US realized +0.34 USD"
+    },
+    {
       "id": "ep-039",
       "date": "2026-09-01",
       "type": "trade",
