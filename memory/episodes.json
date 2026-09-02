@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-044",
+      "date": "2026-09-02",
+      "type": "config",
+      "summary": "周月复盘省token：薄读日报→周§7→月读周报",
+      "detail": "prompt-weekly/monthly 重写；周度对齐月度骨架+§7摘录口；月度禁止ashare-close；须重贴Automations",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-041",
       "date": "2026-09-02",
       "type": "weekly_review",

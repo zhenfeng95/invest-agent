@@ -6,8 +6,8 @@
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
 | **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
-| **② 周度回顾** | `0 10 * * 0` | 每周日 10:00（复盘**当周**组合表现、归因与下周展望） |
-| **③ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（复盘**上一自然月** A股+美股成交与纪律） |
+| **② 周度回顾** | `0 10 * * 0` | 每周日 10:00（对齐月度骨架；日报 rg 薄读；§7 供月度） |
+| **③ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（CSV + 周报 §7；**不读**日报） |
 
 **已暂停**：美股收盘日报（原 08:00）；美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
 **已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
@@ -164,24 +164,24 @@
 
 ### 周度回顾（每周日 10:00）— ✅ A' 启用
 - cron: `0 10 * * 0`（北京时间；复盘**刚结束的自然周**）
-- 提示词：`scheduler/prompt-weekly-review.md`
+- 提示词：`scheduler/prompt-weekly-review.md`（**省 token**：禁止通读日报；`rg` 成交日±1 的 §1/§5/§7；骨架对齐月度 §0–§6 + **§7 月度复盘摘录**）
 - 策略参考：`templates/weekly-review.md`
-- 执行：读当周 `trades-YYYY-MM.csv` + 周末 `positions-*.json` + 当周 A股收盘日报 → 组合涨跌 + 归因 + 纪律 highlights + 下周展望 → 写文件 → commit → merge → 飞书
-- 输出：`output/reviews/weekly/weekly-YYYY-Www.md`（ISO 8601 周号）
+- 执行：CSV（本周）+ positions + 日报薄读 → 对齐月度骨架的周复盘 → commit → merge → 飞书
+- 输出：`output/reviews/weekly/weekly-YYYY-Www.md`
 - 飞书标题：`周度回顾 YYYY-Www`
-- **前置**：当周成交应及时写入 CSV；缺文件仍生成回顾并注明「无成交」
-- 说明：比月度复盘短（800～1500 字）；改 prompt 后须 **重贴** Automations Instructions
+- **前置**：当周成交入 CSV；缺文件仍生成
+- 说明：§7 专供月初月度任务；改 prompt 后须 **重贴** Instructions
 
 ### 月度交易复盘（每月 1 日 10:00）— ✅ A' 启用
 - cron: `0 10 1 * *`（北京时间；复盘**上一自然月**）
-- 提示词：`scheduler/prompt-monthly-trade-review.md`
-- 策略参考：`templates/monthly-trade-review.md`（正文骨架与纪律清单）
+- 提示词：`scheduler/prompt-monthly-trade-review.md`（**省 token**：**禁止**读 `ashare-close`；主读当月相关周报 **§7** + CSV FIFO）
+- 策略参考：`templates/monthly-trade-review.md`
 - 范本：`output/reviews/monthly/monthly-2026-08.md`
-- 执行：读复盘月 `trades-YYYY-MM.csv` + 月末 `positions-*.json` + 当月 A股收盘日报 → FIFO 已实现 + 浮盈估 + 纪律审计（GY/YH/HT/US 分列）→ 写文件 → commit → merge → 飞书
+- 执行：CSV + 月末 positions + 相交 `weekly-*.md` 的 §7 → 合并纪律 + FIFO → 写文件 → commit → merge → 飞书
 - 输出：`output/reviews/monthly/monthly-YYYY-MM.md`
 - 飞书标题：`月度交易复盘 YYYY-MM`
-- **前置**：复盘月成交应及时写入 CSV；缺文件仍生成复盘并注明「无成交」
-- 说明：每月 1 次，成本可控；改 prompt 后须 **重贴** Automations Instructions
+- **前置**：复盘月 CSV；周报尽量齐全（缺周报则该周纪律标未审计，仍不读日报）
+- 说明：改 prompt 后须 **重贴** Instructions
 
 ### 内容选题建议（每周三 10:00）
 - cron: `0 10 * * 3`

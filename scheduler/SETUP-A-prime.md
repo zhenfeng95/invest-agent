@@ -4,8 +4,8 @@
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
-2. **周度回顾**（每周日 **10:00**）— 复盘当周组合表现、归因与下周展望；见 `prompt-weekly-review.md`；策略参考 `templates/weekly-review.md`
-3. **月度交易复盘**（每月 **1 日 10:00**）— 复盘上一自然月 A股+美股；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
+2. **周度回顾**（每周日 **10:00**）— 骨架对齐月度；日报仅 `rg` 关键节；含 **§7 月度复盘摘录**；见 `prompt-weekly-review.md`
+3. **月度交易复盘**（每月 **1 日 10:00**）— 主读当月周报 §7 + CSV；**不读** ashare-close；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
@@ -127,7 +127,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest Weekly Review |
 | 触发 | Cron：`0 10 * * 0`（北京时间每周日 **10:00**；复盘当周） |
-| Instructions | 粘贴 `scheduler/prompt-weekly-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+| Instructions | 粘贴 `scheduler/prompt-weekly-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：省 token + §7 月度摘录） |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 10:00 = UTC `0 2 * * 0`。
 
@@ -139,7 +139,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest Monthly Trade Review |
 | 触发 | Cron：`0 10 1 * *`（北京时间 **每月 1 日 10:00**；复盘**上月**） |
-| Instructions | 粘贴 `scheduler/prompt-monthly-trade-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+| Instructions | 粘贴 `scheduler/prompt-monthly-trade-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：读周报 §7、禁 ashare-close） |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 10:00 = UTC `0 2 1 * *`。
 

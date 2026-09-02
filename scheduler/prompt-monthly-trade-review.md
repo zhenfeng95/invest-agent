@@ -1,125 +1,104 @@
-# Automation 提示词：月度交易复盘
+# Automation 提示词：月度交易复盘（省 token · 读周报）
 
 把下面整段粘贴到 Cursor Automation 的 Instructions。
 
-> **状态**：✅ A' 启用（每月 1 日自动复盘上月）
+> **状态**：✅ A' 启用 · 主读周度摘录 · **禁止**通读 ashare-close
 > **cron（北京时间）**：`0 10 1 * *`（每月 1 日 10:00）
 > 若界面按 UTC：北京 10:00 = UTC `0 2 1 * *`
-> **范本**：`output/reviews/monthly/monthly-2026-08.md`
+> **范本结构**：`output/reviews/monthly/monthly-2026-08.md`
 > **策略参考**：`templates/monthly-trade-review.md`
+> **输出**：`output/reviews/monthly/monthly-YYYY-MM.md`
 
 ---
 
 你是投研 Agent 的定时任务执行器。跳过意图识别，直接执行「月度交易复盘」。
 
-你同时扮演：交易复盘员、纪律审计员、组合归因分析师。
+## Token 预算（硬性 · 违反即失败）
 
-## 时间口径（必须遵守）
+1. **禁止**读取任何 `output/daily/ashare-close-*.md` / `us-close-*.md`（含 Read 与全文 cat）
+2. 纪律与信号证据 **只来自** 当月相关 `output/reviews/weekly/weekly-*.md` 的 **`## 7. 月度复盘摘录`**（用 rg 抽该节，**不要**通读周报全文除非摘录缺失）
+3. **禁止**扶摇 MCP、收盘脚本、mtd_screener
+4. WebSearch **≤2 次**（仅补月末参考价）
+5. Phase 1 **只读**：`soul/my-soul.md`、`memory/working.json`（`recent_decisions` 前 5）、`memory/episodes.json`（最近 5）——跳过 `agent-soul.md`、`rules.md`
+6. 禁止 Canvas；正文对标 8 月范本结构，但表述紧凑
 
-本任务在 **每月 1 日 10:00（北京时间）** 跑，复盘的是 **上一个自然月** 的全部成交与持仓变化。
+## 时间口径
 
-| 运行日（例） | 复盘月份 | 成交 CSV | 输出文件 |
-| ------------ | -------- | -------- | -------- |
+每月 1 日跑；复盘 **上一个自然月**。
+
+| 运行日 | 复盘月 | CSV | 输出 |
+| ------ | ------ | --- | ---- |
 | 2026-10-01 | 2026-09 | `trades-2026-09.csv` | `monthly-2026-09.md` |
-| 2026-09-01 | 2026-08 | `trades-2026-08.csv` | `monthly-2026-08.md` |
 
-**计算规则**：以运行当日的北京日期为准，`复盘月 = 上月`（YYYY-MM）。文首、文件名、飞书标题一律用复盘月，禁止写成「本月」或运行日所在月。
+零成交仍出文件。跨月 ISO 周：凡与复盘月日期有交集的 `weekly-YYYY-Www.md` 都列入；**成交与盈亏只统计复盘月 CSV 行**；摘录里跨月交易只取落在复盘月内的条目。
 
-若 **`trades-YYYY-MM.csv` 不存在或为空**（复盘月零成交）：仍生成复盘文件，§0 写明「本月无成交」；§1–§2 写「无」；§3–§5 可基于持仓变化与日报做简短纪律回顾；**不要**因此跳过任务。
+## 数据（Phase 3 · 按序）
 
-## 必读（按序 · Phase 1）
+1. **成交**：`data/raw/trades/trades-YYYY-MM.csv`（复盘月）——**账本唯一权威**
+2. **月末快照**：复盘月内日期最大的 `positions-YYYY-MM-DD.json`；无则月后最早一份 +「快照滞后」
+3. **周报摘录**（纪律缓存）：
+   - 列出 `output/reviews/weekly/` 下与复盘月相交的 `weekly-*.md`（通常 4～5 个）
+   - 每个文件只抽 §7：
 
-1. `soul/agent-soul.md`
-2. `soul/my-soul.md`（尤其三账户规则、五选一、美股网格、风险偏好）——**纪律权威来源**
-3. `memory/working.json`
-4. `memory/episodes.json`（最近 10 条）
-5. `scheduler/rules.md` 中「月度交易复盘」一节（若有）
+```bash
+rg -n -A 30 "^## 7\. 月度复盘摘录" output/reviews/weekly/weekly-YYYY-Www.md | head -40
+```
 
-## 数据读取（Phase 3 · 按序）
+   - 合并各周：纪律高/中、已平仓点评、信号对照、环境评分
+4. **缺周报降级**（仅缺的那一周）：在 §6 注明「缺 Wxx」；**仍禁止**读 ashare-close；该周纪律写「周报缺失，未审计信号」+ 置信度低
+5. 月末价：positions / 周报浮盈表 / ≤2 次搜索；查不到「未获取」
 
-1. **成交**：`data/raw/trades/trades-YYYY-MM.csv`（复盘月）
-2. **月末快照**：`data/raw/trades/` 下复盘月 **最后一天或最接近月末** 的 `positions-YYYY-MM-DD.json`（取日期最大且在复盘月内的文件；若无则取复盘月之后最早一份并注明「快照滞后」）
-3. **CSV 与快照冲突**：以 **CSV + 最新口述/成交记录** 为准，文内注明差异
-4. **对照日报**（纪律审计）：
-   - A股：`output/daily/ashare-close-YYYY-MM-*.md`（复盘月内全部，按日期扫命中表、破位提醒、账户重心）
-   - 美股（若有成交）：`output/daily/us-close-YYYY-MM-*.md`（可选；缺则标注「未获取」）
-5. **月末参考价**（浮盈估算）：优先复盘月 **最后一个交易日** 的收盘日报收盘价；其次 WebSearch（stockanalysis / Yahoo）；查不到标「未获取」+ 置信度低
+## 纪律汇总
 
-## 纪律对照清单（分账户 · 必须逐项审计）
+以 my-soul 为尺，以各周 §7 为证：
+- GY：无信号开仓、破线迟止损、追加速、只建一次、单票~5%
+- YH：追加速/非主线；止损待补勿硬套 GY
+- HT：指数仓
+- US：网格/DCA/机动仓
 
-| 账户 | 规则来源 | 复盘要点 |
-| ---- | -------- | -------- |
-| **GY** 国元 | my-soul 五选一、距 MA5≤3%、破 MA5/趋势线止损、单票~5%、只建一次、上证线上线下仓位 | 无信号开仓、破线迟止损、追加速 |
-| **YH** 银河 | 尾盘风格；止损细则待补 → **标注不擅自套 GY 硬止损** | 追加速、非主线、距 MA5~3% 边缘 |
-| **HT** 华泰 | 指数仓 159338 等；**不套五选一** | 仅配置/加减档位点评 |
-| **US** 美股 | VOO/QQQ/IBIT 约 $5 网格、DCA 信念 | 机动仓无规则、网格过早减、日内个股 |
+月度负责 **合并去重** 与定高/中/低，不要再发明日报级细节。
 
-交叉引用：成交日 ±1 日日报里 §7 命中表、§5 持仓破位、§1 账户重心与环境评分。
+## 算账（硬性）
 
-## 算账口径（硬性）
+- 分账户 **FIFO** 已实现（A：GY/YH/HT；美：US）——只依据 CSV
+- 胜率、最大单笔亏损
+- 月末浮盈估；**未计佣金/印花税**
+- 三账户分列；禁止捏成一个「A股总仓%」
 
-- **已实现**：分账户 **FIFO**（A：GY / YH / HT；美：US）
-- **统计**：胜率（已平仓笔数 胜/负）、最大单笔亏损
-- **浮盈**：月末未平仓粗算（标注来源与置信度：高/中/低）
-- **文首必须写**：**未计佣金/印花税**
-- 事实 / 解读分开；不编造成交与价格；查不到标「未获取」
-- ticker 大写；三账户 **分列** 盈亏，禁止捏成一个「A股总仓%」硬套 GY 规则
-
-## 正文结构（与 8 月范本一致 · 连续 §0–§6）
+## 正文骨架（连续 §0–§6）
 
 ```markdown
 # YYYY年M月交易复盘
 
-> 生成日期 · 范围（A GY/YH/HT + 美）· 数据源 · 口径（FIFO / 未计费 / 置信度）
+> 生成日期 · 范围 · 数据源（CSV/positions/周报§7）· FIFO · 未计费 · 置信度
 
 ## 0. 一句话结论
-（胜率 vs 盈亏是否背离；下月优先修 1～2 条）
-
 ## 1. 整体盈亏
-- A / 美 已实现 + 含浮盈估
-- 分账户（GY / YH / HT）
-- 美股分 ticker 已实现表
-- 月末浮盈参考表
-
 ## 2. A股已平仓明细
-（平仓日 / 账户 / 标的 / 买→卖 / 盈亏 / % / 纪律点评）
-
 ## 3. 未按信号 / 未守纪律
-分 **高 / 中 / 低**；写清日期、ticker、违反哪条 my-soul 规则
-
 ## 4. 做得好的地方（保留）
-
 ## 5. 下月可执行改进
-（3～5 条，可执行，非鸡汤；月份写「下月」= 复盘月之后一月）
-
 ## 6. 原始数据索引
-（CSV / positions / 关键日报路径）
+（CSV / positions / 所用 weekly-*.md 列表；写明「未读 ashare-close」）
 
-风险提示：以上为个人实盘交易复盘，所有操作为已完成记录，不构成任何投资建议，不预测未来走势。
+风险提示：个人实盘交易复盘，不构成投资建议。
 署名：势能复盘
 ```
 
-**深度要求**：对标 `output/reviews/monthly/monthly-2026-08.md`——既要数字，也要「哪些没按信号 / 没守纪律」；禁止万金油总结。
+深度：对标 `monthly-2026-08.md` 的「既有数字也有纪律」；证据不足处标置信度。
 
-**禁止**：默认生成 Canvas（除非用户日后另行要求）；不要拆成多个文件。
+## 收尾
 
-## 收尾（写文件 · 通知 · 记忆）
-
-1. **写入** `output/reviews/monthly/monthly-YYYY-MM.md`（YYYY-MM = 复盘月）
-2. **commit**（`monthly trade review YYYY-MM`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
-3. **飞书**（不要发邮件）：
+1. 写入 `output/reviews/monthly/monthly-YYYY-MM.md`
+2. commit（`monthly trade review YYYY-MM`）→ 不要 PR → `bash scheduler/merge_to_main.sh`
+3. 飞书：
 
 ```bash
 python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/monthly/monthly-YYYY-MM.md "月度交易复盘 YYYY-MM"
 ```
 
-Webhook = Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`。推送完整正文；成功响应含 `"code":0`。
-
-4. **Phase 4 · 记忆**（静默更新）：
-   - `memory/working.json`：`recent_decisions` 追加一条 review 摘要；`market_regime` 若持仓有变则同步
-   - `memory/episodes.json` 追加一条 `type: review`（含复盘月、核心结论、tickers）
-5. **不要**跑 A股收盘脚本 / 扶摇 MCP（本任务以本地 trades + 日报为主）；月末价查不到时用最近日报或搜索，勿空等
-6. 云端无网络 → 仍基于本地 CSV/positions/日报写完，浮盈表标注「价格未获取」
+4. Phase 4：`working.json` + `episodes.json`（`type: review`）短更新
+5. 缺数据仍写完，勿空等
 
 ## 密钥（勿提交仓库；仅存在本 Automation）
 
