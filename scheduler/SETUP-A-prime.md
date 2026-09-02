@@ -5,7 +5,7 @@
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
 2. **周度回顾**（每周日 **10:00**）— 复盘当周组合表现、归因与下周展望；见 `prompt-weekly-review.md`；策略参考 `templates/weekly-review.md`
-3. **月度交易复盘**（每月 **1 日 10:00**）— 复盘上一自然月 A股+美股；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly-2026-08.md`
+3. **月度交易复盘**（每月 **1 日 10:00**）— 复盘上一自然月 A股+美股；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
@@ -168,7 +168,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 1. **飞书群**收到机器人消息（标题含「A股收盘日报」「周度回顾」或「月度交易复盘」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/research/weekly/weekly-YYYY-Www.md` 或 `output/reviews/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-Www.md` 或 `output/reviews/monthly/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。

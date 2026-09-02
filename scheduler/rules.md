@@ -167,7 +167,7 @@
 - 提示词：`scheduler/prompt-weekly-review.md`
 - 策略参考：`templates/weekly-review.md`
 - 执行：读当周 `trades-YYYY-MM.csv` + 周末 `positions-*.json` + 当周 A股收盘日报 → 组合涨跌 + 归因 + 纪律 highlights + 下周展望 → 写文件 → commit → merge → 飞书
-- 输出：`output/research/weekly/weekly-YYYY-Www.md`（ISO 8601 周号）
+- 输出：`output/reviews/weekly/weekly-YYYY-Www.md`（ISO 8601 周号）
 - 飞书标题：`周度回顾 YYYY-Www`
 - **前置**：当周成交应及时写入 CSV；缺文件仍生成回顾并注明「无成交」
 - 说明：比月度复盘短（800～1500 字）；改 prompt 后须 **重贴** Automations Instructions
@@ -176,9 +176,9 @@
 - cron: `0 10 1 * *`（北京时间；复盘**上一自然月**）
 - 提示词：`scheduler/prompt-monthly-trade-review.md`
 - 策略参考：`templates/monthly-trade-review.md`（正文骨架与纪律清单）
-- 范本：`output/reviews/monthly-2026-08.md`
+- 范本：`output/reviews/monthly/monthly-2026-08.md`
 - 执行：读复盘月 `trades-YYYY-MM.csv` + 月末 `positions-*.json` + 当月 A股收盘日报 → FIFO 已实现 + 浮盈估 + 纪律审计（GY/YH/HT/US 分列）→ 写文件 → commit → merge → 飞书
-- 输出：`output/reviews/monthly-YYYY-MM.md`
+- 输出：`output/reviews/monthly/monthly-YYYY-MM.md`
 - 飞书标题：`月度交易复盘 YYYY-MM`
 - **前置**：复盘月成交应及时写入 CSV；缺文件仍生成复盘并注明「无成交」
 - 说明：每月 1 次，成本可控；改 prompt 后须 **重贴** Automations Instructions
@@ -203,6 +203,6 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 | A股盘前提醒 | `0 9 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
-| 周度回顾 | `0 10 * * 0` | ✅ A' | output/research/weekly/ |
-| 月度交易复盘 | `0 10 1 * *` | ✅ A' | output/reviews/ |
+| 周度回顾 | `0 10 * * 0` | ✅ A' | output/reviews/weekly/ |
+| 月度交易复盘 | `0 10 1 * *` | ✅ A' | output/reviews/monthly/ |
 | 内容选题 | `0 10 * * 3` | ⏸ 暂缓 | output/content/ |

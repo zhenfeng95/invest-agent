@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-02T10:00:00+08:00",
+    "updated_at": "2026-09-02T10:25:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -89,9 +89,14 @@
     ],
     "recent_decisions": [
         {
+            "at": "2026-09-02T10:25:00+08:00",
+            "decision": "复盘产出统一到 output/reviews/{weekly,monthly}/",
+            "detail": "周度→output/reviews/weekly/；月度→output/reviews/monthly/；已迁移 monthly-2026-08.md；不再用 output/research/weekly/"
+        },
+        {
             "at": "2026-09-02T10:00:00+08:00",
             "decision": "周度回顾升格为 Automations 自动化",
-            "detail": "新增 scheduler/prompt-weekly-review.md + templates/weekly-review.md；cron 0 10 * * 0 复盘当周；output/research/weekly/weekly-YYYY-Www.md；Automation 名 Invest Weekly Review"
+            "detail": "新增 scheduler/prompt-weekly-review.md + templates/weekly-review.md；cron 0 10 * * 0 复盘当周；output/reviews/weekly/weekly-YYYY-Www.md；Automation 名 Invest Weekly Review"
         },
         {
             "at": "2026-09-02T09:40:00+08:00",

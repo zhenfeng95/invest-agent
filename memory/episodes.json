@@ -1,11 +1,20 @@
 {
   "episodes": [
     {
+      "id": "ep-043",
+      "date": "2026-09-02",
+      "type": "config",
+      "summary": "复盘目录统一：reviews/weekly + reviews/monthly",
+      "detail": "周度与月度复盘均归 output/reviews/ 下两子目录；monthly-2026-08.md 已迁入 monthly/；废弃 research/weekly 作为复盘输出",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-042",
       "date": "2026-09-02",
       "type": "config",
       "summary": "周度回顾 Automation 启用",
-      "detail": "新增 prompt-weekly-review.md + templates/weekly-review.md；cron 周日10:00；输出 output/research/weekly/weekly-YYYY-Www.md；A' 方案现 3 个 Automation（A股收盘+周度+月度）",
+      "detail": "新增 prompt-weekly-review.md + templates/weekly-review.md；cron 周日10:00；输出 output/reviews/weekly/weekly-YYYY-Www.md；A' 方案现 3 个 Automation（A股收盘+周度+月度）",
       "tickers": [],
       "outcome": null
     },

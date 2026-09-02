@@ -5,7 +5,7 @@
 > **状态**：✅ A' 启用（每月 1 日自动复盘上月）
 > **cron（北京时间）**：`0 10 1 * *`（每月 1 日 10:00）
 > 若界面按 UTC：北京 10:00 = UTC `0 2 1 * *`
-> **范本**：`output/reviews/monthly-2026-08.md`
+> **范本**：`output/reviews/monthly/monthly-2026-08.md`
 > **策略参考**：`templates/monthly-trade-review.md`
 
 ---
@@ -99,18 +99,18 @@
 署名：势能复盘
 ```
 
-**深度要求**：对标 `output/reviews/monthly-2026-08.md`——既要数字，也要「哪些没按信号 / 没守纪律」；禁止万金油总结。
+**深度要求**：对标 `output/reviews/monthly/monthly-2026-08.md`——既要数字，也要「哪些没按信号 / 没守纪律」；禁止万金油总结。
 
 **禁止**：默认生成 Canvas（除非用户日后另行要求）；不要拆成多个文件。
 
 ## 收尾（写文件 · 通知 · 记忆）
 
-1. **写入** `output/reviews/monthly-YYYY-MM.md`（YYYY-MM = 复盘月）
+1. **写入** `output/reviews/monthly/monthly-YYYY-MM.md`（YYYY-MM = 复盘月）
 2. **commit**（`monthly trade review YYYY-MM`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
 3. **飞书**（不要发邮件）：
 
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/monthly-YYYY-MM.md "月度交易复盘 YYYY-MM"
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/monthly/monthly-YYYY-MM.md "月度交易复盘 YYYY-MM"
 ```
 
 Webhook = Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`。推送完整正文；成功响应含 `"code":0`。

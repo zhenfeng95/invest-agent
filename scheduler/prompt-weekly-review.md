@@ -116,12 +116,12 @@
 
 ## 收尾（写文件 · 通知 · 记忆）
 
-1. **写入** `output/research/weekly/weekly-YYYY-Www.md`（ww = ISO 周号两位）
+1. **写入** `output/reviews/weekly/weekly-YYYY-Www.md`（ww = ISO 周号两位）
 2. **commit**（`weekly review YYYY-Www`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
 3. **飞书**（不要发邮件）：
 
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/research/weekly/weekly-YYYY-Www.md "周度回顾 YYYY-Www"
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/weekly/weekly-YYYY-Www.md "周度回顾 YYYY-Www"
 ```
 
 Webhook = Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`。推送完整正文；成功响应含 `"code":0`。

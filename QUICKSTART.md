@@ -89,7 +89,8 @@
 3. 助手会先默默读取 `soul` 和 `memory` 里的信息，再回答你
 4. 生成的正式产出，通常会保存在 `output` 文件夹：
    - `output/daily` — 日报
-   - `output/research` — 研究/周报月报
+   - `output/reviews` — 交易复盘（`weekly/` 周度、`monthly/` 月度）
+   - `output/research` — 投研报告（非交易复盘）
    - `output/signals` — 抄底等信号
    - `output/content` — 推文、选题等草稿
 

@@ -2,8 +2,8 @@
 
 > **状态**：✅ 挂 Cursor Automations（每月 1 日 10:00 自动复盘上月）  
 > **Automation 提示词**：`scheduler/prompt-monthly-trade-review.md`  
-> **范本**：`output/reviews/monthly-2026-08.md`（2026-08 首版）  
-> **输出**：`output/reviews/monthly-YYYY-MM.md`
+> **范本**：`output/reviews/monthly/monthly-2026-08.md`（2026-08 首版）  
+> **输出**：`output/reviews/monthly/monthly-YYYY-MM.md`
 
 ---
 
@@ -14,7 +14,7 @@
 | Cron（北京） | `0 10 1 * *`（每月 1 日 10:00） |
 | 复盘范围 | **上一自然月**（例：10/1 跑 → 复盘 9 月） |
 | 飞书标题 | `月度交易复盘 YYYY-MM` |
-| 上手 | `scheduler/SETUP-A-prime.md` → Automation ② |
+| 上手 | `scheduler/SETUP-A-prime.md` → Automation ③ |
 
 **前置**：复盘月成交写入 `data/raw/trades/trades-YYYY-MM.csv`。缺文件 Automation 仍会生成复盘并注明「无成交」。
 
@@ -25,13 +25,13 @@
 Automation 漏跑、或想提前复盘当月时，在对话框发：
 
 ```text
-按 templates/monthly-trade-review.md 生成 2026年9月交易复盘，保存到 output/reviews/monthly-2026-09.md
+按 templates/monthly-trade-review.md 生成 2026年9月交易复盘，保存到 output/reviews/monthly/monthly-2026-09.md
 ```
 
 或对照范本：
 
 ```text
-参照 output/reviews/monthly-2026-08.md 的结构和口径，复盘 9 月份 A股+美股交易；写入 output/reviews/monthly-2026-09.md
+参照 output/reviews/monthly/monthly-2026-08.md 的结构和口径，复盘 9 月份 A股+美股交易；写入 output/reviews/monthly/monthly-2026-09.md
 ```
 
 ---
@@ -52,7 +52,7 @@ Automation 漏跑、或想提前复盘当月时，在对话框发：
    - 胜率、最大亏单
    - 月末未平仓浮盈（标注来源与置信度：高/中/低）
    - **未计佣金/印花税**，文首写明
-6. **写文件**：结构对齐下方「正文骨架」→ `output/reviews/monthly-YYYY-MM.md`
+6. **写文件**：结构对齐下方「正文骨架」→ `output/reviews/monthly/monthly-YYYY-MM.md`
 7. **Automation 收尾**：commit → `merge_to_main.sh` → 飞书（手动触发可跳过）
 8. **Phase 4**：更新 `memory/working.json` + `episodes.json` 一条 review
 
