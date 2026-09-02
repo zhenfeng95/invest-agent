@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-02T11:05:00+08:00",
+    "updated_at": "2026-09-02T11:15:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -89,6 +89,11 @@
     ],
     "recent_decisions": [
         {
+            "at": "2026-09-02T11:15:00+08:00",
+            "decision": "周报命名改为 weekly-YYYY-MM-NW（每月从1W计）",
+            "detail": "归属月=周日所在月；N=ceil(日号/7)；W36已迁为 weekly-2026-09-1W.md；月度只读当月 *W；须重贴周度Automation"
+        },
+        {
             "at": "2026-09-02T11:05:00+08:00",
             "decision": "周/月复盘省token链路：周度薄读日报+§7摘录；月度只读周报§7",
             "detail": "周度骨架对齐月度§0–§6并加§7月度复盘摘录；禁通读ashare-close与扶摇；月度禁读日报。须重贴两个Automation Instructions"
@@ -96,7 +101,7 @@
         {
             "at": "2026-09-02T10:30:00+08:00",
             "decision": "完成 2026-W36 周度回顾（截至 9/1）",
-            "detail": "已实现 YH−¥8；环境 82→66；GY 9/1 非池内开仓纪律问题；存档 output/reviews/weekly/weekly-2026-W36.md；已飞书推送"
+            "detail": "已实现 YH−¥8；环境 82→66；GY 9/1 非池内开仓纪律问题；存档 output/reviews/weekly/weekly-2026-09-1W.md（原 W36 已改名）；已飞书推送"
         },
         {
             "at": "2026-09-02T10:25:00+08:00",
@@ -244,7 +249,7 @@
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$716.33；VOO 0.04@$706；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.02@$339.50",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-09-01.json；9/1评分66轻仓试错、账户重心HT+YH；W36回顾：环境82→66，YH已实现-¥8；GY 9/1非池内开鲁北/卓翼"
+        "notes": "持仓快照 positions-2026-09-01.json；9/1评分66轻仓试错、账户重心HT+YH；2026-09-1W回顾：环境82→66，YH已实现-¥8；GY 9/1非池内开鲁北/卓翼"
     },
     "open_questions": [
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",

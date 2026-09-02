@@ -16,7 +16,7 @@
 ## Token 预算（硬性 · 违反即失败）
 
 1. **禁止**读取任何 `output/daily/ashare-close-*.md` / `us-close-*.md`（含 Read 与全文 cat）
-2. 纪律与信号证据 **只来自** 当月相关 `output/reviews/weekly/weekly-*.md` 的 **`## 7. 月度复盘摘录`**（用 rg 抽该节，**不要**通读周报全文除非摘录缺失）
+2. 纪律与信号证据 **只来自** 复盘月的 `output/reviews/weekly/weekly-YYYY-MM-*W.md` 的 **`## 7. 月度复盘摘录`**（用 rg 抽该节，**不要**通读周报全文除非摘录缺失）
 3. **禁止**扶摇 MCP、收盘脚本、mtd_screener
 4. WebSearch **≤2 次**（仅补月末参考价）
 5. Phase 1 **只读**：`soul/my-soul.md`、`memory/working.json`（`recent_decisions` 前 5）、`memory/episodes.json`（最近 5）——跳过 `agent-soul.md`、`rules.md`
@@ -30,22 +30,22 @@
 | ------ | ------ | --- | ---- |
 | 2026-10-01 | 2026-09 | `trades-2026-09.csv` | `monthly-2026-09.md` |
 
-零成交仍出文件。跨月 ISO 周：凡与复盘月日期有交集的 `weekly-YYYY-Www.md` 都列入；**成交与盈亏只统计复盘月 CSV 行**；摘录里跨月交易只取落在复盘月内的条目。
+零成交仍出文件。周报按 **月内周序** 命名：`weekly-YYYY-MM-1W.md` … `5W.md`（归属月=该周周日所在月）。月度 **只读** `weekly-{复盘月}-*W.md`（通常 4～5 个）；**成交与盈亏只统计复盘月 CSV**；摘录里非本月日期的条目忽略。跨月周（如 8/31～9/6）记在 **周日所属月**（例：`weekly-2026-09-1W.md`）。
 
 ## 数据（Phase 3 · 按序）
 
 1. **成交**：`data/raw/trades/trades-YYYY-MM.csv`（复盘月）——**账本唯一权威**
 2. **月末快照**：复盘月内日期最大的 `positions-YYYY-MM-DD.json`；无则月后最早一份 +「快照滞后」
 3. **周报摘录**（纪律缓存）：
-   - 列出 `output/reviews/weekly/` 下与复盘月相交的 `weekly-*.md`（通常 4～5 个）
+   - 列出 `output/reviews/weekly/weekly-{复盘月}-*W.md`（如 `weekly-2026-09-1W.md` …）
    - 每个文件只抽 §7：
 
 ```bash
-rg -n -A 30 "^## 7\. 月度复盘摘录" output/reviews/weekly/weekly-YYYY-Www.md | head -40
+rg -n -A 30 "^## 7\. 月度复盘摘录" output/reviews/weekly/weekly-YYYY-MM-NW.md | head -40
 ```
 
    - 合并各周：纪律高/中、已平仓点评、信号对照、环境评分
-4. **缺周报降级**（仅缺的那一周）：在 §6 注明「缺 Wxx」；**仍禁止**读 ashare-close；该周纪律写「周报缺失，未审计信号」+ 置信度低
+4. **缺周报降级**（仅缺的那一周）：在 §6 注明「缺 YYYY-MM-NW」；**仍禁止**读 ashare-close；该周纪律写「周报缺失，未审计信号」+ 置信度低
 5. 月末价：positions / 周报浮盈表 / ≤2 次搜索；查不到「未获取」
 
 ## 纪律汇总

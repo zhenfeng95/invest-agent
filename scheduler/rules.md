@@ -167,8 +167,8 @@
 - 提示词：`scheduler/prompt-weekly-review.md`（**省 token**：禁止通读日报；`rg` 成交日±1 的 §1/§5/§7；骨架对齐月度 §0–§6 + **§7 月度复盘摘录**）
 - 策略参考：`templates/weekly-review.md`
 - 执行：CSV（本周）+ positions + 日报薄读 → 对齐月度骨架的周复盘 → commit → merge → 飞书
-- 输出：`output/reviews/weekly/weekly-YYYY-Www.md`
-- 飞书标题：`周度回顾 YYYY-Www`
+- 输出：`output/reviews/weekly/weekly-YYYY-MM-NW.md`（周日属月 + 当月第 N 周；例 `weekly-2026-09-1W.md`）
+- 飞书标题：`周度回顾 YYYY-MM-NW`
 - **前置**：当周成交入 CSV；缺文件仍生成
 - 说明：§7 专供月初月度任务；改 prompt 后须 **重贴** Instructions
 

@@ -13,7 +13,7 @@
 |----|-----|
 | Cron（北京） | `0 10 1 * *` |
 | 复盘范围 | **上一自然月** |
-| 主数据 | 当月 CSV + 月末 positions + 相交周的 `weekly-*.md` **§7** |
+| 主数据 | 当月 CSV + 月末 positions + `weekly-{月}-*W.md` 的 **§7** |
 | 禁止 | 任何 `ashare-close` / `us-close` |
 | 飞书标题 | `月度交易复盘 YYYY-MM` |
 | 上手 | `SETUP-A-prime.md` → Automation ③ |
@@ -34,7 +34,7 @@
 
 1. Phase 1：仅 `my-soul` + memory 短读
 2. CSV（账本权威）+ 月末 positions
-3. rg 各相关周报 `## 7. 月度复盘摘录`
+3. rg 各 `weekly-{复盘月}-*W.md` 的 `## 7. 月度复盘摘录`
 4. FIFO 分账户；合并纪律高/中/低
 5. 写 `monthly-YYYY-MM.md` → commit → merge → 飞书
 6. Phase 4 短更新

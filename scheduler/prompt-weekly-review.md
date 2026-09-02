@@ -6,7 +6,7 @@
 > **cron（北京时间）**：`0 10 * * 0`（每周日 10:00）
 > 若界面按 UTC：北京 10:00 = UTC `0 2 * * 0`
 > **策略参考**：`templates/weekly-review.md`
-> **输出**：`output/reviews/weekly/weekly-YYYY-Www.md`
+> **输出**：`output/reviews/weekly/weekly-YYYY-MM-NW.md`（如 `weekly-2026-09-1W.md`）
 
 ---
 
@@ -21,15 +21,26 @@
 5. Phase 1 **只读**：`soul/my-soul.md`、`memory/working.json`（仅 `recent_decisions` 前 5 条即可）、`memory/episodes.json`（仅最近 **5** 条）——**不要**读 `agent-soul.md`、`rules.md` 全文
 6. 正文目标 **≤1200 汉字**（不含 §7 摘录表）；禁止 Canvas
 
-## 时间口径
+## 时间口径与文件命名
 
-周日 10:00 跑；复盘 **刚结束 ISO 周**（周一～周日）。
+周日 10:00 跑；复盘 **刚结束的自然周**（周一～周日）。
 
-| 运行日（例） | 复盘周 | 文件 |
-| ------------ | ------ | ---- |
-| 2026-09-06（日） | 含该日的 ISO 周 | `weekly-2026-W36.md` |
+**命名（不用 ISO 周号）**：`weekly-YYYY-MM-NW.md`
 
-文首写清日期区间 `YYYY-MM-DD～YYYY-MM-DD` + `YYYY-Www`。零成交仍出文件，§0 写「本周无成交」。
+| 规则 | 说明 |
+|------|------|
+| 归属月 `YYYY-MM` | 复盘周 **周日** 所在月 |
+| 当月第几周 `N` | `N = ceil(周日的日号 / 7)`，结果为 **1～5**；写作 `1W`/`2W`/`3W`/`4W`/`5W` |
+| 每月重置 | 每个自然月都从 `1W` 起算 |
+
+| 周日（例） | N | 文件名 |
+| ---------- | - | ------ |
+| 2026-09-06 | ceil(6/7)=1 | `weekly-2026-09-1W.md` |
+| 2026-09-13 | 2 | `weekly-2026-09-2W.md` |
+| 2026-09-27 | 4 | `weekly-2026-09-4W.md` |
+| 2026-10-04 | 1 | `weekly-2026-10-1W.md` |
+
+文首写清：`YYYY年M月第NW` + 日期区间 `YYYY-MM-DD～YYYY-MM-DD`。零成交仍出文件，§0 写「本周无成交」。
 
 ## 数据（Phase 3 · 按序）
 
@@ -67,7 +78,7 @@ rg -n "^## [0157]|^### |评分|账户重心|命中|未命中|破|MA5|600727|0023
 ## 正文骨架（与月度对齐 · §0–§6 + §7 摘录口）
 
 ```markdown
-# YYYY-Www 周度回顾
+# YYYY年M月第NW 周度回顾
 
 > 生成日期 · 区间 · 数据源（CSV/positions/日报rg）· 未计费 · 置信度
 
@@ -100,7 +111,7 @@ rg -n "^## [0157]|^### |评分|账户重心|命中|未命中|破|MA5|600727|0023
 
 | 字段 | 内容 |
 |------|------|
-| ISO周 | YYYY-Www |
+| 月周 | YYYY-MM-NW |
 | 区间 | YYYY-MM-DD～YYYY-MM-DD |
 | 已实现A | GY/YH/HT 数字 |
 | 已实现US | 合计或分ticker一行 |
@@ -117,12 +128,12 @@ rg -n "^## [0157]|^### |评分|账户重心|命中|未命中|破|MA5|600727|0023
 
 ## 收尾
 
-1. 写入 `output/reviews/weekly/weekly-YYYY-Www.md`
-2. commit（`weekly review YYYY-Www`）→ 不要 PR → `bash scheduler/merge_to_main.sh`
+1. 写入 `output/reviews/weekly/weekly-YYYY-MM-NW.md`
+2. commit（`weekly review YYYY-MM-NW`）→ 不要 PR → `bash scheduler/merge_to_main.sh`
 3. 飞书：
 
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/weekly/weekly-YYYY-Www.md "周度回顾 YYYY-Www"
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/reviews/weekly/weekly-YYYY-MM-NW.md "周度回顾 YYYY-MM-NW"
 ```
 
 4. Phase 4：`working.json` 追加 1 条；`episodes.json` 追加 `type: weekly_review`（短）

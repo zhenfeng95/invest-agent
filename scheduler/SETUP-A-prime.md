@@ -168,7 +168,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 1. **飞书群**收到机器人消息（标题含「A股收盘日报」「周度回顾」或「月度交易复盘」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-Www.md` 或 `output/reviews/monthly/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md` 或 `output/reviews/monthly/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。
