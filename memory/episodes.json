@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-046",
+      "date": "2026-09-02",
+      "type": "content",
+      "summary": "X首发推文：宝时证券开户活动润色稿",
+      "detail": "去硬广话术；注明0佣金≠全免；教程 https://zheninvest.com/tutorials/bosco-china-account-guide；存档 output/content/tweet-2026-09-02-bosco-account.md",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-045",
       "date": "2026-09-02",
       "type": "weekly_review",
