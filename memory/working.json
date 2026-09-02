@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-01T18:15:00+08:00",
+    "updated_at": "2026-09-02T10:00:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -54,7 +54,7 @@
             "ticker": "GOOGL",
             "name": "谷歌A",
             "asked_at": "2026-08-28",
-            "note": "已建仓：8/28买0.01@$343；未计费；暂无固定止损"
+            "note": "已建仓：8/28买0.01@$343 + 9/1加仓0.01@$336→0.02@加权$339.50；成本合计$6.79；未计费；暂无固定止损"
         },
         {
             "ticker": "159338",
@@ -78,7 +78,7 @@
             "ticker": "VOO",
             "name": "标普500 ETF",
             "asked_at": "2026-08-21",
-            "note": "持仓0.03@加权$708（8/13@$713 + 8/18@$707 + 8/20加仓@$704）；暂无固定止损"
+            "note": "持仓0.04@加权$706（8/13@$713 + 8/18@$707 + 8/20@$704 + 9/1加仓@$700）；暂无固定止损"
         },
         {
             "ticker": "SGOV",
@@ -88,6 +88,21 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-02T10:00:00+08:00",
+            "decision": "周度回顾升格为 Automations 自动化",
+            "detail": "新增 scheduler/prompt-weekly-review.md + templates/weekly-review.md；cron 0 10 * * 0 复盘当周；output/research/weekly/weekly-YYYY-Www.md；Automation 名 Invest Weekly Review"
+        },
+        {
+            "at": "2026-09-02T09:40:00+08:00",
+            "decision": "月度交易复盘升格为 Automations 自动化",
+            "detail": "新增 scheduler/prompt-monthly-trade-review.md；cron 0 10 1 * * 复盘上月；rules/SETUP/templates 已同步；Automation 名 Invest Monthly Trade Review"
+        },
+        {
+            "at": "2026-09-02T09:19:00+08:00",
+            "decision": "补录9/1美股：VOO+GOOGL碎股加仓",
+            "detail": "US买VOO0.01@$700→0.04@加权$706；买GOOGL0.01@$336→0.02@加权$339.50。trades-2026-09.csv + positions-2026-09-01.json"
+        },
         {
             "at": "2026-09-01T18:15:00+08:00",
             "decision": "月度交易复盘策略落盘：仅手动触发",
@@ -211,12 +226,13 @@
     ],
     "market_regime": {
         "equity": "A股：GY持600727鲁北100@¥7.96 + 002369卓翼100@¥6.45；YH持603912佳力图100@¥9.23；HT持159338 600@¥1.212",
-        "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$716.33；VOO 0.03@$708；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.01@$343",
+        "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$716.33；VOO 0.04@$706；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.02@$339.50",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-09-01.json；9/1收盘：上证3979.89(-0.16%)仍线上；农化/种业强、电子链大幅流出；评分66轻仓试错；GY持鲁北+卓翼，YH佳力图，HT 159338"
+        "notes": "持仓快照 positions-2026-09-01.json；9/1补录US：VOO+0.01@$700、GOOGL+0.01@$336"
     },
     "open_questions": [
+        "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",

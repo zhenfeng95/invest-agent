@@ -1,6 +1,27 @@
 {
   "episodes": [
     {
+      "id": "ep-042",
+      "date": "2026-09-02",
+      "type": "config",
+      "summary": "周度回顾 Automation 启用",
+      "detail": "新增 prompt-weekly-review.md + templates/weekly-review.md；cron 周日10:00；输出 output/research/weekly/weekly-YYYY-Www.md；A' 方案现 3 个 Automation（A股收盘+周度+月度）",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-041",
+      "date": "2026-09-01",
+      "type": "trade",
+      "summary": "补录9/1美股：VOO+GOOGL碎股加仓",
+      "detail": "US买VOO0.01@$700→持仓0.04@加权$706；买GOOGL0.01@$336→持仓0.02@加权$339.50。均未计佣金。",
+      "tickers": [
+        "VOO",
+        "GOOGL"
+      ],
+      "outcome": null
+    },
+    {
       "id": "ep-040",
       "date": "2026-09-01",
       "type": "review",

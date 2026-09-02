@@ -1,11 +1,13 @@
 # 当前启用方案：A'（Cursor Automations）
 
-> 当前跑 **1 个** Automation：**A股收盘日报**。其余任务暂不启用。
+> 当前跑 **3 个** Automation：**A股收盘日报** + **周度回顾** + **月度交易复盘**。其余任务暂不启用。
 > 执行器：**Cursor Automations（Cloud Agent）**，不再依赖 Claude Code scheduler。
 
 | Automation | Cron（北京时间） | 说明 |
 |------------|------------------|------|
 | **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
+| **② 周度回顾** | `0 10 * * 0` | 每周日 10:00（复盘**当周**组合表现、归因与下周展望） |
+| **③ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（复盘**上一自然月** A股+美股成交与纪律） |
 
 **已暂停**：美股收盘日报（原 08:00）；美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
 **已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
@@ -16,13 +18,15 @@
 
 提示词见同目录：
 - `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
+- `prompt-weekly-review.md`（周度回顾 · ✅ A'）
+- `prompt-monthly-trade-review.md`（月度交易复盘 · ✅ A'）
 - `prompt-us-close-daily.md`（美股收盘日报精简版 · ⏸ 已暂停；完整版 `prompt-us-close-daily-origin.md`）
 - `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
 - `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含飞书接入）
 
-月成本粗估约 **$25–50**（仅 A股收盘精简版；视模型与 Run 次数）；务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$35–65**（A股收盘精简版 + 周度回顾 4 次/月 + 月度复盘 1 次/月；视模型与 Run 次数）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -156,18 +160,28 @@
 
 - 触发时保存到 `output/signals/btc-YYYY-MM-DD.md`
 
-## 周度/月度任务 — 暂未启用
+## 周度任务
 
-### 周度回顾（每周日 10:00）
-- cron: `0 10 * * 0`
-- 执行：生成持仓组合周度回顾（收益、归因、下周展望），保存到 `output/research/weekly/YYYY-Www.md`
+### 周度回顾（每周日 10:00）— ✅ A' 启用
+- cron: `0 10 * * 0`（北京时间；复盘**刚结束的自然周**）
+- 提示词：`scheduler/prompt-weekly-review.md`
+- 策略参考：`templates/weekly-review.md`
+- 执行：读当周 `trades-YYYY-MM.csv` + 周末 `positions-*.json` + 当周 A股收盘日报 → 组合涨跌 + 归因 + 纪律 highlights + 下周展望 → 写文件 → commit → merge → 飞书
+- 输出：`output/research/weekly/weekly-YYYY-Www.md`（ISO 8601 周号）
+- 飞书标题：`周度回顾 YYYY-Www`
+- **前置**：当周成交应及时写入 CSV；缺文件仍生成回顾并注明「无成交」
+- 说明：比月度复盘短（800～1500 字）；改 prompt 后须 **重贴** Automations Instructions
 
-### 月度交易复盘（手动对话触发 · 暂不挂 Automations）
-- **策略模板**：`templates/monthly-trade-review.md`（范本：`output/reviews/monthly-2026-08.md`）
-- **触发**：用户在对话框粘贴模板内「复制即用」指令（例：生成上月 A+美股复盘并写入 `output/reviews/`）
-- **输出**：`output/reviews/monthly-YYYY-MM.md`
-- **自动化**：⏸ 暂不启用。若日后挂 Automations，建议 cron `0 10 1 * *`（每月 1 日 10:00 复盘上月），须单独建任务 + 升格 prompt，不默认开通
-- （旧规划路径 `output/research/monthly/` 已弃用，以免与实盘复盘口径混淆）
+### 月度交易复盘（每月 1 日 10:00）— ✅ A' 启用
+- cron: `0 10 1 * *`（北京时间；复盘**上一自然月**）
+- 提示词：`scheduler/prompt-monthly-trade-review.md`
+- 策略参考：`templates/monthly-trade-review.md`（正文骨架与纪律清单）
+- 范本：`output/reviews/monthly-2026-08.md`
+- 执行：读复盘月 `trades-YYYY-MM.csv` + 月末 `positions-*.json` + 当月 A股收盘日报 → FIFO 已实现 + 浮盈估 + 纪律审计（GY/YH/HT/US 分列）→ 写文件 → commit → merge → 飞书
+- 输出：`output/reviews/monthly-YYYY-MM.md`
+- 飞书标题：`月度交易复盘 YYYY-MM`
+- **前置**：复盘月成交应及时写入 CSV；缺文件仍生成复盘并注明「无成交」
+- 说明：每月 1 次，成本可控；改 prompt 后须 **重贴** Automations Instructions
 
 ### 内容选题建议（每周三 10:00）
 - cron: `0 10 * * 3`
@@ -189,6 +203,6 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 | A股盘前提醒 | `0 9 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |
 | 财经日报 | `0 8 * * *` | ⏸ 暂缓 | output/daily/ |
-| 周度回顾 | `0 10 * * 0` | ⏸ 暂缓 | output/research/weekly/ |
-| 月度交易复盘 | 对话手动 / 可选 `0 10 1 * *` | ⏸ 仅手动（见 templates/monthly-trade-review.md） | output/reviews/ |
+| 周度回顾 | `0 10 * * 0` | ✅ A' | output/research/weekly/ |
+| 月度交易复盘 | `0 10 1 * *` | ✅ A' | output/reviews/ |
 | 内容选题 | `0 10 * * 3` | ⏸ 暂缓 | output/content/ |

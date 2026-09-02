@@ -1,35 +1,45 @@
-# 月度交易复盘（手动触发 · 策略模板）
+# 月度交易复盘（策略模板 · 自动化）
 
-> **状态**：仅对话手动生成；**不**挂 Cursor Automations。  
+> **状态**：✅ 挂 Cursor Automations（每月 1 日 10:00 自动复盘上月）  
+> **Automation 提示词**：`scheduler/prompt-monthly-trade-review.md`  
 > **范本**：`output/reviews/monthly-2026-08.md`（2026-08 首版）  
-> **输出**：`output/reviews/monthly-YYYY-MM.md`（可选同风格 Canvas）
+> **输出**：`output/reviews/monthly-YYYY-MM.md`
 
 ---
 
-## 你怎么触发（复制即用）
+## 自动化怎么跑
 
-9 月交易结束后，在对话框发下面任一即可：
+| 项 | 值 |
+|----|-----|
+| Cron（北京） | `0 10 1 * *`（每月 1 日 10:00） |
+| 复盘范围 | **上一自然月**（例：10/1 跑 → 复盘 9 月） |
+| 飞书标题 | `月度交易复盘 YYYY-MM` |
+| 上手 | `scheduler/SETUP-A-prime.md` → Automation ② |
 
-**推荐（最短）**
+**前置**：复盘月成交写入 `data/raw/trades/trades-YYYY-MM.csv`。缺文件 Automation 仍会生成复盘并注明「无成交」。
+
+---
+
+## 仍可在对话里手动补跑
+
+Automation 漏跑、或想提前复盘当月时，在对话框发：
 
 ```text
 按 templates/monthly-trade-review.md 生成 2026年9月交易复盘，保存到 output/reviews/monthly-2026-09.md
 ```
 
-**备选（对照 8 月范本）**
+或对照范本：
 
 ```text
-参照 output/reviews/monthly-2026-08.md 的结构和口径，复盘 9 月份 A股+美股交易：整体盈亏、未按信号买卖、未守纪律、不足与改进建议；写入 output/reviews/monthly-2026-09.md
+参照 output/reviews/monthly-2026-08.md 的结构和口径，复盘 9 月份 A股+美股交易；写入 output/reviews/monthly-2026-09.md
 ```
-
-**前置**：当月成交已写入 `data/raw/trades/trades-2026-09.csv`（缺则先补录再复盘）。
 
 ---
 
 ## Agent 执行清单（必须按序）
 
 1. **Phase 1**：读 `soul/agent-soul.md`、`soul/my-soul.md`、`memory/working.json`、`memory/episodes.json`（近 10）
-2. **读成交**：`data/raw/trades/trades-YYYY-MM.csv`（目标月）；缺文件则停并说明
+2. **读成交**：`data/raw/trades/trades-YYYY-MM.csv`（目标月）；缺文件则注明并继续
 3. **读快照**：该月末 `positions-YYYY-MM-DD.json`（尽量取月末最后一份）；与 CSV 冲突时 **以 CSV + 最新口述为准** 并注明
 4. **对照纪律 / 信号**：
    - GY：五选一买点、距 MA5≤3%、破 MA5/趋势线止损、单票~5%、只建一次、上证线上线下仓位
@@ -43,7 +53,7 @@
    - 月末未平仓浮盈（标注来源与置信度：高/中/低）
    - **未计佣金/印花税**，文首写明
 6. **写文件**：结构对齐下方「正文骨架」→ `output/reviews/monthly-YYYY-MM.md`
-7. **可选**：同结论 Canvas（非必须）；文首可链 Canvas 路径
+7. **Automation 收尾**：commit → `merge_to_main.sh` → 飞书（手动触发可跳过）
 8. **Phase 4**：更新 `memory/working.json` + `episodes.json` 一条 review
 
 ---
@@ -88,12 +98,4 @@
 - 事实 / 解读分开；不编造成交与价格；查不到标「未获取」
 - ticker 大写；三账户 **分列** 盈亏，禁止捏成一个「A股总仓%」硬套 GY 规则
 - 对标范本深度：既要数字，也要「哪些没按信号 / 没守纪律」
-- **不要**默认开通 Automations；本模板只服务对话触发
-
----
-
-## 以后若要自动化（暂不做）
-
-- 建议 cron：每月 1 日 10:00（复盘上月）
-- 输出仍建议：`output/reviews/monthly-YYYY-MM.md`
-- 启用前须：单独 Automations + 本模板升格为 `scheduler/prompt-*.md` + 飞书（可选）
+- 改 Automation 行为时同步改 `scheduler/prompt-monthly-trade-review.md` 并重贴 Instructions

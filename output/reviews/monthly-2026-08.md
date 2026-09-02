@@ -4,7 +4,7 @@
 > 数据：`data/raw/trades/trades-2026-08.csv`、收盘日报、月末价（stockanalysis / 8/31 日报）  
 > 口径：FIFO 已实现盈亏；**未计佣金/印花税**；浮盈为月末估算（置信度：已实现高 / 浮盈中）  
 > 交互看板：Cursor Canvas `aug-2026-trade-review.canvas.tsx`  
-> 复盘策略模板（下月手动复用）：`templates/monthly-trade-review.md`
+> 复盘策略模板（自动化）：`templates/monthly-trade-review.md` · prompt：`scheduler/prompt-monthly-trade-review.md`
 
 ---
 

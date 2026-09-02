@@ -1,9 +1,11 @@
-# A' 方案上手：仅 A股收盘日报
+# A' 方案上手：A股收盘 + 周度回顾 + 月度复盘
 
-你已选择 **A'**：只用 Cursor Automations，当前开 **1 个** 定时任务。
+你已选择 **A'**：只用 Cursor Automations，当前开 **3 个** 定时任务。
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
+2. **周度回顾**（每周日 **10:00**）— 复盘当周组合表现、归因与下周展望；见 `prompt-weekly-review.md`；策略参考 `templates/weekly-review.md`
+3. **月度交易复盘**（每月 **1 日 10:00**）— 复盘上一自然月 A股+美股；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly-2026-08.md`
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
@@ -15,7 +17,7 @@
 **存档方式**：写入 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main** 并删 `cursor/*`）→ 再发飞书；**不开 PR**。  
 **飞书**：`scheduler/feishu_send.py`（表格转条目 + 卡片；超长截断；脚注为 main 上 GitHub 全文链接）。
 
-> 成本提示：仅 A股收盘精简版时月消耗粗估约 **$25–50**（视模型与 Run 次数）；务必设 Dashboard 上限。
+> 成本提示：A股收盘 + 周度回顾 + 月度复盘时月消耗粗估约 **$35–65**（视模型与 Run 次数）；务必设 Dashboard 上限。
 
 ---
 
@@ -82,7 +84,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ---
 
-## 第 4 步：建 / 改 Automation（共 2 个）
+## 第 4 步：建 / 改 Automation（共 3 个启用）
 
 入口任选其一：
 
@@ -119,7 +121,31 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 **时区提醒**：Cursor cron 若按 UTC：北京 17:00 = UTC `0 9 * * 1-5`。以界面标注为准。
 
-### Automation ②：美股收盘日报 — ⏸ 已暂停
+### Automation ②：周度回顾
+
+| 项 | 填什么 |
+|----|--------|
+| 名称 | Invest Weekly Review |
+| 触发 | Cron：`0 10 * * 0`（北京时间每周日 **10:00**；复盘当周） |
+| Instructions | 粘贴 `scheduler/prompt-weekly-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+
+**时区提醒**：Cursor cron 若按 UTC：北京 10:00 = UTC `0 2 * * 0`。
+
+**前置**：确保当周成交已 push 到 `data/raw/trades/trades-YYYY-MM.csv`；A股收盘日报正常产出。
+
+### Automation ③：月度交易复盘
+
+| 项 | 填什么 |
+|----|--------|
+| 名称 | Invest Monthly Trade Review |
+| 触发 | Cron：`0 10 1 * *`（北京时间 **每月 1 日 10:00**；复盘**上月**） |
+| Instructions | 粘贴 `scheduler/prompt-monthly-trade-review.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...` |
+
+**时区提醒**：Cursor cron 若按 UTC：北京 10:00 = UTC `0 2 1 * *`。
+
+**前置**：确保复盘月成交已 push 到 `data/raw/trades/trades-YYYY-MM.csv`；Automation 跑在每月 1 日，复盘的是刚结束的月份。
+
+### Automation ④：美股收盘日报 — ⏸ 已暂停
 
 | 项 | 填什么 |
 |----|--------|
@@ -136,13 +162,13 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ## 第 5 步：先手动跑一次
 
-改完 A股收盘提示词后点 **Run now / 立即运行**（验证 A股收盘日报即可；美股收盘已暂停勿跑）。
+改完提示词后点 **Run now / 立即运行**（可分别验证 A股收盘、周度回顾、月度复盘；美股收盘已暂停勿跑）。
 
 ### 成功时你应该看到什么
 
-1. **飞书群**收到机器人消息（标题含「A股收盘日报」）
+1. **飞书群**收到机器人消息（标题含「A股收盘日报」「周度回顾」或「月度交易复盘」）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/research/weekly/weekly-YYYY-Www.md` 或 `output/reviews/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。
@@ -181,4 +207,5 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ## 暂不要开
 
-美股盘前、A股盘前、财经日报、周报、月报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸。
+美股盘前、A股盘前、财经日报、选题、抄底信号 —— 已在 `scheduler/rules.md` 标为 ⏸。  
+周度回顾、月度复盘已启用，勿再对话手动等周日/1 号（除非补跑或提前复盘）。
