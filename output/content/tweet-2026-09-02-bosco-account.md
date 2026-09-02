@@ -1,7 +1,7 @@
 # X 首发推文草稿 · 宝时证券开户（2026-09-02）
 
 > 用途：X 平台第一篇；信息向软推广，降低限流/违规风险  
-> 参考：[宝时证券开户教程](https://zheninvest.com/tutorials/bosco-china-account-guide)  
+> 参考：[宝时证券开户教程](https://zheninvest.com/tutorials/bosco-account-guide)  
 > 事实来源：教程页公开活动口径（入金门槛、权益）；以官网 / App 当时展示为准
 
 ---
@@ -16,7 +16,7 @@
 3）港美股 Lv1 实时行情
 
 线上开户步骤、材料、见证与入金注意点，我整理成对照教程了：
-https://zheninvest.com/tutorials/bosco-china-account-guide
+https://zheninvest.com/tutorials/bosco-account-guide
 
 活动门槛与权益会变，以官网 / App 为准。不构成开户或投资建议。
 
@@ -31,7 +31,7 @@ https://zheninvest.com/tutorials/bosco-china-account-guide
 宝时证券（Bosco）九月新户活动口径：开户并入金 ≥ HK$10,000 / US$1,300，可对照解锁 0 佣金 / 0 平台费、融资打新优惠，以及港美股 Lv1 行情。注意：0 佣金不等于整笔交易免费，交易所与监管类费用通常仍在。
 
 开户流程对照整理：
-https://zheninvest.com/tutorials/bosco-china-account-guide
+https://zheninvest.com/tutorials/bosco-account-guide
 
 以官网 / App 当时规则为准。非投资建议。
 
