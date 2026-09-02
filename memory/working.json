@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-02T10:25:00+08:00",
+    "updated_at": "2026-09-02T10:30:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -88,6 +88,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-02T10:30:00+08:00",
+            "decision": "完成 2026-W36 周度回顾（截至 9/1）",
+            "detail": "已实现 YH−¥8；环境 82→66；GY 9/1 非池内开仓纪律问题；存档 output/reviews/weekly/weekly-2026-W36.md；已飞书推送"
+        },
         {
             "at": "2026-09-02T10:25:00+08:00",
             "decision": "复盘产出统一到 output/reviews/{weekly,monthly}/",
@@ -234,7 +239,7 @@
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.03@$716.33；VOO 0.04@$706；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.02@$339.50",
         "crypto": "IBIT 0.02@$35.73（券商平均成本）；8/19再减0.03@$38.80",
         "macro": "10Y 4.682%；7月CPI +3.4%/+2.5% core；9月Fed hold~60%；WTI $83.27；PPI 8/13",
-        "notes": "持仓快照 positions-2026-09-01.json；9/1补录US：VOO+0.01@$700、GOOGL+0.01@$336"
+        "notes": "持仓快照 positions-2026-09-01.json；9/1评分66轻仓试错、账户重心HT+YH；W36回顾：环境82→66，YH已实现-¥8；GY 9/1非池内开鲁北/卓翼"
     },
     "open_questions": [
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
