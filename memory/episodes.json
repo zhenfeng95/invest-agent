@@ -1,6 +1,22 @@
 {
   "episodes": [
     {
+      "id": "ep-044",
+      "date": "2026-09-02",
+      "type": "weekly_review",
+      "summary": "2026-09-1W 周度回顾：无已平仓，GY非池开仓纪律问题",
+      "detail": "区间9/1-9/7（截至9/1）；环境82→66；GY开鲁北/卓翼不在§7池；YH佳力图浮亏-1.7%；HT指数仓持有。新命名 weekly-2026-09-1W.md。",
+      "tickers": [
+        "600727",
+        "002369",
+        "603912",
+        "159338",
+        "VOO",
+        "GOOGL"
+      ],
+      "outcome": "A realized 0; float est -11 CNY"
+    },
+    {
       "id": "ep-041",
       "date": "2026-09-02",
       "type": "weekly_review",
