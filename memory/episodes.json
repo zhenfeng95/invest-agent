@@ -1,6 +1,30 @@
 {
   "episodes": [
     {
+      "id": "ep-048",
+      "date": "2026-09-03",
+      "type": "trade",
+      "summary": "YH卖佳力图+¥17；GY卖卓翼-¥26",
+      "detail": "YH 603912卖100@¥9.40（成本9.23）；GY 002369卖100@¥6.19（成本6.45）；未计费。GY仍持鲁北。",
+      "tickers": [
+        "603912",
+        "002369"
+      ],
+      "outcome": "YH +17 CNY; GY -26 CNY"
+    },
+    {
+      "id": "ep-047",
+      "date": "2026-09-03",
+      "type": "advice",
+      "summary": "GY卓翼/鲁北：9/3收盘破MA5，建议止损",
+      "detail": "腾讯日K：002369 6.23 vs MA5 6.35；600727 7.77 vs MA5 7.87；上证3942仍破MA5。按my-soul GY有效破MA5即卖。",
+      "tickers": [
+        "002369",
+        "600727"
+      ],
+      "outcome": null
+    },
+    {
       "id": "ep-046",
       "date": "2026-09-02",
       "type": "content",
