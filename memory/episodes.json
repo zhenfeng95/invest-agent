@@ -1,6 +1,40 @@
 {
   "episodes": [
     {
+      "id": "ep-051",
+      "date": "2026-09-04",
+      "type": "trade",
+      "summary": "GY平鲁北-¥29；YH开道明光学100@¥9.52",
+      "detail": "GY卖600727@¥7.67×100（成本7.96，粗算-¥29/-3.64%）；YH买002632@¥9.52×100成本¥952；均未计费。GY空仓；YH现持道明；HT仍持159338。",
+      "tickers": [
+        "600727",
+        "002632"
+      ],
+      "outcome": "GY -29 CNY; YH open 002632"
+    },
+    {
+      "id": "ep-050",
+      "date": "2026-09-04",
+      "type": "content",
+      "summary": "X推文：eSIM.GG 爱沙尼亚预付费号短稿",
+      "detail": "对齐宝时备选短版；免费X加权~242；观点接码号vs自持号；教程 https://zheninvest.com/tutorials/esim-gg-account-guide；存档 output/content/tweet-2026-09-04-esim-gg.md",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-049",
+      "date": "2026-09-03",
+      "type": "trade",
+      "summary": "美股碎股减仓：GOOGL/VOO/QQQ各卖0.01",
+      "detail": "GOOGL@$344+$0.05余0.01；VOO@$707+$0.01余0.03；QQQ@$717+$0.01余0.02；相对加权成本；未计费",
+      "tickers": [
+        "GOOGL",
+        "VOO",
+        "QQQ"
+      ],
+      "outcome": "US realized ~+$0.07"
+    },
+    {
       "id": "ep-048",
       "date": "2026-09-03",
       "type": "trade",
