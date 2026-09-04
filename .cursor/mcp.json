@@ -27,6 +27,13 @@
             "headers": {
                 "X-api-key": "${env:FUYAO_API_KEY}"
             }
+        },
+        "jin10": {
+            "type": "http",
+            "url": "https://mcp.jin10.com/mcp",
+            "headers": {
+                "Authorization": "Bearer ${env:JIN10_BEARER_TOKEN}"
+            }
         }
     }
 }

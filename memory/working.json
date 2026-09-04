@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-04T17:05:00+08:00",
+    "updated_at": "2026-09-04T17:14:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -74,6 +74,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-04T17:14:00+08:00",
+            "decision": "接入金十MCP并导出财经日历JSON",
+            "detail": "list_calendar→data/public/economic-calendar.json（269条，本自然周）；供 zheninvest 日历展示；mcp.json 已加 jin10"
+        },
         {
             "at": "2026-09-04T17:05:00+08:00",
             "decision": "完成 2026-09-04 A股收盘日报（精简版）",
@@ -273,16 +278,6 @@
             "at": "2026-08-26T18:25:00+08:00",
             "decision": "A股收盘§4–§6并入「资金与板块共振」；正文改为§0–§8",
             "detail": "4.1行业线=资金×涨跌；4.2概念线=资金×涨跌（新增概念资金）；4.3交叉轮动去重；持仓§5/明日§6/池§7/结论§8；mtd_screener→BUYSETUP_FOR_§7；须重贴Automations"
-        },
-        {
-            "at": "2026-08-26T18:05:00+08:00",
-            "decision": "筹码势日K：东财curl_cffi失败则腾讯newfqkline（换手对齐）",
-            "detail": "stock_cyq_summary.py 加备用拉K；CYQ仍本地算；prompt/rules已写；须重贴Automations"
-        },
-        {
-            "at": "2026-08-26T17:55:00+08:00",
-            "decision": "§1涨跌家数改走 tools/market_breadth.py（东财getTopicZDFenBu）",
-            "detail": "禁止clist全市场分页；成交额仍优先扶摇指数turnover；须重贴 Automations prompt"
         }
     ],
     "market_regime": {

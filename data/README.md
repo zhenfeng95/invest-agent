@@ -8,5 +8,6 @@
 | `raw/notes/` | 个人笔记、研究心得 |
 | `raw/references/` | 参考文章、研报摘录 |
 | `feedback/ratings.json` | 对 Agent 产出的评分 |
+| `public/` | 对外可读 JSON（个人站可直链）；如 `economic-calendar.json` 金十财经日历 |
 
 Agent 会提炼后直接更新 `soul/my-soul.md` 与 `memory/`，不设中间层。
