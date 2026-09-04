@@ -1,0 +1,2700 @@
+{
+  "updated_at": "2026-09-04T18:04:21+08:00",
+  "timezone": "Asia/Shanghai",
+  "source": "jin10",
+  "source_tool": "list_calendar",
+  "coverage": "current_natural_week_mon_sun",
+  "count": 269,
+  "events": [
+    {
+      "pub_time": "2026-08-31 07:00",
+      "star": 1,
+      "title": "韩国7月季调后工业产出月率",
+      "previous": "6.40",
+      "consensus": "0.3",
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 07:00",
+      "star": 1,
+      "title": "韩国7月工业产出年率",
+      "previous": "5.80",
+      "consensus": "4.4",
+      "actual": "3.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月季调后零售销售月率",
+      "previous": "-4.10",
+      "consensus": null,
+      "actual": "2.4",
+      "revised": "-3.90",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月工业产出年率初值",
+      "previous": "4.90",
+      "consensus": "3.40",
+      "actual": "4.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月工业产出月率初值",
+      "previous": "1.90",
+      "consensus": "-0.7",
+      "actual": "0.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月库存月率",
+      "previous": "2.8",
+      "consensus": null,
+      "actual": "0.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月零售销售(万亿日元)",
+      "previous": "13.019",
+      "consensus": null,
+      "actual": "13.88",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 07:50",
+      "star": 2,
+      "title": "日本7月零售销售年率",
+      "previous": "0.50",
+      "consensus": "2.9",
+      "actual": "4",
+      "revised": "0.60",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 09:00",
+      "star": 1,
+      "title": "澳大利亚8月TD-MI通胀指数年率",
+      "previous": "4.00",
+      "consensus": null,
+      "actual": "4.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 09:00",
+      "star": 1,
+      "title": "澳大利亚8月TD-MI通胀指数月率",
+      "previous": "1.00",
+      "consensus": null,
+      "actual": "0.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 3,
+      "title": "中国8月官方制造业PMI",
+      "previous": "49.2",
+      "consensus": "49.6",
+      "actual": "49.8",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 2,
+      "title": "中国8月综合PMI",
+      "previous": "49.3",
+      "consensus": null,
+      "actual": "49.5",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 2,
+      "title": "中国8月非制造业PMI",
+      "previous": "49",
+      "consensus": null,
+      "actual": "49",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚第二季度企业获利季率",
+      "previous": "-1.30",
+      "consensus": "2.8",
+      "actual": "1.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚第二季度企业获利年率",
+      "previous": "3.2",
+      "consensus": null,
+      "actual": "7.4",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚第二季度季调后企业库存季率",
+      "previous": "0.50",
+      "consensus": "0.2",
+      "actual": "-0.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚第二季度季调后企业库存年率",
+      "previous": "-0.3",
+      "consensus": null,
+      "actual": "-0.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚7月私营企业贷款年率",
+      "previous": "8.50",
+      "consensus": null,
+      "actual": "8.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 09:30",
+      "star": 1,
+      "title": "澳大利亚7月私营企业贷款月率",
+      "previous": "0.80",
+      "consensus": null,
+      "actual": "0.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 13:00",
+      "star": 2,
+      "title": "日本7月新屋开工年率",
+      "previous": "18.60",
+      "consensus": "7.8",
+      "actual": "8.19",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 13:00",
+      "star": 2,
+      "title": "日本7月营建订单年率",
+      "previous": "2.3",
+      "consensus": null,
+      "actual": "-13.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 16:00",
+      "star": 1,
+      "title": "西班牙6月经常帐(亿欧元)",
+      "previous": "18.4",
+      "consensus": null,
+      "actual": "24.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 16:30",
+      "star": 1,
+      "title": "中国香港7月货币供应M3年率",
+      "previous": "2.60",
+      "consensus": null,
+      "actual": "5.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 16:30",
+      "star": 1,
+      "title": "中国香港7月零售销售量年率",
+      "previous": "2.2",
+      "consensus": null,
+      "actual": "2.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 16:30",
+      "star": 1,
+      "title": "中国香港7月零售销售额年率",
+      "previous": "4.60",
+      "consensus": null,
+      "actual": "4.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 20:00",
+      "star": 2,
+      "title": "加拿大至8月28日全国经济信心指数",
+      "previous": "52.8",
+      "consensus": null,
+      "actual": "51.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 20:00",
+      "star": 3,
+      "title": "德国8月CPI月率初值",
+      "previous": "0.80",
+      "consensus": "0.25",
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 20:00",
+      "star": 2,
+      "title": "德国8月CPI年率初值",
+      "previous": "2.80",
+      "consensus": "2.95",
+      "actual": "2.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 20:00",
+      "star": 2,
+      "title": "德国8月调和CPI年率初值",
+      "previous": "2.80",
+      "consensus": "3.1",
+      "actual": "2.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 20:00",
+      "star": 2,
+      "title": "德国8月调和CPI月率初值",
+      "previous": "0.90",
+      "consensus": "0.3",
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 3,
+      "title": "美国8月达拉斯联储商业活动指数",
+      "previous": "1.3",
+      "consensus": null,
+      "actual": "11.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 2,
+      "title": "美国8月达拉斯联储制造业产出指数",
+      "previous": "10.1",
+      "consensus": null,
+      "actual": "16.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 2,
+      "title": "美国8月达拉斯联储新订单指数",
+      "previous": "6.4",
+      "consensus": null,
+      "actual": "22",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 1,
+      "title": "美国8月达拉斯联储制成品价格指数",
+      "previous": "25.6",
+      "consensus": null,
+      "actual": "22.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 1,
+      "title": "美国8月达拉斯联储制造业原材料支付价格指数",
+      "previous": "41.3",
+      "consensus": null,
+      "actual": "44.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 1,
+      "title": "美国8月达拉斯联储制造业就业指数",
+      "previous": "12.2",
+      "consensus": null,
+      "actual": "8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-08-31 22:30",
+      "star": 1,
+      "title": "美国8月达拉斯联储制造业装船指数",
+      "previous": "8.8",
+      "consensus": null,
+      "actual": "14.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日3个月国债竞拍-得标利率",
+      "previous": "3.72",
+      "consensus": null,
+      "actual": "3.77",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日3个月国债竞拍-得标利率配置百分比",
+      "previous": "97.66",
+      "consensus": null,
+      "actual": "66.77",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日3个月国债竞拍-投标倍数",
+      "previous": "3.08",
+      "consensus": null,
+      "actual": "2.77",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日6个月国债竞拍-得标利率",
+      "previous": "3.79",
+      "consensus": null,
+      "actual": "3.885",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日6个月国债竞拍-得标利率配置百分比",
+      "previous": "59.64",
+      "consensus": null,
+      "actual": "49.27",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-08-31 23:30",
+      "star": 1,
+      "title": "美国至8月31日6个月国债竞拍-投标倍数",
+      "previous": "3.05",
+      "consensus": null,
+      "actual": "2.63",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 07:00",
+      "star": 2,
+      "title": "澳大利亚8月标普全球制造业PMI终值",
+      "previous": "52",
+      "consensus": null,
+      "actual": "52",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 07:01",
+      "star": 2,
+      "title": "英国8月BRC商店物价指数年率",
+      "previous": "0.90",
+      "consensus": null,
+      "actual": "1.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 07:50",
+      "star": 1,
+      "title": "日本第二季度企业资本支出年率",
+      "previous": "0.00",
+      "consensus": null,
+      "actual": "1.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 08:00",
+      "star": 2,
+      "title": "韩国8月贸易帐初值(亿美元)",
+      "previous": "303.24",
+      "consensus": "307.4",
+      "actual": "347.5",
+      "revised": "303.92",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 08:00",
+      "star": 1,
+      "title": "韩国8月出口年率",
+      "previous": "62.80",
+      "consensus": "62.6",
+      "actual": "68.7",
+      "revised": "62.90",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 08:00",
+      "star": 1,
+      "title": "韩国8月进口年率",
+      "previous": "26.50",
+      "consensus": "24.7",
+      "actual": "22.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 08:30",
+      "star": 1,
+      "title": "中国台湾8月日经制造业PMI",
+      "previous": "55.1",
+      "consensus": null,
+      "actual": "54.7",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 08:30",
+      "star": 2,
+      "title": "日本8月制造业PMI终值",
+      "previous": "55.1",
+      "consensus": null,
+      "actual": "54.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 08:30",
+      "star": 2,
+      "title": "韩国8月汇丰制造业PMI",
+      "previous": "53.1",
+      "consensus": null,
+      "actual": "52.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 09:30",
+      "star": 2,
+      "title": "澳大利亚7月季调私营营建许可月率",
+      "previous": "0.4",
+      "consensus": null,
+      "actual": "-4.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 09:30",
+      "star": 2,
+      "title": "澳大利亚7月季调营建许可月率",
+      "previous": "7.20",
+      "consensus": "-3.9",
+      "actual": "-3.6",
+      "revised": "6.9",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 09:30",
+      "star": 2,
+      "title": "澳大利亚第二季度经常帐(亿澳元)",
+      "previous": "-271",
+      "consensus": "-300",
+      "actual": "-272",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 09:30",
+      "star": 1,
+      "title": "澳大利亚7月季调私营营建许可年率",
+      "previous": "15.8",
+      "consensus": null,
+      "actual": "6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 09:30",
+      "star": 1,
+      "title": "澳大利亚7月季调营建许可年率",
+      "previous": "8.9",
+      "consensus": null,
+      "actual": "9",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 09:45",
+      "star": 3,
+      "title": "中国8月RatingDog制造业PMI",
+      "previous": "50.9",
+      "consensus": "51",
+      "actual": "51.5",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-01 13:00",
+      "star": 2,
+      "title": "印度8月制造业PMI终值",
+      "previous": "52.9",
+      "consensus": "53",
+      "actual": "52.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 13:00",
+      "star": 2,
+      "title": "日本8月家庭消费者信心指数",
+      "previous": "34.9",
+      "consensus": null,
+      "actual": "35.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 14:00",
+      "star": 2,
+      "title": "德国7月实际零售销售年率",
+      "previous": "-0.2",
+      "consensus": null,
+      "actual": "-2.5",
+      "revised": "5.3",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 14:00",
+      "star": 2,
+      "title": "德国7月实际零售销售月率",
+      "previous": "-0.7",
+      "consensus": "0.4",
+      "actual": "-3.4",
+      "revised": "0",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 14:00",
+      "star": 3,
+      "title": "英国8月Nationwide房价指数月率",
+      "previous": "0.10",
+      "consensus": "0.10",
+      "actual": "0.2",
+      "revised": "-0.1",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 14:00",
+      "star": 2,
+      "title": "英国8月Nationwide房价指数年率",
+      "previous": "1.80",
+      "consensus": "2",
+      "actual": "1.6",
+      "revised": "1.4",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 14:30",
+      "star": 3,
+      "title": "瑞士7月实际零售销售年率",
+      "previous": "1.50",
+      "consensus": null,
+      "actual": "2.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 15:15",
+      "star": 2,
+      "title": "西班牙8月制造业PMI",
+      "previous": "50.2",
+      "consensus": "50.3",
+      "actual": "49.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 15:30",
+      "star": 2,
+      "title": "瑞士8月SVME采购经理人指数",
+      "previous": "53.2",
+      "consensus": "54.2",
+      "actual": "57.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 15:45",
+      "star": 2,
+      "title": "意大利8月制造业PMI",
+      "previous": "51.3",
+      "consensus": "51.3",
+      "actual": "49.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 15:50",
+      "star": 3,
+      "title": "法国8月制造业PMI终值",
+      "previous": "51.5",
+      "consensus": "51.5",
+      "actual": "51.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 15:55",
+      "star": 3,
+      "title": "德国8月制造业PMI终值",
+      "previous": "54.1",
+      "consensus": "54.1",
+      "actual": "54.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 16:00",
+      "star": 2,
+      "title": "意大利第二季度GDP年率终值",
+      "previous": "1.00",
+      "consensus": "1",
+      "actual": "1",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 16:00",
+      "star": 1,
+      "title": "意大利第二季度GDP季率终值",
+      "previous": "0.20",
+      "consensus": "0.2",
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 16:00",
+      "star": 3,
+      "title": "欧元区8月制造业PMI终值",
+      "previous": "52.8",
+      "consensus": "52.8",
+      "actual": "52.7",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 2,
+      "title": "意大利7月失业率",
+      "previous": "5.70",
+      "consensus": "5.6",
+      "actual": "5.8",
+      "revised": "5.8",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 3,
+      "title": "英国8月制造业PMI终值",
+      "previous": "51.5",
+      "consensus": "51.5",
+      "actual": "51.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 3,
+      "title": "英国7月央行抵押贷款许可(万件)",
+      "previous": "5.82",
+      "consensus": "5.95",
+      "actual": "5.6053",
+      "revised": "5.8215",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 2,
+      "title": "英国7月M4货币供应月率",
+      "previous": "0.80",
+      "consensus": null,
+      "actual": "-0.3",
+      "revised": "0.9",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 2,
+      "title": "英国7月央行抵押贷款(亿英镑)",
+      "previous": "77.27",
+      "consensus": "57",
+      "actual": "42.92",
+      "revised": "76.77",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 2,
+      "title": "英国7月央行消费信贷(亿英镑)",
+      "previous": "18.07",
+      "consensus": "18",
+      "actual": "20.06",
+      "revised": "18.65",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 16:30",
+      "star": 1,
+      "title": "英国7月M4货币供应年率",
+      "previous": "5.00",
+      "consensus": null,
+      "actual": "4.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 2,
+      "title": "意大利8月CPI年率初值",
+      "previous": "2.90",
+      "consensus": "3.3",
+      "actual": "3.3",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 1,
+      "title": "意大利8月CPI月率初值",
+      "previous": "0.30",
+      "consensus": "0.5",
+      "actual": "0.5",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 1,
+      "title": "意大利8月调和CPI年率初值",
+      "previous": "2.90",
+      "consensus": "3.4",
+      "actual": "3.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 1,
+      "title": "意大利8月调和CPI月率初值",
+      "previous": "-1.00",
+      "consensus": "0.3",
+      "actual": "0.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 3,
+      "title": "欧元区8月CPI年率初值",
+      "previous": "2.90",
+      "consensus": "3.3",
+      "actual": "3.3",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 3,
+      "title": "欧元区8月CPI月率初值",
+      "previous": "0.20",
+      "consensus": null,
+      "actual": "0.4",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 3,
+      "title": "欧元区7月失业率",
+      "previous": "6.30",
+      "consensus": "6.3",
+      "actual": "6.4",
+      "revised": "6.4",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 2,
+      "title": "欧元区8月核心CPI年率初值",
+      "previous": "2.2",
+      "consensus": "2.3",
+      "actual": "2.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 17:00",
+      "star": 2,
+      "title": "欧元区8月核心CPI月率初值",
+      "previous": "0",
+      "consensus": null,
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 20:55",
+      "star": 2,
+      "title": "美国至8月29日当周红皮书商业零售销售年率",
+      "previous": "9.1",
+      "consensus": null,
+      "actual": "9.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 21:30",
+      "star": 2,
+      "title": "加拿大8月标普全球制造业采购经理人指数",
+      "previous": "53.5",
+      "consensus": null,
+      "actual": "53",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 21:45",
+      "star": 3,
+      "title": "美国8月标普全球制造业PMI终值",
+      "previous": "53.2",
+      "consensus": null,
+      "actual": "53.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 4,
+      "title": "美国8月ISM制造业PMI",
+      "previous": "55.6",
+      "consensus": "55.2",
+      "actual": "54.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 3,
+      "title": "美国7月JOLTs职位空缺(万人)",
+      "previous": "735.9",
+      "consensus": "730",
+      "actual": "727.1",
+      "revised": "718.2",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 3,
+      "title": "美国7月营建支出月率",
+      "previous": "-0.10",
+      "consensus": "0",
+      "actual": "-0.5",
+      "revised": "0",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 2,
+      "title": "美国8月ISM产出指数",
+      "previous": "58.5",
+      "consensus": null,
+      "actual": "58.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 2,
+      "title": "美国8月ISM制造业物价支付指数",
+      "previous": "71.1",
+      "consensus": "70.5",
+      "actual": "71.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 2,
+      "title": "美国8月ISM就业指数",
+      "previous": "52.8",
+      "consensus": "53",
+      "actual": "51.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 2,
+      "title": "美国8月ISM库存指数",
+      "previous": "51.2",
+      "consensus": null,
+      "actual": "50.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 22:00",
+      "star": 2,
+      "title": "美国8月ISM新订单指数",
+      "previous": "56.7",
+      "consensus": null,
+      "actual": "53.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 23:25",
+      "star": 1,
+      "title": "新西兰至8月18日全球乳制品贸易价格指数",
+      "previous": "2.3",
+      "consensus": null,
+      "actual": "0.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 2,
+      "title": "美国至9月1日1年期国债竞拍-得标利率",
+      "previous": "3.88",
+      "consensus": null,
+      "actual": "3.98",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 2,
+      "title": "美国至9月1日1年期国债竞拍-得标利率配置百分比",
+      "previous": "12.98",
+      "consensus": null,
+      "actual": "34.18",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 2,
+      "title": "美国至9月1日1年期国债竞拍-投标倍数",
+      "previous": "3.62",
+      "consensus": null,
+      "actual": "3.61",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 1,
+      "title": "美国至9月1日6周国债竞拍-得标利率",
+      "previous": "3.65",
+      "consensus": null,
+      "actual": "3.74",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 1,
+      "title": "美国至9月1日6周国债竞拍-得标利率配置百分比",
+      "previous": "27.88",
+      "consensus": null,
+      "actual": "52.35",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-01 23:30",
+      "star": 1,
+      "title": "美国至9月1日6周国债竞拍-投标倍数",
+      "previous": "2.71",
+      "consensus": null,
+      "actual": "2.85",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 3,
+      "title": "美国至8月28日当周API原油库存(万桶)",
+      "previous": "419.9",
+      "consensus": "-82",
+      "actual": "-259.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周API原油进口(万桶)",
+      "previous": "-46.2",
+      "consensus": null,
+      "actual": "24.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周API取暖油库存(万桶)",
+      "previous": "-4.3",
+      "consensus": null,
+      "actual": "-35",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周API库欣原油库存(万桶)",
+      "previous": "99.5",
+      "consensus": null,
+      "actual": "15",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周API成品油进口(万桶/日)",
+      "previous": "25.4",
+      "consensus": null,
+      "actual": "-22.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周API投产原油量(万桶/日)",
+      "previous": "-8.8",
+      "consensus": null,
+      "actual": "29.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 1,
+      "title": "美国至8月28日当周API汽油库存(万桶)",
+      "previous": "-320.1",
+      "consensus": "-240",
+      "actual": "34.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 04:30",
+      "star": 1,
+      "title": "美国至8月28日当周API精炼油库存(万桶)",
+      "previous": "-45.9",
+      "consensus": "-125",
+      "actual": "-26.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 06:45",
+      "star": 1,
+      "title": "新西兰7月营建许可年率",
+      "previous": "32.1",
+      "consensus": null,
+      "actual": "10.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 06:45",
+      "star": 1,
+      "title": "新西兰7月营建许可月率",
+      "previous": "-3.60",
+      "consensus": null,
+      "actual": "-4.3",
+      "revised": "-3.7",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 07:00",
+      "star": 2,
+      "title": "澳大利亚8月AIG/PWC制造业表现指数",
+      "previous": "-19.6",
+      "consensus": null,
+      "actual": "-16.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 07:00",
+      "star": 1,
+      "title": "澳大利亚8月AIG建筑业表现指数",
+      "previous": "-40.6",
+      "consensus": null,
+      "actual": "-6.9",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 07:00",
+      "star": 2,
+      "title": "韩国8月CPI年率",
+      "previous": "2.80",
+      "consensus": "3.2",
+      "actual": "3.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 07:00",
+      "star": 1,
+      "title": "韩国8月CPI月率",
+      "previous": "-0.20",
+      "consensus": "0.3",
+      "actual": "0.2",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 07:50",
+      "star": 1,
+      "title": "日本8月基础货币年率",
+      "previous": "-13.80",
+      "consensus": null,
+      "actual": "-15.7",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 09:30",
+      "star": 3,
+      "title": "澳大利亚第二季度GDP年率",
+      "previous": "2.50",
+      "consensus": "1.8",
+      "actual": "2.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 09:30",
+      "star": 2,
+      "title": "澳大利亚第二季度GDP季率",
+      "previous": "0.30",
+      "consensus": "0.3",
+      "actual": "0.4",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 10:00",
+      "star": 3,
+      "title": "新西兰至9月2日联储利率决定",
+      "previous": "2.50",
+      "consensus": "2.75",
+      "actual": "2.75",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-02 14:45",
+      "star": 2,
+      "title": "法国7月政府预算(亿欧元)",
+      "previous": "-1067.7",
+      "consensus": null,
+      "actual": "-1459.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 15:00",
+      "star": 1,
+      "title": "西班牙8月失业人数变化(万人)",
+      "previous": "1.95",
+      "consensus": null,
+      "actual": "4.44",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 15:00",
+      "star": 1,
+      "title": "西班牙8月失业人数月率",
+      "previous": "0.85",
+      "consensus": null,
+      "actual": "1.92",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 16:00",
+      "star": 2,
+      "title": "意大利7月PPI月率",
+      "previous": "0.00",
+      "consensus": null,
+      "actual": "3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 16:00",
+      "star": 1,
+      "title": "意大利7月PPI年率",
+      "previous": "6.80",
+      "consensus": null,
+      "actual": "9.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 19:00",
+      "star": 2,
+      "title": "美国至8月28日当周MBA30年期固定抵押贷款利率",
+      "previous": "6.78",
+      "consensus": null,
+      "actual": "6.79",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 19:00",
+      "star": 2,
+      "title": "美国至8月28日当周MBA抵押贷款申请活动指数",
+      "previous": "245.3",
+      "consensus": null,
+      "actual": "247.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 19:00",
+      "star": 1,
+      "title": "美国至8月28日当周MBA抵押贷款再融资活动指数",
+      "previous": "740.8",
+      "consensus": null,
+      "actual": "732.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 19:00",
+      "star": 1,
+      "title": "美国至8月28日当周MBA抵押贷款购买指数",
+      "previous": "154.4",
+      "consensus": null,
+      "actual": "157.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 20:15",
+      "star": 4,
+      "title": "美国8月ADP就业人数(万人)",
+      "previous": "4.4",
+      "consensus": "4.8",
+      "actual": "3.8",
+      "revised": "4.6",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 21:45",
+      "star": 3,
+      "title": "加拿大至9月2日央行利率决定",
+      "previous": "2.25",
+      "consensus": "2.25",
+      "actual": "2.25",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-02 22:00",
+      "star": 3,
+      "title": "美国7月工厂订单月率",
+      "previous": "-0.30",
+      "consensus": "0.6",
+      "actual": "0.9",
+      "revised": "-0.2",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:00",
+      "star": 2,
+      "title": "美国7月扣除国防的工厂订单月率",
+      "previous": "-0.4",
+      "consensus": null,
+      "actual": "1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:00",
+      "star": 2,
+      "title": "美国7月扣除运输的工厂订单月率",
+      "previous": "-0.40",
+      "consensus": null,
+      "actual": "0.6",
+      "revised": "-0.1",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:00",
+      "star": 2,
+      "title": "美国7月耐用品订单月率终值",
+      "previous": "1.10",
+      "consensus": null,
+      "actual": "1.1",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 4,
+      "title": "美国至8月28日当周EIA原油库存(万桶)",
+      "previous": "9.5",
+      "consensus": "-108.5",
+      "actual": "-445",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 3,
+      "title": "美国至8月28日当周EIA俄克拉荷马州库欣原油库存(万桶)",
+      "previous": "117.6",
+      "consensus": null,
+      "actual": "8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 3,
+      "title": "美国至8月28日当周EIA战略石油储备库存(万桶)",
+      "previous": "-370",
+      "consensus": null,
+      "actual": "-312.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA原油产量引伸需求数据(万桶/日)",
+      "previous": "1998.7",
+      "consensus": null,
+      "actual": "2126.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA原油进口(万桶)",
+      "previous": "-16.1",
+      "consensus": null,
+      "actual": "-7.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA取暖油库存(万桶)",
+      "previous": "2.7",
+      "consensus": null,
+      "actual": "-3.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA成品油进口(万桶/日)",
+      "previous": "27.5",
+      "consensus": null,
+      "actual": "-59.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA投产原油量(万桶/日)",
+      "previous": "-0.2",
+      "consensus": null,
+      "actual": "10.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA汽油产量(万桶/日)",
+      "previous": "6.1",
+      "consensus": null,
+      "actual": "7.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA精炼厂设备利用率",
+      "previous": "97.4",
+      "consensus": "97.1",
+      "actual": "98",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 2,
+      "title": "美国至8月28日当周EIA精炼油产量(万桶/日)",
+      "previous": "-9.1",
+      "consensus": null,
+      "actual": "-0.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 1,
+      "title": "美国至8月28日当周EIA新配方汽油库存(万桶)",
+      "previous": "0.4",
+      "consensus": null,
+      "actual": "-0.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 1,
+      "title": "美国至8月28日当周EIA汽油库存(万桶)",
+      "previous": "-253.6",
+      "consensus": "-185",
+      "actual": "-117.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 1,
+      "title": "美国至8月28日当周EIA精炼油库存(万桶)",
+      "previous": "-222.8",
+      "consensus": "-127.5",
+      "actual": "79.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 1,
+      "title": "美国至8月28日当周EIA蒸馏燃油产量引伸需求数据(万桶/日)",
+      "previous": "562.93",
+      "consensus": null,
+      "actual": "512.53",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 22:30",
+      "star": 1,
+      "title": "美国至8月28日当周EIA车用汽油总产量引伸需求数据(万桶/日)",
+      "previous": "993.23",
+      "consensus": null,
+      "actual": "985.73",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 23:30",
+      "star": 1,
+      "title": "美国至9月2日4个月国债竞拍-得标利率",
+      "previous": "3.75",
+      "consensus": null,
+      "actual": "3.855",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-02 23:30",
+      "star": 1,
+      "title": "美国至9月2日4个月国债竞拍-得标利率配置百分比",
+      "previous": "34.83",
+      "consensus": null,
+      "actual": "76.38",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-02 23:30",
+      "star": 1,
+      "title": "美国至9月2日4个月国债竞拍-投标倍数",
+      "previous": "3.09",
+      "consensus": null,
+      "actual": "2.78",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 05:00",
+      "star": 1,
+      "title": "韩国8月外汇储备(亿美元)",
+      "previous": "4279.5",
+      "consensus": null,
+      "actual": "4423",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:00",
+      "star": 2,
+      "title": "澳大利亚8月标普全球服务业PMI终值",
+      "previous": "52.9",
+      "consensus": null,
+      "actual": "53.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:00",
+      "star": 2,
+      "title": "澳大利亚8月标普全球综合PMI终值",
+      "previous": "52.5",
+      "consensus": null,
+      "actual": "52.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:50",
+      "star": 2,
+      "title": "日本至8月28日当周买进外国债券(亿日元)",
+      "previous": "-19784",
+      "consensus": null,
+      "actual": "-8240",
+      "revised": "-19768",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:50",
+      "star": 2,
+      "title": "日本至8月28日当周买进外国股票(亿日元)",
+      "previous": "-8690",
+      "consensus": null,
+      "actual": "358",
+      "revised": "-8617",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:50",
+      "star": 1,
+      "title": "日本至8月28日当周外资买进日债(亿日元)",
+      "previous": "4352",
+      "consensus": null,
+      "actual": "5091",
+      "revised": "4361",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 07:50",
+      "star": 1,
+      "title": "日本至8月28日当周外资买进日股(亿日元)",
+      "previous": "-7641",
+      "consensus": null,
+      "actual": "358",
+      "revised": "-7634",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 08:30",
+      "star": 1,
+      "title": "中国香港8月标普全球制造业PMI",
+      "previous": "51",
+      "consensus": null,
+      "actual": "49.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 08:30",
+      "star": 2,
+      "title": "日本8月服务业PMI终值",
+      "previous": "52.3",
+      "consensus": null,
+      "actual": "52.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 08:30",
+      "star": 2,
+      "title": "日本8月综合PMI终值",
+      "previous": "53.4",
+      "consensus": null,
+      "actual": "53.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 08:30",
+      "star": 2,
+      "title": "越南8月标普全球越南制造业PMI",
+      "previous": "52.9",
+      "consensus": null,
+      "actual": "53.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 09:30",
+      "star": 2,
+      "title": "澳大利亚7月商品及服务贸易帐(亿澳元)",
+      "previous": "19.29",
+      "consensus": "14.5",
+      "actual": "19.23",
+      "revised": "23.41",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 09:30",
+      "star": 1,
+      "title": "澳大利亚7月出口月率",
+      "previous": "9.60",
+      "consensus": null,
+      "actual": "-3.3",
+      "revised": "10.1",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 09:30",
+      "star": 1,
+      "title": "澳大利亚7月进口月率",
+      "previous": "-0.20",
+      "consensus": null,
+      "actual": "-2.5",
+      "revised": "-0.7",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 09:45",
+      "star": 3,
+      "title": "中国8月RatingDog服务业PMI",
+      "previous": "50.4",
+      "consensus": null,
+      "actual": "51.4",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-03 09:45",
+      "star": 2,
+      "title": "中国8月RatingDog综合PMI",
+      "previous": "50.8",
+      "consensus": null,
+      "actual": "52.1",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-03 10:13",
+      "star": 2,
+      "title": "越南8月出口年率",
+      "previous": "25.00",
+      "consensus": null,
+      "actual": "26",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 10:14",
+      "star": 2,
+      "title": "越南8月CPI年率",
+      "previous": "4.45",
+      "consensus": null,
+      "actual": "4.89",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 10:15",
+      "star": 2,
+      "title": "越南8月贸易帐(亿美元)",
+      "previous": "-35.87",
+      "consensus": null,
+      "actual": "-1.13",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 10:15",
+      "star": 2,
+      "title": "越南8月进口年率",
+      "previous": "41.40",
+      "consensus": null,
+      "actual": "37.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 10:25",
+      "star": 1,
+      "title": "越南8月工业增加值年率",
+      "previous": "14.50",
+      "consensus": null,
+      "actual": "14.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 10:26",
+      "star": 2,
+      "title": "越南8月零售销售年率",
+      "previous": "14.50",
+      "consensus": null,
+      "actual": "14.9",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 13:00",
+      "star": 2,
+      "title": "印度8月服务业PMI终值",
+      "previous": "54.5",
+      "consensus": "54.5",
+      "actual": "54.1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 13:00",
+      "star": 1,
+      "title": "印度8月综合PMI终值",
+      "previous": "54.6",
+      "consensus": null,
+      "actual": "54.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 14:30",
+      "star": 3,
+      "title": "瑞士8月CPI月率",
+      "previous": "-0.10",
+      "consensus": "0",
+      "actual": "0.4",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 14:30",
+      "star": 2,
+      "title": "瑞士8月CPI年率",
+      "previous": "0.40",
+      "consensus": "0.5",
+      "actual": "0.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:00",
+      "star": 2,
+      "title": "瑞士第二季度GDP季率",
+      "previous": "0.70",
+      "consensus": "1.6",
+      "actual": "1.9",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:00",
+      "star": 2,
+      "title": "瑞士第二季度GDP年率",
+      "previous": "0.50",
+      "consensus": "2",
+      "actual": "2.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:15",
+      "star": 2,
+      "title": "西班牙8月服务业PMI",
+      "previous": "58.3",
+      "consensus": "58.9",
+      "actual": "57.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 15:15",
+      "star": 2,
+      "title": "西班牙8月综合PMI",
+      "previous": "56.5",
+      "consensus": null,
+      "actual": "55.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 15:45",
+      "star": 2,
+      "title": "意大利8月服务业PMI",
+      "previous": "52.5",
+      "consensus": "54",
+      "actual": "55.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:45",
+      "star": 1,
+      "title": "意大利8月综合PMI",
+      "previous": "52.5",
+      "consensus": null,
+      "actual": "53.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:50",
+      "star": 3,
+      "title": "法国8月服务业PMI终值",
+      "previous": "48.4",
+      "consensus": "48.4",
+      "actual": "48",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 15:50",
+      "star": 2,
+      "title": "法国8月综合PMI终值",
+      "previous": "48.8",
+      "consensus": "48.8",
+      "actual": "48.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 15:55",
+      "star": 3,
+      "title": "德国8月服务业PMI终值",
+      "previous": "48.5",
+      "consensus": "48.5",
+      "actual": "49.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 15:55",
+      "star": 2,
+      "title": "德国8月综合PMI终值",
+      "previous": "51",
+      "consensus": "51",
+      "actual": "51.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 16:00",
+      "star": 3,
+      "title": "欧元区8月服务业PMI终值",
+      "previous": "51.7",
+      "consensus": "51.7",
+      "actual": "51.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 16:00",
+      "star": 2,
+      "title": "欧元区8月综合PMI终值",
+      "previous": "52.1",
+      "consensus": "52.1",
+      "actual": "52",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 16:30",
+      "star": 3,
+      "title": "英国8月服务业PMI终值",
+      "previous": "52.8",
+      "consensus": "52.8",
+      "actual": "52.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 16:30",
+      "star": 2,
+      "title": "英国8月官方储备变动(亿美元)",
+      "previous": "-2.81",
+      "consensus": null,
+      "actual": "53.28",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 16:30",
+      "star": 2,
+      "title": "英国8月综合PMI终值",
+      "previous": "52.5",
+      "consensus": "52.5",
+      "actual": "52.5",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-03 17:00",
+      "star": 3,
+      "title": "欧元区7月PPI月率",
+      "previous": "-0.30",
+      "consensus": "1.2",
+      "actual": "1.6",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 17:00",
+      "star": 2,
+      "title": "欧元区7月PPI年率",
+      "previous": "4.60",
+      "consensus": "5.3",
+      "actual": "5.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 17:30",
+      "star": 3,
+      "title": "美国8月挑战者企业裁员人数(万人)",
+      "previous": "3.3429",
+      "consensus": null,
+      "actual": "5.2881",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 17:30",
+      "star": 2,
+      "title": "美国8月挑战者企业裁员年率",
+      "previous": "-46.10",
+      "consensus": null,
+      "actual": "-38.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 17:30",
+      "star": 2,
+      "title": "美国8月挑战者企业裁员月率",
+      "previous": "-27.09",
+      "consensus": null,
+      "actual": "58.19",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "加拿大7月出口(亿加元)",
+      "previous": "774.9",
+      "consensus": null,
+      "actual": "761.4",
+      "revised": "779.6",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "加拿大第二季度劳动生产率季率",
+      "previous": "-0.50",
+      "consensus": null,
+      "actual": "1",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "加拿大7月贸易帐(亿加元)",
+      "previous": "38.6",
+      "consensus": "35.7",
+      "actual": "7.7",
+      "revised": "42",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "加拿大7月进口(亿加元)",
+      "previous": "736.3",
+      "consensus": null,
+      "actual": "753.7",
+      "revised": "737.6",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 4,
+      "title": "美国至8月29日当周初请失业金人数(万人)",
+      "previous": "20.3",
+      "consensus": "20.5",
+      "actual": "20.6",
+      "revised": "20.4",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 3,
+      "title": "美国7月贸易帐(亿美元)",
+      "previous": "-733",
+      "consensus": "-900",
+      "actual": "-886",
+      "revised": "-712",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国7月出口(亿美元)",
+      "previous": "3147",
+      "consensus": null,
+      "actual": "3107",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国至8月29日当周初请失业金人数四周均值(万人)",
+      "previous": "20.55",
+      "consensus": null,
+      "actual": "20.725",
+      "revised": "20.575",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国至8月22日当周续请失业金人数(万人)",
+      "previous": "177.8",
+      "consensus": "179",
+      "actual": "177.9",
+      "revised": "177.1",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国7月进口(亿美元)",
+      "previous": "3880",
+      "consensus": null,
+      "actual": "3993",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国第二季度非农单位劳动力成本终值",
+      "previous": "1.30",
+      "consensus": "1.3",
+      "actual": "1.2",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 20:30",
+      "star": 2,
+      "title": "美国第二季度非农生产力终值",
+      "previous": "1.40",
+      "consensus": "1.4",
+      "actual": "1.4",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-03 21:00",
+      "star": 2,
+      "title": "俄罗斯至8月28日当周央行黄金和外汇储备(亿美元)",
+      "previous": "7612",
+      "consensus": null,
+      "actual": "7742",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 21:30",
+      "star": 2,
+      "title": "加拿大8月标普全球服务业PMI",
+      "previous": "49.1",
+      "consensus": null,
+      "actual": "46.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 21:30",
+      "star": 2,
+      "title": "加拿大8月标普全球综合PMI",
+      "previous": "49.7",
+      "consensus": null,
+      "actual": "47.8",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 21:45",
+      "star": 3,
+      "title": "美国8月标普全球服务业PMI终值",
+      "previous": "56.8",
+      "consensus": null,
+      "actual": "56.5",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 21:45",
+      "star": 2,
+      "title": "美国8月标普全球综合PMI终值",
+      "previous": "56",
+      "consensus": null,
+      "actual": "56",
+      "revised": null,
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 3,
+      "title": "美国8月ISM非制造业PMI",
+      "previous": "54.1",
+      "consensus": "54.2",
+      "actual": "55.4",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 2,
+      "title": "美国8月ISM非制造业供应商交付指数",
+      "previous": "52.8",
+      "consensus": null,
+      "actual": "51.3",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 2,
+      "title": "美国8月ISM非制造业就业指数",
+      "previous": "47.4",
+      "consensus": null,
+      "actual": "47.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 2,
+      "title": "美国8月ISM非制造业库存指数",
+      "previous": "51.4",
+      "consensus": null,
+      "actual": "56.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 2,
+      "title": "美国8月ISM非制造业新订单指数",
+      "previous": "57.2",
+      "consensus": null,
+      "actual": "60.9",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 22:00",
+      "star": 2,
+      "title": "美国8月ISM非制造业物价指数",
+      "previous": "70.3",
+      "consensus": null,
+      "actual": "72.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 22:30",
+      "star": 3,
+      "title": "美国至8月28日当周EIA天然气库存(亿立方英尺)",
+      "previous": "150",
+      "consensus": "310",
+      "actual": "300",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日4周国债竞拍-得标利率",
+      "previous": "3.65",
+      "consensus": null,
+      "actual": "3.7",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日4周国债竞拍-得标利率配置百分比",
+      "previous": "93.57",
+      "consensus": null,
+      "actual": "58.44",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日4周国债竞拍-投标倍数",
+      "previous": "2.73",
+      "consensus": null,
+      "actual": "2.97",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日8周国债竞拍-得标利率",
+      "previous": "3.67",
+      "consensus": null,
+      "actual": "3.75",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日8周国债竞拍-得标利率配置百分比",
+      "previous": "80.38",
+      "consensus": null,
+      "actual": "89.23",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-03 23:30",
+      "star": 1,
+      "title": "美国至9月3日8周国债竞拍-投标倍数",
+      "previous": "2.77",
+      "consensus": null,
+      "actual": "3.02",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 04:30",
+      "star": 2,
+      "title": "美国至8月28日当周外国央行持有美国国债(亿美元)",
+      "previous": "290.75",
+      "consensus": null,
+      "actual": "-140.05",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 07:00",
+      "star": 2,
+      "title": "韩国7月未季调经常帐(亿美元)",
+      "previous": "497.304",
+      "consensus": null,
+      "actual": "420.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 07:30",
+      "star": 1,
+      "title": "日本7月所有家庭支出年率",
+      "previous": "-3.30",
+      "consensus": "-1.6",
+      "actual": "-3.6",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 07:30",
+      "star": 1,
+      "title": "日本7月所有家庭支出月率",
+      "previous": "-6.4",
+      "consensus": "2.6",
+      "actual": "0.5",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 14:00",
+      "star": 2,
+      "title": "德国7月季调后制造业订单月率",
+      "previous": "3.10",
+      "consensus": "0.3",
+      "actual": "2.5",
+      "revised": "3.7",
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 14:00",
+      "star": 1,
+      "title": "德国7月工作日调整后制造业订单年率",
+      "previous": "6.50",
+      "consensus": "10.5",
+      "actual": "13.1",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 15:30",
+      "star": 2,
+      "title": "德国8月建筑业PMI",
+      "previous": "42.1",
+      "consensus": null,
+      "actual": "48.7",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 16:00",
+      "star": 1,
+      "title": "意大利7月季调后零售销售月率",
+      "previous": "-0.10",
+      "consensus": null,
+      "actual": "-0.4",
+      "revised": "-0.2",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 16:00",
+      "star": 1,
+      "title": "意大利7月零售销售年率",
+      "previous": "3.10",
+      "consensus": null,
+      "actual": "0.8",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 16:20",
+      "star": 1,
+      "title": "中国台湾8月外汇存底(亿美元)",
+      "previous": "5942.7",
+      "consensus": null,
+      "actual": "6019.04",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-04 16:30",
+      "star": 2,
+      "title": "英国8月建筑业PMI",
+      "previous": "44.7",
+      "consensus": "45.5",
+      "actual": "44.3",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 17:00",
+      "star": 3,
+      "title": "欧元区7月零售销售月率",
+      "previous": "-0.30",
+      "consensus": "0.3",
+      "actual": "-0.6",
+      "revised": "0.2",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 17:00",
+      "star": 2,
+      "title": "欧元区7月零售销售年率",
+      "previous": "0.70",
+      "consensus": "1.1",
+      "actual": "0.6",
+      "revised": "1.4",
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 3,
+      "title": "加拿大8月就业人数(万人)",
+      "previous": "7.51",
+      "consensus": "1.5",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "加拿大8月全职就业人数(万人)",
+      "previous": "3.86",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "加拿大8月兼职就业人数(万人)",
+      "previous": "3.66",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "加拿大8月失业率",
+      "previous": "6.40",
+      "consensus": "6.4",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "加拿大8月就业参与率",
+      "previous": "65.10",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 5,
+      "title": "美国8月失业率",
+      "previous": "4.10",
+      "consensus": "4.1",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 5,
+      "title": "美国8月季调后非农就业人口(万人)",
+      "previous": "-2.3",
+      "consensus": "5.6",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 3,
+      "title": "美国8月平均每小时工资年率",
+      "previous": "3.20",
+      "consensus": "3",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 3,
+      "title": "美国8月平均每小时工资月率",
+      "previous": "0.10",
+      "consensus": "0.3",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月U6失业率",
+      "previous": "7.90",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月季调后制造业就业人口(万人)",
+      "previous": "0.5",
+      "consensus": "0.5",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月季调后政府部门就业人口(万人)",
+      "previous": "-5.3",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月就业参与率",
+      "previous": "61.40",
+      "consensus": "61.4",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月平均每周工时",
+      "previous": "34.3",
+      "consensus": "34.3",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 20:30",
+      "star": 2,
+      "title": "美国8月私人非农就业人数(万人)",
+      "previous": "3",
+      "consensus": "4.5",
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 22:00",
+      "star": 2,
+      "title": "加拿大8月Ivey季调后PMI",
+      "previous": "55.1",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 22:00",
+      "star": 2,
+      "title": "加拿大8月Ivey未季调PMI",
+      "previous": "54.1",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-04 22:00",
+      "star": 3,
+      "title": "美国8月全球供应链压力指数",
+      "previous": "0.8",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-05 01:00",
+      "star": 3,
+      "title": "美国至9月4日当周石油钻井总数(口)",
+      "previous": "447",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-05 01:00",
+      "star": 2,
+      "title": "美国至9月4日当周总钻井总数(口)",
+      "previous": "588",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-09-05 01:00",
+      "star": 1,
+      "title": "美国至9月4日当周天然气钻井总数(口)",
+      "previous": "132",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    }
+  ]
+}
