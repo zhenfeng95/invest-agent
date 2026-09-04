@@ -23,13 +23,19 @@ JIN10_BEARER_TOKEN=在此粘贴你的金十MCP_Token
    export JIN10_BEARER_TOKEN  # 或从文末行解析后 export
    ```
    没有 Token → 失败退出，勿编造数据。
-2. 在仓库根目录执行（**唯一**数据动作）：
+2. **先对齐远端，避免工作分支缺脚本**（Cloud Agent 常从旧 tip 起分支）：
+   ```bash
+   git fetch origin main
+   test -f tools/jin10_economic_calendar.py || git checkout origin/main -- tools/jin10_economic_calendar.py
+   ```
+3. 在仓库根目录执行（**唯一**数据动作）：
    ```bash
    python3 tools/jin10_economic_calendar.py --commit --push
    ```
-3. 若当前分支不是 `main` / `master`：
+4. 若当前分支不是 `main` / `master`：
    ```bash
    bash scheduler/merge_to_main.sh
    ```
-4. **禁止**：WebSearch、飞书、读 `economic-calendar.json` 全文、调 jin10 MCP 工具、改其它文件、开 PR。
-5. 脚本失败则原样报告 stderr；最多再试 1 次；仍失败则停。
+   `economic-calendar.json` 合并冲突时：保留**本分支/较新**的整文件（以脚本刚写出的为准），不要手工改字段。
+5. **禁止**：WebSearch、飞书、读 `economic-calendar.json` 全文、调 jin10 MCP 工具、改其它文件、开 PR。
+6. 脚本失败则原样报告 stderr；最多再试 1 次；仍失败则停。
