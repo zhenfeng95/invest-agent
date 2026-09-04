@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T18:13:29+08:00",
+  "updated_at": "2026-09-04T22:02:44+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -2492,9 +2492,9 @@
       "title": "加拿大8月就业人数(万人)",
       "previous": "7.51",
       "consensus": "1.5",
-      "actual": null,
+      "actual": "-4.17",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2502,9 +2502,9 @@
       "title": "加拿大8月全职就业人数(万人)",
       "previous": "3.86",
       "consensus": null,
-      "actual": null,
+      "actual": "-3.59",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2512,9 +2512,9 @@
       "title": "加拿大8月兼职就业人数(万人)",
       "previous": "3.66",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.58",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2522,9 +2522,9 @@
       "title": "加拿大8月失业率",
       "previous": "6.40",
       "consensus": "6.4",
-      "actual": null,
+      "actual": "6.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2532,9 +2532,9 @@
       "title": "加拿大8月就业参与率",
       "previous": "65.10",
       "consensus": null,
-      "actual": null,
+      "actual": "65",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2542,9 +2542,9 @@
       "title": "美国8月失业率",
       "previous": "4.10",
       "consensus": "4.1",
-      "actual": null,
+      "actual": "4.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2552,9 +2552,9 @@
       "title": "美国8月季调后非农就业人口(万人)",
       "previous": "-2.3",
       "consensus": "5.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "16.2",
+      "revised": "2.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2562,9 +2562,9 @@
       "title": "美国8月平均每小时工资年率",
       "previous": "3.20",
       "consensus": "3",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2572,9 +2572,9 @@
       "title": "美国8月平均每小时工资月率",
       "previous": "0.10",
       "consensus": "0.3",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "0.2",
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2582,9 +2582,9 @@
       "title": "美国8月U6失业率",
       "previous": "7.90",
       "consensus": null,
-      "actual": null,
+      "actual": "7.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2592,9 +2592,9 @@
       "title": "美国8月季调后制造业就业人口(万人)",
       "previous": "0.5",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.6",
+      "revised": "1.4",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2602,9 +2602,9 @@
       "title": "美国8月季调后政府部门就业人口(万人)",
       "previous": "-5.3",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.5",
+      "revised": "-5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2612,9 +2612,9 @@
       "title": "美国8月就业参与率",
       "previous": "61.40",
       "consensus": "61.4",
-      "actual": null,
+      "actual": "61.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2622,9 +2622,9 @@
       "title": "美国8月平均每周工时",
       "previous": "34.3",
       "consensus": "34.3",
-      "actual": null,
+      "actual": "34.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 20:30",
@@ -2632,9 +2632,9 @@
       "title": "美国8月私人非农就业人数(万人)",
       "previous": "3",
       "consensus": "4.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "12.7",
+      "revised": "7.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 22:00",
@@ -2642,9 +2642,9 @@
       "title": "加拿大8月Ivey季调后PMI",
       "previous": "55.1",
       "consensus": null,
-      "actual": null,
+      "actual": "64.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 22:00",
@@ -2652,9 +2652,9 @@
       "title": "加拿大8月Ivey未季调PMI",
       "previous": "54.1",
       "consensus": null,
-      "actual": null,
+      "actual": "62.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-04 22:00",
