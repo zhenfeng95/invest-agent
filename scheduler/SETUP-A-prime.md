@@ -1,11 +1,12 @@
 # A' 方案上手：A股收盘 + 周度回顾 + 月度复盘
 
-你已选择 **A'**：只用 Cursor Automations，当前开 **3 个** 定时任务。
+你已选择 **A'**：只用 Cursor Automations，当前开 **3 个** LLM 定时任务；另加 **财经日历** 走本机脚本（方案 2）。
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
 2. **周度回顾**（每周日 **10:00**）— 骨架对齐月度；日报仅 `rg` 关键节；含 **§7 月度复盘摘录**；见 `prompt-weekly-review.md`
 3. **月度交易复盘**（每月 **1 日 10:00**）— 主读当月周报 §7 + CSV；**不读** ashare-close；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
+4. **财经日历**（工作日 **08:00 / 22:00**，本机 cron）— `bash scheduler/run-economic-calendar.sh`；输出 `data/public/economic-calendar.json`；LLM≈0；备选 Automation 提示词见 `prompt-economic-calendar.md`
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
@@ -194,6 +195,23 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 - 仓库有对应 `*-close-YYYY-MM-DD.md`
 - 飞书含大盘 / 板块 / 持仓 / 明日计划等（超长会截断，脚注为 main 上 GitHub 链接）
 - 缺数据应写「未获取」/「暂无可靠数据」
+
+---
+
+## 第 5.5 步：财经日历本机 cron（方案 2，可选）
+
+不经 Cursor LLM。本机需已有 `JIN10_BEARER_TOKEN`（与 Cursor MCP 同一 Token；可写进 `~/.zshrc` 或仓库 `.env`）。
+
+```bash
+# crontab -e（macOS 注意 PATH；或用完整 python 路径）
+0 8 * * 1-5  cd /Users/mac/Documents/invest-agent && /usr/bin/env bash scheduler/run-economic-calendar.sh >>/tmp/jin10-calendar.log 2>&1
+0 22 * * 1-5 cd /Users/mac/Documents/invest-agent && /usr/bin/env bash scheduler/run-economic-calendar.sh >>/tmp/jin10-calendar.log 2>&1
+```
+
+手动试跑：`bash scheduler/run-economic-calendar.sh`  
+只写不推：`bash scheduler/run-economic-calendar.sh --no-push`
+
+无法本机 cron 时，再建 Automation，Instructions 贴 `scheduler/prompt-economic-calendar.md`（**禁止** Agent 直接调金十日历）。
 
 ---
 

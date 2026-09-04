@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-053",
+      "date": "2026-09-04",
+      "type": "infra",
+      "summary": "方案2财经日历自动化脚本落地",
+      "detail": "jin10_economic_calendar.py + run-economic-calendar.sh；rules/SETUP 已记 cron",
+      "tickers": [],
+      "outcome": "script smoke ok"
+    },
+    {
       "id": "ep-052",
       "date": "2026-09-04",
       "type": "infra",
