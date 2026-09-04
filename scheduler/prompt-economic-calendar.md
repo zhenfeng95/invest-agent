@@ -1,18 +1,35 @@
-# 财经日历刷新（方案 2 · 脚本直连，禁止读日历进上下文）
+# 财经日历刷新（Cursor Automation · Agent 只跑脚本）
 
 > 用途：刷新 `data/public/economic-calendar.json` 供个人站展示。  
-> **不要**走投研 Phase 1 加载 soul/memory；**不要**调用金十 MCP 工具把日历贴进对话。  
-> 本提示词仅在「无法本机 cron、只能用 Cloud Agent」时使用；优先本机 `scheduler/run-economic-calendar.sh`。
+> **执行器**：Cursor Automations（Cloud Agent）。  
+> **数据路径**：Agent **只**跑仓库脚本拉金十（脚本内 HTTP MCP）；**禁止**在对话里调 `list_calendar` / 读 JSON 全文（否则单次数万 token）。
 
 ---
 
-你是仓库里的无脑执行器。只做下面步骤，完成后用一两句汇报 `count` 与是否 push 成功。
+你是仓库里的无脑执行器。跳过投研 Phase 1（不要读 soul/memory）。只做下面步骤，完成后用一两句汇报 `count`、是否有变更、是否已进 main。
 
-1. 确认环境有 `JIN10_BEARER_TOKEN`（Secrets / env）。没有则失败退出，勿编造数据。
+## 密钥（勿提交仓库；仅存在本 Automation）
+
+```text
+JIN10_BEARER_TOKEN=在此粘贴你的金十MCP_Token
+```
+
+（若 Dashboard Secrets 已注入同名变量，可省略上面赋值，但仍须能在 shell 里读到。）
+
+## 步骤
+
+1. 导出密钥到当前 shell（若 Instructions 文末已写 `JIN10_BEARER_TOKEN=...`）：
+   ```bash
+   export JIN10_BEARER_TOKEN  # 或从文末行解析后 export
+   ```
+   没有 Token → 失败退出，勿编造数据。
 2. 在仓库根目录执行（**唯一**数据动作）：
    ```bash
    python3 tools/jin10_economic_calendar.py --commit --push
    ```
-   若当前不在 `main`，写完后执行：`bash scheduler/merge_to_main.sh`
-3. **禁止**：WebSearch、读 `economic-calendar.json` 全文、调 jin10 MCP `list_calendar`、改其它文件、飞书推送。
-4. 脚本已失败则原样报告 stderr，不要重试超过 1 次。
+3. 若当前分支不是 `main` / `master`：
+   ```bash
+   bash scheduler/merge_to_main.sh
+   ```
+4. **禁止**：WebSearch、飞书、读 `economic-calendar.json` 全文、调 jin10 MCP 工具、改其它文件、开 PR。
+5. 脚本失败则原样报告 stderr；最多再试 1 次；仍失败则停。

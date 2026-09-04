@@ -1,12 +1,24 @@
-# A' 方案上手：A股收盘 + 周度回顾 + 月度复盘
+# A' 方案上手：A股收盘 + 周度回顾 + 月度复盘 + 财经日历
 
-你已选择 **A'**：只用 Cursor Automations，当前开 **3 个** LLM 定时任务；另加 **财经日历** 走本机脚本（方案 2）。
+你已选择 **A'**：只用 Cursor Automations，当前开 **4 个** 定时任务。
 
 **当前组合**：
 1. **A股收盘日报**（工作日 **17:00**）— **精简版**：连续 §0–§8（§4=资金与板块共振；见 `prompt-ashare-close-daily.md`；完整版备查 `prompt-ashare-close-daily-origin.md`）
 2. **周度回顾**（每周日 **10:00**）— 骨架对齐月度；日报仅 `rg` 关键节；含 **§7 月度复盘摘录**；见 `prompt-weekly-review.md`
 3. **月度交易复盘**（每月 **1 日 10:00**）— 主读当月周报 §7 + CSV；**不读** ashare-close；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
-4. **财经日历**（工作日 **08:00 / 22:00**，本机 cron）— `bash scheduler/run-economic-calendar.sh`；输出 `data/public/economic-calendar.json`；LLM≈0；备选 Automation 提示词见 `prompt-economic-calendar.md`
+4. **财经日历**（工作日 **08:00 / 22:00**）— Automation Agent 只跑脚本刷新 `data/public/economic-calendar.json`；见 `prompt-economic-calendar.md`（文末贴 `JIN10_BEARER_TOKEN`）
+
+**已暂停 / 停用**：
+- **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
+- 美股盘前提醒（原 21:00）→ Automation 请 **Pause**
+- A股盘前提醒（原 09:00）→ Automation 请 **Pause**
+- 合并抄底信号 → 继续 Pause / 删除
+
+**通知渠道**：**仅飞书**（自定义机器人 Webhook）。财经日历 **不推飞书**。不再发邮件 / 不再用 Resend。  
+**存档方式**：写入 `output/` → commit → `bash scheduler/merge_to_main.sh`（并进 **main** 并删 `cursor/*`）→ 再发飞书；**不开 PR**。  
+**飞书**：`scheduler/feishu_send.py`（表格转条目 + 卡片；超长截断；脚注为 main 上 GitHub 全文链接）。
+
+> 成本提示：三份复盘类约 **$35–65**/月；财经日历每次仅编排脚本约数百～两千 token（勿让 Agent 直拉日历）。务必设 Dashboard 上限。
 
 **已暂停 / 停用**：
 - **美股收盘日报**（原 08:00）→ Automation「Invest US Close Daily」请 **Pause**
@@ -85,7 +97,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ---
 
-## 第 4 步：建 / 改 Automation（共 3 个启用）
+## 第 4 步：建 / 改 Automation（共 4 个启用）
 
 入口任选其一：
 
@@ -106,9 +118,9 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 | 项 | 填什么 |
 |----|--------|
 | 仓库 | `invest-agent` 的 `main` |
-| 模型 | Composer 或 Sonnet（收盘日报长，可先 Composer；偏贵再换） |
-| Tools | ❌ **不要开** Send to Slack / Teams / Open Pull Request；可选 Memories；飞书靠提示词脚本（Cloud Agent **自带终端**） |
-| 通知 | 靠飞书 Webhook |
+| 模型 | 财经日历用最便宜可用模型即可；收盘日报可用 Composer / Sonnet |
+| Tools | ❌ **不要开** Send to Slack / Teams / Open Pull Request；财经日历 **不要挂 jin10 MCP**（靠脚本 HTTP）；飞书靠提示词脚本（Cloud Agent **自带终端**） |
+| 通知 | 复盘类靠飞书；财经日历不推送 |
 
 ### Automation ①：A股收盘日报
 
@@ -146,7 +158,20 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 **前置**：确保复盘月成交已 push 到 `data/raw/trades/trades-YYYY-MM.csv`；Automation 跑在每月 1 日，复盘的是刚结束的月份。
 
-### Automation ④：美股收盘日报 — ⏸ 已暂停
+### Automation ④：财经日历 JSON — ✅ 启用
+
+| 项 | 填什么 |
+|----|--------|
+| 名称 | Invest Economic Calendar |
+| 触发 | Cron：`0 8,22 * * 1-5`（北京时间工作日 **08:00** 与 **22:00**） |
+| Instructions | 粘贴 `scheduler/prompt-economic-calendar.md`「---」以下内容 + 文末 `JIN10_BEARER_TOKEN=你的Token` |
+| Tools | 终端即可；**不要**挂金十 MCP；不开 PR；不发飞书 |
+
+**时区提醒**：Cursor cron 若按 UTC：北京 08:00/22:00 = UTC `0 0,14 * * 1-5`。
+
+**硬规则**：Agent 只执行 `python3 tools/jin10_economic_calendar.py --commit --push`；禁止在对话里调 `list_calendar`（否则单次数万 token）。
+
+### Automation ⑤：美股收盘日报 — ⏸ 已暂停
 
 | 项 | 填什么 |
 |----|--------|
@@ -163,14 +188,14 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ## 第 5 步：先手动跑一次
 
-改完提示词后点 **Run now / 立即运行**（可分别验证 A股收盘、周度回顾、月度复盘；美股收盘已暂停勿跑）。
+改完提示词后点 **Run now / 立即运行**（可分别验证 A股收盘、周度回顾、月度复盘、财经日历；美股收盘已暂停勿跑）。
 
 ### 成功时你应该看到什么
 
-1. **飞书群**收到机器人消息（标题含「A股收盘日报」「周度回顾」或「月度交易复盘」）
-2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md` 或 `output/reviews/monthly/monthly-YYYY-MM.md` 出现；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
-4. 本机：`git pull origin main` 后 `output/` 同步
+1. **飞书群**收到机器人消息（标题含「A股收盘日报」「周度回顾」或「月度交易复盘」；**财经日历无飞书**）
+2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`（日历任务则看脚本 `count=` / push）；**没有**「Opened pull request」
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md`、`output/reviews/monthly/monthly-YYYY-MM.md` 或 `data/public/economic-calendar.json` 更新；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+4. 本机：`git pull origin main` 后 `output/` / `data/public/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。
 
@@ -198,20 +223,10 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ---
 
-## 第 5.5 步：财经日历本机 cron（方案 2，可选）
+## 第 5.5 步：财经日历本机脚本（可选，与 Automation 二选一）
 
-不经 Cursor LLM。本机需已有 `JIN10_BEARER_TOKEN`（与 Cursor MCP 同一 Token；可写进 `~/.zshrc` 或仓库 `.env`）。
-
-```bash
-# crontab -e（macOS 注意 PATH；或用完整 python 路径）
-0 8 * * 1-5  cd /Users/mac/Documents/invest-agent && /usr/bin/env bash scheduler/run-economic-calendar.sh >>/tmp/jin10-calendar.log 2>&1
-0 22 * * 1-5 cd /Users/mac/Documents/invest-agent && /usr/bin/env bash scheduler/run-economic-calendar.sh >>/tmp/jin10-calendar.log 2>&1
-```
-
-手动试跑：`bash scheduler/run-economic-calendar.sh`  
-只写不推：`bash scheduler/run-economic-calendar.sh --no-push`
-
-无法本机 cron 时，再建 Automation，Instructions 贴 `scheduler/prompt-economic-calendar.md`（**禁止** Agent 直接调金十日历）。
+已用 Cursor Automation 时 **不要再加本机 cron**，否则会双写冲突。  
+仅本机调试：`bash scheduler/run-economic-calendar.sh` 或 `--no-push`。
 
 ---
 

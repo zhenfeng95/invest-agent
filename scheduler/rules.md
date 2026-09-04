@@ -1,20 +1,19 @@
 # 当前启用方案：A'（Cursor Automations）
 
-> 当前跑 **3 个** LLM Automation：**A股收盘日报** + **周度回顾** + **月度交易复盘**。  
-> **财经日历**走方案 2（脚本直连金十，**不经 LLM**）；优先本机 cron，Cloud Agent 仅作备选。  
-> 执行器（日报类）：**Cursor Automations（Cloud Agent）**，不再依赖 Claude Code scheduler。
+> 当前跑 **4 个** Automation：**A股收盘日报** + **周度回顾** + **月度交易复盘** + **财经日历**。  
+> 执行器：**Cursor Automations（Cloud Agent）**。财经日历 Agent **只跑脚本**（勿把 `list_calendar` 读进上下文）。
 
 | Automation / Job | Cron（北京时间） | 说明 |
 |------------------|------------------|------|
 | **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
 | **② 周度回顾** | `0 10 * * 0` | 每周日 10:00（对齐月度骨架；日报 rg 薄读；§7 供月度） |
 | **③ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（CSV + 周报 §7；**不读**日报） |
-| **④ 财经日历 JSON** | `0 8,22 * * 1-5` + 建议周一 `0 8` | 方案 2：`scheduler/run-economic-calendar.sh` → `data/public/economic-calendar.json`；LLM≈0 |
+| **④ 财经日历 JSON** | `0 8,22 * * 1-5` | Agent 跑 `jin10_economic_calendar.py --commit --push` → `data/public/economic-calendar.json`；提示词 `prompt-economic-calendar.md` |
 
 **已暂停**：美股收盘日报（原 08:00）；美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
 **已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
 
-**通知**：仅飞书自定义机器人 Webhook；不开 PR；不发邮件  
+**通知**：仅飞书自定义机器人 Webhook；不开 PR；不发邮件（**财经日历不发飞书**）  
 **存档**：写入 `output/` → commit → `scheduler/merge_to_main.sh` 并进 **main** 并删 `cursor/*` → 飞书（截断脚注为 main 上 GitHub 全文链接）  
 **飞书脚本**：`scheduler/feishu_send.py`（表格→条目 + 卡片）
 
@@ -22,14 +21,15 @@
 - `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
 - `prompt-weekly-review.md`（周度回顾 · ✅ A'）
 - `prompt-monthly-trade-review.md`（月度交易复盘 · ✅ A'）
+- `prompt-economic-calendar.md`（财经日历 · ✅ A'；Agent 只跑脚本）
 - `prompt-us-close-daily.md`（美股收盘日报精简版 · ⏸ 已暂停；完整版 `prompt-us-close-daily-origin.md`）
 - `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
 - `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含飞书接入）
-- 财经日历（方案 2）：`run-economic-calendar.sh` / `prompt-economic-calendar.md`
+- 本机手动：`run-economic-calendar.sh`（可选，与 Automation 二选一即可）
 
-月成本粗估约 **$35–65**（A股收盘精简版 + 周度回顾 4 次/月 + 月度复盘 1 次/月；视模型与 Run 次数）；财经日历脚本≈$0 LLM。务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$35–70**（原三任务约 $35–65 + 财经日历 Automation 编排约数百～两千 token/次 × 约 40 次/月）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -40,16 +40,14 @@
 
 ## 每日任务
 
-### 财经日历 JSON（工作日 08:00 / 22:00）— ✅ 方案 2 脚本
-- cron（推荐本机 / launchd，**不经 LLM**）:
-  - `0 8 * * 1-5` — 早盘前刷新 `actual` / 当日事件
-  - `0 22 * * 1-5` — 美盘数据高峰后补值（也可 `30 22`）
-  - 周一务必跑一次（与上重叠即可）
-- 脚本：`bash scheduler/run-economic-calendar.sh`（内部 `python3 tools/jin10_economic_calendar.py --commit --push`）
+### 财经日历 JSON（工作日 08:00 / 22:00）— ✅ A' Automation
+- cron: `0 8,22 * * 1-5`（北京时间；Cursor 若按 UTC 则为 `0 0,14 * * 1-5`）
+- 提示词：`scheduler/prompt-economic-calendar.md`
+- 执行：Cloud Agent **只**跑 `python3 tools/jin10_economic_calendar.py --commit --push`，非 main 再 `merge_to_main.sh`
 - 输出：`data/public/economic-calendar.json`（个人站直链 raw GitHub）
-- 密钥：`JIN10_BEARER_TOKEN`（环境或 `.env`，勿 commit）
-- Cloud 备选提示词：`scheduler/prompt-economic-calendar.md`（**禁止**把日历读进上下文；只跑脚本）
-- 说明：金十 `list_calendar` 为当前自然周；整包进 LLM 约数万 token，故禁止 Agent 拉日历
+- 密钥：Instructions 文末 `JIN10_BEARER_TOKEN=...`（勿 commit；不发飞书）
+- **禁止**：Agent 直接调 jin10 `list_calendar` / 把日历 JSON 读进上下文（单次可烧数万 token）
+- 本机可选：`bash scheduler/run-economic-calendar.sh`（与 Automation 勿重复双开）
 
 ### 财经日报（每日 08:00）— 暂未启用
 - cron: `0 8 * * *`
