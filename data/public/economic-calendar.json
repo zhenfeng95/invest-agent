@@ -1,21 +1,11 @@
 {
-  "updated_at": "2026-09-07T08:00:40+08:00",
+  "updated_at": "2026-09-07T22:02:40+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
   "coverage": "current_natural_week_mon_sun",
   "count": 231,
   "events": [
-    {
-      "pub_time": "2026-09-07 00:00",
-      "star": 3,
-      "title": "中国8月外汇储备(亿美元)",
-      "previous": "34187.8",
-      "consensus": "34250",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
     {
       "pub_time": "2026-09-07 07:50",
       "star": 2,
@@ -32,9 +22,9 @@
       "title": "澳大利亚8月季调后ANZ总招聘广告年率",
       "previous": "2.1",
       "consensus": null,
-      "actual": null,
+      "actual": "7.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 09:30",
@@ -42,9 +32,9 @@
       "title": "澳大利亚8月季调后ANZ总招聘广告月率",
       "previous": "0.80",
       "consensus": null,
-      "actual": null,
+      "actual": "2.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -52,9 +42,9 @@
       "title": "新加坡7月季调后零售销售月率",
       "previous": "1.00",
       "consensus": null,
-      "actual": null,
+      "actual": "0.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -62,9 +52,9 @@
       "title": "新加坡7月零售销售年率",
       "previous": "4.00",
       "consensus": null,
-      "actual": null,
+      "actual": "1.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -72,9 +62,9 @@
       "title": "日本7月同步指标初值",
       "previous": "118.5",
       "consensus": "120.3",
-      "actual": null,
+      "actual": "120.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -82,9 +72,9 @@
       "title": "日本7月同步指标月率初值",
       "previous": "0.6",
       "consensus": null,
-      "actual": null,
+      "actual": "1.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -92,9 +82,9 @@
       "title": "日本7月领先指标初值",
       "previous": "116.5",
       "consensus": "118",
-      "actual": null,
+      "actual": "117.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 13:00",
@@ -102,9 +92,9 @@
       "title": "日本7月领先指标月率初值",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "1.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 14:00",
@@ -112,9 +102,9 @@
       "title": "德国7月季调后工业产出月率",
       "previous": "0.20",
       "consensus": "0.1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1.1",
+      "revised": "0",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 14:00",
@@ -122,9 +112,9 @@
       "title": "德国7月工作日调整后工业产出年率",
       "previous": "-0.10",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 14:00",
@@ -132,9 +122,9 @@
       "title": "英国8月Halifax季调后房价指数月率",
       "previous": "0",
       "consensus": "0.1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.2",
+      "revised": "-0.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 14:00",
@@ -142,9 +132,9 @@
       "title": "英国8月Halifax季调后房价指数年率",
       "previous": "0.1",
       "consensus": "0.2",
-      "actual": null,
+      "actual": "-0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 15:00",
@@ -152,9 +142,9 @@
       "title": "瑞士8月季调后失业率",
       "previous": "3.10",
       "consensus": "3.1",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-07 15:00",
@@ -162,9 +152,9 @@
       "title": "瑞士8月外汇储备(亿瑞郎)",
       "previous": "7682.6",
       "consensus": null,
-      "actual": null,
+      "actual": "7700.73",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 15:00",
@@ -172,9 +162,19 @@
       "title": "瑞士8月未季调失业率",
       "previous": "3.00",
       "consensus": null,
-      "actual": null,
+      "actual": "3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-09-07 16:06",
+      "star": 3,
+      "title": "中国8月外汇储备(亿美元)",
+      "previous": "34187.8",
+      "consensus": "34250",
+      "actual": "34383.25",
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-09-07 16:30",
@@ -182,9 +182,9 @@
       "title": "中国香港8月外汇储备(亿美元)",
       "previous": "4478",
       "consensus": null,
-      "actual": null,
+      "actual": "4429",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-07 16:30",
@@ -192,9 +192,9 @@
       "title": "欧元区9月Sentix投资者信心指数",
       "previous": "0.9",
       "consensus": "2",
-      "actual": null,
+      "actual": "5.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 17:00",
@@ -202,9 +202,9 @@
       "title": "新加坡8月外汇储备(亿美元)",
       "previous": "4278.7",
       "consensus": null,
-      "actual": null,
+      "actual": "4330",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 17:00",
@@ -212,9 +212,9 @@
       "title": "欧元区第二季度GDP年率终值",
       "previous": "1.00",
       "consensus": "1.00",
-      "actual": null,
+      "actual": "1.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 17:00",
@@ -222,9 +222,9 @@
       "title": "欧元区第二季度季调后就业人数季率终值",
       "previous": "0.10",
       "consensus": "0.1",
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-07 17:00",
@@ -232,9 +232,9 @@
       "title": "欧元区第二季度GDP季率终值",
       "previous": "0.40",
       "consensus": "0.40",
-      "actual": null,
+      "actual": "0.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-07 17:00",
@@ -242,16 +242,16 @@
       "title": "欧元区第二季度季调后就业人数年率终值",
       "previous": "0.50",
       "consensus": "0.5",
-      "actual": null,
+      "actual": "0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-08 00:00",
       "star": 3,
       "title": "中国8月以美元计算贸易帐(亿美元)",
       "previous": "1125",
-      "consensus": null,
+      "consensus": "1200",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -271,7 +271,7 @@
       "star": 2,
       "title": "中国8月以美元计算出口年率",
       "previous": "23.90",
-      "consensus": "27.60",
+      "consensus": "25",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -281,7 +281,7 @@
       "star": 2,
       "title": "中国8月以美元计算进口年率",
       "previous": "27.50",
-      "consensus": "31.20",
+      "consensus": "30",
       "actual": null,
       "revised": "27.60",
       "affect_txt": ""
@@ -411,7 +411,7 @@
       "star": 3,
       "title": "日本7月贸易帐(亿日元)",
       "previous": "-1352",
-      "consensus": "-2684",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -421,7 +421,7 @@
       "star": 2,
       "title": "日本7月季调后经常账(亿日元)",
       "previous": "13969",
-      "consensus": "24780",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -571,7 +571,7 @@
       "star": 2,
       "title": "日本8月经济观察家现况指数",
       "previous": "45.7",
-      "consensus": "46.2",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
