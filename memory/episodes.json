@@ -1,7 +1,7 @@
 {
   "episodes": [
     {
-      "id": "ep-054",
+      "id": "ep-055",
       "date": "2026-09-04",
       "type": "trade",
       "summary": "美股：GOOGL平仓+$0.04；QQQ减仓+$0.04余0.01",
@@ -11,6 +11,21 @@
         "QQQ"
       ],
       "outcome": "US realized ~+$0.08"
+    },
+    {
+      "id": "ep-054",
+      "date": "2026-09-06",
+      "type": "weekly_review",
+      "summary": "2026-09-1W 周度回顾：A -¥38，US +$0.07",
+      "detail": "区间8/31–9/6；GY-55/YH+17；环境66→47上证破MA5；纪律：GY非池开仓+鲁北迟卖、YH非池002632；存档 weekly-2026-09-1W.md",
+      "tickers": [
+        "600727",
+        "002369",
+        "603912",
+        "002632",
+        "159338"
+      ],
+      "outcome": "A net -38 CNY; discipline issues flagged"
     },
     {
       "id": "ep-053",
