@@ -1,6 +1,18 @@
 {
   "episodes": [
     {
+      "id": "ep-054",
+      "date": "2026-09-04",
+      "type": "trade",
+      "summary": "美股：GOOGL平仓+$0.04；QQQ减仓+$0.04余0.01",
+      "detail": "9/4补录：GOOGL卖0.01@$343（相对加权339.50）；QQQ卖0.01@$720（相对加权716.33）；未计费。US仍持IBIT/SGOV/VOO/QQQ0.01/PDD。",
+      "tickers": [
+        "GOOGL",
+        "QQQ"
+      ],
+      "outcome": "US realized ~+$0.08"
+    },
+    {
       "id": "ep-053",
       "date": "2026-09-04",
       "type": "infra",
