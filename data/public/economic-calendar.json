@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T08:03:05+08:00",
+  "updated_at": "2026-09-08T22:03:02+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -247,86 +247,6 @@
       "affect_txt": "影响较小"
     },
     {
-      "pub_time": "2026-09-08 00:00",
-      "star": 3,
-      "title": "中国8月以美元计算贸易帐(亿美元)",
-      "previous": "1125",
-      "consensus": "1200",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 3,
-      "title": "中国8月贸易帐(亿元)",
-      "previous": "7670.7",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 2,
-      "title": "中国8月以美元计算出口年率",
-      "previous": "23.90",
-      "consensus": "25",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 2,
-      "title": "中国8月以美元计算进口年率",
-      "previous": "27.50",
-      "consensus": "30",
-      "actual": null,
-      "revised": "27.60",
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 2,
-      "title": "中国8月出口年率",
-      "previous": "17.80",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 2,
-      "title": "中国8月进口年率",
-      "previous": "21.20",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 1,
-      "title": "中国8月出口总额(亿元)",
-      "previous": "27125.1",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-08 00:00",
-      "star": 1,
-      "title": "中国8月进口总额(亿元)",
-      "previous": "19454.4",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-09-08 06:45",
       "star": 1,
       "title": "新西兰第二季度制造业活动量季率",
@@ -522,9 +442,9 @@
       "title": "澳大利亚9月西太平洋/墨尔本消费者信心指数",
       "previous": "88.9",
       "consensus": null,
-      "actual": null,
+      "actual": "84.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 08:30",
@@ -532,9 +452,9 @@
       "title": "澳大利亚9月西太平洋/墨尔本消费者信心指数月率",
       "previous": "6.00",
       "consensus": null,
-      "actual": null,
+      "actual": "-5.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 09:30",
@@ -542,9 +462,9 @@
       "title": "澳大利亚8月NAB商业信心指数",
       "previous": "-6",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-8",
+      "revised": "-7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 09:30",
@@ -552,9 +472,89 @@
       "title": "澳大利亚8月NAB商业景气指数",
       "previous": "4",
       "consensus": null,
-      "actual": null,
+      "actual": "-1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-08 10:34",
+      "star": 2,
+      "title": "中国8月出口年率",
+      "previous": "17.80",
+      "consensus": null,
+      "actual": "18.6",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:34",
+      "star": 2,
+      "title": "中国8月进口年率",
+      "previous": "21.20",
+      "consensus": null,
+      "actual": "21.7",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:35",
+      "star": 3,
+      "title": "中国8月贸易帐(亿元)",
+      "previous": "7670.7",
+      "consensus": null,
+      "actual": "8093",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:36",
+      "star": 3,
+      "title": "中国8月以美元计算贸易帐(亿美元)",
+      "previous": "1125",
+      "consensus": "1200",
+      "actual": "1190.9",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:36",
+      "star": 1,
+      "title": "中国8月出口总额(亿元)",
+      "previous": "27125.1",
+      "consensus": null,
+      "actual": "27274.1",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:36",
+      "star": 1,
+      "title": "中国8月进口总额(亿元)",
+      "previous": "19454.4",
+      "consensus": null,
+      "actual": "19181.1",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:37",
+      "star": 2,
+      "title": "中国8月以美元计算出口年率",
+      "previous": "23.90",
+      "consensus": "25",
+      "actual": "25",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-08 10:37",
+      "star": 2,
+      "title": "中国8月以美元计算进口年率",
+      "previous": "27.50",
+      "consensus": "30",
+      "actual": "28.2",
+      "revised": "27.60",
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-09-08 13:00",
@@ -562,9 +562,9 @@
       "title": "日本8月经济观察家前景指数",
       "previous": "45.8",
       "consensus": null,
-      "actual": null,
+      "actual": "48.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 13:00",
@@ -572,39 +572,39 @@
       "title": "日本8月经济观察家现况指数",
       "previous": "45.7",
       "consensus": null,
-      "actual": null,
+      "actual": "46.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 14:00",
       "star": 3,
       "title": "德国7月季调后贸易帐(亿欧元)",
       "previous": "154",
-      "consensus": null,
-      "actual": null,
+      "consensus": "159",
+      "actual": "213",
       "revised": "153",
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 14:00",
       "star": 2,
       "title": "德国7月季调后出口月率",
       "previous": "0.90",
-      "consensus": "0",
-      "actual": null,
+      "consensus": "0.1",
+      "actual": "-0.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 14:00",
       "star": 2,
       "title": "德国7月季调后进口月率",
       "previous": "4.40",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "-0.9",
+      "actual": "-5.7",
+      "revised": "4.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 14:45",
@@ -612,9 +612,9 @@
       "title": "法国7月贸易帐(亿欧元)",
       "previous": "-58.47",
       "consensus": null,
-      "actual": null,
+      "actual": "-66.69",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 14:45",
@@ -622,9 +622,9 @@
       "title": "法国7月出口(亿欧元)",
       "previous": "545.37",
       "consensus": null,
-      "actual": null,
+      "actual": "546.77",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 14:45",
@@ -632,9 +632,9 @@
       "title": "法国7月经常帐(亿欧元)",
       "previous": "-14",
       "consensus": null,
-      "actual": null,
+      "actual": "-47",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 14:45",
@@ -642,9 +642,9 @@
       "title": "法国7月进口(亿欧元)",
       "previous": "603.84",
       "consensus": null,
-      "actual": null,
+      "actual": "613.46",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 16:00",
@@ -652,19 +652,19 @@
       "title": "中国台湾8月季调后CPI月率",
       "previous": "0.18",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.13",
+      "revised": "0.19",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 16:00",
       "star": 1,
       "title": "中国台湾8月未季调CPI年率",
       "previous": "2.54",
-      "consensus": null,
-      "actual": null,
+      "consensus": "2.3",
+      "actual": "2.04",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 18:00",
@@ -672,9 +672,9 @@
       "title": "美国8月NFIB小型企业信心指数",
       "previous": "99.8",
       "consensus": null,
-      "actual": null,
+      "actual": "98.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 20:00",
@@ -682,9 +682,9 @@
       "title": "加拿大至9月4日全国经济信心指数",
       "previous": "51.7",
       "consensus": null,
-      "actual": null,
+      "actual": "51.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 22:00",
@@ -692,9 +692,9 @@
       "title": "美国8月谘商会就业趋势指数",
       "previous": "107.71",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "108.53",
+      "revised": "107.76",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 23:00",
@@ -831,7 +831,7 @@
       "star": 2,
       "title": "美国7月消费信贷(亿美元)",
       "previous": "141.73",
-      "consensus": "120",
+      "consensus": "116.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -921,7 +921,7 @@
       "star": 2,
       "title": "中国8月PPI年率",
       "previous": "3.50",
-      "consensus": "3.70",
+      "consensus": "3.6",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -941,7 +941,7 @@
       "star": 3,
       "title": "法国7月工业产出月率",
       "previous": "0.10",
-      "consensus": "0.3",
+      "consensus": "0.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -981,7 +981,7 @@
       "star": 1,
       "title": "中国台湾8月出口年率",
       "previous": "32.90",
-      "consensus": null,
+      "consensus": "35.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -991,7 +991,7 @@
       "star": 1,
       "title": "中国台湾8月贸易帐(亿美元)",
       "previous": "171.7",
-      "consensus": null,
+      "consensus": "197.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1001,7 +1001,7 @@
       "star": 1,
       "title": "中国台湾8月进口年率",
       "previous": "37.40",
-      "consensus": null,
+      "consensus": "40",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
