@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-08T17:46:00+08:00",
+    "updated_at": "2026-09-08T18:20:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -74,6 +74,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-08T18:20:00+08:00",
+            "decision": "X推文草稿：Lebara UK eSIM 平替 giffgaff",
+            "detail": "对齐 eSIM.GG 短版节奏；加权~273；教程 https://zheninvest.com/tutorials/lebara-account-guide；存档 output/content/tweet-2026-09-08-lebara.md"
+        },
         {
             "at": "2026-09-08T17:46:00+08:00",
             "decision": "完成 2026-09-08 美股收盘日报（复盘9/4）",

@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-058",
+      "date": "2026-09-08",
+      "type": "content",
+      "summary": "X推文：Lebara UK eSIM 平替 giffgaff",
+      "detail": "免费X加权~273；观点=需要+44不必只盯giffgaff；教程 lebara-account-guide；存档 tweet-2026-09-08-lebara.md",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-057",
       "date": "2026-09-08",
       "type": "infra",
