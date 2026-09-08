@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-057",
+      "date": "2026-09-08",
+      "type": "infra",
+      "summary": "启用美股收盘精简版；§4加财报日历",
+      "detail": "prompt-us-close-daily.md §0–§7；财报自 origin 迁入、放在板块轮动前；rules/SETUP/my-soul同步；须重贴 Automation",
+      "tickers": [],
+      "outcome": "US close daily re-enabled"
+    },
+    {
       "id": "ep-056",
       "date": "2026-09-08",
       "type": "trade",

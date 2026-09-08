@@ -1,16 +1,17 @@
 # 当前启用方案：A'（Cursor Automations）
 
-> 当前跑 **4 个** Automation：**A股收盘日报** + **周度回顾** + **月度交易复盘** + **财经日历**。  
+> 当前跑 **5 个** Automation：**A股收盘日报** + **美股收盘日报** + **周度回顾** + **月度交易复盘** + **财经日历**。  
 > 执行器：**Cursor Automations（Cloud Agent）**。财经日历 Agent **只跑脚本**（勿把 `list_calendar` 读进上下文）。
 
 | Automation / Job | Cron（北京时间） | 说明 |
 |------------------|------------------|------|
 | **① A股收盘日报** | `0 17 * * 1-5` | 工作日 17:00（当日收盘全复盘 + 明日应对；错开刚收盘高峰） |
-| **② 周度回顾** | `0 10 * * 0` | 每周日 10:00（对齐月度骨架；日报 rg 薄读；§7 供月度） |
-| **③ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（CSV + 周报 §7；**不读**日报） |
-| **④ 财经日历 JSON** | `0 8,22 * * 1-5` | Agent 跑 `jin10_economic_calendar.py --commit --push` → `data/public/economic-calendar.json`；提示词 `prompt-economic-calendar.md` |
+| **② 美股收盘日报** | `0 8 * * 1-5` | 工作日 08:00（复盘昨夜美股；精简版含财报日历） |
+| **③ 周度回顾** | `0 10 * * 0` | 每周日 10:00（对齐月度骨架；日报 rg 薄读；§7 供月度） |
+| **④ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（CSV + 周报 §7；**不读**日报） |
+| **⑤ 财经日历 JSON** | `0 8,22 * * 1-5` | Agent 跑 `jin10_economic_calendar.py --commit --push` → `data/public/economic-calendar.json`；提示词 `prompt-economic-calendar.md` |
 
-**已暂停**：美股收盘日报（原 08:00）；美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
+**已暂停**：美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
 **已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
 
 **通知**：仅飞书自定义机器人 Webhook；不开 PR；不发邮件（**财经日历不发飞书**）  
@@ -19,17 +20,17 @@
 
 提示词见同目录：
 - `prompt-ashare-close-daily.md`（A股收盘日报 · ✅ A'）
+- `prompt-us-close-daily.md`（美股收盘日报精简版 · ✅ A'；完整版 `prompt-us-close-daily-origin.md`）
 - `prompt-weekly-review.md`（周度回顾 · ✅ A'）
 - `prompt-monthly-trade-review.md`（月度交易复盘 · ✅ A'）
 - `prompt-economic-calendar.md`（财经日历 · ✅ A'；Agent 只跑脚本）
-- `prompt-us-close-daily.md`（美股收盘日报精简版 · ⏸ 已暂停；完整版 `prompt-us-close-daily-origin.md`）
 - `prompt-premarket.md`（美股盘前 · ⏸ 已暂停）
 - `prompt-ashare-premarket.md`（A股盘前 · ⏸ 已暂停）
 - `prompt-signals.md`（已停用，仅存档）
 - 上手：`SETUP-A-prime.md`（含飞书接入）
 - 本机手动：`run-economic-calendar.sh`（可选，与 Automation 二选一即可）
 
-月成本粗估约 **$35–70**（原三任务约 $35–65 + 财经日历 Automation 编排约数百～两千 token/次 × 约 40 次/月）；务必在 Cursor Dashboard 设消费上限。
+月成本粗估约 **$50–90**（A股+美股收盘 + 周/月复盘 + 财经日历编排）；务必在 Cursor Dashboard 设消费上限。
 
 ---
 
@@ -79,13 +80,13 @@
 - 1-2 句核心判断/提醒
 ```
 
-### 美股收盘日报（工作日 08:00）— ⏸ 已暂停
-- cron: `0 8 * * 1-5`（历史；Automation 请 **Pause**）
+### 美股收盘日报（工作日 08:00）— ✅ A' 启用
+- cron: `0 8 * * 1-5`（北京时间；复盘昨夜美股；与财经日历同点触发，二者独立 Automation）
 - 提示词：`scheduler/prompt-us-close-daily.md`（**精简版**；完整版备查 `prompt-us-close-daily-origin.md`）
-- **正文连续 §0–§6**：0总结 / 1大盘 / 2宏观 / 3板块 / 4轮动 / 5风险 / 6结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、财报日历、机构资金流、明日计划专章
-- 输出（暂停期间勿写）：`output/daily/us-close-YYYY-MM-DD.md`
+- **正文连续 §0–§7**：0总结 / 1大盘 / 2宏观 / 3板块 / **4财报日历与解读** / 5轮动 / 6风险 / 7结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、机构资金流、明日计划专章
+- 输出：`output/daily/us-close-YYYY-MM-DD.md`
 - 飞书标题：`美股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
-- 说明：篇幅长、搜索多；暂停以控成本；恢复时重开 Automation 即可
+- 说明：精简版控成本；改 prompt 后须 **重贴** Automations Instructions + 确认 **Enable**
 
 ### A股收盘日报（工作日 17:00）— ✅ A' 启用
 - cron: `0 17 * * 1-5`（北京时间；错开 15:00–16:00 刚收盘高峰）
@@ -210,7 +211,7 @@ Automations 触发 → Phase 1（加载 soul + memory）→ Phase 3（执行预�
 | 任务 | Cron (UTC+8) | 状态 | 输出目录 |
 |------|--------------|------|----------|
 | A股收盘日报 | `0 17 * * 1-5` | ✅ A' | output/daily/ |
-| 美股收盘日报 | `0 8 * * 1-5` | ⏸ 已暂停 | output/daily/ |
+| 美股收盘日报 | `0 8 * * 1-5` | ✅ A' | output/daily/ |
 | 美股盘前提醒 | `0 21 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | A股盘前提醒 | `0 9 * * 1-5` | ⏸ 已暂停 | output/daily/ |
 | 合并抄底信号 | `0 9 * * *` | ⏸ 停用 | output/signals/ |

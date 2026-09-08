@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-08T17:05:00+08:00",
+    "updated_at": "2026-09-08T17:40:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -74,6 +74,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-08T17:40:00+08:00",
+            "decision": "启用美股收盘日报精简版；§4接入财报日历",
+            "detail": "prompt §0–§7（财报在板块轮动前）；rules/SETUP/my-soul已改；须 Automations Enable + 重贴 Instructions + FEISHU_WEBHOOK_URL"
+        },
         {
             "at": "2026-09-08T17:05:00+08:00",
             "decision": "完成 2026-09-08 A股收盘日报（精简版）",
@@ -300,13 +305,18 @@
     "open_questions": [
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
-        "在 Cursor Automations 将「Invest US Close Daily」设为 Pause（仓库侧已标暂停）",
+        "Cursor Automations「Invest US Close Daily」：Enable/Unpause + 重贴 prompt-us-close-daily.md（§0–§7含财报）+ FEISHU_WEBHOOK_URL；commit/push 后生效",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
         "是否将「交易框架.md」纳入收盘日报必读，或继续只读「可执行交易框架.md」？",
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-09-08T17:40:00+08:00",
+            "changes": "通知偏好：美股收盘日报精简版✅启用（08:00）；正文§0–§7，§4=财报日历与解读（自完整版迁入，置于板块轮动前）；盘前仍暂停",
+            "reason": "用户要求开启美股收盘精简版任务，并从完整版迁入财报模块"
+        },
         {
             "updated_at": "2026-09-03T14:35:00+08:00",
             "changes": "GY止损：有效跌破MA5定量为（1）收盘<MA5且(MA5−收盘)/MA5≥2%，或（2）连续2日收盘<MA5，满足其一；盘中刺破不算；趋势线仍以收盘跌破为准暂不套2%/连破",
