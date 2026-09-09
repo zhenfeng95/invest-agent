@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T22:03:02+08:00",
+  "updated_at": "2026-09-09T08:05:01+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -702,9 +702,9 @@
       "title": "美国8月纽约联储1年通胀预期",
       "previous": "3.63",
       "consensus": null,
-      "actual": null,
+      "actual": "3.58",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -712,9 +712,9 @@
       "title": "美国至9月8日3个月国债竞拍-得标利率",
       "previous": "3.77",
       "consensus": null,
-      "actual": null,
+      "actual": "3.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -722,9 +722,9 @@
       "title": "美国至9月8日3个月国债竞拍-得标利率配置百分比",
       "previous": "66.77",
       "consensus": null,
-      "actual": null,
+      "actual": "20.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -732,9 +732,9 @@
       "title": "美国至9月8日3个月国债竞拍-投标倍数",
       "previous": "2.77",
       "consensus": null,
-      "actual": null,
+      "actual": "2.61",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -742,9 +742,9 @@
       "title": "美国至9月8日6个月国债竞拍-得标利率",
       "previous": "3.89",
       "consensus": null,
-      "actual": null,
+      "actual": "3.89",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -752,9 +752,9 @@
       "title": "美国至9月8日6个月国债竞拍-得标利率配置百分比",
       "previous": "49.27",
       "consensus": null,
-      "actual": null,
+      "actual": "79.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-08 23:30",
@@ -762,9 +762,9 @@
       "title": "美国至9月8日6个月国债竞拍-投标倍数",
       "previous": "2.63",
       "consensus": null,
-      "actual": null,
+      "actual": "2.88",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -772,9 +772,9 @@
       "title": "美国至9月8日3年期国债竞拍-得标利率",
       "previous": "4.29",
       "consensus": null,
-      "actual": null,
+      "actual": "4.474",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -782,9 +782,9 @@
       "title": "美国至9月8日3年期国债竞拍-得标利率配置百分比",
       "previous": "18.31",
       "consensus": null,
-      "actual": null,
+      "actual": "29.35",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -792,9 +792,9 @@
       "title": "美国至9月8日3年期国债竞拍-投标倍数",
       "previous": "2.71",
       "consensus": null,
-      "actual": null,
+      "actual": "2.72",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -802,9 +802,9 @@
       "title": "美国至9月8日6周国债竞拍-得标利率",
       "previous": "3.74",
       "consensus": null,
-      "actual": null,
+      "actual": "3.74",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -812,9 +812,9 @@
       "title": "美国至9月8日6周国债竞拍-得标利率配置百分比",
       "previous": "52.35",
       "consensus": null,
-      "actual": null,
+      "actual": "46.45",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-09 01:00",
@@ -822,9 +822,9 @@
       "title": "美国至9月8日6周国债竞拍-投标倍数",
       "previous": "2.85",
       "consensus": null,
-      "actual": null,
+      "actual": "2.93",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 03:00",
@@ -832,9 +832,9 @@
       "title": "美国7月消费信贷(亿美元)",
       "previous": "141.73",
       "consensus": "116.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "180.6",
+      "revised": "145.6",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-09 07:00",
@@ -842,9 +842,9 @@
       "title": "日本9月路透短观制造业景气判断指数",
       "previous": "18",
       "consensus": null,
-      "actual": null,
+      "actual": "21",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 07:00",
@@ -852,9 +852,9 @@
       "title": "日本9月路透短观非制造业景气判断指数",
       "previous": "28",
       "consensus": null,
-      "actual": null,
+      "actual": "29",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 07:00",
@@ -862,9 +862,9 @@
       "title": "韩国8月失业率",
       "previous": "2.80",
       "consensus": null,
-      "actual": null,
+      "actual": "2.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-09 07:50",
@@ -872,9 +872,9 @@
       "title": "日本8月货币供应M2年率",
       "previous": "2.20",
       "consensus": null,
-      "actual": null,
+      "actual": "2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-09 07:50",
@@ -882,9 +882,9 @@
       "title": "日本8月广义货币流动性年率",
       "previous": "4.4",
       "consensus": null,
-      "actual": null,
+      "actual": "4.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-09 07:50",
@@ -892,9 +892,9 @@
       "title": "日本8月货币供应M3年率",
       "previous": "1.40",
       "consensus": null,
-      "actual": null,
+      "actual": "1.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-09 09:30",
