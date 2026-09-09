@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-09T17:10:00+08:00",
+    "updated_at": "2026-09-09T17:30:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -88,6 +88,16 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-09T17:30:00+08:00",
+            "decision": "X推文草稿：DNSHE 免费域名邀请",
+            "detail": "对齐 Lebara 节奏；码 BPAB2F33AC；教程 dnshe-free-domain-guide；存档 output/content/tweet-2026-09-09-dnshe.md"
+        },
+        {
+            "at": "2026-09-09T17:30:00+08:00",
+            "decision": "X推文草稿：DNSHE 免费域名邀请",
+            "detail": "对齐 Lebara 节奏；码 BPAB2F33AC；教程 dnshe-free-domain-guide；存档 output/content/tweet-2026-09-09-dnshe.md"
+        },
         {
             "at": "2026-09-09T17:10:00+08:00",
             "decision": "完成 2026-09-09 A股收盘日报（精简版）",
