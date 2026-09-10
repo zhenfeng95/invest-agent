@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-09T17:30:00+08:00",
+    "updated_at": "2026-09-10T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -88,6 +88,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-10T08:10:00+08:00",
+            "decision": "完成 2026-09-10 美股收盘日报（复盘9/9）",
+            "detail": "Brent $101.21/10Y 4.835%；SPX-0.5%/QQQ-0.29%；XLE+0.83%；AMD+3%/NVDA-0.9%；Apple iPhone Duo；ORCL 9/10；存档 output/daily/us-close-2026-09-10.md"
+        },
         {
             "at": "2026-09-09T17:30:00+08:00",
             "decision": "X推文草稿：DNSHE 免费域名邀请",
@@ -347,9 +352,9 @@
     "market_regime": {
         "equity": "A股：GY持603390通达电气100@¥10.92（浮+0.18%）；YH持002452长高电气100@¥12.33（浮+0.24%）；HT持159338 600@¥1.212（浮-0.33%）+512480 100@¥1.00（浮-2%）；9/9 YH平002303粗算+¥18",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.01@$716.33；VOO 0.03@$706；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL 0.01@$335（9/8重开）",
-        "crypto": "IBIT 0.02@$35.73；9/8收$44.39(-1.9%)；BTC~$79.0K",
-        "macro": "9/8：Brent~$99/WTI~$94地缘推升；10Y收4.786%；9月Fed hike~59%；PPI 9/11/CPI 9/12；VIX 15.72",
-        "notes": "9/9评分53轻仓试错偏防守；上证3951站MA5/MA60但MA10争夺；18556亿(-5.3%)；1746:3495、前100 59:40；通信/PCB vs AI/传媒；GY603390/YH002452/HT159338+512480；账户重心HT+YH；GY/YH非池开仓纪律问题"
+        "crypto": "IBIT 0.02@$35.73；9/9收$44.29(-0.23%)；BTC~$78.6-79K",
+        "macro": "9/9：Brent $101.21/WTI $96.05破百；10Y收4.835%（2023-11来高）；9月Fed hike~60%；PPI 9/10/CPI 9/11；VIX~16",
+        "notes": "9/9美股SPX-0.5%/QQQ-0.29%；XLE+0.83%/XLI-1.51%；AMD+3%/NVDA-0.9%；Apple折叠屏发布AAPL-0.25%；ORCL 9/10 AMC"
     },
     "open_questions": [
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
