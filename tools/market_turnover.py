@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""沪+深两市合计成交额：今日 / 较前一日 / 近5日均量（§1 量能）。
+"""沪+深+京合计成交额：今日 / 较前一日 / 近5日均量（§1 量能）。
 
 主源：腾讯 newfqkline（金额字段为万元；÷10000 → 亿）。
-口径：上证 000001 + 深成 399001 日成交额相加（与扶摇 snapshot 沪深 turnover 一致）。
+口径：上证 000001 + 深成 399001 + 北证50 899050 日成交额相加。
+说明：腾讯/东财对 899050 的日成交额字段与北交所全市场合计基本一致
+（可用东财 clist `m:0+t:81+s:2048` 全量 f6 加总对照），不是仅 50 成份。
 输出刻意极短，避免 Agent 读昨报烧 token。
 """
 
@@ -17,6 +19,7 @@ from zoneinfo import ZoneInfo
 
 _SH = "sh000001"
 _SZ = "sz399001"
+_BJ = "bj899050"  # 北交所全市场成交额（见模块说明）
 _URLS = (
     "https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get",
     "https://web.ifzq.gtimg.cn/appstock/app/newfqkline/get",
@@ -73,13 +76,15 @@ def analyze(bars: int = 20, expect_year: int | None = None) -> dict[str, Any]:
 
     sh = _fetch_bars(_SH, bars=bars)
     sz = _fetch_bars(_SZ, bars=bars)
+    bj = _fetch_bars(_BJ, bars=bars)
     by_sh = {d: a for d, a in sh}
     by_sz = {d: a for d, a in sz}
-    dates = sorted(set(by_sh) & set(by_sz))
+    by_bj = {d: a for d, a in bj}
+    dates = sorted(set(by_sh) & set(by_sz) & set(by_bj))
     if len(dates) < 2:
-        return {"error": "沪深可对齐交易日不足", "source": "tencent_newfqkline"}
+        return {"error": "沪深京可对齐交易日不足", "source": "tencent_newfqkline"}
 
-    series = [(d, by_sh[d] + by_sz[d]) for d in dates]
+    series = [(d, by_sh[d] + by_sz[d] + by_bj[d]) for d in dates]
     today_d, today_v = series[-1]
     prev_d, prev_v = series[-2]
     last5 = series[-5:] if len(series) >= 5 else series
@@ -103,6 +108,7 @@ def analyze(bars: int = 20, expect_year: int | None = None) -> dict[str, Any]:
         "缩量" if chg_pct is not None and chg_pct <= -3 else "平量"
     )
 
+    hs_yi = by_sh[today_d] + by_sz[today_d]
     return {
         "as_of": today_d,
         "prev_date": prev_d,
@@ -114,10 +120,17 @@ def analyze(bars: int = 20, expect_year: int | None = None) -> dict[str, Any]:
         "ma5_n": len(last5),
         "sh_yi": round(by_sh[today_d], 2),
         "sz_yi": round(by_sz[today_d], 2),
+        "bj_yi": round(by_bj[today_d], 2),
+        "hs_yi": round(hs_yi, 2),
         "label": label,
         "expect_year": expect_year,
         "source": "tencent_newfqkline",
-        "note": "沪000001+深399001；腾讯金额万元÷10000=亿；近5日=最近5个对齐交易日均量",
+        "scope": "沪深京",
+        "note": (
+            "沪000001+深399001+京bj899050；"
+            "899050 日成交额≈北交所全市场（非仅50成份）；"
+            "腾讯金额万元÷10000=亿；近5日=最近5个对齐交易日均量"
+        ),
     }
 
 
@@ -131,13 +144,13 @@ def one_liner(rep: dict[str, Any]) -> str:
         f"prev={rep['prev_yi']:.0f}亿({rep['prev_date']}) "
         f"chg={rep['chg_yi']:+.0f}亿({chg_s}) "
         f"ma5={rep['ma5_yi']:.0f}亿(n={rep['ma5_n']}) "
-        f"sh={rep['sh_yi']:.0f} sz={rep['sz_yi']:.0f} "
-        f"→{rep['label']} source={rep['source']}"
+        f"sh={rep['sh_yi']:.0f} sz={rep['sz_yi']:.0f} bj={rep['bj_yi']:.0f} "
+        f"→{rep['label']} scope=沪深京 source={rep['source']}"
     )
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="两市成交额：今日/昨/近5日均（腾讯）")
+    p = argparse.ArgumentParser(description="沪深京成交额：今日/昨/近5日均（腾讯）")
     p.add_argument("--bars", type=int, default=20, help="各指数拉取日K根数")
     p.add_argument("--year", type=int, default=None, help="期望年份（默认上海时区今年）")
     p.add_argument("--json", action="store_true")

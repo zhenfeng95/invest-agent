@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-064",
+      "date": "2026-09-10",
+      "type": "content",
+      "summary": "收盘推文禁持仓解读；重写A股9/10主贴",
+      "detail": "A/美股公开推文不再解读当前持仓个股；A股主贴改为钩子+结构分化+主线+盯什么；样例已更新。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-063",
       "date": "2026-09-10",
       "type": "content",
