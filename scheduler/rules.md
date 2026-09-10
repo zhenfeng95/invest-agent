@@ -84,8 +84,8 @@
 - cron: `0 8 * * 1-5`（北京时间；复盘昨夜美股；与财经日历同点触发，二者独立 Automation）
 - 提示词：`scheduler/prompt-us-close-daily.md`（**精简版**；完整版备查 `prompt-us-close-daily-origin.md`）
 - **正文连续 §0–§7**：0总结 / 1大盘 / 2宏观 / 3板块 / **4财报日历与解读** / 5轮动 / 6风险 / 7结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、机构资金流、明日计划专章
-- 输出：`output/daily/us-close-YYYY-MM-DD.md`
-- 飞书标题：`美股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
+- 输出：`output/daily/us-close-YYYY-MM-DD.md` + `output/content/tweet-YYYY-MM-DD-us-close.md`（日报后立即按 `templates/close-tweet.md`）
+- 飞书标题：`美股收盘推文 YYYY-MM-DD`（`feishu_send.py … tweet-…-us-close.md --section 主贴 --also us-close-….md`；**不推**日报整文；先 `merge_to_main.sh`）
 - 说明：精简版控成本；改 prompt 后须 **重贴** Automations Instructions + 确认 **Enable**
 
 ### A股收盘日报（工作日 17:00）— ✅ A' 启用
@@ -98,9 +98,9 @@
 - **持仓（§5）**：势能 **仅个股**、**同一表 6 行**（趋势/**资金**/板块/空间/周期势/筹码势）；判定列必须 `🔴 强` / `🟡 中` / `🟢 弱` / `⚪ 未获取`；表后 **势能总评**两行（灯+定性档｜半句综合；**禁止**几强几弱计数）+ `交易状态：`；**ETF/场内基金（如 159338）不做势能、不跑 CYQ**，只留总表+负面；空间/周期势优先扶摇日线，失败再用 `stock_ma_levels.py` / `stock_period_chg.py`；筹码势汇总（`stock_cyq_summary.py`：东财日K→腾讯换手兜底）；全节末尾 **1 句**`今日对照总纲：`；§6 持仓态度须带 **半句空间/盈亏比**；**不覆盖** my-soul 止损纪律；禁止另开势能/总纲专章
 - **选股分析（必做）**：读 `data/raw/screener/pool-latest.csv`（或用户指定文件）→ `tools/mtd_screener.py` 全量五选一 → stdout 命中/未命中两表写入日报 **§7**；**不跑** `--formula`、**不写** buysetup 文件；未交池则 §7 注明；**不写荐股、不代下单**
 - **§4 资金与板块共振**：行业线与概念线 **分列**；各含东财资金 TOP（流入/流出）+ 涨跌（行业双源共振/分歧；概念表）；同花顺资金仅备注；**4.3** 做交叉共振与轮动总判（行业去处 + 概念去处，去重）；禁止贴两侧完整 TOP5；禁止再拆回旧三章
-- 输出：`output/daily/ashare-close-YYYY-MM-DD.md`（用户池文件有更新则一并 commit）
-- 飞书标题：`A股收盘日报 YYYY-MM-DD`（`feishu_send.py` 推完整正文；先 `merge_to_main.sh`）
-- 说明：精简版控成本；用户池分析耗时随池大小变化；改数据源/章节后须 **重贴** Automations Instructions
+- 输出：`output/daily/ashare-close-YYYY-MM-DD.md` + `output/content/tweet-YYYY-MM-DD-ashare-close.md`（用户池文件有更新则一并 commit）
+- 飞书标题：`A股收盘推文 YYYY-MM-DD`（`feishu_send.py … tweet-…-ashare-close.md --section 主贴 --also ashare-close-….md`；**不推**日报整文；先 `merge_to_main.sh`）
+- 说明：精简版控成本；用户池分析耗时随池大小变化；改数据源/章节/推文后须 **重贴** Automations Instructions
 ### 美股盘前提醒（每日 21:00 / 美东 9:00）— ⏸ 已暂停
 - cron: `0 21 * * 1-5`（历史；Automation 请 Pause）
 - 提示词：`scheduler/prompt-premarket.md`（保留备查）

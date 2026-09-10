@@ -116,7 +116,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest A-Share Close Daily |
 | 触发 | Cron：`0 17 * * 1-5`（北京时间工作日 **17:00**；错开刚收盘高峰） |
-| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：含扶摇 MCP 优先 + 同花顺/东财回退；§1 操作提示+账户重心） |
+| Instructions | 粘贴 `scheduler/prompt-ashare-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：含扶摇 MCP 优先 + 同花顺/东财回退；§1 操作提示+账户重心；**日报后写收盘推文；飞书推主贴**） |
 
 **数据源**：能挂 MCP 时先打扶摇；云端无 MCP / 扶摇失败则按 prompt 内 P1/P2（同花顺网页、东财、本地 tools）写完，勿空等。
 
@@ -128,7 +128,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest US Close Daily |
 | 触发 | Cron：`0 8 * * 1-5`（北京时间工作日 **08:00**；复盘昨夜美股） |
-| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：§0–§7，含 §4 财报日历） |
+| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：§0–§7，含 §4 财报日历；**日报后写收盘推文；飞书推主贴**） |
 | 操作 | 若曾 Pause：点 **Enable / Unpause**；确认 cron 仍为工作日 08:00 |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。与财经日历同点触发无妨（独立 Automation）。
@@ -178,9 +178,9 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 ### 成功时你应该看到什么
 
-1. **飞书群**收到机器人消息（标题含「A股收盘日报」「美股收盘日报」「周度回顾」或「月度交易复盘」；**财经日历无飞书**）
+1. **飞书群**收到机器人消息（标题含「A股收盘推文」「美股收盘推文」「周度回顾」或「月度交易复盘」；**财经日历无飞书**；收盘类正文为主贴，脚注链到推文全文+日报）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`（日历任务则看脚本 `count=` / push）；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/daily/us-close-YYYY-MM-DD.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md`、`output/reviews/monthly/monthly-YYYY-MM.md` 或 `data/public/economic-calendar.json` 更新；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-ashare-close.md`、`output/daily/us-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-us-close.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md`、`output/reviews/monthly/monthly-YYYY-MM.md` 或 `data/public/economic-calendar.json` 更新；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` / `data/public/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。

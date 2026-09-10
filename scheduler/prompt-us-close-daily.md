@@ -160,6 +160,7 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 ## 输出要求
 
 - **必须**写入：`output/daily/us-close-YYYY-MM-DD.md`（北京日期）
+- **必须**在日报写完后立即按 `templates/close-tweet.md` 生成 X 推文：`output/content/tweet-YYYY-MM-DD-us-close.md`（主贴首行 `美股收盘｜M/D`；回复×3；每条加权 ≤280；数字只来自刚写的日报）
 - 表格优先；查不到标「暂无可靠数据」，不注水凑数
 - 有值得记录的信息可轻量更新 `memory/working.json`
 - 成本约束：精简版；允许搜索宏观/指数/十一板块/**财报日历与关键 EPS·指引**，**不要**搜主题风格 ETF（SMH/IGV/RSP 等）、均线参与度/涨跌家数/RSI、机构策略/ETF 流向、明日个股清单，**不要**为 Mag7/半导体/软件/电力名单做全文逐票异动搜索（财报节可点名已公布/即将公布者）；不要打开无关文件；不要跑 A 股任务
@@ -168,7 +169,7 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 Cloud Agent 常在 `cursor/xxxx` 临时分支上工作；阿里云只 `git pull` **main**，因此必须并进 main。
 
-1. 写完后 **commit**（说明：`us close daily YYYY-MM-DD`）
+1. 写完 **日报 + 推文** 后 **commit**（说明：`us close daily + tweet YYYY-MM-DD`）
 2. **不要** Create Pull Request
 3. 执行合并脚本（push 当前分支 → merge 进 main → push main → 删临时分支）：
 ```bash
@@ -182,13 +183,13 @@ bash scheduler/merge_to_main.sh
 **不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
-2. **仓库 md 可继续用表格**；飞书不渲染 Markdown 表格，推送必须走专用脚本：
+2. **飞书正文 = 收盘推文主贴**（不是整份日报）。推送必须走专用脚本，并加 `--section 主贴`；用 `--also` 附完整日报链接：
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/us-close-YYYY-MM-DD.md "美股收盘日报 YYYY-MM-DD"
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/content/tweet-YYYY-MM-DD-us-close.md "美股收盘推文 YYYY-MM-DD" --section 主贴 --also output/daily/us-close-YYYY-MM-DD.md
 ```
 若 URL 未在环境变量中，把第一个参数换成文末密钥里的完整 Webhook 字符串。
-3. **必须推送完整正文**（脚本读整个 md；超长才截断）。禁止只发几行极简版。
-4. 超长截断时脚注为 **main** 上的 GitHub 完整 blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）
+3. **禁止**再对 `us-close-YYYY-MM-DD.md` 整文发飞书。完整日报只存仓库；卡片脚注含推文全文链接 + 日报链接。
+4. 超长截断时脚注为 **main** 上的 GitHub blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）
 5. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
 6. 失败：运行摘要写明错误，仍保留 md + commit
 7. 不要手写 `curl` 贴原始 md（表格会很难看）

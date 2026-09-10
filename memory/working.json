@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-10T08:10:00+08:00",
+    "updated_at": "2026-09-10T11:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -88,6 +88,36 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-10T11:05:00+08:00",
+            "decision": "收盘推文接入Automations；飞书改推主贴",
+            "detail": "templates/close-tweet.md；us/ashare prompt收尾改写推文；feishu_send --section/--also；rules/SETUP/my-soul已同步；须重贴两Automation"
+        },
+        {
+            "at": "2026-09-10T10:44:00+08:00",
+            "decision": "X收盘主贴加市场标签前缀",
+            "detail": "固定首行：🇺🇸 美股收盘｜日期 / 🇨🇳 A股收盘｜日期；已改两篇样例主贴"
+        },
+        {
+            "at": "2026-09-10T10:42:00+08:00",
+            "decision": "X收盘推文评论改三回复模板",
+            "detail": "Market Structure / Macro或Flow / ZhenInvest View；已重写 us+ashare 9/9稿"
+        },
+        {
+            "at": "2026-09-10T10:28:00+08:00",
+            "decision": "写X双帖模板样例：美股9/9+A股9/9收盘",
+            "detail": "主贴结果/变化/流向/关注+判断；评论补关键数据。存档 tweet-2026-09-10-us-close.md / tweet-2026-09-10-ashare-close.md"
+        },
+        {
+            "at": "2026-09-10T10:22:00+08:00",
+            "decision": "用户拟X日更双帖：08:00美股收盘+17:00A股收盘",
+            "detail": "对齐方案A投研主轴；与现有美股/A股收盘日报时刻一致；建议短帖一观点非贴全文；坚持≥30天再评估；工具帖降权。"
+        },
+        {
+            "at": "2026-09-10T10:20:00+08:00",
+            "decision": "诊断X浏览量低：简介与近期推文品类错位",
+            "detail": "简介=A股趋势/美股定投/BTC+程序员基建；近期X主发DNSHE/Lebara/eSIM/宝时；投研主阵地在公众号势能复盘。建议X二选一：主投研日更或主数字基建工具，简介与发帖同轴。"
+        },
         {
             "at": "2026-09-10T08:10:00+08:00",
             "decision": "完成 2026-09-10 美股收盘日报（复盘9/9）",
@@ -257,96 +287,6 @@
             "at": "2026-09-02T09:19:00+08:00",
             "decision": "补录9/1美股：VOO+GOOGL碎股加仓",
             "detail": "US买VOO0.01@$700→0.04@加权$706；买GOOGL0.01@$336→0.02@加权$339.50。trades-2026-09.csv + positions-2026-09-01.json"
-        },
-        {
-            "at": "2026-09-01T18:15:00+08:00",
-            "decision": "月度交易复盘策略落盘：仅手动触发",
-            "detail": "templates/monthly-trade-review.md；输出 output/reviews/monthly-YYYY-MM.md；rules.md 标注不挂 Automations；9月结束后用模板内复制指令即可"
-        },
-        {
-            "at": "2026-09-01T18:00:00+08:00",
-            "decision": "完成2026-08整月A/美股交易复盘",
-            "detail": "已实现：A −¥14（GY−38/YH+24）；US +$0.34 FIFO。含浮盈估A≈−¥6、US≈+$0.38。主问题：GY无信号开仓+TCL破MA5迟止损；YH贴3%加速边缘。Canvas: aug-2026-trade-review；存档 output/reviews/monthly-2026-08.md"
-        },
-        {
-            "at": "2026-09-01T16:45:00+08:00",
-            "decision": "补录：8/31 YH佳力图+US QQQ；9/1 GY鲁北+卓翼",
-            "detail": "YH买603912@¥9.23×100；US买QQQ0.01@$714→0.03@$716.33；GY买600727@¥7.96×100、002369@¥6.45×100。positions-2026-09-01.json + trades-2026-09.csv"
-        },
-        {
-            "at": "2026-08-31T09:45:00+08:00",
-            "decision": "补录成交：8/28美股四笔 + 8/31 YH平大港/百川",
-            "detail": "US：卖AAPL0.01@$317；买PDD0.02@$85.37；买GOOGL0.01@$343；卖QQQ0.01@$720余0.02。A：YH卖002077@¥12.26×100（-¥21）、卖002455@¥7.90×100（+¥13）。口述国元但建仓在YH，卖出记YH。positions-2026-08-31.json"
-        },
-        {
-            "at": "2026-08-28T10:45:00+08:00",
-            "decision": "GY买点升格五选一：沿MA5趋势低吸",
-            "detail": "不要求量能；近3日≥2天贴MA5(±3%)；0%≤ext≤3%；MA5今日>昨日。与缩量回踩MA5同时命中优先报回踩。须重贴Automations"
-        },
-        {
-            "at": "2026-08-28T10:05:00+08:00",
-            "decision": "补录YH：买002077大港股份@¥12.47×100（8/27）",
-            "detail": "trades CSV + positions-2026-08-27.json；成本¥1247未计费；YH现持百川股份100@¥7.77 + 大港股份100@¥12.47"
-        },
-        {
-            "at": "2026-08-28T10:00:00+08:00",
-            "decision": "§1赚钱效应加全市场涨跌中位数 vs 上证",
-            "detail": "market_breadth.py由分布桶算中位数并拉上证f170；中位数>上证=个股强。prompt/rules/my-soul已改；须重贴Automations"
-        },
-        {
-            "at": "2026-08-28T09:55:00+08:00",
-            "decision": "前100只要涨:跌家数，并入§1赚钱效应",
-            "detail": "取消活跃成交行业分布专节；top100_amount默认一行涨:跌:平；行业表仅--with-industries调试。prompt/rules/my-soul已改；须重贴Automations"
-        },
-        {
-            "at": "2026-08-28T09:35:00+08:00",
-            "decision": "A股收盘 prompt 原地瘦身：665→455行",
-            "detail": "三表合一数据总表；删建议正文骨架/迁移废话；§6§5长示例归档 origin 附录A；硬规则§0–§8不变。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T18:17:18+08:00",
-            "decision": "省token：limit_pool_summary+board_top；禁THS catalog/全池JSON",
-            "detail": "新增 tools/limit_pool_summary.py、board_top.py；prompt Token预算表；扶摇仅指数+持仓snapshot；THS≤6次对照。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T18:12:01+08:00",
-            "decision": "防串年长文收成三条硬规则",
-            "detail": "去掉昨报对账/跳变阈值等唠叨；保留：historical不作均线昨量主源、量能认market_turnover、搜索带年。prompt/rules/my-soul已改；须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T18:09:00+08:00",
-            "decision": "量能主源改 market_turnover.py，不再读昨报",
-            "detail": "新增 tools/market_turnover.py（腾讯沪+深）；较前一日/近5日均只跑脚本一行；prompt/rules/my-soul已改；须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T15:25:00+08:00",
-            "decision": "§1加入成交额前100涨跌与东财行业分布",
-            "detail": "tools/top100_amount.py（东财clist一页）；涨只数≥2列表、跌列全；禁止行业主力净额。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T14:27:00+08:00",
-            "decision": "补录YH：卖600152@¥8.30×100；买002455@¥7.77×100（8/27）",
-            "detail": "trades CSV + positions-2026-08-27.json；维科粗算+¥3(+0.36%)；YH现持百川股份100@¥7.77；未计费"
-        },
-        {
-            "at": "2026-08-27T14:19:00+08:00",
-            "decision": "§6明日应对条内必须分行：①②/多标的/条件各占一行",
-            "detail": "仍恰好5条、不拆子节；禁止超长单行。8/26日报已改写。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T14:10:00+08:00",
-            "decision": "§5势能：资金势+判定灯+势能总评两行；仅个股不做ETF",
-            "detail": "资金·主力势改资金势；判定🔴强/🟡中/🟢弱/⚪未获取；一句总括改为势能总评（定性档｜半句）+交易状态；159338等ETF只留总表。8/26日报已改写。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T13:56:00+08:00",
-            "decision": "§7池表头：ext→距MA5，VR→V / MA(V,5)",
-            "detail": "只改列名不改计算；mtd_screener stdout与收盘prompt同步。须重贴Automations"
-        },
-        {
-            "at": "2026-08-27T13:33:00+08:00",
-            "decision": "A股收盘§1评分块改「交易结论」：评分｜状态｜策略一行 + 操作提示/账户重心",
-            "detail": "禁止代码围栏；账户重心行不再重复「账户重心：」前缀。8/26日报已改写。须重贴Automations"
         }
     ],
     "market_regime": {
@@ -357,6 +297,7 @@
         "notes": "9/9美股SPX-0.5%/QQQ-0.29%；XLE+0.83%/XLI-1.51%；AMD+3%/NVDA-0.9%；Apple折叠屏发布AAPL-0.25%；ORCL 9/10 AMC"
     },
     "open_questions": [
+        "Cursor Automations：Invest A-Share / US Close Daily 须重贴最新 prompt（含推文+飞书主贴）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
         "Cursor Automations「Invest US Close Daily」：Enable/Unpause + 重贴 prompt-us-close-daily.md（§0–§7含财报）+ FEISHU_WEBHOOK_URL；commit/push 后生效",
@@ -366,6 +307,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-09-10T11:05:00+08:00",
+            "changes": "通知偏好：A/美股收盘日报后立即写 tweet-*-{ashare,us}-close.md；飞书推主贴非日报整文",
+            "reason": "用户要求自动化收盘推文并以主贴替换飞书日报正文"
+        },
         {
             "updated_at": "2026-09-08T17:40:00+08:00",
             "changes": "通知偏好：美股收盘日报精简版✅启用（08:00）；正文§0–§7，§4=财报日历与解读（自完整版迁入，置于板块轮动前）；盘前仍暂停",

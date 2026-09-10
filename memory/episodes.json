@@ -1,6 +1,33 @@
 {
   "episodes": [
     {
+      "id": "ep-063",
+      "date": "2026-09-10",
+      "type": "content",
+      "summary": "X收盘双帖样例：美股+A股主贴/评论",
+      "detail": "基于 us-close-2026-09-10 与 ashare-close-2026-09-09；主贴观点评论数据。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-062",
+      "date": "2026-09-10",
+      "type": "content",
+      "summary": "确认X日更：美股早8点+A股晚5点收盘推文",
+      "detail": "用户打算固定双帖坚持一段时间；认可对齐投研主轴与日报节奏；约束短帖+坚持≥30天。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
+      "id": "ep-061",
+      "date": "2026-09-10",
+      "type": "content",
+      "summary": "X低浏览量诊断：简介与发帖品类错位",
+      "detail": "非单纯不够垂直；bio招投资粉，近帖偏eSIM/域名/券商工具。建议X定主轴（投研日更 or 数字基建），简介对齐。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-060",
       "date": "2026-09-09",
       "type": "content",

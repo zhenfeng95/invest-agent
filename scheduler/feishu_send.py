@@ -3,10 +3,14 @@
 
 用法:
   python3 scheduler/feishu_send.py <WEBHOOK_URL> <md路径> [卡片标题]
+  python3 scheduler/feishu_send.py <WEBHOOK_URL> <md路径> [卡片标题] --section 主贴
+  python3 scheduler/feishu_send.py ... --section 主贴 --also path/to/daily.md
 
 设计要点:
   - 仓库 md 可继续用 Markdown；飞书推送前去掉 ** / ## / 表格竖线等标记
   - 使用 interactive 卡片 + plain_text（不依赖 lark_md，避免星号原样显示）
+  - --section：只推送标题含该关键词的 ## 节（如收盘推文「主贴」）
+  - --also：脚注再附一份仓库链接（如完整收盘日报）
   - 请求体约 20KB 上限；超长截断，脚注附 GitHub blob 完整 URL（默认 main）
   - 链接：REPO_WEB_BASE / GITHUB_REPO → git remote origin → 绝对路径兜底
   - origin 若为 https://x-access-token:…@github.com/… 会剥掉凭证，只留公开 blob URL
@@ -255,10 +259,60 @@ def truncate_for_feishu(body_text: str, md_path: Path) -> tuple[str, str]:
     return body_text[:keep] + footer, url
 
 
-def send(webhook: str, md_path: Path, title: str | None = None) -> str:
+def extract_section(md: str, section_key: str) -> str:
+    """取出标题含 section_key 的第一个 ## 节（不含该标题行），直到下一个 ##。"""
+    key = section_key.strip()
+    if not key:
+        raise SystemExit("--section 不能为空")
+    lines = md.splitlines()
+    start: int | None = None
+    for i, line in enumerate(lines):
+        m = re.match(r"^(#{2})\s+(.*)$", line)
+        if not m:
+            continue
+        title = m.group(2).strip()
+        if key in title:
+            start = i + 1
+            break
+    if start is None:
+        raise SystemExit(f"找不到含「{key}」的 ## 节")
+    end = len(lines)
+    for j in range(start, len(lines)):
+        if re.match(r"^##\s+", lines[j]):
+            end = j
+            break
+    body = "\n".join(lines[start:end]).strip()
+    # 去掉节内前后的 --- 分隔线
+    body = re.sub(r"^\s*-{3,}\s*\n?", "", body)
+    body = re.sub(r"\n\s*-{3,}\s*$", "", body)
+    if not body.strip():
+        raise SystemExit(f"「{key}」节为空")
+    return body.strip() + "\n"
+
+
+def send(
+    webhook: str,
+    md_path: Path,
+    title: str | None = None,
+    *,
+    section: str | None = None,
+    also_path: Path | None = None,
+) -> str:
     raw = md_path.read_text(encoding="utf-8")
+    if section:
+        raw = extract_section(raw, section)
+        print(f"[feishu_send] 仅推送节：{section}", file=sys.stderr)
     body_text = md_for_feishu(raw)
     full_url = full_repo_file_url(md_path)
+    extras: list[str] = []
+    if section:
+        extras.append(f"推文全文（含回复）：{full_url}")
+    if also_path is not None:
+        if not also_path.is_file():
+            raise SystemExit(f"--also 找不到文件: {also_path}")
+        extras.append(f"完整日报：{full_repo_file_url(also_path)}")
+    if extras:
+        body_text = body_text.rstrip() + "\n\n——\n" + "\n".join(extras)
     if len(body_text) > MAX_CHARS:
         body_text, full_url = truncate_for_feishu(body_text, md_path)
         print(f"[feishu_send] 正文已截断，全文链接: {full_url}", file=sys.stderr)
@@ -297,18 +351,45 @@ def send(webhook: str, md_path: Path, title: str | None = None) -> str:
 
 
 def main() -> None:
-    if len(sys.argv) < 3:
+    argv = sys.argv[1:]
+    if len(argv) < 2:
         print(
-            "用法: python3 scheduler/feishu_send.py <WEBHOOK_URL> <md路径> [卡片标题]",
+            "用法: python3 scheduler/feishu_send.py <WEBHOOK_URL> <md路径> [卡片标题] "
+            "[--section 主贴] [--also 日报md]",
             file=sys.stderr,
         )
         raise SystemExit(2)
-    webhook = sys.argv[1].strip()
-    path = Path(sys.argv[2])
-    title = sys.argv[3] if len(sys.argv) > 3 else None
+
+    section: str | None = None
+    also: Path | None = None
+    positional: list[str] = []
+    i = 0
+    while i < len(argv):
+        if argv[i] == "--section":
+            if i + 1 >= len(argv):
+                raise SystemExit("--section 需要参数")
+            section = argv[i + 1]
+            i += 2
+            continue
+        if argv[i] == "--also":
+            if i + 1 >= len(argv):
+                raise SystemExit("--also 需要参数")
+            also = Path(argv[i + 1])
+            i += 2
+            continue
+        if argv[i].startswith("--"):
+            raise SystemExit(f"未知参数: {argv[i]}")
+        positional.append(argv[i])
+        i += 1
+
+    if len(positional) < 2:
+        raise SystemExit("需要 <WEBHOOK_URL> <md路径>")
+    webhook = positional[0].strip()
+    path = Path(positional[1])
+    title = positional[2] if len(positional) > 2 else None
     if not path.is_file():
         raise SystemExit(f"找不到文件: {path}")
-    print(send(webhook, path, title))
+    print(send(webhook, path, title, section=section, also_path=also))
 
 
 if __name__ == "__main__":
