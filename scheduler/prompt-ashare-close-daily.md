@@ -432,7 +432,7 @@ A股收盘日报｜YYYY-MM-DD（精简版）
 
 1. **先跑脚本**：`market_turnover.py` · `limit_pool_summary.py` · `board_top.py` · `market_breadth.py` · `top100_amount.py` · `mtd_screener.py` · 持仓 `stock_ma_levels` / `stock_period_chg` / `stock_cyq_summary` · 扶摇 snapshot（7 指数 + 持仓批量一次）
 2. **写入** `output/daily/ashare-close-YYYY-MM-DD.md`；只写 §0–§8；表格优先；查不到标「暂无可靠数据」
-3. **立即写 X 推文**：按 `templates/close-tweet.md` 生成 `output/content/tweet-YYYY-MM-DD-ashare-close.md`（主贴首行 `A股收盘｜M/D`；主贴须有钩子+结构分化+主线+盯什么，叙事密度对齐美股样例；公开用词「全市场」；若提前100须写 **「全市场成交额前100」**；回复×3：结构 / 资金与主线 / 判断；每条加权 ≤280；数字只来自刚写的日报；不荐股；**禁止持仓/账户重心(HT·YH·GY)/私域评分编号**——私域只留日报）
+3. **立即写 X 推文**：按 `templates/close-tweet.md` 生成 `output/content/tweet-YYYY-MM-DD-ashare-close.md`（主贴首行 `A股收盘｜M/D`；主贴须有钩子+结构分化+主线+盯什么，叙事密度对齐美股样例；公开用词「全市场」；若提前100须写 **「全市场成交额前100」**；回复×3：结构 / 资金与主线 / 判断；每条加权 ≤280；数字只来自刚写的日报；不荐股；**禁止持仓/账户重心(HT·YH·GY)/私域评分编号**——私域只留日报；**缺数据整句省略**，禁止推文出现「未获取/暂无可靠数据/502」等元话术）
 4. **commit**（`ashare close daily + tweet YYYY-MM-DD`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
 5. **飞书**（不要发邮件；**正文 = 推文主贴，不是整份日报**）：
 
