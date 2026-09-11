@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-069",
+      "date": "2026-09-11",
+      "type": "workflow",
+      "summary": "§0开关三块；分层迁§8",
+      "detail": "进攻四条件进§0；分层回顾进§8。样例9/9、9/10已改写。须重贴Automation。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-068",
       "date": "2026-09-11",
       "type": "workflow",
