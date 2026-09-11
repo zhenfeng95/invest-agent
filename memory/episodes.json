@@ -1,6 +1,19 @@
 {
   "episodes": [
     {
+      "id": "ep-065",
+      "date": "2026-09-11",
+      "type": "trade",
+      "summary": "补录美股碎股：9/9 VOO/GOOGL/QQQ + 9/10 VOO",
+      "detail": "9/9买VOO@$702、GOOGL@$330、QQQ@$715各0.01；9/10买VOO@$696×0.01。现VOO0.05@$703.2、GOOGL0.02@$332.5、QQQ0.02@$715.67。",
+      "tickers": [
+        "VOO",
+        "GOOGL",
+        "QQQ"
+      ],
+      "outcome": "VOO 0.05@$703.2; GOOGL 0.02@$332.5; QQQ 0.02@$715.67"
+    },
+    {
       "id": "ep-064",
       "date": "2026-09-10",
       "type": "content",
