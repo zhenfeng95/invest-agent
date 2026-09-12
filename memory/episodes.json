@@ -1,6 +1,18 @@
 {
   "episodes": [
     {
+      "id": "ep-070",
+      "date": "2026-09-11",
+      "type": "trade",
+      "summary": "美股碎股卖出：GOOGL两笔已平+$0.13；VOO减0.01",
+      "detail": "9/11卖GOOGL0.01@$337(相对$332.5粗算+$0.05)、0.01@$340(+$0.08)已平；卖VOO0.01@$703(相对$703.2粗算-$0.00)余0.04。均未计费。",
+      "tickers": [
+        "GOOGL",
+        "VOO"
+      ],
+      "outcome": "US realized ~+$0.13; GOOGL closed; VOO 0.04"
+    },
+    {
       "id": "ep-069",
       "date": "2026-09-11",
       "type": "workflow",
