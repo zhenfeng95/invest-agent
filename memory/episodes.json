@@ -1,6 +1,21 @@
 {
   "episodes": [
     {
+      "id": "ep-071",
+      "date": "2026-09-13",
+      "type": "weekly_review",
+      "summary": "2026-09-2W 周度回顾：A -¥137，非池开仓模式化",
+      "detail": "区间9/7–9/13；已实现GY-62/YH-75/US+$0.13；环境62→26；本周成交票均无§7命中；GY603390破MA5迟1日。存档 output/reviews/weekly/weekly-2026-09-2W.md",
+      "tickers": [
+        "603390",
+        "002452",
+        "002303",
+        "603230",
+        "GOOGL"
+      ],
+      "outcome": "A net -137 CNY; discipline: 4 non-pool entries"
+    },
+    {
       "id": "ep-070",
       "date": "2026-09-11",
       "type": "trade",
