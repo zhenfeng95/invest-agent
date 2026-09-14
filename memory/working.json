@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-13T10:04:00+08:00",
+    "updated_at": "2026-09-14T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -89,6 +89,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-14T08:10:00+08:00",
+            "decision": "完成 2026-09-14 美股收盘日报（复盘9/11）",
+            "detail": "CPI headline 3.4%/core +0.3%热；SPX+0.86%终结四连阴/SOX+1.8%；10Y~4.97%加息~90%；ORCL sell the news/DELL+HPE+12%；存档 us-close-2026-09-14.md + tweet；待飞书"
+        },
         {
             "at": "2026-09-13T10:04:00+08:00",
             "decision": "完成 2026-09-2W 周度回顾（9/7–9/13）",
@@ -388,9 +393,9 @@
     "market_regime": {
         "equity": "A股：9/11上证3888(-1.18%)四均线线下、643:4870；YH持603230 100@¥10.05；HT持159338 600@¥1.212+512480 100@¥1.00；GY空仓",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.02@$715.67；VOO 0.04@$703.2；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL已平",
-        "crypto": "IBIT 0.02@$35.73；9/10收$43.67(-1.41%)；BTC~$77K",
-        "macro": "9/10：PPI +5.4% y/y；Brent $107/WTI $102；10Y~4.95%；9月Fed hike~70%；CPI 9/11/FOMC 9/15-16；VIX 17.84",
-        "notes": "9/10美股SPX四连阴-0.6%/QQQ-1.06%/SOX-2.7%；XLK-1.4%最弱；XLC/XLP微涨；ORCL AH+6% OCI+121%；ADBE guide软"
+        "crypto": "IBIT 0.02@$35.73；9/11收$43.77(+0.21%)；BTC~$77K",
+        "macro": "9/11：CPI 3.4% y/y/core +0.3% m/m热；Brent $105/WTI $100；10Y~4.97%；9月Fed hike~90%；FOMC 9/15-16；VIX 15.84",
+        "notes": "9/11美股SPX+0.86%终结四连阴/SOX+1.8%；XLK+1.32%领涨/XLU-XLV弱；ORCL -1.8% sell the news/DELL+HPE+12%；本周SPX仍-0.8%"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0三块+§8分层回顾+进攻四条件）+ FEISHU_WEBHOOK_URL",
