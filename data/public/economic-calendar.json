@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T22:05:32+08:00",
+  "updated_at": "2026-09-15T08:05:39+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -242,9 +242,9 @@
       "title": "美国至9月14日3个月国债竞拍-得标利率",
       "previous": "3.80",
       "consensus": null,
-      "actual": null,
+      "actual": "3.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-14 23:30",
@@ -252,9 +252,9 @@
       "title": "美国至9月14日3个月国债竞拍-得标利率配置百分比",
       "previous": "20.33",
       "consensus": null,
-      "actual": null,
+      "actual": "13.86",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-14 23:30",
@@ -262,9 +262,9 @@
       "title": "美国至9月14日3个月国债竞拍-投标倍数",
       "previous": "2.61",
       "consensus": null,
-      "actual": null,
+      "actual": "2.64",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-14 23:30",
@@ -272,9 +272,9 @@
       "title": "美国至9月14日6个月国债竞拍-得标利率",
       "previous": "3.89",
       "consensus": null,
-      "actual": null,
+      "actual": "4.06",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-14 23:30",
@@ -282,9 +282,9 @@
       "title": "美国至9月14日6个月国债竞拍-得标利率配置百分比",
       "previous": "79.1",
       "consensus": null,
-      "actual": null,
+      "actual": "82.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-14 23:30",
@@ -292,9 +292,9 @@
       "title": "美国至9月14日6个月国债竞拍-投标倍数",
       "previous": "2.88",
       "consensus": null,
-      "actual": null,
+      "actual": "2.74",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-15 00:00",
@@ -322,9 +322,9 @@
       "title": "韩国8月出口物价指数年率",
       "previous": "49.10",
       "consensus": null,
-      "actual": null,
+      "actual": "42.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-15 05:00",
@@ -332,9 +332,9 @@
       "title": "韩国8月进口物价指数年率",
       "previous": "18.70",
       "consensus": null,
-      "actual": null,
+      "actual": "15.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-15 10:00",
