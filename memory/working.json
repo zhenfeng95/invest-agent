@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-14T17:05:00+08:00",
+    "updated_at": "2026-09-15T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -93,6 +93,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-15T08:10:00+08:00",
+            "decision": "完成 2026-09-15 美股收盘日报（复盘9/14）",
+            "detail": "AI放缓叙事+油价；SPX-0.48%/SOX-5%级/NVDA~-3%；10Y触5%收4.96%；XLE+XLC强；存档 us-close-2026-09-15.md + tweet；待飞书"
+        },
         {
             "at": "2026-09-14T17:05:00+08:00",
             "decision": "完成 2026-09-14 A股收盘日报（精简版）",
@@ -407,9 +412,9 @@
     "market_regime": {
         "equity": "A股：YH持002106莱宝高科100@¥11.5（收11.58+3.86%）；HT持159338 600@¥1.212+512480 100@¥1.00；GY空仓；环境48/100震荡筑底",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.02@$715.67；VOO 0.04@$703.2；SGOV 0.01@$100；PDD 0.02@$85.37；GOOGL已平",
-        "crypto": "IBIT 0.02@$35.73；9/11收$43.77(+0.21%)；BTC~$77K",
-        "macro": "9/11：CPI 3.4% y/y/core +0.3% m/m热；Brent $105/WTI $100；10Y~4.97%；9月Fed hike~90%；FOMC 9/15-16；VIX 15.84",
-        "notes": "9/11美股SPX+0.86%终结四连阴/SOX+1.8%；XLK+1.32%领涨/XLU-XLV弱；ORCL -1.8% sell the news/DELL+HPE+12%；本周SPX仍-0.8%"
+        "crypto": "IBIT 0.02@$35.73；BTC~$78K(+1.7%)；与AI股背离",
+        "macro": "9/14：AI放缓叙事+沙特管道；Brent $105.68/WTI $101.39；10Y盘中5%收4.96%；9/16 Fed hike~90%；VIX~18",
+        "notes": "9/14 SPX-0.48%/NDX-0.8%；SOX盘中-5%+；XLE+XLC+XLV强/XLK-1.7%；ORCL-3~5% layoff成本；FOMC+零售9/16"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0三块+§8分层回顾+进攻四条件）+ FEISHU_WEBHOOK_URL",
