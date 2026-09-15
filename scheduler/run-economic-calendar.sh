@@ -8,7 +8,7 @@
 # 依赖: JIN10_BEARER_TOKEN（环境或仓库 .env）
 # 推荐 cron（北京时间）:
 #   0 8 * * 1-5   …/scheduler/run-economic-calendar.sh
-#   30 22 * * 1-5 …/scheduler/run-economic-calendar.sh
+#   0 21 * * 1-5 …/scheduler/run-economic-calendar.sh
 #   0 8 * * 1     …/scheduler/run-economic-calendar.sh   # 周一必更（与上重叠可省略）
 
 set -euo pipefail

@@ -7,7 +7,7 @@
 2. **美股收盘日报**（工作日 **08:00**）— **精简版**：连续 §0–§7（§4=财报日历与解读；见 `prompt-us-close-daily.md`；完整版备查 `prompt-us-close-daily-origin.md`）
 3. **周度回顾**（每周日 **10:00**）— 骨架对齐月度；日报仅 `rg` 关键节；含 **§7 月度复盘摘录**；见 `prompt-weekly-review.md`
 4. **月度交易复盘**（每月 **1 日 10:00**）— 主读当月周报 §7 + CSV；**不读** ashare-close；见 `prompt-monthly-trade-review.md`；范本 `output/reviews/monthly/monthly-2026-08.md`
-5. **财经日历**（工作日 **08:00 / 22:00**）— Automation Agent 只跑脚本刷新 `data/public/economic-calendar.json`；见 `prompt-economic-calendar.md`（文末贴 `JIN10_BEARER_TOKEN`）
+5. **财经日历**（工作日 **08:00 / 21:00**）— Automation Agent 只跑脚本刷新 `data/public/economic-calendar.json`；见 `prompt-economic-calendar.md`（文末贴 `JIN10_BEARER_TOKEN`）
 
 **已暂停 / 停用**：
 - 美股盘前提醒（原 21:00）→ Automation 请 **Pause**
@@ -162,11 +162,11 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 | 项 | 填什么 |
 |----|--------|
 | 名称 | Invest Economic Calendar |
-| 触发 | Cron：`0 8,22 * * 1-5`（北京时间工作日 **08:00** 与 **22:00**） |
+| 触发 | Cron：`0 8,21 * * 1-5`（北京时间工作日 **08:00** 与 **21:00**） |
 | Instructions | 粘贴 `scheduler/prompt-economic-calendar.md`「---」以下内容 + 文末 `JIN10_BEARER_TOKEN=你的Token` |
 | Tools | 终端即可；**不要**挂金十 MCP；不开 PR；不发飞书 |
 
-**时区提醒**：Cursor cron 若按 UTC：北京 08:00/22:00 = UTC `0 0,14 * * 1-5`。
+**时区提醒**：Cursor cron 若按 UTC：北京 08:00/21:00 = UTC `0 0,13 * * 1-5`。
 
 **硬规则**：Agent 只执行 `python3 tools/jin10_economic_calendar.py --commit --push`；禁止在对话里调 `list_calendar`（否则单次数万 token）。
 

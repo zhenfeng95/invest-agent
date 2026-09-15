@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-15T09:55:00+08:00",
+    "updated_at": "2026-09-15T16:42:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -98,6 +98,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-15T16:42:00+08:00",
+            "decision": "财经日历晚间抓取 22:00→21:00",
+            "detail": "cron 改为 0 8,21 * * 1-5（北京）；UTC 0 0,13；已改 rules/SETUP/prompt/run 脚本注释；须在 Cursor Automation 改触发时刻"
+        },
         {
             "at": "2026-09-15T09:55:00+08:00",
             "decision": "补录9/14美股碎股+9/15 YH平莱宝",

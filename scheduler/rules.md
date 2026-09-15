@@ -9,7 +9,7 @@
 | **② 美股收盘日报** | `0 8 * * 1-5` | 工作日 08:00（复盘昨夜美股；精简版含财报日历） |
 | **③ 周度回顾** | `0 10 * * 0` | 每周日 10:00（对齐月度骨架；日报 rg 薄读；§7 供月度） |
 | **④ 月度交易复盘** | `0 10 1 * *` | 每月 1 日 10:00（CSV + 周报 §7；**不读**日报） |
-| **⑤ 财经日历 JSON** | `0 8,22 * * 1-5` | Agent 跑 `jin10_economic_calendar.py --commit --push` → `data/public/economic-calendar.json`；提示词 `prompt-economic-calendar.md` |
+| **⑤ 财经日历 JSON** | `0 8,21 * * 1-5` | Agent 跑 `jin10_economic_calendar.py --commit --push` → `data/public/economic-calendar.json`；提示词 `prompt-economic-calendar.md` |
 
 **已暂停**：美股盘前提醒（原 21:00）；A股盘前提醒（原 09:00）— Automation 请 **Pause**。  
 **已停用**：合并抄底信号（SPX + BTC）— 规则仍保留在下方。
@@ -41,8 +41,8 @@
 
 ## 每日任务
 
-### 财经日历 JSON（工作日 08:00 / 22:00）— ✅ A' Automation
-- cron: `0 8,22 * * 1-5`（北京时间；Cursor 若按 UTC 则为 `0 0,14 * * 1-5`）
+### 财经日历 JSON（工作日 08:00 / 21:00）— ✅ A' Automation
+- cron: `0 8,21 * * 1-5`（北京时间；Cursor 若按 UTC 则为 `0 0,13 * * 1-5`）
 - 提示词：`scheduler/prompt-economic-calendar.md`
 - 执行：Cloud Agent **只**跑 `python3 tools/jin10_economic_calendar.py --commit --push`，非 main 再 `merge_to_main.sh`
 - 输出：`data/public/economic-calendar.json`（个人站直链 raw GitHub）

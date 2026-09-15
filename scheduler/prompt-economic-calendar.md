@@ -2,6 +2,7 @@
 
 > 用途：刷新 `data/public/economic-calendar.json` 供个人站展示。  
 > **执行器**：Cursor Automations（Cloud Agent）。  
+> **cron（北京时间）**：`0 8,21 * * 1-5`（工作日 **08:00** / **21:00**；若按 UTC 则为 `0 0,13 * * 1-5`）。  
 > **数据路径**：Agent **只**跑仓库脚本拉金十（脚本内 HTTP MCP）；**禁止**在对话里调 `list_calendar` / 读 JSON 全文（否则单次数万 token）。
 
 ---
