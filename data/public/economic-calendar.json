@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T08:16:06+08:00",
+  "updated_at": "2026-09-16T21:01:31+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1032,9 +1032,9 @@
       "title": "澳大利亚8月西太平洋领先指标月率",
       "previous": "0.03",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.04",
+      "revised": "0.02",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1042,9 +1042,9 @@
       "title": "英国8月CPI月率",
       "previous": "0.30",
       "consensus": "0.5",
-      "actual": null,
+      "actual": "0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1052,9 +1052,9 @@
       "title": "英国8月零售物价指数月率",
       "previous": "0.60",
       "consensus": "0.7",
-      "actual": null,
+      "actual": "0.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1062,9 +1062,9 @@
       "title": "英国8月CPI年率",
       "previous": "2.90",
       "consensus": "3.1",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1072,9 +1072,9 @@
       "title": "英国8月未季调输入PPI年率",
       "previous": "4.90",
       "consensus": "5.4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "6.1",
+      "revised": "5.8",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1082,9 +1082,9 @@
       "title": "英国8月未季调输出PPI年率",
       "previous": "3.10",
       "consensus": "3.3",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.7",
+      "revised": "3.3",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1092,9 +1092,9 @@
       "title": "英国8月未季调输出PPI月率",
       "previous": "0.20",
       "consensus": "0.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "0.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1102,9 +1102,9 @@
       "title": "英国8月核心CPI年率",
       "previous": "2.60",
       "consensus": "2.6",
-      "actual": null,
+      "actual": "2.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1112,9 +1112,9 @@
       "title": "英国8月核心CPI月率",
       "previous": "0.2",
       "consensus": "0.3",
-      "actual": null,
+      "actual": "0.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1122,9 +1122,9 @@
       "title": "英国8月核心零售物价指数年率",
       "previous": "3.10",
       "consensus": null,
-      "actual": null,
+      "actual": "3.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1132,9 +1132,9 @@
       "title": "英国8月零售物价指数年率",
       "previous": "3.20",
       "consensus": "3.5",
-      "actual": null,
+      "actual": "3.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1142,9 +1142,9 @@
       "title": "英国8月未季调核心输出PPI年率",
       "previous": "2.8",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2.7",
+      "revised": "2.7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1152,9 +1152,9 @@
       "title": "英国8月未季调核心输出PPI月率",
       "previous": "0.6",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "0.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 14:00",
@@ -1162,9 +1162,9 @@
       "title": "英国8月未季调输入PPI月率",
       "previous": "-1.70",
       "consensus": "0.4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "-0.8",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 16:00",
@@ -1172,9 +1172,9 @@
       "title": "意大利8月调和CPI年率终值",
       "previous": "3.20",
       "consensus": "3.2",
-      "actual": null,
+      "actual": "3.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-16 16:30",
@@ -1182,9 +1182,9 @@
       "title": "英国7月DCLG房价指数年率",
       "previous": "2.00",
       "consensus": null,
-      "actual": null,
+      "actual": "1.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 17:00",
@@ -1192,19 +1192,19 @@
       "title": "欧元区7月工业产出月率",
       "previous": "0.00",
       "consensus": "-0.2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.1",
+      "revised": "-0.1",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 17:00",
       "star": 2,
       "title": "欧元区第二季度劳动力成本年率",
-      "previous": "3.10",
+      "previous": "3.2",
       "consensus": null,
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 17:00",
@@ -1212,9 +1212,9 @@
       "title": "欧元区7月工业产出年率",
       "previous": "0.10",
       "consensus": "-0.1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0",
+      "revised": "-0.3",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 19:00",
@@ -1222,9 +1222,9 @@
       "title": "美国至9月11日当周MBA30年期固定抵押贷款利率",
       "previous": "6.85",
       "consensus": null,
-      "actual": null,
+      "actual": "6.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 19:00",
@@ -1232,9 +1232,9 @@
       "title": "美国至9月11日当周MBA抵押贷款申请活动指数",
       "previous": "240.6",
       "consensus": null,
-      "actual": null,
+      "actual": "230.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 19:00",
@@ -1242,9 +1242,9 @@
       "title": "美国至9月11日当周MBA抵押贷款再融资活动指数",
       "previous": "687.3",
       "consensus": null,
-      "actual": null,
+      "actual": "627.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 19:00",
@@ -1252,9 +1252,9 @@
       "title": "美国至9月11日当周MBA抵押贷款购买指数",
       "previous": "157.5",
       "consensus": null,
-      "actual": null,
+      "actual": "156.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 20:15",
@@ -1262,9 +1262,9 @@
       "title": "加拿大8月新屋开工(万户)",
       "previous": "22.91",
       "consensus": "24",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "22.9",
+      "revised": "22.94",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1272,9 +1272,9 @@
       "title": "加拿大7月营建许可月率",
       "previous": "18.50",
       "consensus": "-6.4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-17.3",
+      "revised": "18.3",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1282,9 +1282,9 @@
       "title": "美国8月零售销售月率",
       "previous": "-0.60",
       "consensus": "0.8",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.2",
+      "revised": "-0.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1292,9 +1292,9 @@
       "title": "美国8月进口物价指数月率",
       "previous": "-0.40",
       "consensus": "0.4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "-0.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1302,9 +1302,9 @@
       "title": "美国8月出口物价指数年率",
       "previous": "8.20",
       "consensus": null,
-      "actual": null,
+      "actual": "8.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1312,9 +1312,9 @@
       "title": "美国8月出口物价指数月率",
       "previous": "-1.30",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.6",
+      "revised": "-1.4",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1322,9 +1322,9 @@
       "title": "美国8月核心零售销售(亿美元)",
       "previous": "6221.76",
       "consensus": null,
-      "actual": null,
+      "actual": "6315.68",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1332,9 +1332,9 @@
       "title": "美国8月核心零售销售月率",
       "previous": "-0.30",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.4",
+      "revised": "-0.2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1342,9 +1342,9 @@
       "title": "美国8月进口物价指数年率",
       "previous": "6",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "7",
+      "revised": "6.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1352,9 +1352,9 @@
       "title": "美国8月零售销售(亿美元)",
       "previous": "7636.02",
       "consensus": null,
-      "actual": null,
+      "actual": "7739.47",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 20:30",
@@ -1362,9 +1362,9 @@
       "title": "美国8月零售销售对照小组",
       "previous": "-0.40",
       "consensus": "0.40",
-      "actual": null,
+      "actual": "1.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 22:00",
@@ -1381,7 +1381,7 @@
       "star": 3,
       "title": "美国7月商业库存月率",
       "previous": "0.00",
-      "consensus": "0.8",
+      "consensus": "0.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1391,7 +1391,7 @@
       "star": 4,
       "title": "美国至9月11日当周EIA原油库存(万桶)",
       "previous": "-39.1",
-      "consensus": "-175",
+      "consensus": "-162",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1481,7 +1481,7 @@
       "star": 2,
       "title": "美国至9月11日当周EIA精炼厂设备利用率",
       "previous": "97.8",
-      "consensus": "97.6",
+      "consensus": "97.4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1511,7 +1511,7 @@
       "star": 1,
       "title": "美国至9月11日当周EIA汽油库存(万桶)",
       "previous": "126.9",
-      "consensus": "-120.1",
+      "consensus": "-96",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1521,7 +1521,7 @@
       "star": 1,
       "title": "美国至9月11日当周EIA精炼油库存(万桶)",
       "previous": "208.7",
-      "consensus": "82.7",
+      "consensus": "7.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1581,7 +1581,7 @@
       "star": 5,
       "title": "美国至9月16日美联储利率决定(上限)",
       "previous": "3.75",
-      "consensus": "3.75",
+      "consensus": "4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1601,7 +1601,7 @@
       "star": 2,
       "title": "美国至9月16日美联储利率决定(下限)",
       "previous": "3.50",
-      "consensus": "3.50",
+      "consensus": "3.75",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1651,7 +1651,7 @@
       "star": 2,
       "title": "新西兰第二季度GDP年率",
       "previous": "1.50",
-      "consensus": "2.3",
+      "consensus": "2.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1781,7 +1781,7 @@
       "star": 3,
       "title": "欧元区8月CPI月率终值",
       "previous": "0.40",
-      "consensus": "0.2",
+      "consensus": "0.4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1921,7 +1921,7 @@
       "star": 4,
       "title": "美国至9月12日当周初请失业金人数(万人)",
       "previous": "20.6",
-      "consensus": "20.5",
+      "consensus": "20.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1931,7 +1931,7 @@
       "star": 3,
       "title": "美国8月新屋开工总数年化(万户)",
       "previous": "123.9",
-      "consensus": "130.5",
+      "consensus": "130.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1951,7 +1951,7 @@
       "star": 3,
       "title": "美国9月费城联储制造业指数",
       "previous": "47.4",
-      "consensus": "32.5",
+      "consensus": "30.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1971,7 +1971,7 @@
       "star": 2,
       "title": "美国至9月5日当周续请失业金人数(万人)",
       "previous": "177.4",
-      "consensus": null,
+      "consensus": "178",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2061,7 +2061,7 @@
       "star": 3,
       "title": "美国8月成屋签约销售指数月率",
       "previous": "-2.30",
-      "consensus": null,
+      "consensus": "-0.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
