@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-15T21:11:08+08:00",
+  "updated_at": "2026-09-16T08:16:06+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -677,16 +677,6 @@
       "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-09-15 20:00",
-      "star": 1,
-      "title": "新西兰至9月1日全球乳制品贸易价格指数",
-      "previous": "0.9",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
       "pub_time": "2026-09-15 20:15",
       "star": 3,
       "title": "美国至8月29日当周ADP就业人数周度变动(万人)",
@@ -792,9 +782,9 @@
       "title": "美国至9月15日6周国债竞拍-得标利率",
       "previous": "3.74",
       "consensus": null,
-      "actual": null,
+      "actual": "3.85",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-15 23:30",
@@ -802,9 +792,9 @@
       "title": "美国至9月15日6周国债竞拍-得标利率配置百分比",
       "previous": "46.45",
       "consensus": null,
-      "actual": null,
+      "actual": "35.19",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-15 23:30",
@@ -812,9 +802,19 @@
       "title": "美国至9月15日6周国债竞拍-投标倍数",
       "previous": "2.93",
       "consensus": null,
-      "actual": null,
+      "actual": "3.16",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-09-15 23:39",
+      "star": 1,
+      "title": "新西兰至9月1日全球乳制品贸易价格指数",
+      "previous": "0.9",
+      "consensus": null,
+      "actual": "-1.1",
+      "revised": null,
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 00:00",
@@ -842,9 +842,9 @@
       "title": "美国至9月15日20年期国债竞拍-得标利率",
       "previous": "5.20",
       "consensus": null,
-      "actual": null,
+      "actual": "5.42",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 01:00",
@@ -852,9 +852,9 @@
       "title": "美国至9月15日20年期国债竞拍-得标利率配置百分比",
       "previous": "65.58",
       "consensus": null,
-      "actual": null,
+      "actual": "30.14",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 01:00",
@@ -862,9 +862,9 @@
       "title": "美国至9月15日20年期国债竞拍-投标倍数",
       "previous": "2.53",
       "consensus": null,
-      "actual": null,
+      "actual": "2.57",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -872,9 +872,9 @@
       "title": "美国至9月11日当周API原油库存(万桶)",
       "previous": "-32.7",
       "consensus": "-175",
-      "actual": null,
+      "actual": "714.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -882,9 +882,9 @@
       "title": "美国至9月11日当周API原油进口(万桶)",
       "previous": "40.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-4.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -892,9 +892,9 @@
       "title": "美国至9月11日当周API取暖油库存(万桶)",
       "previous": "40.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-2.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -902,9 +902,9 @@
       "title": "美国至9月11日当周API库欣原油库存(万桶)",
       "previous": "-33.1",
       "consensus": null,
-      "actual": null,
+      "actual": "-24.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -912,9 +912,9 @@
       "title": "美国至9月11日当周API成品油进口(万桶/日)",
       "previous": "-5.9",
       "consensus": null,
-      "actual": null,
+      "actual": "30.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -922,9 +922,9 @@
       "title": "美国至9月11日当周API投产原油量(万桶/日)",
       "previous": "-19.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-11.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -932,9 +932,9 @@
       "title": "美国至9月11日当周API汽油库存(万桶)",
       "previous": "-186.7",
       "consensus": "-120.1",
-      "actual": null,
+      "actual": "146.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 04:30",
@@ -942,9 +942,9 @@
       "title": "美国至9月11日当周API精炼油库存(万桶)",
       "previous": "197.7",
       "consensus": "82.7",
-      "actual": null,
+      "actual": "160.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 06:45",
@@ -952,9 +952,9 @@
       "title": "新西兰第二季度经常帐(亿纽元)",
       "previous": "-10.08",
       "consensus": "-25.71",
-      "actual": null,
+      "actual": "-16.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 06:45",
@@ -962,9 +962,9 @@
       "title": "新西兰第二季度经常帐在GDP占比年率",
       "previous": "-3.60",
       "consensus": "-3.9",
-      "actual": null,
+      "actual": "-3.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -972,9 +972,9 @@
       "title": "日本8月商品出口年率",
       "previous": "23.20",
       "consensus": "18.2",
-      "actual": null,
+      "actual": "19.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -982,9 +982,9 @@
       "title": "日本8月商品进口年率",
       "previous": "27.80",
       "consensus": "26.3",
-      "actual": null,
+      "actual": "28",
       "revised": "27.90",
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -992,9 +992,9 @@
       "title": "日本8月季调后商品贸易帐(亿日元)",
       "previous": "-6860",
       "consensus": "-9842",
-      "actual": null,
+      "actual": "-8405.88",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -1002,9 +1002,9 @@
       "title": "日本8月未季调商品贸易帐(亿日元)",
       "previous": "-6345",
       "consensus": "-10526",
-      "actual": null,
+      "actual": "-11056",
       "revised": "-6383",
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -1012,9 +1012,9 @@
       "title": "日本7月核心机械订单月率",
       "previous": "9.70",
       "consensus": "-2.8",
-      "actual": null,
+      "actual": "-3.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 07:50",
@@ -1022,9 +1022,9 @@
       "title": "日本7月核心机械订单年率",
       "previous": "16.90",
       "consensus": "15.3",
-      "actual": null,
+      "actual": "11.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-16 08:30",
