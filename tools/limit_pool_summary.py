@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""涨跌停池摘要（§1 赚钱效应）：家数 + 最高连板 + 代表 2～3 只。
+"""涨跌停摘要（§1 赚钱效应）：家数 + 最高连板 + 代表 2～3 只。
 
-家数口径（对齐同花顺 / 东方财富客户端行情总览）：
-  主源：同花顺 `api.php?t=indexflash` → `zdt_data.last_zdt.ztzs/dtzs`
-  （含触及跌停、含 ST；与软件「跌停 XX」一致）
+家数口径（方案 A · 收盘封死）：
+  当日主源：东财 clist 沪深 A，收盘价 = 涨停价 / 跌停价
+  含 ST（主板 ±5%；创业/科创仍 ±20%）；不含无涨跌幅限制的新股首日
+  不含北交所；禁止用「盘中触及」作家数
+  失败 / 非当日：回退东财专题涨停池 / 跌停池 tc
 
-连板高度 / 涨停代表：东财 `getTopicZTPool`（专题涨停池）。
-跌停样例：东财 `getTopicDTPool`（专题跌停池；家数可能少于客户端，仅作点名）。
+连板高度 / 涨停代表：东财 `getTopicZTPool`。
+跌停样例：优先 clist 收盘跌停（含 ST）；否则专题跌停池点名。
 
 禁止把全池 JSON 贴进 Agent 上下文。
 """
@@ -29,7 +31,6 @@ _DT_URLS = (
     "https://push2ex.eastmoney.com/getTopicDTPool",
     "https://push2delayex.eastmoney.com/getTopicDTPool",
 )
-_THS_FLASH_URL = "https://q.10jqka.com.cn/api.php?t=indexflash"
 _CLIST_URLS = (
     "https://push2delay.eastmoney.com/api/qt/clist/get",
     "https://82.push2.eastmoney.com/api/qt/clist/get",
@@ -43,10 +44,6 @@ _HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     ),
     "Referer": "https://quote.eastmoney.com/",
-}
-_THS_HEADERS = {
-    **_HEADERS,
-    "Referer": "https://q.10jqka.com.cn/",
 }
 
 # 涨停池：连板/封板时间排序可用；跌停池无 lbc/fbt，用这些会返回 pool=[] 但 tc>0
@@ -112,30 +109,14 @@ def _fetch_pool(
     raise RuntimeError(f"涨跌停池失败: {last_err}")
 
 
-def _fetch_ths_zdt_counts() -> dict[str, int] | None:
-    """同花顺行情总览涨跌停家数（与客户端一致）。仅当日有效。"""
-    s = _session(_THS_HEADERS)
-    try:
-        r = s.get(_THS_FLASH_URL, timeout=20, proxies={"http": None, "https": None})
-        r.raise_for_status()
-        last = ((r.json().get("zdt_data") or {}).get("last_zdt") or {})
-        zt = last.get("ztzs")
-        dt = last.get("dtzs")
-        if zt is None or dt is None:
-            return None
-        return {"limit_up": int(zt), "limit_down": int(dt)}
-    except Exception:  # noqa: BLE001
-        return None
-
-
 def _limit_pct(code: str, name: str, direction: int) -> int:
-    """direction: +1 涨停 / -1 跌停。"""
-    if "ST" in name.upper():
-        return 5 * direction
+    """direction: +1 涨停 / -1 跌停。创业/科创/北交所优先于 ST 名称。"""
     if code.startswith(("300", "301", "688", "689")):
         return 20 * direction
     if code.startswith(("8", "4", "92")):
         return 30 * direction
+    if "ST" in name.upper():
+        return 5 * direction
     return 10 * direction
 
 
@@ -147,8 +128,14 @@ def _round_limit_price(pre: float, lim_pct: int) -> float:
     )
 
 
-def _count_clist_touch_limit_down() -> int | None:
-    """回退：沪深 A 最低价触及跌停价家数（近似同花顺跌停口径）。"""
+def _is_unlimited_ipo(name: str) -> bool:
+    """无涨跌幅限制的新股首日（N前缀等），不计入收盘封板。"""
+    n = (name or "").strip()
+    return n.startswith("N") or n.startswith("n")
+
+
+def _fetch_clist_hs_rows() -> list[dict[str, Any]] | None:
+    """当日沪深 A 快照。clist 无历史，仅能用于 today。"""
     s = _session()
     rows: list[dict[str, Any]] = []
     last_err: Exception | None = None
@@ -163,13 +150,18 @@ def _count_clist_touch_limit_down() -> int | None:
             "invt": 2,
             "fid": "f12",
             "fs": _FS_HS,
-            "fields": "f12,f14,f2,f16,f18",
+            "fields": "f12,f14,f2,f18",
         }
         page_rows: list[dict[str, Any]] | None = None
         total = 0
         for url in _CLIST_URLS:
             try:
-                r = s.get(url, params=params, timeout=25, proxies={"http": None, "https": None})
+                r = s.get(
+                    url,
+                    params=params,
+                    timeout=25,
+                    proxies={"http": None, "https": None},
+                )
                 r.raise_for_status()
                 data = r.json().get("data") or {}
                 page_rows = data.get("diff") or []
@@ -186,24 +178,40 @@ def _count_clist_touch_limit_down() -> int | None:
         rows.extend(page_rows)
         if page * 100 >= total:
             break
-    if not rows:
-        return None
-    n = 0
+    return rows or None
+
+
+def _count_clist_close_limit(
+    rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    """沪深 A 收盘价打到涨停价/跌停价。"""
+    up: list[dict[str, str]] = []
+    down: list[dict[str, str]] = []
     for row in rows:
-        code = str(row.get("f12") or "")
+        code = str(row.get("f12") or "").zfill(6)
         name = str(row.get("f14") or "")
-        low, pre = row.get("f16"), row.get("f18")
-        if low in (None, "-") or pre in (None, "-", 0):
+        close, pre = row.get("f2"), row.get("f18")
+        if _is_unlimited_ipo(name):
+            continue
+        if close in (None, "-") or pre in (None, "-", 0):
             continue
         try:
-            low_f = float(low)
+            close_f = float(close)
             pre_f = float(pre)
         except (TypeError, ValueError):
             continue
-        tgt = _round_limit_price(pre_f, _limit_pct(code, name, -1))
-        if round(low_f, 2) == round(tgt, 2):
-            n += 1
-    return n
+        up_px = _round_limit_price(pre_f, _limit_pct(code, name, +1))
+        dn_px = _round_limit_price(pre_f, _limit_pct(code, name, -1))
+        rec = {"code": code, "name": name}
+        if round(close_f, 2) == round(up_px, 2):
+            up.append(rec)
+        if round(close_f, 2) == round(dn_px, 2):
+            down.append(rec)
+    return {
+        "limit_up": len(up),
+        "limit_down": len(down),
+        "limit_down_samples": down[:3],
+    }
 
 
 def _summarize_up(pool: list[dict[str, Any]]) -> dict[str, Any]:
@@ -260,20 +268,18 @@ def analyze(date: str | None = None) -> dict[str, Any]:
     count_source = "eastmoney_topic_pool"
     up_n = up_tc if up_tc else up["count"]
     down_n = down_tc if down_tc else down["count"]
+    down_samples = down["samples"]
 
-    # 当日：用同花顺客户端口径覆盖家数（涨停/跌停与软件一致）
+    # 当日：clist 收盘封死覆盖家数（含 ST）；clist 无历史
     if date == today:
-        ths = _fetch_ths_zdt_counts()
-        if ths:
-            up_n = ths["limit_up"]
-            down_n = ths["limit_down"]
-            count_source = "ths_indexflash_last_zdt"
-        else:
-            touch_dn = _count_clist_touch_limit_down()
-            if touch_dn is not None:
-                down_n = touch_dn
-                count_source = "eastmoney_clist_touch_dt+topic_zt"
-            # 涨停仍用专题池（与同花顺 ztzs / 软件涨停通常一致）
+        rows = _fetch_clist_hs_rows()
+        if rows:
+            closed = _count_clist_close_limit(rows)
+            up_n = closed["limit_up"]
+            down_n = closed["limit_down"]
+            if closed["limit_down_samples"]:
+                down_samples = closed["limit_down_samples"]
+            count_source = "eastmoney_clist_close_limit"
 
     return {
         "trade_date": f"{date[:4]}-{date[4:6]}-{date[6:8]}",
@@ -282,11 +288,11 @@ def analyze(date: str | None = None) -> dict[str, Any]:
         "max_lbc": up["max_lbc"],
         "leaders": up["leaders"],
         "leader_names": up["rep_names"],
-        "limit_down_samples": down["samples"],
+        "limit_down_samples": down_samples,
         "topic_limit_up": up_tc if up_tc else up["count"],
         "topic_limit_down": down_tc if down_tc else down["count"],
         "source": count_source,
-        "note": "家数对齐同花顺/东财客户端；连板代表来自东财涨停池；禁止贴全池",
+        "note": "家数=沪深A收盘封死（含ST，不含新股首日/北交所）；连板代表来自东财涨停池；禁止贴全池",
     }
 
 
@@ -295,10 +301,13 @@ def one_liner(rep: dict[str, Any]) -> str:
     lead_s = "、".join(leaders) if leaders else "—"
     down_n = rep.get("limit_down_samples") or []
     down_s = "、".join(d["name"] for d in down_n[:2] if d.get("name")) or "—"
+    topic_u = rep.get("topic_limit_up")
+    topic_d = rep.get("topic_limit_down")
     return (
         f"涨停={rep['limit_up']} 跌停={rep['limit_down']} "
         f"最高{rep['max_lbc']}连板 代表={lead_s} "
-        f"跌停样例={down_s} date={rep['trade_date']} source={rep['source']}"
+        f"跌停样例={down_s} date={rep['trade_date']} "
+        f"source={rep['source']} 池={topic_u}/{topic_d}"
     )
 
 

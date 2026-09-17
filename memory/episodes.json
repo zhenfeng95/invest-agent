@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-078",
+      "date": "2026-09-17",
+      "type": "workflow",
+      "summary": "涨跌停家数改收盘封死",
+      "detail": "limit_pool_summary 当日用东财clist沪深A收盘价=涨停/跌停价（含ST，不含新股首日/北交所/触及）；连板仍东财池。须重贴A股收盘Automation。",
+      "tickers": [],
+      "outcome": "source=eastmoney_clist_close_limit"
+    },
+    {
       "id": "ep-077",
       "date": "2026-09-16",
       "type": "trade",
