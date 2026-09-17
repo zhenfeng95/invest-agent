@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "ep-077",
+      "date": "2026-09-16",
+      "type": "trade",
+      "summary": "美股平NVDA +$0.03",
+      "detail": "卖NVDA 0.01@$214（成本$211，+$0.03/+1.42%）。未计费。US现持IBIT/SGOV/VOO0.05/QQQ0.03/PDD；NVDA已平。",
+      "tickers": [
+        "NVDA"
+      ],
+      "outcome": "US +$0.03; closed NVDA"
+    },
+    {
       "id": "ep-076",
       "date": "2026-09-16",
       "type": "trade",
