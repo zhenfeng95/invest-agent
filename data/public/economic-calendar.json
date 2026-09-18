@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T21:03:52+08:00",
+  "updated_at": "2026-09-18T08:02:37+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -2042,9 +2042,9 @@
       "title": "美国8月成屋签约销售指数月率",
       "previous": "-2.30",
       "consensus": "-0.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "-2.6",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-17 22:00",
@@ -2052,9 +2052,9 @@
       "title": "美国8月成屋签约销售指数",
       "previous": "71.2",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "71.2",
+      "revised": "71",
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-17 22:00",
@@ -2062,9 +2062,9 @@
       "title": "美国8月未季调成屋签约销售指数年率",
       "previous": "-2.50",
       "consensus": "-3.9",
-      "actual": null,
+      "actual": "-4.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-17 22:30",
@@ -2072,9 +2072,9 @@
       "title": "美国至9月11日当周EIA天然气库存(亿立方英尺)",
       "previous": "400",
       "consensus": "490",
-      "actual": null,
+      "actual": "440",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2082,9 +2082,9 @@
       "title": "美国至9月17日4周国债竞拍-得标利率",
       "previous": "3.775",
       "consensus": null,
-      "actual": null,
+      "actual": "3.82",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2092,9 +2092,9 @@
       "title": "美国至9月17日4周国债竞拍-得标利率配置百分比",
       "previous": "34.21",
       "consensus": null,
-      "actual": null,
+      "actual": "69.59",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2102,9 +2102,9 @@
       "title": "美国至9月17日4周国债竞拍-投标倍数",
       "previous": "2.81",
       "consensus": null,
-      "actual": null,
+      "actual": "3.02",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2112,9 +2112,9 @@
       "title": "美国至9月17日8周国债竞拍-得标利率",
       "previous": "3.845",
       "consensus": null,
-      "actual": null,
+      "actual": "3.92",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2122,9 +2122,9 @@
       "title": "美国至9月17日8周国债竞拍-得标利率配置百分比",
       "previous": "71.44",
       "consensus": null,
-      "actual": null,
+      "actual": "2.93",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-17 23:30",
@@ -2132,9 +2132,9 @@
       "title": "美国至9月17日8周国债竞拍-投标倍数",
       "previous": "2.82",
       "consensus": null,
-      "actual": null,
+      "actual": "2.94",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-18 00:00",
@@ -2182,9 +2182,9 @@
       "title": "美国至9月11日当周外国央行持有美国国债(亿美元)",
       "previous": "-111.46",
       "consensus": null,
-      "actual": null,
+      "actual": "187.26",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 05:00",
@@ -2192,9 +2192,9 @@
       "title": "韩国8月PPI年率",
       "previous": "7.70",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "7.9",
+      "revised": "7.7",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-18 05:00",
@@ -2202,9 +2202,9 @@
       "title": "韩国8月PPI月率",
       "previous": "-0.4",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.2",
+      "revised": "-0.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2212,9 +2212,9 @@
       "title": "新西兰8月贸易帐(亿纽元)",
       "previous": "-19.49",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-13.49",
+      "revised": "-21.18",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2222,9 +2222,9 @@
       "title": "新西兰8月12个月贸易帐(亿纽元)",
       "previous": "-52.36",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-54.4",
+      "revised": "-54.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2232,9 +2232,9 @@
       "title": "新西兰8月出口(亿纽元)",
       "previous": "73.9",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "66.6",
+      "revised": "72.2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2242,9 +2242,9 @@
       "title": "新西兰8月进口(亿纽元)",
       "previous": "93.4",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "80",
+      "revised": "93.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2252,9 +2252,9 @@
       "title": "新西兰8月食品价格指数年率",
       "previous": "1.9",
       "consensus": null,
-      "actual": null,
+      "actual": "1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-18 06:45",
@@ -2262,9 +2262,9 @@
       "title": "新西兰8月食品价格指数月率",
       "previous": "0.10",
       "consensus": null,
-      "actual": null,
+      "actual": "0.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-18 07:30",
@@ -2272,9 +2272,9 @@
       "title": "日本8月核心CPI年率",
       "previous": "1.80",
       "consensus": "1.80",
-      "actual": null,
+      "actual": "1.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 07:30",
@@ -2282,19 +2282,19 @@
       "title": "日本8月全国CPI年率",
       "previous": "1.90",
       "consensus": "2.00",
-      "actual": null,
+      "actual": "1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 07:30",
       "star": 2,
       "title": "日本8月全国未季调CPI月率",
-      "previous": "0.4",
+      "previous": "0.5",
       "consensus": null,
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-18 10:00",
@@ -2311,7 +2311,7 @@
       "star": 3,
       "title": "德国8月PPI月率",
       "previous": "1.10",
-      "consensus": "0.60",
+      "consensus": "0.4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2321,7 +2321,7 @@
       "star": 2,
       "title": "德国8月PPI年率",
       "previous": "3.00",
-      "consensus": "3.90",
+      "consensus": "4.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2431,7 +2431,7 @@
       "star": 3,
       "title": "美国8月工业产出月率",
       "previous": "0.20",
-      "consensus": "0.30",
+      "consensus": "0.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
