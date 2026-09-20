@@ -1,6 +1,23 @@
 {
   "episodes": [
     {
+      "id": "ep-080",
+      "date": "2026-09-20",
+      "type": "weekly_review",
+      "summary": "2026-09-3W 周度回顾：A +¥75，非池模式未改",
+      "detail": "区间9/14–9/20；已实现YH+75/US+$0.15；环境48→78；§7池空；GY9/18开002077、YH开600877/平002106；存档 output/reviews/weekly/weekly-2026-09-3W.md",
+      "tickers": [
+        "603230",
+        "002106",
+        "600877",
+        "002077",
+        "NVDA",
+        "QQQ",
+        "VOO"
+      ],
+      "outcome": "A +75 CNY; US +0.15 USD; discipline: no pool hits"
+    },
+    {
       "id": "ep-079",
       "date": "2026-09-18",
       "type": "trade",
