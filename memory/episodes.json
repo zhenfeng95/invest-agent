@@ -1,6 +1,19 @@
 {
   "episodes": [
     {
+      "id": "ep-081",
+      "date": "2026-09-18",
+      "type": "trade",
+      "summary": "美股：平GOOGL+$0.11；减VOO；开AMZN",
+      "detail": "卖GOOGL0.01@$356（成本$345，+$0.11/+3.19%，已平）；卖VOO0.01@$701（相对加权$702.16，-$0.01/-0.17%，余0.04）；买AMZN0.01@$253成本$2.53。均未计费。",
+      "tickers": [
+        "GOOGL",
+        "VOO",
+        "AMZN"
+      ],
+      "outcome": "GOOGL flat +$0.11; VOO 0.04@$702.16; AMZN 0.01@$253"
+    },
+    {
       "id": "ep-080",
       "date": "2026-09-16",
       "type": "trade",
