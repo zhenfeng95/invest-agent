@@ -500,9 +500,10 @@ A股收盘日报｜YYYY-MM-DD（精简版）
 
 1. **先跑脚本**：`market_turnover.py` · `limit_pool_summary.py` · `board_top.py` · `market_breadth.py` · `top100_amount.py` · `mtd_screener.py` · 持仓 `stock_ma_levels` / `stock_period_chg` / `stock_cyq_summary` · 扶摇 snapshot（7 指数 + 持仓批量一次）
 2. **写入** `output/daily/ashare-close-YYYY-MM-DD.md`；只写 §0–§8；表格优先；查不到标「暂无可靠数据」
-3. **立即写 X 推文**：按 `templates/close-tweet.md` 生成 `output/content/tweet-YYYY-MM-DD-ashare-close.md`（主贴首行 `A股收盘｜M/D`；主贴须有钩子+结构分化+主线+盯什么，叙事密度对齐美股样例；公开用词「全市场」；若提前100须写 **「全市场成交额前100」**；回复×3：结构 / 资金与主线 / 判断；每条加权 ≤280；数字只来自刚写的日报；不荐股；**禁止持仓/账户重心(HT·YH·GY)/私域评分编号**——私域只留日报；**缺数据整句省略**，禁止推文出现「未获取/暂无可靠数据/502」等元话术）
-4. **commit**（`ashare close daily + tweet YYYY-MM-DD`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
-5. **飞书**（不要发邮件；**正文 = 推文主贴，不是整份日报**）：
+3. **刷新评分 CSV**：`python3 tools/ashare_daily_snapshot.py` → `data/public/ashare-daily-snapshot.csv`（全量重扫 `ashare-close-*.md`；供个人站 ECharts）
+4. **立即写 X 推文**：按 `templates/close-tweet.md` 生成 `output/content/tweet-YYYY-MM-DD-ashare-close.md`（主贴首行 `A股收盘｜M/D`；主贴须有钩子+结构分化+主线+盯什么，叙事密度对齐美股样例；公开用词「全市场」；若提前100须写 **「全市场成交额前100」**；回复×3：结构 / 资金与主线 / 判断；每条加权 ≤280；数字只来自刚写的日报；不荐股；**禁止持仓/账户重心(HT·YH·GY)/私域评分编号**——私域只留日报；**缺数据整句省略**，禁止推文出现「未获取/暂无可靠数据/502」等元话术）
+5. **commit**（`ashare close daily + tweet YYYY-MM-DD`，**含** `data/public/ashare-daily-snapshot.csv`）→ **不要** Create PR → `bash scheduler/merge_to_main.sh` → 确认在 **main**
+6. **飞书**（不要发邮件；**正文 = 推文主贴，不是整份日报**）：
 
 ```bash
 python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/content/tweet-YYYY-MM-DD-ashare-close.md "A股收盘推文 YYYY-MM-DD" --section 主贴 --also output/daily/ashare-close-YYYY-MM-DD.md
@@ -510,6 +511,6 @@ python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/content/tweet-YYYY
 
 Webhook = Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI）。**禁止**再对 `ashare-close-YYYY-MM-DD.md` 整文发飞书。成功响应含 `"code":0`。
 
-6. **Token/搜索**：禁 THS catalog、禁涨跌停全池 JSON；THS snapshot ≤6；§5 负面每标的 ≤1 次；不 commit `mtd-screener-*` / `*-buysetup.*` / `user-pool-analyze-*`；不跑美股任务；可轻量更新 `memory/working.json`
-7. 云端无扶摇 MCP → 按 P1/P2 写完，**不要**因此跳过日报与推文
-8. 需要完整版时改用 `prompt-ashare-close-daily-origin.md` 并重贴 Automations
+7. **Token/搜索**：禁 THS catalog、禁涨跌停全池 JSON；THS snapshot ≤6；§5 负面每标的 ≤1 次；不 commit `mtd-screener-*` / `*-buysetup.*` / `user-pool-analyze-*`；不跑美股任务；可轻量更新 `memory/working.json`
+8. 云端无扶摇 MCP → 按 P1/P2 写完，**不要**因此跳过日报与推文
+9. 需要完整版时改用 `prompt-ashare-close-daily-origin.md` 并重贴 Automations

@@ -180,7 +180,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 
 1. **飞书群**收到机器人消息（标题含「A股收盘推文」「美股收盘推文」「周度回顾」或「月度交易复盘」；**财经日历无飞书**；收盘类正文为主贴，脚注链到推文全文+日报）
 2. **Automation 运行详情**：成功；摘要里有文件路径、`merge_to_main` 成功、飞书 `code:0`（日历任务则看脚本 `count=` / push）；**没有**「Opened pull request」
-3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-ashare-close.md`、`output/daily/us-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-us-close.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md`、`output/reviews/monthly/monthly-YYYY-MM.md` 或 `data/public/economic-calendar.json` 更新；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
+3. **GitHub `main`**：对应 `output/daily/ashare-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-ashare-close.md`、`data/public/ashare-daily-snapshot.csv`、`output/daily/us-close-YYYY-MM-DD.md`、`output/content/tweet-YYYY-MM-DD-us-close.md`、`output/reviews/weekly/weekly-YYYY-MM-NW.md`、`output/reviews/monthly/monthly-YYYY-MM.md` 或 `data/public/economic-calendar.json` 更新；若当日交了用户池，`data/raw/screener/pool-latest.csv` 亦应已更新（临时 `cursor/*` 应已删除）
 4. 本机：`git pull origin main` 后 `output/` / `data/public/` 同步
 
 若飞书没到：核对 Webhook URL → 机器人是否在群里 → 运行日志响应码。

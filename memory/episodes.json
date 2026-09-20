@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-083",
+      "date": "2026-09-20",
+      "type": "workflow",
+      "summary": "A股收盘评分快照 CSV",
+      "detail": "从 ashare-close 日报摘录 score/strategy/attack/account/仓位到 data/public/ashare-daily-snapshot.csv；收盘任务写完日报后跑 tools/ashare_daily_snapshot.py。须重贴 Automation。",
+      "tickers": [],
+      "outcome": "rows=32"
+    },
+    {
       "id": "ep-082",
       "date": "2026-09-20",
       "type": "weekly_review",

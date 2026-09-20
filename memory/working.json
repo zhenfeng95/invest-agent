@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-20T10:04:00+08:00",
+    "updated_at": "2026-09-20T10:15:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -124,6 +124,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-20T10:15:00+08:00",
+            "decision": "A股收盘评分快照 CSV 供个人站 ECharts",
+            "detail": "tools/ashare_daily_snapshot.py → data/public/ashare-daily-snapshot.csv；日报后全量重扫；须重贴 A股收盘 Automation"
+        },
         {
             "at": "2026-09-20T10:04:00+08:00",
             "decision": "完成 2026-09-3W 周度回顾（9/14–9/20）",
@@ -549,6 +554,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-09-20T10:15:00+08:00",
+            "changes": "通知偏好：A股收盘日报后跑 ashare_daily_snapshot.py，刷新 data/public/ashare-daily-snapshot.csv（个人站 ECharts）",
+            "reason": "用户要维护评分/仓位/进攻四条件/账户重心时间序列给另一项目读"
+        },
         {
             "updated_at": "2026-09-17T17:50:00+08:00",
             "changes": "A股收盘涨跌停家数：沪深A收盘封死（含ST，不含新股首日/北交所/盘中触及）；不再用THS indexflash或触及跌停",
