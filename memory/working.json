@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-20T10:15:00+08:00",
+    "updated_at": "2026-09-20T10:56:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -124,6 +124,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-20T10:56:00+08:00",
+            "decision": "A股收盘§0加防守四条件",
+            "detail": "无领涨×指数向下×红盘减少×绿盘占优，须4/4才宜防守；与进攻四条件互斥闸门。prompt/rules/my-soul已改；9/9–9/18样例已补一行；snapshot 增 defend_*。须重贴 Automation"
+        },
         {
             "at": "2026-09-20T10:15:00+08:00",
             "decision": "A股收盘评分快照 CSV 供个人站 ECharts",
@@ -543,7 +548,7 @@
         "notes": "9/17 SPX+1.14%终结三连阴/NDX+1.69%/SOX+3.14%；XLK+2.25%/XLF-0.09%；LEN miss；FDX AH待公布"
     },
     "open_questions": [
-        "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0三块+§8分层回顾+进攻四条件）+ FEISHU_WEBHOOK_URL",
+        "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
         "Cursor Automations：Invest A-Share / US Close Daily 须重贴最新 prompt（含推文+飞书主贴）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
@@ -554,6 +559,11 @@
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-09-20T10:56:00+08:00",
+            "changes": "通知偏好：A股收盘§0在进攻四条件后加防守四条件（无领涨×指数向下×红盘减少×绿盘占优，须全满足；只写一行）",
+            "reason": "用户确认按进攻四条件对称推出防守闸门，写入收盘日报"
+        },
         {
             "updated_at": "2026-09-20T10:15:00+08:00",
             "changes": "通知偏好：A股收盘日报后跑 ashare_daily_snapshot.py，刷新 data/public/ashare-daily-snapshot.csv（个人站 ECharts）",

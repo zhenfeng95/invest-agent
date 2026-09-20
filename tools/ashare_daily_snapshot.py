@@ -30,6 +30,9 @@ FIELDS = [
     "attack_ok",
     "attack_met",
     "attack_note",
+    "defend_ok",
+    "defend_met",
+    "defend_note",
     "account_focus",
     "suggested_position",
     "position_low",
@@ -60,6 +63,9 @@ _STRATEGY = re.compile(
 )
 _ATTACK = re.compile(
     r"进攻四条件[：:]\s*\**\s*(是|否)\s*[（(]\s*(\d)\s*/\s*4\s*[）)]\s*[—\-–]?\s*(.*)",
+)
+_DEFEND = re.compile(
+    r"防守四条件[：:]\s*\**\s*(是|否)\s*[（(]\s*(\d)\s*/\s*4\s*[）)]\s*[—\-–]?\s*(.*)",
 )
 _ACCOUNT = re.compile(
     r"账户重心[：:]\s*(.+)",
@@ -132,6 +138,7 @@ def parse_daily(path: Path) -> dict[str, str] | None:
     text = path.read_text(encoding="utf-8")
     score_m = _SCORE.search(text) or _SCORE_FALLBACK.search(text)
     attack_m = _ATTACK.search(text)
+    defend_m = _DEFEND.search(text)
     pos_snippet = ""
     for pm in _POSITION.finditer(text):
         if text[max(0, pm.start() - 2) : pm.start()] == "环境":
@@ -151,6 +158,14 @@ def parse_daily(path: Path) -> dict[str, str] | None:
         attack_met = attack_m.group(2)
         attack_note = _clean(attack_m.group(3), max_len=160)
 
+    defend_ok = ""
+    defend_met = ""
+    defend_note = ""
+    if defend_m:
+        defend_ok = "true" if defend_m.group(1) == "是" else "false"
+        defend_met = defend_m.group(2)
+        defend_note = _clean(defend_m.group(3), max_len=160)
+
     return {
         "date": m.group(1),
         "score": score_m.group(1) if score_m else "",
@@ -160,6 +175,9 @@ def parse_daily(path: Path) -> dict[str, str] | None:
         "attack_ok": attack_ok,
         "attack_met": attack_met,
         "attack_note": attack_note,
+        "defend_ok": defend_ok,
+        "defend_met": defend_met,
+        "defend_note": defend_note,
         "account_focus": account,
         "suggested_position": pos_label,
         "position_low": pos_lo,
@@ -190,10 +208,12 @@ def _print_check(rows: list[dict[str, str]]) -> int:
     missing_score = [r["date"] for r in rows if not r["score"]]
     missing_pos = [r["date"] for r in rows if not r["suggested_position"]]
     missing_attack = [r["date"] for r in rows if not r["attack_ok"]]
+    missing_defend = [r["date"] for r in rows if not r["defend_ok"]]
     print(f"rows={len(rows)}")
     print(f"missing_score={missing_score or '[]'}")
     print(f"missing_position={missing_pos or '[]'}")
     print(f"missing_attack(pre-§0 ok)={missing_attack or '[]'}")
+    print(f"missing_defend(pre-§0 ok)={missing_defend or '[]'}")
     return 1 if missing_score else 0
 
 

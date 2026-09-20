@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-084",
+      "date": "2026-09-20",
+      "type": "workflow",
+      "summary": "A股收盘§0加防守四条件",
+      "detail": "防守闸门：无领涨×指数向下×红盘减少×绿盘占优，4/4才宜防守。prompt/rules/my-soul已改；9/9–9/18日报补一行；CSV 增 defend_ok/met/note。须重贴 Automation。",
+      "tickers": [],
+      "outcome": "defend gate in §0"
+    },
+    {
       "id": "ep-083",
       "date": "2026-09-20",
       "type": "workflow",

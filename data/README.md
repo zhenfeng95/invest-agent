@@ -30,7 +30,10 @@ A 股收盘日报的评分快照。每天 17:00 写完 `output/daily/ashare-clos
 | `strategy` | 防守 / 轻仓试错 / 积极参与 / 进攻 | tooltip；柱颜色 |
 | `attack_ok` | `true` / `false` / 空（9/9 前日报无进攻四条件） | tooltip |
 | `attack_met` | 0–4 / 空 | tooltip |
-| `attack_note` | 四条件一行说明 | tooltip |
+| `attack_note` | 进攻四条件一行说明 | tooltip |
+| `defend_ok` | `true` / `false` / 空（补写前日报无防守四条件） | tooltip |
+| `defend_met` | 0–4 / 空 | tooltip |
+| `defend_note` | 防守四条件一行说明 | tooltip |
 | `account_focus` | 账户重心 | tooltip |
 | `suggested_position` | 建议总仓展示串 | tooltip |
 | `position_low` / `position_high` | 仓位数字带（`≤20%` 时 low 为空） | 可选 |
