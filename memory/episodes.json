@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "ep-080",
+      "date": "2026-09-16",
+      "type": "trade",
+      "summary": "HT平半导体ETF ±¥0",
+      "detail": "卖512480 100@¥1.00（成本1.00，粗算±¥0）。未计费。HT现仅持159338。",
+      "tickers": [
+        "512480"
+      ],
+      "outcome": "HT flat 512480; pnl 0"
+    },
+    {
       "id": "ep-079",
       "date": "2026-09-18",
       "type": "trade",
