@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-20T10:56:00+08:00",
+    "updated_at": "2026-09-21T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -124,6 +124,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-21T08:10:00+08:00",
+            "decision": "完成 2026-09-21 美股收盘日报（复盘9/18）",
+            "detail": "Fed周收官分化；SPX+0.17%/NDX+0.40%/SOX+2.78%；10Y=5.01%；VIX14.81；XLK+0.82%/XLB·XLU·XLC弱；BTC~$81k；VOO+0.11%/QQQ+0.63%/IBIT+6.28%/AMZN+1%；存档 us-close-2026-09-21.md + tweet；待飞书"
+        },
         {
             "at": "2026-09-20T10:56:00+08:00",
             "decision": "A股收盘§0加防守四条件",
@@ -543,9 +548,9 @@
     "market_regime": {
         "equity": "A股：GY持002077 100@¥14.37；YH持600877 100@¥12.1；HT持159338 600@¥1.212；512480已平；9/18宽度4234:1152、半导体/芯片risk-on",
         "us_equity": "美：IBIT 0.02@$35.73；QQQ 0.02@$713.11；VOO 0.04@$702.16；PDD 0.02@$85.37；AMZN 0.01@$253；GOOGL已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$76.5k（risk-on修复）；Oct再加息~49.8%",
-        "macro": "9/17：10Y~4.94%（自5%回落）；初请196K；Brent $104.07；VIX 15.46；FedWatch Oct hold50.2%/hike49.8%",
-        "notes": "9/17 SPX+1.14%终结三连阴/NDX+1.69%/SOX+3.14%；XLK+2.25%/XLF-0.09%；LEN miss；FDX AH待公布"
+        "crypto": "IBIT 0.02@$35.73；BTC~$81k（crypto-led risk-on）；Oct再加息~57.6%",
+        "macro": "9/18：10Y=5.01%（+7bp）；Brent $103.87；VIX 14.81；FedWatch Oct hold42.4%/hike57.6%；LEI -0.1%/工业产出0%",
+        "notes": "9/18 SPX+0.17%连涨第二日/NDX+0.40%/SOX+2.78%；XLK+0.82%/XLB·XLU·XLC-1.4%级；Russell-0.5%；BTC+6%；Buffett卸任BRK主席"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
