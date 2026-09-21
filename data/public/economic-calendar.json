@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T08:04:05+08:00",
+  "updated_at": "2026-09-21T21:04:54+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -52,9 +52,9 @@
       "title": "加拿大至9月18日全国经济信心指数",
       "previous": "50.4",
       "consensus": null,
-      "actual": null,
+      "actual": "49.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-21 20:30",
@@ -62,9 +62,9 @@
       "title": "美国8月芝加哥联储全国活动指数",
       "previous": "-0.08",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.04",
+      "revised": "0.08",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -140,7 +140,7 @@
       "pub_time": "2026-09-22 14:00",
       "star": 2,
       "title": "英国8月政府收支短差(亿英镑)",
-      "previous": "-290",
+      "previous": "-290.06",
       "consensus": null,
       "actual": null,
       "revised": null,
