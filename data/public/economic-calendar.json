@@ -1,31 +1,11 @@
 {
-  "updated_at": "2026-09-22T08:04:33+08:00",
+  "updated_at": "2026-09-22T21:01:51+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
   "coverage": "current_natural_week_mon_sun",
   "count": 158,
   "events": [
-    {
-      "pub_time": "2026-09-21 00:00",
-      "star": 3,
-      "title": "中国8月本年迄今全国发电装机容量(万千瓦)",
-      "previous": "407820",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-21 00:00",
-      "star": 3,
-      "title": "中国8月本年迄今全国发电装机容量年率",
-      "previous": "11",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
     {
       "pub_time": "2026-09-21 07:01",
       "star": 2,
@@ -127,14 +107,34 @@
       "affect_txt": "利空"
     },
     {
+      "pub_time": "2026-09-22 00:00",
+      "star": 3,
+      "title": "中国8月本年迄今全国发电装机容量(万千瓦)",
+      "previous": "407820",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-22 00:00",
+      "star": 3,
+      "title": "中国8月本年迄今全国发电装机容量年率",
+      "previous": "11",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
       "pub_time": "2026-09-22 14:00",
       "star": 3,
       "title": "英国8月公共部门净借款(亿英镑)",
       "previous": "18",
-      "consensus": null,
-      "actual": null,
+      "consensus": "155.5",
+      "actual": "182.68",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 14:00",
@@ -142,29 +142,29 @@
       "title": "英国8月政府收支短差(亿英镑)",
       "previous": "-290.06",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "100.05",
+      "revised": "-268.08",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 16:00",
       "star": 1,
       "title": "中国台湾8月外销订单年率",
       "previous": "61.90",
-      "consensus": null,
-      "actual": null,
+      "consensus": "63.9",
+      "actual": "71.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 16:00",
       "star": 1,
       "title": "中国台湾8月失业率",
       "previous": "3.33",
-      "consensus": null,
-      "actual": null,
+      "consensus": "3.3",
+      "actual": "3.32",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 18:00",
@@ -172,9 +172,9 @@
       "title": "英国9月CBI工业订单差值",
       "previous": "-25",
       "consensus": null,
-      "actual": null,
+      "actual": "-9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 18:00",
@@ -182,9 +182,9 @@
       "title": "英国9月CBI工业物价预期差值",
       "previous": "22",
       "consensus": null,
-      "actual": null,
+      "actual": "12",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 20:15",
@@ -192,9 +192,9 @@
       "title": "美国至9月5日当周ADP就业人数周度变动(万人)",
       "previous": "1.625",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2",
+      "revised": "1.675",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 20:55",
@@ -202,16 +202,16 @@
       "title": "美国至9月19日当周红皮书商业零售销售年率",
       "previous": "8.5",
       "consensus": null,
-      "actual": null,
+      "actual": "7.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 22:00",
       "star": 3,
       "title": "欧元区9月消费者信心指数初值",
       "previous": "-15.5",
-      "consensus": "-16.5",
+      "consensus": "-16",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -221,7 +221,7 @@
       "star": 3,
       "title": "美国9月里奇蒙德联储制造业指数",
       "previous": "4",
-      "consensus": null,
+      "consensus": "2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -311,7 +311,7 @@
       "star": 3,
       "title": "美国至9月18日当周API原油库存(万桶)",
       "previous": "714.4",
-      "consensus": null,
+      "consensus": "-56.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -371,7 +371,7 @@
       "star": 1,
       "title": "美国至9月18日当周API汽油库存(万桶)",
       "previous": "146.2",
-      "consensus": null,
+      "consensus": "15.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -381,7 +381,7 @@
       "star": 1,
       "title": "美国至9月18日当周API精炼油库存(万桶)",
       "previous": "160.7",
-      "consensus": null,
+      "consensus": "-45.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -471,7 +471,7 @@
       "star": 3,
       "title": "法国9月制造业PMI初值",
       "previous": "51.1",
-      "consensus": "50.8",
+      "consensus": "50.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -481,7 +481,7 @@
       "star": 2,
       "title": "法国9月服务业PMI初值",
       "previous": "48",
-      "consensus": "48.4",
+      "consensus": "48.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -491,7 +491,7 @@
       "star": 2,
       "title": "法国9月综合PMI初值",
       "previous": "48.5",
-      "consensus": null,
+      "consensus": "48.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -531,7 +531,7 @@
       "star": 2,
       "title": "德国9月综合PMI初值",
       "previous": "51.8",
-      "consensus": null,
+      "consensus": "51.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -551,7 +551,7 @@
       "star": 3,
       "title": "欧元区9月制造业PMI初值",
       "previous": "52.7",
-      "consensus": "52.7",
+      "consensus": "52.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -571,7 +571,7 @@
       "star": 2,
       "title": "欧元区9月综合PMI初值",
       "previous": "52",
-      "consensus": "51.5",
+      "consensus": "51.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -591,7 +591,7 @@
       "star": 2,
       "title": "中国香港8月综合CPI年率",
       "previous": "1.70",
-      "consensus": null,
+      "consensus": "1.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -601,7 +601,7 @@
       "star": 3,
       "title": "英国9月制造业PMI初值",
       "previous": "51.7",
-      "consensus": null,
+      "consensus": "51.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -611,7 +611,7 @@
       "star": 3,
       "title": "英国9月服务业PMI初值",
       "previous": "52.5",
-      "consensus": null,
+      "consensus": "52",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -621,7 +621,7 @@
       "star": 2,
       "title": "英国9月综合PMI初值",
       "previous": "52.5",
-      "consensus": null,
+      "consensus": "52",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -681,7 +681,7 @@
       "star": 3,
       "title": "美国9月标普全球制造业PMI初值",
       "previous": "53.9",
-      "consensus": "53.5",
+      "consensus": "53.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -711,7 +711,7 @@
       "star": 4,
       "title": "美国至9月18日当周EIA原油库存(万桶)",
       "previous": "-64",
-      "consensus": null,
+      "consensus": "-56.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -801,7 +801,7 @@
       "star": 2,
       "title": "美国至9月18日当周EIA精炼厂设备利用率",
       "previous": "96.8",
-      "consensus": null,
+      "consensus": "96.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -831,7 +831,7 @@
       "star": 1,
       "title": "美国至9月18日当周EIA汽油库存(万桶)",
       "previous": "79.4",
-      "consensus": null,
+      "consensus": "15.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -841,7 +841,7 @@
       "star": 1,
       "title": "美国至9月18日当周EIA精炼油库存(万桶)",
       "previous": "158.5",
-      "consensus": null,
+      "consensus": "-45.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
