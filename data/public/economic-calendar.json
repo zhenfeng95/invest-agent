@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T21:04:54+08:00",
+  "updated_at": "2026-09-22T08:04:33+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -72,9 +72,9 @@
       "title": "美国至9月21日3个月国债竞拍-得标利率",
       "previous": "3.97",
       "consensus": null,
-      "actual": null,
+      "actual": "4.015",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -82,9 +82,9 @@
       "title": "美国至9月21日3个月国债竞拍-得标利率配置百分比",
       "previous": "13.86",
       "consensus": null,
-      "actual": null,
+      "actual": "36.66",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -92,9 +92,9 @@
       "title": "美国至9月21日3个月国债竞拍-投标倍数",
       "previous": "2.64",
       "consensus": null,
-      "actual": null,
+      "actual": "2.77",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -102,9 +102,9 @@
       "title": "美国至9月21日6个月国债竞拍-得标利率",
       "previous": "4.06",
       "consensus": null,
-      "actual": null,
+      "actual": "4.155",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -112,9 +112,9 @@
       "title": "美国至9月21日6个月国债竞拍-得标利率配置百分比",
       "previous": "82.5",
       "consensus": null,
-      "actual": null,
+      "actual": "48.01",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-21 23:30",
@@ -122,9 +122,9 @@
       "title": "美国至9月21日6个月国债竞拍-投标倍数",
       "previous": "2.74",
       "consensus": null,
-      "actual": null,
+      "actual": "2.62",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 14:00",
