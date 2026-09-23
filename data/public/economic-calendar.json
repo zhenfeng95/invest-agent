@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T21:01:51+08:00",
+  "updated_at": "2026-09-23T08:13:05+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -107,26 +107,6 @@
       "affect_txt": "利空"
     },
     {
-      "pub_time": "2026-09-22 00:00",
-      "star": 3,
-      "title": "中国8月本年迄今全国发电装机容量(万千瓦)",
-      "previous": "407820",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-09-22 00:00",
-      "star": 3,
-      "title": "中国8月本年迄今全国发电装机容量年率",
-      "previous": "11",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-09-22 14:00",
       "star": 3,
       "title": "英国8月公共部门净借款(亿英镑)",
@@ -212,9 +192,9 @@
       "title": "欧元区9月消费者信心指数初值",
       "previous": "-15.5",
       "consensus": "-16",
-      "actual": null,
+      "actual": "-16.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 22:00",
@@ -222,9 +202,9 @@
       "title": "美国9月里奇蒙德联储制造业指数",
       "previous": "4",
       "consensus": "2",
-      "actual": null,
+      "actual": "-2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 22:00",
@@ -232,9 +212,9 @@
       "title": "美国9月里奇蒙德联储制造业装船指数",
       "previous": "11",
       "consensus": null,
-      "actual": null,
+      "actual": "-5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 22:00",
@@ -242,9 +222,9 @@
       "title": "美国9月里奇蒙德联储服务业收入指数",
       "previous": "-8",
       "consensus": null,
-      "actual": null,
+      "actual": "0",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 23:30",
@@ -252,9 +232,9 @@
       "title": "美国至9月22日6周国债竞拍-得标利率",
       "previous": "3.85",
       "consensus": null,
-      "actual": null,
+      "actual": "3.87",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-22 23:30",
@@ -262,9 +242,9 @@
       "title": "美国至9月22日6周国债竞拍-得标利率配置百分比",
       "previous": "35.19",
       "consensus": null,
-      "actual": null,
+      "actual": "83.32",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-22 23:30",
@@ -272,9 +252,29 @@
       "title": "美国至9月22日6周国债竞拍-投标倍数",
       "previous": "3.16",
       "consensus": null,
+      "actual": "3.03",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-09-23 00:00",
+      "star": 3,
+      "title": "中国8月本年迄今全国发电装机容量(万千瓦)",
+      "previous": "407820",
+      "consensus": null,
       "actual": null,
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-09-23 00:00",
+      "star": 3,
+      "title": "中国8月本年迄今全国发电装机容量年率",
+      "previous": "11",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-09-23 01:00",
@@ -282,9 +282,9 @@
       "title": "美国至9月22日2年期国债竞拍-得标利率",
       "previous": "4.20",
       "consensus": null,
-      "actual": null,
+      "actual": "4.787",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 01:00",
@@ -292,9 +292,9 @@
       "title": "美国至9月22日2年期国债竞拍-得标利率配置百分比",
       "previous": "85.68",
       "consensus": null,
-      "actual": null,
+      "actual": "33.42",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 01:00",
@@ -302,9 +302,9 @@
       "title": "美国至9月22日2年期国债竞拍-投标倍数",
       "previous": "2.6",
       "consensus": null,
-      "actual": null,
+      "actual": "2.63",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -312,9 +312,9 @@
       "title": "美国至9月18日当周API原油库存(万桶)",
       "previous": "714.4",
       "consensus": "-56.3",
-      "actual": null,
+      "actual": "178.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -322,9 +322,9 @@
       "title": "美国至9月18日当周API原油进口(万桶)",
       "previous": "-4.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-73.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -332,9 +332,9 @@
       "title": "美国至9月18日当周API取暖油库存(万桶)",
       "previous": "-2.8",
       "consensus": null,
-      "actual": null,
+      "actual": "43.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -342,9 +342,9 @@
       "title": "美国至9月18日当周API库欣原油库存(万桶)",
       "previous": "-24.6",
       "consensus": null,
-      "actual": null,
+      "actual": "208.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -352,9 +352,9 @@
       "title": "美国至9月18日当周API成品油进口(万桶/日)",
       "previous": "30.7",
       "consensus": null,
-      "actual": null,
+      "actual": "-37.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -362,9 +362,9 @@
       "title": "美国至9月18日当周API投产原油量(万桶/日)",
       "previous": "-11.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-52.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -372,9 +372,9 @@
       "title": "美国至9月18日当周API汽油库存(万桶)",
       "previous": "146.2",
       "consensus": "15.8",
-      "actual": null,
+      "actual": "-216",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 04:30",
@@ -382,9 +382,9 @@
       "title": "美国至9月18日当周API精炼油库存(万桶)",
       "previous": "160.7",
       "consensus": "-45.9",
-      "actual": null,
+      "actual": "-216.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 05:00",
@@ -392,9 +392,9 @@
       "title": "韩国9月消费者信心指数",
       "previous": "104.5",
       "consensus": null,
-      "actual": null,
+      "actual": "106.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 07:00",
@@ -402,9 +402,9 @@
       "title": "澳大利亚9月标普全球制造业PMI初值",
       "previous": "52",
       "consensus": null,
-      "actual": null,
+      "actual": "49.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 07:00",
@@ -412,9 +412,9 @@
       "title": "澳大利亚9月标普全球服务业PMI初值",
       "previous": "53.2",
       "consensus": null,
-      "actual": null,
+      "actual": "51.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 07:00",
@@ -422,9 +422,9 @@
       "title": "澳大利亚9月标普全球综合PMI初值",
       "previous": "52.7",
       "consensus": null,
-      "actual": null,
+      "actual": "50.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 13:00",
