@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-23T17:12:00+08:00",
+    "updated_at": "2026-09-24T08:12:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -145,6 +145,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-09-24T08:12:00+08:00",
+            "decision": "完成 2026-09-24 美股收盘日报（复盘9/23）",
+            "detail": "PMI热+10Y~5.11%；SPX-0.8%/NDX-1.1%/Russell-1.8%/SOX-1.2%；XLE+~1%；VIX15.18；Barr hawk Oct hike~66%+；CTAS beat跌/GIS/PAYX；VOO~-0.76%/IBIT估-1%；存档 us-close-2026-09-24.md+tweet；飞书"
+        },
         {
             "at": "2026-09-23T15:13:00+08:00",
             "decision": "补录9/23 GY平安彩+YH平中毅达",
@@ -614,9 +619,9 @@
     "market_regime": {
         "equity": "A股：GY持002077 100@¥14.37（600207已平+¥18）；YH空个股（600610已平-¥33）；HT持159338 600@¥1.212",
         "us_equity": "美：IBIT 0.02@$35.73；VOO 0.02@$702.16；PDD 0.02@$85.37；QQQ已平；AMZN已平；GOOGL已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$86k（9/22整固）；Oct再加息~56.5%",
-        "macro": "9/22：10Y~4.96%（微降）；Brent~$99.25；VIX~14.2；FedWatch Oct hike56.5%；12月累计加息概率高",
-        "notes": "9/22 NDX二连新高+0.82%/SPX平/Dow-0.36%/SOX+2.06%；XLB+1.65%/XLF-1.97%；AZO+6%；金融弱"
+        "crypto": "IBIT 0.02@$35.73；BTC~$85k（9/23利率日回撤）；Oct hike~66%+",
+        "macro": "9/23：10Y~5.11%（2007来高）；PMI58.4热；VIX~15.2；FedWatch Oct hike66-73%；Barr hawk",
+        "notes": "9/23 SPX-0.8%/NDX-1.1%/Russell-1.8%/SOX-1.2%；XLE+~1%；CTAS beat跌/PAYX-8.8%"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
