@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23T21:05:14+08:00",
+  "updated_at": "2026-09-24T08:04:07+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -672,9 +672,9 @@
       "title": "南非至9月23日回购利率",
       "previous": "7.00",
       "consensus": "7.25",
-      "actual": null,
+      "actual": "7.25",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-23 21:45",
@@ -682,9 +682,9 @@
       "title": "美国9月标普全球制造业PMI初值",
       "previous": "53.9",
       "consensus": "53.6",
-      "actual": null,
+      "actual": "57",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 21:45",
@@ -692,9 +692,9 @@
       "title": "美国9月标普全球服务业PMI初值",
       "previous": "56.5",
       "consensus": "56",
-      "actual": null,
+      "actual": "58.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 21:45",
@@ -702,9 +702,9 @@
       "title": "美国9月标普全球综合PMI初值",
       "previous": "56",
       "consensus": null,
-      "actual": null,
+      "actual": "58.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -712,9 +712,9 @@
       "title": "美国至9月18日当周EIA原油库存(万桶)",
       "previous": "-64",
       "consensus": "-64.1",
-      "actual": null,
+      "actual": "296.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -722,9 +722,9 @@
       "title": "美国至9月18日当周EIA俄克拉荷马州库欣原油库存(万桶)",
       "previous": "-34.2",
       "consensus": null,
-      "actual": null,
+      "actual": "226.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -732,9 +732,9 @@
       "title": "美国至9月18日当周EIA战略石油储备库存(万桶)",
       "previous": "-40.3",
       "consensus": null,
-      "actual": null,
+      "actual": "-40.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -742,9 +742,9 @@
       "title": "美国至9月18日当周EIA原油产量引伸需求数据(万桶/日)",
       "previous": "2109.3",
       "consensus": null,
-      "actual": null,
+      "actual": "1939.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -752,9 +752,9 @@
       "title": "美国至9月18日当周EIA原油进口(万桶)",
       "previous": "-118",
       "consensus": null,
-      "actual": null,
+      "actual": "36.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -762,9 +762,9 @@
       "title": "美国至9月18日当周EIA取暖油库存(万桶)",
       "previous": "68.4",
       "consensus": null,
-      "actual": null,
+      "actual": "34.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -772,9 +772,9 @@
       "title": "美国至9月18日当周EIA成品油进口(万桶/日)",
       "previous": "30.8",
       "consensus": null,
-      "actual": null,
+      "actual": "-12.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -782,9 +782,9 @@
       "title": "美国至9月18日当周EIA投产原油量(万桶/日)",
       "previous": "-25.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-51.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -792,9 +792,9 @@
       "title": "美国至9月18日当周EIA汽油产量(万桶/日)",
       "previous": "33.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-5.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -802,9 +802,9 @@
       "title": "美国至9月18日当周EIA精炼厂设备利用率",
       "previous": "96.8",
       "consensus": "96.2",
-      "actual": null,
+      "actual": "94",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -812,9 +812,9 @@
       "title": "美国至9月18日当周EIA精炼油产量(万桶/日)",
       "previous": "-12.1",
       "consensus": null,
-      "actual": null,
+      "actual": "-6.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -822,9 +822,9 @@
       "title": "美国至9月18日当周EIA新配方汽油库存(万桶)",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -832,9 +832,9 @@
       "title": "美国至9月18日当周EIA汽油库存(万桶)",
       "previous": "79.4",
       "consensus": "9.5",
-      "actual": null,
+      "actual": "-168.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -842,9 +842,9 @@
       "title": "美国至9月18日当周EIA精炼油库存(万桶)",
       "previous": "158.5",
       "consensus": "-63.3",
-      "actual": null,
+      "actual": "-42.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -852,9 +852,9 @@
       "title": "美国至9月18日当周EIA蒸馏燃油产量引伸需求数据(万桶/日)",
       "previous": "511.46",
       "consensus": null,
-      "actual": null,
+      "actual": "530.51",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 22:30",
@@ -862,9 +862,9 @@
       "title": "美国至9月18日当周EIA车用汽油总产量引伸需求数据(万桶/日)",
       "previous": "975.27",
       "consensus": null,
-      "actual": null,
+      "actual": "968.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 23:30",
@@ -872,9 +872,9 @@
       "title": "美国至9月23日4个月国债竞拍-得标利率",
       "previous": "4.03",
       "consensus": null,
-      "actual": null,
+      "actual": "4.135",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-23 23:30",
@@ -882,9 +882,9 @@
       "title": "美国至9月23日4个月国债竞拍-得标利率配置百分比",
       "previous": "23.62",
       "consensus": null,
-      "actual": null,
+      "actual": "40.67",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-23 23:30",
@@ -892,9 +892,9 @@
       "title": "美国至9月23日4个月国债竞拍-投标倍数",
       "previous": "2.72",
       "consensus": null,
-      "actual": null,
+      "actual": "2.81",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-24 01:00",
@@ -902,9 +902,9 @@
       "title": "美国至9月23日5年期国债竞拍-得标利率",
       "previous": "4.39",
       "consensus": null,
-      "actual": null,
+      "actual": "5.033",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 01:00",
@@ -912,9 +912,9 @@
       "title": "美国至9月23日5年期国债竞拍-得标利率配置百分比",
       "previous": "19.22",
       "consensus": null,
-      "actual": null,
+      "actual": "30.34",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-24 01:00",
@@ -922,9 +922,9 @@
       "title": "美国至9月23日5年期国债竞拍-投标倍数",
       "previous": "2.37",
       "consensus": null,
-      "actual": null,
+      "actual": "2.21",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 08:30",
