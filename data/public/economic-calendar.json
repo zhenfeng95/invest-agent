@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25T08:14:12+08:00",
+  "updated_at": "2026-09-25T21:18:20+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1411,10 +1411,10 @@
       "star": 3,
       "title": "德国10月Gfk消费者信心指数",
       "previous": "-26.6",
-      "consensus": "-27.2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "-27.4",
+      "actual": "-30.6",
+      "revised": "-26.8",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 14:45",
@@ -1422,9 +1422,9 @@
       "title": "法国第二季度未季调月薪季率终值",
       "previous": "0.70",
       "consensus": "0.50",
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 15:00",
@@ -1432,9 +1432,9 @@
       "title": "西班牙第二季度GDP年率终值",
       "previous": "2.70",
       "consensus": "2.70",
-      "actual": null,
+      "actual": "2.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 15:00",
@@ -1442,9 +1442,9 @@
       "title": "西班牙第二季度GDP季率终值",
       "previous": "0.70",
       "consensus": "0.70",
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-25 16:00",
@@ -1452,9 +1452,9 @@
       "title": "欧元区8月三个月货币供应M3年率",
       "previous": "3.2",
       "consensus": null,
-      "actual": null,
+      "actual": "3.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 16:00",
@@ -1462,19 +1462,19 @@
       "title": "欧元区8月货币供应M3年率",
       "previous": "3.40",
       "consensus": "3.50",
-      "actual": null,
+      "actual": "3.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-25 20:30",
       "star": 3,
       "title": "美国8月耐用品订单月率",
       "previous": "1.10",
-      "consensus": "-0.30",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "-0.4",
+      "actual": "0",
+      "revised": "0.9",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 20:30",
@@ -1482,9 +1482,9 @@
       "title": "美国8月扣除国防的耐用品订单月率",
       "previous": "1.3",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.1",
+      "revised": "1.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 20:30",
@@ -1492,9 +1492,9 @@
       "title": "美国8月扣除运输的耐用品订单月率",
       "previous": "0.40",
       "consensus": "0.60",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "0.7",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 20:30",
@@ -1502,16 +1502,16 @@
       "title": "美国8月扣除飞机非国防资本耐用品订单月率",
       "previous": "0.00",
       "consensus": "0.50",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.6",
+      "revised": "0.6",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 22:00",
       "star": 4,
       "title": "美国9月密歇根大学消费者信心指数终值",
       "previous": "47.8",
-      "consensus": "47.5",
+      "consensus": "47.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1531,7 +1531,7 @@
       "star": 2,
       "title": "美国9月密歇根大学现况指数终值",
       "previous": "50.9",
-      "consensus": "50.7",
+      "consensus": "49.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
