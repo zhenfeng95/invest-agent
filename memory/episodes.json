@@ -1,6 +1,17 @@
 {
   "episodes": [
     {
+      "id": "ep-093",
+      "date": "2026-09-24",
+      "type": "trade",
+      "summary": "美股加仓GOOGL 0.01@$339",
+      "detail": "买GOOGL0.01@$339；成本$3.39；未计费。US现持GOOGL0.04@加权$343.5；另持IBIT/VOO/PDD。",
+      "tickers": [
+        "GOOGL"
+      ],
+      "outcome": "US GOOGL 0.04@343.5 weighted"
+    },
+    {
       "id": "ep-092",
       "date": "2026-09-24",
       "type": "trade",
