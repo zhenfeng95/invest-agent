@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T21:07:29+08:00",
+  "updated_at": "2026-09-25T08:14:12+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1242,9 +1242,9 @@
       "title": "美国8月新屋销售总数年化(万户)",
       "previous": "60.7",
       "consensus": "61.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "68.4",
+      "revised": "64.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 22:00",
@@ -1252,9 +1252,9 @@
       "title": "美国8月新屋销售年化月率",
       "previous": "-10.50",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "6.4",
+      "revised": "-4.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 22:30",
@@ -1262,9 +1262,9 @@
       "title": "美国至9月18日当周EIA天然气库存(亿立方英尺)",
       "previous": "440",
       "consensus": "530",
-      "actual": null,
+      "actual": "530",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-24 23:00",
@@ -1272,9 +1272,9 @@
       "title": "美国9月堪萨斯联储制造业产出指数",
       "previous": "17",
       "consensus": null,
-      "actual": null,
+      "actual": "20",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:00",
@@ -1282,9 +1282,9 @@
       "title": "美国9月堪萨斯联储制造业综合指数",
       "previous": "10",
       "consensus": null,
-      "actual": null,
+      "actual": "14",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1292,9 +1292,9 @@
       "title": "美国至9月24日4周国债竞拍-得标利率",
       "previous": "3.82",
       "consensus": null,
-      "actual": null,
+      "actual": "3.85",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1302,9 +1302,9 @@
       "title": "美国至9月24日4周国债竞拍-得标利率配置百分比",
       "previous": "69.59",
       "consensus": null,
-      "actual": null,
+      "actual": "54.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1312,9 +1312,9 @@
       "title": "美国至9月24日4周国债竞拍-投标倍数",
       "previous": "3.02",
       "consensus": null,
-      "actual": null,
+      "actual": "2.61",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1322,9 +1322,9 @@
       "title": "美国至9月24日8周国债竞拍-得标利率",
       "previous": "3.92",
       "consensus": null,
-      "actual": null,
+      "actual": "3.99",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1332,9 +1332,9 @@
       "title": "美国至9月24日8周国债竞拍-得标利率配置百分比",
       "previous": "2.93",
       "consensus": null,
-      "actual": null,
+      "actual": "23.84",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-24 23:30",
@@ -1342,9 +1342,9 @@
       "title": "美国至9月24日8周国债竞拍-投标倍数",
       "previous": "2.94",
       "consensus": null,
-      "actual": null,
+      "actual": "2.76",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 01:00",
@@ -1352,9 +1352,9 @@
       "title": "美国至9月24日7年期国债竞拍-得标利率",
       "previous": "4.51",
       "consensus": null,
-      "actual": null,
+      "actual": "5.085",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 01:00",
@@ -1362,9 +1362,9 @@
       "title": "美国至9月24日7年期国债竞拍-得标利率配置百分比",
       "previous": "97.63",
       "consensus": null,
-      "actual": null,
+      "actual": "91.11",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 01:00",
@@ -1372,19 +1372,19 @@
       "title": "美国至9月24日7年期国债竞拍-投标倍数",
       "previous": "2.5",
       "consensus": null,
-      "actual": null,
+      "actual": "2.42",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-25 03:00",
       "star": 1,
       "title": "墨西哥至9月24日央行利率决定",
       "previous": "6.50",
-      "consensus": "6.5",
-      "actual": null,
+      "consensus": "6.50",
+      "actual": "6.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-09-25 04:30",
@@ -1392,9 +1392,9 @@
       "title": "美国至9月18日当周外国央行持有美国国债(亿美元)",
       "previous": "187.26",
       "consensus": null,
-      "actual": null,
+      "actual": "-113.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 07:01",
@@ -1402,16 +1402,16 @@
       "title": "英国9月Gfk消费者信心指数",
       "previous": "-14",
       "consensus": "-16",
-      "actual": null,
+      "actual": "-13",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-25 14:00",
       "star": 3,
       "title": "德国10月Gfk消费者信心指数",
       "previous": "-26.6",
-      "consensus": "-27.4",
+      "consensus": "-27.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1421,7 +1421,7 @@
       "star": 2,
       "title": "法国第二季度未季调月薪季率终值",
       "previous": "0.70",
-      "consensus": null,
+      "consensus": "0.50",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1431,7 +1431,7 @@
       "star": 2,
       "title": "西班牙第二季度GDP年率终值",
       "previous": "2.70",
-      "consensus": "2.7",
+      "consensus": "2.70",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1441,7 +1441,7 @@
       "star": 1,
       "title": "西班牙第二季度GDP季率终值",
       "previous": "0.70",
-      "consensus": "0.7",
+      "consensus": "0.70",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1461,7 +1461,7 @@
       "star": 2,
       "title": "欧元区8月货币供应M3年率",
       "previous": "3.40",
-      "consensus": "3.5",
+      "consensus": "3.50",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1471,7 +1471,7 @@
       "star": 3,
       "title": "美国8月耐用品订单月率",
       "previous": "1.10",
-      "consensus": "-0.4",
+      "consensus": "-0.30",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1491,7 +1491,7 @@
       "star": 2,
       "title": "美国8月扣除运输的耐用品订单月率",
       "previous": "0.40",
-      "consensus": "0.6",
+      "consensus": "0.60",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1511,7 +1511,7 @@
       "star": 4,
       "title": "美国9月密歇根大学消费者信心指数终值",
       "previous": "47.8",
-      "consensus": "47.6",
+      "consensus": "47.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1531,7 +1531,7 @@
       "star": 2,
       "title": "美国9月密歇根大学现况指数终值",
       "previous": "50.9",
-      "consensus": "49.5",
+      "consensus": "50.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1541,7 +1541,7 @@
       "star": 2,
       "title": "美国9月密歇根大学预期指数终值",
       "previous": "45.8",
-      "consensus": null,
+      "consensus": "45.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1551,7 +1551,7 @@
       "star": 1,
       "title": "美国9月五至十年期通胀率预期终值",
       "previous": "3.40",
-      "consensus": null,
+      "consensus": "3.40",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
