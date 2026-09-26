@@ -2,6 +2,11 @@ name: Deploy invest-nav (SEO)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'deploy/invest-nav-seo/**'
+      - '.github/workflows/deploy-invest-nav.yml'
 
 concurrency:
   group: deploy-invest-nav-production
