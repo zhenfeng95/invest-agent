@@ -1,0 +1,49 @@
+name: Deploy invest-nav (SEO)
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-invest-nav-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout invest-agent (SEO file bundle)
+        uses: actions/checkout@v4
+
+      - name: Checkout invest-nav
+        uses: actions/checkout@v4
+        with:
+          repository: zhenfeng95/invest-nav
+          ref: main
+          path: invest-nav
+
+      - name: Apply SEO + deploy workflow files
+        run: |
+          set -euo pipefail
+          BUNDLE="$GITHUB_WORKSPACE/deploy/invest-nav-seo"
+          NAV="$GITHUB_WORKSPACE/invest-nav"
+          cp "$BUNDLE/seo-index.ts" "$NAV/utils/seo-index.ts"
+          cp "$BUNDLE/usePageSeo.ts" "$NAV/composables/usePageSeo.ts"
+          cp "$BUNDLE/nuxt.config.ts" "$NAV/nuxt.config.ts"
+          cp "$BUNDLE/sitemap.xml.ts" "$NAV/server/routes/sitemap.xml.ts"
+          cp "$BUNDLE/indexnow.ts" "$NAV/server/utils/indexnow.ts"
+          mkdir -p "$NAV/.github/workflows"
+          cp "$BUNDLE/.github/workflows/deploy.yml" "$NAV/.github/workflows/deploy.yml"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.16.0'
+          cache: npm
+          cache-dependency-path: invest-nav/package-lock.json
+
+      - name: Build and deploy to Cloudflare
+        working-directory: invest-nav
+        run: npm ci && npm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
