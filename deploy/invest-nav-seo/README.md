@@ -2,12 +2,16 @@
 
 Cloud Agent 无法 push `invest-nav` 时，用手机在 GitHub 网页完成上线。
 
-## 1. GitHub Secrets（invest-nav 仓库）
+## 1. GitHub Secrets
 
-`Settings → Secrets and variables → Actions → New repository secret`
+**推荐（Cloud Agent 已接好）：** 在 **invest-agent** 仓库添加（用于 `Deploy invest-nav (SEO)` workflow）：
+
+`https://github.com/zhenfeng95/invest-agent/settings/secrets/actions`
 
 - `CLOUDFLARE_API_TOKEN`
 - `CLOUDFLARE_ACCOUNT_ID`
+
+（若改为只推 invest-nav 的 `main` 自动部署，也可把同名 Secret 配在 **invest-nav** 仓库。）
 
 ## 2. 同步文件到 invest-nav
 
