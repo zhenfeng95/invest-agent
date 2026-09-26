@@ -5,7 +5,7 @@
       "date": "2026-09-26",
       "type": "qa",
       "summary": "诊断 zheninvest.com 必应 site: 无结果",
-      "detail": "站点 200/robots Allow/sitemap 正常、bingbot 可抓 SSR；必应 page-level Blocked 多集中在 notes/market/reports/tools。invest-nav SEO 改动已 bundle 于 deploy/invest-nav-seo/；invest-agent main 已加 workflow Deploy invest-nav (SEO)（run 36249473457：build 成功，wrangler 缺 CLOUDFLARE_API_TOKEN）。Cursor Environment 密钥不进本 pod；需在 invest-agent GitHub Actions Secrets 配 CLOUDFLARE_* 后重跑 workflow。",
+      "detail": "站点 200/robots Allow/sitemap 正常、bingbot 可抓 SSR；必应 page-level Blocked 多集中在 notes/market/reports/tools。SEO 已通过 invest-agent workflow Deploy invest-nav (SEO) 上线（36249869945 success）：sitemap 仅教程/导航/信任页；notes/market 等 noindex,follow。后续：Bing 站长重提交 sitemap + IndexNow。",
       "tickers": [],
       "outcome": null
     },
