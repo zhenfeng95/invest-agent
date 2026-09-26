@@ -1,0 +1,329 @@
+From ba6f4a21aeca99fc0ae837973e29cb582b0dd5d5 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Sat, 26 Sep 2026 13:32:49 +0000
+Subject: [PATCH] fix(seo): slim sitemap and noindex non-tutorial sections
+
+Centralize indexable URLs in utils/seo-index.ts. Sitemap and IndexNow
+only list home, tutorials, nav, and trust pages. Notes, research,
+tools, and portfolio stay public but use noindex via routeRules and
+usePageSeo robots meta for all search engines.
+---
+ composables/usePageSeo.ts    |  3 ++
+ nuxt.config.ts               | 12 ++++++
+ server/routes/sitemap.xml.ts | 67 ++---------------------------
+ server/utils/indexnow.ts     | 45 +------------------
+ utils/seo-index.ts           | 83 ++++++++++++++++++++++++++++++++++++
+ 5 files changed, 104 insertions(+), 106 deletions(-)
+ create mode 100644 utils/seo-index.ts
+
+diff --git a/composables/usePageSeo.ts b/composables/usePageSeo.ts
+index 952376d..34d99e7 100644
+--- a/composables/usePageSeo.ts
++++ b/composables/usePageSeo.ts
+@@ -1,4 +1,5 @@
+ import { buildHomeJsonLd } from '~/utils/jsonld';
++import { isPublicIndexablePath } from '~/utils/seo-index';
+ import { homeSeo, SITE_NAME } from '~/utils/site';
+ 
+ export function useJsonLd(key: string, data: unknown) {
+@@ -103,6 +104,7 @@ export function usePageSeo(input: PageSeoInput) {
+     const image = input.ogImage ?? `${siteUrl}/og-image.png`;
+     const title = normalizeMetaTitle(input.title);
+     const description = normalizeMetaDescription(input.description, input.title);
++    const indexable = !input.path || isPublicIndexablePath(input.path);
+ 
+     useSeoMeta({
+         title,
+@@ -117,6 +119,7 @@ export function usePageSeo(input: PageSeoInput) {
+         twitterTitle: title,
+         twitterDescription: description,
+         twitterImage: image,
++        robots: indexable ? 'index, follow' : 'noindex, follow',
+     });
+ 
+     useHead({
+diff --git a/nuxt.config.ts b/nuxt.config.ts
+index 1e38f8a..dfb6b6f 100644
+--- a/nuxt.config.ts
++++ b/nuxt.config.ts
+@@ -19,6 +19,18 @@ export default defineNuxtConfig({
+         '/tutorials/schwab-china-account-guide': {
+             redirect: { to: '/tutorials/schwab-account-guide', statusCode: 301 },
+         },
++        // 笔记 / 投研 / 工具 / 持仓：站内可访问，全平台 noindex（与 sitemap 策略一致）
++        '/notes': { index: false },
++        '/notes/**': { index: false },
++        '/tools': { index: false },
++        '/tools/**': { index: false },
++        '/market': { index: false },
++        '/market/**': { index: false },
++        '/reports': { index: false },
++        '/reports/**': { index: false },
++        '/reviews/**': { index: false },
++        '/portfolio': { index: false },
++        '/portfolio/**': { index: false },
+     },
+ 
+     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+diff --git a/server/routes/sitemap.xml.ts b/server/routes/sitemap.xml.ts
+index aaf211b..7df34ee 100644
+--- a/server/routes/sitemap.xml.ts
++++ b/server/routes/sitemap.xml.ts
+@@ -1,46 +1,7 @@
+-import { getNotes } from '~/utils/notes'
+ import { getTutorials } from '~/utils/tutorials'
++import { listPublicIndexablePaths } from '~/utils/seo-index'
+ import type { TutorialType } from '~/types/tutorial'
+ 
+-const staticRoutes = [
+-  '/',
+-  '/tutorials',
+-  '/tutorials/articles',
+-  '/tutorials/videos',
+-  '/tutorials/infographics',
+-  '/notes',
+-  '/tools',
+-  '/tools/portfolio',
+-  '/tools/calendar',
+-  '/tools/spatial',
+-  '/tools/compound-interest',
+-  '/tools/fx-estimate',
+-  '/tools/position-risk',
+-  '/tools/trade-pnl',
+-  '/tools/target-contribution',
+-  '/nav',
+-  '/nav/stocks',
+-  '/nav/funds',
+-  '/nav/etf',
+-  '/nav/stocks-cn',
+-  '/nav/options',
+-  '/nav/overseas-banks',
+-  '/nav/overseas-sim',
+-  '/nav/overseas-brokers',
+-  '/nav/fund-transfer',
+-  '/nav/digital-infra',
+-  '/nav/deposit-withdraw',
+-  '/reports',
+-  '/reviews/monthly',
+-  '/reviews/weekly',
+-  '/portfolio',
+-  '/market',
+-  '/about',
+-  '/disclaimer',
+-  '/privacy',
+-  '/contact',
+-]
+-
+ const listingTypeByPath: Record<string, TutorialType> = {
+   '/tutorials/articles': 'article',
+   '/tutorials/videos': 'video',
+@@ -62,13 +23,9 @@ function toLastmod(date: string): string {
+ export default defineEventHandler((event) => {
+   const siteUrl = String(useRuntimeConfig(event).public.siteUrl).replace(/\/$/, '')
+   const tutorials = getTutorials()
+-  const notes = getNotes()
+   const tutorialBySlug = new Map(tutorials.map(item => [item.slug, item]))
+-  const noteBySlug = new Map(notes.map(item => [item.slug, item]))
+-  const latestContentDate = maxDate([
+-    ...tutorials.map(item => item.updatedAt),
+-    ...notes.map(item => item.updatedAt),
+-  ]) ?? new Date().toISOString().slice(0, 10)
++  const latestContentDate = maxDate(tutorials.map(item => item.updatedAt))
++    ?? new Date().toISOString().slice(0, 10)
+ 
+   const lastmodForPath = (path: string): string => {
+     const listingType = listingTypeByPath[path]
+@@ -86,10 +43,6 @@ export default defineEventHandler((event) => {
+       return toLastmod(maxDate(tutorials.map(item => item.updatedAt)) ?? latestContentDate)
+     }
+ 
+-    if (path === '/notes') {
+-      return toLastmod(maxDate(notes.map(item => item.updatedAt)) ?? latestContentDate)
+-    }
+-
+     const tutorialMatch = path.match(/^\/tutorials\/([^/]+)$/)
+     if (tutorialMatch) {
+       const tutorial = tutorialBySlug.get(tutorialMatch[1])
+@@ -98,22 +51,10 @@ export default defineEventHandler((event) => {
+       }
+     }
+ 
+-    const noteMatch = path.match(/^\/notes\/([^/]+)$/)
+-    if (noteMatch) {
+-      const note = noteBySlug.get(noteMatch[1])
+-      if (note?.updatedAt) {
+-        return toLastmod(note.updatedAt)
+-      }
+-    }
+-
+     return toLastmod(latestContentDate)
+   }
+ 
+-  const routes = [
+-    ...staticRoutes,
+-    ...tutorials.map(item => `/tutorials/${item.slug}`),
+-    ...notes.map(item => `/notes/${item.slug}`),
+-  ]
++  const routes = listPublicIndexablePaths()
+ 
+   const urls = routes
+     .map((path) => {
+diff --git a/server/utils/indexnow.ts b/server/utils/indexnow.ts
+index 9f0ad1a..84e9f30 100644
+--- a/server/utils/indexnow.ts
++++ b/server/utils/indexnow.ts
+@@ -1,5 +1,4 @@
+-import { getNotes } from '~/utils/notes'
+-import { getTutorials } from '~/utils/tutorials'
++import { listPublicIndexablePaths } from '~/utils/seo-index'
+ 
+ /** 与 public/{key}.txt 保持一致；可通过 NUXT_INDEXNOW_KEY 覆盖。 */
+ export const DEFAULT_INDEXNOW_KEY = 'zheninvest-indexnow-8f3a2c1b'
+@@ -7,44 +6,6 @@ export const DEFAULT_INDEXNOW_KEY = 'zheninvest-indexnow-8f3a2c1b'
+ /** 本机提交优先走 Bing；api.indexnow.org 在部分网络下也可能限流。 */
+ export const INDEXNOW_ENDPOINT = 'https://www.bing.com/indexnow'
+ 
+-const staticPaths = [
+-  '/',
+-  '/tutorials',
+-  '/tutorials/articles',
+-  '/tutorials/videos',
+-  '/tutorials/infographics',
+-  '/notes',
+-  '/tools',
+-  '/tools/calendar',
+-  '/tools/spatial',
+-  '/tools/compound-interest',
+-  '/tools/fx-estimate',
+-  '/tools/position-risk',
+-  '/tools/trade-pnl',
+-  '/tools/target-contribution',
+-  '/nav',
+-  '/nav/stocks',
+-  '/nav/funds',
+-  '/nav/etf',
+-  '/nav/stocks-cn',
+-  '/nav/options',
+-  '/nav/overseas-banks',
+-  '/nav/overseas-sim',
+-  '/nav/overseas-brokers',
+-  '/nav/fund-transfer',
+-  '/nav/digital-infra',
+-  '/nav/deposit-withdraw',
+-  '/reports',
+-  '/reviews/monthly',
+-  '/reviews/weekly',
+-  '/portfolio',
+-  '/market',
+-  '/about',
+-  '/disclaimer',
+-  '/privacy',
+-  '/contact',
+-]
+-
+ export function getIndexNowKey(event?: Parameters<typeof useRuntimeConfig>[0]): string {
+   const config = event ? useRuntimeConfig(event) : useRuntimeConfig()
+   const key = String(config.indexnowKey || DEFAULT_INDEXNOW_KEY).trim()
+@@ -75,9 +36,7 @@ export function toAbsoluteUrls(siteUrl: string, paths: string[]): string[] {
+ }
+ 
+ export function listIndexNowCandidatePaths(extraPaths: string[] = []): string[] {
+-  const tutorialPaths = getTutorials().map(item => `/tutorials/${item.slug}`)
+-  const notePaths = getNotes().map(item => `/notes/${item.slug}`)
+-  return [...staticPaths, ...tutorialPaths, ...notePaths, ...extraPaths]
++  return listPublicIndexablePaths(extraPaths)
+ }
+ 
+ export interface IndexNowPayload {
+diff --git a/utils/seo-index.ts b/utils/seo-index.ts
+new file mode 100644
+index 0000000..22be57b
+--- /dev/null
++++ b/utils/seo-index.ts
+@@ -0,0 +1,83 @@
++import { getTutorials } from '~/utils/tutorials'
++
++/**
++ * 全站统一 SEO：仅教程 + 导航 + 信任页进 sitemap / IndexNow；
++ * 笔记、投研、工具、持仓复盘等对用户开放但 noindex（见 nuxt.config routeRules）。
++ */
++export const INDEXABLE_STATIC_PATHS: readonly string[] = [
++  '/',
++  '/tutorials',
++  '/tutorials/articles',
++  '/tutorials/videos',
++  '/tutorials/infographics',
++  '/nav',
++  '/nav/stocks',
++  '/nav/funds',
++  '/nav/etf',
++  '/nav/stocks-cn',
++  '/nav/options',
++  '/nav/overseas-banks',
++  '/nav/overseas-sim',
++  '/nav/overseas-brokers',
++  '/nav/fund-transfer',
++  '/nav/digital-infra',
++  '/nav/deposit-withdraw',
++  '/about',
++  '/disclaimer',
++  '/privacy',
++  '/contact',
++]
++
++/** 不对搜索引擎开放收录的路径前缀（页面仍可正常访问）。 */
++export const NOINDEX_PATH_PREFIXES: readonly string[] = [
++  '/notes',
++  '/tools',
++  '/market',
++  '/reports',
++  '/reviews',
++  '/portfolio',
++]
++
++export function isPublicIndexablePath(path: string): boolean {
++  const normalized = path.startsWith('/') ? path : `/${path}`
++
++  for (const prefix of NOINDEX_PATH_PREFIXES) {
++    if (normalized === prefix || normalized.startsWith(`${prefix}/`)) {
++      return false
++    }
++  }
++
++  if (normalized === '/') {
++    return true
++  }
++
++  if (normalized.startsWith('/tutorials')) {
++    return true
++  }
++
++  if (normalized.startsWith('/nav')) {
++    return true
++  }
++
++  return INDEXABLE_STATIC_PATHS.includes(normalized)
++}
++
++/** sitemap.xml 与 IndexNow 共用：可收录 URL 列表（去重）。 */
++export function listPublicIndexablePaths(extraPaths: string[] = []): string[] {
++  const tutorialPaths = getTutorials().map(item => `/tutorials/${item.slug}`)
++  const merged = [...INDEXABLE_STATIC_PATHS, ...tutorialPaths, ...extraPaths]
++  const seen = new Set<string>()
++  const out: string[] = []
++
++  for (const path of merged) {
++    if (!isPublicIndexablePath(path)) {
++      continue
++    }
++    if (!seen.has(path)) {
++      seen.add(path)
++      out.push(path)
++    }
++  }
++
++  return out
++}
+-- 
+2.43.0
+
