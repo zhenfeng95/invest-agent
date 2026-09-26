@@ -1,7 +1,7 @@
 From ba6f4a21aeca99fc0ae837973e29cb582b0dd5d5 Mon Sep 17 00:00:00 2001
 From: Cursor Agent <cursoragent@cursor.com>
 Date: Sat, 26 Sep 2026 13:32:49 +0000
-Subject: [PATCH] fix(seo): slim sitemap and noindex non-tutorial sections
+Subject: [PATCH 1/2] fix(seo): slim sitemap and noindex non-tutorial sections
 
 Centralize indexable URLs in utils/seo-index.ts. Sitemap and IndexNow
 only list home, tutorials, nav, and trust pages. Notes, research,
@@ -324,6 +324,53 @@ index 0000000..22be57b
 +
 +  return out
 +}
+-- 
+2.43.0
+
+
+From 8d688743654d4c43b984b7e05ff3d731c3db5bd1 Mon Sep 17 00:00:00 2001
+From: Cursor Agent <cursoragent@cursor.com>
+Date: Sat, 26 Sep 2026 13:37:52 +0000
+Subject: [PATCH 2/2] ci: add Cloudflare deploy workflow (Node 24.16.0)
+
+---
+ .github/workflows/deploy.yml | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+ create mode 100644 .github/workflows/deploy.yml
+
+diff --git a/.github/workflows/deploy.yml b/.github/workflows/deploy.yml
+new file mode 100644
+index 0000000..fa992c0
+--- /dev/null
++++ b/.github/workflows/deploy.yml
+@@ -0,0 +1,27 @@
++name: Deploy to Cloudflare
++
++on:
++  push:
++    branches: [main]
++  workflow_dispatch:
++
++concurrency:
++  group: deploy-invest-nav
++  cancel-in-progress: true
++
++jobs:
++  deploy:
++    runs-on: ubuntu-latest
++    steps:
++      - uses: actions/checkout@v4
++
++      - uses: actions/setup-node@v4
++        with:
++          node-version: '24.16.0'
++          cache: npm
++
++      - run: npm ci
++      - run: npm run deploy
++        env:
++          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
++          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 -- 
 2.43.0
 
