@@ -1,6 +1,18 @@
 {
   "episodes": [
     {
+      "id": "ep-094",
+      "date": "2026-09-25",
+      "type": "trade",
+      "summary": "美股减GOOGL/VOO碎股",
+      "detail": "卖GOOGL0.01@$344（相对加权$343.5，+$0.01/+0.15%，余0.03）；卖VOO0.01@$709（相对加权$702.16，+$0.07/+0.97%，余0.01）。均未计费。US仍持IBIT/PDD/GOOGL/VOO。",
+      "tickers": [
+        "GOOGL",
+        "VOO"
+      ],
+      "outcome": "US GOOGL 0.03@343.5; VOO 0.01@702.16"
+    },
+    {
       "id": "ep-093",
       "date": "2026-09-24",
       "type": "trade",
