@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-095",
+      "date": "2026-09-26",
+      "type": "qa",
+      "summary": "诊断 zheninvest.com 必应 site: 无结果",
+      "detail": "站点 200/robots Allow/sitemap 正常、bingbot 可抓 SSR；必应索引侧当前无 zheninvest.com 条目（site:/cache:/URL 均无本站）。疑为必应清库或未持续提交 Webmaster；建议 Bing 站长验证+提交 sitemap+IndexNow，并查 Cloudflare 爬虫规则。",
+      "tickers": [],
+      "outcome": null
+    },
+    {
       "id": "ep-094",
       "date": "2026-09-25",
       "type": "trade",
