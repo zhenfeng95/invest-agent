@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T08:02:12+08:00",
+  "updated_at": "2026-09-28T21:00:43+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -32,7 +32,7 @@
       "title": "中国8月今年迄今规模以上工业企业利润年率",
       "previous": "17.60",
       "consensus": null,
-      "actual": null,
+      "actual": "15.7",
       "revised": null,
       "affect_txt": ""
     },
@@ -42,7 +42,7 @@
       "title": "中国8月规模以上工业企业利润年率",
       "previous": "11.20",
       "consensus": null,
-      "actual": null,
+      "actual": "4.2",
       "revised": null,
       "affect_txt": ""
     },
@@ -52,9 +52,9 @@
       "title": "新加坡8月季调后工业产出指数月率",
       "previous": "2.30",
       "consensus": "2.3",
-      "actual": null,
+      "actual": "-0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 13:00",
@@ -62,9 +62,9 @@
       "title": "新加坡8月工业产出年率",
       "previous": "6.80",
       "consensus": "17.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "15.4",
+      "revised": "6.9",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 16:00",
@@ -72,9 +72,9 @@
       "title": "意大利8月非欧盟贸易帐(亿欧元)",
       "previous": "25.5",
       "consensus": null,
-      "actual": null,
+      "actual": "20",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 20:00",
@@ -82,16 +82,16 @@
       "title": "加拿大至9月25日全国经济信心指数",
       "previous": "49.9",
       "consensus": null,
-      "actual": null,
+      "actual": "50.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
       "star": 3,
       "title": "美国9月达拉斯联储商业活动指数",
       "previous": "11.6",
-      "consensus": "7.2",
+      "consensus": "8.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
