@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T21:00:43+08:00",
+  "updated_at": "2026-09-29T08:01:40+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -92,9 +92,9 @@
       "title": "美国9月达拉斯联储商业活动指数",
       "previous": "11.6",
       "consensus": "8.2",
-      "actual": null,
+      "actual": "9.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -102,9 +102,9 @@
       "title": "美国9月达拉斯联储制造业产出指数",
       "previous": "16.1",
       "consensus": null,
-      "actual": null,
+      "actual": "29.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -112,9 +112,9 @@
       "title": "美国9月达拉斯联储新订单指数",
       "previous": "22",
       "consensus": null,
-      "actual": null,
+      "actual": "30.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -122,9 +122,9 @@
       "title": "美国9月达拉斯联储制成品价格指数",
       "previous": "22.7",
       "consensus": null,
-      "actual": null,
+      "actual": "27.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -132,9 +132,9 @@
       "title": "美国9月达拉斯联储制造业原材料支付价格指数",
       "previous": "44.1",
       "consensus": null,
-      "actual": null,
+      "actual": "52.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -142,9 +142,9 @@
       "title": "美国9月达拉斯联储制造业就业指数",
       "previous": "8",
       "consensus": null,
-      "actual": null,
+      "actual": "15.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 22:30",
@@ -152,9 +152,9 @@
       "title": "美国9月达拉斯联储制造业装船指数",
       "previous": "14.1",
       "consensus": null,
-      "actual": null,
+      "actual": "24.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -162,9 +162,9 @@
       "title": "美国至9月28日3个月国债竞拍-得标利率",
       "previous": "4.02",
       "consensus": null,
-      "actual": null,
+      "actual": "4.11",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -172,9 +172,9 @@
       "title": "美国至9月28日3个月国债竞拍-得标利率配置百分比",
       "previous": "36.66",
       "consensus": null,
-      "actual": null,
+      "actual": "61.14",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -182,9 +182,9 @@
       "title": "美国至9月28日3个月国债竞拍-投标倍数",
       "previous": "2.77",
       "consensus": null,
-      "actual": null,
+      "actual": "2.99",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -192,9 +192,9 @@
       "title": "美国至9月28日6个月国债竞拍-得标利率",
       "previous": "4.16",
       "consensus": null,
-      "actual": null,
+      "actual": "4.285",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -202,9 +202,9 @@
       "title": "美国至9月28日6个月国债竞拍-得标利率配置百分比",
       "previous": "48.01",
       "consensus": null,
-      "actual": null,
+      "actual": "37.89",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-28 23:30",
@@ -212,9 +212,9 @@
       "title": "美国至9月28日6个月国债竞拍-投标倍数",
       "previous": "2.62",
       "consensus": null,
-      "actual": null,
+      "actual": "2.64",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 07:01",
@@ -222,9 +222,9 @@
       "title": "英国9月BRC商店物价指数年率",
       "previous": "1.50",
       "consensus": null,
-      "actual": null,
+      "actual": "1.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 12:30",
