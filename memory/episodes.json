@@ -1,6 +1,18 @@
 {
   "episodes": [
     {
+      "id": "ep-097",
+      "date": "2026-09-30",
+      "type": "decision",
+      "summary": "补录 9/28–9/30 美股 VOO 网格与 GOOGL 减仓",
+      "detail": "9/28买VOO0.01@$705；9/29买0.01@$701；9/30卖VOO0.01@$705（相对加权$702.72，+$0.02）；9/30卖GOOGL0.01@$347、0.01@$350（相对加权$343.5，+$0.11合计）；余VOO0.02/GOOGL0.01；未计佣金。",
+      "tickers": [
+        "VOO",
+        "GOOGL"
+      ],
+      "outcome": "US realized +$0.13 (approx, ex fees)"
+    },
+    {
       "id": "ep-096",
       "date": "2026-09-27",
       "type": "weekly_review",
