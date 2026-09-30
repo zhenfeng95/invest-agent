@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T21:05:14+08:00",
+  "updated_at": "2026-09-30T08:05:12+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -532,9 +532,9 @@
       "title": "美国7月S&P/CS10座大城市房价指数年率",
       "previous": "2.94",
       "consensus": null,
-      "actual": null,
+      "actual": "3.39",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 21:00",
@@ -542,9 +542,9 @@
       "title": "美国7月S&P/CS10座大城市未季调房价指数月率",
       "previous": "0.52",
       "consensus": null,
-      "actual": null,
+      "actual": "0.03",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 21:00",
@@ -562,9 +562,9 @@
       "title": "美国7月S&P/CS20座大城市未季调房价指数",
       "previous": "350.2",
       "consensus": null,
-      "actual": null,
+      "actual": "350.36",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 21:00",
@@ -582,9 +582,9 @@
       "title": "美国8月JOLTs职位空缺(万人)",
       "previous": "727.1",
       "consensus": "722.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "707.9",
+      "revised": "733.5",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 22:00",
@@ -592,9 +592,9 @@
       "title": "美国9月谘商会消费者信心指数",
       "previous": "89.4",
       "consensus": "89.2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "81.9",
+      "revised": "88.6",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 22:00",
@@ -602,9 +602,9 @@
       "title": "美国9月谘商会消费者现况指数",
       "previous": "121.2",
       "consensus": null,
-      "actual": null,
+      "actual": "109.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 22:00",
@@ -612,9 +612,9 @@
       "title": "美国9月谘商会消费者预期指数",
       "previous": "68.2",
       "consensus": null,
-      "actual": null,
+      "actual": "63.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -622,9 +622,9 @@
       "title": "美国至9月29日1年期国债竞拍-得标利率",
       "previous": "3.98",
       "consensus": null,
-      "actual": null,
+      "actual": "4.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -632,9 +632,9 @@
       "title": "美国至9月29日1年期国债竞拍-得标利率配置百分比",
       "previous": "34.18",
       "consensus": null,
-      "actual": null,
+      "actual": "70.21",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -642,9 +642,9 @@
       "title": "美国至9月29日1年期国债竞拍-投标倍数",
       "previous": "3.61",
       "consensus": null,
-      "actual": null,
+      "actual": "3.07",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -652,9 +652,9 @@
       "title": "美国至9月29日6周国债竞拍-得标利率",
       "previous": "3.87",
       "consensus": null,
-      "actual": null,
+      "actual": "3.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -662,9 +662,9 @@
       "title": "美国至9月29日6周国债竞拍-得标利率配置百分比",
       "previous": "83.32",
       "consensus": null,
-      "actual": null,
+      "actual": "68.26",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-29 23:30",
@@ -672,9 +672,9 @@
       "title": "美国至9月29日6周国债竞拍-投标倍数",
       "previous": "3.03",
       "consensus": null,
-      "actual": null,
+      "actual": "2.82",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -682,9 +682,9 @@
       "title": "美国至9月25日当周API原油库存(万桶)",
       "previous": "178.6",
       "consensus": "-114",
-      "actual": null,
+      "actual": "101.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -692,9 +692,9 @@
       "title": "美国至9月25日当周API原油进口(万桶)",
       "previous": "-73.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-24.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -702,9 +702,9 @@
       "title": "美国至9月25日当周API取暖油库存(万桶)",
       "previous": "43.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-45.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -712,9 +712,9 @@
       "title": "美国至9月25日当周API库欣原油库存(万桶)",
       "previous": "208.2",
       "consensus": null,
-      "actual": null,
+      "actual": "23.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -722,9 +722,9 @@
       "title": "美国至9月25日当周API成品油进口(万桶/日)",
       "previous": "-37.3",
       "consensus": null,
-      "actual": null,
+      "actual": "43.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -732,9 +732,9 @@
       "title": "美国至9月25日当周API投产原油量(万桶/日)",
       "previous": "-52.7",
       "consensus": null,
-      "actual": null,
+      "actual": "-28.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -742,9 +742,9 @@
       "title": "美国至9月25日当周API汽油库存(万桶)",
       "previous": "-216",
       "consensus": "-54.2",
-      "actual": null,
+      "actual": "299.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 04:30",
@@ -752,9 +752,9 @@
       "title": "美国至9月25日当周API精炼油库存(万桶)",
       "previous": "-216.4",
       "consensus": "1.6",
-      "actual": null,
+      "actual": "-28.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-09-30 07:00",
@@ -762,9 +762,9 @@
       "title": "韩国8月季调后工业产出月率",
       "previous": "0.20",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-4.8",
+      "revised": "0.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:00",
@@ -772,9 +772,9 @@
       "title": "韩国8月工业产出年率",
       "previous": "3.60",
       "consensus": "4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-2.2",
+      "revised": "4",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:50",
@@ -782,9 +782,9 @@
       "title": "日本8月季调后零售销售月率",
       "previous": "2.40",
       "consensus": "-0.90",
-      "actual": null,
+      "actual": "-1.2",
       "revised": "2.10",
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:50",
@@ -792,9 +792,9 @@
       "title": "日本8月工业产出年率初值",
       "previous": "3.90",
       "consensus": "7.00",
-      "actual": null,
+      "actual": "3.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:50",
@@ -802,9 +802,9 @@
       "title": "日本8月工业产出月率初值",
       "previous": "-0.20",
       "consensus": "1.70",
-      "actual": null,
+      "actual": "-1.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:50",
@@ -812,9 +812,9 @@
       "title": "日本8月库存月率",
       "previous": "0.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 07:50",
@@ -832,9 +832,9 @@
       "title": "日本8月零售销售年率",
       "previous": "4.00",
       "consensus": "3.3",
-      "actual": null,
+      "actual": "2.7",
       "revised": "3.70",
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-09-30 09:30",
