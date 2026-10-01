@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-09-30T17:10:00+08:00",
+    "updated_at": "2026-10-01T08:15:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-01T08:15:00+08:00",
+            "decision": "完成 2026-10-01 美股收盘日报（复盘9/30）",
+            "detail": "SPX-0.25%/NDX+0.24%/SOX平/XLK+1.19%；Core PCE 3.0% YoY；10Y~5.29%；FedWatch Oct hold~63%；MU Rev$54.23B/EPS$33.42 beat；VOO估~700.7/GOOGL+0.93%；存档 us-close-2026-10-01+tweet；待飞书"
+        },
         {
             "at": "2026-09-30T17:10:00+08:00",
             "decision": "完成 2026-09-30 A股收盘日报（精简版）",
@@ -680,9 +685,9 @@
     "market_regime": {
         "equity": "A股：GY/YH空个股；HT持159338 600@¥1.212；9/30震荡筑底评分45",
         "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；AMZN已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$83.5k（9/29）；Oct hike~71%",
-        "macro": "9/29：10Y~5.255%；2Y~4.60%估；Brent~$96.16；VIX16.04；FedWatch Oct hike~71%；信心81.9",
-        "notes": "9/29 SPX-0.17%/NDX100+0.21%/SOX+1.31%；CCL/KMX beat；FICO-26%；存档 us-close-2026-09-30"
+        "crypto": "IBIT 0.02@$35.73；BTC~$83.7k（9/30估）；Oct hold~63%/hike~37%（PCE后）",
+        "macro": "9/30：10Y~5.29%；2Y~4.85%估；Core PCE 3.0% YoY；VIX16.34；FedWatch Oct hold~62.9%",
+        "notes": "9/30 SPX-0.25%/NDX+0.24%/SOX平/XLK+1.19%；MU beat+强指引；9月SPX-0.45%/纳指+1.9%；存档 us-close-2026-10-01"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
