@@ -1,6 +1,24 @@
 {
   "episodes": [
     {
+      "id": "ep-097",
+      "date": "2026-10-01",
+      "type": "review",
+      "summary": "2026-09 月度交易复盘：A -¥37，非池模式未改",
+      "detail": "FIFO已实现 A GY-41/YH+4/HT0 合计-37；US≈+1.23；9/30浮盈估 A≈-74含159338；胜率57%；最大亏GY603390-62；§7池空；周报1-4W§7；positions-2026-09-26滞后；未读ashare-close",
+      "tickers": [
+        "603390",
+        "600727",
+        "600610",
+        "002077",
+        "159338",
+        "VOO",
+        "IBIT",
+        "GOOGL"
+      ],
+      "outcome": "A -37 CNY realized; US +1.23 USD FIFO"
+    },
+    {
       "id": "ep-096",
       "date": "2026-09-27",
       "type": "weekly_review",
