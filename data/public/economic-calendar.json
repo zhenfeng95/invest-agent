@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T08:02:56+08:00",
+  "updated_at": "2026-10-02T21:10:54+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -2502,9 +2502,9 @@
       "title": "西班牙9月失业人数变化(万人)",
       "previous": "4.44",
       "consensus": null,
-      "actual": null,
+      "actual": "2.36",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 15:00",
@@ -2512,9 +2512,9 @@
       "title": "西班牙9月失业人数月率",
       "previous": "1.92",
       "consensus": null,
-      "actual": null,
+      "actual": "1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 16:00",
@@ -2522,9 +2522,9 @@
       "title": "意大利8月季调后零售销售月率",
       "previous": "-0.40",
       "consensus": null,
-      "actual": null,
+      "actual": "0.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 16:00",
@@ -2532,9 +2532,9 @@
       "title": "意大利8月零售销售年率",
       "previous": "0.80",
       "consensus": null,
-      "actual": null,
+      "actual": "0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-02 16:30",
@@ -2542,9 +2542,9 @@
       "title": "中国香港8月零售销售量年率",
       "previous": "2.30",
       "consensus": "2.2",
-      "actual": null,
+      "actual": "2.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 16:30",
@@ -2552,9 +2552,9 @@
       "title": "中国香港8月零售销售额年率",
       "previous": "4.50",
       "consensus": "4.2",
-      "actual": null,
+      "actual": "5.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 17:00",
@@ -2562,9 +2562,9 @@
       "title": "欧元区9月CPI年率初值",
       "previous": "3.20",
       "consensus": "3.6",
-      "actual": null,
+      "actual": "3.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 17:00",
@@ -2572,9 +2572,9 @@
       "title": "欧元区9月CPI月率初值",
       "previous": "0.40",
       "consensus": "0.5",
-      "actual": null,
+      "actual": "0.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 17:00",
@@ -2582,9 +2582,9 @@
       "title": "欧元区9月核心CPI年率初值",
       "previous": "2.1",
       "consensus": null,
-      "actual": null,
+      "actual": "2.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 17:00",
@@ -2592,9 +2592,9 @@
       "title": "欧元区9月核心CPI月率初值",
       "previous": "0.2",
       "consensus": null,
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2602,9 +2602,9 @@
       "title": "美国9月失业率",
       "previous": "4.10",
       "consensus": "4.1",
-      "actual": null,
+      "actual": "4.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2612,9 +2612,9 @@
       "title": "美国9月季调后非农就业人口(万人)",
       "previous": "16.2",
       "consensus": "9",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2.9",
+      "revised": "13.3",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2622,9 +2622,9 @@
       "title": "美国9月平均每小时工资年率",
       "previous": "3.10",
       "consensus": "3.2",
-      "actual": null,
+      "actual": "3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2632,9 +2632,9 @@
       "title": "美国9月平均每小时工资月率",
       "previous": "0.30",
       "consensus": "0.30",
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2642,9 +2642,9 @@
       "title": "美国9月U6失业率",
       "previous": "7.70",
       "consensus": "7.7",
-      "actual": null,
+      "actual": "7.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2652,9 +2652,9 @@
       "title": "美国9月季调后制造业就业人口(万人)",
       "previous": "1.6",
       "consensus": "1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.9",
+      "revised": "1.5",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2662,9 +2662,9 @@
       "title": "美国9月季调后政府部门就业人口(万人)",
       "previous": "3.5",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1.7",
+      "revised": "4.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2672,9 +2672,9 @@
       "title": "美国9月就业参与率",
       "previous": "61.60",
       "consensus": "61.6",
-      "actual": null,
+      "actual": "61.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2682,9 +2682,9 @@
       "title": "美国9月平均每周工时",
       "previous": "34.4",
       "consensus": "34.3",
-      "actual": null,
+      "actual": "34.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-02 20:30",
@@ -2692,9 +2692,9 @@
       "title": "美国9月私人非农就业人数(万人)",
       "previous": "12.7",
       "consensus": "8.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "4.6",
+      "revised": "8.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-02 22:00",
