@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-04T10:05:00+08:00",
+    "updated_at": "2026-10-05T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-05T08:10:00+08:00",
+            "decision": "完成 2026-10-05 美股收盘日报（复盘10/2）",
+            "detail": "SPX+0.73%/NDX100纪录30808+1%/SOX+2.4%；非农+29K/失业率4.2%；10Y~5.28%非农后反转+VIX15.31；FedWatch hike~22.7%；TSLA交付486K/NKE-3.6%；VOO~707.5/GOOGL+1.6%/IBIT-0.5%；存档 us-close-2026-10-05+tweet；待飞书"
+        },
         {
             "at": "2026-10-04T10:05:00+08:00",
             "decision": "完成 2026-10-1W 周度回顾（9/29–10/4）",
@@ -710,9 +715,9 @@
     "market_regime": {
         "equity": "A股：10/1–10/7国庆休市；定格9/30评分45四均线线下；HT持159338约-5%浮亏；GY/YH空个股",
         "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；AMZN已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$83.6k（10/1估）；Oct hold~75%/hike~25%（Jefferson后）",
-        "macro": "10/1：10Y~5.24%（高5.34%）；2Y~4.79%；初请197K；VIX16.39；Brent>$100；FedWatch Oct hold~75%",
-        "notes": "10/1 SPX+0.19%/RUT+0.35%/SOX+1.59%；ACN+16%/NKE AH弱；存档 us-close-2026-10-02"
+        "crypto": "IBIT 0.02@$35.73；BTC~$84.5k（10/2）；Oct hike~22.7%（非农后）",
+        "macro": "10/2：非农+29K/失业率4.2%；10Y~5.28%（+5bp）；VIX15.31；FedWatch Oct hike~22.7%",
+        "notes": "10/2 SPX+0.73%/NDX100纪录30808/SOX+2.4%；TSLA+4.7%/NKE-3.6%；存档 us-close-2026-10-05"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
