@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-05T17:05:00+08:00",
+    "updated_at": "2026-10-06T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-06T08:10:00+08:00",
+            "decision": "完成 2026-10-06 美股收盘日报（复盘10/5）",
+            "detail": "SPX+0.66%/NDX100~31076/纳指纪录27477+1.05%；10Y~5.31%/VIX15.52升；ISM54.9；PTC-RXO并购；XP/NU；VOO估~712/QQQ~756；存档 us-close-2026-10-06+tweet；merge+飞书"
+        },
         {
             "at": "2026-10-05T17:05:00+08:00",
             "decision": "完成 2026-10-05 A股收盘日报（精简版·国庆休市）",
@@ -720,9 +725,9 @@
     "market_regime": {
         "equity": "A股：10/1–10/7国庆休市；10/5日报已发；定格9/30评分46四均线线下；HT持159338约-5%浮亏；GY/YH空个股；下一交易日10/8",
         "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；AMZN已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$84.5k（10/2）；Oct hike~22.7%（非农后）",
-        "macro": "10/2：非农+29K/失业率4.2%；10Y~5.28%（+5bp）；VIX15.31；FedWatch Oct hike~22.7%",
-        "notes": "10/2 SPX+0.73%/NDX100纪录30808/SOX+2.4%；TSLA+4.7%/NKE-3.6%；存档 us-close-2026-10-05"
+        "crypto": "IBIT 0.02@$35.73；BTC 10/5 暂无可靠数据；Oct hold~82%/hike~18%（10/5 FedWatch）",
+        "macro": "10/5：ISM服务54.9/Prices74；10Y~5.31%；VIX15.52；Brent~$100.32；纳指纪录27477",
+        "notes": "10/5 SPX+0.66%/NDX100~31076/纳指纪录；PTC-RXO并购；XP/NU财报日；存档 us-close-2026-10-06+tweet"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
