@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T08:01:37+08:00",
+  "updated_at": "2026-10-07T21:00:40+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -887,16 +887,6 @@
       "affect_txt": "利空"
     },
     {
-      "pub_time": "2026-10-07 00:00",
-      "star": 3,
-      "title": "中国9月外汇储备(亿美元)",
-      "previous": "34383.3",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-10-07 01:00",
       "star": 2,
       "title": "美国至10月6日3年期国债竞拍-得标利率",
@@ -1077,14 +1067,24 @@
       "affect_txt": "利空"
     },
     {
+      "pub_time": "2026-10-07 10:05",
+      "star": 3,
+      "title": "中国9月外汇储备(亿美元)",
+      "previous": "34383.3",
+      "consensus": null,
+      "actual": "34002.51",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
       "pub_time": "2026-10-07 12:30",
       "star": 2,
       "title": "印度至10月7日央行利率决定",
       "previous": "5.25",
       "consensus": "5.50",
-      "actual": null,
+      "actual": "5.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-07 12:30",
@@ -1092,9 +1092,9 @@
       "title": "印度至10月7日央行存款准备金率",
       "previous": "3",
       "consensus": "3",
-      "actual": null,
+      "actual": "3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-07 12:30",
@@ -1102,9 +1102,9 @@
       "title": "印度至10月7日央行逆回购利率",
       "previous": "3.35",
       "consensus": null,
-      "actual": null,
+      "actual": "3.35",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-07 13:00",
@@ -1112,9 +1112,9 @@
       "title": "日本8月同步指标初值",
       "previous": "120.6",
       "consensus": null,
-      "actual": null,
+      "actual": "118.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 13:00",
@@ -1122,9 +1122,9 @@
       "title": "日本8月同步指标月率初值",
       "previous": "1.7",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 13:00",
@@ -1132,9 +1132,9 @@
       "title": "日本8月领先指标初值",
       "previous": "117.7",
       "consensus": null,
-      "actual": null,
+      "actual": "118",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 13:00",
@@ -1142,9 +1142,9 @@
       "title": "日本8月领先指标月率初值",
       "previous": "1.5",
       "consensus": null,
-      "actual": null,
+      "actual": "0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 14:00",
@@ -1152,9 +1152,9 @@
       "title": "德国8月季调后工业产出月率",
       "previous": "-1.10",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2",
+      "revised": "-1.2",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 14:00",
@@ -1162,9 +1162,9 @@
       "title": "德国8月工作日调整后工业产出年率",
       "previous": "-1.60",
       "consensus": null,
-      "actual": null,
+      "actual": "2.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 14:00",
@@ -1172,9 +1172,9 @@
       "title": "英国9月Halifax季调后房价指数月率",
       "previous": "-0.2",
       "consensus": "0.1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0",
+      "revised": "-0.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 14:00",
@@ -1182,9 +1182,9 @@
       "title": "英国9月Halifax季调后房价指数年率",
       "previous": "-0.4",
       "consensus": "0.2",
-      "actual": null,
+      "actual": "0",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 14:45",
@@ -1192,9 +1192,9 @@
       "title": "法国8月贸易帐(亿欧元)",
       "previous": "-66.69",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-61.22",
+      "revised": "-65.97",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 14:45",
@@ -1202,9 +1202,9 @@
       "title": "法国8月出口(亿欧元)",
       "previous": "546.77",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "541.76",
+      "revised": "546.27",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 14:45",
@@ -1212,9 +1212,9 @@
       "title": "法国8月经常帐(亿欧元)",
       "previous": "-47",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-15",
+      "revised": "-39",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 14:45",
@@ -1222,9 +1222,9 @@
       "title": "法国8月进口(亿欧元)",
       "previous": "613.46",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "602.98",
+      "revised": "612.24",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 15:00",
@@ -1232,9 +1232,9 @@
       "title": "瑞士9月外汇储备(亿瑞郎)",
       "previous": "7701",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "7704.76",
+      "revised": "7700.74",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 16:00",
@@ -1242,9 +1242,9 @@
       "title": "中国台湾9月季调后CPI月率",
       "previous": "0.13",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.17",
+      "revised": "0.14",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 16:00",
@@ -1252,9 +1252,9 @@
       "title": "中国台湾9月未季调CPI年率",
       "previous": "2.04",
       "consensus": "2.40",
-      "actual": null,
+      "actual": "2.73",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 16:30",
@@ -1262,9 +1262,9 @@
       "title": "中国香港9月外汇储备(亿美元)",
       "previous": "4429",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "4330",
+      "revised": "4428",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 17:00",
@@ -1272,9 +1272,9 @@
       "title": "新加坡9月外汇储备(亿美元)",
       "previous": "4329.7",
       "consensus": null,
-      "actual": null,
+      "actual": "4334",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 19:00",
@@ -1282,9 +1282,9 @@
       "title": "美国至10月2日当周MBA30年期固定抵押贷款利率",
       "previous": "7.3",
       "consensus": null,
-      "actual": null,
+      "actual": "7.49",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-07 19:00",
@@ -1292,9 +1292,9 @@
       "title": "美国至10月2日当周MBA抵押贷款申请活动指数",
       "previous": "213.6",
       "consensus": null,
-      "actual": null,
+      "actual": "204.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 19:00",
@@ -1302,9 +1302,9 @@
       "title": "美国至10月2日当周MBA抵押贷款再融资活动指数",
       "previous": "557.8",
       "consensus": null,
-      "actual": null,
+      "actual": "515.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 19:00",
@@ -1312,16 +1312,16 @@
       "title": "美国至10月2日当周MBA抵押贷款购买指数",
       "previous": "148.2",
       "consensus": null,
-      "actual": null,
+      "actual": "145.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-07 22:30",
       "star": 4,
       "title": "美国至10月2日当周EIA原油库存(万桶)",
       "previous": "92.2",
-      "consensus": null,
+      "consensus": "172.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1411,7 +1411,7 @@
       "star": 2,
       "title": "美国至10月2日当周EIA精炼厂设备利用率",
       "previous": "92.5",
-      "consensus": "92.1",
+      "consensus": "92.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1441,7 +1441,7 @@
       "star": 1,
       "title": "美国至10月2日当周EIA汽油库存(万桶)",
       "previous": "-168.4",
-      "consensus": null,
+      "consensus": "-165.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1451,7 +1451,7 @@
       "star": 1,
       "title": "美国至10月2日当周EIA精炼油库存(万桶)",
       "previous": "-225.1",
-      "consensus": "-234.1",
+      "consensus": "-211.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1571,7 +1571,7 @@
       "star": 2,
       "title": "英国9月三个月RICS房价指数",
       "previous": "-28.00",
-      "consensus": null,
+      "consensus": "-30",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1671,7 +1671,7 @@
       "star": 3,
       "title": "德国8月季调后贸易帐(亿欧元)",
       "previous": "213",
-      "consensus": null,
+      "consensus": "190",
       "actual": null,
       "revised": "211",
       "affect_txt": "未公布"
@@ -1681,7 +1681,7 @@
       "star": 2,
       "title": "德国8月季调后出口月率",
       "previous": "-0.80",
-      "consensus": null,
+      "consensus": "0.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1691,7 +1691,7 @@
       "star": 2,
       "title": "德国8月季调后进口月率",
       "previous": "-5.70",
-      "consensus": null,
+      "consensus": "2.6",
       "actual": null,
       "revised": "-5.50",
       "affect_txt": "未公布"
@@ -1701,7 +1701,7 @@
       "star": 1,
       "title": "中国台湾9月出口年率",
       "previous": "41.00",
-      "consensus": "47.30",
+      "consensus": "45.65",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1711,7 +1711,7 @@
       "star": 1,
       "title": "中国台湾9月贸易帐(亿美元)",
       "previous": "223",
-      "consensus": "192",
+      "consensus": "192.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1721,7 +1721,7 @@
       "star": 1,
       "title": "中国台湾9月进口年率",
       "previous": "44.30",
-      "consensus": "44.00",
+      "consensus": "43.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1731,7 +1731,7 @@
       "star": 4,
       "title": "美国至10月3日当周初请失业金人数(万人)",
       "previous": "19.7",
-      "consensus": null,
+      "consensus": "20",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1751,7 +1751,7 @@
       "star": 2,
       "title": "美国至9月26日当周续请失业金人数(万人)",
       "previous": "170.1",
-      "consensus": null,
+      "consensus": "170.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1781,7 +1781,7 @@
       "star": 2,
       "title": "美国8月批发库存月率终值",
       "previous": "0.70",
-      "consensus": null,
+      "consensus": "0.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
