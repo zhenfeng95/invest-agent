@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-08T21:01:50+08:00",
+  "updated_at": "2026-10-09T08:04:46+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1772,9 +1772,9 @@
       "title": "美国8月批发销售月率",
       "previous": "0.80",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.8",
+      "revised": "1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 22:00",
@@ -1782,9 +1782,9 @@
       "title": "美国8月批发库存月率终值",
       "previous": "0.70",
       "consensus": "0.7",
-      "actual": null,
+      "actual": "0.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 22:30",
@@ -1792,9 +1792,9 @@
       "title": "美国至10月2日当周EIA天然气库存(亿立方英尺)",
       "previous": "640",
       "consensus": "790",
-      "actual": null,
+      "actual": "850",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1802,9 +1802,9 @@
       "title": "美国至10月8日4周国债竞拍-得标利率",
       "previous": "3.89",
       "consensus": null,
-      "actual": null,
+      "actual": "3.98",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1812,9 +1812,9 @@
       "title": "美国至10月8日4周国债竞拍-得标利率配置百分比",
       "previous": "23.52",
       "consensus": null,
-      "actual": null,
+      "actual": "50.05",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1822,9 +1822,9 @@
       "title": "美国至10月8日4周国债竞拍-投标倍数",
       "previous": "2.83",
       "consensus": null,
-      "actual": null,
+      "actual": "2.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1832,9 +1832,9 @@
       "title": "美国至10月8日8周国债竞拍-得标利率",
       "previous": "3.99",
       "consensus": null,
-      "actual": null,
+      "actual": "3.98",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1842,9 +1842,9 @@
       "title": "美国至10月8日8周国债竞拍-得标利率配置百分比",
       "previous": "65.05",
       "consensus": null,
-      "actual": null,
+      "actual": "8.93",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-08 23:30",
@@ -1852,9 +1852,9 @@
       "title": "美国至10月8日8周国债竞拍-投标倍数",
       "previous": "2.7",
       "consensus": null,
-      "actual": null,
+      "actual": "2.77",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 00:00",
@@ -1912,9 +1912,9 @@
       "title": "美国至10月8日30年期国债竞拍-得标利率",
       "previous": "5.308",
       "consensus": null,
-      "actual": null,
+      "actual": "5.618",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 01:00",
@@ -1922,9 +1922,9 @@
       "title": "美国至10月8日30年期国债竞拍-得标利率配置百分比",
       "previous": "64.29",
       "consensus": null,
-      "actual": null,
+      "actual": "26.77",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 01:00",
@@ -1932,9 +1932,9 @@
       "title": "美国至10月8日30年期国债竞拍-投标倍数",
       "previous": "2.61",
       "consensus": null,
-      "actual": null,
+      "actual": "2.54",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 04:30",
@@ -1942,9 +1942,9 @@
       "title": "美国至10月2日当周外国央行持有美国国债(亿美元)",
       "previous": "-151.01",
       "consensus": null,
-      "actual": null,
+      "actual": "-168.73",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 07:30",
@@ -1952,9 +1952,9 @@
       "title": "日本8月所有家庭支出年率",
       "previous": "-3.60",
       "consensus": "-3.60",
-      "actual": null,
+      "actual": "-3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 07:30",
@@ -1962,9 +1962,9 @@
       "title": "日本8月所有家庭支出月率",
       "previous": "0.5",
       "consensus": "0.5",
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 15:00",
