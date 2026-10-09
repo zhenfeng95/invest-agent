@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-09T08:04:46+08:00",
+  "updated_at": "2026-10-09T21:03:35+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1861,7 +1861,7 @@
       "star": 3,
       "title": "中国9月M2货币供应年率",
       "previous": "7.5",
-      "consensus": null,
+      "consensus": "7.4",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -1871,7 +1871,7 @@
       "star": 2,
       "title": "中国9月今年迄今新增人民币贷款(亿元)",
       "previous": "104400",
-      "consensus": null,
+      "consensus": "114869",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -1891,7 +1891,7 @@
       "star": 1,
       "title": "中国9月M1货币供应年率",
       "previous": "4.1",
-      "consensus": null,
+      "consensus": "4",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -1901,7 +1901,7 @@
       "star": 1,
       "title": "中国9月今年迄今社会融资规模增量(亿元)",
       "previous": "239100",
-      "consensus": null,
+      "consensus": "272745",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -1971,10 +1971,10 @@
       "star": 3,
       "title": "瑞士9月消费者信心指数",
       "previous": "-32.8",
-      "consensus": null,
-      "actual": null,
+      "consensus": "-31.5",
+      "actual": "-35.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 16:00",
@@ -1982,19 +1982,19 @@
       "title": "意大利8月季调后工业产出月率",
       "previous": "0.70",
       "consensus": "0",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1.3",
+      "revised": "0.6",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 16:00",
       "star": 1,
       "title": "意大利8月调整后工业产出年率",
       "previous": "0.00",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "2.1",
+      "actual": "0",
+      "revised": "-0.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 20:30",
@@ -2002,9 +2002,9 @@
       "title": "加拿大9月就业人数(万人)",
       "previous": "-4.17",
       "consensus": "0.92",
-      "actual": null,
+      "actual": "-6.83",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 20:30",
@@ -2012,9 +2012,9 @@
       "title": "加拿大9月全职就业人数(万人)",
       "previous": "-3.59",
       "consensus": null,
-      "actual": null,
+      "actual": "-3.54",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-09 20:30",
@@ -2022,9 +2022,9 @@
       "title": "加拿大9月兼职就业人数(万人)",
       "previous": "-0.58",
       "consensus": null,
-      "actual": null,
+      "actual": "-3.29",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 20:30",
@@ -2032,9 +2032,9 @@
       "title": "加拿大9月失业率",
       "previous": "6.40",
       "consensus": "6.50",
-      "actual": null,
+      "actual": "6.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-09 20:30",
@@ -2042,16 +2042,16 @@
       "title": "加拿大9月就业参与率",
       "previous": "65.00",
       "consensus": "65.00",
-      "actual": null,
+      "actual": "64.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-09 22:00",
       "star": 3,
       "title": "美国10月一年期通胀率预期初值",
       "previous": "4.60",
-      "consensus": null,
+      "consensus": "4.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2091,7 +2091,7 @@
       "star": 1,
       "title": "美国10月五至十年期通胀率预期初值",
       "previous": "3.40",
-      "consensus": null,
+      "consensus": "3.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
