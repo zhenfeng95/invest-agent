@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-08T17:10:00+08:00",
+    "updated_at": "2026-10-09T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-09T08:10:00+08:00",
+            "decision": "完成 2026-10-09 美股收盘日报（复盘10/8）",
+            "detail": "SPX-0.47%7765/NDX-1.25%/Dow+0.10%/RUT+0.03%/SOX-3.39%；Brent~$104/WTI~$91；10Y~5.23%；OpenAI ARR/芯片弱/XLE+2.97%；PEP beat+降指引+3.7%；初请197K/Waller；VOO~711.28/IBIT~46.26/GOOGL~348.29；存档 us-close-2026-10-09+tweet；merge+飞书"
+        },
         {
             "at": "2026-10-08T17:10:00+08:00",
             "decision": "完成 2026-10-08 A股收盘日报（精简版）",
@@ -749,10 +754,10 @@
     ],
     "market_regime": {
         "equity": "A股：10/8开门黑评分38防守；上证3811.9(-0.79%)四均线线下；16945亿(+16.8%)放量阴；1708:3897、前100 24:76；资源+电池 vs 半导体/CPO；东财502/THS≤6；HT持159338@1.133约-6.5%；§7池空；已飞书",
-        "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；AMZN已平；SGOV已平；NVDA已平",
-        "crypto": "IBIT 0.02@$35.73；BTC~$83.5k（10/7）；Oct hold~83%/hike~17%（10/8 FedWatch）",
-        "macro": "10/7：SPX7802(-0.22%)纪录后首阴；10Y~5.277%/30Y~5.661；VIX15.08；FOMC纪要鹰；XLI-2.2%/XLV+1%；RUT-1.31%",
-        "notes": "10/7 STZ/PENG财报日；PEP 10/8 BMO；存档 us-close-2026-10-08+tweet；merge+飞书"
+        "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；10/8 VOO~711.28/IBIT~46.26/GOOGL~348.29/NVDA关注-2.94%",
+        "crypto": "IBIT 0.02@$35.73；BTC~$81.7k（10/8）；Oct hold为主/Waller skip Oct",
+        "macro": "10/8：SPX7765(-0.47%)二连阴/NDX30693(-1.25%)/SOX-3.39%；Brent~$104/WTI~$91；10Y~5.23%/VIX15.41；OpenAI ARR叙事+油价",
+        "notes": "10/8 PEP beat+降指引+3.7%；HUM Medicare stars AH；存档 us-close-2026-10-09+tweet；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
