@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-12T08:03:03+08:00",
+  "updated_at": "2026-10-12T21:01:26+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -241,7 +241,7 @@
       "star": 2,
       "title": "美国9月成屋销售年化月率",
       "previous": "-2.00",
-      "consensus": "-0.60",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
