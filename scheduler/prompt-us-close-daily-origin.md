@@ -25,11 +25,12 @@
 
 ## 报告元信息
 
-- **标题**：美股收盘日报｜YYYY-MM-DD（北京日期 = 生成日；复盘的是**昨夜美股交易日**收盘）
+- **先定复盘日**：昨夜已收盘的**美股交易日**记为 `SESSION`（美东日历；周一北京早常复盘周五）
+- **标题**：美股收盘日报｜SESSION（**必须用复盘交易日，禁止用北京生成日**）
 - **语言**：中文
 - **风格**：专业、清晰、数据驱动；适合投资复盘与次日交易计划
 - **目标**：快速理解昨夜美股发生了什么、为何涨跌、资金买卖什么、板块/个股异动、接下来风险与机会
-- 文首注明：`复盘美股交易日：YYYY-MM-DD` · `生成：北京时间 YYYY-MM-DD 约 08:00`
+- 文首注明：`复盘美股交易日：SESSION` · `生成：北京时间 YYYY-MM-DD 约 08:00`（**文件名与标题只用 SESSION**）
 
 ## 数据与来源（硬性）
 
@@ -254,7 +255,7 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 ## 输出要求
 
-- **必须**写入：`output/daily/us-close-YYYY-MM-DD.md`（北京日期）
+- **必须**写入：`output/daily/us-close-SESSION.md`（**SESSION = 复盘美股交易日**，不是北京生成日）
 - 表格优先；查不到标「暂无可靠数据」，不注水凑数
 - 有值得记录的信息可轻量更新 `memory/working.json`
 - 成本约束：全文很长，允许较多搜索，但优先一次覆盖多标的；不要打开无关文件；不要跑 A 股盘前任务
@@ -263,7 +264,7 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 Cloud Agent 常在 `cursor/xxxx` 临时分支上工作；阿里云只 `git pull` **main**，因此必须并进 main。
 
-1. 写完后 **commit**（说明：`us close daily YYYY-MM-DD`）
+1. 写完后 **commit**（说明：`us close daily SESSION`）
 2. **不要** Create Pull Request
 3. 执行合并脚本（push 当前分支 → merge 进 main → push main → 删临时分支）：
 
@@ -282,7 +283,7 @@ bash scheduler/merge_to_main.sh
 2. **仓库 md 可继续用表格**；飞书不渲染 Markdown 表格，推送必须走专用脚本：
 
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/us-close-YYYY-MM-DD.md "美股收盘日报 YYYY-MM-DD"
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/us-close-SESSION.md "美股收盘日报 SESSION"
 ```
 
 若 URL 未在环境变量中，把第一个参数换成文末密钥里的完整 Webhook 字符串。3. **必须推送完整正文**（脚本读整个 md；超长才截断）。禁止只发几行极简版。4. 超长截断时脚注为 **main** 上的 GitHub 完整 blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）5. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）6. 失败：运行摘要写明错误，仍保留 md + commit 7. 不要手写 `curl` 贴原始 md（表格会很难看）

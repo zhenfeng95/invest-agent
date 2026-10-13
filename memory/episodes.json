@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "id": "ep-101",
+      "date": "2026-10-13",
+      "type": "workflow",
+      "summary": "收盘日报停写推文",
+      "detail": "A/美股精简版收盘任务不再生成 tweet；飞书改推日报整文；须重贴 Automations",
+      "tickers": [],
+      "outcome": "prompts+rules+my-soul updated"
+    },
+    {
       "id": "ep-099",
       "date": "2026-10-11",
       "type": "weekly_review",

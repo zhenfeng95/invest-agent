@@ -1,13 +1,13 @@
 # 收盘推文模板（X · 主贴 + 3 条回复）
 
-> Automations：收盘日报写完后 **立即** 按本模板生成当日推文；飞书只推 **主贴**。  
+> **已停用自动生成**：A股/美股收盘日报 Automations **不再**写推文；飞书改推日报整文。本模板仅备查 / 手动撰写。  
 > 样例节奏见：`output/content/tweet-2026-09-10-us-close.md`、`tweet-2026-09-10-ashare-close.md`
 
 ## 文件路径
 
 | 市场 | 路径 |
 |------|------|
-| 美股 | `output/content/tweet-YYYY-MM-DD-us-close.md`（YYYY-MM-DD = 北京日期 = 日报文件名日期） |
+| 美股 | `output/content/tweet-SESSION-us-close.md`（SESSION = 复盘美股交易日 = 日报 `us-close-SESSION.md` 文件名日期；**不是**北京生成日） |
 | A股 | `output/content/tweet-YYYY-MM-DD-ashare-close.md` |
 
 ## 硬约束

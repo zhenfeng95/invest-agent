@@ -24,11 +24,12 @@
 
 ## 报告元信息
 
-- **标题**：美股收盘日报｜YYYY-MM-DD（北京日期 = 生成日；复盘的是**昨夜美股交易日**收盘）
+- **先定复盘日**：昨夜已收盘的**美股交易日**记为 `SESSION`（美东日历；周一北京早常复盘周五；遇美股假日再往前推到最近一个交易日）
+- **标题**：美股收盘日报｜SESSION（**必须用复盘交易日，禁止用北京生成日**）
 - **语言**：中文
 - **风格**：专业、清晰、数据驱动；适合投资复盘
 - **目标**：快速理解昨夜美股发生了什么、宏观如何定价、板块如何、关键财报、主要风险（不写盘中、宽度、技术面、主题风格、个股异动、关注股逐评、机构资金流、明日计划专章）
-- 文首注明：`复盘美股交易日：YYYY-MM-DD` · `生成：北京时间 YYYY-MM-DD 约 08:00`
+- 文首注明：`复盘美股交易日：SESSION` · `生成：北京时间 YYYY-MM-DD 约 08:00`（生成日可写北京日；**文件名与标题只用 SESSION**）
 
 ## 数据与来源（硬性）
 
@@ -47,7 +48,7 @@
 ## 正文结构（必须按序完整覆盖 **§0–§7**；缺数据处写「暂无可靠数据」；禁止跳号、禁止再开已删除专章）
 
 ```
-美股收盘日报｜YYYY-MM-DD
+美股收盘日报｜SESSION
 ```
 
 ### 0. 今日一句话总结
@@ -159,9 +160,9 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 ## 输出要求
 
-- **必须**写入：`output/daily/us-close-YYYY-MM-DD.md`（北京日期）
-- **必须**在日报写完后立即按 `templates/close-tweet.md` 生成 X 推文：`output/content/tweet-YYYY-MM-DD-us-close.md`（主贴首行 `美股收盘｜M/D`；主贴钩子+结构+流向+盯什么；回复×3；每条加权 ≤280；数字只来自刚写的日报；**禁止持仓/账户/私域口径**——含 VOO/QQQ 网格等个人仓位话术；判断只写市场姿态；**缺数据整句省略**，禁止推文出现「未获取/暂无可靠数据」等元话术）
-- 表格优先；日报查不到标「暂无可靠数据」，不注水凑数（**仅日报**；推文不写这类标注）
+- **必须**写入：`output/daily/us-close-SESSION.md`（**SESSION = 复盘美股交易日**，不是北京生成日；例：北京 10-13 早复盘 10-12 美股 → `us-close-2026-10-12.md`）
+- **不要**写 X 推文 / `tweet-*-us-close.md`（收盘推文已停用；模板 `templates/close-tweet.md` 仅备查）
+- 表格优先；查不到标「暂无可靠数据」，不注水凑数
 - 有值得记录的信息可轻量更新 `memory/working.json`
 - 成本约束：精简版；允许搜索宏观/指数/十一板块/**财报日历与关键 EPS·指引**，**不要**搜主题风格 ETF（SMH/IGV/RSP 等）、均线参与度/涨跌家数/RSI、机构策略/ETF 流向、明日个股清单，**不要**为 Mag7/半导体/软件/电力名单做全文逐票异动搜索（财报节可点名已公布/即将公布者）；不要打开无关文件；不要跑 A 股任务
 
@@ -169,7 +170,7 @@ AI 硬件主升浪 / 高位震荡 / 利好钝化；软件补涨；高切低；�
 
 Cloud Agent 常在 `cursor/xxxx` 临时分支上工作；阿里云只 `git pull` **main**，因此必须并进 main。
 
-1. 写完 **日报 + 推文** 后 **commit**（说明：`us close daily + tweet YYYY-MM-DD`）
+1. 写完 **日报** 后 **commit**（说明：`us close daily SESSION`）
 2. **不要** Create Pull Request
 3. 执行合并脚本（push 当前分支 → merge 进 main → push main → 删临时分支）：
 ```bash
@@ -183,13 +184,12 @@ bash scheduler/merge_to_main.sh
 **不要发邮件**（Resend 已停用）。用飞书自定义机器人 Webhook 推送：
 
 1. Webhook URL = 本 Instructions 文末「密钥」段的 `FEISHU_WEBHOOK_URL`（只存在 Automations UI，不进仓库）
-2. **飞书正文 = 收盘推文主贴**（不是整份日报）。推送必须走专用脚本，并加 `--section 主贴`；用 `--also` 附完整日报链接：
+2. **飞书正文 = 整份日报**。推送必须走专用脚本：
 ```bash
-python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/content/tweet-YYYY-MM-DD-us-close.md "美股收盘推文 YYYY-MM-DD" --section 主贴 --also output/daily/us-close-YYYY-MM-DD.md
+python3 scheduler/feishu_send.py "$FEISHU_WEBHOOK_URL" output/daily/us-close-SESSION.md "美股收盘日报 SESSION"
 ```
 若 URL 未在环境变量中，把第一个参数换成文末密钥里的完整 Webhook 字符串。
-3. **禁止**再对 `us-close-YYYY-MM-DD.md` 整文发飞书。完整日报只存仓库；卡片脚注含推文全文链接 + 日报链接。
-4. 超长截断时脚注为 **main** 上的 GitHub blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）
-5. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
-6. 失败：运行摘要写明错误，仍保留 md + commit
-7. 不要手写 `curl` 贴原始 md（表格会很难看）
+3. 超长截断时脚注为 **main** 上的 GitHub blob URL（先跑 `merge_to_main.sh`；链接默认 main，不会出现 `cursor/xxxx`）
+4. 成功：脚本打印的响应含 `"code":0`（或旧版 `"StatusCode":0`）
+5. 失败：运行摘要写明错误，仍保留 md + commit
+6. 不要手写 `curl` 贴原始 md（表格会很难看）
