@@ -128,7 +128,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/你的token
 |----|--------|
 | 名称 | Invest US Close Daily |
 | 触发 | Cron：`0 8 * * 1-5`（北京时间工作日 **08:00**；复盘昨夜美股） |
-| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：§0–§7，含 §4 财报日历；**不再写收盘推文；飞书推日报整文**） |
+| Instructions | 粘贴 `scheduler/prompt-us-close-daily.md`「---」以下内容 + 文末 `FEISHU_WEBHOOK_URL=...`（**须重贴**：§0–§7，含 §4 财报日历；**禁止持仓标的模块**；不再写收盘推文；飞书推日报整文） |
 | 操作 | 若曾 Pause：点 **Enable / Unpause**；确认 cron 仍为工作日 08:00 |
 
 **时区提醒**：Cursor cron 若按 UTC：北京 08:00 = UTC `0 0 * * 1-5`。与财经日历同点触发无妨（独立 Automation）。

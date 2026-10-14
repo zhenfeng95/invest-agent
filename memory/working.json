@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-14T08:10:00+08:00",
+    "updated_at": "2026-10-14T09:25:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-14T09:25:00+08:00",
+            "decision": "美股收盘日报去掉持仓标的模块",
+            "detail": "prompt-us-close-daily 禁持仓表/不读positions；rules+my-soul+SETUP已同步；已删 us-close-2026-10-13 持仓表；须重贴 Invest US Close Daily"
+        },
         {
             "at": "2026-10-14T08:10:00+08:00",
             "decision": "完成 2026-10-13 美股收盘日报（复盘10/13）",
@@ -540,21 +545,6 @@
             "at": "2026-09-11T09:43:00+08:00",
             "decision": "补录9/9–9/10美股碎股加仓：VOO+GOOGL+QQQ",
             "detail": "9/9买VOO0.01@$702、GOOGL0.01@$330、QQQ0.01@$715；9/10买VOO0.01@$696。现VOO0.05@$703.2、GOOGL0.02@$332.5、QQQ0.02@$715.67。trades-2026-09.csv + positions-2026-09-09/10"
-        },
-        {
-            "at": "2026-09-11T08:10:00+08:00",
-            "decision": "完成 2026-09-11 美股收盘日报（复盘9/10）",
-            "detail": "PPI +5.4% y/y；10Y~4.95%；SPX四连阴-0.6%/QQQ-1.06%/SOX-2.7%；ORCL AH+6%；存档 us-close-2026-09-11.md + tweet；已飞书推送"
-        },
-        {
-            "at": "2026-09-10T18:30:00+08:00",
-            "decision": "扶摇MCP：zshrc key写重导致Cursor鉴权失败",
-            "detail": "~/.zshrc误写成FUYAO_API_KEY=\"FUYAO_API_KEY=sk-…\"；.env仍是旧吊销key。已纠正并同步；须重启Cursor后MCP才吃到新环境变量"
-        },
-        {
-            "at": "2026-09-10T18:05:00+08:00",
-            "decision": "收盘推文禁「未获取/502」元话术",
-            "detail": "缺数据整句省略；删ashare 9/10「东财主力净额502未获取」；模板+my-soul+两收盘prompt已同步"
         }
     ],
     "market_regime": {
@@ -565,17 +555,21 @@
         "notes": "10/13 财报季开幕指数平；10/14 CPI+BAC/MS；存档 us-close-2026-10-13；merge+飞书"
     },
     "open_questions": [
-        "Cursor Automations：Invest A-Share / US Close Daily 须重贴最新 prompt（停写推文；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
+        "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
         "Cursor Automations：Invest A-Share Close Daily 须重贴最新 prompt（§0四块+进攻/防守四条件）+ FEISHU_WEBHOOK_URL",
         "在 Cursor Automations 新建「Invest Monthly Trade Review」：cron `0 10 1 * *` + 粘贴 prompt-monthly-trade-review.md + FEISHU_WEBHOOK_URL",
         "push 后 Automations「Invest A-Share Close Daily」重贴最新 prompt（五选一+赚钱效应含中位数vs上证）+ FEISHU_WEBHOOK_URL",
-        "Cursor Automations「Invest US Close Daily」：Enable/Unpause + 重贴 prompt-us-close-daily.md（§0–§7含财报）+ FEISHU_WEBHOOK_URL；commit/push 后生效",
         "确认 Cloud Agent 能 push main；merge_to_main + 飞书 main blob",
         "YH（银河）止损细则待补",
         "是否将「交易框架.md」纳入收盘日报必读，或继续只读「可执行交易框架.md」？",
         "是否将「可执行交易框架」中与 my-soul 不一致的部分升格进 my-soul？"
     ],
     "soul_updates": [
+        {
+            "updated_at": "2026-10-14T09:25:00+08:00",
+            "changes": "通知偏好：美股收盘日报禁止个人持仓标的表/小节，不读 positions-*.json",
+            "reason": "用户要求美股日报不再体现持仓模块"
+        },
         {
             "updated_at": "2026-10-13T17:10:00+08:00",
             "changes": "通知偏好：A/美股收盘日报不再自动写 tweet；飞书推日报整文；X收盘推文标为已停用",

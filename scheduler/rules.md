@@ -83,8 +83,8 @@
 ### 美股收盘日报（工作日 08:00）— ✅ A' 启用
 - cron: `0 8 * * 1-5`（北京时间；复盘昨夜美股；与财经日历同点触发，二者独立 Automation）
 - 提示词：`scheduler/prompt-us-close-daily.md`（**精简版**；完整版备查 `prompt-us-close-daily-origin.md`）
-- **正文连续 §0–§7**：0总结 / 1大盘 / 2宏观 / 3板块 / **4财报日历与解读** / 5轮动 / 6风险 / 7结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、机构资金流、明日计划专章
-- 输出：`output/daily/us-close-SESSION.md`（**SESSION = 复盘美股交易日**，非北京生成日；**不写**收盘推文）
+- **正文连续 §0–§7**：0总结 / 1大盘 / 2宏观 / 3板块 / **4财报日历与解读** / 5轮动 / 6风险 / 7结论；**禁止**盘中、宽度、技术面、主题风格、个股异动、关注股观察、机构资金流、明日计划专章、**个人持仓标的表/小节**
+- 输出：`output/daily/us-close-SESSION.md`（**SESSION = 复盘美股交易日**，非北京生成日；**不写**收盘推文；**不读** `positions-*.json`）
 - 飞书标题：`美股收盘日报 SESSION`（`feishu_send.py … us-close-….md`；推日报整文；先 `merge_to_main.sh`）
 - 说明：精简版控成本；文件名/标题日期与正文「复盘美股交易日」一致；改 prompt 后须 **重贴** Automations Instructions + 确认 **Enable**
 
