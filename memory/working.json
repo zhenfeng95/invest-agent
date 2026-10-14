@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-13T17:10:00+08:00",
+    "updated_at": "2026-10-14T08:10:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-14T08:10:00+08:00",
+            "decision": "完成 2026-10-13 美股收盘日报（复盘10/13）",
+            "detail": "SPX7805.45(-0.02%)/NDX100-0.31%/Dow-0.35%/SOX-0.23%/VIX15.27；10Y5.217%；XLE+1.76/XLV-1.35；JPM/GS/C/WFC+JNJ/UNH；VOO715.20/IBIT47.13/GOOGL353.78/PDD81.96/NVDA228.52；存档 us-close-2026-10-13；merge+飞书"
+        },
         {
             "at": "2026-10-13T17:10:00+08:00",
             "decision": "A/美股收盘日报停写推文；飞书改推日报整文",
@@ -554,10 +559,10 @@
     ],
     "market_regime": {
         "equity": "A股：10/13评分58轻仓试错；上证3800.86(+0.10%)四均线线下；16891亿(+8.9%)；2909:2486、中位数+1.0%vs上证+0.10%、前100 67:33；涨停69/跌停8/3连板；PCB/光通信 vs 电池/电力设备；HT持159338@1.118约-7.8%；§7池空",
-        "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；10/12 VOO715.13/IBIT46.86/GOOGL352.72/PDD80.92/NVDA226.32~-1.29%",
-        "crypto": "IBIT 0.02@$35.73；10/12 IBIT+0.67%；Oct FOMC hold>78%/Dec hike~83-88%",
-        "macro": "10/12：SPX7807.24(-0.06%)/NDX30664.7(-0.71%)/SOX-2.67%；WTI93.74/Brent106.65；10Y5.242%休市/VIX15.21；XLK弱/XLE+1.5%/META+3.4%",
-        "notes": "10/12 指数平盘内部分化；10/13大行+10/14 CPI；存档 us-close-2026-10-13+tweet；merge+飞书"
+        "us_equity": "美：IBIT 0.02@$35.73；VOO 0.01@$702.16；PDD 0.02@$85.37；GOOGL 0.03@$343.5；QQQ已平；10/13 VOO715.20/IBIT47.13/GOOGL353.78/PDD81.96/NVDA228.52+0.97%",
+        "crypto": "IBIT 0.02@$35.73；10/13 IBIT+0.58%/BTC~83354；Oct FOMC hold~79%/Dec hike~68%",
+        "macro": "10/13：SPX7805.45(-0.02%)/NDX10030569(-0.31%)/SOX-0.23%；WTI94.85/10Y5.217%；XLE+1.76%/XLV-1.35%；大行财报mixed",
+        "notes": "10/13 财报季开幕指数平；10/14 CPI+BAC/MS；存档 us-close-2026-10-13；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations：Invest A-Share / US Close Daily 须重贴最新 prompt（停写推文；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
