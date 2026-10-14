@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T21:04:23+08:00",
+  "updated_at": "2026-10-14T08:02:28+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -232,9 +232,9 @@
       "title": "美国9月成屋销售总数年化(万户)",
       "previous": "398",
       "consensus": "395",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "399",
+      "revised": "393",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-13 22:00",
@@ -242,9 +242,9 @@
       "title": "美国9月成屋销售年化月率",
       "previous": "-2.00",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.5",
+      "revised": "-3.2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -252,9 +252,9 @@
       "title": "美国至10月13日3个月国债竞拍-得标利率",
       "previous": "4.05",
       "consensus": null,
-      "actual": null,
+      "actual": "4.085",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -262,9 +262,9 @@
       "title": "美国至10月13日3个月国债竞拍-得标利率配置百分比",
       "previous": "21.3",
       "consensus": null,
-      "actual": null,
+      "actual": "36.71",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -272,9 +272,9 @@
       "title": "美国至10月13日3个月国债竞拍-投标倍数",
       "previous": "2.51",
       "consensus": null,
-      "actual": null,
+      "actual": "2.68",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -282,9 +282,9 @@
       "title": "美国至10月13日6个月国债竞拍-得标利率",
       "previous": "4.17",
       "consensus": null,
-      "actual": null,
+      "actual": "4.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -292,9 +292,9 @@
       "title": "美国至10月13日6个月国债竞拍-得标利率配置百分比",
       "previous": "40.62",
       "consensus": null,
-      "actual": null,
+      "actual": "78.17",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-13 23:30",
@@ -302,9 +302,9 @@
       "title": "美国至10月13日6个月国债竞拍-投标倍数",
       "previous": "2.79",
       "consensus": null,
-      "actual": null,
+      "actual": "2.76",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 00:00",
@@ -392,9 +392,9 @@
       "title": "美国至10月13日6周国债竞拍-得标利率",
       "previous": "3.95",
       "consensus": null,
-      "actual": null,
+      "actual": "3.98",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 01:00",
@@ -402,9 +402,9 @@
       "title": "美国至10月13日6周国债竞拍-得标利率配置百分比",
       "previous": "87.68",
       "consensus": null,
-      "actual": null,
+      "actual": "81.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 01:00",
@@ -412,9 +412,9 @@
       "title": "美国至10月13日6周国债竞拍-投标倍数",
       "previous": "2.78",
       "consensus": null,
-      "actual": null,
+      "actual": "2.58",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 07:30",
@@ -422,9 +422,9 @@
       "title": "澳大利亚9月西太平洋领先指标月率",
       "previous": "-0.04",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.06",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 07:50",
@@ -432,9 +432,9 @@
       "title": "日本9月货币供应M2年率",
       "previous": "2.00",
       "consensus": null,
-      "actual": null,
+      "actual": "2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-14 07:50",
@@ -442,9 +442,9 @@
       "title": "日本9月广义货币流动性年率",
       "previous": "4.4",
       "consensus": null,
-      "actual": null,
+      "actual": "4.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 07:50",
@@ -452,9 +452,9 @@
       "title": "日本9月货币供应M3年率",
       "previous": "1.20",
       "consensus": null,
-      "actual": null,
+      "actual": "1.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-14 08:00",
@@ -462,9 +462,9 @@
       "title": "新加坡第三季度GDP年率",
       "previous": "5.90",
       "consensus": "5",
-      "actual": null,
+      "actual": "5.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-14 08:00",
@@ -472,9 +472,9 @@
       "title": "新加坡第三季度GDP季率",
       "previous": "1.40",
       "consensus": "1.3",
-      "actual": null,
+      "actual": "1.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-14 09:30",
