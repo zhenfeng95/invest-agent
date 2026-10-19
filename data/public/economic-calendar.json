@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19T08:04:18+08:00",
+  "updated_at": "2026-10-19T21:03:03+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -102,7 +102,7 @@
       "title": "中国第三季度GDP年率",
       "previous": "4.30",
       "consensus": "4.40",
-      "actual": null,
+      "actual": "4.5",
       "revised": null,
       "affect_txt": ""
     },
@@ -112,7 +112,7 @@
       "title": "中国9月社会消费品零售总额同比",
       "previous": "0.40",
       "consensus": "0.6",
-      "actual": null,
+      "actual": "1.1",
       "revised": null,
       "affect_txt": ""
     },
@@ -122,7 +122,7 @@
       "title": "中国9月规模以上工业增加值同比",
       "previous": "5.20",
       "consensus": "5.5",
-      "actual": null,
+      "actual": "5.5",
       "revised": null,
       "affect_txt": ""
     },
@@ -132,7 +132,7 @@
       "title": "中国第三季度GDP(亿元)",
       "previous": "361511",
       "consensus": null,
-      "actual": null,
+      "actual": "375367",
       "revised": null,
       "affect_txt": ""
     },
@@ -142,7 +142,7 @@
       "title": "中国第三季度GDP季率",
       "previous": "0.90",
       "consensus": "1.1",
-      "actual": null,
+      "actual": "1.2",
       "revised": null,
       "affect_txt": ""
     },
@@ -152,7 +152,7 @@
       "title": "中国9月今年迄今城镇固定资产投资同比",
       "previous": "-7.20",
       "consensus": "-7.30",
-      "actual": null,
+      "actual": "-7.2",
       "revised": null,
       "affect_txt": ""
     },
@@ -162,7 +162,7 @@
       "title": "中国9月城镇调查失业率",
       "previous": "5.30",
       "consensus": "5.30",
-      "actual": null,
+      "actual": "5.2",
       "revised": null,
       "affect_txt": ""
     },
@@ -172,7 +172,7 @@
       "title": "中国9月规模以上工业增加值环比",
       "previous": "0.54",
       "consensus": null,
-      "actual": null,
+      "actual": "0.61",
       "revised": null,
       "affect_txt": ""
     },
@@ -182,8 +182,8 @@
       "title": "中国9月城镇固定资产投资环比",
       "previous": "-0.5",
       "consensus": null,
-      "actual": null,
-      "revised": null,
+      "actual": "0.07",
+      "revised": "-0.55",
       "affect_txt": ""
     },
     {
@@ -192,8 +192,8 @@
       "title": "中国9月社会消费品零售总额环比",
       "previous": "-0.13",
       "consensus": null,
-      "actual": null,
-      "revised": null,
+      "actual": "0.35",
+      "revised": "-0.16",
       "affect_txt": ""
     },
     {
@@ -201,10 +201,10 @@
       "star": 1,
       "title": "日本8月第三产业活动指数月率",
       "previous": "0.40",
-      "consensus": "-0.40",
-      "actual": null,
+      "consensus": null,
+      "actual": "-0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-19 20:00",
@@ -212,9 +212,9 @@
       "title": "加拿大至10月16日全国经济信心指数",
       "previous": "51.3",
       "consensus": null,
-      "actual": null,
+      "actual": "51.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-19 20:30",
@@ -222,9 +222,9 @@
       "title": "加拿大9月CPI月率",
       "previous": "-0.10",
       "consensus": "0.20",
-      "actual": null,
+      "actual": "0.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 20:30",
@@ -232,9 +232,9 @@
       "title": "加拿大9月CPI年率",
       "previous": "3.00",
       "consensus": "3.20",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 20:30",
@@ -242,9 +242,9 @@
       "title": "加拿大9月核心CPI月率",
       "previous": "0.1",
       "consensus": null,
-      "actual": null,
+      "actual": "0",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 20:30",
@@ -252,9 +252,9 @@
       "title": "加拿大9月核心CPI年率",
       "previous": "2.4",
       "consensus": null,
-      "actual": null,
+      "actual": "2.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 22:00",
@@ -481,7 +481,7 @@
       "star": 1,
       "title": "中国台湾9月外销订单年率",
       "previous": "71.40",
-      "consensus": null,
+      "consensus": "58.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -611,7 +611,7 @@
       "star": 2,
       "title": "美国9月新屋开工年化月率",
       "previous": "-2.60",
-      "consensus": "2.30",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -621,7 +621,7 @@
       "star": 2,
       "title": "美国9月营建许可月率",
       "previous": "-2.10",
-      "consensus": "-1.70",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
