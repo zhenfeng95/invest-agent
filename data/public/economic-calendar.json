@@ -1,31 +1,11 @@
 {
-  "updated_at": "2026-10-19T21:03:03+08:00",
+  "updated_at": "2026-10-20T08:02:10+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
   "coverage": "current_natural_week_mon_sun",
   "count": 215,
   "events": [
-    {
-      "pub_time": "2026-10-19 00:00",
-      "star": 4,
-      "title": "中国9月全社会用电量同比",
-      "previous": "1.7",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-10-19 00:00",
-      "star": 3,
-      "title": "中国9月全社会用电量(亿千瓦时)",
-      "previous": "10332",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
     {
       "pub_time": "2026-10-19 05:30",
       "star": 1,
@@ -262,9 +242,9 @@
       "title": "美国10月NAHB房产市场指数",
       "previous": "32",
       "consensus": "32",
-      "actual": null,
+      "actual": "29",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -272,9 +252,9 @@
       "title": "美国至10月19日3个月国债竞拍-得标利率",
       "previous": "4.09",
       "consensus": null,
-      "actual": null,
+      "actual": "4.095",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -282,9 +262,9 @@
       "title": "美国至10月19日3个月国债竞拍-得标利率配置百分比",
       "previous": "36.71",
       "consensus": null,
-      "actual": null,
+      "actual": "29.44",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -292,9 +272,9 @@
       "title": "美国至10月19日3个月国债竞拍-投标倍数",
       "previous": "2.68",
       "consensus": null,
-      "actual": null,
+      "actual": "2.77",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -302,9 +282,9 @@
       "title": "美国至10月19日6个月国债竞拍-得标利率",
       "previous": "4.20",
       "consensus": null,
-      "actual": null,
+      "actual": "4.22",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -312,9 +292,9 @@
       "title": "美国至10月19日6个月国债竞拍-得标利率配置百分比",
       "previous": "78.17",
       "consensus": null,
-      "actual": null,
+      "actual": "86.09",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-19 23:30",
@@ -322,9 +302,29 @@
       "title": "美国至10月19日6个月国债竞拍-投标倍数",
       "previous": "2.76",
       "consensus": null,
+      "actual": "2.84",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-10-20 00:00",
+      "star": 4,
+      "title": "中国9月全社会用电量同比",
+      "previous": "1.7",
+      "consensus": null,
       "actual": null,
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-10-20 00:00",
+      "star": 3,
+      "title": "中国9月全社会用电量(亿千瓦时)",
+      "previous": "10332",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-10-20 00:00",
