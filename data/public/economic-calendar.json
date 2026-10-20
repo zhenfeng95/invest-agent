@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T08:02:10+08:00",
+  "updated_at": "2026-10-20T21:04:38+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -307,52 +307,12 @@
       "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-10-20 00:00",
-      "star": 4,
-      "title": "中国9月全社会用电量同比",
-      "previous": "1.7",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-10-20 00:00",
-      "star": 3,
-      "title": "中国9月全社会用电量(亿千瓦时)",
-      "previous": "10332",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-10-20 00:00",
-      "star": 3,
-      "title": "中国9月本年迄今全国发电装机容量(万千瓦)",
-      "previous": "410302",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-10-20 00:00",
-      "star": 3,
-      "title": "中国9月本年迄今全国发电装机容量年率",
-      "previous": "11.1",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-10-20 09:00",
       "star": 3,
       "title": "中国至10月20日一年期贷款市场报价利率",
       "previous": "3.00",
       "consensus": "3.00",
-      "actual": null,
+      "actual": "3",
       "revised": null,
       "affect_txt": ""
     },
@@ -362,7 +322,7 @@
       "title": "中国至10月20日五年期贷款市场报价利率",
       "previous": "3.50",
       "consensus": "3.50",
-      "actual": null,
+      "actual": "3.5",
       "revised": null,
       "affect_txt": ""
     },
@@ -371,20 +331,20 @@
       "star": 3,
       "title": "德国9月PPI月率",
       "previous": "1.10",
-      "consensus": null,
-      "actual": null,
+      "consensus": "1.5",
+      "actual": "1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
       "star": 2,
       "title": "德国9月PPI年率",
       "previous": "4.60",
-      "consensus": null,
-      "actual": null,
+      "consensus": "6.2",
+      "actual": "6.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -392,9 +352,9 @@
       "title": "瑞士9月贸易帐(亿瑞郎)",
       "previous": "37.86",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "13.09",
+      "revised": "41.85",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -402,9 +362,9 @@
       "title": "瑞士9月季调后实际出口月率",
       "previous": "-8.60",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.1",
+      "revised": "-9.7",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -412,19 +372,19 @@
       "title": "瑞士9月季调后实际进口月率",
       "previous": "-3.10",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "7",
+      "revised": "-3.6",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
       "star": 3,
       "title": "英国8月三个月ILO失业率",
       "previous": "4.90",
-      "consensus": "4.9",
-      "actual": null,
+      "consensus": "5",
+      "actual": "4.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -432,9 +392,9 @@
       "title": "英国9月失业率",
       "previous": "4.40",
       "consensus": null,
-      "actual": null,
+      "actual": "4.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -442,19 +402,19 @@
       "title": "英国9月失业金申请人数(万人)",
       "previous": "2.78",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.03",
+      "revised": "0.7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 14:00",
       "star": 2,
       "title": "英国8月三个月ILO就业人数(万人)",
       "previous": "6.6",
-      "consensus": "2",
-      "actual": null,
+      "consensus": "0.5",
+      "actual": "10.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -462,9 +422,9 @@
       "title": "英国8月三个月剔除红利的平均工资年率",
       "previous": "3.50",
       "consensus": "3.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.7",
+      "revised": "3.6",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 14:00",
@@ -472,9 +432,9 @@
       "title": "英国8月三个月包括红利的平均工资年率",
       "previous": "3.90",
       "consensus": "3.8",
-      "actual": null,
+      "actual": "3.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 16:00",
@@ -482,19 +442,19 @@
       "title": "中国台湾9月外销订单年率",
       "previous": "71.40",
       "consensus": "58.7",
-      "actual": null,
+      "actual": "62.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 16:00",
       "star": 3,
       "title": "欧元区8月季调后经常帐(亿欧元)",
-      "previous": "276",
+      "previous": "276.28",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "87.09",
+      "revised": "271.71",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 16:00",
@@ -502,19 +462,19 @@
       "title": "欧元区8月未季调经常帐(亿欧元)",
       "previous": "365",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "77",
+      "revised": "359",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 17:00",
       "star": 3,
       "title": "德国10月ZEW经济景气指数",
       "previous": "34.7",
-      "consensus": "32",
-      "actual": null,
+      "consensus": "30",
+      "actual": "28.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 17:00",
@@ -522,9 +482,9 @@
       "title": "德国10月ZEW经济现况指数",
       "previous": "-47.1",
       "consensus": "-45",
-      "actual": null,
+      "actual": "-35.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 17:00",
@@ -532,9 +492,9 @@
       "title": "欧元区10月ZEW经济景气指数",
       "previous": "25.8",
       "consensus": null,
-      "actual": null,
+      "actual": "18.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 17:00",
@@ -542,9 +502,9 @@
       "title": "欧元区10月ZEW经济现况指数",
       "previous": "-13.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-14.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 17:00",
@@ -552,9 +512,9 @@
       "title": "欧元区8月建筑业产出年率",
       "previous": "-2.00",
       "consensus": null,
-      "actual": null,
+      "actual": "1.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 17:00",
@@ -562,9 +522,9 @@
       "title": "欧元区8月建筑业产出月率",
       "previous": "0.00",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.8",
+      "revised": "0.19",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 20:00",
@@ -582,9 +542,9 @@
       "title": "美国至10月3日当周ADP就业人数周度变动(万人)",
       "previous": "2.475",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.85",
+      "revised": "2.6",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 20:30",
@@ -592,9 +552,9 @@
       "title": "美国9月新屋开工总数年化(万户)",
       "previous": "127.5",
       "consensus": "130.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "122.1",
+      "revised": "128.8",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 20:30",
@@ -602,29 +562,29 @@
       "title": "美国9月营建许可总数(万户)",
       "previous": "140.3",
       "consensus": "139.5",
-      "actual": null,
+      "actual": "140",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 20:30",
       "star": 2,
       "title": "美国9月新屋开工年化月率",
       "previous": "-2.60",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "1.9",
+      "actual": "-5.2",
+      "revised": "-5.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 20:30",
       "star": 2,
       "title": "美国9月营建许可月率",
       "previous": "-2.10",
-      "consensus": null,
-      "actual": null,
+      "consensus": "-1.3",
+      "actual": "-0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-20 20:55",
@@ -632,9 +592,9 @@
       "title": "美国至10月17日当周红皮书商业零售销售年率",
       "previous": "10.4",
       "consensus": null,
-      "actual": null,
+      "actual": "9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 22:00",
@@ -661,7 +621,7 @@
       "star": 2,
       "title": "美国9月未季调成屋签约销售指数年率",
       "previous": "-4.90",
-      "consensus": null,
+      "consensus": "-3.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -697,11 +657,51 @@
       "affect_txt": "未公布"
     },
     {
+      "pub_time": "2026-10-21 00:00",
+      "star": 4,
+      "title": "中国9月全社会用电量同比",
+      "previous": "1.7",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-10-21 00:00",
+      "star": 3,
+      "title": "中国9月全社会用电量(亿千瓦时)",
+      "previous": "10332",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-10-21 00:00",
+      "star": 3,
+      "title": "中国9月本年迄今全国发电装机容量(万千瓦)",
+      "previous": "410302",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-10-21 00:00",
+      "star": 3,
+      "title": "中国9月本年迄今全国发电装机容量年率",
+      "previous": "11.1",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
       "pub_time": "2026-10-21 04:30",
       "star": 3,
       "title": "美国至10月16日当周API原油库存(万桶)",
       "previous": "-1112.3",
-      "consensus": null,
+      "consensus": "-110.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -761,7 +761,7 @@
       "star": 1,
       "title": "美国至10月16日当周API汽油库存(万桶)",
       "previous": "109.1",
-      "consensus": null,
+      "consensus": "-68.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -771,7 +771,7 @@
       "star": 1,
       "title": "美国至10月16日当周API精炼油库存(万桶)",
       "previous": "-145.8",
-      "consensus": null,
+      "consensus": "-157.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -821,7 +821,7 @@
       "star": 2,
       "title": "日本9月季调后商品贸易帐(亿日元)",
       "previous": "-8406",
-      "consensus": "-1270",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -850,7 +850,7 @@
       "pub_time": "2026-10-21 14:00",
       "star": 3,
       "title": "英国9月公共部门净借款(亿英镑)",
-      "previous": "183",
+      "previous": "182.68",
       "consensus": "238.5",
       "actual": null,
       "revised": null,
@@ -880,7 +880,7 @@
       "pub_time": "2026-10-21 14:00",
       "star": 2,
       "title": "英国9月政府收支短差(亿英镑)",
-      "previous": "100",
+      "previous": "100.05",
       "consensus": null,
       "actual": null,
       "revised": null,
@@ -891,7 +891,7 @@
       "star": 2,
       "title": "英国9月未季调输入PPI年率",
       "previous": "6.10",
-      "consensus": null,
+      "consensus": "7.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -901,7 +901,7 @@
       "star": 2,
       "title": "英国9月未季调输出PPI年率",
       "previous": "3.70",
-      "consensus": null,
+      "consensus": "4.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -911,7 +911,7 @@
       "star": 2,
       "title": "英国9月未季调输出PPI月率",
       "previous": "0.70",
-      "consensus": null,
+      "consensus": "0.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -921,7 +921,7 @@
       "star": 2,
       "title": "英国9月核心CPI年率",
       "previous": "2.60",
-      "consensus": "2.8",
+      "consensus": "2.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -931,7 +931,7 @@
       "star": 2,
       "title": "英国9月核心CPI月率",
       "previous": "0.3",
-      "consensus": null,
+      "consensus": "0.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -981,7 +981,7 @@
       "star": 1,
       "title": "英国9月未季调输入PPI月率",
       "previous": "0.30",
-      "consensus": null,
+      "consensus": "1.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1051,7 +1051,7 @@
       "star": 4,
       "title": "美国至10月16日当周EIA原油库存(万桶)",
       "previous": "-855.7",
-      "consensus": null,
+      "consensus": "-110.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1141,7 +1141,7 @@
       "star": 2,
       "title": "美国至10月16日当周EIA精炼厂设备利用率",
       "previous": "93.5",
-      "consensus": null,
+      "consensus": "93.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1171,7 +1171,7 @@
       "star": 1,
       "title": "美国至10月16日当周EIA汽油库存(万桶)",
       "previous": "351.8",
-      "consensus": null,
+      "consensus": "-68.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1181,7 +1181,7 @@
       "star": 1,
       "title": "美国至10月16日当周EIA精炼油库存(万桶)",
       "previous": "-252.7",
-      "consensus": null,
+      "consensus": "-157.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
