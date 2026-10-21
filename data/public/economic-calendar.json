@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T21:04:38+08:00",
+  "updated_at": "2026-10-21T08:03:25+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -527,16 +527,6 @@
       "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-10-20 20:00",
-      "star": 1,
-      "title": "新西兰至9月29日全球乳制品贸易价格指数",
-      "previous": "1.2",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
       "pub_time": "2026-10-20 20:15",
       "star": 3,
       "title": "美国至10月3日当周ADP就业人数周度变动(万人)",
@@ -602,9 +592,9 @@
       "title": "美国9月成屋签约销售指数月率",
       "previous": "0.30",
       "consensus": "-0.50",
-      "actual": null,
+      "actual": "-7.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 22:00",
@@ -612,9 +602,9 @@
       "title": "美国9月成屋签约销售指数",
       "previous": "71.2",
       "consensus": null,
-      "actual": null,
+      "actual": "66",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 22:00",
@@ -622,9 +612,9 @@
       "title": "美国9月未季调成屋签约销售指数年率",
       "previous": "-4.90",
       "consensus": "-3.9",
-      "actual": null,
+      "actual": "-12.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 23:00",
@@ -632,9 +622,19 @@
       "title": "美国至10月20日6周国债竞拍-得标利率配置百分比",
       "previous": "81.33",
       "consensus": null,
-      "actual": null,
+      "actual": "78.53",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-10-20 23:22",
+      "star": 1,
+      "title": "新西兰至9月29日全球乳制品贸易价格指数",
+      "previous": "1.2",
+      "consensus": null,
+      "actual": "2.5",
+      "revised": null,
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 23:30",
@@ -642,9 +642,9 @@
       "title": "美国至10月20日6周国债竞拍-得标利率",
       "previous": "3.98",
       "consensus": null,
-      "actual": null,
+      "actual": "3.975",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-20 23:30",
@@ -652,9 +652,9 @@
       "title": "美国至10月20日6周国债竞拍-投标倍数",
       "previous": "2.58",
       "consensus": null,
-      "actual": null,
+      "actual": "2.74",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 00:00",
@@ -702,9 +702,9 @@
       "title": "美国至10月16日当周API原油库存(万桶)",
       "previous": "-1112.3",
       "consensus": "-110.7",
-      "actual": null,
+      "actual": "-493.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -712,9 +712,9 @@
       "title": "美国至10月16日当周API原油进口(万桶)",
       "previous": "-109.1",
       "consensus": null,
-      "actual": null,
+      "actual": "6.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -722,9 +722,9 @@
       "title": "美国至10月16日当周API取暖油库存(万桶)",
       "previous": "-7",
       "consensus": null,
-      "actual": null,
+      "actual": "-16.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -732,9 +732,9 @@
       "title": "美国至10月16日当周API库欣原油库存(万桶)",
       "previous": "182.3",
       "consensus": null,
-      "actual": null,
+      "actual": "93.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -742,9 +742,9 @@
       "title": "美国至10月16日当周API成品油进口(万桶/日)",
       "previous": "3",
       "consensus": null,
-      "actual": null,
+      "actual": "32.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -752,9 +752,9 @@
       "title": "美国至10月16日当周API投产原油量(万桶/日)",
       "previous": "11.8",
       "consensus": null,
-      "actual": null,
+      "actual": "-40.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -762,9 +762,9 @@
       "title": "美国至10月16日当周API汽油库存(万桶)",
       "previous": "109.1",
       "consensus": "-68.7",
-      "actual": null,
+      "actual": "-195.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 04:30",
@@ -772,9 +772,9 @@
       "title": "美国至10月16日当周API精炼油库存(万桶)",
       "previous": "-145.8",
       "consensus": "-157.8",
-      "actual": null,
+      "actual": "-257.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 05:00",
@@ -782,9 +782,9 @@
       "title": "韩国9月PPI年率",
       "previous": "7.90",
       "consensus": null,
-      "actual": null,
+      "actual": "7.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 05:00",
@@ -792,9 +792,9 @@
       "title": "韩国9月PPI月率",
       "previous": "0.2",
       "consensus": null,
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-21 07:50",
@@ -802,9 +802,9 @@
       "title": "日本9月商品出口年率",
       "previous": "19.30",
       "consensus": "20.10",
-      "actual": null,
+      "actual": "16.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 07:50",
@@ -812,9 +812,9 @@
       "title": "日本9月商品进口年率",
       "previous": "28.00",
       "consensus": "19.6",
-      "actual": null,
+      "actual": "18.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 07:50",
@@ -822,9 +822,9 @@
       "title": "日本9月季调后商品贸易帐(亿日元)",
       "previous": "-8406",
       "consensus": null,
-      "actual": null,
+      "actual": "-7039.67",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 07:50",
@@ -832,9 +832,9 @@
       "title": "日本9月未季调商品贸易帐(亿日元)",
       "previous": "-11056",
       "consensus": "-1810",
-      "actual": null,
+      "actual": "-5365",
       "revised": "-11119",
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 14:00",
