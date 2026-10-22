@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T21:05:11+08:00",
+  "updated_at": "2026-10-22T08:02:32+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1052,9 +1052,9 @@
       "title": "美国至10月16日当周EIA原油库存(万桶)",
       "previous": "-855.7",
       "consensus": "-82",
-      "actual": null,
+      "actual": "-306",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1062,9 +1062,9 @@
       "title": "美国至10月16日当周EIA俄克拉荷马州库欣原油库存(万桶)",
       "previous": "186.2",
       "consensus": null,
-      "actual": null,
+      "actual": "98.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1072,9 +1072,9 @@
       "title": "美国至10月16日当周EIA战略石油储备库存(万桶)",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "-30",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1082,9 +1082,9 @@
       "title": "美国至10月16日当周EIA原油产量引伸需求数据(万桶/日)",
       "previous": "2095",
       "consensus": null,
-      "actual": null,
+      "actual": "1946.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1092,9 +1092,9 @@
       "title": "美国至10月16日当周EIA原油进口(万桶)",
       "previous": "-59.6",
       "consensus": null,
-      "actual": null,
+      "actual": "83.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1102,9 +1102,9 @@
       "title": "美国至10月16日当周EIA取暖油库存(万桶)",
       "previous": "-44.8",
       "consensus": null,
-      "actual": null,
+      "actual": "65.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1112,9 +1112,9 @@
       "title": "美国至10月16日当周EIA成品油进口(万桶/日)",
       "previous": "5.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-14.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1122,9 +1122,9 @@
       "title": "美国至10月16日当周EIA投产原油量(万桶/日)",
       "previous": "13.5",
       "consensus": null,
-      "actual": null,
+      "actual": "3.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1132,9 +1132,9 @@
       "title": "美国至10月16日当周EIA汽油产量(万桶/日)",
       "previous": "-11.7",
       "consensus": null,
-      "actual": null,
+      "actual": "51.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1142,9 +1142,9 @@
       "title": "美国至10月16日当周EIA精炼厂设备利用率",
       "previous": "93.5",
       "consensus": "93.5",
-      "actual": null,
+      "actual": "93.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1152,9 +1152,9 @@
       "title": "美国至10月16日当周EIA精炼油产量(万桶/日)",
       "previous": "-10.1",
       "consensus": null,
-      "actual": null,
+      "actual": "4.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1162,9 +1162,9 @@
       "title": "美国至10月16日当周EIA新配方汽油库存(万桶)",
       "previous": "0.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1172,9 +1172,9 @@
       "title": "美国至10月16日当周EIA汽油库存(万桶)",
       "previous": "351.8",
       "consensus": "-44.3",
-      "actual": null,
+      "actual": "-295.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1182,9 +1182,9 @@
       "title": "美国至10月16日当周EIA精炼油库存(万桶)",
       "previous": "-252.7",
       "consensus": "-116.2",
-      "actual": null,
+      "actual": "167.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1192,9 +1192,9 @@
       "title": "美国至10月16日当周EIA蒸馏燃油产量引伸需求数据(万桶/日)",
       "previous": "569.5",
       "consensus": null,
-      "actual": null,
+      "actual": "510.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 22:30",
@@ -1202,9 +1202,9 @@
       "title": "美国至10月16日当周EIA车用汽油总产量引伸需求数据(万桶/日)",
       "previous": "919.91",
       "consensus": null,
-      "actual": null,
+      "actual": "990.84",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 23:30",
@@ -1212,9 +1212,9 @@
       "title": "美国至10月21日4个月国债竞拍-得标利率",
       "previous": "4.20",
       "consensus": null,
-      "actual": null,
+      "actual": "4.155",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-21 23:30",
@@ -1222,9 +1222,9 @@
       "title": "美国至10月21日4个月国债竞拍-得标利率配置百分比",
       "previous": "83.69",
       "consensus": null,
-      "actual": null,
+      "actual": "48.24",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-21 23:30",
@@ -1232,9 +1232,9 @@
       "title": "美国至10月21日4个月国债竞拍-投标倍数",
       "previous": "2.79",
       "consensus": null,
-      "actual": null,
+      "actual": "2.76",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-22 01:00",
@@ -1242,9 +1242,9 @@
       "title": "美国至10月21日20年期国债竞拍-得标利率",
       "previous": "5.42",
       "consensus": null,
-      "actual": null,
+      "actual": "5.469",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-22 01:00",
@@ -1252,9 +1252,9 @@
       "title": "美国至10月21日20年期国债竞拍-得标利率配置百分比",
       "previous": "30.14",
       "consensus": null,
-      "actual": null,
+      "actual": "60.05",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-22 01:00",
@@ -1262,9 +1262,9 @@
       "title": "美国至10月21日20年期国债竞拍-投标倍数",
       "previous": "2.57",
       "consensus": null,
-      "actual": null,
+      "actual": "2.73",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-22 05:45",
@@ -1272,9 +1272,9 @@
       "title": "新西兰第三季度CPI年率",
       "previous": "4.10",
       "consensus": "3.8",
-      "actual": null,
+      "actual": "3.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-22 05:45",
@@ -1282,9 +1282,9 @@
       "title": "新西兰第三季度CPI季率",
       "previous": "1.50",
       "consensus": "0.8",
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-22 07:50",
@@ -1292,9 +1292,9 @@
       "title": "日本至10月16日当周买进外国债券(亿日元)",
       "previous": "-3397",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1616",
+      "revised": "-3399",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-22 07:50",
@@ -1302,9 +1302,9 @@
       "title": "日本至10月16日当周买进外国股票(亿日元)",
       "previous": "-7606",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1283",
+      "revised": "-7607",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-22 07:50",
@@ -1312,9 +1312,9 @@
       "title": "日本至10月16日当周外资买进日债(亿日元)",
       "previous": "10801",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "14542",
+      "revised": "10802",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-22 07:50",
@@ -1322,9 +1322,9 @@
       "title": "日本至10月16日当周外资买进日股(亿日元)",
       "previous": "35215",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-665",
+      "revised": "35455",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-22 08:40",
