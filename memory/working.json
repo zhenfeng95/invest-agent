@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-10-21T17:10:00+08:00",
+    "updated_at": "2026-10-22T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-10-22T08:05:00+08:00",
+            "decision": "完成 2026-10-21 美股收盘日报（复盘10/21）",
+            "detail": "SPX7757.17(+0.58%)/NDX29822.52(+1.13%)/Dow+0.69%/RUT+0.27%/SOX+1.97%/VIX16.68；10Y5.13%；FedWatch hold~86%；XLK+1.67/XLC-1.11；SpaceX/NFLX/TSLA/META/IBM/LRCX；禁持仓模块；us-close-2026-10-21；merge+飞书"
+        },
         {
             "at": "2026-10-21T08:05:00+08:00",
             "decision": "完成 2026-10-20 美股收盘日报（复盘10/20）",
@@ -604,10 +609,10 @@
     ],
     "market_regime": {
         "equity": "A股：10/21评分35防守；上证3713.03(-0.60%)再破MA5仍破MA10/20/60；14422亿(-2.0%)；1924:3592、中位数-1.0%vs上证-0.60%、前100 60:39；涨停50/跌停5/4连板；IT/元件 vs 电池/宁德链/证券；扶摇7指数+THS≤6/东财push2 502；§7池空；HT159338@1.076约-11.2%",
-        "us_equity": "美：10/20 SPX7712.57(+0.28%)/NDX29490.28(-0.13%)/Dow+1.02%/RUT+1.65%/SOX-0.29%；WTI101.79；10Y~5.12%；Oct hike~17.2%；XLV+2.37/XLK-0.25；VIX17.31",
-        "crypto": "10/20 BTC~82920(+1.3%)；risk-on修复；Oct FOMC hold为主",
-        "macro": "10/20：10Y5.12%(-3bp)；9月开工122.1万(-5.2% m/m)；WTI101.79；VIX17.31；FedWatch hike~17.2%",
-        "notes": "10/20 美股收盘日报；us-close-2026-10-20；merge+飞书"
+        "us_equity": "美：10/21 SPX7757.17(+0.58%)/NDX29822.52(+1.13%)/Dow+0.69%/RUT+0.27%/SOX+1.97%；WTI98.0/Brent110.06；10Y~5.13%；Oct hold~86%；XLK+1.67/XLC-1.11；VIX16.68",
+        "crypto": "10/21 BTC~84198(+1.5%)；risk-on修复；Oct FOMC hold为主",
+        "macro": "10/21：10Y5.13%(+1bp)；Pending 66.0(10/20)；WTI98.0；VIX16.68；FedWatch hold~86%/hike~14%",
+        "notes": "10/21 美股收盘日报；us-close-2026-10-21；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
