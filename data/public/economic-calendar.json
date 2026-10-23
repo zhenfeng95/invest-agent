@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T08:02:29+08:00",
+  "updated_at": "2026-10-23T21:03:31+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1742,9 +1742,9 @@
       "title": "日本10月制造业PMI初值",
       "previous": "54.1",
       "consensus": null,
-      "actual": null,
+      "actual": "53.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 08:30",
@@ -1752,9 +1752,9 @@
       "title": "日本10月服务业PMI初值",
       "previous": "51.3",
       "consensus": null,
-      "actual": null,
+      "actual": "52",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 08:30",
@@ -1762,9 +1762,9 @@
       "title": "日本10月综合PMI初值",
       "previous": "52.3",
       "consensus": null,
-      "actual": null,
+      "actual": "52.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-23 13:00",
@@ -1772,9 +1772,9 @@
       "title": "印度10月制造业PMI初值",
       "previous": "55.1",
       "consensus": "55",
-      "actual": null,
+      "actual": "54.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 13:00",
@@ -1782,9 +1782,9 @@
       "title": "印度10月服务业PMI初值",
       "previous": "55.2",
       "consensus": "55.5",
-      "actual": null,
+      "actual": "56.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 13:00",
@@ -1792,9 +1792,9 @@
       "title": "印度10月综合PMI初值",
       "previous": "55.9",
       "consensus": "56.1",
-      "actual": null,
+      "actual": "56.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 13:00",
@@ -1802,9 +1802,9 @@
       "title": "新加坡9月CPI年率",
       "previous": "2.30",
       "consensus": "2.40",
-      "actual": null,
+      "actual": "2.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 14:00",
@@ -1812,9 +1812,9 @@
       "title": "英国9月季调后零售销售月率",
       "previous": "0.50",
       "consensus": "-0.10",
-      "actual": null,
+      "actual": "-0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 14:00",
@@ -1822,9 +1822,9 @@
       "title": "英国9月季调后核心零售销售年率",
       "previous": "2.70",
       "consensus": "1.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.8",
+      "revised": "2.9",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 14:00",
@@ -1832,9 +1832,9 @@
       "title": "英国9月季调后核心零售销售月率",
       "previous": "0.60",
       "consensus": "-0.10",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.7",
+      "revised": "0.9",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 14:00",
@@ -1842,9 +1842,9 @@
       "title": "英国9月季调后零售销售年率",
       "previous": "2.40",
       "consensus": "1.00",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.8",
+      "revised": "2.7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 15:15",
@@ -1852,9 +1852,9 @@
       "title": "法国10月制造业PMI初值",
       "previous": "50.6",
       "consensus": "50.5",
-      "actual": null,
+      "actual": "49.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 15:15",
@@ -1862,9 +1862,9 @@
       "title": "法国10月服务业PMI初值",
       "previous": "51.2",
       "consensus": "50.7",
-      "actual": null,
+      "actual": "48.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 15:15",
@@ -1872,9 +1872,9 @@
       "title": "法国10月综合PMI初值",
       "previous": "51.1",
       "consensus": "50.5",
-      "actual": null,
+      "actual": "48.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 15:30",
@@ -1882,9 +1882,9 @@
       "title": "德国10月制造业PMI初值",
       "previous": "53.9",
       "consensus": "53.5",
-      "actual": null,
+      "actual": "54.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 15:30",
@@ -1892,9 +1892,9 @@
       "title": "德国10月服务业PMI初值",
       "previous": "52.9",
       "consensus": "52.5",
-      "actual": null,
+      "actual": "51.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 15:30",
@@ -1902,9 +1902,9 @@
       "title": "德国10月综合PMI初值",
       "previous": "53.8",
       "consensus": "53.3",
-      "actual": null,
+      "actual": "52.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1912,9 +1912,9 @@
       "title": "中国台湾9月失业率",
       "previous": "3.32",
       "consensus": "3.30",
-      "actual": null,
+      "actual": "3.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1922,9 +1922,9 @@
       "title": "中国台湾9月工业生产年率",
       "previous": "23.47",
       "consensus": "24.65",
-      "actual": null,
+      "actual": "19.17",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1932,9 +1932,9 @@
       "title": "欧元区10月制造业PMI初值",
       "previous": "52.9",
       "consensus": "52.7",
-      "actual": null,
+      "actual": "52.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1942,9 +1942,9 @@
       "title": "欧元区10月服务业PMI初值",
       "previous": "53",
       "consensus": "52.5",
-      "actual": null,
+      "actual": "51.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1952,9 +1952,9 @@
       "title": "欧元区9月欧洲央行1年CPI预期",
       "previous": "3.00",
       "consensus": "3.10",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1962,9 +1962,9 @@
       "title": "欧元区9月欧洲央行3年CPI预期",
       "previous": "2.90",
       "consensus": "2.90",
-      "actual": null,
+      "actual": "2.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-23 16:00",
@@ -1972,9 +1972,9 @@
       "title": "欧元区10月综合PMI初值",
       "previous": "53.1",
       "consensus": "52.7",
-      "actual": null,
+      "actual": "51.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 16:20",
@@ -1992,9 +1992,9 @@
       "title": "英国10月制造业PMI初值",
       "previous": "51.9",
       "consensus": "51.7",
-      "actual": null,
+      "actual": "52.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 16:30",
@@ -2002,9 +2002,9 @@
       "title": "英国10月服务业PMI初值",
       "previous": "52.1",
       "consensus": "51.8",
-      "actual": null,
+      "actual": "53.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 16:30",
@@ -2012,9 +2012,9 @@
       "title": "英国10月综合PMI初值",
       "previous": "52",
       "consensus": "51.8",
-      "actual": null,
+      "actual": "53.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 18:30",
@@ -2022,9 +2022,9 @@
       "title": "俄罗斯至10月23日央行利率决定",
       "previous": "14.00",
       "consensus": "14.00",
-      "actual": null,
+      "actual": "14",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-23 20:30",
@@ -2032,19 +2032,19 @@
       "title": "加拿大8月零售销售月率",
       "previous": "-0.70",
       "consensus": "1.30",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.2",
+      "revised": "-0.8",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-23 20:30",
       "star": 2,
       "title": "加拿大8月核心零售销售月率",
       "previous": "-0.70",
-      "consensus": "1.10",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "consensus": "1",
+      "actual": "1.2",
+      "revised": "-0.8",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-23 21:45",
