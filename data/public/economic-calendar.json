@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T08:03:17+08:00",
+  "updated_at": "2026-10-26T21:03:53+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -7,34 +7,14 @@
   "count": 270,
   "events": [
     {
-      "pub_time": "2026-10-26 00:00",
-      "star": 3,
-      "title": "中国9月本年迄今全国发电装机容量(万千瓦)",
-      "previous": "410302",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-10-26 00:00",
-      "star": 3,
-      "title": "中国9月本年迄今全国发电装机容量年率",
-      "previous": "11.1",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-10-26 13:00",
       "star": 1,
       "title": "新加坡9月季调后工业产出指数月率",
       "previous": "-0.50",
       "consensus": "0.60",
-      "actual": null,
+      "actual": "-3.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-26 13:00",
@@ -42,9 +22,9 @@
       "title": "新加坡9月工业产出年率",
       "previous": "15.40",
       "consensus": "6.6",
-      "actual": null,
+      "actual": "3.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-26 13:00",
@@ -52,9 +32,9 @@
       "title": "日本8月同步指标终值",
       "previous": "118.7",
       "consensus": null,
-      "actual": null,
+      "actual": "118.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 13:00",
@@ -62,9 +42,9 @@
       "title": "日本8月领先指标终值",
       "previous": "118",
       "consensus": null,
-      "actual": null,
+      "actual": "118",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-26 13:00",
@@ -72,9 +52,9 @@
       "title": "日本8月同步指标月率终值",
       "previous": "-1.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 13:00",
@@ -82,9 +62,29 @@
       "title": "日本8月领先指标月率终值",
       "previous": "0.4",
       "consensus": null,
-      "actual": null,
+      "actual": "0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
+    },
+    {
+      "pub_time": "2026-10-26 15:05",
+      "star": 3,
+      "title": "中国9月本年迄今全国发电装机容量(万千瓦)",
+      "previous": "410302",
+      "consensus": null,
+      "actual": "413214",
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-10-26 15:05",
+      "star": 3,
+      "title": "中国9月本年迄今全国发电装机容量年率",
+      "previous": "11.1",
+      "consensus": null,
+      "actual": "11.2",
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-10-26 16:00",
@@ -92,9 +92,9 @@
       "title": "西班牙9月PPI月率",
       "previous": "2.90",
       "consensus": null,
-      "actual": null,
+      "actual": "4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 16:00",
@@ -102,19 +102,9 @@
       "title": "西班牙9月PPI年率",
       "previous": "13.20",
       "consensus": null,
-      "actual": null,
+      "actual": "18.3",
       "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-10-26 16:20",
-      "star": 1,
-      "title": "中国台湾9月M2货币供应年率",
-      "previous": "6.79",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 17:00",
@@ -122,9 +112,9 @@
       "title": "德国10月IFO商业景气指数",
       "previous": "89.9",
       "consensus": "90",
-      "actual": null,
+      "actual": "90.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 17:00",
@@ -132,9 +122,9 @@
       "title": "德国10月IFO商业现况指数",
       "previous": "89.5",
       "consensus": "89.9",
-      "actual": null,
+      "actual": "88.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-26 17:00",
@@ -142,9 +132,9 @@
       "title": "德国10月IFO商业预期指数",
       "previous": "90.4",
       "consensus": "90",
-      "actual": null,
+      "actual": "91.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 19:00",
@@ -152,9 +142,9 @@
       "title": "英国10月CBI零售销售差值",
       "previous": "-55",
       "consensus": null,
-      "actual": null,
+      "actual": "-10",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 19:00",
@@ -162,9 +152,9 @@
       "title": "英国10月CBI零售销售预期指数",
       "previous": "-37",
       "consensus": null,
-      "actual": null,
+      "actual": "-10",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 20:00",
@@ -172,9 +162,9 @@
       "title": "加拿大至10月23日全国经济信心指数",
       "previous": "51.7",
       "consensus": null,
-      "actual": null,
+      "actual": "51.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-26 20:30",
@@ -182,9 +172,9 @@
       "title": "美国9月芝加哥联储全国活动指数",
       "previous": "-0.04",
       "consensus": null,
-      "actual": null,
+      "actual": "0.07",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-26 22:30",
@@ -447,6 +437,16 @@
       "affect_txt": "未公布"
     },
     {
+      "pub_time": "2026-10-27 16:20",
+      "star": 1,
+      "title": "中国台湾9月M2货币供应年率",
+      "previous": "6.79",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": "未公布"
+    },
+    {
       "pub_time": "2026-10-27 17:00",
       "star": 2,
       "title": "欧元区9月三个月货币供应M3年率",
@@ -490,7 +490,7 @@
       "pub_time": "2026-10-27 20:30",
       "star": 2,
       "title": "美国9月扣除国防的耐用品订单月率",
-      "previous": "0.1",
+      "previous": "0",
       "consensus": null,
       "actual": null,
       "revised": null,
@@ -871,7 +871,7 @@
       "star": 3,
       "title": "澳大利亚9月未季调CPI年率",
       "previous": "4.00",
-      "consensus": "4.2",
+      "consensus": "4.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2651,7 +2651,7 @@
       "star": 3,
       "title": "中国10月官方制造业PMI",
       "previous": "50.1",
-      "consensus": null,
+      "consensus": "50",
       "actual": null,
       "revised": null,
       "affect_txt": ""
