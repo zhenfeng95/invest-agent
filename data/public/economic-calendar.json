@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T21:04:54+08:00",
+  "updated_at": "2026-10-28T08:02:45+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -572,9 +572,9 @@
       "title": "美国8月S&P/CS10座大城市房价指数年率",
       "previous": "3.39",
       "consensus": null,
-      "actual": null,
+      "actual": "3.62",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 21:00",
@@ -582,9 +582,9 @@
       "title": "美国8月S&P/CS10座大城市未季调房价指数月率",
       "previous": "0.03",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.35",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-27 21:00",
@@ -602,9 +602,9 @@
       "title": "美国8月S&P/CS20座大城市未季调房价指数",
       "previous": "350.36",
       "consensus": null,
-      "actual": null,
+      "actual": "348.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-27 21:00",
@@ -622,9 +622,9 @@
       "title": "美国9月新屋销售总数年化(万户)",
       "previous": "68.4",
       "consensus": "65",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "67.6",
+      "revised": "68",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -632,9 +632,9 @@
       "title": "美国10月谘商会消费者信心指数",
       "previous": "81.9",
       "consensus": "81",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "91.7",
+      "revised": "84.2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -642,9 +642,9 @@
       "title": "美国10月里奇蒙德联储制造业指数",
       "previous": "-2",
       "consensus": null,
-      "actual": null,
+      "actual": "-2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -652,9 +652,9 @@
       "title": "美国9月新屋销售年化月率",
       "previous": "6.40",
       "consensus": "-5.50",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.6",
+      "revised": "5.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -662,9 +662,9 @@
       "title": "美国10月谘商会消费者现况指数",
       "previous": "109.3",
       "consensus": null,
-      "actual": null,
+      "actual": "120.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -672,9 +672,9 @@
       "title": "美国10月谘商会消费者预期指数",
       "previous": "63.6",
       "consensus": null,
-      "actual": null,
+      "actual": "72.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -682,9 +682,9 @@
       "title": "美国10月里奇蒙德联储制造业装船指数",
       "previous": "-5",
       "consensus": null,
-      "actual": null,
+      "actual": "0",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 22:00",
@@ -692,19 +692,9 @@
       "title": "美国10月里奇蒙德联储服务业收入指数",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "2",
       "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-10-27 23:00",
-      "star": 1,
-      "title": "美国至10月27日6周国债竞拍-得标利率配置百分比",
-      "previous": "78.53",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 23:30",
@@ -712,9 +702,9 @@
       "title": "美国至10月27日1年期国债竞拍-得标利率",
       "previous": "4.40",
       "consensus": null,
-      "actual": null,
+      "actual": "4.29",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-27 23:30",
@@ -722,9 +712,9 @@
       "title": "美国至10月27日1年期国债竞拍-得标利率配置百分比",
       "previous": "70.21",
       "consensus": null,
-      "actual": null,
+      "actual": "65.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-27 23:30",
@@ -732,9 +722,9 @@
       "title": "美国至10月27日1年期国债竞拍-投标倍数",
       "previous": "3.07",
       "consensus": null,
-      "actual": null,
+      "actual": "3.15",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-27 23:30",
@@ -742,9 +732,19 @@
       "title": "美国至10月27日6周国债竞拍-得标利率",
       "previous": "3.98",
       "consensus": null,
-      "actual": null,
+      "actual": "3.95",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-10-27 23:30",
+      "star": 1,
+      "title": "美国至10月27日6周国债竞拍-得标利率配置百分比",
+      "previous": "78.53",
+      "consensus": null,
+      "actual": "83.1",
+      "revised": null,
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-27 23:30",
@@ -752,9 +752,9 @@
       "title": "美国至10月27日6周国债竞拍-投标倍数",
       "previous": "2.74",
       "consensus": null,
-      "actual": null,
+      "actual": "2.83",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 01:00",
@@ -762,9 +762,9 @@
       "title": "美国至10月27日5年期国债竞拍-得标利率",
       "previous": "5.03",
       "consensus": null,
-      "actual": null,
+      "actual": "4.845",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 01:00",
@@ -772,9 +772,9 @@
       "title": "美国至10月27日5年期国债竞拍-得标利率配置百分比",
       "previous": "30.34",
       "consensus": null,
-      "actual": null,
+      "actual": "98.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 01:00",
@@ -782,9 +782,9 @@
       "title": "美国至10月27日5年期国债竞拍-投标倍数",
       "previous": "2.21",
       "consensus": null,
-      "actual": null,
+      "actual": "2.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -792,9 +792,9 @@
       "title": "美国至10月23日当周API原油库存(万桶)",
       "previous": "-493.1",
       "consensus": "52.2",
-      "actual": null,
+      "actual": "-203.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -802,9 +802,9 @@
       "title": "美国至10月23日当周API原油进口(万桶)",
       "previous": "6.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-13.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -812,9 +812,9 @@
       "title": "美国至10月23日当周API取暖油库存(万桶)",
       "previous": "-16.9",
       "consensus": null,
-      "actual": null,
+      "actual": "38",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -822,9 +822,9 @@
       "title": "美国至10月23日当周API库欣原油库存(万桶)",
       "previous": "93.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-45.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -832,9 +832,9 @@
       "title": "美国至10月23日当周API成品油进口(万桶/日)",
       "previous": "32.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-37.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -842,9 +842,9 @@
       "title": "美国至10月23日当周API投产原油量(万桶/日)",
       "previous": "-40.8",
       "consensus": null,
-      "actual": null,
+      "actual": "4.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -852,9 +852,9 @@
       "title": "美国至10月23日当周API汽油库存(万桶)",
       "previous": "-195.4",
       "consensus": "-128.8",
-      "actual": null,
+      "actual": "239",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-28 04:30",
@@ -862,9 +862,9 @@
       "title": "美国至10月23日当周API精炼油库存(万桶)",
       "previous": "-257.7",
       "consensus": "-88.8",
-      "actual": null,
+      "actual": "42.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-10-28 08:30",
@@ -921,7 +921,7 @@
       "star": 2,
       "title": "澳大利亚9月未季调CPI月率",
       "previous": "0.4",
-      "consensus": "0.65",
+      "consensus": "0.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1461,7 +1461,7 @@
       "star": 2,
       "title": "英国9月央行抵押贷款(亿英镑)",
       "previous": "44.1",
-      "consensus": null,
+      "consensus": "42",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1471,7 +1471,7 @@
       "star": 2,
       "title": "英国9月央行消费信贷(亿英镑)",
       "previous": "24.64",
-      "consensus": "22",
+      "consensus": "21.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1541,7 +1541,7 @@
       "star": 2,
       "title": "意大利10月Istat消费者信心指数",
       "previous": "91.2",
-      "consensus": null,
+      "consensus": "90.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1551,7 +1551,7 @@
       "star": 1,
       "title": "意大利10月Istat制造业信心指数",
       "previous": "91.9",
-      "consensus": null,
+      "consensus": "92",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1651,7 +1651,7 @@
       "star": 2,
       "title": "美国第三季度PCE物价指数年化季率初值",
       "previous": "5",
-      "consensus": null,
+      "consensus": "3.4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1711,7 +1711,7 @@
       "star": 2,
       "title": "美国至10月17日当周续请失业金人数(万人)",
       "previous": "172.8",
-      "consensus": "172.5",
+      "consensus": "172",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1721,7 +1721,7 @@
       "star": 2,
       "title": "美国第三季度最终销售年化季率初值",
       "previous": "2.8",
-      "consensus": null,
+      "consensus": "2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2111,7 +2111,7 @@
       "star": 1,
       "title": "法国9月家庭消费支出月率",
       "previous": "-0.50",
-      "consensus": null,
+      "consensus": "0.2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2141,7 +2141,7 @@
       "star": 2,
       "title": "德国9月进口物价指数年率",
       "previous": "8.3",
-      "consensus": null,
+      "consensus": "10.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2151,7 +2151,7 @@
       "star": 2,
       "title": "德国9月进口物价指数月率",
       "previous": "1",
-      "consensus": null,
+      "consensus": "1.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2171,7 +2171,7 @@
       "star": 2,
       "title": "英国10月Nationwide房价指数年率",
       "previous": "0.8",
-      "consensus": null,
+      "consensus": "0.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2261,7 +2261,7 @@
       "star": 2,
       "title": "西班牙10月CPI月率初值",
       "previous": "0.30",
-      "consensus": null,
+      "consensus": "0.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2271,7 +2271,7 @@
       "star": 2,
       "title": "西班牙第三季度GDP年率初值",
       "previous": "2.60",
-      "consensus": null,
+      "consensus": "2.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2281,7 +2281,7 @@
       "star": 1,
       "title": "西班牙10月CPI年率初值",
       "previous": "4.90",
-      "consensus": null,
+      "consensus": "4.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2301,7 +2301,7 @@
       "star": 1,
       "title": "西班牙10月调和CPI年率初值",
       "previous": "5.00",
-      "consensus": null,
+      "consensus": "4.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2311,7 +2311,7 @@
       "star": 1,
       "title": "西班牙10月调和CPI月率初值",
       "previous": "0.60",
-      "consensus": null,
+      "consensus": "0.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2431,7 +2431,7 @@
       "star": 2,
       "title": "意大利10月CPI年率初值",
       "previous": "4.20",
-      "consensus": null,
+      "consensus": "4.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2441,7 +2441,7 @@
       "star": 1,
       "title": "意大利10月CPI月率初值",
       "previous": "0.70",
-      "consensus": null,
+      "consensus": "0.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2591,7 +2591,7 @@
       "star": 2,
       "title": "德国10月调和CPI年率初值",
       "previous": "3.30",
-      "consensus": "3.05",
+      "consensus": "3.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2601,7 +2601,7 @@
       "star": 2,
       "title": "德国10月调和CPI月率初值",
       "previous": "0.60",
-      "consensus": "0.05",
+      "consensus": "0.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
