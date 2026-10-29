@@ -147,6 +147,11 @@
     ],
     "recent_decisions": [
         {
+            "at": "2026-10-29T08:05:00+08:00",
+            "decision": "完成 2026-10-28 美股收盘日报（复盘10/28）",
+            "detail": "SPX7743.98(+0.28%)/IXIC26549.85(+0.27%)/Dow+0.19%/RUT+0.41%/SOX+1.76%/VIX16.91；FOMC hold 10:2 dissent；10Y5.04%；Dec hike~86%；WTI~+2%；ORCL+11%/MSFT AH+2%/GOOGL AH-9%；禁持仓模块；us-close-2026-10-28；merge+飞书"
+        },
+        {
             "at": "2026-10-28T17:10:00+08:00",
             "decision": "完成 2026-10-28 A股收盘日报（精简版）",
             "detail": "评分71积极参与；上证3681.47(+0.91%)站MA5仍MA10下；16423亿(+11.5%)；4335:1226、中位数+2.0%vs上证+0.9%、前100 85:15；涨停72/跌停5/5连板；通信/半导体/元件 vs 白酒/证券；东财502+金投/THS未逐码；§7池空；HT159338@1.064约-12.2%；进攻4/4；merge+飞书(截断链main)"
@@ -659,10 +664,10 @@
     ],
     "market_regime": {
         "equity": "A股：10/28评分71积极参与；上证3681.47(+0.91%)站MA5仍MA10/20下；16423亿(+11.5%)；4335:1226、中位数+2.0%vs上证+0.9%、前100 85:15；涨停72/跌停5/5连板；通信/半导体/元件 vs 白酒/证券；东财502+金投；§7池空；HT159338@1.064约-12.2%；进攻4/4",
-        "us_equity": "美：10/27 SPX7722.60(+0.60%)/IXIC26477.81(+1.18%)/Dow+0.03%/RUT+1.16%/SOX+3.60%；WTI~100.06；10Y4.99%；Oct hold~91%；XLK+1.70/XLE-2.05；VIX17.52；Fed开幕+Mag7财报前夜",
-        "crypto": "10/26 BTC~80024(弱于科技股反弹)；Mag7+FOMC周",
-        "macro": "10/27：10Y4.99%（首收<5%）；FedWatch hold~90.8%/Dec hike~75%；油价续跌；FOMC 10/28+GOOGL/MSFT/AAPL",
-        "notes": "10/28 A股收盘 ashare-close-2026-10-28；merge+飞书(截断)"
+        "us_equity": "美：10/28 SPX7743.98(+0.28%)/IXIC26549.85(+0.27%)/Dow+0.19%/RUT+0.41%/SOX+1.76%；WTI~102；10Y5.04%；FOMC hold 10:2；MSFT beat/GOOGL AH-9%；VIX16.91",
+        "crypto": "10/28 BTC~81260(+0.6%)；Fed hold 后小幅 risk-on",
+        "macro": "10/28：10Y重回5%+；Dec hike~85-86%；PCE/GDP 10/29；AMZN 10/29 AH",
+        "notes": "10/28 美股收盘 us-close-2026-10-28；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
