@@ -1,6 +1,21 @@
 {
   "episodes": [
     {
+      "id": "ep-105",
+      "date": "2026-11-01",
+      "type": "review",
+      "summary": "2026-10 月度交易复盘：零成交，GY/YH纪律改善",
+      "detail": "已实现0；HT159338@1.029浮亏约-¥110；US浮亏约-$1.97(GOOGL)；全月§7池空未开新；HT线下未加码；无trades-2026-10.csv；positions-2026-09-26滞后；weekly-10-1~4W§7；monthly-2026-10.md",
+      "tickers": [
+        "159338",
+        "GOOGL",
+        "VOO",
+        "IBIT",
+        "PDD"
+      ],
+      "outcome": "0 realized; discipline improved vs Sep"
+    },
+    {
       "id": "ep-104",
       "date": "2026-11-01",
       "type": "weekly_review",
