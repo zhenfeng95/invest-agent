@@ -1,6 +1,21 @@
 {
   "episodes": [
     {
+      "id": "ep-104",
+      "date": "2026-11-01",
+      "type": "weekly_review",
+      "summary": "2026-11-1W 周度回顾：零成交，线下收官",
+      "detail": "区间10/26–11/01；无成交；HT 159338 10/30收1.029浮亏约-15.1%；环境41→71→34；§7池空；positions-2026-09-26滞后；weekly-2026-11-1W.md",
+      "tickers": [
+        "159338",
+        "VOO",
+        "GOOGL",
+        "IBIT",
+        "PDD"
+      ],
+      "outcome": "0 realized; hold only"
+    },
+    {
       "id": "ep-103",
       "date": "2026-10-25",
       "type": "weekly_review",
