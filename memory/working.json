@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-01T10:05:00+08:00",
+    "updated_at": "2026-11-02T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-02T08:05:00+08:00",
+            "decision": "完成 2026-10-30 美股收盘日报（复盘10/30）",
+            "detail": "SPX7580.07(-1.82%)/IXIC25437(-2.86%)/NDX28384.85(-3.46%)/Dow-1.09%/RUT-1.66%/SOX-7.20%/VIX19.42；INTC-29% guide miss/AMZN miss+FCF outflow；10Y4.94%；Dec hike~75-80%；XLE+1.91/XLK-4.89；ECI+0.8%q；禁持仓模块；us-close-2026-10-30；merge+飞书"
+        },
         {
             "at": "2026-11-01T10:05:00+08:00",
             "decision": "完成 2026-10 月度交易复盘",
@@ -684,10 +689,10 @@
     ],
     "market_regime": {
         "equity": "A股：10/30评分34防守；上证3599.02(-1.44%)四均线线下；16880亿(+7.5%)；895:4759、中位数-4.0%vs上证-1.4%、前100未获取；涨停47/跌停82/5连板；白酒/医疗 vs 半导体/通信/软件；东财502+金投/准上市；§7池空；HT159338@1.029约-15.1%；进攻3/4防守2/4",
-        "us_equity": "美：10/28 SPX7743.98(+0.28%)/IXIC26549.85(+0.27%)/Dow+0.19%/RUT+0.41%/SOX+1.76%；WTI~102；10Y5.04%；FOMC hold 10:2；MSFT beat/GOOGL AH-9%；VIX16.91",
-        "crypto": "10/28 BTC~81260(+0.6%)；Fed hold 后小幅 risk-on",
-        "macro": "10/28：10Y重回5%+；Dec hike~85-86%；PCE/GDP 10/29；AMZN 10/29 AH",
-        "notes": "10/28 美股收盘 us-close-2026-10-28；merge+飞书"
+        "us_equity": "美：10/30 SPX7580.07(-1.82%)/IXIC25437(-2.86%)/Dow-1.09%/RUT-1.66%/SOX-7.20%/VIX19.42；INTC-29%/AMZN-1.4%；10Y4.94%；Dec hike~75-80%",
+        "crypto": "10/30 BTC~77.6k(-5%级)/ETH~2227(-6%)；risk-off",
+        "macro": "10/30 ECI+0.8%q/+3.4%y；10Y4.94%；FedWatch Dec hike~75-80%；11/3 ISM+AAPL",
+        "notes": "10/30 美股收盘 us-close-2026-10-30；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
