@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T08:00:50+08:00",
+  "updated_at": "2026-11-03T21:02:38+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -437,64 +437,64 @@
       "affect_txt": "利空"
     },
     {
-      "pub_time": "2026-11-03 10:05",
+      "pub_time": "2026-11-03 10:00",
       "star": 2,
       "title": "越南10月CPI年率",
       "previous": "5.08",
       "consensus": null,
-      "actual": null,
+      "actual": "5.09",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-11-03 10:05",
+      "pub_time": "2026-11-03 10:01",
       "star": 2,
       "title": "越南10月出口年率",
       "previous": "39.10",
       "consensus": null,
-      "actual": null,
+      "actual": "51.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-11-03 10:05",
-      "star": 2,
-      "title": "越南10月贸易帐(亿美元)",
-      "previous": "12.71",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-03 10:05",
+      "pub_time": "2026-11-03 10:01",
       "star": 2,
       "title": "越南10月进口年率",
       "previous": "45.80",
       "consensus": null,
-      "actual": null,
+      "actual": "43.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
-      "pub_time": "2026-11-03 10:05",
-      "star": 2,
-      "title": "越南10月零售销售年率",
-      "previous": "14.10",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-03 10:05",
+      "pub_time": "2026-11-03 10:01",
       "star": 1,
       "title": "越南10月工业增加值年率",
       "previous": "16.70",
       "consensus": null,
-      "actual": null,
+      "actual": "15",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-11-03 10:03",
+      "star": 2,
+      "title": "越南10月贸易帐(亿美元)",
+      "previous": "12.71",
+      "consensus": null,
+      "actual": "73.07",
+      "revised": null,
+      "affect_txt": "利多"
+    },
+    {
+      "pub_time": "2026-11-03 10:03",
+      "star": 2,
+      "title": "越南10月零售销售年率",
+      "previous": "14.10",
+      "consensus": null,
+      "actual": "14.7",
+      "revised": null,
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 11:30",
@@ -502,9 +502,9 @@
       "title": "澳大利亚至11月3日澳洲联储利率决定",
       "previous": "4.60",
       "consensus": "4.85",
-      "actual": null,
+      "actual": "4.85",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-03 15:30",
@@ -512,9 +512,9 @@
       "title": "瑞士10月CPI月率",
       "previous": "0.00",
       "consensus": "0.00",
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 15:30",
@@ -522,9 +522,9 @@
       "title": "瑞士10月CPI年率",
       "previous": "1.00",
       "consensus": "1.30",
-      "actual": null,
+      "actual": "1.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 15:45",
@@ -532,29 +532,29 @@
       "title": "法国9月政府预算(亿欧元)",
       "previous": "-1596",
       "consensus": null,
-      "actual": null,
+      "actual": "-1591.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 16:30",
       "star": 2,
       "title": "中国香港第三季度GDP季率初值",
       "previous": "-0.60",
-      "consensus": null,
-      "actual": null,
+      "consensus": "0.8",
+      "actual": "1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 16:30",
       "star": 2,
       "title": "中国香港第三季度GDP年率初值",
       "previous": "4.30",
-      "consensus": "3.50",
-      "actual": null,
+      "consensus": "3.7",
+      "actual": "5.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 16:30",
@@ -562,19 +562,19 @@
       "title": "中国香港9月零售销售量年率",
       "previous": "2.90",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.9",
+      "revised": "2.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 16:30",
       "star": 1,
       "title": "中国香港9月零售销售额年率",
       "previous": "5.60",
-      "consensus": null,
-      "actual": null,
+      "consensus": "4.7",
+      "actual": "6.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 20:00",
@@ -601,7 +601,7 @@
       "star": 3,
       "title": "美国9月JOLTs职位空缺(万人)",
       "previous": "707.9",
-      "consensus": "712.5",
+      "consensus": "710",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -641,7 +641,7 @@
       "star": 2,
       "title": "美国9月耐用品订单月率终值",
       "previous": "1.80",
-      "consensus": null,
+      "consensus": "1.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -691,7 +691,7 @@
       "star": 3,
       "title": "美国至10月30日当周API原油库存(万桶)",
       "previous": "-203.1",
-      "consensus": null,
+      "consensus": "198.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -751,7 +751,7 @@
       "star": 1,
       "title": "美国至10月30日当周API汽油库存(万桶)",
       "previous": "239",
-      "consensus": null,
+      "consensus": "4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -761,7 +761,7 @@
       "star": 1,
       "title": "美国至10月30日当周API精炼油库存(万桶)",
       "previous": "42.6",
-      "consensus": null,
+      "consensus": "40",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -781,7 +781,7 @@
       "star": 1,
       "title": "新西兰第三季度劳工成本指数季率",
       "previous": "0.70",
-      "consensus": null,
+      "consensus": "0.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -791,7 +791,7 @@
       "star": 1,
       "title": "新西兰第三季度劳工成本指数年率",
       "previous": "2.1",
-      "consensus": null,
+      "consensus": "2.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -801,7 +801,7 @@
       "star": 1,
       "title": "新西兰第三季度就业人数季率",
       "previous": "0.50",
-      "consensus": "0.50",
+      "consensus": "0.4",
       "actual": null,
       "revised": "0.40",
       "affect_txt": "未公布"
@@ -811,7 +811,7 @@
       "star": 1,
       "title": "新西兰第三季度就业参与率",
       "previous": "70.70",
-      "consensus": "70.80",
+      "consensus": "70.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -891,7 +891,7 @@
       "star": 3,
       "title": "中国10月RatingDog服务业PMI",
       "previous": "51.6",
-      "consensus": "51.7",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -951,7 +951,7 @@
       "star": 2,
       "title": "西班牙10月服务业PMI",
       "previous": "58.3",
-      "consensus": "57.2",
+      "consensus": "57.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -971,7 +971,7 @@
       "star": 2,
       "title": "瑞典至11月4日央行基准利率",
       "previous": "1.75",
-      "consensus": null,
+      "consensus": "2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1091,7 +1091,7 @@
       "star": 3,
       "title": "欧元区10月CPI年率初值",
       "previous": "3.80",
-      "consensus": "3.90",
+      "consensus": "4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1171,7 +1171,7 @@
       "star": 4,
       "title": "美国10月ADP就业人数(万人)",
       "previous": "9",
-      "consensus": "6.5",
+      "consensus": "6.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1191,7 +1191,7 @@
       "star": 2,
       "title": "加拿大9月贸易帐(亿加元)",
       "previous": "42",
-      "consensus": "37",
+      "consensus": "41",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1211,7 +1211,7 @@
       "star": 3,
       "title": "美国9月贸易帐(亿美元)",
       "previous": "-1056",
-      "consensus": "-1080",
+      "consensus": "-1079",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1351,7 +1351,7 @@
       "star": 4,
       "title": "美国至10月30日当周EIA原油库存(万桶)",
       "previous": "-189.2",
-      "consensus": null,
+      "consensus": "198.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1441,7 +1441,7 @@
       "star": 2,
       "title": "美国至10月30日当周EIA精炼厂设备利用率",
       "previous": "92.8",
-      "consensus": null,
+      "consensus": "93.1",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1471,7 +1471,7 @@
       "star": 1,
       "title": "美国至10月30日当周EIA汽油库存(万桶)",
       "previous": "387",
-      "consensus": null,
+      "consensus": "4",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1481,7 +1481,7 @@
       "star": 1,
       "title": "美国至10月30日当周EIA精炼油库存(万桶)",
       "previous": "-146.2",
-      "consensus": null,
+      "consensus": "40",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1581,7 +1581,7 @@
       "star": 2,
       "title": "澳大利亚9月商品及服务贸易帐(亿澳元)",
       "previous": "4.95",
-      "consensus": "12",
+      "consensus": "10",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1631,7 +1631,7 @@
       "star": 2,
       "title": "德国9月季调后制造业订单月率",
       "previous": "-10.60",
-      "consensus": "4",
+      "consensus": "4.8",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1651,7 +1651,7 @@
       "star": 3,
       "title": "法国9月工业产出月率",
       "previous": "-0.30",
-      "consensus": "0.5",
+      "consensus": "0.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1771,7 +1771,7 @@
       "star": 1,
       "title": "挪威至11月5日央行利率决定",
       "previous": "4.50",
-      "consensus": null,
+      "consensus": "4.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1791,7 +1791,7 @@
       "star": 3,
       "title": "欧元区9月PPI月率",
       "previous": "1.90",
-      "consensus": null,
+      "consensus": "2.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1801,7 +1801,7 @@
       "star": 2,
       "title": "欧元区9月PPI年率",
       "previous": "8.20",
-      "consensus": null,
+      "consensus": "10.9",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1881,7 +1881,7 @@
       "star": 4,
       "title": "美国至10月31日当周初请失业金人数(万人)",
       "previous": "19.4",
-      "consensus": "19.5",
+      "consensus": "19.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1911,7 +1911,7 @@
       "star": 2,
       "title": "美国第三季度非农单位劳动力成本初值",
       "previous": "1.20",
-      "consensus": "0.6",
+      "consensus": "0.7",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -1921,7 +1921,7 @@
       "star": 2,
       "title": "美国第三季度非农生产力初值",
       "previous": "1.40",
-      "consensus": "2.5",
+      "consensus": "2.6",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2091,7 +2091,7 @@
       "star": 3,
       "title": "德国9月季调后工业产出月率",
       "previous": "2.00",
-      "consensus": "0.5",
+      "consensus": "0",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2261,7 +2261,7 @@
       "star": 3,
       "title": "加拿大10月就业人数(万人)",
       "previous": "-6.83",
-      "consensus": "1.5",
+      "consensus": "1.36",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2361,7 +2361,7 @@
       "star": 2,
       "title": "美国10月季调后制造业就业人口(万人)",
       "previous": "0.9",
-      "consensus": "0.4",
+      "consensus": "0.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2401,7 +2401,7 @@
       "star": 2,
       "title": "美国10月私人非农就业人数(万人)",
       "previous": "4.6",
-      "consensus": "5.8",
+      "consensus": "6.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2441,7 +2441,7 @@
       "star": 3,
       "title": "美国11月密歇根大学消费者信心指数初值",
       "previous": "48",
-      "consensus": "48.2",
+      "consensus": "48",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2451,7 +2451,7 @@
       "star": 2,
       "title": "美国11月密歇根大学现况指数初值",
       "previous": "46.7",
-      "consensus": null,
+      "consensus": "48",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2461,7 +2461,7 @@
       "star": 2,
       "title": "美国11月密歇根大学预期指数初值",
       "previous": "48.8",
-      "consensus": null,
+      "consensus": "49.5",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2521,7 +2521,7 @@
       "star": 2,
       "title": "美国9月消费信贷(亿美元)",
       "previous": "82.81",
-      "consensus": "117.5",
+      "consensus": "120",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
