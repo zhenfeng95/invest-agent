@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-02T17:10:00+08:00",
+    "updated_at": "2026-11-03T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-03T08:05:00+08:00",
+            "decision": "完成 2026-11-02 美股收盘日报（复盘11/02）",
+            "detail": "SPX7541.40(-0.51%)/IXIC25164(-1.07%)/Dow+0.41%/NDX27990(-1.39%)/RUT-0.21%/SOX-3.41%/VIX21.15；ISM55.5/Construction-1.9%；WTI96.46(-7%)/10Y4.91%；XLK-2.95/XLY+2.41/XLE-3.96；AAPL/PLTR beat AH弱；ORCL/MRVL-LITE；禁持仓；us-close-2026-11-02；merge+飞书"
+        },
         {
             "at": "2026-11-02T17:10:00+08:00",
             "decision": "完成 2026-11-02 A股收盘日报（精简版）",
@@ -694,10 +699,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/02评分72轻仓试错；上证3638.03(+1.08%)贴MA5四均线线下；17956亿(+6.4%)；4853:813、中位数+3.0%vs上证+1.08%、前100未获取；涨停125/跌停8/6连板；传媒/半导体/证券 vs 银行/贵金属；东财502+金投/THS≤6；§7池空；HT159338@1.039约-14.3%；进攻4/4防守0/4",
-        "us_equity": "美：10/30 SPX7580.07(-1.82%)/IXIC25437(-2.86%)/Dow-1.09%/RUT-1.66%/SOX-7.20%/VIX19.42；INTC-29%/AMZN-1.4%；10Y4.94%；Dec hike~75-80%",
-        "crypto": "10/30 BTC~77.6k(-5%级)/ETH~2227(-6%)；risk-off",
-        "macro": "10/30 ECI+0.8%q/+3.4%y；10Y4.94%；FedWatch Dec hike~75-80%；11/3 ISM+AAPL",
-        "notes": "10/30 美股收盘 us-close-2026-10-30；merge+飞书"
+        "us_equity": "美：11/02 SPX7541.40(-0.51%)/IXIC25164(-1.07%)/Dow+0.41%/RUT-0.21%/SOX-3.41%/VIX21.15；高切低；AAPL/PLTR beat AH弱；ORCL-8%/MRVL-LITE；WTI96.46(-7%)；10Y4.91%",
+        "crypto": "11/02 BTC~76.7k(-2%级)；随科技情绪",
+        "macro": "11/02 ISM55.5/Construction-1.9%m；10Y4.91%；FedWatch Dec hike~72-79%；11/3 PFE+AMD",
+        "notes": "11/02 美股收盘 us-close-2026-11-02；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
