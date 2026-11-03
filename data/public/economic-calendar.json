@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T21:00:56+08:00",
+  "updated_at": "2026-11-03T08:00:50+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -252,9 +252,9 @@
       "title": "加拿大10月标普全球制造业采购经理人指数",
       "previous": "51.5",
       "consensus": null,
-      "actual": null,
+      "actual": "49.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-02 22:45",
@@ -262,9 +262,9 @@
       "title": "美国10月标普全球制造业PMI终值",
       "previous": "56",
       "consensus": "56",
-      "actual": null,
+      "actual": "54.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -272,9 +272,9 @@
       "title": "美国10月ISM制造业PMI",
       "previous": "54.5",
       "consensus": "54.6",
-      "actual": null,
+      "actual": "55.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -282,9 +282,9 @@
       "title": "美国9月营建支出月率",
       "previous": "0.90",
       "consensus": "0.4",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1.9",
+      "revised": "2",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -292,9 +292,9 @@
       "title": "美国10月ISM产出指数",
       "previous": "56.7",
       "consensus": null,
-      "actual": null,
+      "actual": "59",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -302,9 +302,9 @@
       "title": "美国10月ISM制造业物价支付指数",
       "previous": "77.9",
       "consensus": "77",
-      "actual": null,
+      "actual": "75.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -312,9 +312,9 @@
       "title": "美国10月ISM就业指数",
       "previous": "52.7",
       "consensus": "52",
-      "actual": null,
+      "actual": "52.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -322,9 +322,9 @@
       "title": "美国10月ISM库存指数",
       "previous": "48.6",
       "consensus": null,
-      "actual": null,
+      "actual": "51.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-02 23:00",
@@ -332,9 +332,9 @@
       "title": "美国10月ISM新订单指数",
       "previous": "55.3",
       "consensus": "54.5",
-      "actual": null,
+      "actual": "55.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -342,9 +342,9 @@
       "title": "美国至11月2日3个月国债竞拍-得标利率",
       "previous": "4.05",
       "consensus": null,
-      "actual": null,
+      "actual": "4.04",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -352,9 +352,9 @@
       "title": "美国至11月2日3个月国债竞拍-得标利率配置百分比",
       "previous": "82.29",
       "consensus": null,
-      "actual": null,
+      "actual": "64.28",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -362,9 +362,9 @@
       "title": "美国至11月2日3个月国债竞拍-投标倍数",
       "previous": "3.07",
       "consensus": null,
-      "actual": null,
+      "actual": "2.88",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -372,9 +372,9 @@
       "title": "美国至11月2日6个月国债竞拍-得标利率",
       "previous": "4.21",
       "consensus": null,
-      "actual": null,
+      "actual": "4.15",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -382,9 +382,9 @@
       "title": "美国至11月2日6个月国债竞拍-得标利率配置百分比",
       "previous": "61.74",
       "consensus": null,
-      "actual": null,
+      "actual": "49.23",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 00:30",
@@ -392,9 +392,9 @@
       "title": "美国至11月2日6个月国债竞拍-投标倍数",
       "previous": "2.63",
       "consensus": null,
-      "actual": null,
+      "actual": "2.89",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-03 05:45",
@@ -402,9 +402,9 @@
       "title": "新西兰9月营建许可年率",
       "previous": "11.7",
       "consensus": null,
-      "actual": null,
+      "actual": "-4.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 05:45",
@@ -412,9 +412,9 @@
       "title": "新西兰9月营建许可月率",
       "previous": "5.60",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-7.9",
+      "revised": "5.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 07:00",
@@ -422,9 +422,9 @@
       "title": "韩国10月CPI年率",
       "previous": "2.90",
       "consensus": "2.85",
-      "actual": null,
+      "actual": "2.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 07:00",
@@ -432,9 +432,9 @@
       "title": "韩国10月CPI月率",
       "previous": "0.30",
       "consensus": "0.25",
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-03 10:05",
