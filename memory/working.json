@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-03T17:10:00+08:00",
+    "updated_at": "2026-11-04T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-04T08:05:00+08:00",
+            "decision": "完成 2026-11-03 美股收盘日报（复盘11/03）",
+            "detail": "SPX7568.92(+0.36%)/IXIC25372(+0.83%)/Dow-0.38%/NDX28180(+0.68%)/RUT+0.23%/SOX+2.63%/VIX20.83；JOLTS7.523M；10Y4.95%；XLK+1.31/XLP-2.07；PFE beat/AMD+8%AH/ANET beat/AAPL-1.9%；禁持仓；us-close-2026-11-03；merge+飞书"
+        },
         {
             "at": "2026-11-03T17:10:00+08:00",
             "decision": "完成 2026-11-03 A股收盘日报（精简版）",
@@ -704,10 +709,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/03评分38防守；上证3608.10(-0.82%)破MA5四均线线下；17156亿(-4.5%)；2081:3509、中位数-1.0%vs上证-0.82%、前100未获取；涨停48/跌停17/4连板；电池/光伏/保险 vs 半导体/通信/元件/CPO；东财502+金投/THS4；§7池空；HT159338@1.035约-14.6%；防守4/4进攻0/4",
-        "us_equity": "美：11/02 SPX7541.40(-0.51%)/IXIC25164(-1.07%)/Dow+0.41%/RUT-0.21%/SOX-3.41%/VIX21.15；高切低；AAPL/PLTR beat AH弱；ORCL-8%/MRVL-LITE；WTI96.46(-7%)；10Y4.91%",
-        "crypto": "11/02 BTC~76.7k(-2%级)；随科技情绪",
-        "macro": "11/02 ISM55.5/Construction-1.9%m；10Y4.91%；FedWatch Dec hike~72-79%；11/3 PFE+AMD",
-        "notes": "11/02 美股收盘 us-close-2026-11-02；merge+飞书"
+        "us_equity": "美：11/03 SPX7568.92(+0.36%)/IXIC25372(+0.83%)/Dow-0.38%/RUT+0.23%/SOX+2.63%/VIX20.83；科技修复；AAPL-1.9%；AMD+8%AH/ANET beat；JOLTS7.523M；10Y4.95%",
+        "crypto": "11/03 BTC~77.6k(+1.2%级)；随科技反弹",
+        "macro": "11/03 JOLTS7.523M>预期；10Y4.95%；FedWatch Dec hike~79-84%；WTI96.09；midterm election day",
+        "notes": "11/03 美股收盘 us-close-2026-11-03；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
