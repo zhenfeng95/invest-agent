@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-04T21:01:55+08:00",
+  "updated_at": "2026-11-05T08:02:41+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1172,9 +1172,9 @@
       "title": "美国10月ADP就业人数(万人)",
       "previous": "9",
       "consensus": "6.9",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "8.6",
+      "revised": "8.6",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1182,9 +1182,9 @@
       "title": "加拿大9月出口(亿加元)",
       "previous": "779.1",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "785.5",
+      "revised": "784.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1192,9 +1192,9 @@
       "title": "加拿大9月贸易帐(亿加元)",
       "previous": "42",
       "consensus": "41",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "53.5",
+      "revised": "49.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1202,9 +1202,9 @@
       "title": "加拿大9月进口(亿加元)",
       "previous": "737.1",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "732",
+      "revised": "734.6",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1212,9 +1212,9 @@
       "title": "美国9月贸易帐(亿美元)",
       "previous": "-1056",
       "consensus": "-1080",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1050",
+      "revised": "-1057",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1222,9 +1222,9 @@
       "title": "美国9月出口(亿美元)",
       "previous": "3152",
       "consensus": null,
-      "actual": null,
+      "actual": "3215",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1232,9 +1232,9 @@
       "title": "美国9月商品贸易帐(亿美元)",
       "previous": "-1349",
       "consensus": null,
-      "actual": null,
+      "actual": "-1350.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 21:30",
@@ -1242,9 +1242,9 @@
       "title": "美国9月进口(亿美元)",
       "previous": "4208",
       "consensus": null,
-      "actual": null,
+      "actual": "4266",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 22:30",
@@ -1252,9 +1252,9 @@
       "title": "加拿大10月标普全球服务业PMI",
       "previous": "48.3",
       "consensus": null,
-      "actual": null,
+      "actual": "48.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 22:30",
@@ -1262,9 +1262,9 @@
       "title": "加拿大10月标普全球综合PMI",
       "previous": "48.7",
       "consensus": null,
-      "actual": null,
+      "actual": "48.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 22:45",
@@ -1272,9 +1272,9 @@
       "title": "美国10月标普全球服务业PMI终值",
       "previous": "57.9",
       "consensus": "57.9",
-      "actual": null,
+      "actual": "56.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 22:45",
@@ -1282,9 +1282,9 @@
       "title": "美国10月标普全球综合PMI终值",
       "previous": "57.6",
       "consensus": null,
-      "actual": null,
+      "actual": "55.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1292,9 +1292,9 @@
       "title": "美国10月ISM非制造业PMI",
       "previous": "54.9",
       "consensus": "54.8",
-      "actual": null,
+      "actual": "54.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1302,9 +1302,9 @@
       "title": "美国10月ISM非制造业供应商交付指数",
       "previous": "53.2",
       "consensus": null,
-      "actual": null,
+      "actual": "56.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1312,9 +1312,9 @@
       "title": "美国10月ISM非制造业就业指数",
       "previous": "50.1",
       "consensus": null,
-      "actual": null,
+      "actual": "51.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1322,9 +1322,9 @@
       "title": "美国10月ISM非制造业库存指数",
       "previous": "57.8",
       "consensus": null,
-      "actual": null,
+      "actual": "55.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1332,9 +1332,9 @@
       "title": "美国10月ISM非制造业新订单指数",
       "previous": "59.8",
       "consensus": null,
-      "actual": null,
+      "actual": "55.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:00",
@@ -1342,9 +1342,9 @@
       "title": "美国10月ISM非制造业物价指数",
       "previous": "74",
       "consensus": null,
-      "actual": null,
+      "actual": "73",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1352,9 +1352,9 @@
       "title": "美国至10月30日当周EIA原油库存(万桶)",
       "previous": "-189.2",
       "consensus": "198.7",
-      "actual": null,
+      "actual": "-86.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1362,9 +1362,9 @@
       "title": "美国至10月30日当周EIA俄克拉荷马州库欣原油库存(万桶)",
       "previous": "-62.4",
       "consensus": null,
-      "actual": null,
+      "actual": "28",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1372,9 +1372,9 @@
       "title": "美国至10月30日当周EIA战略石油储备库存(万桶)",
       "previous": "-10",
       "consensus": null,
-      "actual": null,
+      "actual": "-39.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1382,9 +1382,9 @@
       "title": "美国至10月30日当周EIA原油产量引伸需求数据(万桶/日)",
       "previous": "2063.6",
       "consensus": null,
-      "actual": null,
+      "actual": "2050.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1392,9 +1392,9 @@
       "title": "美国至10月30日当周EIA原油进口(万桶)",
       "previous": "-79.6",
       "consensus": null,
-      "actual": null,
+      "actual": "117.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1402,9 +1402,9 @@
       "title": "美国至10月30日当周EIA取暖油库存(万桶)",
       "previous": "16.4",
       "consensus": null,
-      "actual": null,
+      "actual": "-20.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1412,9 +1412,9 @@
       "title": "美国至10月30日当周EIA成品油进口(万桶/日)",
       "previous": "-6.2",
       "consensus": null,
-      "actual": null,
+      "actual": "9.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1422,9 +1422,9 @@
       "title": "美国至10月30日当周EIA投产原油量(万桶/日)",
       "previous": "-12.3",
       "consensus": null,
-      "actual": null,
+      "actual": "19.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1432,9 +1432,9 @@
       "title": "美国至10月30日当周EIA汽油产量(万桶/日)",
       "previous": "-50.9",
       "consensus": null,
-      "actual": null,
+      "actual": "46.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1442,9 +1442,9 @@
       "title": "美国至10月30日当周EIA精炼厂设备利用率",
       "previous": "92.8",
       "consensus": "93",
-      "actual": null,
+      "actual": "94.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1452,9 +1452,9 @@
       "title": "美国至10月30日当周EIA精炼油产量(万桶/日)",
       "previous": "-7.1",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1462,9 +1462,9 @@
       "title": "美国至10月30日当周EIA新配方汽油库存(万桶)",
       "previous": "-0.3",
       "consensus": null,
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1472,9 +1472,9 @@
       "title": "美国至10月30日当周EIA汽油库存(万桶)",
       "previous": "387",
       "consensus": "15.3",
-      "actual": null,
+      "actual": "-22.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1482,9 +1482,9 @@
       "title": "美国至10月30日当周EIA精炼油库存(万桶)",
       "previous": "-146.2",
       "consensus": "-10",
-      "actual": null,
+      "actual": "-356.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1492,9 +1492,9 @@
       "title": "美国至10月30日当周EIA蒸馏燃油产量引伸需求数据(万桶/日)",
       "previous": "552.69",
       "consensus": null,
-      "actual": null,
+      "actual": "578.03",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-04 23:30",
@@ -1502,9 +1502,9 @@
       "title": "美国至10月30日当周EIA车用汽油总产量引伸需求数据(万桶/日)",
       "previous": "920.33",
       "consensus": null,
-      "actual": null,
+      "actual": "982.44",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-05 00:30",
@@ -1512,9 +1512,9 @@
       "title": "美国至11月4日4个月国债竞拍-得标利率",
       "previous": "4.14",
       "consensus": null,
-      "actual": null,
+      "actual": "4.09",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 00:30",
@@ -1522,9 +1522,9 @@
       "title": "美国至11月4日4个月国债竞拍-得标利率配置百分比",
       "previous": "35.48",
       "consensus": null,
-      "actual": null,
+      "actual": "94.88",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 00:30",
@@ -1532,9 +1532,9 @@
       "title": "美国至11月4日4个月国债竞拍-投标倍数",
       "previous": "3.08",
       "consensus": null,
-      "actual": null,
+      "actual": "3.26",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 05:30",
@@ -1542,9 +1542,9 @@
       "title": "巴西至11月4日Selic利率",
       "previous": "13.75",
       "consensus": "13.75",
-      "actual": null,
+      "actual": "13.75",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-05 07:00",
@@ -1552,9 +1552,9 @@
       "title": "韩国9月未季调经常帐(亿美元)",
       "previous": "461.13",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "614.6",
+      "revised": "461.1",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 08:30",
