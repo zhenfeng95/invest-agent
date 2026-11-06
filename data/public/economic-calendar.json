@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T21:00:21+08:00",
+  "updated_at": "2026-11-06T08:04:58+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1882,9 +1882,9 @@
       "title": "美国至10月31日当周初请失业金人数(万人)",
       "previous": "19.4",
       "consensus": "19.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "18.9",
+      "revised": "19.5",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-05 21:30",
@@ -1892,9 +1892,9 @@
       "title": "美国至10月31日当周初请失业金人数四周均值(万人)",
       "previous": "19.675",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "19.475",
+      "revised": "19.7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-05 21:30",
@@ -1902,9 +1902,9 @@
       "title": "美国至10月24日当周续请失业金人数(万人)",
       "previous": "170.1",
       "consensus": "171",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "171.8",
+      "revised": "169.5",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 21:30",
@@ -1912,9 +1912,9 @@
       "title": "美国第三季度非农单位劳动力成本初值",
       "previous": "1.20",
       "consensus": "0.6",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.7",
+      "revised": "1.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-05 21:30",
@@ -1922,9 +1922,9 @@
       "title": "美国第三季度非农生产力初值",
       "previous": "1.40",
       "consensus": "2.8",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.6",
+      "revised": "2.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-05 23:00",
@@ -1932,9 +1932,9 @@
       "title": "美国10月全球供应链压力指数",
       "previous": "1.28",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1.28",
+      "revised": "1.36",
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-05 23:30",
@@ -1942,9 +1942,9 @@
       "title": "美国至10月30日当周EIA天然气库存(亿立方英尺)",
       "previous": "800",
       "consensus": "810",
-      "actual": null,
+      "actual": "770",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -1952,9 +1952,9 @@
       "title": "美国至11月5日4周国债竞拍-得标利率",
       "previous": "3.91",
       "consensus": null,
-      "actual": null,
+      "actual": "3.89",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -1962,9 +1962,9 @@
       "title": "美国至11月5日4周国债竞拍-得标利率配置百分比",
       "previous": "16.96",
       "consensus": null,
-      "actual": null,
+      "actual": "5.33",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -1972,9 +1972,9 @@
       "title": "美国至11月5日4周国债竞拍-投标倍数",
       "previous": "3.1",
       "consensus": null,
-      "actual": null,
+      "actual": "2.46",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -1982,9 +1982,9 @@
       "title": "美国至11月5日8周国债竞拍-得标利率",
       "previous": "4.02",
       "consensus": null,
-      "actual": null,
+      "actual": "3.975",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -1992,9 +1992,9 @@
       "title": "美国至11月5日8周国债竞拍-得标利率配置百分比",
       "previous": "66.2",
       "consensus": null,
-      "actual": null,
+      "actual": "93.38",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 00:30",
@@ -2002,9 +2002,9 @@
       "title": "美国至11月5日8周国债竞拍-投标倍数",
       "previous": "2.63",
       "consensus": null,
-      "actual": null,
+      "actual": "2.68",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 03:00",
@@ -2012,9 +2012,9 @@
       "title": "墨西哥至11月5日央行利率决定",
       "previous": "6.50",
       "consensus": "6.50",
-      "actual": null,
+      "actual": "6.25",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-06 05:30",
@@ -2022,9 +2022,9 @@
       "title": "美国至10月30日当周外国央行持有美国国债(亿美元)",
       "previous": "-42.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-248.97",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 07:30",
@@ -2032,9 +2032,9 @@
       "title": "日本9月加班工资年率",
       "previous": "5.2",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.6",
+      "revised": "4.9",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-06 07:30",
@@ -2042,9 +2042,9 @@
       "title": "日本9月劳动现金收入年率",
       "previous": "3.80",
       "consensus": "3.80",
-      "actual": null,
+      "actual": "4.6",
       "revised": "3.90",
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 07:50",
@@ -2052,9 +2052,9 @@
       "title": "日本至10月30日当周买进外国债券(亿日元)",
       "previous": "-926",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "13120",
+      "revised": "-818",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 07:50",
@@ -2062,9 +2062,9 @@
       "title": "日本至10月30日当周买进外国股票(亿日元)",
       "previous": "2881",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "10777",
+      "revised": "2899",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 07:50",
@@ -2072,9 +2072,9 @@
       "title": "日本至10月30日当周外资买进日债(亿日元)",
       "previous": "433",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "14817",
+      "revised": "462",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-06 07:50",
@@ -2082,9 +2082,9 @@
       "title": "日本至10月30日当周外资买进日股(亿日元)",
       "previous": "11809",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "11293",
+      "revised": "11822",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-06 15:00",
@@ -2491,7 +2491,7 @@
       "star": 3,
       "title": "中国10月外汇储备(亿美元)",
       "previous": "34002.5",
-      "consensus": null,
+      "consensus": "34080",
       "actual": null,
       "revised": null,
       "affect_txt": ""
@@ -2531,7 +2531,7 @@
       "star": 2,
       "title": "美国9月消费信贷(亿美元)",
       "previous": "82.81",
-      "consensus": "120",
+      "consensus": "138",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
