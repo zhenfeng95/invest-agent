@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-05T17:10:00+08:00",
+    "updated_at": "2026-11-06T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-06T08:05:00+08:00",
+            "decision": "完成 2026-11-05 美股收盘日报（复盘11/05）",
+            "detail": "SPX7353.73(-4.36%)/IXIC24315(-5.52% correction)/Dow-3.44%/NDX-6.36%/RUT-4.45%/SOX-12.25%/VIX28.18；AI/datacenter+选举监管叙事；Q3生产率+3.6%；XLK-8%/XLC-0.59%；ABNB beat/DKNG AH-24%；10Y4.84%；BTC~75k；禁持仓；us-close-2026-11-05；merge+飞书"
+        },
         {
             "at": "2026-11-05T17:10:00+08:00",
             "decision": "完成 2026-11-05 A股收盘日报（精简版）",
@@ -724,10 +729,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/05评分75积极参与；上证3689.91(+0.10%)站MA5/MA10贴MA20；21353亿(+4.0%)；5047:617、中位数+3.0%vs上证+0.1%、前100未获取；涨停84/跌停0/4连板；光伏/电池/AI vs 元件/通信/煤炭；观势+THS6+问财；§7池空；HT159338@1.072约-11.6%；进攻4/4",
-        "us_equity": "美：11/04 SPX7688.62(+1.58%)/IXIC25736(+1.44%)/Dow+3.03%/RUT+1.58%/SOX-3.13%/VIX16.61；选举后risk-on；XLY+4.26/XLE-4.74；QCOM-6%AH/APP+16%AH；10Y4.90%",
-        "crypto": "11/04 BTC约+4%级(估算)；risk-on relief",
-        "macro": "11/04 民主党控参众；10Y4.90%(-5bp)；FedWatch Dec hike~77-81%；WTI88.24(-8%)；DXY101.49",
-        "notes": "11/04 美股收盘 us-close-2026-11-04；merge+飞书"
+        "us_equity": "美：11/05 SPX7353.73(-4.36%)/IXIC24315(-5.52% correction)/Dow-3.44%/NDX-6.36%/SOX-12.25%/VIX28.18；AI/datacenter抛售；XLK-8%；NVDA-9%；ABNB beat/DKNG miss AH；10Y4.84%",
+        "crypto": "11/05 BTC~75k(-6%级Reuters)；risk-off",
+        "macro": "11/05 Q3生产率+3.6%/ULC-0.7%；10Y4.84%(-6bp)；FedWatch Dec hike~68-82%；WTI91.26(+3.6%)；非农11/06",
+        "notes": "11/05 美股收盘 us-close-2026-11-05；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
