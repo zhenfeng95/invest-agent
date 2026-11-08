@@ -1,6 +1,21 @@
 {
   "episodes": [
     {
+      "id": "ep-106",
+      "date": "2026-11-08",
+      "type": "weekly_review",
+      "summary": "2026-11-2W 周度回顾：零成交，评分过山车",
+      "detail": "区间11/02–11/08；无成交；HT159338@1.054约-13.0%；环境72→36；§7池空；positions-2026-09-26滞后；weekly-2026-11-2W.md",
+      "tickers": [
+        "159338",
+        "VOO",
+        "GOOGL",
+        "IBIT",
+        "PDD"
+      ],
+      "outcome": "0 realized; hold only"
+    },
+    {
       "id": "ep-105",
       "date": "2026-11-01",
       "type": "review",
