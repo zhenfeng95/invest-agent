@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-09T08:04:24+08:00",
+  "updated_at": "2026-11-09T21:00:33+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
   "coverage": "current_natural_week_mon_sun",
-  "count": 220,
+  "count": 213,
   "events": [
     {
       "pub_time": "2026-11-09 00:00",
@@ -72,7 +72,7 @@
       "title": "中国10月CPI年率",
       "previous": "0.90",
       "consensus": "0.80",
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
       "affect_txt": ""
     },
@@ -82,7 +82,7 @@
       "title": "中国10月CPI月率",
       "previous": "0.2",
       "consensus": "0",
-      "actual": null,
+      "actual": "0",
       "revised": null,
       "affect_txt": ""
     },
@@ -92,7 +92,7 @@
       "title": "中国10月PPI年率",
       "previous": "5.00",
       "consensus": "5.3",
-      "actual": null,
+      "actual": "5.7",
       "revised": null,
       "affect_txt": ""
     },
@@ -102,7 +102,7 @@
       "title": "中国10月PPI月率",
       "previous": "1.2",
       "consensus": null,
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
       "affect_txt": ""
     },
@@ -112,9 +112,9 @@
       "title": "日本9月同步指标初值",
       "previous": "118.8",
       "consensus": "119.4",
-      "actual": null,
+      "actual": "119.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 13:00",
@@ -122,9 +122,9 @@
       "title": "日本9月同步指标月率初值",
       "previous": "-1.8",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "-1.8",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 13:00",
@@ -132,9 +132,9 @@
       "title": "日本9月领先指标初值",
       "previous": "118",
       "consensus": "116.4",
-      "actual": null,
+      "actual": "116.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-09 13:00",
@@ -142,9 +142,9 @@
       "title": "日本9月领先指标月率初值",
       "previous": "0.4",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-09 15:00",
@@ -152,9 +152,9 @@
       "title": "德国9月季调后贸易帐(亿欧元)",
       "previous": "195",
       "consensus": "196",
-      "actual": null,
+      "actual": "156",
       "revised": "194",
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-09 15:00",
@@ -162,9 +162,9 @@
       "title": "德国9月季调后出口月率",
       "previous": "-0.80",
       "consensus": "0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2",
+      "revised": "-0.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 15:00",
@@ -172,9 +172,9 @@
       "title": "德国9月季调后进口月率",
       "previous": "0.90",
       "consensus": "0.5",
-      "actual": null,
+      "actual": "4.2",
       "revised": "1.00",
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 16:00",
@@ -182,9 +182,9 @@
       "title": "中国台湾10月出口年率",
       "previous": "60.90",
       "consensus": "50",
-      "actual": null,
+      "actual": "58.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 16:00",
@@ -192,9 +192,9 @@
       "title": "中国台湾10月贸易帐(亿美元)",
       "previous": "236.3",
       "consensus": "256",
-      "actual": null,
+      "actual": "278.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 16:00",
@@ -202,9 +202,9 @@
       "title": "中国台湾10月进口年率",
       "previous": "51.70",
       "consensus": "54.5",
-      "actual": null,
+      "actual": "75.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 17:30",
@@ -212,9 +212,9 @@
       "title": "欧元区11月Sentix投资者信心指数",
       "previous": "2.7",
       "consensus": "2.1",
-      "actual": null,
+      "actual": "2.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 21:00",
@@ -222,9 +222,9 @@
       "title": "加拿大至11月6日全国经济信心指数",
       "previous": "51",
       "consensus": null,
-      "actual": null,
+      "actual": "50.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 23:00",
@@ -511,7 +511,7 @@
       "star": 3,
       "title": "日本9月贸易帐(亿日元)",
       "previous": "-6877",
-      "consensus": "-2233",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -521,7 +521,7 @@
       "star": 2,
       "title": "日本9月季调后经常账(亿日元)",
       "previous": "29794",
-      "consensus": "27740",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -648,16 +648,6 @@
     },
     {
       "pub_time": "2026-11-10 21:30",
-      "star": 5,
-      "title": "美国10月未季调CPI年率",
-      "previous": "3.7",
-      "consensus": "3.9",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
       "star": 4,
       "title": "美国10月季调后CPI月率",
       "previous": "0.60",
@@ -678,16 +668,6 @@
     },
     {
       "pub_time": "2026-11-10 21:30",
-      "star": 3,
-      "title": "美国10月未季调核心CPI年率",
-      "previous": "2.6",
-      "consensus": "2.8",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
       "star": 2,
       "title": "美国10月实际收入月率",
       "previous": "-0.5",
@@ -702,56 +682,6 @@
       "title": "美国10月未季调CPI",
       "previous": "336.94",
       "consensus": "337.023",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
-      "star": 2,
-      "title": "美国10月未季调二手车和卡车通胀年率",
-      "previous": "-1.5",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
-      "star": 2,
-      "title": "美国10月未季调住房通胀年率",
-      "previous": "3.2",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
-      "star": 2,
-      "title": "美国10月未季调新车通胀年率",
-      "previous": "0.6",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
-      "star": 2,
-      "title": "美国10月未季调能源通胀年率",
-      "previous": "20.4",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
-    },
-    {
-      "pub_time": "2026-11-10 21:30",
-      "star": 2,
-      "title": "美国10月未季调食品通胀年率",
-      "previous": "2.5",
-      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
