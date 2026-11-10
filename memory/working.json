@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-09T17:10:00+08:00",
+    "updated_at": "2026-11-10T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-10T08:05:00+08:00",
+            "decision": "完成 2026-11-09 美股收盘日报（复盘11/09）",
+            "detail": "SPX7549.94(+2.35%)/IXIC25253(+2.74%)/Dow+2.15%/NDX+3.40%/SOX+6.85%/VIX19.92(-22%)；油价大跌+全面risk-on；NVDA-4.27%舆情；CEG/KKR beat/TTWO AH反弹；10Y4.76%；FedWatch Dec~78-85%；禁持仓；us-close-2026-11-09；merge+飞书"
+        },
         {
             "at": "2026-11-09T08:05:00+08:00",
             "decision": "完成 2026-11-06 美股收盘日报（复盘11/06）",
@@ -744,10 +749,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/09评分54轻仓试错；上证3660.79(+0.32%)站MA5仍MA20下；14947亿(-10.6%)；2242:3148、中位数-1.0%vs上证+0.32%、前100 64:34；涨停56/跌停2/6连板；煤炭涨vs电子资金回流/锂链流出；§7池空；HT159338@1.053约-13.1%；进攻2/4防守1/4",
-        "us_equity": "美：11/06 SPX7376.86(+0.31%)/IXIC24579(+1.09%)/Dow-0.46%/NDX+1.35%/SOX+4.21%/VIX25.64；超跌反弹+芯片；NFP+165k；ABNB+9%/TEAM-16%；仍NDX correction",
-        "crypto": "11/06 BTC~75.7k(-0.3%)/ETH~2.24k(+2.6%)；滞后股指",
-        "macro": "11/06 NFP+165k/失业率4.1%/AHE+3.1%y；10Y4.86%(+2bp)；FedWatch Dec hike~72-78%；非农后鹰",
-        "notes": "11/09 ashare-close-2026-11-09；merge+飞书"
+        "us_equity": "美：11/09 SPX7549.94(+2.35%)/IXIC25253(+2.74%)/Dow+2.15%/NDX+3.40%/RUT+3.15%/SOX+6.85%/VIX19.92；risk-on普涨+油价跌；NVDA-4.27%；CEG/KKR beat；纳指退出correction",
+        "crypto": "11/09 BTC~75.7k区/ETH~2.13k；滞后股指risk-on",
+        "macro": "11/09 10Y4.76%(-10bp)/2Y4.56%；WTI~86.5/Brent~92.4；FedWatch Dec hike~78-85%；11/10 CPI",
+        "notes": "11/10 us-close-2026-11-09；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
