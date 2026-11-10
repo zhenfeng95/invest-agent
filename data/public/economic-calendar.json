@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T21:00:33+08:00",
+  "updated_at": "2026-11-10T08:02:10+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -232,9 +232,9 @@
       "title": "美国9月批发销售月率",
       "previous": "1.80",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2.8",
+      "revised": "2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-09 23:00",
@@ -242,9 +242,9 @@
       "title": "美国9月批发库存月率终值",
       "previous": "0.60",
       "consensus": null,
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-09 23:00",
@@ -252,9 +252,9 @@
       "title": "美国10月谘商会就业趋势指数",
       "previous": "107.56",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "108.36",
+      "revised": "108.43",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:00",
@@ -262,9 +262,9 @@
       "title": "美国10月纽约联储1年通胀预期",
       "previous": "3.90",
       "consensus": "3.78",
-      "actual": null,
+      "actual": "3.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:00",
@@ -352,9 +352,9 @@
       "title": "美国至11月9日3个月国债竞拍-得标利率",
       "previous": "4.04",
       "consensus": null,
-      "actual": null,
+      "actual": "4.06",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -362,9 +362,9 @@
       "title": "美国至11月9日3个月国债竞拍-得标利率配置百分比",
       "previous": "64.28",
       "consensus": null,
-      "actual": null,
+      "actual": "79.03",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -372,9 +372,9 @@
       "title": "美国至11月9日3个月国债竞拍-投标倍数",
       "previous": "2.88",
       "consensus": null,
-      "actual": null,
+      "actual": "2.67",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -382,9 +382,9 @@
       "title": "美国至11月9日6个月国债竞拍-得标利率",
       "previous": "4.15",
       "consensus": null,
-      "actual": null,
+      "actual": "4.145",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -392,9 +392,9 @@
       "title": "美国至11月9日6个月国债竞拍-得标利率配置百分比",
       "previous": "49.23",
       "consensus": null,
-      "actual": null,
+      "actual": "70.91",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -402,9 +402,9 @@
       "title": "美国至11月9日6个月国债竞拍-投标倍数",
       "previous": "2.89",
       "consensus": null,
-      "actual": null,
+      "actual": "2.92",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -412,9 +412,9 @@
       "title": "美国至11月9日6周国债竞拍-得标利率",
       "previous": "3.94",
       "consensus": null,
-      "actual": null,
+      "actual": "3.99",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -422,9 +422,9 @@
       "title": "美国至11月9日6周国债竞拍-得标利率配置百分比",
       "previous": "28.03",
       "consensus": null,
-      "actual": null,
+      "actual": "21.32",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 00:30",
@@ -432,9 +432,9 @@
       "title": "美国至11月9日6周国债竞拍-投标倍数",
       "previous": "2.88",
       "consensus": null,
-      "actual": null,
+      "actual": "2.59",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 02:00",
@@ -442,9 +442,9 @@
       "title": "美国至11月9日3年期国债竞拍-得标利率",
       "previous": "4.93",
       "consensus": null,
-      "actual": null,
+      "actual": "4.627",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 02:00",
@@ -452,9 +452,9 @@
       "title": "美国至11月9日3年期国债竞拍-得标利率配置百分比",
       "previous": "8.35",
       "consensus": null,
-      "actual": null,
+      "actual": "73.41",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 02:00",
@@ -462,9 +462,9 @@
       "title": "美国至11月9日3年期国债竞拍-投标倍数",
       "previous": "2.62",
       "consensus": null,
-      "actual": null,
+      "actual": "2.53",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:30",
@@ -472,9 +472,9 @@
       "title": "日本9月所有家庭支出年率",
       "previous": "-3.10",
       "consensus": "-3.1",
-      "actual": null,
+      "actual": "-6.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:30",
@@ -482,9 +482,9 @@
       "title": "日本9月所有家庭支出月率",
       "previous": "0.1",
       "consensus": "0.3",
-      "actual": null,
+      "actual": "-2.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:30",
@@ -492,9 +492,9 @@
       "title": "澳大利亚11月西太平洋/墨尔本消费者信心指数",
       "previous": "80.4",
       "consensus": null,
-      "actual": null,
+      "actual": "78.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:30",
@@ -502,9 +502,9 @@
       "title": "澳大利亚11月西太平洋/墨尔本消费者信心指数月率",
       "previous": "-4.70",
       "consensus": null,
-      "actual": null,
+      "actual": "-2.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 07:50",
@@ -512,9 +512,9 @@
       "title": "日本9月贸易帐(亿日元)",
       "previous": "-6877",
       "consensus": null,
-      "actual": null,
+      "actual": "-1875.26",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 07:50",
@@ -522,9 +522,9 @@
       "title": "日本9月季调后经常账(亿日元)",
       "previous": "29794",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1817.66",
+      "revised": "2910.48",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:50",
@@ -532,9 +532,9 @@
       "title": "日本10月季调后银行贷款年率",
       "previous": "5.30",
       "consensus": null,
-      "actual": null,
+      "actual": "5.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:50",
@@ -542,9 +542,9 @@
       "title": "日本10月季调后除信托外银行贷款年率",
       "previous": "5.70",
       "consensus": null,
-      "actual": null,
+      "actual": "5.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 07:50",
@@ -552,9 +552,9 @@
       "title": "日本9月未季调经常帐(亿日元)",
       "previous": "40620",
       "consensus": "33544",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "23723",
+      "revised": "39931",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-10 08:01",
@@ -562,9 +562,9 @@
       "title": "英国10月BRC同店零售销售年率",
       "previous": "1.00",
       "consensus": null,
-      "actual": null,
+      "actual": "1.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-10 08:01",
