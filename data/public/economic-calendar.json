@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T08:03:37+08:00",
+  "updated_at": "2026-11-12T21:03:07+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -647,56 +647,6 @@
       "affect_txt": "利多"
     },
     {
-      "pub_time": "2026-11-11 00:00",
-      "star": 3,
-      "title": "中国10月M2货币供应年率",
-      "previous": "7.2",
-      "consensus": "7.2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-11-11 00:00",
-      "star": 2,
-      "title": "中国10月今年迄今新增人民币贷款(亿元)",
-      "previous": "115200",
-      "consensus": "116000",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-11-11 00:00",
-      "star": 1,
-      "title": "中国10月M0货币供应年率",
-      "previous": "10.6",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-11-11 00:00",
-      "star": 1,
-      "title": "中国10月M1货币供应年率",
-      "previous": "3.2",
-      "consensus": "3.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-11-11 00:00",
-      "star": 1,
-      "title": "中国10月今年迄今社会融资规模增量(亿元)",
-      "previous": "274600",
-      "consensus": "289080",
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-11-11 01:00",
       "star": 2,
       "title": "美国11月EIA当年WTI原油均价预期(美元/桶)",
@@ -1027,6 +977,56 @@
       "affect_txt": "利空"
     },
     {
+      "pub_time": "2026-11-12 00:00",
+      "star": 3,
+      "title": "中国10月M2货币供应年率",
+      "previous": "7.2",
+      "consensus": "7.2",
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-12 00:00",
+      "star": 2,
+      "title": "中国10月今年迄今新增人民币贷款(亿元)",
+      "previous": "115200",
+      "consensus": "116000",
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-12 00:00",
+      "star": 1,
+      "title": "中国10月M0货币供应年率",
+      "previous": "10.6",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-12 00:00",
+      "star": 1,
+      "title": "中国10月M1货币供应年率",
+      "previous": "3.2",
+      "consensus": "3.5",
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-12 00:00",
+      "star": 1,
+      "title": "中国10月今年迄今社会融资规模增量(亿元)",
+      "previous": "274600",
+      "consensus": "289080",
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
       "pub_time": "2026-11-12 07:50",
       "star": 2,
       "title": "日本至11月6日当周买进外国债券(亿日元)",
@@ -1102,9 +1102,9 @@
       "title": "英国第三季度GDP年率初值",
       "previous": "1.40",
       "consensus": "1.9",
-      "actual": null,
+      "actual": "1.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1112,9 +1112,9 @@
       "title": "英国9月三个月GDP月率",
       "previous": "0.7",
       "consensus": "0.7",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "0.6",
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1122,9 +1122,9 @@
       "title": "英国9月制造业产出月率",
       "previous": "1.20",
       "consensus": "-0.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "0.7",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1132,9 +1132,9 @@
       "title": "英国9月季调后商品贸易帐(亿英镑)",
       "previous": "-180.07",
       "consensus": "-194.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-222.91",
+      "revised": "-196.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1142,9 +1142,9 @@
       "title": "英国9月工业产出月率",
       "previous": "0.80",
       "consensus": "-0.3",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.3",
+      "revised": "0.7",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1152,9 +1152,9 @@
       "title": "英国第三季度GDP季率初值",
       "previous": "0.50",
       "consensus": "0.7",
-      "actual": null,
+      "actual": "0.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1162,9 +1162,9 @@
       "title": "英国9月GDP年率",
       "previous": "2.1",
       "consensus": "1.9",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2.1",
+      "revised": "2",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1172,9 +1172,9 @@
       "title": "英国9月GDP月率",
       "previous": "0.10",
       "consensus": "0",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.2",
+      "revised": "0",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1182,9 +1182,9 @@
       "title": "英国9月制造业产出年率",
       "previous": "3.00",
       "consensus": "3.8",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "4.4",
+      "revised": "2.5",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1192,19 +1192,19 @@
       "title": "英国9月季调后对欧盟贸易帐(亿英镑)",
       "previous": "-127.2",
       "consensus": null,
-      "actual": null,
+      "actual": "-133.06",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
       "star": 2,
       "title": "英国9月季调后贸易帐(亿英镑)",
       "previous": "-9.2",
-      "consensus": null,
-      "actual": null,
+      "consensus": "-21",
+      "actual": "-51.34",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1212,9 +1212,9 @@
       "title": "英国9月季调后非欧盟贸易帐(亿英镑)",
       "previous": "-52.87",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-89.85",
+      "revised": "-68.19",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1222,9 +1222,9 @@
       "title": "英国9月工业产出年率",
       "previous": "1.60",
       "consensus": "2.9",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3.1",
+      "revised": "1.1",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1232,9 +1232,9 @@
       "title": "英国9月建筑业产出月率",
       "previous": "-0.20",
       "consensus": "-0.1",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.8",
+      "revised": "-0.5",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1242,9 +1242,9 @@
       "title": "英国9月服务业指数年率",
       "previous": "2.4",
       "consensus": "2.2",
-      "actual": null,
+      "actual": "2.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1252,9 +1252,9 @@
       "title": "英国9月服务业指数月率",
       "previous": "0.00",
       "consensus": "0",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.2",
+      "revised": "-0.1",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1262,9 +1262,9 @@
       "title": "英国第三季度商业投资总值季率初值",
       "previous": "1.80",
       "consensus": "0.8",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.4",
+      "revised": "1.8",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1272,9 +1272,9 @@
       "title": "英国第三季度商业投资总值年率初值",
       "previous": "5.20",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3",
+      "revised": "5.2",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-12 15:00",
@@ -1282,9 +1282,9 @@
       "title": "英国9月建筑业产出年率",
       "previous": "-1.80",
       "consensus": "-2.2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-1.5",
+      "revised": "-1.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 20:00",
@@ -1302,9 +1302,9 @@
       "title": "俄罗斯至11月6日当周央行黄金和外汇储备(亿美元)",
       "previous": "7216",
       "consensus": null,
-      "actual": null,
+      "actual": "7243",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-12 21:30",
