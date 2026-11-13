@@ -779,10 +779,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/12评分32防守；上证3655.83(-0.67%)破MA5；19460亿(+15.2%)；882:4792、中位数-2.0%vs上证-0.67%、前100 35:64；涨停37/跌停5/5连板；半导体流出vs燃气白酒碎片；§7池空；HT159338@1.051约-13.3%；防守4/4",
-        "us_equity": "美：11/11 SPX7619.38(+1.31%)/IXIC25466(+1.60%)/Dow+0.49%/NDX+2.28%/RUT+0.88%/SOX+5.66%/VIX17.49；CRWV+24.7%；XLK+3.23%；科技risk-on",
-        "crypto": "11/11 BTC日收未获取/ETH~2050(11/10锚)；滞后股指",
-        "macro": "11/11 债市休市10Y~4.998%；FedWatch Dec hike~88.8%+50bp~11.2%；DXY~102.84",
-        "notes": "11/12 ashare-close-2026-11-12；merge+飞书"
+        "us_equity": "美：11/12 SPX7592.40(-0.35%)/IXIC25366(-0.39%)/Dow-0.36%/NDX-0.30%/RUT-1.66%/SOX-0.54%/VIX18.70；NVDA-4.3% Huang辞任；AMD/AVGO强；XLE+1.51%",
+        "crypto": "11/12 BTC~71.3k(-3.6%)；risk-off",
+        "macro": "11/12 10Y5.10%/2Y4.86%；FedWatch Dec hike~88.4%+50bp~11.6%；DXY~103.17；WTI~88.8",
+        "notes": "11/13 us-close-2026-11-12；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
