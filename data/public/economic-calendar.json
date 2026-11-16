@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-16T08:01:53+08:00",
+  "updated_at": "2026-11-16T21:00:22+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
   "coverage": "current_natural_week_mon_sun",
-  "count": 243,
+  "count": 245,
   "events": [
     {
       "pub_time": "2026-11-16 05:30",
@@ -82,9 +82,9 @@
       "title": "英国11月Rightmove平均房屋要价指数年率",
       "previous": "-0.10",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 08:01",
@@ -92,9 +92,9 @@
       "title": "英国11月Rightmove平均房屋要价指数月率",
       "previous": "1.00",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 10:00",
@@ -102,7 +102,7 @@
       "title": "中国10月社会消费品零售总额同比",
       "previous": "1.10",
       "consensus": "0.80",
-      "actual": null,
+      "actual": "0.4",
       "revised": null,
       "affect_txt": ""
     },
@@ -112,7 +112,7 @@
       "title": "中国10月规模以上工业增加值同比",
       "previous": "5.50",
       "consensus": "5.30",
-      "actual": null,
+      "actual": "4.8",
       "revised": null,
       "affect_txt": ""
     },
@@ -122,7 +122,7 @@
       "title": "中国10月今年迄今城镇固定资产投资同比",
       "previous": "-7.20",
       "consensus": "-7.00",
-      "actual": null,
+      "actual": "-8.1",
       "revised": null,
       "affect_txt": ""
     },
@@ -132,7 +132,7 @@
       "title": "中国10月城镇调查失业率",
       "previous": "5.20",
       "consensus": "5.20",
-      "actual": null,
+      "actual": "5.1",
       "revised": null,
       "affect_txt": ""
     },
@@ -142,7 +142,7 @@
       "title": "中国10月规模以上工业增加值环比",
       "previous": "0.61",
       "consensus": null,
-      "actual": null,
+      "actual": "0.21",
       "revised": null,
       "affect_txt": ""
     },
@@ -152,7 +152,7 @@
       "title": "中国10月城镇固定资产投资环比",
       "previous": "0.07",
       "consensus": null,
-      "actual": null,
+      "actual": "-2.93",
       "revised": null,
       "affect_txt": ""
     },
@@ -162,7 +162,7 @@
       "title": "中国10月社会消费品零售总额环比",
       "previous": "0.35",
       "consensus": null,
-      "actual": null,
+      "actual": "0.02",
       "revised": null,
       "affect_txt": ""
     },
@@ -172,9 +172,9 @@
       "title": "日本9月工业产出年率终值",
       "previous": "1.90",
       "consensus": null,
-      "actual": null,
+      "actual": "1.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 12:30",
@@ -182,9 +182,9 @@
       "title": "日本9月工业产出月率终值",
       "previous": "2.20",
       "consensus": null,
-      "actual": null,
+      "actual": "2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 12:30",
@@ -192,9 +192,9 @@
       "title": "日本9月库存月率终值",
       "previous": "2.5",
       "consensus": null,
-      "actual": null,
+      "actual": "2.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 12:30",
@@ -202,9 +202,9 @@
       "title": "日本9月设备利用指数",
       "previous": "103.2",
       "consensus": null,
-      "actual": null,
+      "actual": "104.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 12:30",
@@ -212,9 +212,9 @@
       "title": "日本9月设备利用指数月率",
       "previous": "-4.20",
       "consensus": null,
-      "actual": null,
+      "actual": "1.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 18:00",
@@ -222,19 +222,19 @@
       "title": "欧元区9月工业产出月率",
       "previous": "-0.50",
       "consensus": "0.3",
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 18:00",
       "star": 2,
       "title": "欧元区9月工业产出年率",
       "previous": "-1.10",
-      "consensus": "0.1",
-      "actual": null,
+      "consensus": "-0.2",
+      "actual": "-1.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 21:00",
@@ -325,6 +325,26 @@
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
+    },
+    {
+      "pub_time": "2026-11-17 00:00",
+      "star": 4,
+      "title": "中国10月全社会用电量同比",
+      "previous": "1.2",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-17 00:00",
+      "star": 3,
+      "title": "中国10月全社会用电量(亿千瓦时)",
+      "previous": "8997",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -941,7 +961,7 @@
       "star": 2,
       "title": "日本10月季调后商品贸易帐(亿日元)",
       "previous": "-7040",
-      "consensus": "-9049",
+      "consensus": null,
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
