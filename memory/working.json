@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-15T10:00:00+08:00",
+    "updated_at": "2026-11-16T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-16T08:05:00+08:00",
+            "decision": "完成 2026-11-13 美股收盘日报（复盘11/13）",
+            "detail": "SPX7561.67(-0.40%)/IXIC25136(-0.91%)/Dow+0.10%/NDX-1.22%/RUT-0.31%/SOX-3.43%/VIX19.30；PPI0.3%/YoY6.5%；10Y5.15%；FedWatch Dec hike~100%；XLK-2.01%/XLP+1.42%；NVDA-2.01%；禁持仓；us-close-2026-11-13；merge+飞书"
+        },
         {
             "at": "2026-11-15T10:00:00+08:00",
             "decision": "完成 2026-11-3W 周度回顾",
@@ -789,10 +794,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/13评分34防守；上证3634.35(-0.59%)四均线线下；16672亿(-14.3%)；734:4594、中位数-3.0%vs上证-0.59%、前100未获取；涨停37/跌停33/4连板；银行护盘vs汽零TMT流出；THS行业+东财502；§7池空；HT159338@1.037约-14.4%；防守4/4",
-        "us_equity": "美：11/12 SPX7592.40(-0.35%)/IXIC25366(-0.39%)/Dow-0.36%/NDX-0.30%/RUT-1.66%/SOX-0.54%/VIX18.70；NVDA-4.3% Huang辞任；AMD/AVGO强；XLE+1.51%",
-        "crypto": "11/12 BTC~71.3k(-3.6%)；risk-off",
-        "macro": "11/12 10Y5.10%/2Y4.86%；FedWatch Dec hike~88.4%+50bp~11.6%；DXY~103.17；WTI~88.8",
-        "notes": "11/13 ashare-close-2026-11-13；merge+飞书(截断)"
+        "us_equity": "美：11/13 SPX7561.67(-0.40%)/IXIC25136(-0.91%)/Dow+0.10%/QQQ-1.20%/SOX-3.43%/VIX19.30；NVDA-2.01%；XLK-2.01%/XLP+1.42%；周线SPX+2.51%",
+        "crypto": "11/13 BTC~68.2k(-4.34%)；risk-off",
+        "macro": "11/13 10Y5.15%/2Y4.88%；PPI0.3%/YoY6.5%；FedWatch Dec hike~100%；DXY~103.41；WTI~88.6",
+        "notes": "us-close-2026-11-13；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
