@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T21:00:22+08:00",
+  "updated_at": "2026-11-17T08:05:12+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -242,9 +242,9 @@
       "title": "加拿大至11月13日全国经济信心指数",
       "previous": "50.8",
       "consensus": null,
-      "actual": null,
+      "actual": "51.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -252,9 +252,9 @@
       "title": "加拿大10月CPI月率",
       "previous": "0.10",
       "consensus": "0.4",
-      "actual": null,
+      "actual": "0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -262,9 +262,9 @@
       "title": "加拿大10月CPI年率",
       "previous": "3.10",
       "consensus": "3.20",
-      "actual": null,
+      "actual": "3.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -272,9 +272,9 @@
       "title": "加拿大10月核心CPI月率",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -282,9 +282,9 @@
       "title": "加拿大10月核心CPI年率",
       "previous": "2.2",
       "consensus": null,
-      "actual": null,
+      "actual": "2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -292,9 +292,9 @@
       "title": "美国11月纽约联储制造业指数",
       "previous": "25.5",
       "consensus": "18",
-      "actual": null,
+      "actual": "7.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -302,9 +302,9 @@
       "title": "美国11月纽约联储制造业就业指数",
       "previous": "10.3",
       "consensus": null,
-      "actual": null,
+      "actual": "18.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -312,9 +312,9 @@
       "title": "美国11月纽约联储制造业新订单指数",
       "previous": "23.2",
       "consensus": null,
-      "actual": null,
+      "actual": "3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-16 21:30",
@@ -322,9 +322,9 @@
       "title": "美国11月纽约联储制造业物价获得指数",
       "previous": "30.6",
       "consensus": null,
-      "actual": null,
+      "actual": "27.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-17 00:00",
@@ -352,9 +352,9 @@
       "title": "美国至11月16日3个月国债竞拍-得标利率",
       "previous": "4.06",
       "consensus": null,
-      "actual": null,
+      "actual": "4.155",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -362,9 +362,9 @@
       "title": "美国至11月16日3个月国债竞拍-得标利率配置百分比",
       "previous": "79.03",
       "consensus": null,
-      "actual": null,
+      "actual": "93.85",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -372,9 +372,9 @@
       "title": "美国至11月16日3个月国债竞拍-投标倍数",
       "previous": "2.67",
       "consensus": null,
-      "actual": null,
+      "actual": "2.76",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -382,9 +382,9 @@
       "title": "美国至11月16日6个月国债竞拍-得标利率",
       "previous": "4.15",
       "consensus": null,
-      "actual": null,
+      "actual": "4.31",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -392,9 +392,9 @@
       "title": "美国至11月16日6个月国债竞拍-得标利率配置百分比",
       "previous": "70.91",
       "consensus": null,
-      "actual": null,
+      "actual": "7.39",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 00:30",
@@ -402,9 +402,9 @@
       "title": "美国至11月16日6个月国债竞拍-投标倍数",
       "previous": "2.92",
       "consensus": null,
-      "actual": null,
+      "actual": "2.83",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 05:45",
@@ -412,9 +412,9 @@
       "title": "新西兰10月食品价格指数年率",
       "previous": "2.4",
       "consensus": null,
-      "actual": null,
+      "actual": "2.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 05:45",
@@ -422,9 +422,9 @@
       "title": "新西兰10月食品价格指数月率",
       "previous": "0.00",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-17 12:30",
