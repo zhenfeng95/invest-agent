@@ -1,5 +1,5 @@
 {
-    "updated_at": "2026-11-17T17:10:00+08:00",
+    "updated_at": "2026-11-18T08:05:00+08:00",
     "current_focus": [
         "VOO",
         "QQQ",
@@ -146,6 +146,11 @@
         }
     ],
     "recent_decisions": [
+        {
+            "at": "2026-11-18T08:05:00+08:00",
+            "decision": "完成 2026-11-17 美股收盘日报（复盘11/17）",
+            "detail": "SPX7340.53(-1.03%)/IXIC24328.38(-0.74%)/Dow-1.64%/NDX-0.72%/RUT-1.50%/SOX+0.34%/VIX25.45；CRM-9.45%/NSA叙事；零售+0.2%/核心+0.6%；NVDA beat $115.8B/FQ4 guide $130B AH+4%；HD/DIS BMO beat；XLF-1.91%/XLE最佳；禁持仓；us-close-2026-11-17；merge+飞书"
+        },
         {
             "at": "2026-11-17T17:10:00+08:00",
             "decision": "完成 2026-11-17 A股收盘日报（精简版）",
@@ -809,10 +814,10 @@
     ],
     "market_regime": {
         "equity": "A股：11/17评分43轻仓试错；上证3584.58(-0.50%)四均线线下；14677亿(-1.8%)；1326:4119、中位数-2.0%vs上证-0.50%、前100 44:55；涨停37/跌停79/3连板；半导体/光刻vs传媒影视；东财+扶摇；§7池空；HT159338@1.019约-15.9%；进攻2/4防守2/4",
-        "us_equity": "美：11/16 SPX7416.59(-1.92%)/IXIC24509.76(-2.49%)/Dow-1.41%/QQQ-2.67%/SOX-5.28%/VIX22.91；NVDA-4.12%；XLK-3.24%/XLP+0.27%；三连阴",
-        "crypto": "11/16 BTC~64k(CNBC)；周末低~62k；risk-off",
-        "macro": "11/16 10Y5.12%/2Y4.83%；FedWatch Dec 25bp~95.7%；DXY~103.59；WTI~85.3",
-        "notes": "us-close-2026-11-16；merge+飞书"
+        "us_equity": "美：11/17 SPX7340.53(-1.03%)/IXIC24328(-0.74%)/Dow-1.64%/QQQ-0.73%/SOX+0.34%/VIX25.45；四连阴；CRM-9.45%；NVDA盘后beat",
+        "crypto": "11/17 BTC~65k/低~63.3k；NVDA后~64.4k",
+        "macro": "11/17 10Y5.102%/2Y4.806%；零售+0.2%/核心+0.6%；FedWatch Dec 25bp~95.7%；DXY~103.6；WTI settle~86",
+        "notes": "us-close-2026-11-17；merge+飞书"
     },
     "open_questions": [
         "Cursor Automations「Invest US Close Daily」须重贴最新 prompt（禁持仓模块；飞书推日报整文）+ FEISHU_WEBHOOK_URL",
