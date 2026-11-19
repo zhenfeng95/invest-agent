@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18T21:01:28+08:00",
+  "updated_at": "2026-11-19T08:03:22+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -737,26 +737,6 @@
       "affect_txt": "影响较小"
     },
     {
-      "pub_time": "2026-11-18 00:00",
-      "star": 4,
-      "title": "中国10月全社会用电量同比",
-      "previous": "1.2",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
-      "pub_time": "2026-11-18 00:00",
-      "star": 3,
-      "title": "中国10月全社会用电量(亿千瓦时)",
-      "previous": "8997",
-      "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": ""
-    },
-    {
       "pub_time": "2026-11-18 00:30",
       "star": 1,
       "title": "美国至11月17日6周国债竞拍-得标利率",
@@ -1212,9 +1192,9 @@
       "title": "加拿大10月新屋价格指数月率",
       "previous": "-0.2",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "影响较小"
     },
     {
       "pub_time": "2026-11-18 21:30",
@@ -1222,9 +1202,9 @@
       "title": "美国10月新屋开工总数年化(万户)",
       "previous": "122.1",
       "consensus": "124.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "130.9",
+      "revised": "119.1",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 21:30",
@@ -1232,9 +1212,9 @@
       "title": "美国10月营建许可总数(万户)",
       "previous": "139.8",
       "consensus": "137.7",
-      "actual": null,
+      "actual": "129.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 21:30",
@@ -1242,9 +1222,9 @@
       "title": "美国10月新屋开工年化月率",
       "previous": "-5.20",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "9.9",
+      "revised": "-7",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 21:30",
@@ -1252,9 +1232,9 @@
       "title": "美国10月营建许可月率",
       "previous": "-0.40",
       "consensus": null,
-      "actual": null,
+      "actual": "-7.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:00",
@@ -1262,9 +1242,9 @@
       "title": "美国10月成屋签约销售指数月率",
       "previous": "-7.30",
       "consensus": "-2",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-4.7",
+      "revised": "-7.2",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:00",
@@ -1272,9 +1252,9 @@
       "title": "美国10月成屋签约销售指数",
       "previous": "66",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "63",
+      "revised": "66.1",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:00",
@@ -1282,9 +1262,9 @@
       "title": "美国10月未季调成屋签约销售指数年率",
       "previous": "-12.60",
       "consensus": null,
-      "actual": null,
+      "actual": "-17.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1292,9 +1272,9 @@
       "title": "美国至11月13日当周EIA原油库存(万桶)",
       "previous": "465.7",
       "consensus": "-50",
-      "actual": null,
+      "actual": "338",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1302,9 +1282,9 @@
       "title": "美国至11月13日当周EIA俄克拉荷马州库欣原油库存(万桶)",
       "previous": "10.6",
       "consensus": null,
-      "actual": null,
+      "actual": "-120.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1312,9 +1292,9 @@
       "title": "美国至11月13日当周EIA战略石油储备库存(万桶)",
       "previous": "-264.9",
       "consensus": null,
-      "actual": null,
+      "actual": "-317.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1322,9 +1302,9 @@
       "title": "美国至11月13日当周EIA原油产量引伸需求数据(万桶/日)",
       "previous": "2004.6",
       "consensus": null,
-      "actual": null,
+      "actual": "1912.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1332,9 +1312,9 @@
       "title": "美国至11月13日当周EIA原油进口(万桶)",
       "previous": "54.4",
       "consensus": null,
-      "actual": null,
+      "actual": "-215.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1342,9 +1322,9 @@
       "title": "美国至11月13日当周EIA取暖油库存(万桶)",
       "previous": "33.5",
       "consensus": null,
-      "actual": null,
+      "actual": "-77.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1352,9 +1332,9 @@
       "title": "美国至11月13日当周EIA成品油进口(万桶/日)",
       "previous": "-25",
       "consensus": null,
-      "actual": null,
+      "actual": "56.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1362,9 +1342,9 @@
       "title": "美国至11月13日当周EIA投产原油量(万桶/日)",
       "previous": "32.2",
       "consensus": null,
-      "actual": null,
+      "actual": "-12.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1372,9 +1352,9 @@
       "title": "美国至11月13日当周EIA汽油产量(万桶/日)",
       "previous": "-7.8",
       "consensus": null,
-      "actual": null,
+      "actual": "-20.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1382,9 +1362,9 @@
       "title": "美国至11月13日当周EIA精炼厂设备利用率",
       "previous": "95.2",
       "consensus": "95.4",
-      "actual": null,
+      "actual": "95.7",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1392,9 +1372,9 @@
       "title": "美国至11月13日当周EIA精炼油产量(万桶/日)",
       "previous": "-6.3",
       "consensus": null,
-      "actual": null,
+      "actual": "14",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1402,9 +1382,9 @@
       "title": "美国至11月13日当周EIA新配方汽油库存(万桶)",
       "previous": "0",
       "consensus": null,
-      "actual": null,
+      "actual": "-0.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1412,9 +1392,9 @@
       "title": "美国至11月13日当周EIA汽油库存(万桶)",
       "previous": "179.9",
       "consensus": "160",
-      "actual": null,
+      "actual": "519.2",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1422,9 +1402,9 @@
       "title": "美国至11月13日当周EIA精炼油库存(万桶)",
       "previous": "407.1",
       "consensus": "107",
-      "actual": null,
+      "actual": "157.1",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1432,9 +1412,9 @@
       "title": "美国至11月13日当周EIA蒸馏燃油产量引伸需求数据(万桶/日)",
       "previous": "460.84",
       "consensus": null,
-      "actual": null,
+      "actual": "513.96",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-18 23:30",
@@ -1442,9 +1422,29 @@
       "title": "美国至11月13日当周EIA车用汽油总产量引伸需求数据(万桶/日)",
       "previous": "962.8",
       "consensus": null,
+      "actual": "966.69",
+      "revised": null,
+      "affect_txt": "利空"
+    },
+    {
+      "pub_time": "2026-11-19 00:00",
+      "star": 4,
+      "title": "中国10月全社会用电量同比",
+      "previous": "1.2",
+      "consensus": null,
       "actual": null,
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": ""
+    },
+    {
+      "pub_time": "2026-11-19 00:00",
+      "star": 3,
+      "title": "中国10月全社会用电量(亿千瓦时)",
+      "previous": "8997",
+      "consensus": null,
+      "actual": null,
+      "revised": null,
+      "affect_txt": ""
     },
     {
       "pub_time": "2026-11-19 00:30",
@@ -1452,9 +1452,9 @@
       "title": "美国至11月18日4个月国债竞拍-得标利率",
       "previous": "4.225",
       "consensus": null,
-      "actual": null,
+      "actual": "4.23",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 00:30",
@@ -1462,9 +1462,9 @@
       "title": "美国至11月18日4个月国债竞拍-得标利率配置百分比",
       "previous": "53.24",
       "consensus": null,
-      "actual": null,
+      "actual": "79.83",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 00:30",
@@ -1472,9 +1472,9 @@
       "title": "美国至11月18日4个月国债竞拍-投标倍数",
       "previous": "2.78",
       "consensus": null,
-      "actual": null,
+      "actual": "3.05",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 02:00",
@@ -1482,9 +1482,9 @@
       "title": "美国至11月18日20年期国债竞拍-得标利率",
       "previous": "5.47",
       "consensus": null,
-      "actual": null,
+      "actual": "5.459",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 02:00",
@@ -1492,9 +1492,9 @@
       "title": "美国至11月18日20年期国债竞拍-得标利率配置百分比",
       "previous": "60.05",
       "consensus": null,
-      "actual": null,
+      "actual": "70.87",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 02:00",
@@ -1502,9 +1502,9 @@
       "title": "美国至11月18日20年期国债竞拍-投标倍数",
       "previous": "2.73",
       "consensus": null,
-      "actual": null,
+      "actual": "2.63",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 05:00",
@@ -1512,9 +1512,9 @@
       "title": "美国9月国际资本净流入(亿美元)",
       "previous": "1998",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2610",
+      "revised": "2030",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 05:00",
@@ -1522,9 +1522,9 @@
       "title": "美国9月外资净买入美国公债(亿美元)",
       "previous": "1089",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "808",
+      "revised": "1086",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 05:00",
@@ -1532,9 +1532,9 @@
       "title": "美国9月长期资本净流入(亿美元)",
       "previous": "2792",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "1553",
+      "revised": "2850",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 05:45",
@@ -1542,9 +1542,9 @@
       "title": "新西兰10月贸易帐(亿纽元)",
       "previous": "-19.71",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-27.72",
+      "revised": "-21.23",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 05:45",
@@ -1552,9 +1552,9 @@
       "title": "新西兰10月12个月贸易帐(亿纽元)",
       "previous": "-61.75",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-75.2",
+      "revised": "-63.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 05:45",
@@ -1562,9 +1562,9 @@
       "title": "新西兰10月出口(亿纽元)",
       "previous": "64.7",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "69.5",
+      "revised": "62.9",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 05:45",
@@ -1572,9 +1572,9 @@
       "title": "新西兰10月进口(亿纽元)",
       "previous": "84.4",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "97.2",
+      "revised": "84.2",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1582,9 +1582,9 @@
       "title": "日本至11月13日当周买进外国债券(亿日元)",
       "previous": "-5376",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-4407",
+      "revised": "-5341",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1592,9 +1592,9 @@
       "title": "日本至11月13日当周买进外国股票(亿日元)",
       "previous": "-6439",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "3631",
+      "revised": "-6582",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1602,9 +1602,9 @@
       "title": "日本9月核心机械订单月率",
       "previous": "5.20",
       "consensus": "-0.5",
-      "actual": null,
+      "actual": "-0.3",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1612,9 +1612,9 @@
       "title": "日本至11月13日当周外资买进日债(亿日元)",
       "previous": "13711",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "6501",
+      "revised": "13709",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1622,9 +1622,9 @@
       "title": "日本至11月13日当周外资买进日股(亿日元)",
       "previous": "-1052",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-2241",
+      "revised": "-1023",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 07:50",
@@ -1632,9 +1632,9 @@
       "title": "日本9月核心机械订单年率",
       "previous": "18.60",
       "consensus": "13.7",
-      "actual": null,
+      "actual": "13.4",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 08:30",
