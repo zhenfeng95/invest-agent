@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T08:03:22+08:00",
+  "updated_at": "2026-11-19T21:04:31+08:00",
   "timezone": "Asia/Shanghai",
   "source": "jin10",
   "source_tool": "list_calendar",
@@ -1642,9 +1642,9 @@
       "title": "澳大利亚10月季调后失业率",
       "previous": "4.70",
       "consensus": "4.70",
-      "actual": null,
+      "actual": "4.9",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 08:30",
@@ -1652,9 +1652,9 @@
       "title": "澳大利亚10月全职就业人口(万人)",
       "previous": "3.44",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-0.29",
+      "revised": "3.54",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 08:30",
@@ -1662,9 +1662,9 @@
       "title": "澳大利亚10月就业人口(万人)",
       "previous": "-3.93",
       "consensus": "2.5",
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "-4.35",
+      "revised": "-3.64",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 08:30",
@@ -1672,9 +1672,9 @@
       "title": "澳大利亚10月兼职就业人口(万人)",
       "previous": "-7.37",
       "consensus": null,
-      "actual": null,
+      "actual": "-4.06",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 08:30",
@@ -1682,9 +1682,9 @@
       "title": "澳大利亚10月季调后就业参与率",
       "previous": "66.80",
       "consensus": "66.80",
-      "actual": null,
+      "actual": "66.6",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 09:00",
@@ -1702,9 +1702,9 @@
       "title": "瑞士10月贸易帐(亿瑞郎)",
       "previous": "13.09",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "40.89",
+      "revised": "12.53",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 15:00",
@@ -1712,9 +1712,9 @@
       "title": "瑞士10月季调后实际出口月率",
       "previous": "-0.10",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "2.4",
+      "revised": "0.4",
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 15:00",
@@ -1722,9 +1722,9 @@
       "title": "瑞士10月季调后实际进口月率",
       "previous": "7.00",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.7",
+      "revised": "6.3",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 15:30",
@@ -1732,9 +1732,9 @@
       "title": "瑞士第三季度工业产出年率",
       "previous": "5.50",
       "consensus": null,
-      "actual": null,
+      "actual": "0.8",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 17:00",
@@ -1742,9 +1742,9 @@
       "title": "欧元区9月季调后经常帐(亿欧元)",
       "previous": "87.09",
       "consensus": null,
-      "actual": null,
+      "actual": "124.74",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 17:00",
@@ -1752,9 +1752,9 @@
       "title": "欧元区9月未季调经常帐(亿欧元)",
       "previous": "77",
       "consensus": null,
-      "actual": null,
+      "actual": "275",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 18:00",
@@ -1762,9 +1762,9 @@
       "title": "欧元区第三季度劳动力成本年率",
       "previous": "3.10",
       "consensus": null,
-      "actual": null,
+      "actual": "3.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 18:00",
@@ -1772,9 +1772,9 @@
       "title": "欧元区9月建筑业产出年率",
       "previous": "1.40",
       "consensus": null,
-      "actual": null,
+      "actual": "-1.5",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 18:00",
@@ -1782,9 +1782,9 @@
       "title": "欧元区9月建筑业产出月率",
       "previous": "1.80",
       "consensus": null,
-      "actual": null,
-      "revised": null,
-      "affect_txt": "未公布"
+      "actual": "0.1",
+      "revised": "-0.49",
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 19:00",
@@ -1792,9 +1792,9 @@
       "title": "英国11月CBI工业订单差值",
       "previous": "-32",
       "consensus": null,
-      "actual": null,
+      "actual": "-12",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利多"
     },
     {
       "pub_time": "2026-11-19 19:00",
@@ -1802,9 +1802,9 @@
       "title": "英国11月CBI工业物价预期差值",
       "previous": "24",
       "consensus": null,
-      "actual": null,
+      "actual": "20",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 21:00",
@@ -1812,9 +1812,9 @@
       "title": "俄罗斯至11月13日当周央行黄金和外汇储备(亿美元)",
       "previous": "7243",
       "consensus": null,
-      "actual": null,
+      "actual": "7189",
       "revised": null,
-      "affect_txt": "未公布"
+      "affect_txt": "利空"
     },
     {
       "pub_time": "2026-11-19 21:00",
@@ -2001,7 +2001,7 @@
       "star": 3,
       "title": "美国至11月13日当周EIA天然气库存(亿立方英尺)",
       "previous": "610",
-      "consensus": "660",
+      "consensus": "270",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2301,7 +2301,7 @@
       "star": 1,
       "title": "中国台湾10月外销订单年率",
       "previous": "62.40",
-      "consensus": "62.90",
+      "consensus": "64.3",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
@@ -2321,7 +2321,7 @@
       "star": 2,
       "title": "中国香港10月综合CPI年率",
       "previous": "1.90",
-      "consensus": null,
+      "consensus": "2",
       "actual": null,
       "revised": null,
       "affect_txt": "未公布"
