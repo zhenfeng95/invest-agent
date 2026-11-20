@@ -1,0 +1,31 @@
+# 项目级 Codex MCP 配置：密钥只从本机环境变量读取，禁止提交实际值。
+
+[mcp_servers.fuyao-a-share]
+url = "https://fuyao.aicubes.cn/mcp/a-share"
+env_http_headers = { "X-api-key" = "FUYAO_API_KEY" }
+enabled = true
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.fuyao-a-share-index]
+url = "https://fuyao.aicubes.cn/mcp/a-share-index"
+env_http_headers = { "X-api-key" = "FUYAO_API_KEY" }
+enabled = true
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.fuyao-fund]
+url = "https://fuyao.aicubes.cn/mcp/fund"
+env_http_headers = { "X-api-key" = "FUYAO_API_KEY" }
+enabled = true
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.fuyao-meta]
+url = "https://fuyao.aicubes.cn/mcp/meta"
+env_http_headers = { "X-api-key" = "FUYAO_API_KEY" }
+enabled = true
+default_tools_approval_mode = "prompt"
+
+[mcp_servers.jin10]
+url = "https://mcp.jin10.com/mcp"
+bearer_token_env_var = "JIN10_BEARER_TOKEN"
+enabled = true
+default_tools_approval_mode = "prompt"
